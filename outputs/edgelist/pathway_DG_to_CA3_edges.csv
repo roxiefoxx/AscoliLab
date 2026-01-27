@@ -1,0 +1,27 @@
+edge_label,source_node,target_node,source_idx,target_idx,original_weight
+DG Granule→CA3 Pyramidal,DG Granule,CA3 Pyramidal,0,13,19094.65916
+DG Granule→CA3c Pyramidal,DG Granule,CA3c Pyramidal,0,14,105286.8854
+DG Granule→CA3 Axo Axonic,DG Granule,CA3 Axo Axonic,0,16,84424.968
+DG Granule→CA3 Basket,DG Granule,CA3 Basket,0,17,93333.19129
+DG Granule→CA3 LMR Targeting,DG Granule,CA3 LMR Targeting,0,18,31784.51386
+DG Granule→CA3 Lucidum ORAX,DG Granule,CA3 Lucidum ORAX,0,19,30282.85445
+DG Granule→CA3 Spiny Lucidum,DG Granule,CA3 Spiny Lucidum,0,20,176486.3056
+DG Granule→CA3 Mossy Fiber Associated ORDEN,DG Granule,CA3 Mossy Fiber Associated ORDEN,0,21,57172.64004
+DG Semilunar Granule→CA3 Pyramidal,DG Semilunar Granule,CA3 Pyramidal,1,13,5221.038912
+DG Semilunar Granule→CA3c Pyramidal,DG Semilunar Granule,CA3c Pyramidal,1,14,11545.9177
+DG Semilunar Granule→CA3 Axo Axonic,DG Semilunar Granule,CA3 Axo Axonic,1,16,10268.82631
+DG Semilunar Granule→CA3 Basket,DG Semilunar Granule,CA3 Basket,1,17,8954.535216
+DG Semilunar Granule→CA3 LMR Targeting,DG Semilunar Granule,CA3 LMR Targeting,1,18,3374.756006
+DG Semilunar Granule→CA3 Lucidum ORAX,DG Semilunar Granule,CA3 Lucidum ORAX,1,19,11783.98657
+DG Semilunar Granule→CA3 Spiny Lucidum,DG Semilunar Granule,CA3 Spiny Lucidum,1,20,39516.72579
+DG Semilunar Granule→CA3 Mossy Fiber Associated ORDEN,DG Semilunar Granule,CA3 Mossy Fiber Associated ORDEN,1,21,5552.233678
+DG HIPROM→CA3 Pyramidal,DG HIPROM,CA3 Pyramidal,8,13,-8.449511821
+DG HIPROM→CA3c Pyramidal,DG HIPROM,CA3c Pyramidal,8,14,-7.819844383
+DG HIPROM→CA3 Granule,DG HIPROM,CA3 Granule,8,15,-0.182094239
+DG HIPROM→CA3 Axo Axonic,DG HIPROM,CA3 Axo Axonic,8,16,-4.732231259
+DG HIPROM→CA3 Basket,DG HIPROM,CA3 Basket,8,17,-4.023225259
+DG HIPROM→CA3 LMR Targeting,DG HIPROM,CA3 LMR Targeting,8,18,-1.405551099
+DG HIPROM→CA3 Lucidum ORAX,DG HIPROM,CA3 Lucidum ORAX,8,19,-2.613670653
+DG HIPROM→CA3 Spiny Lucidum,DG HIPROM,CA3 Spiny Lucidum,8,20,-13.41277192
+DG HIPROM→CA3 Mossy Fiber Associated ORDEN,DG HIPROM,CA3 Mossy Fiber Associated ORDEN,8,21,-7.843745093
+DG HIPROM→CA3 Trilaminar,DG HIPROM,CA3 Trilaminar,8,22,-3.543581723

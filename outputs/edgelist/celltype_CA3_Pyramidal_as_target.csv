@@ -1,0 +1,15 @@
+edge_label,source_node,target_node,source_idx,target_idx,original_weight
+DG Granule→CA3 Pyramidal,DG Granule,CA3 Pyramidal,0,13,19094.65916
+DG Semilunar Granule→CA3 Pyramidal,DG Semilunar Granule,CA3 Pyramidal,1,13,5221.038912
+DG HIPROM→CA3 Pyramidal,DG HIPROM,CA3 Pyramidal,8,13,-8.449511821
+CA3c Pyramidal→CA3 Pyramidal,CA3c Pyramidal,CA3 Pyramidal,14,13,31089.11555
+CA3 Granule→CA3 Pyramidal,CA3 Granule,CA3 Pyramidal,15,13,76.58690108
+CA3 Axo Axonic→CA3 Pyramidal,CA3 Axo Axonic,CA3 Pyramidal,16,13,-393.0578362
+CA3 Basket→CA3 Pyramidal,CA3 Basket,CA3 Pyramidal,17,13,-13694.30406
+CA3 LMR Targeting→CA3 Pyramidal,CA3 LMR Targeting,CA3 Pyramidal,18,13,-6333.728912
+CA3 Lucidum ORAX→CA3 Pyramidal,CA3 Lucidum ORAX,CA3 Pyramidal,19,13,-9.745853616
+CA3 Spiny Lucidum→CA3 Pyramidal,CA3 Spiny Lucidum,CA3 Pyramidal,20,13,-471.9910301
+CA3 Mossy Fiber Associated ORDEN→CA3 Pyramidal,CA3 Mossy Fiber Associated ORDEN,CA3 Pyramidal,21,13,-144.9645624
+CA3 Trilaminar→CA3 Pyramidal,CA3 Trilaminar,CA3 Pyramidal,22,13,-2136.473064
+CA2 Wide Arbor Basket→CA3 Pyramidal,CA2 Wide Arbor Basket,CA3 Pyramidal,24,13,-15248.68322
+MEC LII Stellate→CA3 Pyramidal,MEC LII Stellate,CA3 Pyramidal,55,13,272974.242

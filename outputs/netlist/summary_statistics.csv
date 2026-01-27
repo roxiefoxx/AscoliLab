@@ -1,0 +1,17 @@
+metric,value
+num_nodes,72.0
+num_edges,1151.0
+density,0.4503129890453834
+avg_degree,31.97222222222222
+median_degree,31.5
+max_degree,59.0
+min_degree,10.0
+avg_weight,63598.64195378548
+median_weight,-13.41277192
+std_weight,271296.47066467104
+min_weight,-31424.09244
+max_weight,2982732.151
+avg_strength,2033389.913577975
+median_strength,926716.4287989691
+max_strength,34266862.25862967
+min_strength,56559.41079155301

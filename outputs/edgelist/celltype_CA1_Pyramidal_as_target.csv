@@ -1,0 +1,30 @@
+edge_label,source_node,target_node,source_idx,target_idx,original_weight
+CA3 Pyramidal→CA1 Pyramidal,CA3 Pyramidal,CA1 Pyramidal,13,27,380827.9828
+CA3c Pyramidal→CA1 Pyramidal,CA3c Pyramidal,CA1 Pyramidal,14,27,2946974.519
+CA3 Trilaminar→CA1 Pyramidal,CA3 Trilaminar,CA1 Pyramidal,22,27,-969.1136206
+CA2 Wide Arbor Basket→CA1 Pyramidal,CA2 Wide Arbor Basket,CA1 Pyramidal,24,27,-3863.998119
+CA2 Bistratified→CA1 Pyramidal,CA2 Bistratified,CA1 Pyramidal,25,27,-11.39667447
+CA1 Radiatum Giant→CA1 Pyramidal,CA1 Radiatum Giant,CA1 Pyramidal,28,27,1808.126275
+CA1 Axo Axonic→CA1 Pyramidal,CA1 Axo Axonic,CA1 Pyramidal,29,27,-288.4969942
+CA1 Horizontal Axo Axonic→CA1 Pyramidal,CA1 Horizontal Axo Axonic,CA1 Pyramidal,30,27,-145.0420219
+CA1 Basket→CA1 Pyramidal,CA1 Basket,CA1 Pyramidal,31,27,-6486.070905
+CA1 Basket CCK+→CA1 Pyramidal,CA1 Basket CCK+,CA1 Pyramidal,32,27,-3609.064098
+CA1 Horizontal Basket→CA1 Pyramidal,CA1 Horizontal Basket,CA1 Pyramidal,33,27,-2941.988765
+CA1 Ivy→CA1 Pyramidal,CA1 Ivy,CA1 Pyramidal,34,27,-1319.094372
+CA1 LMR→CA1 Pyramidal,CA1 LMR,CA1 Pyramidal,35,27,-162.25475
+CA1 Neurogliaform→CA1 Pyramidal,CA1 Neurogliaform,CA1 Pyramidal,36,27,-498.7138342
+CA1 Neurogliaform Projecting→CA1 Pyramidal,CA1 Neurogliaform Projecting,CA1 Pyramidal,37,27,-37.25878288
+CA1 Recurrent O LM→CA1 Pyramidal,CA1 Recurrent O LM,CA1 Pyramidal,38,27,-176.7963513
+CA1 O LMR→CA1 Pyramidal,CA1 O LMR,CA1 Pyramidal,39,27,-363.7497948
+CA1 Oriens Alveus→CA1 Pyramidal,CA1 Oriens Alveus,CA1 Pyramidal,40,27,-377.0064704
+CA1 Oriens Bistratified→CA1 Pyramidal,CA1 Oriens Bistratified,CA1 Pyramidal,41,27,-227.9112319
+CA1 OR LM→CA1 Pyramidal,CA1 OR LM,CA1 Pyramidal,42,27,-228.0095751
+CA1 Perforant Path Associated→CA1 Pyramidal,CA1 Perforant Path Associated,CA1 Pyramidal,43,27,-685.5232628
+CA1 Perforant Path Associated QuadD→CA1 Pyramidal,CA1 Perforant Path Associated QuadD,CA1 Pyramidal,44,27,-41.5473279
+CA1 Radiatum→CA1 Pyramidal,CA1 Radiatum,CA1 Pyramidal,45,27,-53.54274288
+CA1 R Receiving Apical Targeting→CA1 Pyramidal,CA1 R Receiving Apical Targeting,CA1 Pyramidal,46,27,-404.5567742
+CA1 Schaffer Collateral Associated→CA1 Pyramidal,CA1 Schaffer Collateral Associated,CA1 Pyramidal,47,27,-3894.845751
+CA1 SO SO→CA1 Pyramidal,CA1 SO SO,CA1 Pyramidal,48,27,-346.5687588
+CA1 Trilaminar→CA1 Pyramidal,CA1 Trilaminar,CA1 Pyramidal,49,27,-1386.795538
+CA1 Radial Trilaminar→CA1 Pyramidal,CA1 Radial Trilaminar,CA1 Pyramidal,50,27,-165.9451447
+EC LIII Pyramidal→CA1 Pyramidal,EC LIII Pyramidal,CA1 Pyramidal,58,27,191274.3689

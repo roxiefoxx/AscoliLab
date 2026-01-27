@@ -1,0 +1,55 @@
+Neural Network Connectivity Statistics
+============================================================
+
+GRAPH PROPERTIES
+------------------------------------------------------------
+Number of nodes: 72
+Number of edges: 1151
+Graph density: 0.450313
+Is directed: False
+
+DEGREE STATISTICS
+------------------------------------------------------------
+Average degree: 31.97
+Median degree: 31.50
+Max degree: 59
+Min degree: 10
+
+WEIGHT STATISTICS
+------------------------------------------------------------
+Total connections: 1151
+Mean weight: 63598.641954
+Median weight: -13.412772
+Standard deviation: 271296.470665
+Min weight: -31424.092440
+Max weight: 2982732.151000
+
+WEIGHT PERCENTILES
+------------------------------------------------------------
+ 10th percentile: -2136.473064
+ 25th percentile: -364.530097
+ 50th percentile: -13.412772
+ 75th percentile: 15187.901260
+ 90th percentile: 108931.588100
+ 95th percentile: 274576.452900
+ 99th percentile: 1646232.257500
+
+NODE STRENGTH STATISTICS
+------------------------------------------------------------
+Average strength: 2033389.913578
+Median strength: 926716.428799
+Max strength: 34266862.258630
+Min strength: 56559.410792
+
+TOP 10 NODES BY STRENGTH
+------------------------------------------------------------
+ 1. CA3c Pyramidal                           34266862.258630
+ 2. CA3 Pyramidal                            14294670.266323
+ 3. DG Granule                               9110145.351219
+ 4. CA1 Pyramidal                            6709032.189114
+ 5. EC LI II Multipolar Pyramidal            5214628.405633
+ 6. CA1 OR LM                                3573651.156814
+ 7. CA1 Perforant Path Associated QuadD      3555596.325186
+ 8. CA1 Basket CCK+                          3105318.153127
+ 9. EC LIII Pyramidal                        2634685.862530
+10. CA1 Recurrent O LM                       2525588.258507

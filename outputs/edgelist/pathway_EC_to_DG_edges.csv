@@ -1,0 +1,42 @@
+edge_label,source_node,target_node,source_idx,target_idx,original_weight
+EC LI II Pyramidal Fan→DG Granule,EC LI II Pyramidal Fan,DG Granule,52,0,142125.1931
+EC LI II Pyramidal Fan→DG Semilunar Granule,EC LI II Pyramidal Fan,DG Semilunar Granule,52,1,136026.2638
+EC LI II Pyramidal Fan→DG AIPRIM,EC LI II Pyramidal Fan,DG AIPRIM,52,3,34801.9822
+EC LI II Pyramidal Fan→DG Axo Axonic,EC LI II Pyramidal Fan,DG Axo Axonic,52,4,222073.5687
+EC LI II Pyramidal Fan→DG Basket,EC LI II Pyramidal Fan,DG Basket,52,5,94455.78857
+EC LI II Pyramidal Fan→DG HICAP,EC LI II Pyramidal Fan,DG HICAP,52,6,31780.3616
+EC LI II Pyramidal Fan→DG MOLAX,EC LI II Pyramidal Fan,DG MOLAX,52,9,26447.06764
+EC LI II Pyramidal Fan→DG MOPP,EC LI II Pyramidal Fan,DG MOPP,52,10,100491.4275
+EC LI II Pyramidal Fan→DG Neurogliaform,EC LI II Pyramidal Fan,DG Neurogliaform,52,11,39929.12723
+EC LI II Pyramidal Fan→DG Total Molecular Layer,EC LI II Pyramidal Fan,DG Total Molecular Layer,52,12,16818.39394
+MEC LII Stellate→DG Granule,MEC LII Stellate,DG Granule,55,0,15769.82675
+MEC LII Stellate→DG Semilunar Granule,MEC LII Stellate,DG Semilunar Granule,55,1,14868.42313
+MEC LII Stellate→DG AIPRIM,MEC LII Stellate,DG AIPRIM,55,3,3814.839623
+MEC LII Stellate→DG Axo Axonic,MEC LII Stellate,DG Axo Axonic,55,4,24402.1129
+MEC LII Stellate→DG Basket,MEC LII Stellate,DG Basket,55,5,10303.38998
+MEC LII Stellate→DG HICAP,MEC LII Stellate,DG HICAP,55,6,3572.191624
+MEC LII Stellate→DG MOLAX,MEC LII Stellate,DG MOLAX,55,9,2965.984514
+MEC LII Stellate→DG MOPP,MEC LII Stellate,DG MOPP,55,10,11013.22595
+MEC LII Stellate→DG Neurogliaform,MEC LII Stellate,DG Neurogliaform,55,11,4405.42992
+MEC LII Stellate→DG Total Molecular Layer,MEC LII Stellate,DG Total Molecular Layer,55,12,1867.446437
+EC LII III Pyramidal Tripolar→DG Granule,EC LII III Pyramidal Tripolar,DG Granule,56,0,59273.61832
+EC LII III Pyramidal Tripolar→DG Semilunar Granule,EC LII III Pyramidal Tripolar,DG Semilunar Granule,56,1,55352.57052
+EC LII III Pyramidal Tripolar→DG AIPRIM,EC LII III Pyramidal Tripolar,DG AIPRIM,56,3,14370.23038
+EC LII III Pyramidal Tripolar→DG Axo Axonic,EC LII III Pyramidal Tripolar,DG Axo Axonic,56,4,92369.40096
+EC LII III Pyramidal Tripolar→DG Basket,EC LII III Pyramidal Tripolar,DG Basket,56,5,39275.77593
+EC LII III Pyramidal Tripolar→DG HICAP,EC LII III Pyramidal Tripolar,DG HICAP,56,6,13201.77092
+EC LII III Pyramidal Tripolar→DG MOLAX,EC LII III Pyramidal Tripolar,DG MOLAX,56,9,11010.21372
+EC LII III Pyramidal Tripolar→DG MOPP,EC LII III Pyramidal Tripolar,DG MOPP,56,10,41549.67481
+EC LII III Pyramidal Tripolar→DG Neurogliaform,EC LII III Pyramidal Tripolar,DG Neurogliaform,56,11,16451.77799
+EC LII III Pyramidal Tripolar→DG Total Molecular Layer,EC LII III Pyramidal Tripolar,DG Total Molecular Layer,56,12,6997.990704
+MEC LV Pyramidal→DG Granule,MEC LV Pyramidal,DG Granule,67,0,151026.2976
+MEC LV Pyramidal→DG Semilunar Granule,MEC LV Pyramidal,DG Semilunar Granule,67,1,93817.12132
+MEC LV Pyramidal→DG AIPRIM,MEC LV Pyramidal,DG AIPRIM,67,3,58876.51135
+MEC LV Pyramidal→DG Axo Axonic,MEC LV Pyramidal,DG Axo Axonic,67,4,115184.4097
+MEC LV Pyramidal→DG Basket,MEC LV Pyramidal,DG Basket,67,5,68131.85647
+MEC LV Pyramidal→DG HICAP,MEC LV Pyramidal,DG HICAP,67,6,49384.62014
+MEC LV Pyramidal→DG HIPROM,MEC LV Pyramidal,DG HIPROM,67,8,107091.4589
+MEC LV Pyramidal→DG MOLAX,MEC LV Pyramidal,DG MOLAX,67,9,67548.92936
+MEC LV Pyramidal→DG MOPP,MEC LV Pyramidal,DG MOPP,67,10,8722.595396
+MEC LV Pyramidal→DG Neurogliaform,MEC LV Pyramidal,DG Neurogliaform,67,11,3415.920477
+MEC LV Pyramidal→DG Total Molecular Layer,MEC LV Pyramidal,DG Total Molecular Layer,67,12,37522.61183

@@ -1,0 +1,15 @@
+============================================================
+EDGE-CENTRIC NETWORK ANALYSIS SUMMARY
+============================================================
+
+Node-level network:
+  Nodes: 72
+  Edges: 1091
+  Directed: True
+
+Edge-level network:
+  Edge nodes: 1091
+  Edge-edge connections: 35344
+  Average degree: 64.79
+  Density: 0.0594
+

@@ -1,0 +1,67 @@
+edge_label,source_node,target_node,source_idx,target_idx,original_weight
+CA3 Pyramidal→CA1 Pyramidal,CA3 Pyramidal,CA1 Pyramidal,13,27,380827.9828
+CA3 Pyramidal→CA1 Radiatum Giant,CA3 Pyramidal,CA1 Radiatum Giant,13,28,165936.0382
+CA3 Pyramidal→CA1 Axo Axonic,CA3 Pyramidal,CA1 Axo Axonic,13,29,159502.0083
+CA3 Pyramidal→CA1 Horizontal Axo Axonic,CA3 Pyramidal,CA1 Horizontal Axo Axonic,13,30,330795.0048
+CA3 Pyramidal→CA1 Basket,CA3 Pyramidal,CA1 Basket,13,31,228141.6357
+CA3 Pyramidal→CA1 Basket CCK+,CA3 Pyramidal,CA1 Basket CCK+,13,32,156057.7545
+CA3 Pyramidal→CA1 Horizontal Basket,CA3 Pyramidal,CA1 Horizontal Basket,13,33,755237.5847
+CA3 Pyramidal→CA1 Ivy,CA3 Pyramidal,CA1 Ivy,13,34,69076.63515
+CA3 Pyramidal→CA1 LMR,CA3 Pyramidal,CA1 LMR,13,35,32725.76193
+CA3 Pyramidal→CA1 Recurrent O LM,CA3 Pyramidal,CA1 Recurrent O LM,13,38,2081164.348
+CA3 Pyramidal→CA1 O LMR,CA3 Pyramidal,CA1 O LMR,13,39,673425.8315
+CA3 Pyramidal→CA1 Oriens Alveus,CA3 Pyramidal,CA1 Oriens Alveus,13,40,124756.4419
+CA3 Pyramidal→CA1 Oriens Bistratified,CA3 Pyramidal,CA1 Oriens Bistratified,13,41,476142.3705
+CA3 Pyramidal→CA1 OR LM,CA3 Pyramidal,CA1 OR LM,13,42,530494.5778
+CA3 Pyramidal→CA1 Perforant Path Associated,CA3 Pyramidal,CA1 Perforant Path Associated,13,43,78833.56183
+CA3 Pyramidal→CA1 Perforant Path Associated QuadD,CA3 Pyramidal,CA1 Perforant Path Associated QuadD,13,44,584453.5674
+CA3 Pyramidal→CA1 Radiatum,CA3 Pyramidal,CA1 Radiatum,13,45,77702.49045
+CA3 Pyramidal→CA1 R Receiving Apical Targeting,CA3 Pyramidal,CA1 R Receiving Apical Targeting,13,46,212463.5636
+CA3 Pyramidal→CA1 Schaffer Collateral Associated,CA3 Pyramidal,CA1 Schaffer Collateral Associated,13,47,405597.7514
+CA3 Pyramidal→CA1 SO SO,CA3 Pyramidal,CA1 SO SO,13,48,1082066.721
+CA3 Pyramidal→CA1 Trilaminar,CA3 Pyramidal,CA1 Trilaminar,13,49,2030611.127
+CA3 Pyramidal→CA1 Radial Trilaminar,CA3 Pyramidal,CA1 Radial Trilaminar,13,50,48612.11039
+CA3c Pyramidal→CA1 Pyramidal,CA3c Pyramidal,CA1 Pyramidal,14,27,2946974.519
+CA3c Pyramidal→CA1 Radiatum Giant,CA3c Pyramidal,CA1 Radiatum Giant,14,28,2221043.972
+CA3c Pyramidal→CA1 Axo Axonic,CA3c Pyramidal,CA1 Axo Axonic,14,29,2006266.478
+CA3c Pyramidal→CA1 Horizontal Axo Axonic,CA3c Pyramidal,CA1 Horizontal Axo Axonic,14,30,52687.91822
+CA3c Pyramidal→CA1 Basket,CA3c Pyramidal,CA1 Basket,14,31,2116029.98
+CA3c Pyramidal→CA1 Basket CCK+,CA3c Pyramidal,CA1 Basket CCK+,14,32,2795834.075
+CA3c Pyramidal→CA1 Horizontal Basket,CA3c Pyramidal,CA1 Horizontal Basket,14,33,111868.5427
+CA3c Pyramidal→CA1 Ivy,CA3c Pyramidal,CA1 Ivy,14,34,1842331.582
+CA3c Pyramidal→CA1 LMR,CA3c Pyramidal,CA1 LMR,14,35,826291.8396
+CA3c Pyramidal→CA1 Recurrent O LM,CA3c Pyramidal,CA1 Recurrent O LM,14,38,274726.7905
+CA3c Pyramidal→CA1 O LMR,CA3c Pyramidal,CA1 O LMR,14,39,115467.0882
+CA3c Pyramidal→CA1 Oriens Alveus,CA3c Pyramidal,CA1 Oriens Alveus,14,40,1743888.309
+CA3c Pyramidal→CA1 Oriens Bistratified,CA3c Pyramidal,CA1 Oriens Bistratified,14,41,81403.51345
+CA3c Pyramidal→CA1 OR LM,CA3c Pyramidal,CA1 OR LM,14,42,2982732.151
+CA3c Pyramidal→CA1 Perforant Path Associated,CA3c Pyramidal,CA1 Perforant Path Associated,14,43,1334059.612
+CA3c Pyramidal→CA1 Perforant Path Associated QuadD,CA3c Pyramidal,CA1 Perforant Path Associated QuadD,14,44,2795497.155
+CA3c Pyramidal→CA1 Radiatum,CA3c Pyramidal,CA1 Radiatum,14,45,1362763.212
+CA3c Pyramidal→CA1 R Receiving Apical Targeting,CA3c Pyramidal,CA1 R Receiving Apical Targeting,14,46,2023667.388
+CA3c Pyramidal→CA1 SO SO,CA3c Pyramidal,CA1 SO SO,14,48,154057.071
+CA3c Pyramidal→CA1 Trilaminar,CA3c Pyramidal,CA1 Trilaminar,14,49,274426.1153
+CA3c Pyramidal→CA1 Radial Trilaminar,CA3c Pyramidal,CA1 Radial Trilaminar,14,50,1107880.821
+CA3 Spiny Lucidum→CA1 Neurogliaform Projecting,CA3 Spiny Lucidum,CA1 Neurogliaform Projecting,20,37,-310.609146
+CA3 Trilaminar→CA1 Pyramidal,CA3 Trilaminar,CA1 Pyramidal,22,27,-969.1136206
+CA3 Trilaminar→CA1 Radiatum Giant,CA3 Trilaminar,CA1 Radiatum Giant,22,28,-313.6163273
+CA3 Trilaminar→CA1 Axo Axonic,CA3 Trilaminar,CA1 Axo Axonic,22,29,-704.3595132
+CA3 Trilaminar→CA1 Horizontal Axo Axonic,CA3 Trilaminar,CA1 Horizontal Axo Axonic,22,30,-317.0559049
+CA3 Trilaminar→CA1 Basket,CA3 Trilaminar,CA1 Basket,22,31,-801.2179109
+CA3 Trilaminar→CA1 Basket CCK+,CA3 Trilaminar,CA1 Basket CCK+,22,32,-999.3735315
+CA3 Trilaminar→CA1 Horizontal Basket,CA3 Trilaminar,CA1 Horizontal Basket,22,33,-1205.381116
+CA3 Trilaminar→CA1 Ivy,CA3 Trilaminar,CA1 Ivy,22,34,-1050.964334
+CA3 Trilaminar→CA1 LMR,CA3 Trilaminar,CA1 LMR,22,35,-158.7025178
+CA3 Trilaminar→CA1 Recurrent O LM,CA3 Trilaminar,CA1 Recurrent O LM,22,38,-533.4412237
+CA3 Trilaminar→CA1 O LMR,CA3 Trilaminar,CA1 O LMR,22,39,-497.6728461
+CA3 Trilaminar→CA1 Oriens Alveus,CA3 Trilaminar,CA1 Oriens Alveus,22,40,-833.3650759
+CA3 Trilaminar→CA1 Oriens Bistratified,CA3 Trilaminar,CA1 Oriens Bistratified,22,41,-342.3900395
+CA3 Trilaminar→CA1 OR LM,CA3 Trilaminar,CA1 OR LM,22,42,-528.7711222
+CA3 Trilaminar→CA1 Perforant Path Associated,CA3 Trilaminar,CA1 Perforant Path Associated,22,43,-122.6980578
+CA3 Trilaminar→CA1 Perforant Path Associated QuadD,CA3 Trilaminar,CA1 Perforant Path Associated QuadD,22,44,-1637.045385
+CA3 Trilaminar→CA1 Radiatum,CA3 Trilaminar,CA1 Radiatum,22,45,-233.8953891
+CA3 Trilaminar→CA1 R Receiving Apical Targeting,CA3 Trilaminar,CA1 R Receiving Apical Targeting,22,46,-354.3182666
+CA3 Trilaminar→CA1 Schaffer Collateral Associated,CA3 Trilaminar,CA1 Schaffer Collateral Associated,22,47,-601.7736217
+CA3 Trilaminar→CA1 SO SO,CA3 Trilaminar,CA1 SO SO,22,48,-611.5928072
+CA3 Trilaminar→CA1 Trilaminar,CA3 Trilaminar,CA1 Trilaminar,22,49,-709.7553592
+CA3 Trilaminar→CA1 Radial Trilaminar,CA3 Trilaminar,CA1 Radial Trilaminar,22,50,-1162.135946

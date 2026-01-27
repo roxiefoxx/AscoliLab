@@ -1,0 +1,35 @@
+edge_label,source_node,target_node,source_idx,target_idx,original_weight
+CA3 Pyramidal→CA3c Pyramidal,CA3 Pyramidal,CA3c Pyramidal,13,14,395693.8458
+CA3 Pyramidal→CA3 Granule,CA3 Pyramidal,CA3 Granule,13,15,41592.49664
+CA3 Pyramidal→CA3 Axo Axonic,CA3 Pyramidal,CA3 Axo Axonic,13,16,175688.468
+CA3 Pyramidal→CA3 Basket,CA3 Pyramidal,CA3 Basket,13,17,229695.88
+CA3 Pyramidal→CA3 LMR Targeting,CA3 Pyramidal,CA3 LMR Targeting,13,18,29902.14385
+CA3 Pyramidal→CA3 Lucidum ORAX,CA3 Pyramidal,CA3 Lucidum ORAX,13,19,96208.96061
+CA3 Pyramidal→CA3 Mossy Fiber Associated ORDEN,CA3 Pyramidal,CA3 Mossy Fiber Associated ORDEN,13,21,203028.4106
+CA3 Pyramidal→CA3 Trilaminar,CA3 Pyramidal,CA3 Trilaminar,13,22,185716.6009
+CA3 Pyramidal→CA2 Basket,CA3 Pyramidal,CA2 Basket,13,23,485909.8258
+CA3 Pyramidal→CA2 Wide Arbor Basket,CA3 Pyramidal,CA2 Wide Arbor Basket,13,24,196409.1927
+CA3 Pyramidal→CA2 Bistratified,CA3 Pyramidal,CA2 Bistratified,13,25,468952.7398
+CA3 Pyramidal→CA2 SP SR,CA3 Pyramidal,CA2 SP SR,13,26,278151.1629
+CA3 Pyramidal→CA1 Pyramidal,CA3 Pyramidal,CA1 Pyramidal,13,27,380827.9828
+CA3 Pyramidal→CA1 Radiatum Giant,CA3 Pyramidal,CA1 Radiatum Giant,13,28,165936.0382
+CA3 Pyramidal→CA1 Axo Axonic,CA3 Pyramidal,CA1 Axo Axonic,13,29,159502.0083
+CA3 Pyramidal→CA1 Horizontal Axo Axonic,CA3 Pyramidal,CA1 Horizontal Axo Axonic,13,30,330795.0048
+CA3 Pyramidal→CA1 Basket,CA3 Pyramidal,CA1 Basket,13,31,228141.6357
+CA3 Pyramidal→CA1 Basket CCK+,CA3 Pyramidal,CA1 Basket CCK+,13,32,156057.7545
+CA3 Pyramidal→CA1 Horizontal Basket,CA3 Pyramidal,CA1 Horizontal Basket,13,33,755237.5847
+CA3 Pyramidal→CA1 Ivy,CA3 Pyramidal,CA1 Ivy,13,34,69076.63515
+CA3 Pyramidal→CA1 LMR,CA3 Pyramidal,CA1 LMR,13,35,32725.76193
+CA3 Pyramidal→CA1 Recurrent O LM,CA3 Pyramidal,CA1 Recurrent O LM,13,38,2081164.348
+CA3 Pyramidal→CA1 O LMR,CA3 Pyramidal,CA1 O LMR,13,39,673425.8315
+CA3 Pyramidal→CA1 Oriens Alveus,CA3 Pyramidal,CA1 Oriens Alveus,13,40,124756.4419
+CA3 Pyramidal→CA1 Oriens Bistratified,CA3 Pyramidal,CA1 Oriens Bistratified,13,41,476142.3705
+CA3 Pyramidal→CA1 OR LM,CA3 Pyramidal,CA1 OR LM,13,42,530494.5778
+CA3 Pyramidal→CA1 Perforant Path Associated,CA3 Pyramidal,CA1 Perforant Path Associated,13,43,78833.56183
+CA3 Pyramidal→CA1 Perforant Path Associated QuadD,CA3 Pyramidal,CA1 Perforant Path Associated QuadD,13,44,584453.5674
+CA3 Pyramidal→CA1 Radiatum,CA3 Pyramidal,CA1 Radiatum,13,45,77702.49045
+CA3 Pyramidal→CA1 R Receiving Apical Targeting,CA3 Pyramidal,CA1 R Receiving Apical Targeting,13,46,212463.5636
+CA3 Pyramidal→CA1 Schaffer Collateral Associated,CA3 Pyramidal,CA1 Schaffer Collateral Associated,13,47,405597.7514
+CA3 Pyramidal→CA1 SO SO,CA3 Pyramidal,CA1 SO SO,13,48,1082066.721
+CA3 Pyramidal→CA1 Trilaminar,CA3 Pyramidal,CA1 Trilaminar,13,49,2030611.127
+CA3 Pyramidal→CA1 Radial Trilaminar,CA3 Pyramidal,CA1 Radial Trilaminar,13,50,48612.11039
