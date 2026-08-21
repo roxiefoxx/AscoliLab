@@ -1,0 +1,15 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+EC LIII Pyramidal,CA1 Axo Axonic,e,i,14236.478168585169,0.07601,1082.1147055941583
+MEC LII III Pyramidal Multiform,MEC LIII Bipolar Complex Pyramidal,e,e,5047.3074085952,0.09565,482.7749536321309
+MEC LII III Pyramidal Multiform,MEC LIII Superficial Trilayered Interneuron,e,i,4328.393772342641,0.07016,303.6801070675597
+MEC LIII Bipolar Complex Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,2790.2404263322164,0.07016,195.7632683114683
+MEC LIII Bipolar Complex Pyramidal,MEC LII III Pyramidal Multiform,e,e,2863.22870187144,0.05452,156.10322882603091
+MEC LIII Superficial Trilayered Interneuron,MEC LII III Pyramidal Multiform,i,e,-1958.9893363888,0.05452,-106.80409861991738
+MEC LII III Pyramidal Multiform,EC LIII Pyramidal,e,e,1619.8060070911602,0.05263,85.25039015320776
+MEC LIII Superficial Trilayered Interneuron,MEC LIII Bipolar Complex Pyramidal,i,e,-855.85793241677,0.09565,-81.86281123566405
+MEC LIII Bipolar Complex Pyramidal,EC LIII Pyramidal,e,e,791.619310075584,0.05263,41.66292428927799
+MEC LIII Superficial Trilayered Interneuron,EC LIII Pyramidal,i,e,-634.834540333368,0.05263,-33.41134185774516
+EC LIII Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,316.2119960242319,0.09565,30.24567741971778
+EC LIII Pyramidal,MEC LII III Pyramidal Multiform,e,e,321.60293311233784,0.05452,17.53379191328466
+EC LIII Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,153.559740831048,0.07016,10.773751416706329
+CA1 Radiatum,CA1 Axo Axonic,i,i,-46.49493507120002,0.07601,-3.534080014761913

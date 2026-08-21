@@ -1,0 +1,9 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+MEC LIII Bipolar Complex Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,2790.2404263322164,0.07016,195.7632683114683
+MEC LV Superficial Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,1973.7403914468243,0.09565,188.78826844188876
+MEC LIII Bipolar Complex Pyramidal,MEC LV Superficial Pyramidal,e,e,6611.57488399954,0.02214,146.3802679317498
+MEC LV Superficial Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,1553.774689527858,0.07016,109.01283221727452
+CA1 SO SO,CA1 Horizontal Axo Axonic,i,i,-264.0743927478721,0.33807,-89.27562995627311
+MEC LIII Superficial Trilayered Interneuron,MEC LIII Bipolar Complex Pyramidal,i,e,-855.85793241677,0.09565,-81.86281123566405
+MEC LIII Superficial Trilayered Interneuron,MEC LV Superficial Pyramidal,i,e,-1374.680935466849,0.02214,-30.435435911236038
+CA1 SO SO,CA1 Axo Axonic,i,i,-243.0433344801472,0.07601,-18.47372385383599

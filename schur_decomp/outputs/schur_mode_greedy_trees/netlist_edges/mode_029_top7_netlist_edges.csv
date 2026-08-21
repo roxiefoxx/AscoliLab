@@ -1,0 +1,9 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+EC LI II Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,320940.944753492,0.09565,30698.001365671505
+EC LI II Multipolar Pyramidal,LEC LIII Multipolar Principal,e,e,199992.3131815124,0.04517,9033.652786408917
+LEC LIII Multipolar Principal,EC LI II Multipolar Pyramidal,e,e,9894.567638517912,0.05452,539.4518276519966
+DG Basket,DG Total Molecular Layer,i,i,-5419.586277233849,0.0744,-403.2172190261984
+DG Total Molecular Layer,DG Basket,i,i,-3556.4824762152066,0.09135,-324.88467420225913
+MEC LV Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,1558.52223495696,0.09565,149.07265177363325
+MEC LIII Bipolar Complex Pyramidal,EC LI II Multipolar Pyramidal,e,e,2033.0230997349,0.05452,110.84041939754674
+MEC LIII Bipolar Complex Pyramidal,MEC LV Multipolar Pyramidal,e,e,3981.030559097761,0.02214,88.14001657842442

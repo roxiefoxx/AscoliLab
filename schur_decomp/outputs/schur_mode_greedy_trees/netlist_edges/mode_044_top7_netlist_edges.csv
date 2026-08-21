@@ -1,0 +1,13 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+EC LI II Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,320940.944753492,0.09565,30698.001365671505
+EC LI II Multipolar Pyramidal,LEC LIII Complex Pyramidal,e,e,368742.2194593228,0.04652,17153.888049247696
+EC LIV VI Deep Multipolar Principal,LEC LVI Multipolar Pyramidal,e,e,56257.5410565934,0.03993,2246.3636143897743
+EC LIV VI Deep Multipolar Principal,LEC LIII Complex Pyramidal,e,e,28354.696766759524,0.04652,1319.060493589653
+LEC LIII Complex Pyramidal,EC LI II Multipolar Pyramidal,e,e,4486.718086982209,0.05452,244.61587010227
+LEC LIII Complex Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,8112.004762856905,0.02244,182.03338687850896
+LEC LVI Multipolar Pyramidal,LEC LIII Complex Pyramidal,e,e,3781.8665078150257,0.04652,175.93242994355498
+LEC LVI Multipolar Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,6149.43014629632,0.02244,137.99321248288945
+MEC LIII Bipolar Complex Pyramidal,EC LI II Multipolar Pyramidal,e,e,2033.0230997349,0.05452,110.84041939754674
+CA1 SO SO,CA1 Horizontal Axo Axonic,i,i,-264.0743927478721,0.33807,-89.27562995627311
+LEC LIII Complex Pyramidal,LEC LVI Multipolar Pyramidal,e,e,1549.9705618606465,0.03993,61.890324535095615
+MEC LIII Bipolar Complex Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,554.4914130826198,0.02244,12.44278730957399

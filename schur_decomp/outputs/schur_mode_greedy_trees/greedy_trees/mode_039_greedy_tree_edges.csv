@@ -1,0 +1,4 @@
+component,source,receiver,m_ij,abs_m_ij,source_rank,receiver_rank,source_loading_magnitude,receiver_loading_magnitude,depth
+1,CA1 Schaffer Collateral Associated,CA1 Axo Axonic,-91.48417716078622,91.48417716078622,1,5,0.32164620676424,0.2592825258166985,1
+2,LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,304.0317537911717,304.0317537911717,2,4,0.32130324498742496,0.26074279367264536,1
+4,MEC LV Pyramidal,MEC LV Multipolar Pyramidal,662.4278400096001,662.4278400096001,6,7,0.24550277821436983,0.23654959487272845,1

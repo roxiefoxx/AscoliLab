@@ -1,0 +1,7 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+DG Granule,CA2 Bistratified,e,i,234548.93684897732,0.09557,22415.841894656765
+MEC LV Multipolar Pyramidal,MEC LIII Complex Pyramidal,e,e,4780.347932672001,0.09565,457.2402797600769
+MEC LV Multipolar Pyramidal,MEC LV VI Pyramidal Polymorphic,e,e,4790.628658015199,0.06472,310.0494867467437
+LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,e,e,6730.83360175275,0.04517,304.0317537911717
+MEC LIII Complex Pyramidal,MEC LV Multipolar Pyramidal,e,e,7220.592400894739,0.02214,159.8639157558095
+LEC LIII Multipolar Principal,LEC LVI Multipolar Pyramidal,e,e,817.2360433315584,0.03993,32.632235210229126

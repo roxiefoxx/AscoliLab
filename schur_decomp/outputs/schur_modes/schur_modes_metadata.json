@@ -1,0 +1,9 @@
+{
+  "matrix_path": "matrices\\mij_matrix.csv",
+  "normalization": "spectral_radius",
+  "target_spectral_radius": 0.95,
+  "scale_factor": 3.624137962990598e-05,
+  "original_spectral_radius": 26213.130120909373,
+  "high_loading_threshold": 0.05,
+  "mode_indexing": "zero-based Schur order"
+}

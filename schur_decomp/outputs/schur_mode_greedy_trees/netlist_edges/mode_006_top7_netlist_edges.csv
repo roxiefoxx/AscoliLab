@@ -1,0 +1,3 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+DG HICAP,DG Axo Axonic,i,i,-67.32888292304713,0.27069,-18.225255318439626
+CA1 R Receiving Apical Targeting,CA1 Neurogliaform,i,i,-196.0825120128,0.07081,-13.884602675626368

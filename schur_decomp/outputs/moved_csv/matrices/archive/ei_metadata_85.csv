@@ -1,0 +1,86 @@
+Neuron Type,E/I
+CA1 Axo Axonic,i
+CA1 Back Projection,i
+CA1 Basket,i
+CA1 Basket CCK+,i
+CA1 Bistratified,i
+CA1 Horizontal Axo Axonic,i
+CA1 Horizontal Basket,i
+CA1 Ivy,i
+CA1 LMR,i
+CA1 Neurogliaform,i
+CA1 Neurogliaform Projecting,i
+CA1 O LM,i
+CA1 O LMR,i
+CA1 OR LM,i
+CA1 Oriens Alveus,i
+CA1 Oriens Bistratified,i
+CA1 Perforant Path Associated,i
+CA1 Perforant Path Associated QuadD,i
+CA1 Pyramidal,e
+CA1 Quadrilaminar,i
+CA1 R Receiving Apical Targeting,i
+CA1 Radial Trilaminar,i
+CA1 Radiatum,i
+CA1 Radiatum Giant,e
+CA1 Recurrent O LM,i
+CA1 SO SO,i
+CA1 Schaffer Collateral Associated,i
+CA1 Trilaminar,i
+CA2 Basket,i
+CA2 Bistratified,i
+CA2 Pyramidal,e
+CA2 SP SR,i
+CA2 Wide Arbor Basket,i
+CA3 Axo Axonic,i
+CA3 Basket,i
+CA3 Basket CCK+,i
+CA3 Granule,e
+CA3 Horizontal Axo Axonic,i
+CA3 LMR Targeting,i
+CA3 Lucidum ORAX,i
+CA3 Mossy Fiber Associated,i
+CA3 Mossy Fiber Associated ORDEN,i
+CA3 O LM,i
+CA3 Pyramidal,e
+CA3 Spiny Lucidum,i
+CA3 Trilaminar,i
+CA3c Pyramidal,e
+DG AIPRIM,i
+DG Axo Axonic,i
+DG Basket,i
+DG Granule,e
+DG HICAP,i
+DG HIPP,i
+DG HIPROM,i
+DG Hilar Ectopic Granule,e
+DG MOLAX,i
+DG MOPP,i
+DG Mossy,e
+DG Neurogliaform,i
+DG Semilunar Granule,e
+DG Total Molecular Layer,i
+EC LI II Multipolar Pyramidal,e
+EC LI II Pyramidal Fan,e
+EC LII III Pyramidal Tripolar,e
+EC LIII Pyramidal,e
+EC LIII Pyramidal Stellate,e
+EC LIII Stellate,e
+EC LIII V Bipolar Pyramidal,e
+EC LIV VI Deep Multipolar Principal,e
+EC LV Deep Pyramidal,e
+LEC LIII Complex Pyramidal,e
+LEC LIII Multipolar Principal,e
+LEC LVI Multipolar Pyramidal,e
+MEC LII III Pyramidal Multiform,e
+MEC LII Oblique Pyramidal,e
+MEC LII Stellate,e
+MEC LIII Bipolar Complex Pyramidal,e
+MEC LIII Complex Pyramidal,e
+MEC LIII Superficial Multipolar Interneuron,i
+MEC LIII Superficial Trilayered Interneuron,i
+MEC LV Multipolar Pyramidal,e
+MEC LV Pyramidal,e
+MEC LV Superficial Pyramidal,e
+MEC LV VI Pyramidal Polymorphic,e
+SUB CA1 Projecting Pyramidal,e

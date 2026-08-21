@@ -1,0 +1,5 @@
+component,source,receiver,m_ij,abs_m_ij,source_rank,receiver_rank,source_loading_magnitude,receiver_loading_magnitude,depth
+1,MEC LV Superficial Pyramidal,MEC LIII Superficial Trilayered Interneuron,109.01283221727452,109.01283221727452,1,3,0.4997183272017111,0.2050893893043406,1
+1,MEC LV Superficial Pyramidal,EC LV Deep Pyramidal,27.333796694124377,27.333796694124377,1,7,0.4997183272017111,0.17909892911624636,1
+3,CA3 Spiny Lucidum,CA3 Mossy Fiber Associated,-20.18221227999496,20.18221227999496,4,6,0.19283672315436057,0.1802494105539395,1
+3,CA3 Mossy Fiber Associated,CA3 LMR Targeting,-7.741885920738279,7.741885920738279,6,5,0.1802494105539395,0.18350385348904127,2

@@ -1,0 +1,4 @@
+component,source,receiver,m_ij,abs_m_ij,source_rank,receiver_rank,source_loading_magnitude,receiver_loading_magnitude,depth
+1,CA1 Radial Trilaminar,CA1 Horizontal Basket,-17.318101019305484,17.318101019305484,1,2,0.5124604506881291,0.370093386831338,1
+1,CA1 Horizontal Basket,CA1 Bistratified,-334.4837806563393,334.4837806563393,2,4,0.370093386831338,0.2239940287770983,2
+1,CA1 Bistratified,CA1 Horizontal Axo Axonic,-144.7619022420346,144.7619022420346,4,7,0.2239940287770983,0.18066215024952065,3

@@ -1,0 +1,5 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+MEC LV Pyramidal,DG Semilunar Granule,e,e,131030.96781092668,0.00401,525.4341809218159
+MEC LV Pyramidal,EC LIII Stellate,e,e,1579.234100943952,0.09565,151.053741755289
+CA3 Trilaminar,CA3 Horizontal Axo Axonic,i,i,-785.3823811125601,0.07827,-61.47187896968008
+CA3 Trilaminar,CA1 Recurrent O LM,i,i,-533.44122368768,0.03251,-17.342174182086474

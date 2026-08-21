@@ -1,0 +1,4 @@
+component,source,receiver,m_ij,abs_m_ij,source_rank,receiver_rank,source_loading_magnitude,receiver_loading_magnitude,depth
+1,SUB CA1 Projecting Pyramidal,CA1 Perforant Path Associated QuadD,2990.9938020416625,2990.9938020416625,1,4,0.43079988212591874,0.28033606677167994,1
+2,CA3 Mossy Fiber Associated ORDEN,CA3 Basket,-22.20441814479258,22.20441814479258,2,3,0.3225061535192525,0.28220423724930105,1
+2,CA3 Mossy Fiber Associated ORDEN,DG Axo Axonic,-2.402926922666154,2.402926922666154,2,7,0.3225061535192525,0.17937778921825012,1

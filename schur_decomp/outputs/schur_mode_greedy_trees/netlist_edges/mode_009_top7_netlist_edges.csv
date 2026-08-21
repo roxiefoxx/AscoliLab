@@ -1,0 +1,9 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+CA1 Perforant Path Associated,SUB CA1 Projecting Pyramidal,i,e,-88240.648965,0.02145,-1892.76192029925
+SUB CA1 Projecting Pyramidal,CA1 Perforant Path Associated,e,i,2399.2622927973,0.57998,1391.524144576578
+CA3 Basket,CA3 Axo Axonic,i,i,-5265.150495764399,0.11589,-610.1782909541363
+SUB CA1 Projecting Pyramidal,CA1 Oriens Alveus,e,i,1875.1628695259703,0.1554,291.40030992433583
+CA1 Oriens Alveus,CA1 Horizontal Basket,i,i,-827.7800344077599,0.15787,-130.68163403195305
+CA1 Perforant Path Associated,CA1 Oriens Alveus,i,i,-608.026993246176,0.1554,-94.48739475045576
+CA3 Granule,CA3 Basket,e,i,58.49439487262401,0.1496,8.750761472944552
+CA3 Granule,CA3 Axo Axonic,e,i,68.727183686112,0.11589,7.96479331738352

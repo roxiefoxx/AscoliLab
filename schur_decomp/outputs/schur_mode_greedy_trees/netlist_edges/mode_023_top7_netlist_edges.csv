@@ -1,0 +1,6 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+MEC LII Stellate,CA3 Granule,e,e,266639.6492658472,0.07366,19640.6765649223
+LEC LIII Complex Pyramidal,LEC LIII Multipolar Principal,e,e,18041.159977416577,0.04517,814.9191961799069
+LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,e,e,11953.215801988776,0.04652,556.0635991085179
+MEC LII Stellate,DG Hilar Ectopic Granule,e,e,10128.52691199346,0.02539,257.1632982955139
+CA1 LMR,CA1 Oriens Alveus,i,i,-134.26057765519357,0.1554,-20.86409376761708

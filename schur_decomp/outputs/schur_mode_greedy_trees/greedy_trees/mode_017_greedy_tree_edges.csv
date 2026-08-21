@@ -1,0 +1,4 @@
+component,source,receiver,m_ij,abs_m_ij,source_rank,receiver_rank,source_loading_magnitude,receiver_loading_magnitude,depth
+2,LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,304.0317537911717,304.0317537911717,2,4,0.25774560122827717,0.21966851805191884,1
+3,DG Granule,CA2 Bistratified,22415.841894656765,22415.841894656765,3,6,0.25633740510710873,0.1760872676174658,1
+4,MEC LIII Complex Pyramidal,MEC LV Multipolar Pyramidal,159.8639157558095,159.8639157558095,5,7,0.20679884360163966,0.1702815174980833,1

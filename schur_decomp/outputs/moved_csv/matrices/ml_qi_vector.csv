@@ -1,0 +1,86 @@
+neuron_type,ei,q_i
+CA1 Axo Axonic,i,312.0
+CA1 Back Projection,i,793.0
+CA1 Basket,i,336.0
+CA1 Basket CCK+,i,395.0
+CA1 Bistratified,i,804.0
+CA1 Horizontal Axo Axonic,i,203.0
+CA1 Horizontal Basket,i,333.0
+CA1 Ivy,i,778.0
+CA1 LMR,i,136.0
+CA1 Neurogliaform,i,1114.0
+CA1 Neurogliaform Projecting,i,96.0
+CA1 O LM,i,521.0
+CA1 O LMR,i,574.0
+CA1 OR LM,i,729.0
+CA1 Oriens Alveus,i,607.0
+CA1 Oriens Bistratified,i,340.0
+CA1 Perforant Path Associated,i,463.0
+CA1 Perforant Path Associated QuadD,i,22.0
+CA1 Pyramidal,e,159341.0
+CA1 Quadrilaminar,i,9.0
+CA1 R Receiving Apical Targeting,i,128.0
+CA1 Radial Trilaminar,i,119.0
+CA1 Radiatum,i,93.0
+CA1 Radiatum Giant,e,3984.0
+CA1 Recurrent O LM,i,70.0
+CA1 SO SO,i,313.0
+CA1 Schaffer Collateral Associated,i,986.0
+CA1 Trilaminar,i,401.0
+CA2 Basket,i,43.0
+CA2 Bistratified,i,32.0
+CA2 Pyramidal,e,7772.0
+CA2 SP SR,i,39.0
+CA2 Wide Arbor Basket,i,60.0
+CA3 Axo Axonic,i,139.0
+CA3 Basket,i,114.0
+CA3 Basket CCK+,i,167.0
+CA3 Granule,e,148.0
+CA3 Horizontal Axo Axonic,i,1342.0
+CA3 LMR Targeting,i,1072.0
+CA3 Lucidum ORAX,i,4.0
+CA3 Mossy Fiber Associated,i,182.0
+CA3 Mossy Fiber Associated ORDEN,i,28.0
+CA3 O LM,i,868.0
+CA3 Pyramidal,e,75376.0
+CA3 Spiny Lucidum,i,238.0
+CA3 Trilaminar,i,868.0
+CA3c Pyramidal,e,18090.0
+DG AIPRIM,i,3509.0
+DG Axo Axonic,i,96.0
+DG Basket,i,661.0
+DG Granule,e,394502.0
+DG HICAP,i,342.0
+DG HIPP,i,2462.0
+DG HIPROM,i,4.0
+DG Hilar Ectopic Granule,e,37.0
+DG MOLAX,i,2223.0
+DG MOPP,i,155.0
+DG Mossy,e,10485.0
+DG Neurogliaform,i,246.0
+DG Semilunar Granule,e,67090.0
+DG Total Molecular Layer,i,3275.0
+EC LI II Multipolar Pyramidal,e,78631.0
+EC LI II Pyramidal Fan,e,35595.0
+EC LII III Pyramidal Tripolar,e,17574.0
+EC LIII Pyramidal,e,1713.0
+EC LIII Pyramidal Stellate,e,22784.0
+EC LIII Stellate,e,5016.0
+EC LIII V Bipolar Pyramidal,e,6214.0
+EC LIV VI Deep Multipolar Principal,e,38626.0
+EC LV Deep Pyramidal,e,15589.0
+LEC LIII Complex Pyramidal,e,6933.0
+LEC LIII Multipolar Principal,e,3821.0
+LEC LVI Multipolar Pyramidal,e,3225.0
+MEC LII III Pyramidal Multiform,e,2170.0
+MEC LII Oblique Pyramidal,e,590.0
+MEC LII Stellate,e,4435.0
+MEC LIII Bipolar Complex Pyramidal,e,797.0
+MEC LIII Complex Pyramidal,e,3023.0
+MEC LIII Superficial Multipolar Interneuron,i,986.0
+MEC LIII Superficial Trilayered Interneuron,i,986.0
+MEC LV Multipolar Pyramidal,e,884.0
+MEC LV Pyramidal,e,2911.0
+MEC LV Superficial Pyramidal,e,1701.0
+MEC LV VI Pyramidal Polymorphic,e,6228.0
+SUB CA1 Projecting Pyramidal,e,4770.0

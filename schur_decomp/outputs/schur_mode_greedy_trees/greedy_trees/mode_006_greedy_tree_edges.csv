@@ -1,0 +1,2 @@
+component,source,receiver,m_ij,abs_m_ij,source_rank,receiver_rank,source_loading_magnitude,receiver_loading_magnitude,depth
+4,CA1 R Receiving Apical Targeting,CA1 Neurogliaform,-13.884602675626368,13.884602675626368,4,7,0.30902243022295967,0.17378632282497178,1

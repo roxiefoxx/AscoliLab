@@ -1,0 +1,9 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+CA1 Horizontal Basket,CA1 Radial Trilaminar,i,i,-5525.324154429722,0.12477,-689.3946947481963
+CA1 Horizontal Basket,CA1 Bistratified,i,i,-3748.977590857872,0.08922,-334.4837806563393
+CA1 Bistratified,CA1 Radial Trilaminar,i,i,-2197.37334611808,0.12477,-274.1662723951528
+CA1 Bistratified,CA1 Horizontal Basket,i,i,-1452.32267736713,0.15787,-229.2781810759488
+CA1 Bistratified,CA1 Horizontal Axo Axonic,i,i,-428.2009709291999,0.33807,-144.7619022420346
+CA1 Radial Trilaminar,CA1 Horizontal Basket,i,i,-109.698492552768,0.15787,-17.318101019305484
+CA1 Radial Trilaminar,CA1 Horizontal Axo Axonic,i,i,-35.4899563404414,0.33807,-11.998089540013025
+CA1 Radial Trilaminar,CA1 Bistratified,i,i,-124.860409480548,0.08922,-11.140045733854492

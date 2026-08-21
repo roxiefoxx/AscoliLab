@@ -1,0 +1,8 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+MEC LV Pyramidal,MEC LV Multipolar Pyramidal,e,e,29919.956640000004,0.02214,662.4278400096001
+LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,e,e,6730.83360175275,0.04517,304.0317537911717
+MEC LV Multipolar Pyramidal,MEC LV Pyramidal,e,e,5226.221826025198,0.02214,115.70855122819788
+CA1 Schaffer Collateral Associated,CA1 Axo Axonic,i,i,-1203.580807272546,0.07601,-91.48417716078622
+LEC LIII Multipolar Principal,LEC LVI Multipolar Pyramidal,e,e,817.2360433315584,0.03993,32.632235210229126
+CA1 Neurogliaform,CA1 Axo Axonic,i,i,-416.79829476322806,0.07601,-31.680838384952963
+CA1 Neurogliaform,CA1 Schaffer Collateral Associated,i,i,-336.9988757910745,0.04399,-14.824580546049368

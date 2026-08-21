@@ -1,0 +1,11 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+DG AIPRIM,DG Axo Axonic,i,i,-7725.744949203603,0.27069,-2091.281900299923
+CA1 Perforant Path Associated,CA1 Perforant Path Associated QuadD,i,i,-801.9042632092801,0.33842,-271.3804407552845
+CA1 R Receiving Apical Targeting,CA1 Perforant Path Associated QuadD,i,i,-533.85101662464,0.33842,-180.66586104611068
+CA1 R Receiving Apical Targeting,CA1 Perforant Path Associated,i,i,-258.7916192153601,0.57998,-150.09396331252455
+CA1 OR LM,CA1 Perforant Path Associated QuadD,i,i,-382.390976154825,0.33842,-129.4087541503159
+CA1 OR LM,CA1 Perforant Path Associated,i,i,-188.81570103669003,0.57998,-109.50933028725947
+CA1 Perforant Path Associated,DG Axo Axonic,i,i,-321.1879150621536,0.27069,-86.94235672817435
+CA1 Perforant Path Associated,DG AIPRIM,i,i,-173.00326051548666,0.2501,-43.26811545492321
+CA1 R Receiving Apical Targeting,CA1 OR LM,i,i,-162.529135473024,0.11974,-19.461238681539896
+CA1 Perforant Path Associated QuadD,CA1 Perforant Path Associated,i,i,-28.478401734076805,0.57998,-16.516903437729866

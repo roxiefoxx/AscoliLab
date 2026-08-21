@@ -1,0 +1,2 @@
+component,source,receiver,m_ij,abs_m_ij,source_rank,receiver_rank,source_loading_magnitude,receiver_loading_magnitude,depth
+4,CA3 Trilaminar,CA3 Horizontal Axo Axonic,-61.47187896968008,61.47187896968008,4,5,0.27046837565204973,0.20922664081173936,1

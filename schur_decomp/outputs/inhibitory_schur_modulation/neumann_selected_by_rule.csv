@@ -1,0 +1,5 @@
+rule,selected_order
+contribution_decay,1
+cumulative_energy,0
+spectral_radius,1
+null_significance,12

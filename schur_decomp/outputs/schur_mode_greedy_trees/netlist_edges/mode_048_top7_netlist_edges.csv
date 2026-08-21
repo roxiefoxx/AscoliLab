@@ -1,0 +1,11 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+MEC LV Superficial Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,1553.774689527858,0.07016,109.01283221727452
+EC LV Deep Pyramidal,MEC LV Superficial Pyramidal,e,e,3228.585362122781,0.02214,71.48087991739837
+CA3 LMR Targeting,CA3 Mossy Fiber Associated,i,i,-416.9114405781122,0.10855,-45.25573687475408
+MEC LIII Superficial Trilayered Interneuron,MEC LV Superficial Pyramidal,i,e,-1374.680935466849,0.02214,-30.435435911236038
+MEC LV Superficial Pyramidal,EC LV Deep Pyramidal,e,e,1234.58882990625,0.02214,27.333796694124377
+CA3 Spiny Lucidum,CA3 Mossy Fiber Associated,i,i,-185.92549313675687,0.10855,-20.18221227999496
+MEC LIII Superficial Trilayered Interneuron,EC LV Deep Pyramidal,i,e,-632.1073700203417,0.02214,-13.994857172250365
+CA3 Mossy Fiber Associated,CA3 Spiny Lucidum,i,i,-297.9301048197955,0.03588,-10.689732160934264
+CA3 Mossy Fiber Associated,CA3 LMR Targeting,i,i,-113.66738982144,0.06811,-7.741885920738279
+CA3 Spiny Lucidum,CA3 LMR Targeting,i,i,-72.18101807485812,0.06811,-4.916249141078587

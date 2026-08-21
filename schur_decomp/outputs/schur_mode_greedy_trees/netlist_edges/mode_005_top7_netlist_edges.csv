@@ -1,0 +1,9 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+CA1 Neurogliaform,CA1 Perforant Path Associated,i,i,-372.3887003015007,0.57998,-215.97799840086435
+CA1 Perforant Path Associated,CA1 Neurogliaform,i,i,-1230.7753726347285,0.07081,-87.15120413626512
+CA1 Perforant Path Associated,DG Axo Axonic,i,i,-321.1879150621536,0.27069,-86.94235672817435
+CA1 Perforant Path Associated,CA1 Radial Trilaminar,i,i,-553.4112840278401,0.12477,-69.04912590815361
+CA1 Neurogliaform,CA1 Radial Trilaminar,i,i,-539.1641100552,0.12477,-67.2715060115873
+CA1 Perforant Path Associated,DG HICAP,i,i,-203.48005832836057,0.21477,-43.701412127182
+DG HICAP,DG Axo Axonic,i,i,-67.32888292304713,0.27069,-18.225255318439626
+CA1 Radial Trilaminar,CA1 Perforant Path Associated,i,i,-29.255114009097905,0.57998,-16.9673810229966

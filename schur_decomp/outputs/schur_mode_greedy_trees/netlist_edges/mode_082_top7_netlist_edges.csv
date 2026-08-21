@@ -1,0 +1,8 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+MEC LII III Pyramidal Multiform,EC LIII Pyramidal,e,e,1619.8060070911602,0.05263,85.25039015320776
+CA3 Trilaminar,CA3 Horizontal Axo Axonic,i,i,-785.3823811125601,0.07827,-61.47187896968008
+EC LIII Pyramidal,CA1 Radiatum Giant,e,e,10343.563728771458,0.00183,18.928721623651768
+EC LIII Pyramidal,MEC LII III Pyramidal Multiform,e,e,321.60293311233784,0.05452,17.53379191328466
+CA1 Radiatum Giant,CA1 Oriens Bistratified,e,i,666.6998045368321,0.01811,12.07393346016203
+CA3 Trilaminar,CA1 Oriens Bistratified,i,i,-342.3900395412,0.01811,-6.2006836160911325
+CA3 Trilaminar,CA1 Radiatum Giant,i,e,-313.61632727039995,0.00183,-0.5739178789048319

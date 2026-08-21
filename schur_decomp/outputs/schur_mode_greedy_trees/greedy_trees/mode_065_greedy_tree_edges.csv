@@ -1,0 +1,3 @@
+component,source,receiver,m_ij,abs_m_ij,source_rank,receiver_rank,source_loading_magnitude,receiver_loading_magnitude,depth
+2,DG MOPP,DG Basket,-8.202607806362858,8.202607806362858,2,3,0.2548705294101738,0.2505518556709545,1
+2,DG Basket,DG Total Molecular Layer,-403.2172190261984,403.2172190261984,3,7,0.2505518556709545,0.20526808357436835,2

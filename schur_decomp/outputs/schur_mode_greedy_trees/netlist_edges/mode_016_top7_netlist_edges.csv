@@ -1,0 +1,5 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+SUB CA1 Projecting Pyramidal,CA1 LMR,e,i,1275.4235255785875,0.41516,529.5048308792063
+CA2 Bistratified,CA1 Horizontal Basket,i,i,-32.372136360598,0.15787,-5.110589167247606
+CA3 Mossy Fiber Associated ORDEN,DG HICAP,i,i,-11.243805914376,0.21477,-2.4148321962305337
+CA2 Bistratified,CA1 LMR,i,i,-2.6348048018626558,0.41516,-1.0938655615413

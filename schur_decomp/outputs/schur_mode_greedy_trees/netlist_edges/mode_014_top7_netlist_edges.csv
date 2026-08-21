@@ -1,0 +1,7 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+SUB CA1 Projecting Pyramidal,CA1 Perforant Path Associated QuadD,e,i,8838.111819755519,0.33842,2990.9938020416625
+CA3 Basket,CA3 Mossy Fiber Associated ORDEN,i,i,-9496.35352203238,0.12381,-1175.743529562829
+CA3 Mossy Fiber Associated ORDEN,CA3 Basket,i,i,-148.42525497856002,0.1496,-22.20441814479258
+CA3 Granule,CA3 Basket,e,i,58.49439487262401,0.1496,8.750761472944552
+CA3 Granule,CA3 Mossy Fiber Associated ORDEN,e,i,57.562403784192014,0.12381,7.126801212520814
+CA3 Mossy Fiber Associated ORDEN,DG Axo Axonic,i,i,-8.877043565208002,0.27069,-2.402926922666154

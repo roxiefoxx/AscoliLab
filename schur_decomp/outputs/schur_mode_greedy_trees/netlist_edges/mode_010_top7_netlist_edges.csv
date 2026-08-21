@@ -1,0 +1,15 @@
+pre_neuron,post_neuron,pre_ei,post_ei,w_ij,kappa_j,m_ij
+CA3 Basket,CA3 Mossy Fiber Associated ORDEN,i,i,-9496.35352203238,0.12381,-1175.743529562829
+CA1 Horizontal Basket,CA1 Radial Trilaminar,i,i,-5525.324154429722,0.12477,-689.3946947481963
+CA1 Neurogliaform,CA1 Perforant Path Associated,i,i,-372.3887003015007,0.57998,-215.97799840086435
+CA1 Oriens Alveus,CA1 Horizontal Basket,i,i,-827.7800344077599,0.15787,-130.68163403195305
+CA1 Perforant Path Associated,CA1 Oriens Alveus,i,i,-608.026993246176,0.1554,-94.48739475045576
+CA1 Perforant Path Associated,CA1 Neurogliaform,i,i,-1230.7753726347285,0.07081,-87.15120413626512
+CA1 Perforant Path Associated,CA1 Radial Trilaminar,i,i,-553.4112840278401,0.12477,-69.04912590815361
+CA1 Neurogliaform,CA1 Radial Trilaminar,i,i,-539.1641100552,0.12477,-67.2715060115873
+CA1 Neurogliaform,CA1 Oriens Alveus,i,i,-429.8353025026112,0.1554,-66.79640600890579
+CA1 Oriens Alveus,CA1 Radial Trilaminar,i,i,-440.77331649728,0.12477,-54.99528669936562
+CA3 Mossy Fiber Associated ORDEN,CA3 Basket,i,i,-148.42525497856002,0.1496,-22.20441814479258
+CA1 Radial Trilaminar,CA1 Oriens Alveus,i,i,-127.05505936730876,0.1554,-19.744356225679784
+CA1 Radial Trilaminar,CA1 Horizontal Basket,i,i,-109.698492552768,0.15787,-17.318101019305484
+CA1 Radial Trilaminar,CA1 Perforant Path Associated,i,i,-29.255114009097905,0.57998,-16.9673810229966

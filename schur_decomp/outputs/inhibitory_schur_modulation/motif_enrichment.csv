@@ -1,0 +1,7 @@
+motif,count,null_mean,null_sd,z_score,empirical_p_ge
+E_to_I_to_I_to_E_loop,12468,1694.45,195.4866176411257,55.11144512090378,0.009900990099009901
+disinhibitory_I_to_I_to_E,1956,591.22,49.25209937585699,27.710087839809013,0.009900990099009901
+directed_two_step_chain,28037,28037.0,,,1.0
+divergent_one_source_two_receivers,19285,19285.0,,,1.0
+convergent_two_sources_one_receiver,15879,15879.0,,,1.0
+reciprocal_pair,422,422.0,,,1.0

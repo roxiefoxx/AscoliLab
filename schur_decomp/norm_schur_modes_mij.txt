@@ -1,0 +1,1065 @@
+Identified 59 unique Schur modes.
+Printed order: upstream drivers first, using original Schur indexes n → 1.
+Convention: T[row receiver mode, column source mode].
+================================================================================
+Cascade Step 1 [Schur index 85; paired indexes [np.int64(85)]] | Type = Real | λ = -0.0000 | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0000
+Top incoming source(s): None under upper-triangular Schur ordering
+Top downstream target(s): Cascade Step 57 / Schur 3 (T[3,85] = 0.4431 - 1.2680i) | Cascade Step 59 / Schur 1 (T[1,85] = 1.3258 - 0.0000i) | Cascade Step 54 / Schur 7 (T[7,85] = 0.8454 - 0.0001i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - EC LI II Pyramidal Fan                        | weight =   0.8722 - 0.0000i | energy =  76.1% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =  -0.3091 + 0.0000i | energy =   9.6% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.1553 - 0.0000i | energy =   2.4% | phase = N/A
+  - EC LV Deep Pyramidal                          | weight =   0.1333 - 0.0000i | energy =   1.8% | phase = N/A
+  - MEC LV Pyramidal                              | weight =  -0.1290 + 0.0000i | energy =   1.7% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8722 | energy =  76.1% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =            -0.3091 | energy =   9.6% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =             0.1553 | energy =   2.4% | phase = N/A
+  - EC LV Deep Pyramidal                          | weight =             0.1333 | energy =   1.8% | phase = N/A
+  - MEC LV Pyramidal                              | weight =            -0.1290 | energy =   1.7% | phase = N/A
+================================================================================
+Cascade Step 2 [Schur index 84; paired indexes [np.int64(84)]] | Type = Real | λ = 0.0000 | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0000
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[84,85] = 0.0000 + 0.0000i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,84] = -0.6219 + 0.5646i) | Cascade Step 57 / Schur 3 (T[3,84] = 0.1842 - 0.5769i) | Cascade Step 52 / Schur 9 (T[9,84] = 0.4164 + 0.1621i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LV Pyramidal                              | weight =   0.4492 - 0.0003i | energy =  20.2% | phase = N/A
+  - EC LV Deep Pyramidal                          | weight =  -0.3978 + 0.0002i | energy =  15.8% | phase = N/A
+  - MEC LV Multipolar Pyramidal                   | weight =  -0.2816 + 0.0002i | energy =   7.9% | phase = N/A
+  - DG Neurogliaform                              | weight =  -0.2810 + 0.0002i | energy =   7.9% | phase = N/A
+  - MEC LII Oblique Pyramidal                     | weight =  -0.2798 + 0.0002i | energy =   7.8% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.9002 | energy =  81.0% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =            -0.3658 | energy =  13.4% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =             0.1477 | energy =   2.2% | phase = N/A
+  - EC LIII Pyramidal                             | weight =            -0.1244 | energy =   1.5% | phase = N/A
+  - MEC LII Oblique Pyramidal                     | weight =            -0.0706 | energy =   0.5% | phase = N/A
+================================================================================
+Cascade Step 3 [Schur index 83; paired indexes [np.int64(83)]] | Type = Real | λ = 0.0000 | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0000
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[83,85] = -0.0001 + 0.0001i) | Cascade Step 2 / Schur 84 (T[83,84] = -0.0001 + 0.0000i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,83] = 2.0443 - 0.3453i) | Cascade Step 58 / Schur 2 (T[2,83] = 0.7642 - 0.1531i) | Cascade Step 55 / Schur 6 (T[6,83] = 0.5452 + 0.3260i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Trilaminar                                | weight =   0.4159 + 0.2487i | energy =  23.5% | phase = N/A
+  - EC LIII Pyramidal                             | weight =  -0.2864 - 0.1712i | energy =  11.1% | phase = N/A
+  - CA1 Radiatum Giant                            | weight =   0.2860 + 0.1710i | energy =  11.1% | phase = N/A
+  - CA1 Oriens Bistratified                       | weight =   0.2313 + 0.1383i | energy =   7.3% | phase = N/A
+  - CA3 Horizontal Axo Axonic                     | weight =   0.2261 + 0.1351i | energy =   6.9% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.8982 | energy =  80.7% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =             0.3592 | energy =  12.9% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =            -0.1547 | energy =   2.4% | phase = N/A
+  - EC LIII Pyramidal                             | weight =             0.1344 | energy =   1.8% | phase = N/A
+  - LEC LIII Complex Pyramidal                    | weight =             0.0758 | energy =   0.6% | phase = N/A
+================================================================================
+Cascade Step 4 [Schur index 82; paired indexes [np.int64(82)]] | Type = Real | λ = 0.0000 | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0000
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[82,85] = -0.0001 - 0.0000i) | Cascade Step 2 / Schur 84 (T[82,84] = -0.0000 - 0.0000i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,82] = 0.6329 - 0.0093i) | Cascade Step 57 / Schur 4 (T[4,82] = -0.3855 + 0.4691i) | Cascade Step 58 / Schur 2 (T[2,82] = -0.1402 + 0.1309i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Oriens Bistratified                       | weight =  -0.6744 + 0.0099i | energy =  45.5% | phase = N/A
+  - CA1 O LM                                      | weight =  -0.3114 + 0.0046i | energy =   9.7% | phase = N/A
+  - CA3 Trilaminar                                | weight =   0.2758 - 0.0041i | energy =   7.6% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =   0.2151 - 0.0032i | energy =   4.6% | phase = N/A
+  - EC LIV VI Deep Multipolar Principal           | weight =  -0.1879 + 0.0028i | energy =   3.5% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8796 | energy =  77.4% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =            -0.3932 | energy =  15.5% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =             0.1610 | energy =   2.6% | phase = N/A
+  - EC LIII Pyramidal                             | weight =            -0.1601 | energy =   2.6% | phase = N/A
+  - LEC LIII Complex Pyramidal                    | weight =            -0.0626 | energy =   0.4% | phase = N/A
+================================================================================
+Cascade Step 5 [Schur index 81; paired indexes [np.int64(81)]] | Type = Real | λ = -0.0000 + 0.0000i | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0000 + 0.0000i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[81,85] = 0.0001 - 0.0001i) | Cascade Step 2 / Schur 84 (T[81,84] = 0.0000 - 0.0000i) | Cascade Step 3 / Schur 83 (T[81,83] = 0.0000 - 0.0000i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,81] = -1.6994 - 1.3512i) | Cascade Step 58 / Schur 2 (T[2,81] = 1.3052 + 0.5436i) | Cascade Step 57 / Schur 4 (T[4,81] = -0.0803 + 0.5052i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Oriens Bistratified                       | weight =  -0.3512 - 0.3112i | energy =  22.0% | phase = N/A
+  - CA3 Trilaminar                                | weight =  -0.2724 - 0.2443i | energy =  13.4% | phase = N/A
+  - CA1 Radiatum Giant                            | weight =   0.2552 + 0.2586i | energy =  13.2% | phase = N/A
+  - CA2 Pyramidal                                 | weight =  -0.2428 - 0.2053i | energy =  10.1% | phase = N/A
+  - CA1 O LM                                      | weight =   0.1469 + 0.2408i | energy =   8.0% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8871 | energy =  78.7% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =  -0.3778 + 0.0002i | energy =  14.3% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.1439 + 0.0048i | energy =   2.1% | phase = N/A
+  - EC LIII Pyramidal                             | weight =  -0.1432 - 0.0048i | energy =   2.1% | phase = N/A
+  - MEC LII Oblique Pyramidal                     | weight =  -0.0752 + 0.0178i | energy =   0.6% | phase = N/A
+================================================================================
+Cascade Step 6 [Schur index 80; paired indexes [np.int64(80)]] | Type = Real | λ = -0.0000 - 0.0000i | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0000 - 0.0000i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[80,85] = 0.0000 - 0.0000i) | Cascade Step 3 / Schur 83 (T[80,83] = -0.0000 + 0.0000i) | Cascade Step 2 / Schur 84 (T[80,84] = 0.0000 - 0.0000i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,80] = -1.3707 - 1.8201i) | Cascade Step 57 / Schur 4 (T[4,80] = -1.3227 - 0.9970i) | Cascade Step 59 / Schur 1 (T[1,80] = -0.5785 - 0.2348i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Recurrent O LM                            | weight =  -0.0387 - 0.5324i | energy =  28.5% | phase = N/A
+  - CA1 O LM                                      | weight =   0.0504 - 0.3437i | energy =  12.1% | phase = N/A
+  - DG Semilunar Granule                          | weight =  -0.0116 + 0.3320i | energy =  11.0% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =  -0.0789 - 0.2917i | energy =   9.1% | phase = N/A
+  - CA1 O LMR                                     | weight =  -0.0609 - 0.2162i | energy =   5.0% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8871 | energy =  78.7% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =  -0.3778 - 0.0002i | energy =  14.3% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.1439 - 0.0048i | energy =   2.1% | phase = N/A
+  - EC LIII Pyramidal                             | weight =  -0.1432 + 0.0048i | energy =   2.1% | phase = N/A
+  - MEC LII Oblique Pyramidal                     | weight =  -0.0752 - 0.0178i | energy =   0.6% | phase = N/A
+================================================================================
+Cascade Step 7 [Schur index 79; paired indexes [np.int64(79)]] | Type = Real | λ = 0.0000 | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0000
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[79,85] = 0.0002 - 0.0001i) | Cascade Step 2 / Schur 84 (T[79,84] = 0.0001 - 0.0000i) | Cascade Step 3 / Schur 83 (T[79,83] = 0.0000 + 0.0000i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,79] = 8.1805 - 3.2605i) | Cascade Step 55 / Schur 6 (T[6,79] = 2.1692 + 0.7388i) | Cascade Step 56 / Schur 5 (T[5,79] = 1.8531 + 0.6242i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 O LMR                                     | weight =   0.3628 + 0.1235i | energy =  14.7% | phase = N/A
+  - CA2 Pyramidal                                 | weight =   0.3202 + 0.1090i | energy =  11.4% | phase = N/A
+  - EC LIII Stellate                              | weight =   0.2606 + 0.0887i | energy =   7.6% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =  -0.2530 - 0.0861i | energy =   7.1% | phase = N/A
+  - CA1 Recurrent O LM                            | weight =   0.2381 + 0.0810i | energy =   6.3% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8898 | energy =  79.2% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =            -0.3832 | energy =  14.7% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =             0.1560 | energy =   2.4% | phase = N/A
+  - EC LIII Pyramidal                             | weight =            -0.1420 | energy =   2.0% | phase = N/A
+  - LEC LIII Complex Pyramidal                    | weight =            -0.0614 | energy =   0.4% | phase = N/A
+================================================================================
+Cascade Step 8 [Schur index 78; paired indexes [np.int64(78), np.int64(77)]] | Type = Complex Pair | λ = -0.0000 + 0.0000i | |λ| = 0.0000
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0000 + 0.0000i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[78,85] = -0.0002 - 0.0002i) | Cascade Step 2 / Schur 84 (T[78,84] = -0.0001 - 0.0001i) | Cascade Step 3 / Schur 83 (T[78,83] = -0.0000 - 0.0000i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,78] = -2.4444 + 2.2181i) | Cascade Step 58 / Schur 2 (T[2,78] = -1.0756 + 0.5428i) | Cascade Step 53 / Schur 8 (T[8,78] = 0.6972 - 0.4354i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Radiatum Giant                            | weight =  -0.3244 + 0.2573i | energy =  17.1% | phase = 0.0° (Ref)
+  - EC LII III Pyramidal Tripolar                 | weight =   0.3206 - 0.1564i | energy =  12.7% | phase = -167.6°
+  - EC LIII Pyramidal                             | weight =  -0.3114 + 0.1712i | energy =  12.6% | phase = +9.6°
+  - LEC LIII Complex Pyramidal                    | weight =   0.2699 - 0.1677i | energy =  10.1% | phase = -173.4°
+  - CA1 Oriens Bistratified                       | weight =  -0.2450 + 0.0212i | energy =   6.0% | phase = +33.5°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8731 | energy =  76.2% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.3981 - 0.0719i | energy =  16.4% | phase = -169.8°
+  - EC LIII Pyramidal                             | weight =  -0.1648 - 0.0641i | energy =   3.1% | phase = -158.7°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.1580 + 0.0283i | energy =   2.6% | phase = +10.2°
+  - MEC LII Oblique Pyramidal                     | weight =  -0.0452 + 0.0307i | energy =   0.3% | phase = +145.8°
+================================================================================
+Cascade Step 9 [Schur index 76; paired indexes [np.int64(76)]] | Type = Real | λ = 0.0000 | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0000
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[76,85] = -0.0000 - 0.0002i) | Cascade Step 7 / Schur 79 (T[76,79] = 0.0000 - 0.0000i) | Cascade Step 5 / Schur 81 (T[76,81] = 0.0000 - 0.0000i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,76] = -6.5035 - 9.8581i) | Cascade Step 58 / Schur 2 (T[2,76] = -2.8063 - 4.6647i) | Cascade Step 55 / Schur 6 (T[6,76] = 0.6268 - 3.1716i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Radiatum Giant                            | weight =   0.0786 - 0.3980i | energy =  16.5% | phase = N/A
+  - CA1 O LM                                      | weight =  -0.0719 + 0.3642i | energy =  13.8% | phase = N/A
+  - DG Neurogliaform                              | weight =   0.0650 - 0.3289i | energy =  11.2% | phase = N/A
+  - CA3 Spiny Lucidum                             | weight =   0.0592 - 0.2996i | energy =   9.3% | phase = N/A
+  - CA3c Pyramidal                                | weight =  -0.0420 + 0.2129i | energy =   4.7% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.6049 | energy =  36.6% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =             0.5557 | energy =  30.9% | phase = N/A
+  - EC LIII Pyramidal                             | weight =             0.3190 | energy =  10.2% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =            -0.2530 | energy =   6.4% | phase = N/A
+  - CA3 Trilaminar                                | weight =            -0.1546 | energy =   2.4% | phase = N/A
+================================================================================
+Cascade Step 10 [Schur index 75; paired indexes [np.int64(75), np.int64(74)]] | Type = Complex Pair | λ = 0.0000 - 0.0000i | |λ| = 0.0000
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0000 - 0.0000i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[75,85] = -0.0001 - 0.0002i) | Cascade Step 2 / Schur 84 (T[75,84] = 0.0000 - 0.0001i) | Cascade Step 7 / Schur 79 (T[75,79] = -0.0001 + 0.0000i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,75] = -2.5752 - 7.1738i) | Cascade Step 59 / Schur 1 (T[1,75] = -0.4936 - 3.4132i) | Cascade Step 55 / Schur 6 (T[6,75] = 0.5904 - 2.2809i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Horizontal Axo Axonic                     | weight =   0.3918 + 0.3549i | energy =  27.9% | phase = 0.0° (Ref)
+  - CA2 Pyramidal                                 | weight =  -0.0625 - 0.2967i | energy =   9.2% | phase = -144.1°
+  - CA1 O LMR                                     | weight =   0.0802 + 0.2860i | energy =   8.8% | phase = +32.2°
+  - DG Neurogliaform                              | weight =  -0.0958 + 0.1931i | energy =   4.6% | phase = +74.2°
+  - CA1 Radiatum Giant                            | weight =  -0.1995 - 0.0706i | energy =   4.5% | phase = +157.3°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8371 | energy =  70.1% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.4453 - 0.0127i | energy =  19.8% | phase = -178.4°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.1919 + 0.0099i | energy =   3.7% | phase = +3.0°
+  - EC LIII Pyramidal                             | weight =  -0.1904 + 0.0012i | energy =   3.6% | phase = +179.6°
+  - LEC LIII Complex Pyramidal                    | weight =  -0.0792 - 0.0155i | energy =   0.7% | phase = -168.9°
+================================================================================
+Cascade Step 11 [Schur index 73; paired indexes [np.int64(73)]] | Type = Real | λ = -0.0000 | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0000
+Top incoming source(s): Cascade Step 3 / Schur 83 (T[73,83] = -0.0000 + 0.0001i) | Cascade Step 7 / Schur 79 (T[73,79] = 0.0000 + 0.0001i) | Cascade Step 6 / Schur 80 (T[73,80] = -0.0001 + 0.0000i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,73] = -1.6655 - 4.4983i) | Cascade Step 55 / Schur 6 (T[6,73] = 0.5642 - 1.3401i) | Cascade Step 56 / Schur 5 (T[5,73] = 0.3818 - 0.9154i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA2 SP SR                                     | weight =   0.1980 - 0.4706i | energy =  26.1% | phase = N/A
+  - CA1 Recurrent O LM                            | weight =   0.1291 - 0.3067i | energy =  11.1% | phase = N/A
+  - DG Semilunar Granule                          | weight =   0.1196 - 0.2842i | energy =   9.5% | phase = N/A
+  - CA3 Trilaminar                                | weight =  -0.1049 + 0.2493i | energy =   7.3% | phase = N/A
+  - CA3 Horizontal Axo Axonic                     | weight =   0.0812 - 0.1928i | energy =   4.4% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - MEC LII III Pyramidal Multiform               | weight =             0.6478 | energy =  42.0% | phase = N/A
+  - EC LIII Pyramidal                             | weight =             0.4409 | energy =  19.4% | phase = N/A
+  - EC LI II Pyramidal Fan                        | weight =            -0.4357 | energy =  19.0% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =            -0.2714 | energy =   7.4% | phase = N/A
+  - MEC LII Oblique Pyramidal                     | weight =            -0.1428 | energy =   2.0% | phase = N/A
+================================================================================
+Cascade Step 12 [Schur index 72; paired indexes [np.int64(72)]] | Type = Real | λ = -0.0000 | |λ| = 0.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0000
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[72,85] = 0.0003 - 0.0002i) | Cascade Step 8 / Schur 78 (T[72,78] = -0.0001 + 0.0001i) | Cascade Step 4 / Schur 82 (T[72,82] = 0.0001 - 0.0000i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,72] = 3.1086 - 0.0095i) | Cascade Step 59 / Schur 1 (T[1,72] = 1.5490 + 0.9189i) | Cascade Step 55 / Schur 6 (T[6,72] = 0.8814 + 0.5231i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA2 SP SR                                     | weight =   0.4040 + 0.2397i | energy =  22.1% | phase = N/A
+  - CA1 SO SO                                     | weight =   0.2211 + 0.1312i | energy =   6.6% | phase = N/A
+  - DG Semilunar Granule                          | weight =  -0.2007 - 0.1191i | energy =   5.4% | phase = N/A
+  - CA1 Ivy                                       | weight =  -0.1922 - 0.1140i | energy =   5.0% | phase = N/A
+  - DG HIPP                                       | weight =   0.1882 + 0.1116i | energy =   4.8% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - MEC LII III Pyramidal Multiform               | weight =            -0.6490 | energy =  42.1% | phase = N/A
+  - EC LIII Pyramidal                             | weight =            -0.4559 | energy =  20.8% | phase = N/A
+  - EC LI II Pyramidal Fan                        | weight =             0.4514 | energy =  20.4% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =             0.2648 | energy =   7.0% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =             0.1319 | energy =   1.7% | phase = N/A
+================================================================================
+Cascade Step 13 [Schur index 71; paired indexes [np.int64(71), np.int64(70)]] | Type = Complex Pair | λ = -0.0001 - 0.0000i | |λ| = 0.0001
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0001 - 0.0000i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[71,85] = 0.0006 + 0.0011i) | Cascade Step 8 / Schur 78 (T[71,78] = -0.0003 - 0.0003i) | Cascade Step 7 / Schur 79 (T[71,79] = 0.0001 + 0.0003i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,71] = 2.5470 - 5.1246i) | Cascade Step 57 / Schur 3 (T[3,71] = 3.9732 + 3.3870i) | Cascade Step 58 / Schur 2 (T[2,71] = -0.5499 + 3.8704i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - DG HIPP                                       | weight =   0.4165 + 0.0404i | energy =  17.5% | phase = 0.0° (Ref)
+  - MEC LII Oblique Pyramidal                     | weight =  -0.2303 + 0.2490i | energy =  11.5% | phase = +127.2°
+  - DG MOPP                                       | weight =   0.1949 + 0.2365i | energy =   9.4% | phase = +45.0°
+  - CA1 Ivy                                       | weight =   0.1537 - 0.2110i | energy =   6.8% | phase = -59.5°
+  - CA3 Spiny Lucidum                             | weight =  -0.0429 + 0.2284i | energy =   5.4% | phase = +95.1°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.7748 | energy =  60.0% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.4649 + 0.1300i | energy =  23.3% | phase = +164.4°
+  - EC LIII Pyramidal                             | weight =  -0.2549 + 0.1415i | energy =   8.5% | phase = +151.0°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.1789 - 0.0352i | energy =   3.3% | phase = -11.1°
+  - EC LII III Pyramidal Tripolar                 | weight =   0.0579 - 0.0978i | energy =   1.3% | phase = -59.4°
+================================================================================
+Cascade Step 14 [Schur index 69; paired indexes [np.int64(69)]] | Type = Real | λ = -0.0001 | |λ| = 0.0001
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0001
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[69,85] = 0.0010 - 0.0003i) | Cascade Step 8 / Schur 78 (T[69,78] = -0.0002 + 0.0002i) | Cascade Step 2 / Schur 84 (T[69,84] = 0.0002 - 0.0001i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,69] = 5.2270 - 2.2114i) | Cascade Step 57 / Schur 3 (T[3,69] = 2.3472 - 3.9546i) | Cascade Step 59 / Schur 1 (T[1,69] = -4.0897 - 1.4297i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Trilaminar                                | weight =  -0.3272 - 0.1144i | energy =  12.0% | phase = N/A
+  - DG Neurogliaform                              | weight =  -0.2959 - 0.1035i | energy =   9.8% | phase = N/A
+  - EC LIII Stellate                              | weight =  -0.2715 - 0.0949i | energy =   8.3% | phase = N/A
+  - CA1 O LM                                      | weight =  -0.2407 - 0.0841i | energy =   6.5% | phase = N/A
+  - CA3 Spiny Lucidum                             | weight =  -0.2230 - 0.0780i | energy =   5.6% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.5174 | energy =  26.8% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =             0.4610 | energy =  21.2% | phase = N/A
+  - EC LIII Pyramidal                             | weight =             0.4495 | energy =  20.2% | phase = N/A
+  - CA3 Trilaminar                                | weight =            -0.2698 | energy =   7.3% | phase = N/A
+  - MEC LII Oblique Pyramidal                     | weight =            -0.2477 | energy =   6.1% | phase = N/A
+================================================================================
+Cascade Step 15 [Schur index 68; paired indexes [np.int64(68)]] | Type = Real | λ = 0.0001 | |λ| = 0.0001
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0001
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[68,85] = 0.0003 - 0.0011i) | Cascade Step 7 / Schur 79 (T[68,79] = 0.0002 - 0.0003i) | Cascade Step 9 / Schur 76 (T[68,76] = 0.0003 + 0.0002i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,68] = 2.6384 + 1.8615i) | Cascade Step 58 / Schur 2 (T[2,68] = 0.9075 + 0.5304i) | Cascade Step 56 / Schur 5 (T[5,68] = 0.2563 + 0.8043i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LII Oblique Pyramidal                     | weight =  -0.1377 - 0.4368i | energy =  21.0% | phase = N/A
+  - CA1 Ivy                                       | weight =  -0.1181 - 0.3746i | energy =  15.4% | phase = N/A
+  - CA2 SP SR                                     | weight =  -0.0942 - 0.2989i | energy =   9.8% | phase = N/A
+  - DG Neurogliaform                              | weight =   0.0819 + 0.2599i | energy =   7.4% | phase = N/A
+  - CA1 O LMR                                     | weight =  -0.0705 - 0.2236i | energy =   5.5% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.6678 | energy =  44.6% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =             0.5008 | energy =  25.1% | phase = N/A
+  - CA1 Radiatum Giant                            | weight =             0.2528 | energy =   6.4% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =            -0.2267 | energy =   5.1% | phase = N/A
+  - EC LIII Pyramidal                             | weight =             0.1890 | energy =   3.6% | phase = N/A
+================================================================================
+Cascade Step 16 [Schur index 67; paired indexes [np.int64(67), np.int64(66)]] | Type = Complex Pair | λ = -0.0001 + 0.0001i | |λ| = 0.0001
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0001 + 0.0001i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[67,85] = -0.0010 + 0.0002i) | Cascade Step 8 / Schur 78 (T[67,78] = 0.0003 - 0.0002i) | Cascade Step 2 / Schur 84 (T[67,84] = -0.0002 - 0.0002i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,67] = 1.6420 + 7.3922i) | Cascade Step 58 / Schur 2 (T[2,67] = -0.3669 + 4.5548i) | Cascade Step 59 / Schur 1 (T[1,67] = 1.5764 - 0.8165i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - DG Neurogliaform                              | weight =  -0.3110 + 0.1591i | energy =  12.2% | phase = 0.0° (Ref)
+  - DG MOPP                                       | weight =  -0.2860 + 0.0668i | energy =   8.6% | phase = +13.9°
+  - CA2 Pyramidal                                 | weight =  -0.2454 + 0.1442i | energy =   8.1% | phase = -3.4°
+  - CA1 O LM                                      | weight =  -0.2146 + 0.1531i | energy =   6.9% | phase = -8.4°
+  - CA1 Schaffer Collateral Associated            | weight =  -0.1293 + 0.2178i | energy =   6.4% | phase = -32.2°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8664 | energy =  75.1% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.3508 - 0.0857i | energy =  13.0% | phase = -166.3°
+  - EC LIII Pyramidal                             | weight =  -0.1241 - 0.1382i | energy =   3.5% | phase = -131.9°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.1404 - 0.0021i | energy =   2.0% | phase = -0.9°
+  - LEC LIII Complex Pyramidal                    | weight =  -0.0760 + 0.1076i | energy =   1.7% | phase = +125.2°
+================================================================================
+Cascade Step 17 [Schur index 65; paired indexes [np.int64(65), np.int64(64)]] | Type = Complex Pair | λ = 0.0002 - 0.0001i | |λ| = 0.0002
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0002 - 0.0001i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[65,85] = -0.0006 + 0.0006i) | Cascade Step 8 / Schur 77 (T[65,77] = -0.0000 - 0.0002i) | Cascade Step 6 / Schur 80 (T[65,80] = 0.0002 + 0.0000i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,65] = -13.9585 + 16.9724i) | Cascade Step 58 / Schur 2 (T[2,65] = -2.1357 - 16.0227i) | Cascade Step 57 / Schur 3 (T[3,65] = -5.9683 - 10.9062i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Pyramidal                                 | weight =  -0.3146 + 0.3596i | energy =  22.8% | phase = 0.0° (Ref)
+  - CA3c Pyramidal                                | weight =  -0.1446 + 0.2274i | energy =   7.3% | phase = -8.7°
+  - EC LIV VI Deep Multipolar Principal           | weight =  -0.2199 - 0.0912i | energy =   5.7% | phase = +71.4°
+  - EC LIII Pyramidal Stellate                    | weight =   0.0978 + 0.1892i | energy =   4.5% | phase = -68.5°
+  - CA1 SO SO                                     | weight =   0.2002 + 0.0173i | energy =   4.0% | phase = -126.2°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - MEC LII III Pyramidal Multiform               | weight =            -0.5656 | energy =  32.0% | phase = 0.0° (Ref)
+  - EC LIII Stellate                              | weight =   0.3230 + 0.0931i | energy =  11.3% | phase = -163.9°
+  - EC LI II Pyramidal Fan                        | weight =   0.2249 - 0.2196i | energy =   9.9% | phase = +135.7°
+  - MEC LV Pyramidal                              | weight =  -0.2725 + 0.0092i | energy =   7.4% | phase = -1.9°
+  - EC LIII Pyramidal                             | weight =  -0.2607 + 0.0384i | energy =   6.9% | phase = -8.4°
+================================================================================
+Cascade Step 18 [Schur index 63; paired indexes [np.int64(63), np.int64(62)]] | Type = Complex Pair | λ = -0.0000 - 0.0002i | |λ| = 0.0002
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0000 - 0.0002i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[63,85] = 0.0009 + 0.0023i) | Cascade Step 4 / Schur 82 (T[63,82] = 0.0003 + 0.0006i) | Cascade Step 6 / Schur 80 (T[63,80] = 0.0004 - 0.0002i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,63] = 0.9574 - 10.1148i) | Cascade Step 57 / Schur 4 (T[4,63] = 0.4625 - 9.1994i) | Cascade Step 58 / Schur 2 (T[2,63] = 4.0784 + 3.6018i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - EC LIII Pyramidal Stellate                    | weight =  -0.1191 + 0.3889i | energy =  16.5% | phase = 0.0° (Ref)
+  - CA3 Pyramidal                                 | weight =   0.0964 - 0.3082i | energy =  10.4% | phase = -179.7°
+  - EC LIII Pyramidal                             | weight =   0.1382 - 0.2876i | energy =  10.2% | phase = -171.4°
+  - LEC LIII Complex Pyramidal                    | weight =   0.1623 - 0.1958i | energy =   6.5% | phase = -157.4°
+  - EC LII III Pyramidal Tripolar                 | weight =  -0.1574 + 0.1901i | energy =   6.1% | phase = +22.6°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.8691 | energy =  75.5% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =   0.3397 - 0.0216i | energy =  11.6% | phase = +176.4°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =  -0.1555 - 0.0343i | energy =   2.5% | phase = +12.4°
+  - LEC LIII Complex Pyramidal                    | weight =   0.1278 + 0.0842i | energy =   2.3% | phase = -146.6°
+  - EC LII III Pyramidal Tripolar                 | weight =   0.1028 + 0.0979i | energy =   2.0% | phase = -136.4°
+================================================================================
+Cascade Step 19 [Schur index 61; paired indexes [np.int64(61)]] | Type = Real | λ = 0.0002 | |λ| = 0.0002
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0002
+Top incoming source(s): Cascade Step 5 / Schur 81 (T[61,81] = -0.0004 + 0.0002i) | Cascade Step 1 / Schur 85 (T[61,85] = -0.0001 + 0.0004i) | Cascade Step 8 / Schur 77 (T[61,77] = 0.0001 - 0.0004i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,61] = 1.9918 + 5.5545i) | Cascade Step 58 / Schur 2 (T[2,61] = -4.3981 - 2.3456i) | Cascade Step 57 / Schur 3 (T[3,61] = -4.4532 - 0.1892i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Spiny Lucidum                             | weight =  -0.0946 - 0.2638i | energy =   7.9% | phase = N/A
+  - EC LV Deep Pyramidal                          | weight =  -0.0865 - 0.2413i | energy =   6.6% | phase = N/A
+  - CA1 Quadrilaminar                             | weight =  -0.0850 - 0.2371i | energy =   6.3% | phase = N/A
+  - CA1 O LMR                                     | weight =  -0.0785 - 0.2188i | energy =   5.4% | phase = N/A
+  - DG Basket                                     | weight =  -0.0761 - 0.2123i | energy =   5.1% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - MEC LII III Pyramidal Multiform               | weight =             0.5743 | energy =  33.0% | phase = N/A
+  - EC LI II Pyramidal Fan                        | weight =            -0.5660 | energy =  32.0% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =            -0.2859 | energy =   8.2% | phase = N/A
+  - EC LIII Stellate                              | weight =            -0.2828 | energy =   8.0% | phase = N/A
+  - EC LIII Pyramidal Stellate                    | weight =            -0.2554 | energy =   6.5% | phase = N/A
+================================================================================
+Cascade Step 20 [Schur index 60; paired indexes [np.int64(60), np.int64(59)]] | Type = Complex Pair | λ = 0.0002 - 0.0002i | |λ| = 0.0003
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0002 - 0.0002i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[60,85] = -0.0029 + 0.0004i) | Cascade Step 8 / Schur 78 (T[60,78] = 0.0006 - 0.0004i) | Cascade Step 2 / Schur 84 (T[60,84] = -0.0005 - 0.0003i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,60] = -10.0259 + 2.0174i) | Cascade Step 59 / Schur 1 (T[1,60] = 7.8105 + 3.1252i) | Cascade Step 57 / Schur 3 (T[3,60] = -3.7242 + 7.4723i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LII III Pyramidal Multiform               | weight =   0.2494 + 0.0449i | energy =   6.4% | phase = 0.0° (Ref)
+  - DG Hilar Ectopic Granule                      | weight =   0.2294 + 0.0221i | energy =   5.3% | phase = -4.7°
+  - CA3 Axo Axonic                                | weight =   0.2257 - 0.0348i | energy =   5.2% | phase = -19.0°
+  - MEC LV Pyramidal                              | weight =   0.2007 + 0.0813i | energy =   4.7% | phase = +11.9°
+  - CA3 Mossy Fiber Associated ORDEN              | weight =  -0.1957 + 0.0489i | energy =   4.1% | phase = +155.8°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.7363 | energy =  54.2% | phase = 0.0° (Ref)
+  - MEC LV Pyramidal                              | weight =  -0.2475 + 0.1674i | energy =   8.9% | phase = -34.1°
+  - EC LIV VI Deep Multipolar Principal           | weight =  -0.2411 + 0.0013i | energy =   5.8% | phase = -0.3°
+  - MEC LV Multipolar Pyramidal                   | weight =   0.1859 - 0.1027i | energy =   4.5% | phase = +151.1°
+  - LEC LIII Complex Pyramidal                    | weight =   0.1339 + 0.1318i | energy =   3.5% | phase = -135.4°
+================================================================================
+Cascade Step 21 [Schur index 58; paired indexes [np.int64(58), np.int64(57)]] | Type = Complex Pair | λ = -0.0001 - 0.0003i | |λ| = 0.0003
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0001 - 0.0003i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[58,85] = 0.0015 + 0.0013i) | Cascade Step 2 / Schur 84 (T[58,84] = 0.0008 - 0.0002i) | Cascade Step 17 / Schur 65 (T[58,65] = -0.0007 - 0.0003i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,58] = 2.1607 + 2.7108i) | Cascade Step 58 / Schur 2 (T[2,58] = 3.1209 + 1.1687i) | Cascade Step 59 / Schur 1 (T[1,58] = -0.6845 - 2.7102i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - EC LIII V Bipolar Pyramidal                   | weight =   0.2720 - 0.1887i | energy =  11.0% | phase = 0.0° (Ref)
+  - CA1 Quadrilaminar                             | weight =   0.0288 + 0.2753i | energy =   7.7% | phase = +118.8°
+  - CA1 O LM                                      | weight =   0.2555 - 0.1038i | energy =   7.6% | phase = +12.7°
+  - EC LV Deep Pyramidal                          | weight =  -0.2174 - 0.0006i | energy =   4.7% | phase = -145.1°
+  - CA1 Bistratified                              | weight =   0.0880 - 0.1979i | energy =   4.7% | phase = -31.3°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8616 | energy =  74.2% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.2682 - 0.0279i | energy =   7.3% | phase = -174.1°
+  - EC LII III Pyramidal Tripolar                 | weight =  -0.1376 - 0.1346i | energy =   3.7% | phase = -135.6°
+  - LEC LIII Complex Pyramidal                    | weight =  -0.1717 - 0.0870i | energy =   3.7% | phase = -153.1°
+  - MEC LV Pyramidal                              | weight =  -0.1379 + 0.0018i | energy =   1.9% | phase = +179.2°
+================================================================================
+Cascade Step 22 [Schur index 56; paired indexes [np.int64(56), np.int64(55)]] | Type = Complex Pair | λ = 0.0004 - 0.0001i | |λ| = 0.0004
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0004 - 0.0001i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[56,85] = -0.0040 - 0.0000i) | Cascade Step 2 / Schur 84 (T[56,84] = -0.0027 - 0.0006i) | Cascade Step 17 / Schur 64 (T[56,64] = 0.0014 + 0.0003i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,56] = 6.5109 + 14.1228i) | Cascade Step 58 / Schur 2 (T[2,56] = 3.4709 + 13.6562i) | Cascade Step 59 / Schur 1 (T[1,56] = 3.6414 - 8.8426i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3c Pyramidal                                | weight =   0.1899 - 0.3665i | energy =  17.0% | phase = 0.0° (Ref)
+  - CA1 Bistratified                              | weight =  -0.2733 + 0.2560i | energy =  14.0% | phase = -160.5°
+  - CA3 Spiny Lucidum                             | weight =   0.1434 - 0.2326i | energy =   7.5% | phase = +4.3°
+  - CA1 Radiatum                                  | weight =   0.2294 - 0.1455i | energy =   7.4% | phase = +30.2°
+  - EC LIII V Bipolar Pyramidal                   | weight =   0.1950 - 0.1433i | energy =   5.9% | phase = +26.3°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - MEC LV Pyramidal                              | weight =             0.5195 | energy =  27.0% | phase = 0.0° (Ref)
+  - EC LV Deep Pyramidal                          | weight =  -0.4190 - 0.0197i | energy =  17.6% | phase = -177.3°
+  - EC LIV VI Deep Multipolar Principal           | weight =   0.3983 + 0.0318i | energy =  16.0% | phase = +4.6°
+  - MEC LV Multipolar Pyramidal                   | weight =  -0.3659 - 0.0076i | energy =  13.4% | phase = -178.8°
+  - EC LII III Pyramidal Tripolar                 | weight =   0.2438 + 0.1063i | energy =   7.1% | phase = +23.6°
+================================================================================
+Cascade Step 23 [Schur index 54; paired indexes [np.int64(54)]] | Type = Real | λ = 0.0007 | |λ| = 0.0007
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0007
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[54,85] = -0.0088 - 0.0046i) | Cascade Step 2 / Schur 84 (T[54,84] = -0.0033 - 0.0018i) | Cascade Step 7 / Schur 79 (T[54,79] = 0.0020 + 0.0021i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,54] = -0.9393 + 5.1323i) | Cascade Step 59 / Schur 1 (T[1,54] = 4.5344 - 2.4077i) | Cascade Step 58 / Schur 2 (T[2,54] = -1.7283 + 4.7922i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Axo Axonic                                | weight =  -0.3534 + 0.1876i | energy =  16.0% | phase = N/A
+  - EC LIII V Bipolar Pyramidal                   | weight =  -0.2950 + 0.1566i | energy =  11.2% | phase = N/A
+  - MEC LIII Bipolar Complex Pyramidal            | weight =  -0.2180 + 0.1157i | energy =   6.1% | phase = N/A
+  - CA1 O LMR                                     | weight =   0.2133 - 0.1132i | energy =   5.8% | phase = N/A
+  - CA1 Basket CCK+                               | weight =   0.2067 - 0.1097i | energy =   5.5% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LIV VI Deep Multipolar Principal           | weight =             0.4983 | energy =  24.8% | phase = N/A
+  - EC LV Deep Pyramidal                          | weight =            -0.4667 | energy =  21.8% | phase = N/A
+  - MEC LV Pyramidal                              | weight =             0.4132 | energy =  17.1% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =             0.3186 | energy =  10.2% | phase = N/A
+  - MEC LV Multipolar Pyramidal                   | weight =            -0.3099 | energy =   9.6% | phase = N/A
+================================================================================
+Cascade Step 24 [Schur index 53; paired indexes [np.int64(53), np.int64(52)]] | Type = Complex Pair | λ = -0.0007 - 0.0004i | |λ| = 0.0008
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0007 - 0.0004i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[53,85] = -0.0017 + 0.0149i) | Cascade Step 2 / Schur 84 (T[53,84] = -0.0003 + 0.0057i) | Cascade Step 7 / Schur 79 (T[53,79] = 0.0018 - 0.0038i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,53] = -1.0025 - 1.0908i) | Cascade Step 59 / Schur 1 (T[1,53] = -0.6721 + 0.5858i) | Cascade Step 58 / Schur 2 (T[2,53] = -0.3934 - 0.4922i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LII III Pyramidal Multiform               | weight =   0.0195 + 0.3019i | energy =   9.2% | phase = 0.0° (Ref)
+  - MEC LIII Bipolar Complex Pyramidal            | weight =  -0.0521 - 0.2959i | energy =   9.0% | phase = +173.7°
+  - EC LIII Pyramidal                             | weight =  -0.0230 - 0.2754i | energy =   7.6% | phase = +178.9°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =  -0.0064 + 0.2659i | energy =   7.1% | phase = +5.1°
+  - CA1 Axo Axonic                                | weight =  -0.1218 + 0.2252i | energy =   6.6% | phase = +32.1°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.8963 | energy =  80.3% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =   0.1710 + 0.1279i | energy =   4.6% | phase = -143.2°
+  - LEC LIII Complex Pyramidal                    | weight =   0.1687 - 0.0289i | energy =   2.9% | phase = +170.3°
+  - EC LII III Pyramidal Tripolar                 | weight =   0.1369 + 0.0389i | energy =   2.0% | phase = -164.1°
+  - MEC LV Pyramidal                              | weight =   0.0928 - 0.0937i | energy =   1.7% | phase = +134.7°
+================================================================================
+Cascade Step 25 [Schur index 51; paired indexes [np.int64(51)]] | Type = Real | λ = -0.0011 | |λ| = 0.0011
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0011
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[51,85] = -0.0105 - 0.0022i) | Cascade Step 2 / Schur 84 (T[51,84] = -0.0029 - 0.0006i) | Cascade Step 14 / Schur 69 (T[51,69] = 0.0014 + 0.0008i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,51] = -3.4203 + 7.1013i) | Cascade Step 58 / Schur 2 (T[2,51] = -4.2198 + 5.8142i) | Cascade Step 59 / Schur 1 (T[1,51] = 3.6824 - 0.7712i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LV Superficial Pyramidal                  | weight =   0.5166 - 0.1082i | energy =  27.9% | phase = N/A
+  - CA3 Spiny Lucidum                             | weight =  -0.3203 + 0.0671i | energy =  10.7% | phase = N/A
+  - CA3 Mossy Fiber Associated                    | weight =  -0.2662 + 0.0557i | energy =   7.4% | phase = N/A
+  - CA1 Neurogliaform Projecting                  | weight =  -0.2536 + 0.0531i | energy =   6.7% | phase = N/A
+  - CA3 LMR Targeting                             | weight =   0.2388 - 0.0500i | energy =   6.0% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.8547 | energy =  73.0% | phase = N/A
+  - LEC LIII Complex Pyramidal                    | weight =             0.1912 | energy =   3.7% | phase = N/A
+  - DG Semilunar Granule                          | weight =            -0.1726 | energy =   3.0% | phase = N/A
+  - CA3c Pyramidal                                | weight =             0.1725 | energy =   3.0% | phase = N/A
+  - EC LIV VI Deep Multipolar Principal           | weight =            -0.1654 | energy =   2.7% | phase = N/A
+================================================================================
+Cascade Step 26 [Schur index 50; paired indexes [np.int64(50)]] | Type = Real | λ = 0.0010 | |λ| = 0.0010
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0010
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[50,85] = 0.0004 - 0.0114i) | Cascade Step 2 / Schur 84 (T[50,84] = 0.0002 - 0.0068i) | Cascade Step 18 / Schur 63 (T[50,63] = -0.0036 - 0.0014i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,50] = 1.2687 + 1.3032i) | Cascade Step 59 / Schur 1 (T[1,50] = -0.0173 - 0.4887i) | Cascade Step 53 / Schur 8 (T[8,50] = 0.2004 + 0.3102i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.0112 + 0.3172i | energy =  10.1% | phase = N/A
+  - DG Hilar Ectopic Granule                      | weight =   0.0109 + 0.3081i | energy =   9.5% | phase = N/A
+  - DG Basket                                     | weight =  -0.0104 - 0.2931i | energy =   8.6% | phase = N/A
+  - CA1 OR LM                                     | weight =   0.0080 + 0.2263i | energy =   5.1% | phase = N/A
+  - MEC LV Pyramidal                              | weight =  -0.0077 - 0.2177i | energy =   4.7% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.6283 | energy =  39.5% | phase = N/A
+  - EC LIV VI Deep Multipolar Principal           | weight =            -0.3670 | energy =  13.5% | phase = N/A
+  - EC LV Deep Pyramidal                          | weight =             0.3637 | energy =  13.2% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =            -0.3134 | energy =   9.8% | phase = N/A
+  - EC LIII Pyramidal Stellate                    | weight =             0.1981 | energy =   3.9% | phase = N/A
+================================================================================
+Cascade Step 27 [Schur index 49; paired indexes [np.int64(49), np.int64(48)]] | Type = Complex Pair | λ = -0.0009 - 0.0008i | |λ| = 0.0012
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0009 - 0.0008i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[49,85] = 0.0076 - 0.0036i) | Cascade Step 2 / Schur 84 (T[49,84] = 0.0013 - 0.0022i) | Cascade Step 17 / Schur 65 (T[49,65] = 0.0023 - 0.0008i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,49] = -0.5019 + 5.7470i) | Cascade Step 58 / Schur 2 (T[2,49] = -0.6829 + 4.7182i) | Cascade Step 59 / Schur 1 (T[1,49] = 1.8988 - 1.5257i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LV Superficial Pyramidal                  | weight =  -0.3984 + 0.3016i | energy =  25.0% | phase = 0.0° (Ref)
+  - CA1 Horizontal Axo Axonic                     | weight =  -0.1037 - 0.1896i | energy =   4.7% | phase = +98.5°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =  -0.0925 + 0.1830i | energy =   4.2% | phase = -26.1°
+  - CA3 Spiny Lucidum                             | weight =  -0.1722 + 0.0869i | energy =   3.7% | phase = +10.4°
+  - CA3 LMR Targeting                             | weight =   0.1749 - 0.0554i | energy =   3.4% | phase = -160.4°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.9131 | energy =  83.4% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.1081 - 0.1881i | energy =   4.7% | phase = -119.9°
+  - EC LIII Stellate                              | weight =   0.0904 + 0.1267i | energy =   2.4% | phase = +54.5°
+  - LEC LIII Complex Pyramidal                    | weight =  -0.1399 + 0.0217i | energy =   2.0% | phase = +171.2°
+  - LEC LIII Multipolar Principal                 | weight =   0.1189 + 0.0054i | energy =   1.4% | phase = +2.6°
+================================================================================
+Cascade Step 28 [Schur index 47; paired indexes [np.int64(47)]] | Type = Real | λ = -0.0013 | |λ| = 0.0013
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0013
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[47,85] = 0.0077 + 0.0007i) | Cascade Step 4 / Schur 82 (T[47,82] = 0.0017 + 0.0001i) | Cascade Step 8 / Schur 78 (T[47,78] = -0.0015 + 0.0004i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,47] = -3.7265 + 5.4829i) | Cascade Step 59 / Schur 1 (T[1,47] = 4.4666 - 0.4090i) | Cascade Step 58 / Schur 2 (T[2,47] = -2.9496 + 3.2114i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA2 Wide Arbor Basket                         | weight =  -0.4199 + 0.0384i | energy =  17.8% | phase = N/A
+  - CA1 Axo Axonic                                | weight =   0.2884 - 0.0264i | energy =   8.4% | phase = N/A
+  - CA1 Schaffer Collateral Associated            | weight =   0.2841 - 0.0260i | energy =   8.1% | phase = N/A
+  - CA1 Basket                                    | weight =  -0.2267 + 0.0208i | energy =   5.2% | phase = N/A
+  - CA1 Ivy                                       | weight =  -0.2249 + 0.0206i | energy =   5.1% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.5568 | energy =  31.0% | phase = N/A
+  - EC LIII Pyramidal Stellate                    | weight =             0.3923 | energy =  15.4% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =             0.3467 | energy =  12.0% | phase = N/A
+  - MEC LV Pyramidal                              | weight =            -0.3217 | energy =  10.3% | phase = N/A
+  - EC LV Deep Pyramidal                          | weight =             0.2796 | energy =   7.8% | phase = N/A
+================================================================================
+Cascade Step 29 [Schur index 46; paired indexes [np.int64(46)]] | Type = Real | λ = -0.0016 | |λ| = 0.0016
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0016
+Top incoming source(s): Cascade Step 6 / Schur 80 (T[46,80] = 0.0006 + 0.0058i) | Cascade Step 17 / Schur 64 (T[46,64] = 0.0052 - 0.0010i) | Cascade Step 7 / Schur 79 (T[46,79] = 0.0041 + 0.0017i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,46] = -2.1574 + 2.1683i) | Cascade Step 57 / Schur 4 (T[4,46] = -1.3606 + 1.9947i) | Cascade Step 59 / Schur 1 (T[1,46] = -0.5394 + 0.0277i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Basket                                    | weight =   0.4867 - 0.0250i | energy =  23.7% | phase = N/A
+  - CA1 Pyramidal                                 | weight =  -0.3204 + 0.0165i | energy =  10.3% | phase = N/A
+  - CA1 Basket CCK+                               | weight =  -0.2870 + 0.0147i | energy =   8.3% | phase = N/A
+  - CA2 Wide Arbor Basket                         | weight =  -0.2355 + 0.0121i | energy =   5.6% | phase = N/A
+  - CA1 Neurogliaform                             | weight =   0.2228 - 0.0115i | energy =   5.0% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.6703 | energy =  44.9% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =            -0.4142 | energy =  17.2% | phase = N/A
+  - MEC LV Superficial Pyramidal                  | weight =             0.2996 | energy =   9.0% | phase = N/A
+  - LEC LIII Complex Pyramidal                    | weight =             0.2871 | energy =   8.2% | phase = N/A
+  - EC LIII Pyramidal Stellate                    | weight =            -0.2304 | energy =   5.3% | phase = N/A
+================================================================================
+Cascade Step 30 [Schur index 45; paired indexes [np.int64(45), np.int64(44)]] | Type = Complex Pair | λ = 0.0017 - 0.0003i | |λ| = 0.0018
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0017 - 0.0003i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[45,85] = 0.0003 - 0.0095i) | Cascade Step 8 / Schur 78 (T[45,78] = -0.0049 + 0.0039i) | Cascade Step 2 / Schur 84 (T[45,84] = -0.0059 + 0.0000i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,45] = 3.4744 - 0.4497i) | Cascade Step 59 / Schur 1 (T[1,45] = 1.2499 + 1.9943i) | Cascade Step 57 / Schur 3 (T[3,45] = 0.9690 - 1.0295i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LIII Bipolar Complex Pyramidal            | weight =   0.1846 + 0.4217i | energy =  21.2% | phase = 0.0° (Ref)
+  - CA1 Horizontal Axo Axonic                     | weight =   0.2087 + 0.3159i | energy =  14.3% | phase = -9.8°
+  - EC LI II Multipolar Pyramidal                 | weight =   0.1917 + 0.1847i | energy =   7.1% | phase = -22.4°
+  - LEC LVI Multipolar Pyramidal                  | weight =   0.2170 + 0.1329i | energy =   6.5% | phase = -34.9°
+  - CA1 SO SO                                     | weight =  -0.1676 - 0.1462i | energy =   4.9% | phase = +154.7°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8789 | energy =  77.2% | phase = 0.0° (Ref)
+  - EC LIII Pyramidal Stellate                    | weight =  -0.2694 - 0.1800i | energy =  10.5% | phase = -146.3°
+  - EC LV Deep Pyramidal                          | weight =  -0.1182 + 0.1066i | energy =   2.5% | phase = +137.9°
+  - LEC LIII Complex Pyramidal                    | weight =   0.0628 + 0.1192i | energy =   1.8% | phase = +62.2°
+  - EC LIII Stellate                              | weight =  -0.1097 - 0.0361i | energy =   1.3% | phase = -161.8°
+================================================================================
+Cascade Step 31 [Schur index 43; paired indexes [np.int64(43), np.int64(42)]] | Type = Complex Pair | λ = -0.0002 - 0.0017i | |λ| = 0.0017
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0002 - 0.0017i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[43,85] = 0.0068 + 0.0107i) | Cascade Step 6 / Schur 80 (T[43,80] = -0.0025 - 0.0091i) | Cascade Step 7 / Schur 79 (T[43,79] = -0.0072 - 0.0016i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,43] = 1.4327 - 0.6663i) | Cascade Step 59 / Schur 1 (T[1,43] = 1.1369 + 0.7045i) | Cascade Step 57 / Schur 3 (T[3,43] = 0.8956 - 0.8588i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Pyramidal                                 | weight =  -0.3964 + 0.0448i | energy =  15.9% | phase = 0.0° (Ref)
+  - MEC LV Multipolar Pyramidal                   | weight =   0.3115 + 0.0651i | energy =  10.1% | phase = -161.7°
+  - CA1 Schaffer Collateral Associated            | weight =  -0.2405 - 0.1281i | energy =   7.4% | phase = +34.5°
+  - LEC LVI Multipolar Pyramidal                  | weight =  -0.2203 - 0.0463i | energy =   5.1% | phase = +18.3°
+  - CA1 Axo Axonic                                | weight =   0.2081 - 0.0782i | energy =   4.9% | phase = +165.9°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8310 | energy =  69.1% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.2521 - 0.3344i | energy =  17.5% | phase = -127.0°
+  - EC LIII Stellate                              | weight =   0.1333 + 0.0833i | energy =   2.5% | phase = +32.0°
+  - LEC LIII Complex Pyramidal                    | weight =  -0.1205 - 0.0129i | energy =   1.5% | phase = -173.9°
+  - LEC LIII Multipolar Principal                 | weight =   0.1119 - 0.0351i | energy =   1.4% | phase = -17.4°
+================================================================================
+Cascade Step 32 [Schur index 41; paired indexes [np.int64(41)]] | Type = Real | λ = -0.0020 | |λ| = 0.0020
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0020
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[41,85] = -0.0004 + 0.0230i) | Cascade Step 2 / Schur 84 (T[41,84] = -0.0002 + 0.0089i) | Cascade Step 3 / Schur 83 (T[41,83] = 0.0030 - 0.0048i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,41] = 0.0451 + 2.5053i) | Cascade Step 58 / Schur 2 (T[2,41] = -1.3675 - 1.4546i) | Cascade Step 57 / Schur 4 (T[4,41] = -0.7183 - 0.6523i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Mossy Fiber Associated                    | weight =  -0.0064 - 0.3577i | energy =  12.8% | phase = N/A
+  - LEC LIII Multipolar Principal                 | weight =  -0.0052 - 0.2916i | energy =   8.5% | phase = N/A
+  - MEC LIII Complex Pyramidal                    | weight =   0.0052 + 0.2868i | energy =   8.2% | phase = N/A
+  - CA3 O LM                                      | weight =   0.0050 + 0.2804i | energy =   7.9% | phase = N/A
+  - EC LIII Stellate                              | weight =   0.0043 + 0.2385i | energy =   5.7% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.5502 | energy =  30.3% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =            -0.4758 | energy =  22.6% | phase = N/A
+  - EC LIII Pyramidal Stellate                    | weight =            -0.3346 | energy =  11.2% | phase = N/A
+  - MEC LV Superficial Pyramidal                  | weight =             0.2889 | energy =   8.3% | phase = N/A
+  - EC LIII Stellate                              | weight =             0.2732 | energy =   7.5% | phase = N/A
+================================================================================
+Cascade Step 33 [Schur index 40; paired indexes [np.int64(40)]] | Type = Real | λ = 0.0026 | |λ| = 0.0026
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0026
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[40,85] = -0.0079 - 0.0010i) | Cascade Step 26 / Schur 50 (T[40,50] = -0.0007 + 0.0074i) | Cascade Step 24 / Schur 53 (T[40,53] = 0.0000 + 0.0067i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,40] = 1.0082 - 0.9741i) | Cascade Step 59 / Schur 1 (T[1,40] = -1.2857 + 0.1652i) | Cascade Step 58 / Schur 2 (T[2,40] = 0.2411 - 0.2825i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Schaffer Collateral Associated            | weight =   0.3190 - 0.0410i | energy =  10.3% | phase = N/A
+  - LEC LVI Multipolar Pyramidal                  | weight =  -0.3187 + 0.0410i | energy =  10.3% | phase = N/A
+  - CA1 Neurogliaform                             | weight =   0.2905 - 0.0373i | energy =   8.6% | phase = N/A
+  - LEC LIII Multipolar Principal                 | weight =   0.2586 - 0.0332i | energy =   6.8% | phase = N/A
+  - CA1 Axo Axonic                                | weight =  -0.2572 + 0.0330i | energy =   6.7% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.7005 | energy =  49.1% | phase = N/A
+  - EC LIII Pyramidal Stellate                    | weight =            -0.5791 | energy =  33.5% | phase = N/A
+  - LEC LIII Complex Pyramidal                    | weight =             0.2110 | energy =   4.5% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =             0.1946 | energy =   3.8% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =            -0.1343 | energy =   1.8% | phase = N/A
+================================================================================
+Cascade Step 34 [Schur index 39; paired indexes [np.int64(39), np.int64(38)]] | Type = Complex Pair | λ = 0.0006 - 0.0027i | |λ| = 0.0028
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0006 - 0.0027i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[39,85] = -0.0107 - 0.0265i) | Cascade Step 2 / Schur 84 (T[39,84] = -0.0046 - 0.0150i) | Cascade Step 6 / Schur 80 (T[39,80] = -0.0071 + 0.0044i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,39] = -1.9687 + 1.6712i) | Cascade Step 58 / Schur 2 (T[2,39] = 1.0843 - 1.1224i) | Cascade Step 57 / Schur 4 (T[4,39] = 0.9028 - 0.4227i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Pyramidal                                 | weight =  -0.3048 + 0.1872i | energy =  12.8% | phase = 0.0° (Ref)
+  - CA1 Back Projection                           | weight =  -0.2364 - 0.2375i | energy =  11.2% | phase = +76.7°
+  - MEC LIII Complex Pyramidal                    | weight =   0.1699 - 0.2251i | energy =   8.0% | phase = +158.6°
+  - CA1 OR LM                                     | weight =   0.2204 - 0.0836i | energy =   5.6% | phase = -169.2°
+  - EC LIV VI Deep Multipolar Principal           | weight =  -0.1035 + 0.2061i | energy =   5.3% | phase = -31.8°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.6396 | energy =  40.9% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.5863 - 0.1288i | energy =  36.0% | phase = -167.6°
+  - EC LV Deep Pyramidal                          | weight =  -0.1146 - 0.1468i | energy =   3.5% | phase = -128.0°
+  - LEC LIII Complex Pyramidal                    | weight =  -0.0888 + 0.1433i | energy =   2.8% | phase = +121.8°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.0002 + 0.1487i | energy =   2.2% | phase = +89.9°
+================================================================================
+Cascade Step 35 [Schur index 37; paired indexes [np.int64(37), np.int64(36)]] | Type = Complex Pair | λ = -0.0035 - 0.0022i | |λ| = 0.0042
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0035 - 0.0022i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[37,85] = 0.0129 - 0.0105i) | Cascade Step 2 / Schur 84 (T[37,84] = 0.0049 - 0.0051i) | Cascade Step 17 / Schur 64 (T[37,64] = 0.0022 - 0.0055i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,37] = -3.6407 - 0.6073i) | Cascade Step 57 / Schur 3 (T[3,37] = -1.7484 - 0.0721i) | Cascade Step 59 / Schur 1 (T[1,37] = -0.9271 - 1.1825i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - LEC LIII Multipolar Principal                 | weight =   0.2036 + 0.3259i | energy =  14.8% | phase = 0.0° (Ref)
+  - CA3 O LM                                      | weight =   0.0655 + 0.2683i | energy =   7.6% | phase = +18.3°
+  - EC LI II Multipolar Pyramidal                 | weight =  -0.1480 - 0.2060i | energy =   6.4% | phase = +176.3°
+  - MEC LII Stellate                              | weight =   0.1403 + 0.1604i | energy =   4.5% | phase = -9.2°
+  - CA1 Back Projection                           | weight =  -0.0495 - 0.2046i | energy =   4.4% | phase = -161.6°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.9452 | energy =  89.3% | phase = 0.0° (Ref)
+  - EC LII III Pyramidal Tripolar                 | weight =   0.1688 + 0.0475i | energy =   3.1% | phase = -164.3°
+  - MEC LV Pyramidal                              | weight =   0.0868 + 0.0725i | energy =   1.3% | phase = -140.1°
+  - LEC LIII Complex Pyramidal                    | weight =   0.0588 + 0.0593i | energy =   0.7% | phase = -134.8°
+  - LEC LIII Multipolar Principal                 | weight =  -0.0676 - 0.0371i | energy =   0.6% | phase = +28.7°
+================================================================================
+Cascade Step 36 [Schur index 35; paired indexes [np.int64(35)]] | Type = Real | λ = 0.0042 | |λ| = 0.0042
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0042
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[35,85] = -0.0029 - 0.0203i) | Cascade Step 6 / Schur 80 (T[35,80] = -0.0158 + 0.0043i) | Cascade Step 8 / Schur 77 (T[35,77] = 0.0085 + 0.0127i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,35] = -0.1486 + 1.0284i) | Cascade Step 57 / Schur 4 (T[4,35] = -0.2545 - 0.5036i) | Cascade Step 58 / Schur 2 (T[2,35] = 0.1376 + 0.2041i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Basket CCK+                               | weight =  -0.0663 + 0.4592i | energy =  21.5% | phase = N/A
+  - CA3 O LM                                      | weight =  -0.0491 + 0.3399i | energy =  11.8% | phase = N/A
+  - CA3 Basket                                    | weight =   0.0417 - 0.2884i | energy =   8.5% | phase = N/A
+  - DG HIPROM                                     | weight =   0.0329 - 0.2281i | energy =   5.3% | phase = N/A
+  - CA3 Lucidum ORAX                              | weight =   0.0327 - 0.2263i | energy =   5.2% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.9272 | energy =  86.0% | phase = N/A
+  - MEC LIII Bipolar Complex Pyramidal            | weight =            -0.1984 | energy =   3.9% | phase = N/A
+  - MEC LII Oblique Pyramidal                     | weight =            -0.1352 | energy =   1.8% | phase = N/A
+  - LEC LIII Complex Pyramidal                    | weight =             0.1258 | energy =   1.6% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =             0.1214 | energy =   1.5% | phase = N/A
+================================================================================
+Cascade Step 37 [Schur index 34; paired indexes [np.int64(34), np.int64(31)]] | Type = Complex Pair | λ = -0.0038 - 0.0041i | |λ| = 0.0056
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0038 - 0.0041i
+Top incoming source(s): Cascade Step 17 / Schur 64 (T[34,64] = 0.0130 + 0.0216i) | Cascade Step 1 / Schur 85 (T[34,85] = -0.0134 - 0.0183i) | Cascade Step 6 / Schur 80 (T[34,80] = -0.0128 + 0.0107i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,34] = 0.3366 + 4.1073i) | Cascade Step 57 / Schur 4 (T[4,34] = 3.0915 + 1.5611i) | Cascade Step 59 / Schur 1 (T[1,34] = -1.9213 + 0.9246i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Axo Axonic                                | weight =  -0.0294 + 0.3339i | energy =  11.2% | phase = 0.0° (Ref)
+  - CA3 Basket CCK+                               | weight =  -0.1856 - 0.2601i | energy =  10.2% | phase = +139.5°
+  - CA1 Bistratified                              | weight =   0.2905 - 0.0531i | energy =   8.7% | phase = -105.4°
+  - CA1 Radiatum                                  | weight =   0.2909 - 0.0433i | energy =   8.6% | phase = -103.5°
+  - EC LI II Multipolar Pyramidal                 | weight =  -0.2204 + 0.1310i | energy =   6.6% | phase = +54.2°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8810 | energy =  77.6% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =   0.2029 + 0.0234i | energy =   4.2% | phase = +6.6°
+  - EC LII III Pyramidal Tripolar                 | weight =  -0.1554 - 0.1056i | energy =   3.5% | phase = -145.8°
+  - MEC LV Pyramidal                              | weight =  -0.1056 - 0.1203i | energy =   2.6% | phase = -131.3°
+  - DG Semilunar Granule                          | weight =  -0.1155 + 0.0992i | energy =   2.3% | phase = +139.3°
+================================================================================
+Cascade Step 38 [Schur index 33; paired indexes [np.int64(33), np.int64(32)]] | Type = Complex Pair | λ = 0.0014 - 0.0051i | |λ| = 0.0053
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0014 - 0.0051i
+Top incoming source(s): Cascade Step 8 / Schur 77 (T[33,77] = -0.0232 + 0.0157i) | Cascade Step 6 / Schur 80 (T[33,80] = -0.0004 - 0.0261i) | Cascade Step 1 / Schur 85 (T[33,85] = 0.0089 + 0.0161i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,33] = 1.5442 - 1.8432i) | Cascade Step 57 / Schur 4 (T[4,33] = 0.9891 + 1.9802i) | Cascade Step 56 / Schur 5 (T[5,33] = -0.2590 + 0.3894i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - DG Mossy                                      | weight =   0.3208 - 0.1957i | energy =  14.1% | phase = 0.0° (Ref)
+  - CA1 Neurogliaform Projecting                  | weight =  -0.2198 + 0.2882i | energy =  13.1% | phase = +158.7°
+  - DG Basket                                     | weight =  -0.0961 + 0.3104i | energy =  10.6% | phase = +138.6°
+  - DG MOLAX                                      | weight =   0.1076 - 0.2306i | energy =   6.5% | phase = -33.6°
+  - DG HIPROM                                     | weight =   0.2460 + 0.0647i | energy =   6.5% | phase = +46.1°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.8550 | energy =  73.1% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =  -0.3633 + 0.0658i | energy =  13.6% | phase = +169.7°
+  - MEC LV Pyramidal                              | weight =   0.1469 - 0.0979i | energy =   3.1% | phase = -33.7°
+  - DG Semilunar Granule                          | weight =   0.1207 + 0.1118i | energy =   2.7% | phase = +42.8°
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.0556 + 0.0886i | energy =   1.1% | phase = +57.9°
+================================================================================
+Cascade Step 39 [Schur index 30; paired indexes [np.int64(30), np.int64(29)]] | Type = Complex Pair | λ = 0.0068 - 0.0041i | |λ| = 0.0080
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0068 - 0.0041i
+Top incoming source(s): Cascade Step 17 / Schur 64 (T[30,64] = -0.0248 - 0.0086i) | Cascade Step 8 / Schur 77 (T[30,77] = -0.0180 + 0.0180i) | Cascade Step 18 / Schur 63 (T[30,63] = -0.0144 - 0.0178i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,30] = 4.7371 - 0.1466i) | Cascade Step 58 / Schur 2 (T[2,30] = 2.7274 - 1.1949i) | Cascade Step 57 / Schur 3 (T[3,30] = 1.2735 - 0.3130i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - EC LI II Multipolar Pyramidal                 | weight =   0.3676 + 0.0492i | energy =  13.8% | phase = 0.0° (Ref)
+  - LEC LIII Multipolar Principal                 | weight =   0.3014 + 0.1023i | energy =  10.1% | phase = +11.1°
+  - MEC LV Multipolar Pyramidal                   | weight =  -0.2897 - 0.0730i | energy =   8.9% | phase = -173.5°
+  - DG Total Molecular Layer                      | weight =   0.2494 + 0.0562i | energy =   6.5% | phase = +5.1°
+  - CA3 Axo Axonic                                | weight =  -0.2201 - 0.0054i | energy =   4.8% | phase = +173.8°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.6444 | energy =  41.5% | phase = 0.0° (Ref)
+  - EC LIII Pyramidal Stellate                    | weight =  -0.4038 - 0.1531i | energy =  18.7% | phase = -159.2°
+  - MEC LIII Bipolar Complex Pyramidal            | weight =   0.2650 + 0.0568i | energy =   7.3% | phase = +12.1°
+  - MEC LII III Pyramidal Multiform               | weight =   0.0654 - 0.2257i | energy =   5.5% | phase = -73.8°
+  - MEC LII Oblique Pyramidal                     | weight =   0.1834 + 0.0439i | energy =   3.6% | phase = +13.5°
+================================================================================
+Cascade Step 40 [Schur index 28; paired indexes [np.int64(28)]] | Type = Real | λ = -0.0087 | |λ| = 0.0087
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0087
+Top incoming source(s): Cascade Step 8 / Schur 77 (T[28,77] = -0.0541 + 0.0213i) | Cascade Step 1 / Schur 85 (T[28,85] = -0.0434 + 0.0087i) | Cascade Step 34 / Schur 39 (T[28,39] = -0.0146 + 0.0337i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,28] = -2.5107 - 0.5044i) | Cascade Step 57 / Schur 4 (T[4,28] = 0.8534 - 0.2630i) | Cascade Step 58 / Schur 2 (T[2,28] = 0.6938 - 0.4143i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Radial Trilaminar                         | weight =   0.5024 + 0.1009i | energy =  26.3% | phase = N/A
+  - CA1 Horizontal Basket                         | weight =  -0.3628 - 0.0729i | energy =  13.7% | phase = N/A
+  - LEC LVI Multipolar Pyramidal                  | weight =   0.2332 + 0.0468i | energy =   5.7% | phase = N/A
+  - CA1 Bistratified                              | weight =   0.2196 + 0.0441i | energy =   5.0% | phase = N/A
+  - CA3 Lucidum ORAX                              | weight =  -0.1970 - 0.0396i | energy =   4.0% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.8254 | energy =  68.1% | phase = N/A
+  - CA3 Pyramidal                                 | weight =            -0.3216 | energy =  10.3% | phase = N/A
+  - DG Semilunar Granule                          | weight =            -0.2738 | energy =   7.5% | phase = N/A
+  - MEC LV Pyramidal                              | weight =            -0.1793 | energy =   3.2% | phase = N/A
+  - EC LIII Pyramidal Stellate                    | weight =             0.1631 | energy =   2.7% | phase = N/A
+================================================================================
+Cascade Step 41 [Schur index 27; paired indexes [np.int64(27)]] | Type = Real | λ = 0.0134 | |λ| = 0.0134
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0134
+Top incoming source(s): Cascade Step 18 / Schur 62 (T[27,62] = -0.0519 - 0.0219i) | Cascade Step 17 / Schur 65 (T[27,65] = -0.0505 - 0.0244i) | Cascade Step 20 / Schur 59 (T[27,59] = -0.0315 + 0.0365i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,27] = 1.3429 - 4.6523i) | Cascade Step 57 / Schur 3 (T[3,27] = 1.5130 + 3.6987i) | Cascade Step 59 / Schur 1 (T[1,27] = -1.5377 + 0.9496i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - DG Granule                                    | weight =  -0.4352 + 0.2687i | energy =  26.2% | phase = N/A
+  - MEC LIII Complex Pyramidal                    | weight =   0.3339 - 0.2062i | energy =  15.4% | phase = N/A
+  - CA1 LMR                                       | weight =  -0.1767 + 0.1091i | energy =   4.3% | phase = N/A
+  - CA3 Basket                                    | weight =   0.1671 - 0.1032i | energy =   3.9% | phase = N/A
+  - CA3 Mossy Fiber Associated ORDEN              | weight =  -0.1538 + 0.0950i | energy =   3.3% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.6658 | energy =  44.3% | phase = N/A
+  - EC LIV VI Deep Multipolar Principal           | weight =            -0.3224 | energy =  10.4% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =             0.3180 | energy =  10.1% | phase = N/A
+  - MEC LV Pyramidal                              | weight =             0.2941 | energy =   8.6% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =            -0.2889 | energy =   8.3% | phase = N/A
+================================================================================
+Cascade Step 42 [Schur index 26; paired indexes [np.int64(26), np.int64(24)]] | Type = Complex Pair | λ = -0.0039 - 0.0139i | |λ| = 0.0144
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0039 - 0.0139i
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[26,85] = -0.0685 + 0.0449i) | Cascade Step 7 / Schur 79 (T[26,79] = 0.0356 - 0.0222i) | Cascade Step 17 / Schur 65 (T[26,65] = 0.0333 + 0.0067i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,26] = 0.6733 - 4.4599i) | Cascade Step 57 / Schur 4 (T[4,26] = 2.0674 + 1.3278i) | Cascade Step 58 / Schur 2 (T[2,26] = -2.1409 - 0.2348i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - EC LI II Multipolar Pyramidal                 | weight =  -0.0147 - 0.2996i | energy =   9.0% | phase = 0.0° (Ref)
+  - CA1 Radial Trilaminar                         | weight =  -0.0035 - 0.2987i | energy =   8.9% | phase = +2.1°
+  - CA1 Neurogliaform Projecting                  | weight =   0.0767 - 0.2140i | energy =   5.2% | phase = +22.5°
+  - CA3 LMR Targeting                             | weight =  -0.0192 + 0.2189i | energy =   4.8% | phase = -172.2°
+  - MEC LII Stellate                              | weight =  -0.1540 - 0.1563i | energy =   4.8% | phase = -41.8°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.8955 | energy =  80.2% | phase = 0.0° (Ref)
+  - EC LII III Pyramidal Tripolar                 | weight =  -0.0214 + 0.2267i | energy =   5.2% | phase = -84.6°
+  - MEC LV Pyramidal                              | weight =  -0.1397 - 0.0792i | energy =   2.6% | phase = +29.5°
+  - MEC LIII Bipolar Complex Pyramidal            | weight =   0.1205 - 0.0202i | energy =   1.5% | phase = +170.5°
+  - DG Semilunar Granule                          | weight =  -0.0422 + 0.1094i | energy =   1.4% | phase = -68.9°
+================================================================================
+Cascade Step 43 [Schur index 25; paired indexes [np.int64(25), np.int64(23)]] | Type = Complex Pair | λ = 0.0003 - 0.0146i | |λ| = 0.0146
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0003 - 0.0146i
+Top incoming source(s): Cascade Step 17 / Schur 64 (T[25,64] = -0.0455 - 0.0520i) | Cascade Step 20 / Schur 59 (T[25,59] = 0.0226 - 0.0256i) | Cascade Step 8 / Schur 77 (T[25,77] = -0.0016 - 0.0333i)
+Top downstream target(s): Cascade Step 57 / Schur 3 (T[3,25] = 4.0731 + 1.2785i) | Cascade Step 59 / Schur 1 (T[1,25] = -1.0958 + 0.8372i) | Cascade Step 58 / Schur 2 (T[2,25] = -0.2051 + 0.6513i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - DG Mossy                                      | weight =  -0.1352 + 0.3506i | energy =  14.1% | phase = 0.0° (Ref)
+  - DG Granule                                    | weight =  -0.0280 + 0.3467i | energy =  12.1% | phase = -16.5°
+  - DG Hilar Ectopic Granule                      | weight =  -0.1936 + 0.2474i | energy =   9.9% | phase = +17.0°
+  - DG Total Molecular Layer                      | weight =  -0.0632 - 0.2210i | energy =   5.3% | phase = +142.9°
+  - CA3 Basket CCK+                               | weight =  -0.0978 + 0.1887i | energy =   4.5% | phase = +6.3°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.6586 | energy =  43.4% | phase = 0.0° (Ref)
+  - MEC LV Pyramidal                              | weight =   0.3914 + 0.0390i | energy =  15.5% | phase = +5.7°
+  - MEC LII III Pyramidal Multiform               | weight =  -0.2301 - 0.1822i | energy =   8.6% | phase = -141.6°
+  - CA3 Pyramidal                                 | weight =  -0.1075 + 0.2605i | energy =   7.9% | phase = +112.4°
+  - DG Semilunar Granule                          | weight =  -0.0212 - 0.1818i | energy =   3.3% | phase = -96.7°
+================================================================================
+Cascade Step 44 [Schur index 22; paired indexes [np.int64(22), np.int64(20)]] | Type = Complex Pair | λ = -0.0124 - 0.0175i | |λ| = 0.0214
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0124 - 0.0175i
+Top incoming source(s): Cascade Step 17 / Schur 64 (T[22,64] = 0.0882 - 0.1076i) | Cascade Step 18 / Schur 63 (T[22,63] = 0.0412 - 0.0753i) | Cascade Step 20 / Schur 60 (T[22,60] = 0.0643 - 0.0324i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,22] = 0.1334 + 2.1740i) | Cascade Step 59 / Schur 1 (T[1,22] = 1.5500 - 0.7818i) | Cascade Step 58 / Schur 2 (T[2,22] = 0.1591 + 1.4402i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA2 Bistratified                              | weight =  -0.2309 + 0.3951i | energy =  20.9% | phase = 0.0° (Ref)
+  - CA3 Lucidum ORAX                              | weight =  -0.2335 - 0.2070i | energy =   9.7% | phase = +101.2°
+  - CA3 Mossy Fiber Associated                    | weight =  -0.1426 - 0.2297i | energy =   7.3% | phase = +117.9°
+  - CA3 Mossy Fiber Associated ORDEN              | weight =   0.2573 - 0.0546i | energy =   6.9% | phase = -132.3°
+  - CA3 O LM                                      | weight =  -0.1880 - 0.1291i | energy =   5.2% | phase = +94.2°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.6131 | energy =  37.6% | phase = 0.0° (Ref)
+  - CA3 Pyramidal                                 | weight =  -0.4274 - 0.2306i | energy =  23.6% | phase = -151.7°
+  - DG Semilunar Granule                          | weight =  -0.0890 - 0.3878i | energy =  15.8% | phase = -102.9°
+  - MEC LV Pyramidal                              | weight =   0.2230 + 0.1684i | energy =   7.8% | phase = +37.1°
+  - MEC LII III Pyramidal Multiform               | weight =  -0.0898 - 0.1654i | energy =   3.5% | phase = -118.5°
+================================================================================
+Cascade Step 45 [Schur index 21; paired indexes [np.int64(21)]] | Type = Real | λ = -0.0206 | |λ| = 0.0206
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0206
+Top incoming source(s): Cascade Step 17 / Schur 65 (T[21,65] = 0.0414 - 0.1104i) | Cascade Step 8 / Schur 77 (T[21,77] = -0.0897 - 0.0508i) | Cascade Step 11 / Schur 73 (T[21,73] = -0.0751 + 0.0601i)
+Top downstream target(s): Cascade Step 57 / Schur 3 (T[3,21] = -0.3371 - 3.9338i) | Cascade Step 59 / Schur 1 (T[1,21] = -0.5595 - 1.4916i) | Cascade Step 58 / Schur 2 (T[2,21] = 1.0589 + 1.1772i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA2 Basket                                    | weight =   0.2686 - 0.3641i | energy =  20.5% | phase = N/A
+  - CA2 Bistratified                              | weight =   0.0795 + 0.3279i | energy =  11.4% | phase = N/A
+  - CA3 Mossy Fiber Associated                    | weight =   0.1844 - 0.1827i | energy =   6.7% | phase = N/A
+  - CA3 Mossy Fiber Associated ORDEN              | weight =  -0.1167 - 0.1828i | energy =   4.7% | phase = N/A
+  - DG Mossy                                      | weight =   0.0934 - 0.1940i | energy =   4.6% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - DG Semilunar Granule                          | weight =            -0.6800 | energy =  46.2% | phase = N/A
+  - EC LI II Pyramidal Fan                        | weight =             0.6492 | energy =  42.1% | phase = N/A
+  - CA3 Pyramidal                                 | weight =             0.1779 | energy =   3.2% | phase = N/A
+  - DG Mossy                                      | weight =            -0.1490 | energy =   2.2% | phase = N/A
+  - CA2 Pyramidal                                 | weight =            -0.1174 | energy =   1.4% | phase = N/A
+================================================================================
+Cascade Step 46 [Schur index 19; paired indexes [np.int64(19)]] | Type = Real | λ = -0.0476 | |λ| = 0.0476
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.0476
+Top incoming source(s): Cascade Step 8 / Schur 77 (T[19,77] = -0.1352 + 0.0309i) | Cascade Step 22 / Schur 56 (T[19,56] = -0.0493 + 0.0881i) | Cascade Step 9 / Schur 76 (T[19,76] = 0.0167 - 0.0827i)
+Top downstream target(s): Cascade Step 57 / Schur 4 (T[4,19] = -0.7085 + 1.2361i) | Cascade Step 58 / Schur 2 (T[2,19] = 0.9628 - 0.8797i) | Cascade Step 59 / Schur 1 (T[1,19] = 1.0797 - 0.0041i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - DG Total Molecular Layer                      | weight =  -0.3488 + 0.0013i | energy =  12.2% | phase = N/A
+  - CA3 Lucidum ORAX                              | weight =   0.3273 - 0.0012i | energy =  10.7% | phase = N/A
+  - CA2 Basket                                    | weight =   0.3052 - 0.0011i | energy =   9.3% | phase = N/A
+  - DG MOLAX                                      | weight =  -0.2806 + 0.0011i | energy =   7.9% | phase = N/A
+  - MEC LII Stellate                              | weight =  -0.2643 + 0.0010i | energy =   7.0% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - DG Semilunar Granule                          | weight =             0.8504 | energy =  72.3% | phase = N/A
+  - EC LI II Pyramidal Fan                        | weight =            -0.3859 | energy =  14.9% | phase = N/A
+  - DG Mossy                                      | weight =             0.2857 | energy =   8.2% | phase = N/A
+  - CA3 Pyramidal                                 | weight =            -0.1268 | energy =   1.6% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =            -0.0931 | energy =   0.9% | phase = N/A
+================================================================================
+Cascade Step 47 [Schur index 18; paired indexes [np.int64(18)]] | Type = Real | λ = 0.0483 | |λ| = 0.0483
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0483
+Top incoming source(s): Cascade Step 17 / Schur 65 (T[18,65] = -0.0535 + 0.1274i) | Cascade Step 18 / Schur 63 (T[18,63] = -0.0085 - 0.0946i) | Cascade Step 9 / Schur 76 (T[18,76] = -0.0131 - 0.0760i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,18] = -3.2000 + 1.2422i) | Cascade Step 57 / Schur 3 (T[3,18] = 0.7466 - 1.5050i) | Cascade Step 53 / Schur 8 (T[8,18] = -0.5235 + 0.1327i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LV VI Pyramidal Polymorphic               | weight =  -0.5958 - 0.2285i | energy =  40.7% | phase = N/A
+  - LEC LVI Multipolar Pyramidal                  | weight =   0.2406 + 0.0923i | energy =   6.6% | phase = N/A
+  - DG Granule                                    | weight =   0.2393 + 0.0918i | energy =   6.6% | phase = N/A
+  - LEC LIII Multipolar Principal                 | weight =   0.2051 + 0.0787i | energy =   4.8% | phase = N/A
+  - MEC LIII Complex Pyramidal                    | weight =   0.1931 + 0.0741i | energy =   4.3% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - CA1 Pyramidal                                 | weight =            -0.6347 | energy =  40.3% | phase = N/A
+  - MEC LV Pyramidal                              | weight =             0.3815 | energy =  14.6% | phase = N/A
+  - CA3c Pyramidal                                | weight =             0.3077 | energy =   9.5% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =             0.3017 | energy =   9.1% | phase = N/A
+  - MEC LIII Complex Pyramidal                    | weight =             0.2493 | energy =   6.2% | phase = N/A
+================================================================================
+Cascade Step 48 [Schur index 17; paired indexes [np.int64(17), np.int64(16)]] | Type = Complex Pair | λ = 0.0512 + 0.0137i | |λ| = 0.0530
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0512 + 0.0137i
+Top incoming source(s): Cascade Step 8 / Schur 77 (T[17,77] = 0.1562 + 0.1141i) | Cascade Step 17 / Schur 65 (T[17,65] = 0.1360 + 0.1237i) | Cascade Step 22 / Schur 56 (T[17,56] = 0.0961 - 0.1557i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,17] = -1.3170 - 1.7503i) | Cascade Step 57 / Schur 4 (T[4,17] = -1.0469 - 0.0382i) | Cascade Step 59 / Schur 1 (T[1,17] = 0.1634 + 0.5316i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA2 Bistratified                              | weight =  -0.0915 + 0.3214i | energy =  11.2% | phase = 0.0° (Ref)
+  - CA1 Horizontal Basket                         | weight =  -0.1443 - 0.2975i | energy =  10.9% | phase = +138.2°
+  - MEC LV VI Pyramidal Polymorphic               | weight =  -0.0705 + 0.2795i | energy =   8.3% | phase = -1.7°
+  - CA1 LMR                                       | weight =   0.2763 - 0.0294i | energy =   7.7% | phase = -112.0°
+  - SUB CA1 Projecting Pyramidal                  | weight =  -0.1170 - 0.1991i | energy =   5.3% | phase = +133.7°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - MEC LV Pyramidal                              | weight =             0.4661 | energy =  21.7% | phase = 0.0° (Ref)
+  - MEC LII III Pyramidal Multiform               | weight =   0.4529 + 0.0521i | energy =  20.8% | phase = +6.6°
+  - CA3 Pyramidal                                 | weight =  -0.3267 - 0.1949i | energy =  14.5% | phase = -149.2°
+  - CA1 Pyramidal                                 | weight =  -0.0365 + 0.3523i | energy =  12.5% | phase = +95.9°
+  - MEC LIII Complex Pyramidal                    | weight =   0.2352 - 0.0493i | energy =   5.8% | phase = -11.8°
+================================================================================
+Cascade Step 49 [Schur index 15; paired indexes [np.int64(15), np.int64(14)]] | Type = Complex Pair | λ = 0.0072 - 0.0677i | |λ| = 0.0680
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0072 - 0.0677i
+Top incoming source(s): Cascade Step 22 / Schur 56 (T[15,56] = -0.2939 + 0.2367i) | Cascade Step 1 / Schur 85 (T[15,85] = 0.2410 + 0.2424i) | Cascade Step 34 / Schur 39 (T[15,39] = 0.2430 - 0.0286i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,15] = 0.8339 - 2.2166i) | Cascade Step 59 / Schur 1 (T[1,15] = -0.8955 + 1.8526i) | Cascade Step 57 / Schur 4 (T[4,15] = -1.7467 - 0.4869i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - SUB CA1 Projecting Pyramidal                  | weight =  -0.3565 + 0.2418i | energy =  18.6% | phase = 0.0° (Ref)
+  - CA3 Mossy Fiber Associated ORDEN              | weight =  -0.1116 + 0.3026i | energy =  10.4% | phase = -35.6°
+  - CA3 Basket                                    | weight =  -0.1960 + 0.2030i | energy =   8.0% | phase = -11.9°
+  - CA1 Perforant Path Associated QuadD           | weight =  -0.1347 - 0.2459i | energy =   7.9% | phase = +95.4°
+  - MEC LV VI Pyramidal Polymorphic               | weight =  -0.1982 + 0.1157i | energy =   5.3% | phase = +3.9°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.5452 | energy =  29.7% | phase = 0.0° (Ref)
+  - CA3 Pyramidal                                 | weight =  -0.4100 + 0.1229i | energy =  18.3% | phase = +163.3°
+  - CA3c Pyramidal                                | weight =  -0.3079 + 0.2761i | energy =  17.1% | phase = +138.1°
+  - MEC LII Stellate                              | weight =  -0.2411 + 0.2236i | energy =  10.8% | phase = +137.2°
+  - EC LII III Pyramidal Tripolar                 | weight =   0.2754 - 0.0981i | energy =   8.5% | phase = -19.6°
+================================================================================
+Cascade Step 50 [Schur index 13; paired indexes [np.int64(13)]] | Type = Real | λ = -0.1069 | |λ| = 0.1069
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.1069
+Top incoming source(s): Cascade Step 35 / Schur 37 (T[13,37] = -0.1050 - 0.1069i) | Cascade Step 46 / Schur 19 (T[13,19] = 0.1460 - 0.0174i) | Cascade Step 2 / Schur 84 (T[13,84] = -0.1370 + 0.0159i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,13] = 2.9239 - 2.0952i) | Cascade Step 59 / Schur 1 (T[1,13] = 2.6410 + 0.3044i) | Cascade Step 57 / Schur 3 (T[3,13] = 1.2606 - 1.4609i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - EC LII III Pyramidal Tripolar                 | weight =   0.3750 + 0.0432i | energy =  14.2% | phase = N/A
+  - MEC LII Stellate                              | weight =   0.3460 + 0.0399i | energy =  12.1% | phase = N/A
+  - LEC LIII Complex Pyramidal                    | weight =   0.3088 + 0.0356i | energy =   9.7% | phase = N/A
+  - MEC LIII Superficial Trilayered Interneuron   | weight =   0.2670 + 0.0308i | energy =   7.2% | phase = N/A
+  - EC LIII Pyramidal                             | weight =   0.2598 + 0.0300i | energy =   6.8% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =             0.6940 | energy =  48.2% | phase = N/A
+  - EC LI II Multipolar Pyramidal                 | weight =            -0.5171 | energy =  26.7% | phase = N/A
+  - MEC LII Stellate                              | weight =             0.4187 | energy =  17.5% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =             0.2641 | energy =   7.0% | phase = N/A
+  - LEC LIII Multipolar Principal                 | weight =             0.0511 | energy =   0.3% | phase = N/A
+================================================================================
+Cascade Step 51 [Schur index 12; paired indexes [np.int64(12)]] | Type = Real | λ = 0.0974 | |λ| = 0.0974
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.0974
+Top incoming source(s): Cascade Step 1 / Schur 85 (T[12,85] = 0.5194 - 0.1396i) | Cascade Step 7 / Schur 79 (T[12,79] = -0.4636 - 0.0304i) | Cascade Step 15 / Schur 68 (T[12,68] = -0.1673 - 0.2623i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,12] = 1.8555 + 0.4987i) | Cascade Step 57 / Schur 4 (T[4,12] = -1.5748 + 0.6394i) | Cascade Step 58 / Schur 2 (T[2,12] = 0.6358 - 0.3262i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Perforant Path Associated QuadD           | weight =   0.2951 + 0.0793i | energy =   9.3% | phase = N/A
+  - DG AIPRIM                                     | weight =  -0.2708 - 0.0728i | energy =   7.9% | phase = N/A
+  - CA1 LMR                                       | weight =  -0.2624 - 0.0705i | energy =   7.4% | phase = N/A
+  - CA3 Granule                                   | weight =  -0.2590 - 0.0696i | energy =   7.2% | phase = N/A
+  - CA3 Mossy Fiber Associated ORDEN              | weight =   0.2384 + 0.0641i | energy =   6.1% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - MEC LII Stellate                              | weight =            -0.5772 | energy =  33.3% | phase = N/A
+  - EC LI II Multipolar Pyramidal                 | weight =             0.3908 | energy =  15.3% | phase = N/A
+  - MEC LV Pyramidal                              | weight =            -0.3709 | energy =  13.8% | phase = N/A
+  - MEC LIII Complex Pyramidal                    | weight =            -0.3049 | energy =   9.3% | phase = N/A
+  - MEC LII III Pyramidal Multiform               | weight =            -0.2687 | energy =   7.2% | phase = N/A
+================================================================================
+Cascade Step 52 [Schur index 11; paired indexes [np.int64(11), np.int64(9)]] | Type = Complex Pair | λ = -0.0642 - 0.0909i | |λ| = 0.1113
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0642 - 0.0909i
+Top incoming source(s): Cascade Step 17 / Schur 64 (T[11,64] = 1.0802 + 0.2571i) | Cascade Step 7 / Schur 79 (T[11,79] = -0.1324 + 0.7267i) | Cascade Step 10 / Schur 74 (T[11,74] = -0.4434 + 0.5293i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,11] = -1.8429 - 2.6896i) | Cascade Step 58 / Schur 2 (T[2,11] = 1.1523 + 1.7362i) | Cascade Step 57 / Schur 4 (T[4,11] = -0.2105 + 1.0153i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Neurogliaform                             | weight =   0.0897 - 0.3402i | energy =  12.4% | phase = 0.0° (Ref)
+  - CA1 Oriens Alveus                             | weight =  -0.0635 + 0.2847i | energy =   8.5% | phase = +177.8°
+  - CA3 Basket                                    | weight =  -0.1790 - 0.2267i | energy =   8.3% | phase = -53.1°
+  - CA1 Horizontal Basket                         | weight =   0.0159 - 0.2276i | energy =   5.2% | phase = -10.8°
+  - CA1 Radial Trilaminar                         | weight =   0.0222 - 0.2181i | energy =   4.8% | phase = -9.0°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.6904 | energy =  47.7% | phase = 0.0° (Ref)
+  - MEC LII Stellate                              | weight =   0.4140 + 0.1149i | energy =  18.5% | phase = -164.5°
+  - EC LI II Multipolar Pyramidal                 | weight =  -0.0081 - 0.3056i | energy =   9.3% | phase = +88.5°
+  - EC LII III Pyramidal Tripolar                 | weight =  -0.2972 + 0.0453i | energy =   9.0% | phase = -8.7°
+  - CA3 Pyramidal                                 | weight =  -0.0663 + 0.2715i | energy =   7.8% | phase = -76.3°
+================================================================================
+Cascade Step 53 [Schur index 10; paired indexes [np.int64(10), np.int64(8)]] | Type = Complex Pair | λ = -0.0449 - 0.1115i | |λ| = 0.1202
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: -0.0449 - 0.1115i
+Top incoming source(s): Cascade Step 17 / Schur 65 (T[10,65] = 0.4140 + 1.1190i) | Cascade Step 18 / Schur 63 (T[10,63] = -0.6108 - 0.5655i) | Cascade Step 22 / Schur 56 (T[10,56] = 0.5838 + 0.4492i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,10] = 3.5718 - 0.4785i) | Cascade Step 57 / Schur 4 (T[4,10] = 1.4005 - 0.4457i) | Cascade Step 58 / Schur 2 (T[2,10] = 1.0942 + 0.7335i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA3 Basket                                    | weight =   0.3474 - 0.0529i | energy =  12.4% | phase = 0.0° (Ref)
+  - CA3 Granule                                   | weight =   0.3006 + 0.1035i | energy =  10.1% | phase = +27.7°
+  - SUB CA1 Projecting Pyramidal                  | weight =  -0.1415 + 0.2683i | energy =   9.2% | phase = +126.5°
+  - CA1 Perforant Path Associated                 | weight =  -0.2139 + 0.0096i | energy =   4.6% | phase = -173.9°
+  - CA1 Horizontal Basket                         | weight =   0.1280 - 0.1702i | energy =   4.5% | phase = -44.4°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Pyramidal Fan                        | weight =            -0.5590 | energy =  31.3% | phase = 0.0° (Ref)
+  - MEC LII Stellate                              | weight =   0.4354 + 0.1339i | energy =  20.7% | phase = -162.9°
+  - CA3 Pyramidal                                 | weight =  -0.0223 + 0.4072i | energy =  16.6% | phase = -86.9°
+  - EC LI II Multipolar Pyramidal                 | weight =  -0.1018 - 0.3472i | energy =  13.1% | phase = +73.7°
+  - EC LII III Pyramidal Tripolar                 | weight =  -0.2682 + 0.0362i | energy =   7.3% | phase = -7.7°
+================================================================================
+Cascade Step 54 [Schur index 7; paired indexes [np.int64(7)]] | Type = Real | λ = 0.1677 | |λ| = 0.1677
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.1677
+Top incoming source(s): Cascade Step 17 / Schur 65 (T[7,65] = 1.5710 - 1.7834i) | Cascade Step 18 / Schur 63 (T[7,63] = -0.2776 + 1.5701i) | Cascade Step 22 / Schur 56 (T[7,56] = -0.6319 + 1.1054i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,7] = -1.0036 - 0.0001i) | Cascade Step 57 / Schur 3 (T[3,7] = 0.2318 - 0.9223i) | Cascade Step 58 / Schur 2 (T[2,7] = 0.1443 - 0.1308i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - DG Axo Axonic                                 | weight =   0.4441 + 0.0001i | energy =  19.7% | phase = N/A
+  - DG HICAP                                      | weight =  -0.3772 - 0.0001i | energy =  14.2% | phase = N/A
+  - MEC LV VI Pyramidal Polymorphic               | weight =   0.3255 + 0.0000i | energy =  10.6% | phase = N/A
+  - CA1 R Receiving Apical Targeting              | weight =  -0.3090 - 0.0000i | energy =   9.5% | phase = N/A
+  - CA2 Basket                                    | weight =  -0.2292 - 0.0000i | energy =   5.3% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - CA3 Pyramidal                                 | weight =             0.5951 | energy =  35.4% | phase = N/A
+  - MEC LII Stellate                              | weight =             0.5206 | energy =  27.1% | phase = N/A
+  - EC LI II Multipolar Pyramidal                 | weight =            -0.4177 | energy =  17.4% | phase = N/A
+  - CA3c Pyramidal                                | weight =             0.2204 | energy =   4.9% | phase = N/A
+  - MEC LV Pyramidal                              | weight =             0.1976 | energy =   3.9% | phase = N/A
+================================================================================
+Cascade Step 55 [Schur index 6; paired indexes [np.int64(6)]] | Type = Real | λ = -0.1913 | |λ| = 0.1913
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.1913
+Top incoming source(s): Cascade Step 17 / Schur 65 (T[6,65] = -2.7892 + 2.5955i) | Cascade Step 18 / Schur 63 (T[6,63] = 1.3549 - 3.3373i) | Cascade Step 10 / Schur 74 (T[6,74] = 2.8340 + 1.8369i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,6] = -1.7156 + 0.0003i) | Cascade Step 57 / Schur 4 (T[4,6] = -0.3859 + 0.4312i) | Cascade Step 58 / Schur 2 (T[2,6] = -0.2802 + 0.2542i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Perforant Path Associated                 | weight =  -0.3704 + 0.0001i | energy =  13.7% | phase = N/A
+  - CA1 Radial Trilaminar                         | weight =   0.3275 - 0.0001i | energy =  10.7% | phase = N/A
+  - MEC LV VI Pyramidal Polymorphic               | weight =  -0.3052 + 0.0001i | energy =   9.3% | phase = N/A
+  - DG HICAP                                      | weight =  -0.2757 + 0.0000i | energy =   7.6% | phase = N/A
+  - CA1 Neurogliaform                             | weight =  -0.2630 + 0.0000i | energy =   6.9% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Multipolar Pyramidal                 | weight =            -0.6695 | energy =  44.8% | phase = N/A
+  - EC LI II Pyramidal Fan                        | weight =             0.6463 | energy =  41.8% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =             0.2618 | energy =   6.9% | phase = N/A
+  - MEC LII Stellate                              | weight =             0.1511 | energy =   2.3% | phase = N/A
+  - CA3c Pyramidal                                | weight =             0.1434 | energy =   2.1% | phase = N/A
+================================================================================
+Cascade Step 56 [Schur index 5; paired indexes [np.int64(5)]] | Type = Real | λ = -0.3266 | |λ| = 0.3266
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: -0.3266
+Top incoming source(s): Cascade Step 22 / Schur 56 (T[5,56] = -1.3790 + 2.6274i) | Cascade Step 9 / Schur 76 (T[5,76] = 0.4094 - 2.1088i) | Cascade Step 10 / Schur 74 (T[5,74] = 1.8041 + 1.1089i)
+Top downstream target(s): Cascade Step 57 / Schur 3 (T[3,5] = -0.8427 + 3.5826i) | Cascade Step 58 / Schur 2 (T[2,5] = 0.6613 - 0.5958i) | Cascade Step 59 / Schur 1 (T[1,5] = 0.1717 + 0.0005i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - DG HICAP                                      | weight =  -0.3454 - 0.0011i | energy =  11.9% | phase = N/A
+  - DG Granule                                    | weight =  -0.3191 - 0.0010i | energy =  10.2% | phase = N/A
+  - DG AIPRIM                                     | weight =   0.3106 + 0.0010i | energy =   9.6% | phase = N/A
+  - CA1 Perforant Path Associated QuadD           | weight =   0.2998 + 0.0010i | energy =   9.0% | phase = N/A
+  - CA1 Basket                                    | weight =  -0.2769 - 0.0009i | energy =   7.7% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - CA3c Pyramidal                                | weight =            -0.7610 | energy =  57.9% | phase = N/A
+  - CA3 Pyramidal                                 | weight =             0.3938 | energy =  15.5% | phase = N/A
+  - EC LI II Multipolar Pyramidal                 | weight =             0.3566 | energy =  12.7% | phase = N/A
+  - MEC LII Stellate                              | weight =            -0.2247 | energy =   5.0% | phase = N/A
+  - EC LI II Pyramidal Fan                        | weight =            -0.2123 | energy =   4.5% | phase = N/A
+================================================================================
+Cascade Step 57 [Schur index 4; paired indexes [np.int64(4), np.int64(3)]] | Type = Complex Pair | λ = 0.0298 - 0.3262i | |λ| = 0.3276
+Dynamics: Oscillatory/discrete spiral mode from a complex pair.
+Left eigenvalue matched to this Schur diagonal value: 0.0298 - 0.3262i
+Top incoming source(s): Cascade Step 22 / Schur 56 (T[4,56] = 6.5109 + 14.1228i) | Cascade Step 9 / Schur 76 (T[4,76] = -6.5035 - 9.8581i) | Cascade Step 10 / Schur 74 (T[4,74] = 10.9057 - 2.2099i)
+Top downstream target(s): Cascade Step 58 / Schur 2 (T[2,4] = -0.3494 - 0.0755i) | Cascade Step 59 / Schur 1 (T[1,4] = -0.1059 + 0.0525i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - CA1 Trilaminar                                | weight =   0.4965 + 0.3080i | energy =  34.1% | phase = 0.0° (Ref)
+  - CA1 Perforant Path Associated QuadD           | weight =  -0.1908 - 0.3143i | energy =  13.5% | phase = -153.1°
+  - CA1 Perforant Path Associated                 | weight =  -0.1727 - 0.2377i | energy =   8.6% | phase = -157.8°
+  - DG AIPRIM                                     | weight =  -0.0726 + 0.2389i | energy =   6.2% | phase = +75.1°
+  - DG Axo Axonic                                 | weight =  -0.0859 + 0.1900i | energy =   4.3% | phase = +82.5°
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - CA3c Pyramidal                                | weight =             0.5949 | energy =  35.4% | phase = 0.0° (Ref)
+  - CA3 Pyramidal                                 | weight =  -0.0236 - 0.4707i | energy =  22.2% | phase = -92.9°
+  - EC LI II Multipolar Pyramidal                 | weight =   0.2047 + 0.2352i | energy =   9.7% | phase = +49.0°
+  - MEC LV Pyramidal                              | weight =  -0.3041 - 0.0655i | energy =   9.7% | phase = -167.8°
+  - DG Granule                                    | weight =   0.0432 - 0.2918i | energy =   8.7% | phase = -81.6°
+================================================================================
+Cascade Step 58 [Schur index 2; paired indexes [np.int64(2)]] | Type = Real | λ = 0.3895 | |λ| = 0.3895
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 0.3895
+Top incoming source(s): Cascade Step 17 / Schur 64 (T[2,64] = 0.6763 + 16.5979i) | Cascade Step 22 / Schur 56 (T[2,56] = 3.4709 + 13.6562i) | Cascade Step 20 / Schur 60 (T[2,60] = -10.0259 + 2.0174i)
+Top downstream target(s): Cascade Step 59 / Schur 1 (T[1,2] = 0.4154 + 0.3767i)
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LIII Superficial Multipolar Interneuron   | weight =   0.4752 + 0.4309i | energy =  41.2% | phase = N/A
+  - CA1 Perforant Path Associated QuadD           | weight =  -0.2544 - 0.2307i | energy =  11.8% | phase = N/A
+  - DG AIPRIM                                     | weight =  -0.2173 - 0.1970i | energy =   8.6% | phase = N/A
+  - CA1 Perforant Path Associated                 | weight =  -0.1988 - 0.1803i | energy =   7.2% | phase = N/A
+  - DG Axo Axonic                                 | weight =  -0.1861 - 0.1688i | energy =   6.3% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - CA3c Pyramidal                                | weight =             0.6052 | energy =  36.6% | phase = N/A
+  - CA3 Pyramidal                                 | weight =             0.5903 | energy =  34.8% | phase = N/A
+  - EC LI II Multipolar Pyramidal                 | weight =            -0.3837 | energy =  14.7% | phase = N/A
+  - MEC LII Stellate                              | weight =             0.2400 | energy =   5.8% | phase = N/A
+  - CA2 Pyramidal                                 | weight =             0.1907 | energy =   3.6% | phase = N/A
+================================================================================
+Cascade Step 59 [Schur index 1; paired indexes [np.int64(1)]] | Type = Real | λ = 1.0000 | |λ| = 1.0000
+Dynamics: Non-oscillatory discrete-time multiplier.
+Left eigenvalue matched to this Schur diagonal value: 1.0000
+Top incoming source(s): Cascade Step 17 / Schur 65 (T[1,65] = -13.9585 + 16.9724i) | Cascade Step 18 / Schur 62 (T[1,62] = -11.0871 + 1.9264i) | Cascade Step 22 / Schur 55 (T[1,55] = 8.1537 + 5.5930i)
+Top downstream target(s): None
+Principal contributing cell types (Schur vector Q[:, index]):
+  - MEC LIII Superficial Multipolar Interneuron   | weight =   0.6704 + 0.0000i | energy =  44.9% | phase = N/A
+  - CA1 Trilaminar                                | weight =   0.4928 + 0.0000i | energy =  24.3% | phase = N/A
+  - CA1 Perforant Path Associated QuadD           | weight =   0.2874 + 0.0000i | energy =   8.3% | phase = N/A
+  - CA1 Perforant Path Associated                 | weight =   0.2274 + 0.0000i | energy =   5.2% | phase = N/A
+  - DG Axo Axonic                                 | weight =   0.1941 + 0.0000i | energy =   3.8% | phase = N/A
+Principal contributing cell types (left eigenvector; action/readout/sensitivity):
+  - EC LI II Multipolar Pyramidal                 | weight =            -0.9347 | energy =  87.4% | phase = N/A
+  - EC LI II Pyramidal Fan                        | weight =            -0.2978 | energy =   8.9% | phase = N/A
+  - EC LII III Pyramidal Tripolar                 | weight =            -0.1784 | energy =   3.2% | phase = N/A
+  - MEC LII Stellate                              | weight =            -0.0528 | energy =   0.3% | phase = N/A
+  - CA3c Pyramidal                                | weight =            -0.0301 | energy =   0.1% | phase = N/A
