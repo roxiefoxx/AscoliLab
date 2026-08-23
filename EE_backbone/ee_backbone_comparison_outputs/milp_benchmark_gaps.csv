@@ -1,0 +1,161 @@
+seed,method,method_summed_weight,milp_summed_weight,weight_gap_to_milp,method_length_edges,milp_length_edges,method_terminus,milp_terminus,milp_status
+CA1 Pyramidal,branch_and_bound,133423.0292978634,155964.94569185676,22541.916393993364,24,29,CA3 Granule,CA3 Granule,Optimal
+CA1 Pyramidal,dynamic_programming,61577.71957728488,155964.94569185676,94387.22611457188,4,29,DG Mossy,CA3 Granule,Optimal
+CA1 Pyramidal,greedy_tree_path,70463.83456151624,155964.94569185676,85501.11113034052,15,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+CA1 Pyramidal,maximum_spanning_tree,58407.13279806113,155964.94569185676,97557.81289379564,6,29,CA3 Granule,CA3 Granule,Optimal
+CA1 Pyramidal,maximum_weight_asymmetric_hamiltonian_path,138363.44205473232,155964.94569185676,17601.503637124435,31,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+CA1 Radiatum Giant,branch_and_bound,133475.55536614006,143278.11500291023,9802.559636770166,25,29,CA3 Granule,CA2 Pyramidal,Optimal
+CA1 Radiatum Giant,dynamic_programming,61630.24564556156,143278.11500291023,81647.86935734867,5,29,DG Mossy,CA2 Pyramidal,Optimal
+CA1 Radiatum Giant,greedy_tree_path,70212.69767993434,143278.11500291023,73065.41732297589,15,29,CA3 Pyramidal,CA2 Pyramidal,Optimal
+CA1 Radiatum Giant,maximum_spanning_tree,99174.25456563932,143278.11500291023,44103.86043727091,3,29,MEC LV VI Pyramidal Polymorphic,CA2 Pyramidal,Optimal
+CA1 Radiatum Giant,maximum_weight_asymmetric_hamiltonian_path,138407.68039697158,143278.11500291023,4870.434605938644,31,29,SUB CA1 Projecting Pyramidal,CA2 Pyramidal,Optimal
+CA2 Pyramidal,branch_and_bound,128210.21142468057,217745.4785721496,89535.26714746901,25,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+CA2 Pyramidal,dynamic_programming,145723.68374686144,217745.4785721496,72021.79482528815,5,28,DG Mossy,DG Hilar Ectopic Granule,Optimal
+CA2 Pyramidal,greedy_tree_path,98803.64714458957,217745.4785721496,118941.83142756001,16,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+CA2 Pyramidal,maximum_spanning_tree,101386.52098062955,217745.4785721496,116358.95759152004,3,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+CA2 Pyramidal,maximum_weight_asymmetric_hamiltonian_path,184864.16885884324,217745.4785721496,32881.30971330634,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+CA3 Granule,branch_and_bound,214153.05860028183,224463.25185374386,10310.193253462028,29,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+CA3 Granule,dynamic_programming,150286.63799014583,224463.25185374386,74176.61386359803,6,29,DG Mossy,DG Hilar Ectopic Granule,Optimal
+CA3 Granule,greedy_tree_path,118053.76242369786,224463.25185374386,106409.489430046,15,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+CA3 Granule,maximum_spanning_tree,111573.68975652223,224463.25185374386,112889.56209722163,7,29,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+CA3 Granule,maximum_weight_asymmetric_hamiltonian_path,194266.4705787545,224463.25185374386,30196.781274989364,31,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+CA3 Pyramidal,branch_and_bound,139012.46732972658,224462.30983486056,85449.84250513397,28,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+CA3 Pyramidal,dynamic_programming,150285.69597126252,224462.30983486056,74176.61386359803,5,28,DG Mossy,DG Hilar Ectopic Granule,Optimal
+CA3 Pyramidal,greedy_tree_path,110967.27295280102,224462.30983486056,113495.03688205953,15,28,DG Hilar Ectopic Granule,DG Hilar Ectopic Granule,Optimal
+CA3 Pyramidal,maximum_spanning_tree,113853.82304223813,224462.30983486056,110608.48679262243,4,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+CA3 Pyramidal,maximum_weight_asymmetric_hamiltonian_path,138415.95481947047,224462.30983486056,86046.35501539009,31,28,DG Hilar Ectopic Granule,DG Hilar Ectopic Granule,Optimal
+CA3c Pyramidal,branch_and_bound,214480.6996172044,222843.04305800734,8362.343440802942,28,29,CA3 Granule,CA3 Granule,Optimal
+CA3c Pyramidal,dynamic_programming,147187.32934066665,222843.04305800734,75655.7137173407,5,29,DG Mossy,CA3 Granule,Optimal
+CA3c Pyramidal,greedy_tree_path,143811.1955212624,222843.04305800734,79031.84753674496,14,29,DG Hilar Ectopic Granule,CA3 Granule,Optimal
+CA3c Pyramidal,maximum_spanning_tree,99174.25456563932,222843.04305800734,123668.78849236802,2,29,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+CA3c Pyramidal,maximum_weight_asymmetric_hamiltonian_path,138413.68731172703,222843.04305800734,84429.35574628031,31,29,CA3 Granule,CA3 Granule,Optimal
+DG Granule,branch_and_bound,202981.9206122129,232916.87994843567,29934.95933622276,28,29,CA3 Granule,CA3 Granule,Optimal
+DG Granule,dynamic_programming,146202.77389131868,232916.87994843567,86714.106057117,5,29,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+DG Granule,greedy_tree_path,184146.61118735807,232916.87994843567,48770.268761077605,16,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+DG Granule,maximum_spanning_tree,100976.7660440129,232916.87994843567,131940.1139044228,3,29,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+DG Granule,maximum_weight_asymmetric_hamiltonian_path,213918.94930939205,232916.87994843567,18997.930639043625,31,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+DG Hilar Ectopic Granule,branch_and_bound,80485.66591266615,219817.78873346877,139332.12282080262,25,28,CA1 Radiatum Giant,DG Semilunar Granule,Optimal
+DG Hilar Ectopic Granule,dynamic_programming,150285.70927480108,219817.78873346877,69532.0794586677,6,28,DG Mossy,DG Semilunar Granule,Optimal
+DG Hilar Ectopic Granule,greedy_tree_path,52707.12536318414,219817.78873346877,167110.66337028463,15,28,CA1 Radiatum Giant,DG Semilunar Granule,Optimal
+DG Hilar Ectopic Granule,maximum_spanning_tree,100976.7660440129,219817.78873346877,118841.02268945587,4,28,MEC LV VI Pyramidal Polymorphic,DG Semilunar Granule,Optimal
+DG Hilar Ectopic Granule,maximum_weight_asymmetric_hamiltonian_path,165146.09065013603,219817.78873346877,54671.69808333274,31,28,CA1 Radiatum Giant,DG Semilunar Granule,Optimal
+DG Mossy,branch_and_bound,170915.23658289076,209451.6434461126,38536.40686322184,28,28,CA3 Granule,CA3 Granule,Optimal
+DG Mossy,dynamic_programming,132031.51109627297,209451.6434461126,77420.13234983964,6,28,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+DG Mossy,greedy_tree_path,139237.90120878708,209451.6434461126,70213.74223732552,15,28,CA1 Radiatum Giant,CA3 Granule,Optimal
+DG Mossy,maximum_spanning_tree,101945.01634302066,209451.6434461126,107506.62710309195,4,28,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+DG Mossy,maximum_weight_asymmetric_hamiltonian_path,190024.34007684488,209451.6434461126,19427.303369267727,31,28,CA1 Radiatum Giant,CA3 Granule,Optimal
+DG Semilunar Granule,branch_and_bound,172535.17238795164,230885.3720242221,58350.19963627047,28,29,CA3 Granule,CA3 Granule,Optimal
+DG Semilunar Granule,dynamic_programming,150349.91474987887,230885.3720242221,80535.45727434324,6,29,DG Mossy,CA3 Granule,Optimal
+DG Semilunar Granule,greedy_tree_path,144393.00700757426,230885.3720242221,86492.36501664785,16,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+DG Semilunar Granule,maximum_spanning_tree,107100.12214180779,230885.3720242221,123785.24988241431,5,29,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+DG Semilunar Granule,maximum_weight_asymmetric_hamiltonian_path,211887.44138517848,230885.3720242221,18997.930639043625,31,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+EC LI II Multipolar Pyramidal,branch_and_bound,220641.58049510556,238610.04364352796,17968.463148422394,20,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LI II Multipolar Pyramidal,dynamic_programming,129387.09715552849,238610.04364352796,109222.94648799946,4,29,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+EC LI II Multipolar Pyramidal,greedy_tree_path,155698.90674238442,238610.04364352796,82911.13690114353,14,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LI II Multipolar Pyramidal,maximum_spanning_tree,110393.82015762746,238610.04364352796,128216.2234859005,5,29,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+EC LI II Multipolar Pyramidal,maximum_weight_asymmetric_hamiltonian_path,219942.73768209846,238610.04364352796,18667.30596142949,31,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LI II Pyramidal Fan,branch_and_bound,228114.01760195318,241901.4201681698,13787.402566216624,21,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LI II Pyramidal Fan,dynamic_programming,117456.23332964274,241901.4201681698,124445.18683852706,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+EC LI II Pyramidal Fan,greedy_tree_path,163171.34384923204,241901.4201681698,78730.07631893776,15,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LI II Pyramidal Fan,maximum_spanning_tree,107708.62026478983,241901.4201681698,134192.79990338,4,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+EC LI II Pyramidal Fan,maximum_weight_asymmetric_hamiltonian_path,223058.6184528637,241901.4201681698,18842.801715306094,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LII III Pyramidal Tripolar,branch_and_bound,232244.06169885187,241747.34760305565,9503.285904203774,24,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LII III Pyramidal Tripolar,dynamic_programming,113531.91343162605,241747.34760305565,128215.4341714296,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+EC LII III Pyramidal Tripolar,greedy_tree_path,159915.302446034,241747.34760305565,81832.04515702164,15,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LII III Pyramidal Tripolar,maximum_spanning_tree,114610.21586127703,241747.34760305565,127137.13174177862,6,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+EC LII III Pyramidal Tripolar,maximum_weight_asymmetric_hamiltonian_path,222957.69183759412,241747.34760305565,18789.65576546153,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LIII Pyramidal,branch_and_bound,138395.67995068483,241759.0694505681,103363.38949988325,25,28,CA3 Granule,CA3 Granule,Optimal
+EC LIII Pyramidal,dynamic_programming,96993.61823825716,241759.0694505681,144765.45121231093,4,28,CA1 Pyramidal,CA3 Granule,Optimal
+EC LIII Pyramidal,greedy_tree_path,70863.65275640332,241759.0694505681,170895.41669416477,16,28,CA1 Radiatum Giant,CA3 Granule,Optimal
+EC LIII Pyramidal,maximum_spanning_tree,110393.82015762746,241759.0694505681,131365.24929294063,6,28,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+EC LIII Pyramidal,maximum_weight_asymmetric_hamiltonian_path,223001.4159637535,241759.0694505681,18757.653486814583,31,28,CA1 Radiatum Giant,CA3 Granule,Optimal
+EC LIII Pyramidal Stellate,branch_and_bound,142184.53192520654,241576.43295081673,99391.90102561019,24,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+EC LIII Pyramidal Stellate,dynamic_programming,90474.29632285325,241576.43295081673,151102.13662796348,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+EC LIII Pyramidal Stellate,greedy_tree_path,75217.68818495833,241576.43295081673,166358.7447658584,16,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LIII Pyramidal Stellate,maximum_spanning_tree,110393.82015762746,241576.43295081673,131182.61279318927,6,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+EC LIII Pyramidal Stellate,maximum_weight_asymmetric_hamiltonian_path,222758.68625479582,241576.43295081673,18817.746696020913,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LIII Stellate,branch_and_bound,219353.1364135805,241581.7907107547,22228.654297174187,24,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+EC LIII Stellate,dynamic_programming,90289.4715648583,241581.7907107547,151292.3191458964,4,29,CA1 Pyramidal,CA3 Granule,Optimal
+EC LIII Stellate,greedy_tree_path,194837.7148272929,241581.7907107547,46744.0758834618,22,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+EC LIII Stellate,maximum_spanning_tree,110393.82015762746,241581.7907107547,131187.97055312723,6,29,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+EC LIII Stellate,maximum_weight_asymmetric_hamiltonian_path,222999.5050939138,241581.7907107547,18582.285616840905,31,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+EC LIII V Bipolar Pyramidal,branch_and_bound,145060.1756774032,241705.05042960646,96644.87475220326,26,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+EC LIII V Bipolar Pyramidal,dynamic_programming,97206.87989814453,241705.05042960646,144498.17053146195,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+EC LIII V Bipolar Pyramidal,greedy_tree_path,108993.79474688401,241705.05042960646,132711.25568272243,16,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+EC LIII V Bipolar Pyramidal,maximum_spanning_tree,110393.82015762746,241705.05042960646,131311.230271979,6,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+EC LIII V Bipolar Pyramidal,maximum_weight_asymmetric_hamiltonian_path,222925.53129916138,241705.05042960646,18779.519130445085,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LIV VI Deep Multipolar Principal,branch_and_bound,136786.64471042476,241611.76813426102,104825.12342383625,26,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+EC LIV VI Deep Multipolar Principal,dynamic_programming,97459.9354324922,241611.76813426102,144151.8327017688,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+EC LIV VI Deep Multipolar Principal,greedy_tree_path,69254.61751614326,241611.76813426102,172357.15061811777,17,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LIV VI Deep Multipolar Principal,maximum_spanning_tree,58407.13279806113,241611.76813426102,183204.6353361999,7,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+EC LIV VI Deep Multipolar Principal,maximum_weight_asymmetric_hamiltonian_path,222800.26063472958,241611.76813426102,18811.507499531435,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+EC LV Deep Pyramidal,branch_and_bound,136484.19937138673,241619.38687743832,105135.18750605159,26,28,CA3 Granule,CA3 Granule,Optimal
+EC LV Deep Pyramidal,dynamic_programming,97153.2542367543,241619.38687743832,144466.13264068402,4,28,CA1 Pyramidal,CA3 Granule,Optimal
+EC LV Deep Pyramidal,greedy_tree_path,68952.1721771052,241619.38687743832,172667.21470033313,17,28,CA1 Radiatum Giant,CA3 Granule,Optimal
+EC LV Deep Pyramidal,maximum_spanning_tree,58407.13279806113,241619.38687743832,183212.2540793772,7,28,CA3 Granule,CA3 Granule,Optimal
+EC LV Deep Pyramidal,maximum_weight_asymmetric_hamiltonian_path,222787.87116496585,241619.38687743832,18831.515712472465,31,28,CA1 Radiatum Giant,CA3 Granule,Optimal
+LEC LIII Complex Pyramidal,branch_and_bound,220736.75029636052,241504.75943869192,20768.0091423314,20,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+LEC LIII Complex Pyramidal,dynamic_programming,94167.10313878124,241504.75943869192,147337.65629991068,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+LEC LIII Complex Pyramidal,greedy_tree_path,155794.07654363938,241504.75943869192,85710.68289505254,14,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+LEC LIII Complex Pyramidal,maximum_spanning_tree,110638.43602772972,241504.75943869192,130866.3234109622,6,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+LEC LIII Complex Pyramidal,maximum_weight_asymmetric_hamiltonian_path,222733.4748220167,241504.75943869192,18771.284616675228,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+LEC LIII Multipolar Principal,branch_and_bound,143743.26083996645,241084.32799945504,97341.0671594886,26,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+LEC LIII Multipolar Principal,dynamic_programming,94175.8566577482,241084.32799945504,146908.47134170684,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+LEC LIII Multipolar Principal,greedy_tree_path,76211.23364568492,241084.32799945504,164873.09435377014,17,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+LEC LIII Multipolar Principal,maximum_spanning_tree,110933.27198527945,241084.32799945504,130151.05601417559,6,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+LEC LIII Multipolar Principal,maximum_weight_asymmetric_hamiltonian_path,222392.20248380917,241084.32799945504,18692.125515645865,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+LEC LVI Multipolar Pyramidal,branch_and_bound,137308.2437021637,240726.4740533644,103418.2303512007,24,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+LEC LVI Multipolar Pyramidal,dynamic_programming,90268.64355266205,240726.4740533644,150457.83050070234,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+LEC LVI Multipolar Pyramidal,greedy_tree_path,74349.04896581652,240726.4740533644,166377.42508754786,15,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+LEC LVI Multipolar Pyramidal,maximum_spanning_tree,58407.13279806113,240726.4740533644,182319.34125530327,7,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+LEC LVI Multipolar Pyramidal,maximum_weight_asymmetric_hamiltonian_path,221997.26081653853,240726.4740533644,18729.21323682586,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LII III Pyramidal Multiform,branch_and_bound,137899.99787034604,241761.20648552285,103861.20861517682,26,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+MEC LII III Pyramidal Multiform,dynamic_programming,105560.6600470898,241761.20648552285,136200.54643843306,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+MEC LII III Pyramidal Multiform,greedy_tree_path,71071.14371673469,241761.20648552285,170690.06276878816,18,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LII III Pyramidal Multiform,maximum_spanning_tree,110497.64468019406,241761.20648552285,131263.5618053288,6,28,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+MEC LII III Pyramidal Multiform,maximum_weight_asymmetric_hamiltonian_path,222873.10186593278,241761.20648552285,18888.10461959007,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LII Oblique Pyramidal,branch_and_bound,226106.23716999684,241816.87624811297,15710.639078116132,28,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LII Oblique Pyramidal,dynamic_programming,90231.62893970466,241816.87624811297,151585.24730840832,4,29,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+MEC LII Oblique Pyramidal,greedy_tree_path,195127.34249268565,241816.87624811297,46689.533755427314,22,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LII Oblique Pyramidal,maximum_spanning_tree,110393.82015762746,241816.87624811297,131423.0560904855,6,29,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+MEC LII Oblique Pyramidal,maximum_weight_asymmetric_hamiltonian_path,222838.94807573286,241816.87624811297,18977.92817238011,31,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LII Stellate,branch_and_bound,230528.89843912577,241153.68357201904,10624.785132893274,29,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LII Stellate,dynamic_programming,118817.21194184356,241153.68357201904,122336.47163017548,4,29,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+MEC LII Stellate,greedy_tree_path,194238.90435129302,241153.68357201904,46914.77922072602,22,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LII Stellate,maximum_spanning_tree,111573.68975652223,241153.68357201904,129579.99381549681,6,29,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+MEC LII Stellate,maximum_weight_asymmetric_hamiltonian_path,222534.20415766205,241153.68357201904,18619.47941435699,31,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LIII Bipolar Complex Pyramidal,branch_and_bound,230973.9907462514,240272.97196340648,9298.981217155088,25,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+MEC LIII Bipolar Complex Pyramidal,dynamic_programming,105521.14413704081,240272.97196340648,134751.82782636565,4,29,CA1 Pyramidal,CA3 Granule,Optimal
+MEC LIII Bipolar Complex Pyramidal,greedy_tree_path,125000.90537671298,240272.97196340648,115272.0665866935,13,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+MEC LIII Bipolar Complex Pyramidal,maximum_spanning_tree,110504.660577025,240272.97196340648,129768.31138638148,6,29,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+MEC LIII Bipolar Complex Pyramidal,maximum_weight_asymmetric_hamiltonian_path,221620.52690329414,240272.97196340648,18652.44506011234,31,29,CA1 Radiatum Giant,CA3 Granule,Optimal
+MEC LIII Complex Pyramidal,branch_and_bound,231311.95628027228,241045.75609427708,9733.7998140048,29,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LIII Complex Pyramidal,dynamic_programming,106445.65185989958,241045.75609427708,134600.1042343775,4,29,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+MEC LIII Complex Pyramidal,greedy_tree_path,194671.9025982207,241045.75609427708,46373.85349605637,21,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LIII Complex Pyramidal,maximum_spanning_tree,110945.87340362713,241045.75609427708,130099.88269064995,6,29,MEC LV VI Pyramidal Polymorphic,DG Hilar Ectopic Granule,Optimal
+MEC LIII Complex Pyramidal,maximum_weight_asymmetric_hamiltonian_path,222106.2391398325,241045.75609427708,18939.51695444458,31,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LV Multipolar Pyramidal,branch_and_bound,231469.79164425572,241597.86679536878,10128.075151113066,29,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LV Multipolar Pyramidal,dynamic_programming,97096.56668962711,241597.86679536878,144501.30010574165,4,29,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+MEC LV Multipolar Pyramidal,greedy_tree_path,194829.73796220415,241597.86679536878,46768.128833164636,21,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LV Multipolar Pyramidal,maximum_spanning_tree,58407.13279806113,241597.86679536878,183190.73399730766,7,29,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+MEC LV Multipolar Pyramidal,maximum_weight_asymmetric_hamiltonian_path,222721.24105271135,241597.86679536878,18876.62574265743,31,29,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LV Pyramidal,branch_and_bound,208179.92328274035,241765.05146223312,33585.12817949278,25,28,CA3 Granule,CA3 Granule,Optimal
+MEC LV Pyramidal,dynamic_programming,120293.11600550936,241765.05146223312,121471.93545672376,4,28,CA1 Pyramidal,CA3 Granule,Optimal
+MEC LV Pyramidal,greedy_tree_path,193715.34808400166,241765.05146223312,48049.70337823147,17,28,CA1 Radiatum Giant,CA3 Granule,Optimal
+MEC LV Pyramidal,maximum_spanning_tree,110545.50294065647,241765.05146223312,131219.54852157665,4,28,MEC LV VI Pyramidal Polymorphic,CA3 Granule,Optimal
+MEC LV Pyramidal,maximum_weight_asymmetric_hamiltonian_path,222879.74263891645,241765.05146223312,18885.308823316678,31,28,CA1 Radiatum Giant,CA3 Granule,Optimal
+MEC LV Superficial Pyramidal,branch_and_bound,226053.46580290186,241743.24111451756,15689.775311615696,27,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LV Superficial Pyramidal,dynamic_programming,105387.57962368772,241743.24111451756,136355.66149082984,4,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+MEC LV Superficial Pyramidal,greedy_tree_path,195006.64800196647,241743.24111451756,46736.59311255108,21,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LV Superficial Pyramidal,maximum_spanning_tree,58407.13279806113,241743.24111451756,183336.10831645643,7,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+MEC LV Superficial Pyramidal,maximum_weight_asymmetric_hamiltonian_path,222900.43939921146,241743.24111451756,18842.801715306094,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LV VI Pyramidal Polymorphic,branch_and_bound,137299.15952357117,237730.01588219294,100430.85635862176,26,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+MEC LV VI Pyramidal Polymorphic,dynamic_programming,97546.71139837561,237730.01588219294,140183.3044838173,5,28,CA1 Pyramidal,DG Hilar Ectopic Granule,Optimal
+MEC LV VI Pyramidal Polymorphic,greedy_tree_path,69767.13232928966,237730.01588219294,167962.88355290328,17,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+MEC LV VI Pyramidal Polymorphic,maximum_spanning_tree,58407.13279806113,237730.01588219294,179322.8830841318,7,28,CA3 Granule,DG Hilar Ectopic Granule,Optimal
+MEC LV VI Pyramidal Polymorphic,maximum_weight_asymmetric_hamiltonian_path,219037.89036654704,237730.01588219294,18692.125515645894,31,28,CA1 Radiatum Giant,DG Hilar Ectopic Granule,Optimal
+SUB CA1 Projecting Pyramidal,branch_and_bound,133529.2378614637,141695.85883682192,8166.620975358208,25,30,CA3 Granule,CA1 Radiatum Giant,Optimal
+SUB CA1 Projecting Pyramidal,dynamic_programming,61683.9281408852,141695.85883682192,80011.93069593672,5,30,DG Mossy,CA1 Radiatum Giant,Optimal
+SUB CA1 Projecting Pyramidal,greedy_tree_path,70570.04312511656,141695.85883682192,71125.81571170536,16,30,CA1 Radiatum Giant,CA1 Radiatum Giant,Optimal
+SUB CA1 Projecting Pyramidal,maximum_spanning_tree,58513.34136166145,141695.85883682192,83182.51747516048,7,30,CA3 Granule,CA1 Radiatum Giant,Optimal
+SUB CA1 Projecting Pyramidal,maximum_weight_asymmetric_hamiltonian_path,150476.12575723822,141695.85883682192,-8780.266920416296,31,30,CA3 Granule,CA1 Radiatum Giant,Optimal

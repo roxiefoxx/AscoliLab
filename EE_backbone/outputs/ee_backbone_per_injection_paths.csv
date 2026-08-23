@@ -1,0 +1,33 @@
+injection_seed,ordered_path
+CA1 Back Projection,CA1 Back Projection
+CA1 Pyramidal,CA1 Pyramidal -> CA1 Back Projection
+CA2 Pyramidal,CA2 Pyramidal -> CA1 Back Projection
+CA3 Granule,CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+CA3 Pyramidal,CA3 Pyramidal -> CA1 Back Projection
+CA3c Pyramidal,CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+DG Granule,DG Granule -> DG Mossy -> DG Hilar Ectopic Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+DG Hilar Ectopic Granule,DG Hilar Ectopic Granule -> DG Mossy -> DG Granule -> CA2 Pyramidal -> CA1 Back Projection
+DG Mossy,DG Mossy -> DG Hilar Ectopic Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+DG Semilunar Granule,DG Semilunar Granule -> DG Mossy -> DG Hilar Ectopic Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+EC LI II Multipolar Pyramidal,EC LI II Multipolar Pyramidal -> MEC LIII Bipolar Complex Pyramidal -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+EC LI II Pyramidal Fan,EC LI II Pyramidal Fan -> EC LI II Multipolar Pyramidal -> MEC LIII Bipolar Complex Pyramidal -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+EC LII III Pyramidal Tripolar,EC LII III Pyramidal Tripolar -> EC LI II Multipolar Pyramidal -> MEC LIII Bipolar Complex Pyramidal -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+EC LIII Pyramidal,EC LIII Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+EC LIII Pyramidal Stellate,EC LIII Pyramidal Stellate -> CA1 Pyramidal -> CA1 Back Projection
+EC LIII Stellate,EC LIII Stellate -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+EC LIII V Bipolar Pyramidal,EC LIII V Bipolar Pyramidal -> LEC LIII Multipolar Principal -> LEC LIII Complex Pyramidal -> EC LIII Pyramidal Stellate -> CA1 Pyramidal -> CA1 Back Projection
+EC LIV VI Deep Multipolar Principal,EC LIV VI Deep Multipolar Principal -> MEC LV VI Pyramidal Polymorphic -> EC LV Deep Pyramidal -> LEC LVI Multipolar Pyramidal -> LEC LIII Multipolar Principal -> LEC LIII Complex Pyramidal -> EC LIII Pyramidal Stellate -> CA1 Pyramidal -> CA1 Back Projection
+EC LV Deep Pyramidal,EC LV Deep Pyramidal -> MEC LV VI Pyramidal Polymorphic -> EC LIV VI Deep Multipolar Principal -> LEC LVI Multipolar Pyramidal -> LEC LIII Multipolar Principal -> LEC LIII Complex Pyramidal -> EC LIII Pyramidal Stellate -> CA1 Pyramidal -> CA1 Back Projection
+LEC LIII Complex Pyramidal,LEC LIII Complex Pyramidal -> LEC LIII Multipolar Principal -> EC LI II Multipolar Pyramidal -> MEC LIII Bipolar Complex Pyramidal -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+LEC LIII Multipolar Principal,LEC LIII Multipolar Principal -> LEC LIII Complex Pyramidal -> EC LIII Pyramidal Stellate -> CA1 Pyramidal -> CA1 Back Projection
+LEC LVI Multipolar Pyramidal,LEC LVI Multipolar Pyramidal -> LEC LIII Multipolar Principal -> LEC LIII Complex Pyramidal -> EC LIII Pyramidal Stellate -> CA1 Pyramidal -> CA1 Back Projection
+MEC LII III Pyramidal Multiform,MEC LII III Pyramidal Multiform -> MEC LV VI Pyramidal Polymorphic -> EC LIV VI Deep Multipolar Principal -> LEC LVI Multipolar Pyramidal -> LEC LIII Multipolar Principal -> LEC LIII Complex Pyramidal -> EC LIII Pyramidal Stellate -> CA1 Pyramidal -> CA1 Back Projection
+MEC LII Oblique Pyramidal,MEC LII Oblique Pyramidal -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+MEC LII Stellate,MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+MEC LIII Bipolar Complex Pyramidal,MEC LIII Bipolar Complex Pyramidal -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+MEC LIII Complex Pyramidal,MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+MEC LV Multipolar Pyramidal,MEC LV Multipolar Pyramidal -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+MEC LV Pyramidal,MEC LV Pyramidal -> DG Granule -> DG Mossy -> DG Hilar Ectopic Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+MEC LV Superficial Pyramidal,MEC LV Superficial Pyramidal -> MEC LIII Complex Pyramidal -> MEC LII Stellate -> CA3 Granule -> CA3c Pyramidal -> CA1 Pyramidal -> CA1 Back Projection
+MEC LV VI Pyramidal Polymorphic,MEC LV VI Pyramidal Polymorphic -> EC LIV VI Deep Multipolar Principal -> LEC LVI Multipolar Pyramidal -> LEC LIII Multipolar Principal -> LEC LIII Complex Pyramidal -> EC LIII Pyramidal Stellate -> CA1 Pyramidal -> CA1 Back Projection
+SUB CA1 Projecting Pyramidal,SUB CA1 Projecting Pyramidal -> CA1 Back Projection

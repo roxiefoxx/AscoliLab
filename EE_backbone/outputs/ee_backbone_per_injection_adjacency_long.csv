@@ -1,0 +1,154 @@
+injection_seed,sender,receiver,edge_present,weight
+CA1 Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+CA2 Pyramidal,CA2 Pyramidal,CA1 Back Projection,1,9268.651902533784
+CA3 Granule,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+CA3 Granule,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+CA3 Granule,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+CA3 Pyramidal,CA3 Pyramidal,CA1 Back Projection,1,163494.90567997436
+CA3c Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+CA3c Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+DG Granule,DG Granule,DG Mossy,1,44908.709978571016
+DG Granule,DG Mossy,DG Hilar Ectopic Granule,1,2119.754290320353
+DG Granule,DG Hilar Ectopic Granule,CA3c Pyramidal,1,0.0550567880071112
+DG Granule,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+DG Granule,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+DG Hilar Ectopic Granule,DG Hilar Ectopic Granule,DG Mossy,1,1.6138578915994803
+DG Hilar Ectopic Granule,DG Mossy,DG Granule,1,968.2502990077752
+DG Hilar Ectopic Granule,DG Granule,CA2 Pyramidal,1,3360.733225493062
+DG Hilar Ectopic Granule,CA2 Pyramidal,CA1 Back Projection,1,9268.651902533784
+DG Mossy,DG Mossy,DG Hilar Ectopic Granule,1,2119.754290320353
+DG Mossy,DG Hilar Ectopic Granule,CA3c Pyramidal,1,0.0550567880071112
+DG Mossy,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+DG Mossy,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+DG Semilunar Granule,DG Semilunar Granule,DG Mossy,1,5155.105798787127
+DG Semilunar Granule,DG Mossy,DG Hilar Ectopic Granule,1,2119.754290320353
+DG Semilunar Granule,DG Hilar Ectopic Granule,CA3c Pyramidal,1,0.0550567880071112
+DG Semilunar Granule,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+DG Semilunar Granule,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LI II Multipolar Pyramidal,EC LI II Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,1,30698.001365671505
+EC LI II Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,MEC LIII Complex Pyramidal,1,861.1914192115519
+EC LI II Multipolar Pyramidal,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+EC LI II Multipolar Pyramidal,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+EC LI II Multipolar Pyramidal,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+EC LI II Multipolar Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+EC LI II Multipolar Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LI II Pyramidal Fan,EC LI II Pyramidal Fan,EC LI II Multipolar Pyramidal,1,7472.437106847604
+EC LI II Pyramidal Fan,EC LI II Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,1,30698.001365671505
+EC LI II Pyramidal Fan,MEC LIII Bipolar Complex Pyramidal,MEC LIII Complex Pyramidal,1,861.1914192115519
+EC LI II Pyramidal Fan,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+EC LI II Pyramidal Fan,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+EC LI II Pyramidal Fan,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+EC LI II Pyramidal Fan,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+EC LI II Pyramidal Fan,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LII III Pyramidal Tripolar,EC LII III Pyramidal Tripolar,EC LI II Multipolar Pyramidal,1,4216.395703649579
+EC LII III Pyramidal Tripolar,EC LI II Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,1,30698.001365671505
+EC LII III Pyramidal Tripolar,MEC LIII Bipolar Complex Pyramidal,MEC LIII Complex Pyramidal,1,861.1914192115519
+EC LII III Pyramidal Tripolar,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+EC LII III Pyramidal Tripolar,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+EC LII III Pyramidal Tripolar,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+EC LII III Pyramidal Tripolar,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+EC LII III Pyramidal Tripolar,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LIII Pyramidal,EC LIII Pyramidal,CA1 Pyramidal,1,399.8181948870682
+EC LIII Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LIII Pyramidal Stellate,EC LIII Pyramidal Stellate,CA1 Pyramidal,1,5351.494110639728
+EC LIII Pyramidal Stellate,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LIII Stellate,EC LIII Stellate,MEC LIII Complex Pyramidal,1,165.81222907217855
+EC LIII Stellate,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+EC LIII Stellate,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+EC LIII Stellate,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+EC LIII Stellate,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+EC LIII Stellate,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LIII V Bipolar Pyramidal,EC LIII V Bipolar Pyramidal,LEC LIII Multipolar Principal,1,1092.637693563088
+EC LIII V Bipolar Pyramidal,LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,1,556.0635991085179
+EC LIII V Bipolar Pyramidal,LEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,1,538.1000722266449
+EC LIII V Bipolar Pyramidal,EC LIII Pyramidal Stellate,CA1 Pyramidal,1,5351.494110639728
+EC LIII V Bipolar Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LIV VI Deep Multipolar Principal,EC LIV VI Deep Multipolar Principal,MEC LV VI Pyramidal Polymorphic,1,2582.023382309931
+EC LIV VI Deep Multipolar Principal,MEC LV VI Pyramidal Polymorphic,EC LV Deep Pyramidal,1,78.22850736136446
+EC LIV VI Deep Multipolar Principal,EC LV Deep Pyramidal,LEC LVI Multipolar Pyramidal,1,608.8907703194651
+EC LIV VI Deep Multipolar Principal,LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,1,304.0317537911717
+EC LIV VI Deep Multipolar Principal,LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,1,556.0635991085179
+EC LIV VI Deep Multipolar Principal,LEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,1,538.1000722266449
+EC LIV VI Deep Multipolar Principal,EC LIII Pyramidal Stellate,CA1 Pyramidal,1,5351.494110639728
+EC LIV VI Deep Multipolar Principal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+EC LV Deep Pyramidal,EC LV Deep Pyramidal,MEC LV VI Pyramidal Polymorphic,1,633.5577406795122
+EC LV Deep Pyramidal,MEC LV VI Pyramidal Polymorphic,EC LIV VI Deep Multipolar Principal,1,86.77596588341953
+EC LV Deep Pyramidal,EC LIV VI Deep Multipolar Principal,LEC LVI Multipolar Pyramidal,1,2246.3636143897743
+EC LV Deep Pyramidal,LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,1,304.0317537911717
+EC LV Deep Pyramidal,LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,1,556.0635991085179
+EC LV Deep Pyramidal,LEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,1,538.1000722266449
+EC LV Deep Pyramidal,EC LIII Pyramidal Stellate,CA1 Pyramidal,1,5351.494110639728
+EC LV Deep Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+LEC LIII Complex Pyramidal,LEC LIII Complex Pyramidal,LEC LIII Multipolar Principal,1,814.9191961799069
+LEC LIII Complex Pyramidal,LEC LIII Multipolar Principal,EC LI II Multipolar Pyramidal,1,539.4518276519966
+LEC LIII Complex Pyramidal,EC LI II Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,1,30698.001365671505
+LEC LIII Complex Pyramidal,MEC LIII Bipolar Complex Pyramidal,MEC LIII Complex Pyramidal,1,861.1914192115519
+LEC LIII Complex Pyramidal,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+LEC LIII Complex Pyramidal,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+LEC LIII Complex Pyramidal,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+LEC LIII Complex Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+LEC LIII Complex Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+LEC LIII Multipolar Principal,LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,1,556.0635991085179
+LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,1,538.1000722266449
+LEC LIII Multipolar Principal,EC LIII Pyramidal Stellate,CA1 Pyramidal,1,5351.494110639728
+LEC LIII Multipolar Principal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+LEC LVI Multipolar Pyramidal,LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,1,304.0317537911717
+LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,1,556.0635991085179
+LEC LVI Multipolar Pyramidal,LEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,1,538.1000722266449
+LEC LVI Multipolar Pyramidal,EC LIII Pyramidal Stellate,CA1 Pyramidal,1,5351.494110639728
+LEC LVI Multipolar Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LII III Pyramidal Multiform,MEC LII III Pyramidal Multiform,MEC LV VI Pyramidal Polymorphic,1,1304.0113874450217
+MEC LII III Pyramidal Multiform,MEC LV VI Pyramidal Polymorphic,EC LIV VI Deep Multipolar Principal,1,86.77596588341953
+MEC LII III Pyramidal Multiform,EC LIV VI Deep Multipolar Principal,LEC LVI Multipolar Pyramidal,1,2246.3636143897743
+MEC LII III Pyramidal Multiform,LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,1,304.0317537911717
+MEC LII III Pyramidal Multiform,LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,1,556.0635991085179
+MEC LII III Pyramidal Multiform,LEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,1,538.1000722266449
+MEC LII III Pyramidal Multiform,EC LIII Pyramidal Stellate,CA1 Pyramidal,1,5351.494110639728
+MEC LII III Pyramidal Multiform,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LII Oblique Pyramidal,MEC LII Oblique Pyramidal,MEC LIII Complex Pyramidal,1,455.4398944649327
+MEC LII Oblique Pyramidal,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+MEC LII Oblique Pyramidal,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+MEC LII Oblique Pyramidal,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+MEC LII Oblique Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+MEC LII Oblique Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LII Stellate,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+MEC LII Stellate,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+MEC LII Stellate,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+MEC LII Stellate,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LIII Bipolar Complex Pyramidal,MEC LIII Bipolar Complex Pyramidal,MEC LIII Complex Pyramidal,1,861.1914192115519
+MEC LIII Bipolar Complex Pyramidal,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+MEC LIII Bipolar Complex Pyramidal,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+MEC LIII Bipolar Complex Pyramidal,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+MEC LIII Bipolar Complex Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+MEC LIII Bipolar Complex Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LIII Complex Pyramidal,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+MEC LIII Complex Pyramidal,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+MEC LIII Complex Pyramidal,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+MEC LIII Complex Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+MEC LIII Complex Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LV Multipolar Pyramidal,MEC LV Multipolar Pyramidal,MEC LIII Complex Pyramidal,1,457.2402797600769
+MEC LV Multipolar Pyramidal,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+MEC LV Multipolar Pyramidal,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+MEC LV Multipolar Pyramidal,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+MEC LV Multipolar Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+MEC LV Multipolar Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LV Pyramidal,MEC LV Pyramidal,DG Granule,1,9568.736896643586
+MEC LV Pyramidal,DG Granule,DG Mossy,1,44908.709978571016
+MEC LV Pyramidal,DG Mossy,DG Hilar Ectopic Granule,1,2119.754290320353
+MEC LV Pyramidal,DG Hilar Ectopic Granule,CA3c Pyramidal,1,0.0550567880071112
+MEC LV Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+MEC LV Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LV Superficial Pyramidal,MEC LV Superficial Pyramidal,MEC LIII Complex Pyramidal,1,495.9622533998108
+MEC LV Superficial Pyramidal,MEC LIII Complex Pyramidal,MEC LII Stellate,1,1193.0847203135872
+MEC LV Superficial Pyramidal,MEC LII Stellate,CA3 Granule,1,19640.6765649223
+MEC LV Superficial Pyramidal,CA3 Granule,CA3c Pyramidal,1,2.280811281935155
+MEC LV Superficial Pyramidal,CA3c Pyramidal,CA1 Pyramidal,1,85609.60976338176
+MEC LV Superficial Pyramidal,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+MEC LV VI Pyramidal Polymorphic,MEC LV VI Pyramidal Polymorphic,EC LIV VI Deep Multipolar Principal,1,86.77596588341953
+MEC LV VI Pyramidal Polymorphic,EC LIV VI Deep Multipolar Principal,LEC LVI Multipolar Pyramidal,1,2246.3636143897743
+MEC LV VI Pyramidal Polymorphic,LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,1,304.0317537911717
+MEC LV VI Pyramidal Polymorphic,LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,1,556.0635991085179
+MEC LV VI Pyramidal Polymorphic,LEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,1,538.1000722266449
+MEC LV VI Pyramidal Polymorphic,EC LIII Pyramidal Stellate,CA1 Pyramidal,1,5351.494110639728
+MEC LV VI Pyramidal Polymorphic,CA1 Pyramidal,CA1 Back Projection,1,13696.70368235844
+SUB CA1 Projecting Pyramidal,SUB CA1 Projecting Pyramidal,CA1 Back Projection,1,477.1459483921526

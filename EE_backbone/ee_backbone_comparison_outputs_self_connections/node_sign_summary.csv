@@ -1,0 +1,86 @@
+node,positive_fraction_nonzero_outgoing,n_positive_outgoing,n_negative_outgoing,self_weight_raw,is_excitatory
+CA1 Axo Axonic,0.0,0,2,0.0,False
+CA1 Back Projection,0.0,0,53,-196.3416727692154,False
+CA1 Basket,0.0,0,10,-655.9736586196078,False
+CA1 Basket CCK+,0.0,0,10,-1112.0869456812588,False
+CA1 Bistratified,0.0,0,27,-145.31037412843256,False
+CA1 Horizontal Axo Axonic,0.0,0,2,0.0,False
+CA1 Horizontal Basket,0.0,0,10,-549.1605773609149,False
+CA1 Ivy,0.0,0,27,-67.16247578964757,False
+CA1 LMR,0.0,0,19,-85.05543358173746,False
+CA1 Neurogliaform,0.0,0,14,-59.55353517958427,False
+CA1 Neurogliaform Projecting,0.0,0,25,-1.5863058824702536,False
+CA1 O LM,0.0,0,14,0.0,False
+CA1 O LMR,0.0,0,19,0.0,False
+CA1 OR LM,0.0,0,14,0.0,False
+CA1 Oriens Alveus,0.0,0,21,-52.55578248142694,False
+CA1 Oriens Bistratified,0.0,0,25,-0.7661769853824949,False
+CA1 Perforant Path Associated,0.0,0,26,-272.08416505614923,False
+CA1 Perforant Path Associated QuadD,0.0,0,12,-16.14389456564704,False
+CA1 Pyramidal,1.0,30,0,2793.7555172355333,True
+CA1 Quadrilaminar,0.0,0,28,-1.2191589321889449,False
+CA1 R Receiving Apical Targeting,0.0,0,19,-83.34571454602052,False
+CA1 Radial Trilaminar,0.0,0,27,-18.6196386319667,False
+CA1 Radiatum,0.0,0,17,-7.452073647492263,False
+CA1 Radiatum Giant,1.0,20,0,0.0,True
+CA1 Recurrent O LM,0.0,0,26,-1.5944641965028976,False
+CA1 SO SO,0.0,0,20,-65.81663566135066,False
+CA1 Schaffer Collateral Associated,0.0,0,27,-16.50631386224168,False
+CA1 Trilaminar,0.0,0,28,-274.6652377283173,False
+CA2 Basket,0.0,0,5,-469.44380375494126,False
+CA2 Bistratified,0.0,0,31,-133.06277892855218,False
+CA2 Pyramidal,1.0,55,0,2163.138288508038,True
+CA2 SP SR,0.0,0,5,-2.7640495398297604,False
+CA2 Wide Arbor Basket,0.0,0,21,-316.75689476205247,False
+CA3 Axo Axonic,0.0,0,2,0.0,False
+CA3 Basket,0.0,0,6,-1688.150222346905,False
+CA3 Basket CCK+,0.0,0,6,-1289.6497311663295,False
+CA3 Granule,1.0,10,0,0.0,True
+CA3 Horizontal Axo Axonic,0.0,0,2,0.0,False
+CA3 LMR Targeting,0.0,0,10,-329.7500831496275,False
+CA3 Lucidum ORAX,0.0,0,15,-1.19506203207234,False
+CA3 Mossy Fiber Associated,0.0,0,22,-41.66142560219374,False
+CA3 Mossy Fiber Associated ORDEN,0.0,0,21,-16.350481800770595,False
+CA3 O LM,0.0,0,13,-163.1985870972566,False
+CA3 Pyramidal,1.0,44,0,3278.450765697168,True
+CA3 Spiny Lucidum,0.0,0,24,-1.48181367288471,False
+CA3 Trilaminar,0.0,0,41,-10.98193367104684,False
+CA3c Pyramidal,1.0,57,0,639.8640695461409,True
+DG AIPRIM,0.0,0,12,-2739.6290265605458,False
+DG Axo Axonic,0.0,0,3,0.0,False
+DG Basket,0.0,0,7,-340.4290163310755,False
+DG Granule,1.0,24,0,0.0,True
+DG HICAP,0.0,0,10,-14.91972159041843,False
+DG HIPP,0.0,0,12,0.0,False
+DG HIPROM,0.0,0,30,-0.7862956495514265,False
+DG Hilar Ectopic Granule,1.0,20,0,0.9213810801264162,True
+DG MOLAX,0.0,0,13,-215.64237195086028,False
+DG MOPP,0.0,0,12,-1.94595579001008,False
+DG Mossy,1.0,12,0,1751.260654032912,True
+DG Neurogliaform,0.0,0,13,-0.0776534920054159,False
+DG Semilunar Granule,1.0,22,0,40.60469398082807,True
+DG Total Molecular Layer,0.0,0,15,-364.8268314734505,False
+EC LI II Multipolar Pyramidal,1.0,19,0,18296.078460202098,True
+EC LI II Pyramidal Fan,1.0,32,0,370.7544610085407,True
+EC LII III Pyramidal Tripolar,1.0,32,0,2277.297842357101,True
+EC LIII Pyramidal,1.0,34,0,17.545063132735347,True
+EC LIII Pyramidal Stellate,1.0,28,0,360.1830629372671,True
+EC LIII Stellate,1.0,13,0,60.68453664121218,True
+EC LIII V Bipolar Pyramidal,1.0,19,0,471.82519386819655,True
+EC LIV VI Deep Multipolar Principal,1.0,13,0,1969.34413375272,True
+EC LV Deep Pyramidal,1.0,9,0,398.1782023002817,True
+LEC LIII Complex Pyramidal,1.0,12,0,744.1845437655309,True
+LEC LIII Multipolar Principal,1.0,12,0,496.4095848183002,True
+LEC LVI Multipolar Pyramidal,1.0,10,0,212.6675576452901,True
+MEC LII III Pyramidal Multiform,1.0,20,0,307.79730677822744,True
+MEC LII Oblique Pyramidal,1.0,13,0,0.0,True
+MEC LII Stellate,1.0,41,0,0.0,True
+MEC LIII Bipolar Complex Pyramidal,1.0,19,0,176.61548774480949,True
+MEC LIII Complex Pyramidal,1.0,19,0,1453.7180710081302,True
+MEC LIII Superficial Multipolar Interneuron,0.0,0,17,-4691.989954689168,False
+MEC LIII Superficial Trilayered Interneuron,0.0,0,17,-93.37539594034422,False
+MEC LV Multipolar Pyramidal,1.0,16,0,201.78698075346315,True
+MEC LV Pyramidal,1.0,34,0,565.2447275074132,True
+MEC LV Superficial Pyramidal,1.0,20,0,104.14348764746217,True
+MEC LV VI Pyramidal Polymorphic,1.0,3,0,1336.06008642144,True
+SUB CA1 Projecting Pyramidal,1.0,22,0,960.2428463623708,True

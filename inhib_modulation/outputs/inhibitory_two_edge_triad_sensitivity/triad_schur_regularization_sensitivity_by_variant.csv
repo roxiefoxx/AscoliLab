@@ -1,0 +1,13 @@
+name,max_real,spectral_radius,stable_continuous,stable_discrete,variant,regularization
+triad_schur_effective_EE,785819.4839725402,785819.4839725402,False,False,self_free,1e-06
+triad_schur_effective_EE,4881943.592253661,4881943.592253661,False,False,self_free,1e-05
+triad_schur_effective_EE,5360.161044553036,73980.28392362209,False,False,self_free,0.0001
+triad_schur_effective_EE,1849886.9198162337,1849886.9198162337,False,False,self_free,0.001
+triad_schur_effective_EE,9243141.015888616,9243141.015888616,False,False,self_free,0.01
+triad_schur_effective_EE,3.0982140265922564,196.62882429843523,False,False,self_free,0.1
+triad_schur_effective_EE,89393.2543219349,89393.2543219349,False,False,with_self_connections,1e-06
+triad_schur_effective_EE,8359.442524051496,8359.442524051496,False,False,with_self_connections,1e-05
+triad_schur_effective_EE,644.1818804734944,1006.6242673979491,False,False,with_self_connections,0.0001
+triad_schur_effective_EE,235.00190771052843,403.6190503088112,False,False,with_self_connections,0.001
+triad_schur_effective_EE,316.84837783667524,316.84837783667524,False,False,with_self_connections,0.01
+triad_schur_effective_EE,320.83542058942555,320.83542058942555,False,False,with_self_connections,0.1

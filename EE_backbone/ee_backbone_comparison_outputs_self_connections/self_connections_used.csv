@@ -1,0 +1,33 @@
+node,self_weight,has_positive_self_connection
+CA1 Pyramidal,2793.7555172355333,True
+CA1 Radiatum Giant,0.0,False
+CA2 Pyramidal,2163.138288508038,True
+CA3 Granule,0.0,False
+CA3 Pyramidal,3278.450765697168,True
+CA3c Pyramidal,639.8640695461409,True
+DG Granule,0.0,False
+DG Hilar Ectopic Granule,0.9213810801264162,True
+DG Mossy,1751.260654032912,True
+DG Semilunar Granule,40.60469398082807,True
+EC LI II Multipolar Pyramidal,18296.078460202098,True
+EC LI II Pyramidal Fan,370.7544610085407,True
+EC LII III Pyramidal Tripolar,2277.297842357101,True
+EC LIII Pyramidal,17.545063132735347,True
+EC LIII Pyramidal Stellate,360.1830629372671,True
+EC LIII Stellate,60.68453664121218,True
+EC LIII V Bipolar Pyramidal,471.82519386819655,True
+EC LIV VI Deep Multipolar Principal,1969.34413375272,True
+EC LV Deep Pyramidal,398.1782023002817,True
+LEC LIII Complex Pyramidal,744.1845437655309,True
+LEC LIII Multipolar Principal,496.4095848183002,True
+LEC LVI Multipolar Pyramidal,212.6675576452901,True
+MEC LII III Pyramidal Multiform,307.79730677822744,True
+MEC LII Oblique Pyramidal,0.0,False
+MEC LII Stellate,0.0,False
+MEC LIII Bipolar Complex Pyramidal,176.61548774480949,True
+MEC LIII Complex Pyramidal,1453.7180710081302,True
+MEC LV Multipolar Pyramidal,201.78698075346315,True
+MEC LV Pyramidal,565.2447275074132,True
+MEC LV Superficial Pyramidal,104.14348764746217,True
+MEC LV VI Pyramidal Polymorphic,1336.06008642144,True
+SUB CA1 Projecting Pyramidal,960.2428463623708,True

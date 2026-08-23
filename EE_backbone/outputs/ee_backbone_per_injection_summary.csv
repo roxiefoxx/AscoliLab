@@ -1,0 +1,33 @@
+injection_seed,nodes_reached_including_seed,edges_in_path,total_path_weight,terminal_node,unreached_E_nodes
+CA1 Back Projection,1,0,0.0,CA1 Back Projection,31
+CA1 Pyramidal,2,1,13696.70368235844,CA1 Back Projection,30
+CA2 Pyramidal,2,1,9268.651902533784,CA1 Back Projection,30
+CA3 Granule,4,3,99308.59425702212,CA1 Back Projection,28
+CA3 Pyramidal,2,1,163494.90567997436,CA1 Back Projection,30
+CA3c Pyramidal,3,2,99306.31344574019,CA1 Back Projection,29
+DG Granule,6,5,146334.83277141955,CA1 Back Projection,26
+DG Hilar Ectopic Granule,5,4,13599.24928492622,CA1 Back Projection,27
+DG Mossy,5,4,101426.12279284855,CA1 Back Projection,27
+DG Semilunar Granule,6,5,106581.22859163568,CA1 Back Projection,26
+EC LI II Multipolar Pyramidal,8,7,151701.54832714106,CA1 Back Projection,24
+EC LI II Pyramidal Fan,9,8,159173.98543398868,CA1 Back Projection,23
+EC LII III Pyramidal Tripolar,9,8,155917.94403079065,CA1 Back Projection,23
+EC LIII Pyramidal,3,2,14096.521877245508,CA1 Back Projection,29
+EC LIII Pyramidal Stellate,3,2,19048.19779299817,CA1 Back Projection,29
+EC LIII Stellate,7,6,120308.16777133019,CA1 Back Projection,25
+EC LIII V Bipolar Pyramidal,6,5,21234.99915789642,CA1 Back Projection,26
+EC LIV VI Deep Multipolar Principal,9,8,23715.53587811526,CA1 Back Projection,23
+EC LV Deep Pyramidal,9,8,23413.09053907721,CA1 Back Projection,23
+LEC LIII Complex Pyramidal,10,9,153055.91935097298,CA1 Back Projection,22
+LEC LIII Multipolar Principal,5,4,20142.36146433333,CA1 Back Projection,27
+LEC LVI Multipolar Pyramidal,6,5,20446.393218124504,CA1 Back Projection,26
+MEC LII III Pyramidal Multiform,9,8,24083.544185842722,CA1 Back Projection,23
+MEC LII Oblique Pyramidal,7,6,120597.79543672295,CA1 Back Projection,25
+MEC LII Stellate,5,4,118949.27082194443,CA1 Back Projection,27
+MEC LIII Bipolar Complex Pyramidal,7,6,121003.54696146958,CA1 Back Projection,25
+MEC LIII Complex Pyramidal,6,5,120142.35554225801,CA1 Back Projection,26
+MEC LV Multipolar Pyramidal,7,6,120599.59582201809,CA1 Back Projection,25
+MEC LV Pyramidal,7,6,155903.56966806314,CA1 Back Projection,25
+MEC LV Superficial Pyramidal,7,6,120638.31779565783,CA1 Back Projection,25
+MEC LV VI Pyramidal Polymorphic,8,7,22779.532798397697,CA1 Back Projection,24
+SUB CA1 Projecting Pyramidal,2,1,477.1459483921526,CA1 Back Projection,30
