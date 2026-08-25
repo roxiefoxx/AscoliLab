@@ -1,0 +1,7 @@
+mode,dominant_region,dominant_cell_type,dominant_ei,eigenvalue_real,eigenvalue_imag,eigenvalue_magnitude,dominant_loading,n_high_loading_cells,n_high_loading_inhibitory,n_tree_edges,n_components,roots
+0,MEC,MEC LIII Superficial Multipolar Interneuron (I),I,0.9499999999999992,0.0,0.9499999999999992,0.670392134289665,17,17,5,2,MEC LIII Superficial Multipolar Interneuron; CA1 Trilaminar
+3,CA1,CA1 Trilaminar (I),I,0.0282859166224472,0.3099216246023407,0.311209746755024,0.5842996933265726,31,24,6,1,CA1 Trilaminar
+25,EC,EC LI II Multipolar Pyramidal (E),E,-0.0037215433032652,-0.01316104967145,0.0136771017767819,0.299958104134445,54,35,6,1,EC LI II Multipolar Pyramidal
+74,CA3,CA3 Horizontal Axo Axonic (I),I,1.6014445513589e-05,-1.619977603064102e-05,2.2779271466634792e-05,0.5286214757881694,42,26,4,3,CA3 Horizontal Axo Axonic; CA2 Pyramidal; DG Neurogliaform
+75,DG,DG Semilunar Granule (E),E,-1.0797401176026235e-05,1.28967386631837e-05,1.6819920936274044e-05,0.5212482698168128,27,11,4,3,DG Semilunar Granule; CA3 Trilaminar; MEC LV Pyramidal
+81,CA1,CA1 Oriens Bistratified (I),I,3.2744812791687494e-06,-1.7734598881228086e-21,3.2744812791687494e-06,0.6744735346399479,28,12,4,3,CA1 Oriens Bistratified; CA3 Trilaminar; MEC LII III Pyramidal Multiform

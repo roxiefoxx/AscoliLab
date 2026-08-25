@@ -37,6 +37,13 @@ import numpy as np
 import pandas as pd
 from scipy import linalg
 
+from schur_core_script import (
+    load_mij_matrix,
+    normalize_state_matrix,
+    spectral_abscissa,
+    spectral_radius,
+)
+
 
 @dataclass
 class MatrixPrepResult:
@@ -73,7 +80,7 @@ def load_source_receiver_csv(
     MatrixPrepResult
         Contains M with convention M[receiver, source].
     """
-    df = pd.read_csv(csv_path, index_col=0)
+    df = load_mij_matrix(csv_path)
     raw = df.to_numpy(dtype=float)
 
     # Convert source rows / receiver columns into state matrix M[receiver, source].
@@ -82,19 +89,14 @@ def load_source_receiver_csv(
 
     normalization = normalization.lower().strip()
     if normalization == "none":
-        M = M_raw.copy()
+        M, _ = normalize_state_matrix(M_raw, method="none", target=target_spectral_radius)
         notes = "No normalization. Absolute weight scale is preserved."
     elif normalization in {"column_l1", "col_l1", "row_l1"}:
-        col_abs_sums = np.sum(np.abs(M_raw), axis=0)
-        col_abs_sums[col_abs_sums == 0] = 1.0
-        M = M_raw / col_abs_sums[np.newaxis, :]
+        M, _ = normalize_state_matrix(M_raw, method="column_l1", target=target_spectral_radius)
         normalization = "column_l1"
         notes = "Column L1 normalization after orientation correction. Each source column has abs-sum 1."
     elif normalization == "spectral_radius":
-        rho = spectral_radius(M_raw)
-        if rho <= np.finfo(float).eps:
-            raise ValueError("Cannot spectral-radius normalize a matrix with spectral radius near zero.")
-        M = M_raw * (target_spectral_radius / rho)
+        M, _ = normalize_state_matrix(M_raw, method="spectral_radius", target=target_spectral_radius)
         notes = f"Spectral-radius normalization to rho={target_spectral_radius:g}."
     else:
         raise ValueError("normalization must be 'none', 'column_l1', or 'spectral_radius'.")
@@ -108,19 +110,6 @@ def load_source_receiver_csv(
         spectral_radius=spectral_radius(M),
         notes=notes,
     )
-
-
-def spectral_radius(M: np.ndarray) -> float:
-    """Return spectral radius max(abs(eigvals(M)))."""
-    eigvals = np.linalg.eigvals(M)
-    return float(np.max(np.abs(eigvals)))
-
-
-def spectral_abscissa(M: np.ndarray) -> float:
-    """Return max(real(eigvals(M)))."""
-    eigvals = np.linalg.eigvals(M)
-    return float(np.max(np.real(eigvals)))
-
 
 def top_entries(
     X: np.ndarray,

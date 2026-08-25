@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="394" viewBox="0 0 980 394">
+<rect width="100%" height="100%" fill="white"/>
+<text x="490.0" y="32" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Motif Ablation/Scrambling Effect on Stability-Leading Eigenvalue</text>
+<line x1="825.55" y1="54" x2="825.55" y2="348" stroke="#333" stroke-width="1.2"/>
+<text x="278" y="90" text-anchor="end" font-family="Arial" font-size="13">remove_top_chain_edges</text>
+<rect x="358.21" y="72" width="467.35" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="352.21" y="90" text-anchor="end" font-family="Arial" font-size="12">-0.287</text>
+<text x="278" y="134" text-anchor="end" font-family="Arial" font-size="13">weaken_top_chain_edges_50pct</text>
+<rect x="528.18" y="116" width="297.37" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="522.18" y="134" text-anchor="end" font-family="Arial" font-size="12">-0.183</text>
+<text x="278" y="178" text-anchor="end" font-family="Arial" font-size="13">remove_top_reciprocal_edges</text>
+<rect x="333.45" y="160" width="492.11" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="327.45" y="178" text-anchor="end" font-family="Arial" font-size="12">-0.302</text>
+<text x="278" y="222" text-anchor="end" font-family="Arial" font-size="13">remove_top_convergent_edges</text>
+<rect x="825.55" y="204" width="51.00" height="24" fill="#d73027" opacity="0.88"/>
+<text x="882.55" y="222" text-anchor="start" font-family="Arial" font-size="12">+0.031</text>
+<text x="278" y="266" text-anchor="end" font-family="Arial" font-size="13">remove_top_divergent_edges</text>
+<rect x="585.43" y="248" width="240.12" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="579.43" y="266" text-anchor="end" font-family="Arial" font-size="12">-0.147</text>
+<text x="278" y="310" text-anchor="end" font-family="Arial" font-size="13">block_shuffle_all</text>
+<rect x="433.49" y="292" width="392.07" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="427.49" y="310" text-anchor="end" font-family="Arial" font-size="12">-0.241</text>
+<line x1="290" y1="352" x2="920" y2="352" stroke="#333" stroke-width="1"/>
+<text x="290" y="380" text-anchor="start" font-family="Arial" font-size="12">-0.33</text>
+<text x="920" y="380" text-anchor="end" font-family="Arial" font-size="12">0.06</text>
+<text x="605.0" y="382" text-anchor="middle" font-family="Arial" font-size="14">Delta Re(lambda_stability) vs original J</text>
+<text x="28" y="54" font-family="Arial" font-size="12" fill="#4575b4">Blue: stabilizing</text>
+<text x="28" y="72" font-family="Arial" font-size="12" fill="#d73027">Red: destabilizing</text>
+</svg>

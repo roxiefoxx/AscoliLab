@@ -22,69 +22,16 @@ import numpy as np
 import pandas as pd
 from scipy import linalg
 
+from schur_core_script import (
+    format_cell_label,
+    load_mij_matrix,
+    normalize_state_matrix,
+    region_from_label,
+    spectral_radius,
+)
+
 MAX_CELL_TYPES = 5
 MAX_TIMESTEPS = 10
-
-_EXCITATORY_LABEL_MARKERS = (
-    "pyramidal",
-    "principal",
-    "granule",
-    "semilunar",
-    "stellate",
-    "back projection",
-    "mossy",
-    "total molecular layer",
-)
-
-_INHIBITORY_LABEL_MARKERS = (
-    "interneuron",
-    "axo axonic",
-    "basket",
-    "bistratified",
-    "ivy",
-    "neurogliaform",
-    "o lm",
-    "o-lm",
-    "lm-r",
-    "lmr",
-    "oriens",
-    "radiatum",
-    "trilaminar",
-    "quadrilaminar",
-    "perforant path associated",
-    "apical targeting",
-    "mossy fiber associated",
-    "hipp",
-    "hicap",
-    "hiprom",
-    "mopp",
-    "molax",
-    "mpr",
-)
-
-
-def infer_cell_ei(label) -> str:
-    """Infer E/I type from the cell-type name for compact display labels."""
-    text = str(label).strip()
-    lowered = text.lower()
-    if lowered.endswith("(e)"):
-        return "E"
-    if lowered.endswith("(i)"):
-        return "I"
-    if any(marker in lowered for marker in _INHIBITORY_LABEL_MARKERS):
-        return "I"
-    if any(marker in lowered for marker in _EXCITATORY_LABEL_MARKERS):
-        return "E"
-    return "I"
-
-
-def format_cell_label(label) -> str:
-    """Append an E/I suffix to a cell-type label, without duplicating it."""
-    text = str(label)
-    stripped = text.strip()
-    if stripped.lower().endswith("(e)") or stripped.lower().endswith("(i)"):
-        return text
-    return f"{text} ({infer_cell_ei(text)})"
 
 
 @dataclass(frozen=True)
@@ -108,22 +55,6 @@ class SchurPropagationModel:
         return self.T.shape[0]
 
 
-def _spectral_radius(matrix: np.ndarray) -> float:
-    return float(np.max(np.abs(np.linalg.eigvals(matrix))))
-
-
-def load_mij_matrix(csv_path: str | Path) -> pd.DataFrame:
-    """Load and validate a square, consistently labeled M_ij CSV."""
-    frame = pd.read_csv(csv_path, index_col=0)
-    if frame.shape[0] != frame.shape[1]:
-        raise ValueError(f"M_ij must be square; got {frame.shape}.")
-    if list(frame.index) != list(frame.columns):
-        raise ValueError("M_ij row and column labels must match in the same order.")
-    if frame.index.has_duplicates:
-        raise ValueError("Cell-type labels must be unique.")
-    return frame.astype(float)
-
-
 def prepare_schur_model(
     csv_path: str | Path = "mij_matrix.csv",
     normalization: str = "spectral_radius",
@@ -141,24 +72,20 @@ def prepare_schur_model(
         frame = frame.copy()
         np.fill_diagonal(frame.values, 0.0)
     A_raw = frame.to_numpy(dtype=float).T
-    rho = _spectral_radius(A_raw)
+    rho = spectral_radius(A_raw)
     method = normalization.lower().strip()
 
     if method == "spectral_radius":
         if not 0 < target_spectral_radius:
             raise ValueError("target_spectral_radius must be positive.")
-        if rho <= np.finfo(float).eps:
-            raise ValueError("Cannot normalize a matrix with zero spectral radius.")
-        scale = target_spectral_radius / rho
-        A = A_raw * scale
+        A, norm = normalize_state_matrix(A_raw, method=method, target=target_spectral_radius)
+        scale = float(norm["scale"])
     elif method in {"column_l1", "col_l1"}:
-        sums = np.sum(np.abs(A_raw), axis=0)
-        sums[sums == 0] = 1.0
-        A = A_raw / sums[np.newaxis, :]
+        A, _ = normalize_state_matrix(A_raw, method="column_l1", target=target_spectral_radius)
         scale = float("nan")
         method = "column_l1"
     elif method == "none":
-        A = A_raw.copy()
+        A, _ = normalize_state_matrix(A_raw, method=method, target=target_spectral_radius)
         scale = 1.0
     else:
         raise ValueError("normalization must be 'spectral_radius', 'column_l1', or 'none'.")
@@ -235,12 +162,6 @@ def mode_cell_type_table(
                 }
             )
     return pd.DataFrame(rows)
-
-
-def region_from_label(label: str) -> str:
-    """Extract the anatomical prefix, folding CA3c into CA3."""
-    prefix = str(label).split()[0]
-    return "CA3" if prefix == "CA3c" else prefix
 
 
 def schur_mode_loadings(

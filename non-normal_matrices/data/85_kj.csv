@@ -1,0 +1,86 @@
+neuron_type,KL_slope_Hz_per_pA
+CA1 Back Projection,0.19378
+CA1 Basket,0.1666
+CA1 Basket CCK,0.12483
+CA1 Bistratified,0.08922
+CA1 Horizontal Axo Axonic,0.33807
+CA1 Horizontal Basket,0.15787
+CA1 Ivy,0.0438
+CA1 LMR,0.41516
+CA1 Neurogliaform,0.07081
+CA1 O LM,0.04818
+CA1 O LMR,0.06706
+CA1 OR LM,0.11974
+CA1 Oriens Alveus,0.1554
+CA1 Perforant Path Associated,0.57998
+CA1 Perforant Path Associated QuadD,0.33842
+CA1 Quadrilaminar,0.07486
+CA1 R Receiving Apical Targeting,0.25936
+CA1 Radial Trilaminar,0.12477
+CA1 Radiatum,0.10737
+CA1 Recurrent O LM,0.03251
+CA1 SO SO,0.16655
+CA1 Schaffer Collateral Associated,0.04399
+CA1 Trilaminar,0.60445
+CA2 Basket,0.08812
+CA2 Bistratified,0.09557
+CA2 Pyramidal,0.01469
+CA2 SP SR,0.02724
+CA2 Wide Arbor Basket,0.06561
+CA3 Axo Axonic,0.11589
+CA3 Basket,0.1496
+CA3 Basket CCK,0.08623
+CA3 Granule,0.07366
+CA3 Horizontal Axo Axonic,0.07827
+CA3 LMR Targeting,0.06811
+CA3 Lucidum ORAX,0.31002
+CA3 Mossy Fiber Associated,0.10855
+CA3 Mossy Fiber Associated ORDEN,0.12381
+CA3 O LM,0.17804
+CA3 Spiny Lucidum,0.03588
+DG AIPRIM,0.2501
+DG Axo Axonic,0.27069
+DG Basket,0.09135
+DG Granule,0.04463
+DG HICAP,0.21477
+DG HIPP,
+DG HIPROM,0.03192
+DG Hilar Ectopic Granule,0.02539
+DG MOLAX,0.0744
+DG Mossy,0.029
+DG Neurogliaform,0.01186
+DG Total Molecular Layer,0.0744
+EC LI II Multipolar Pyramidal,0.05452
+EC LI II Pyramidal Fan,0.01976
+EC LII III Pyramidal Tripolar,0.05827
+EC LIII Pyramidal,0.05263
+EC LIII Pyramidal Stellate,0.04652
+EC LIII Stellate,0.09565
+EC LIII V Bipolar Pyramidal,0.0197
+EC LIV VI Deep Multipolar Principal,0.02244
+EC LV Deep Pyramidal,0.02214
+LEC LIII Complex Pyramidal,0.04652
+LEC LIII Multipolar Principal,0.04517
+LEC LVI Multipolar Pyramidal,0.03993
+MEC LII III Pyramidal Multiform,0.05452
+MEC LII Oblique Pyramidal,0.09989
+MEC LII Stellate,0.09989
+MEC LIII Bipolar Complex Pyramidal,0.09565
+MEC LIII Complex Pyramidal,0.09565
+MEC LIII Superficial Multipolar Interneuron,0.89896
+MEC LIII Superficial Trilayered Interneuron,0.07016
+MEC LV Multipolar Pyramidal,0.02214
+MEC LV Pyramidal,0.02214
+MEC LV Superficial Pyramidal,0.02214
+MEC LV VI Pyramidal Polymorphic,0.06472
+SUB CA1 Projecting Pyramidal,0.02145
+CA1 Axo Axonic,0.07601
+CA1 Neurogliaform Projecting,0.02287
+CA1 Oriens Bistratified,0.01811
+CA1 Pyramidal,0.02905
+CA1 Radiatum Giant,0.00183
+CA3 Pyramidal,0.0123
+CA3 Trilaminar,0.01016
+CA3c Pyramidal,0.01712
+DG MOPP,0.01389
+DG Semilunar Granule,0.00401

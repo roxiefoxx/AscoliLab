@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="482" viewBox="0 0 980 482">
+<rect width="100%" height="100%" fill="white"/>
+<text x="490.0" y="32" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Whole-Network Stability Effect of Removing E/I Blocks</text>
+<line x1="838.04" y1="54" x2="838.04" y2="436" stroke="#333" stroke-width="1.2"/>
+<text x="278" y="90" text-anchor="end" font-family="Arial" font-size="13">J E&lt;-E</text>
+<rect x="386.20" y="72" width="451.84" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="380.20" y="90" text-anchor="end" font-family="Arial" font-size="12">-0.926</text>
+<text x="278" y="134" text-anchor="end" font-family="Arial" font-size="13">J E&lt;-I</text>
+<rect x="838.04" y="116" width="20.47" height="24" fill="#d73027" opacity="0.88"/>
+<text x="864.50" y="134" text-anchor="start" font-family="Arial" font-size="12">+0.042</text>
+<text x="278" y="178" text-anchor="end" font-family="Arial" font-size="13">J I&lt;-E</text>
+<rect x="838.04" y="160" width="20.47" height="24" fill="#d73027" opacity="0.88"/>
+<text x="864.50" y="178" text-anchor="start" font-family="Arial" font-size="12">+0.042</text>
+<text x="278" y="222" text-anchor="end" font-family="Arial" font-size="13">J I&lt;-I</text>
+<rect x="834.39" y="204" width="3.65" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="828.39" y="222" text-anchor="end" font-family="Arial" font-size="12">-0.007</text>
+<text x="278" y="266" text-anchor="end" font-family="Arial" font-size="13">Jeff E&lt;-E</text>
+<rect x="333.45" y="248" width="504.59" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="327.45" y="266" text-anchor="end" font-family="Arial" font-size="12">-1.034</text>
+<text x="278" y="310" text-anchor="end" font-family="Arial" font-size="13">Jeff E&lt;-I</text>
+<rect x="838.04" y="292" width="38.51" height="24" fill="#d73027" opacity="0.88"/>
+<text x="882.55" y="310" text-anchor="start" font-family="Arial" font-size="12">+0.079</text>
+<text x="278" y="354" text-anchor="end" font-family="Arial" font-size="13">Jeff I&lt;-E</text>
+<rect x="838.04" y="336" width="38.51" height="24" fill="#d73027" opacity="0.88"/>
+<text x="882.55" y="354" text-anchor="start" font-family="Arial" font-size="12">+0.079</text>
+<text x="278" y="398" text-anchor="end" font-family="Arial" font-size="13">Jeff I&lt;-I</text>
+<rect x="828.14" y="380" width="9.90" height="24" fill="#4575b4" opacity="0.88"/>
+<text x="822.14" y="398" text-anchor="end" font-family="Arial" font-size="12">-0.020</text>
+<line x1="290" y1="440" x2="920" y2="440" stroke="#333" stroke-width="1"/>
+<text x="290" y="468" text-anchor="start" font-family="Arial" font-size="12">-1.12</text>
+<text x="920" y="468" text-anchor="end" font-family="Arial" font-size="12">0.17</text>
+<text x="605.0" y="470" text-anchor="middle" font-family="Arial" font-size="14">Delta Re(lambda_stability) vs original matrix</text>
+<text x="28" y="54" font-family="Arial" font-size="12" fill="#4575b4">Blue: stabilizing</text>
+<text x="28" y="72" font-family="Arial" font-size="12" fill="#d73027">Red: destabilizing</text>
+</svg>

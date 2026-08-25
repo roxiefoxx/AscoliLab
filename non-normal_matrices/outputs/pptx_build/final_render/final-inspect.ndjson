@@ -1,0 +1,161 @@
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"Impact of local connectivity patterns on excitatory-inhibitory network dynamics","textShapes":3}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"textChars":80,"textLines":2}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"textChars":54,"textLines":3}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"textChars":99,"textLines":1}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"Hi, my name is Roxanne Aniceto a second year PhD student in the Bioinformatic..."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"GEORGE MASON UNIVERSITY","textShapes":6}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"textChars":92,"textLines":2}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"textChars":100,"textLines":2}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"textChars":67,"textLines":1}
+{"kind":"image","id":"im/507e5kja","slide":2,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"image","id":"im/kzexcfip","slide":2,"name":"Picture 2","bbox":[856.31,327.68,198.07,193.2]}
+{"kind":"image","id":"im/vu5wza18","slide":2,"name":"Graphic 11","bbox":[190.17,323.45,220.51,220.51]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"\"Classic models just assumed connections were random — like a crowd of strang..."}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"GEORGE MASON UNIVERSITY","textShapes":6}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"textChars":44,"textLines":1}
+{"kind":"textbox","id":"sh/a5c3ql8z","slide":3,"textChars":69,"textLines":3}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"textChars":119,"textLines":3}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"textChars":34,"textLines":1}
+{"kind":"image","id":"im/ulcnalwf","slide":3,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"image","id":"im/vmlojqd0","slide":3,"name":"Picture 2","bbox":[258.19,150.39,763.63,320.89]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"\"To answer that we need a model. The brain has two flavors of neurons — excit..."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"GEORGE MASON UNIVERSITY","textShapes":5}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/ih8ju9sn","slide":4,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"textChars":34,"textLines":1}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"textChars":28,"textLines":1}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"textChars":28,"textLines":1}
+{"kind":"image","id":"im/694nal0r","slide":4,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"image","id":"im/sbm5cbix","slide":4,"name":"Picture 11","bbox":[52.35,159.05,506.43,215.59]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"\"So we have E neurons that amplify and I neurons that suppress. The question ..."}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"GEORGE MASON UNIVERSITY","textShapes":5}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/x4vedgvm","slide":5,"textChars":42,"textLines":1}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"textChars":126,"textLines":2}
+{"kind":"textbox","id":"sh/yhkbe1o7","slide":5,"textChars":18,"textLines":3}
+{"kind":"image","id":"im/tcve903i","slide":5,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"image","id":"im/srmx0vmd","slide":5,"name":"Picture 3","bbox":[125.39,139.4,1029.22,373.54]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"\"The full matrix looks like noise — dense and impossible to read directly. Bu..."}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"GEORGE MASON UNIVERSITY","textShapes":4}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/w32twb6l","slide":6,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"textChars":118,"textLines":5}
+{"kind":"image","id":"im/8zutsju5","slide":6,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"image","id":"im/t03ulobq","slide":6,"name":"Picture 4","bbox":[13,115.83,1062.07,505.21]}
+{"kind":"image","id":"im/y9sbm9c3","slide":6,"name":"Ink 3","bbox":[722.06,373.3,13.23,13.23]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"\"Okay so what you're looking at is the eigenspectrum of J, plotted in the com..."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"GEORGE MASON UNIVERSITY","textShapes":7}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"textChars":31,"textLines":1}
+{"kind":"shape","id":"sh/f2d0b6lc","slide":7,"name":"Straight Connector 17","bbox":[422.4,132.1,0,498.65]}
+{"kind":"textbox","id":"sh/obitsrup","slide":7,"textChars":9,"textLines":1}
+{"kind":"shape","id":"sh/6hgbihcr","slide":7,"name":"TextBox 58","bbox":[314.67,544,19.39,38.78]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"textChars":218,"textLines":6}
+{"kind":"shape","id":"sh/jedkn654","slide":7,"name":"TextBox 20","bbox":[659.27,160.51,329.48,62.83]}
+{"kind":"textbox","id":"sh/50v2pgna","slide":7,"textChars":82,"textLines":1}
+{"kind":"image","id":"im/sny5sji5","slide":7,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"\"So what is J-eff and why do we care? | Four steps on the left. Start with J,..."}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"GEORGE MASON UNIVERSITY","textShapes":10}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/m9sb2x4v","slide":8,"textChars":44,"textLines":2}
+{"kind":"shape","id":"sh/1obudcju","slide":8,"name":"TextBox 58","bbox":[314.67,544,19.39,38.78]}
+{"kind":"textbox","id":"sh/i5wva1o3","slide":8,"textChars":58,"textLines":4}
+{"kind":"textbox","id":"sh/8bat47ml","slide":8,"textChars":47,"textLines":6}
+{"kind":"shape","id":"sh/9w3uds36","slide":8,"name":"Oval 32","bbox":[471.62,440.83,46.96,45.32]}
+{"kind":"shape","id":"sh/y5sbed4j","slide":8,"name":"Oval 33","bbox":[565.36,397.7,45.65,45.32]}
+{"kind":"shape","id":"sh/z61s7il4","slide":8,"name":"Oval 34","bbox":[653.88,440.83,46.96,45.32]}
+{"kind":"shape","id":"sh/l8ja9s3a","slide":8,"name":"Straight Arrow Connector 36","bbox":[511.7,420.36,53.66,27.1]}
+{"kind":"shape","id":"sh/b2hs3il8","slide":8,"name":"Straight Arrow Connector 38","bbox":[611,420.36,49.75,27.1]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"textChars":28,"textLines":1}
+{"kind":"textbox","id":"sh/zipwbmdc","slide":8,"textChars":36,"textLines":1}
+{"kind":"shape","id":"sh/7u5w765k","slide":8,"name":"Straight Arrow Connector 21","bbox":[590.23,299.29,0,48.12]}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"textChars":9,"textLines":1}
+{"kind":"shape","id":"sh/2ts769o3","slide":8,"name":"Right Brace 40","bbox":[343.88,294.15,163.46,177.72]}
+{"kind":"shape","id":"sh/yx4vu10n","slide":8,"name":"Left Brace 55","bbox":[678.26,213.51,171.72,298.49]}
+{"kind":"textbox","id":"sh/gjuto3ud","slide":8,"textChars":24,"textLines":2}
+{"kind":"image","id":"im/t0nahcrm","slide":8,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"\"This slide traces the path from motif to matrix entry. | Both chain and reci..."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"GEORGE MASON UNIVERSITY","textShapes":5}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/p0ji9kf2","slide":9,"textChars":34,"textLines":1}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"textChars":136,"textLines":2}
+{"kind":"textbox","id":"sh/mdonql4z","slide":9,"textChars":321,"textLines":11}
+{"kind":"shape","id":"sh/2xsjepgb","slide":9,"name":"Content Placeholder 5","bbox":[640,211.33,600.04,431.95]}
+{"kind":"shape","id":"sh/do3id4fy","slide":9,"name":"\"Not Allowed\" Symbol 14","bbox":[962.37,435,67.56,62.77]}
+{"kind":"image","id":"im/t8z610vu","slide":9,"name":"Picture 13","bbox":[533.65,214.52,600.04,393.7]}
+{"kind":"image","id":"im/s76psvu9","slide":9,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"\"This is the most counterintuitive result in the paper. When chain motifs are..."}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"GEORGE MASON UNIVERSITY","textShapes":4}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/m1cnetkj","slide":10,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"textChars":34,"textLines":1}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"textChars":442,"textLines":11}
+{"kind":"image","id":"im/h47i1oj2","slide":10,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"\"So the takeaway is this. Classic random-network theory assumes independence ..."}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"GEORGE MASON UNIVERSITY","textShapes":4}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/9gza9sze","slide":11,"textChars":38,"textLines":1}
+{"kind":"shape","id":"sh/xcryxg7y","slide":11,"name":"TextBox 1","bbox":[43.77,143.4,929.81,359.25]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"textChars":376,"textLines":6}
+{"kind":"image","id":"im/dsn6xw32","slide":11,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"Use this slide to shift from the paper summary into the empirical extension. ..."}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"GEORGE MASON UNIVERSITY","textShapes":8}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"textChars":46,"textLines":1}
+{"kind":"shape","id":"sh/1gbm9s3a","slide":12,"name":"TextBox 1","bbox":[43.77,143.4,929.81,359.25]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"textChars":181,"textLines":3}
+{"kind":"textbox","id":"sh/bulo7u58","slide":12,"textChars":31,"textLines":3}
+{"kind":"textbox","id":"sh/orapcf6h","slide":12,"textChars":34,"textLines":3}
+{"kind":"textbox","id":"sh/9sj65kn2","slide":12,"textChars":31,"textLines":3}
+{"kind":"textbox","id":"sh/mps7a5or","slide":12,"textChars":32,"textLines":3}
+{"kind":"image","id":"im/dsv6903i","slide":12,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"Block summary: note the strong I-receiver/E-sender mean and the sparse E-rece..."}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"GEORGE MASON UNIVERSITY","textShapes":4}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/gb6x0zm9","slide":13,"textChars":48,"textLines":1}
+{"kind":"shape","id":"sh/q50nydsj","slide":13,"name":"TextBox 1","bbox":[43.77,143.4,929.81,359.25]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"textChars":190,"textLines":5}
+{"kind":"chart","id":"ch/a1ovex4v","slide":13,"name":"","chartType":"bar","bbox":[765,175,360,300]}
+{"kind":"image","id":"im/wza1svux","slide":13,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"The full empirical matrix is normalized to spectral radius 1. The very large ..."}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"GEORGE MASON UNIVERSITY","textShapes":4}
+{"kind":"textbox","id":"sh/zi5c3y98","slide":14,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/x4ni9ofy","slide":14,"textChars":47,"textLines":1}
+{"kind":"textbox","id":"sh/b2507exs","slide":14,"textChars":210,"textLines":5}
+{"kind":"chart","id":"ch/szud4ra5","slide":14,"name":"","chartType":"bar","bbox":[665,150,430,330]}
+{"kind":"image","id":"im/1w3u10jy","slide":14,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"Jeff summarizes the paper's effective-connectivity approximation on the empir..."}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"GEORGE MASON UNIVERSITY","textShapes":4}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/m9c3e1kn","slide":15,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/hsvat0fa","slide":15,"textChars":41,"textLines":1}
+{"kind":"textbox","id":"sh/vqdsrqx4","slide":15,"textChars":257,"textLines":3}
+{"kind":"chart","id":"ch/4jml4f65","slide":15,"name":"","chartType":"bar","bbox":[650,145,470,340]}
+{"kind":"image","id":"im/hcjm98rm","slide":15,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"This slide reports deterministic motif enrichment from the empirical binary g..."}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"GEORGE MASON UNIVERSITY","textShapes":5}
+{"kind":"textbox","id":"sh/ip4zel83","slide":16,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/3qdg7qpo","slide":16,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/e1sf65o3","slide":16,"textChars":54,"textLines":1}
+{"kind":"textbox","id":"sh/1ojy10ne","slide":16,"textChars":285,"textLines":6}
+{"kind":"textbox","id":"sh/2pcfa5oz","slide":16,"textChars":33,"textLines":2}
+{"kind":"chart","id":"ch/r6xs7uls","slide":16,"name":"","chartType":"line","bbox":[770,168,310,245]}
+{"kind":"image","id":"im/7mtsba9g","slide":16,"name":"Content Placeholder 6","bbox":[-1.48,650.11,1281.48,72.52]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":"The chain sweep perturbs the empirical Jeff chain component deterministically..."}
+{"kind":"notice","message":"Truncated: omitted 0 lines. Increase maxChars or narrow target."}

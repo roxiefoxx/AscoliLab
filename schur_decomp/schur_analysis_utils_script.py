@@ -8,81 +8,16 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import linalg
 
+from schur_core_script import format_cell_label, format_cell_labels, infer_cell_ei, load_mij_matrix
+
 
 REGIME_THRESHOLD = 0.15
 ACTIVE_THRESHOLD = 0.20
 
 
-_EXCITATORY_LABEL_MARKERS = (
-    "pyramidal",
-    "principal",
-    "granule",
-    "semilunar",
-    "stellate",
-    "back projection",
-    "mossy",
-    "total molecular layer",
-)
-
-_INHIBITORY_LABEL_MARKERS = (
-    "interneuron",
-    "axo axonic",
-    "basket",
-    "bistratified",
-    "ivy",
-    "neurogliaform",
-    "o lm",
-    "o-lm",
-    "lm-r",
-    "lmr",
-    "oriens",
-    "radiatum",
-    "trilaminar",
-    "quadrilaminar",
-    "perforant path associated",
-    "apical targeting",
-    "mossy fiber associated",
-    "hipp",
-    "hicap",
-    "hiprom",
-    "mopp",
-    "molax",
-    "mpr",
-)
-
-
-def infer_cell_ei(label) -> str:
-    """Infer E/I type from the cell-type name for compact printed labels."""
-    text = str(label).strip()
-    lowered = text.lower()
-    if lowered.endswith("(e)"):
-        return "E"
-    if lowered.endswith("(i)"):
-        return "I"
-    if any(marker in lowered for marker in _INHIBITORY_LABEL_MARKERS):
-        return "I"
-    if any(marker in lowered for marker in _EXCITATORY_LABEL_MARKERS):
-        return "E"
-    return "I"
-
-
-def format_cell_label(label) -> str:
-    """Append an E/I suffix to a cell-type label, without duplicating it."""
-    text = str(label)
-    stripped = text.strip()
-    if stripped.lower().endswith("(e)") or stripped.lower().endswith("(i)"):
-        return text
-    return f"{text} ({infer_cell_ei(text)})"
-
-
-def format_cell_labels(labels) -> list[str]:
-    """Return all labels with E/I suffixes for printed tables and plots."""
-    return [format_cell_label(label) for label in labels]
-
-
 def load_connectivity_matrix(csv_path: str) -> pd.DataFrame:
     """Load a labeled connectivity matrix from CSV."""
-    df = pd.read_csv(csv_path, index_col=0)
+    df = load_mij_matrix(csv_path)
     print(f"Loaded connectivity matrix of shape: {df.shape}")
     return df
 

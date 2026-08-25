@@ -1,0 +1,8 @@
+Intentional deviations from source deck:
+- Slides 11-16: replace preliminary extension copy with empirical results from the normalized mij_matrix.csv analysis.
+- Slides 14-15: delete previous screenshot-like images and insert editable charts/text boxes because the old images do not represent the current computed results.
+- Speaker notes for slides 11-16: replace repeated preliminary notes with concise presenter notes and [Sources] blocks.
+
+No deviations:
+- Slides 1-10 are preserved as paper/method setup.
+- GMU template chrome, footer text, slide numbers, and bottom ribbon are preserved.

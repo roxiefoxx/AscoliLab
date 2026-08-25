@@ -1,0 +1,9 @@
+variant,rule,selected_order
+with_self,contribution_decay,1
+with_self,cumulative_energy,0
+with_self,spectral_radius,1
+with_self,null_significance,12
+no_self,contribution_decay,1
+no_self,cumulative_energy,0
+no_self,spectral_radius,1
+no_self,null_significance,0

@@ -1,0 +1,21 @@
+{
+  "outputSlides": [
+    {"outputSlide": 1, "sourceSlide": 1, "narrativeRole": "title", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 2, "sourceSlide": 2, "narrativeRole": "big question", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 3, "sourceSlide": 3, "narrativeRole": "E/I system and equations", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 4, "sourceSlide": 4, "narrativeRole": "motif definitions", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 5, "sourceSlide": 5, "narrativeRole": "paper J construction", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 6, "sourceSlide": 6, "narrativeRole": "paper eigenspectrum", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 7, "sourceSlide": 7, "narrativeRole": "paper Jeff concept", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 8, "sourceSlide": 8, "narrativeRole": "where motifs enter Jeff", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 9, "sourceSlide": 9, "narrativeRole": "paradoxical response concept", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 10, "sourceSlide": 10, "narrativeRole": "paper conclusion", "reuseMode": "preserve-slide", "editTargets": []},
+    {"outputSlide": 11, "sourceSlide": 11, "narrativeRole": "empirical J construction overview", "reuseMode": "edit-slide", "editTargets": ["sh/9gza9sze", "sh/n69grmpw"]},
+    {"outputSlide": 12, "sourceSlide": 12, "narrativeRole": "empirical E/I block construction", "reuseMode": "edit-slide", "editTargets": ["sh/xw3q94ne", "sh/ra943il8"]},
+    {"outputSlide": 13, "sourceSlide": 13, "narrativeRole": "empirical eigenspectrum", "reuseMode": "edit-slide", "editTargets": ["sh/gb6x0zm9", "sh/o3i5w3ad"]},
+    {"outputSlide": 14, "sourceSlide": 14, "narrativeRole": "Jeff eigenspectrum", "reuseMode": "edit-slide", "editTargets": ["sh/x4ni9ofy", "im/0vud8v2d", "im/rq1cvq1g"]},
+    {"outputSlide": 15, "sourceSlide": 15, "narrativeRole": "motif enrichment analysis", "reuseMode": "edit-slide", "editTargets": ["sh/hsvat0fa", "im/wbalg3a1"]},
+    {"outputSlide": 16, "sourceSlide": 16, "narrativeRole": "results and next steps", "reuseMode": "edit-slide", "editTargets": ["sh/e1sf65o3", "sh/1ojy10ne"]}
+  ],
+  "omittedSourceSlides": []
+}

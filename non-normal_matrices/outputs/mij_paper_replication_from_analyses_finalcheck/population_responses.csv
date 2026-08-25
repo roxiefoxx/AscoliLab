@@ -1,0 +1,13 @@
+receiver_group,input_group,mean_response,std_response,paradoxical,method,response_solver,condition_number_I_minus_scaled_J
+E,E,-2765725199067590.0,2002111361755393.2,True,full_matrix_inverse,inverse,2.420350444389487e+18
+E,I,16203869186686.018,11729997837095.111,False,full_matrix_inverse,inverse,2.420350444389487e+18
+I,E,-8833518310275509.0,1.5220150278898696e+16,False,full_matrix_inverse,inverse,2.420350444389487e+18
+I,I,51753939692257.97,89172027721380.89,False,full_matrix_inverse,inverse,2.420350444389487e+18
+E,E,-0.6106075685839487,2.9740061545372796,True,full_matrix_pseudoinverse,pseudoinverse_ill_conditioned,2.420350444389487e+18
+E,I,-0.030153709511039323,0.05843592217367459,False,full_matrix_pseudoinverse,pseudoinverse_ill_conditioned,2.420350444389487e+18
+I,E,4.711833351356484,16.849892958687324,False,full_matrix_pseudoinverse,pseudoinverse_ill_conditioned,2.420350444389487e+18
+I,I,0.5819352641193074,0.6057986327150097,False,full_matrix_pseudoinverse,pseudoinverse_ill_conditioned,2.420350444389487e+18
+E,E,-31.64976121603751,6.993523870246153e-15,True,effective_connectivity,inverse,1364.3160372497825
+E,I,0.45818979097473883,9.959186318969168e-17,False,effective_connectivity,inverse,1364.3160372497825
+I,E,-142.87015510353277,6.829249406055402e-14,False,effective_connectivity,inverse,1364.3160372497825
+I,I,2.874637232212931,1.1444679051975815e-15,False,effective_connectivity,inverse,1364.3160372497825

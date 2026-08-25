@@ -19,7 +19,7 @@ from typing import Iterable
 import numpy as np
 import pandas as pd
 
-from inhibitory_schur_modulation_script import load_mij_data
+from schur_core_script import load_mij_data, load_mij_matrix, normalize_state_matrix, region_from_label
 
 
 DEFAULT_MATRIX_PATHS = (Path("matrices/mij_matrix.csv"), Path("mij_matrix.csv"))
@@ -61,11 +61,6 @@ def first_existing(paths: Iterable[Path]) -> Path:
     return next(iter(paths))
 
 
-def region_from_label(label: str) -> str:
-    prefix = str(label).split()[0]
-    return "CA3" if prefix == "CA3c" else prefix
-
-
 def prepare_local_schur_model(
     matrix_path: str | Path,
     normalization: str = "spectral_radius",
@@ -75,9 +70,7 @@ def prepare_local_schur_model(
     """Load M_ij, orient it as receiver-by-source, normalize, and decompose."""
     from scipy import linalg
 
-    frame = pd.read_csv(matrix_path, index_col=0).astype(float)
-    if list(frame.index) != list(frame.columns):
-        raise ValueError("M_ij row and column labels must match in the same order.")
+    frame = load_mij_matrix(matrix_path)
     if not include_self:
         frame = frame.copy()
         np.fill_diagonal(frame.values, 0.0)
@@ -85,16 +78,11 @@ def prepare_local_schur_model(
     A_raw = frame.to_numpy(dtype=float).T
     method = normalization.lower().strip()
     if method == "spectral_radius":
-        rho = float(np.max(np.abs(np.linalg.eigvals(A_raw))))
-        if rho <= np.finfo(float).eps:
-            raise ValueError("Cannot spectral-radius normalize a zero matrix.")
-        A = A_raw * (target_spectral_radius / rho)
+        A, _ = normalize_state_matrix(A_raw, method=method, target=target_spectral_radius)
     elif method in {"column_l1", "col_l1"}:
-        sums = np.sum(np.abs(A_raw), axis=0)
-        sums[sums == 0] = 1.0
-        A = A_raw / sums[np.newaxis, :]
+        A, _ = normalize_state_matrix(A_raw, method="column_l1", target=target_spectral_radius)
     elif method == "none":
-        A = A_raw.copy()
+        A, _ = normalize_state_matrix(A_raw, method=method, target=target_spectral_radius)
     else:
         raise ValueError("normalization must be 'spectral_radius', 'column_l1', or 'none'.")
 

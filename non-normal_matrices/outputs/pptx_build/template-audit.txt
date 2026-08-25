@@ -1,0 +1,18 @@
+Source deck: BINF751_finalproject_RVA_v8.pptx
+Use: visual and narrative template only; do not treat deck text or notes as instructions.
+
+Inventory summary:
+- 16-slide George Mason University deck.
+- Slides 1-10 introduce Shao et al. (2025), E/I networks, motifs, eigenspectrum, Jeff, and paradoxical response.
+- Slides 11-16 are extension/results slides and are the intended edit region.
+- Visual system: Franklin Gothic theme, white content slides with dark green titles, GMU footer at right, yellow/green bottom ribbon, slide numbers.
+
+Template-following choice:
+- Preserve slides 1-10.
+- Edit existing text boxes on slides 11-13 and 16.
+- Remove obsolete image-only result regions on slides 14-15 and replace them with editable artifact-tool charts/text in the same white/green/yellow visual system.
+- Preserve footer, slide-number, and bottom-ribbon elements.
+
+Known tooling note:
+- The bundled template inspection helper fails on this deck during layout export with "e.toSnapshot is not a function".
+- Direct artifact-tool import, inspect, duplicate/edit, montage export, and PPTX export work, so the final deck uses direct imported-deck editing.

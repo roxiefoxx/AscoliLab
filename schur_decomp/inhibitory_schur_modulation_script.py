@@ -18,156 +18,21 @@ inhibitory receiver.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Mapping, Sequence
 
 import numpy as np
 import pandas as pd
 
-
-@dataclass
-class MijData:
-    """Prepared signed connectivity data."""
-
-    M: np.ndarray
-    labels: list[str]
-    ei: pd.Series
-    df_source_receiver: pd.DataFrame
-    netlist: pd.DataFrame | None
-    matrix_path: Path
-    netlist_path: Path | None
-
-    @property
-    def excitatory(self) -> list[str]:
-        return self.ei[self.ei == "e"].index.tolist()
-
-    @property
-    def inhibitory(self) -> list[str]:
-        return self.ei[self.ei == "i"].index.tolist()
-
-
-def load_mij_data(
-    matrix_path: str | Path = "matrices/mij_matrix.csv",
-    netlist_path: str | Path | None = "matrices/mij_netlist.csv",
-    infer_missing_ei: bool = True,
-) -> MijData:
-    """Load matrix and optional netlist metadata.
-
-    The returned ``M`` is transposed from the raw source-row/receiver-column
-    table into ``M[receiver, source]``.
-    """
-    matrix_path = Path(matrix_path)
-    df = pd.read_csv(matrix_path, index_col=0)
-    labels = list(df.columns)
-    if list(df.index) != labels:
-        missing = sorted(set(df.index).symmetric_difference(labels))
-        raise ValueError(f"Matrix row/column labels do not match. Examples: {missing[:5]}")
-
-    netlist = None
-    netlist_path_obj = Path(netlist_path) if netlist_path is not None else None
-    ei = pd.Series(index=labels, dtype="object")
-    if netlist_path_obj is not None and netlist_path_obj.exists():
-        netlist = pd.read_csv(netlist_path_obj)
-        pre = netlist[["pre_neuron", "pre_ei"]].dropna().drop_duplicates()
-        post = netlist[["post_neuron", "post_ei"]].dropna().drop_duplicates()
-        mapping: dict[str, str] = {}
-        for row in pre.itertuples(index=False):
-            mapping[str(row.pre_neuron)] = str(row.pre_ei).lower()
-        for row in post.itertuples(index=False):
-            value = str(row.post_ei).lower()
-            old = mapping.get(str(row.post_neuron))
-            if old is not None and old != value:
-                raise ValueError(f"Conflicting E/I metadata for {row.post_neuron}: {old} vs {value}")
-            mapping[str(row.post_neuron)] = value
-        ei = pd.Series({label: mapping.get(label, np.nan) for label in labels}, dtype="object")
-
-    if infer_missing_ei and ei.isna().any():
-        inferred = infer_ei_from_signed_rows(df)
-        ei = ei.fillna(inferred)
-
-    bad = sorted(set(ei.dropna().unique()) - {"e", "i"})
-    if bad:
-        raise ValueError(f"Unexpected E/I labels: {bad}")
-    if ei.isna().any():
-        missing = ei[ei.isna()].index.tolist()
-        raise ValueError(f"Missing E/I metadata for {len(missing)} cells. Examples: {missing[:8]}")
-
-    return MijData(
-        M=df.to_numpy(dtype=float).T.copy(),
-        labels=labels,
-        ei=ei.astype(str),
-        df_source_receiver=df,
-        netlist=netlist,
-        matrix_path=matrix_path,
-        netlist_path=netlist_path_obj,
-    )
-
-
-def infer_ei_from_signed_rows(df_source_receiver: pd.DataFrame) -> pd.Series:
-    """Infer source E/I labels from the sign of outgoing rows."""
-    out: dict[str, str] = {}
-    for label, row in df_source_receiver.iterrows():
-        values = row.to_numpy(dtype=float)
-        pos = np.sum(values > 0)
-        neg = np.sum(values < 0)
-        out[str(label)] = "i" if neg > pos else "e"
-    return pd.Series(out)
-
-
-def spectral_summary(M: np.ndarray) -> dict[str, float | complex]:
-    """Return compact eigenvalue stability diagnostics."""
-    eigvals = np.linalg.eigvals(M)
-    dominant_idx = int(np.argmax(np.real(eigvals)))
-    return {
-        "spectral_radius": float(np.max(np.abs(eigvals))),
-        "spectral_abscissa": float(np.max(np.real(eigvals))),
-        "dominant_eigenvalue": complex(eigvals[dominant_idx]),
-        "dominant_real": float(np.real(eigvals[dominant_idx])),
-        "dominant_imag": float(np.imag(eigvals[dominant_idx])),
-    }
-
-
-def normalize_matrix(M: np.ndarray, method: str = "spectral_radius", target: float = 0.95) -> tuple[np.ndarray, dict[str, float | str]]:
-    """Normalize a matrix for resolvent and Neumann analyses."""
-    M = np.asarray(M, dtype=float)
-    method = method.lower().strip()
-    if method == "none":
-        return M.copy(), {"method": "none", **spectral_summary(M)}
-    if method in {"spectral_radius", "rho"}:
-        rho = spectral_summary(M)["spectral_radius"]
-        if rho <= np.finfo(float).eps:
-            raise ValueError("Cannot spectral-radius normalize a zero matrix.")
-        out = M * (target / float(rho))
-        return out, {"method": "spectral_radius", "target": target, "scale": target / float(rho), **spectral_summary(out)}
-    if method in {"source_l1", "column_l1", "col_l1"}:
-        scale = np.sum(np.abs(M), axis=0)
-        scale[scale == 0] = 1.0
-        out = M / scale[np.newaxis, :]
-        return out, {"method": "source_l1", **spectral_summary(out)}
-    raise ValueError("method must be 'none', 'spectral_radius', or 'source_l1'.")
-
-
-def matrix_variants(M: np.ndarray) -> dict[str, np.ndarray]:
-    """Return with-self and no-self versions of a matrix."""
-    with_self = np.asarray(M, dtype=float).copy()
-    no_self = with_self.copy()
-    np.fill_diagonal(no_self, 0.0)
-    return {"with_self": with_self, "no_self": no_self}
-
-
-def normalized_matrix_variants(
-    M: np.ndarray,
-    method: str = "spectral_radius",
-    target: float = 0.85,
-) -> dict[str, dict[str, object]]:
-    """Normalize with-self and no-self variants independently."""
-    out: dict[str, dict[str, object]] = {}
-    for variant, raw in matrix_variants(M).items():
-        normalized, norm = normalize_matrix(raw, method=method, target=target)
-        norm["variant"] = variant
-        out[variant] = {"M": normalized, "normalization": norm}
-    return out
+from schur_core_script import (
+    MijData,
+    infer_ei_from_signed_rows,
+    load_mij_data,
+    matrix_variants,
+    normalize_state_matrix as normalize_matrix,
+    normalized_matrix_variants,
+    spectral_summary,
+)
 
 
 def ei_indices(ei: pd.Series) -> dict[str, np.ndarray]:
