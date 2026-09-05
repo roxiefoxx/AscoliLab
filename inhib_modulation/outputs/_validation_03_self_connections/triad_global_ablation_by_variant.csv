@@ -1,0 +1,5 @@
+variant,name,max_real,spectral_radius,stable_continuous,stable_discrete,ablated_unique_edges,delta_max_real,delta_spectral_radius
+with_self_connections,baseline,26213.130120909344,26213.130120909344,False,False,,,
+with_self_connections,ablate_all_two_edge_triads,13622.116548477448,13622.116548477448,False,False,782.0,-12591.013572431895,-12591.013572431895
+self_free,baseline,26213.130120909344,26213.130120909344,False,False,,,
+self_free,ablate_all_two_edge_triads,26019.32420221832,26019.32420221832,False,False,711.0,-193.805918691025,-193.805918691025

@@ -1,0 +1,86 @@
+position,modified_tarjan,optimized_min_backward_edges,optimized_min_backward_weight,pagerank,tarjan_dfs
+0,CA1 Ivy,MEC LV Pyramidal,EC LI II Pyramidal Fan,CA3 Trilaminar,CA1 Axo Axonic
+1,CA1 Back Projection,MEC LII Stellate,EC LI II Multipolar Pyramidal,DG Neurogliaform,CA1 Pyramidal
+2,CA1 O LMR,EC LI II Multipolar Pyramidal,EC LII III Pyramidal Tripolar,EC LI II Pyramidal Fan,EC LIII V Bipolar Pyramidal
+3,CA1 Neurogliaform Projecting,EC LI II Pyramidal Fan,MEC LII Stellate,CA1 Oriens Bistratified,EC LII III Pyramidal Tripolar
+4,CA1 Oriens Bistratified,MEC LII Oblique Pyramidal,CA3 Pyramidal,DG Semilunar Granule,EC LI II Multipolar Pyramidal
+5,CA1 Neurogliaform,EC LIII Pyramidal,CA3c Pyramidal,DG MOPP,EC LI II Pyramidal Fan
+6,CA1 Bistratified,LEC LIII Complex Pyramidal,CA2 Pyramidal,CA3 Horizontal Axo Axonic,EC LIII Pyramidal
+7,CA1 O LM,MEC LII III Pyramidal Multiform,CA3 Trilaminar,CA2 SP SR,EC LIII Pyramidal Stellate
+8,CA1 Horizontal Axo Axonic,MEC LIII Bipolar Complex Pyramidal,EC LIII Pyramidal Stellate,CA3 Spiny Lucidum,EC LIII Stellate
+9,CA1 Horizontal Basket,MEC LV Multipolar Pyramidal,CA1 Radiatum Giant,CA2 Pyramidal,LEC LIII Complex Pyramidal
+10,CA1 LMR,EC LIV VI Deep Multipolar Principal,CA1 Pyramidal,CA3 Granule,EC LIV VI Deep Multipolar Principal
+11,CA1 Oriens Alveus,MEC LIII Complex Pyramidal,EC LIV VI Deep Multipolar Principal,CA1 O LM,EC LV Deep Pyramidal
+12,CA1 Basket CCK+,MEC LIII Superficial Multipolar Interneuron,EC LIII V Bipolar Pyramidal,CA3 O LM,MEC LV Multipolar Pyramidal
+13,CA1 Basket,MEC LIII Superficial Trilayered Interneuron,LEC LIII Complex Pyramidal,DG HIPP,MEC LII III Pyramidal Multiform
+14,CA1 OR LM,LEC LVI Multipolar Pyramidal,MEC LII III Pyramidal Multiform,CA1 Recurrent O LM,MEC LII Oblique Pyramidal
+15,CA1 Perforant Path Associated,EC LIII Stellate,EC LV Deep Pyramidal,CA3 LMR Targeting,MEC LIII Bipolar Complex Pyramidal
+16,CA1 Pyramidal,EC LIII Pyramidal Stellate,LEC LVI Multipolar Pyramidal,CA1 Radiatum Giant,MEC LII Stellate
+17,CA2 Bistratified,EC LII III Pyramidal Tripolar,LEC LIII Multipolar Principal,CA1 O LMR,MEC LIII Complex Pyramidal
+18,CA2 Pyramidal,DG Granule,MEC LV Pyramidal,MEC LV Pyramidal,MEC LIII Superficial Multipolar Interneuron
+19,CA1 Radial Trilaminar,CA2 Pyramidal,MEC LV Superficial Pyramidal,MEC LV Multipolar Pyramidal,MEC LIII Superficial Trilayered Interneuron
+20,CA1 Radiatum,CA1 Back Projection,MEC LV Multipolar Pyramidal,LEC LIII Complex Pyramidal,MEC LV Pyramidal
+21,CA1 Quadrilaminar,DG HIPROM,MEC LIII Bipolar Complex Pyramidal,MEC LII Oblique Pyramidal,MEC LV Superficial Pyramidal
+22,CA1 R Receiving Apical Targeting,CA3 Trilaminar,MEC LIII Complex Pyramidal,CA1 Neurogliaform Projecting,MEC LV VI Pyramidal Polymorphic
+23,CA1 Radiatum Giant,CA3 O LM,MEC LIII Superficial Trilayered Interneuron,MEC LV Superficial Pyramidal,LEC LIII Multipolar Principal
+24,CA3 Granule,CA3 Granule,MEC LII Oblique Pyramidal,EC LII III Pyramidal Tripolar,LEC LVI Multipolar Pyramidal
+25,CA3 Horizontal Axo Axonic,CA3 Spiny Lucidum,EC LIII Stellate,CA1 Schaffer Collateral Associated,CA1 Back Projection
+26,CA3 LMR Targeting,CA3 Pyramidal,EC LIII Pyramidal,EC LI II Multipolar Pyramidal,CA1 Basket
+27,CA2 SP SR,CA3 Mossy Fiber Associated ORDEN,SUB CA1 Projecting Pyramidal,EC LIII V Bipolar Pyramidal,CA1 Basket CCK+
+28,CA3 Mossy Fiber Associated,CA3c Pyramidal,MEC LIII Superficial Multipolar Interneuron,EC LIII Pyramidal,CA1 Bistratified
+29,CA3 Lucidum ORAX,CA2 Bistratified,MEC LV VI Pyramidal Polymorphic,CA1 Radiatum,CA1 Horizontal Axo Axonic
+30,CA3 O LM,CA1 Trilaminar,CA1 Oriens Bistratified,LEC LVI Multipolar Pyramidal,CA1 Radiatum Giant
+31,CA3 Pyramidal,SUB CA1 Projecting Pyramidal,CA1 Schaffer Collateral Associated,CA3 Mossy Fiber Associated,CA1 Horizontal Basket
+32,CA3 Spiny Lucidum,CA1 Bistratified,CA1 Back Projection,LEC LIII Multipolar Principal,CA1 Ivy
+33,CA3 Trilaminar,CA1 Ivy,DG Semilunar Granule,MEC LII Stellate,CA1 LMR
+34,CA3c Pyramidal,CA1 SO SO,DG Granule,EC LIII Stellate,CA1 Neurogliaform
+35,CA1 Trilaminar,CA1 Recurrent O LM,CA3 Spiny Lucidum,MEC LIII Superficial Trilayered Interneuron,CA1 Neurogliaform Projecting
+36,CA1 Recurrent O LM,CA1 Oriens Bistratified,CA3 O LM,EC LIII Pyramidal Stellate,CA1 Oriens Alveus
+37,CA1 Schaffer Collateral Associated,CA1 O LMR,CA3 LMR Targeting,CA2 Wide Arbor Basket,CA1 O LM
+38,DG Granule,CA1 Radiatum,CA3 Granule,MEC LV VI Pyramidal Polymorphic,CA1 Perforant Path Associated
+39,CA1 SO SO,CA1 R Receiving Apical Targeting,CA3 Mossy Fiber Associated,EC LV Deep Pyramidal,CA1 Perforant Path Associated QuadD
+40,CA2 Wide Arbor Basket,CA1 OR LM,CA2 Wide Arbor Basket,CA2 Basket,CA1 Quadrilaminar
+41,CA3 Mossy Fiber Associated ORDEN,CA1 O LM,CA3 Basket CCK+,EC LIV VI Deep Multipolar Principal,CA1 O LMR
+42,DG HIPP,CA1 Perforant Path Associated,CA3 Basket,MEC LII III Pyramidal Multiform,CA1 OR LM
+43,CA3 Basket CCK+,CA3 Mossy Fiber Associated,CA3 Mossy Fiber Associated ORDEN,CA1 SO SO,CA1 Radial Trilaminar
+44,CA2 Basket,DG Mossy,DG Mossy,CA1 Horizontal Axo Axonic,CA1 Oriens Bistratified
+45,DG Mossy,DG HIPP,DG HIPP,CA3 Lucidum ORAX,CA1 R Receiving Apical Targeting
+46,DG Hilar Ectopic Granule,DG Neurogliaform,CA2 Basket,CA3 Basket CCK+,CA1 Radiatum
+47,DG HIPROM,DG MOPP,CA2 SP SR,CA2 Bistratified,CA1 Schaffer Collateral Associated
+48,DG Neurogliaform,CA1 Neurogliaform Projecting,CA2 Bistratified,CA1 Back Projection,CA1 Recurrent O LM
+49,DG MOPP,DG AIPRIM,CA1 Basket CCK+,CA1 Neurogliaform,CA1 SO SO
+50,EC LI II Pyramidal Fan,CA2 Basket,CA1 Ivy,DG HIPROM,CA1 Trilaminar
+51,DG Semilunar Granule,CA1 Neurogliaform,CA1 Bistratified,CA3 Pyramidal,CA2 Wide Arbor Basket
+52,DG Total Molecular Layer,DG Semilunar Granule,CA1 SO SO,CA1 Ivy,CA2 Basket
+53,EC LI II Multipolar Pyramidal,DG Hilar Ectopic Granule,CA1 Recurrent O LM,CA3c Pyramidal,CA2 Bistratified
+54,EC LIII Pyramidal Stellate,CA3 Lucidum ORAX,CA1 Trilaminar,CA3 Axo Axonic,CA2 Pyramidal
+55,EC LIII Pyramidal,DG MOLAX,CA1 O LM,MEC LIII Bipolar Complex Pyramidal,CA3 Axo Axonic
+56,EC LII III Pyramidal Tripolar,DG HICAP,CA1 O LMR,CA1 Quadrilaminar,CA3 Pyramidal
+57,CA1 Perforant Path Associated QuadD,DG Basket,CA1 Radiatum,DG Total Molecular Layer,CA3 Basket
+58,CA1 Axo Axonic,DG Total Molecular Layer,CA1 R Receiving Apical Targeting,CA3 Mossy Fiber Associated ORDEN,CA3 Basket CCK+
+59,EC LIV VI Deep Multipolar Principal,DG Axo Axonic,CA1 Neurogliaform,DG Basket,CA3 Mossy Fiber Associated ORDEN
+60,LEC LIII Complex Pyramidal,CA3 Horizontal Axo Axonic,CA1 Perforant Path Associated,CA1 R Receiving Apical Targeting,CA3 LMR Targeting
+61,EC LIII V Bipolar Pyramidal,CA3 LMR Targeting,DG Total Molecular Layer,CA1 Bistratified,CA3 Granule
+62,LEC LIII Multipolar Principal,CA1 Schaffer Collateral Associated,DG MOPP,CA3 Basket,CA3 Lucidum ORAX
+63,MEC LII Stellate,CA1 Radial Trilaminar,DG AIPRIM,CA1 OR LM,CA3 Horizontal Axo Axonic
+64,CA3 Basket,CA1 Quadrilaminar,DG Basket,MEC LIII Complex Pyramidal,CA3c Pyramidal
+65,LEC LVI Multipolar Pyramidal,CA1 LMR,CA1 Oriens Alveus,DG Hilar Ectopic Granule,CA3 Mossy Fiber Associated
+66,EC LV Deep Pyramidal,CA1 Oriens Alveus,CA1 Basket,CA1 Axo Axonic,CA3 Spiny Lucidum
+67,CA3 Axo Axonic,CA2 Wide Arbor Basket,CA1 Horizontal Basket,DG MOLAX,DG AIPRIM
+68,EC LIII Stellate,CA3 Basket CCK+,CA1 OR LM,DG Mossy,DG Axo Axonic
+69,MEC LV Pyramidal,CA3 Basket,DG MOLAX,CA1 Oriens Alveus,DG Granule
+70,DG AIPRIM,CA3 Axo Axonic,DG Neurogliaform,SUB CA1 Projecting Pyramidal,DG Basket
+71,MEC LII III Pyramidal Multiform,CA1 Horizontal Basket,CA1 Neurogliaform Projecting,CA1 Horizontal Basket,DG HICAP
+72,SUB CA1 Projecting Pyramidal,CA1 Radiatum Giant,DG HICAP,DG Granule,DG HIPROM
+73,MEC LIII Complex Pyramidal,CA1 Pyramidal,DG HIPROM,CA1 Basket CCK+,DG HIPP
+74,MEC LIII Bipolar Complex Pyramidal,CA1 Perforant Path Associated QuadD,DG Axo Axonic,CA1 Pyramidal,DG Hilar Ectopic Granule
+75,MEC LV Superficial Pyramidal,CA1 Horizontal Axo Axonic,DG Hilar Ectopic Granule,CA1 Basket,DG MOLAX
+76,MEC LIII Superficial Trilayered Interneuron,CA1 Basket CCK+,CA3 Lucidum ORAX,DG HICAP,DG MOPP
+77,MEC LII Oblique Pyramidal,CA1 Basket,CA3 Axo Axonic,CA1 Trilaminar,DG Neurogliaform
+78,MEC LV Multipolar Pyramidal,MEC LV Superficial Pyramidal,CA3 Horizontal Axo Axonic,CA1 Radial Trilaminar,SUB CA1 Projecting Pyramidal
+79,MEC LIII Superficial Multipolar Interneuron,EC LIII V Bipolar Pyramidal,CA1 LMR,DG AIPRIM,DG Semilunar Granule
+80,DG MOLAX,LEC LIII Multipolar Principal,CA1 Radial Trilaminar,CA1 Perforant Path Associated,DG Mossy
+81,DG Basket,MEC LV VI Pyramidal Polymorphic,CA1 Quadrilaminar,MEC LIII Superficial Multipolar Interneuron,DG Total Molecular Layer
+82,MEC LV VI Pyramidal Polymorphic,EC LV Deep Pyramidal,CA1 Perforant Path Associated QuadD,CA1 LMR,CA3 O LM
+83,DG HICAP,CA1 Axo Axonic,CA1 Horizontal Axo Axonic,DG Axo Axonic,CA3 Trilaminar
+84,DG Axo Axonic,CA2 SP SR,CA1 Axo Axonic,CA1 Perforant Path Associated QuadD,CA2 SP SR

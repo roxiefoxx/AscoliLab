@@ -1,0 +1,2 @@
+group,self_connection_edges,positive_self_connections,negative_self_connections,baseline_terminal_peak,ablated_terminal_peak,delta_terminal_peak
+self_connections,71,27,44,0.0008288548062565291,2.3797896578582562e-05,-0.0008050569096779465

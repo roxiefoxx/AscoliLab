@@ -1,3 +1,0 @@
-direction_class,edge_count,median_inhibitory_weight,mean_inhibitory_weight,median_backbone_distance,median_abs_backbone_distance,long_range_rate,median_delta_terminal_peak,mean_delta_terminal_peak
-feedback inhibition,476,0.0009457849020244305,0.004817100204416732,-9.0,9.0,0.02100840336134454,2.0643209364124004e-16,-3.432755656658948e-11
-feedforward inhibition,387,0.0011371615914608805,0.0062166287345100735,8.0,8.0,0.06459948320413436,7.5842110369706e-15,-4.867261900135453e-08

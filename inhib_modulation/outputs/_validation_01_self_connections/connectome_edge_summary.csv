@@ -1,0 +1,11 @@
+,value
+nodes,85.0
+entries,7225.0
+positive_edges,734.0
+negative_edges,907.0
+zero_entries,5584.0
+self_connections_included,71.0
+positive_self_connections,27.0
+negative_self_connections,44.0
+density_including_self,0.2271280276816609
+density_without_self,0.21988795518207283

@@ -723,12 +723,13 @@ def block_meaning(block: str) -> str:
         "EI": "E source -> I receiver",
         "IE": "I source -> E receiver",
         "II": "I source -> I receiver",
+        "SELF": "diagonal self-connections",
     }
     return labels[block.upper()]
 
 
 def block_perturbation_table(matrix: pd.DataFrame, classes: pd.Series) -> pd.DataFrame:
-    """Measure dominant eigenvalue effects of removing EE, EI, IE, or II blocks.
+    """Measure dominant eigenvalue effects of removing E/I blocks or self-connections.
 
     This mirrors the newer perturbation analysis by reporting exact block
     removal effects and the first-order eigenvalue perturbation estimate.
@@ -738,8 +739,13 @@ def block_perturbation_table(matrix: pd.DataFrame, classes: pd.Series) -> pd.Dat
     denom = np.vdot(left, right)
     base = spectral_summary(matrix)
     rows = []
-    for block in ("EE", "EI", "IE", "II"):
-        removed = zero_source_receiver_block(matrix, classes, block)
+    for block in ("EE", "EI", "IE", "II", "SELF"):
+        if block == "SELF":
+            removed_array = matrix.to_numpy(dtype=float, copy=True)
+            np.fill_diagonal(removed_array, 0.0)
+            removed = pd.DataFrame(removed_array, index=matrix.index, columns=matrix.columns)
+        else:
+            removed = zero_source_receiver_block(matrix, classes, block)
         delta = removed.to_numpy(dtype=float) - matrix.to_numpy(dtype=float)
         first_order = np.vdot(left, delta @ right) / denom if abs(denom) > 1e-14 else np.nan
         summary = spectral_summary(removed)
@@ -883,6 +889,7 @@ def motif_counts(matrix: pd.DataFrame, classes: pd.Series) -> pd.DataFrame:
 
     arr = matrix.to_numpy(dtype=float)
     adjacency = arr != 0
+    self_connection_count = int(np.count_nonzero(np.diag(adjacency)))
     np.fill_diagonal(adjacency, False)
     positive = arr > 0
     negative = arr < 0
@@ -903,6 +910,7 @@ def motif_counts(matrix: pd.DataFrame, classes: pd.Series) -> pd.DataFrame:
     iii = adjacency[np.ix_(I, I)].astype(int)
     return pd.DataFrame(
         [
+            {"motif": "self_connections", "count": self_connection_count},
             {"motif": "all_excitatory_edges_E_to_E", "count": int(np.count_nonzero(adjacency[np.ix_(E, E)]))},
             {"motif": "all_inhibitory_edges_I_to_I", "count": int(np.count_nonzero(adjacency[np.ix_(I, I)]))},
             {"motif": "all_excitatory_E_E_E_chains", "count": int(np.sum(eee @ eee))},
@@ -954,6 +962,7 @@ def motif_edge_masks(matrix: pd.DataFrame, classes: pd.Series) -> list[tuple[str
 
     arr = matrix.to_numpy(dtype=float)
     adjacency = arr != 0
+    self_mask = np.eye(arr.shape[0], dtype=bool) & adjacency
     np.fill_diagonal(adjacency, False)
     positive = arr > 0
     negative = arr < 0
@@ -961,6 +970,8 @@ def motif_edge_masks(matrix: pd.DataFrame, classes: pd.Series) -> list[tuple[str
     E, I = idx["E"], idx["I"]
     n = arr.shape[0]
     masks: list[tuple[str, np.ndarray, int, str]] = []
+
+    masks.append(("self_connections", self_mask, int(np.count_nonzero(self_mask)), "All nonzero diagonal self-connections."))
 
     ee_mask = np.zeros((n, n), dtype=bool)
     ee_mask[np.ix_(E, E)] = adjacency[np.ix_(E, E)]

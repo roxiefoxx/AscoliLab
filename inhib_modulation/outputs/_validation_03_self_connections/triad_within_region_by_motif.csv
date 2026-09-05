@@ -1,0 +1,7 @@
+variant,motif,triad_count,within_region_rate,median_region_count
+with_self_connections,021C,1644,0.04744525547445255,3.0
+with_self_connections,021D,2811,0.0576307363927428,3.0
+with_self_connections,021U,1288,0.08618012422360248,2.0
+self_free,021C,1644,0.04744525547445255,3.0
+self_free,021D,2811,0.0576307363927428,3.0
+self_free,021U,1288,0.08618012422360248,2.0

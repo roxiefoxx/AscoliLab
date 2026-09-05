@@ -1,0 +1,86 @@
+neuron,outgoing_edges,positive_fraction,negative_fraction,classification
+CA3c Pyramidal,57,1.0,0.0,mostly excitatory
+CA2 Pyramidal,55,1.0,0.0,mostly excitatory
+CA3 Pyramidal,44,1.0,0.0,mostly excitatory
+MEC LII Stellate,41,1.0,0.0,mostly excitatory
+EC LIII Pyramidal,34,1.0,0.0,mostly excitatory
+MEC LV Pyramidal,34,1.0,0.0,mostly excitatory
+EC LI II Pyramidal Fan,32,1.0,0.0,mostly excitatory
+EC LII III Pyramidal Tripolar,32,1.0,0.0,mostly excitatory
+CA1 Pyramidal,30,1.0,0.0,mostly excitatory
+EC LIII Pyramidal Stellate,28,1.0,0.0,mostly excitatory
+DG Granule,24,1.0,0.0,mostly excitatory
+DG Semilunar Granule,22,1.0,0.0,mostly excitatory
+SUB CA1 Projecting Pyramidal,22,1.0,0.0,mostly excitatory
+CA1 Radiatum Giant,20,1.0,0.0,mostly excitatory
+DG Hilar Ectopic Granule,20,1.0,0.0,mostly excitatory
+MEC LII III Pyramidal Multiform,20,1.0,0.0,mostly excitatory
+MEC LV Superficial Pyramidal,20,1.0,0.0,mostly excitatory
+EC LI II Multipolar Pyramidal,19,1.0,0.0,mostly excitatory
+EC LIII V Bipolar Pyramidal,19,1.0,0.0,mostly excitatory
+MEC LIII Bipolar Complex Pyramidal,19,1.0,0.0,mostly excitatory
+MEC LIII Complex Pyramidal,19,1.0,0.0,mostly excitatory
+MEC LV Multipolar Pyramidal,16,1.0,0.0,mostly excitatory
+EC LIII Stellate,13,1.0,0.0,mostly excitatory
+EC LIV VI Deep Multipolar Principal,13,1.0,0.0,mostly excitatory
+MEC LII Oblique Pyramidal,13,1.0,0.0,mostly excitatory
+DG Mossy,12,1.0,0.0,mostly excitatory
+LEC LIII Complex Pyramidal,12,1.0,0.0,mostly excitatory
+LEC LIII Multipolar Principal,12,1.0,0.0,mostly excitatory
+CA3 Granule,10,1.0,0.0,mostly excitatory
+LEC LVI Multipolar Pyramidal,10,1.0,0.0,mostly excitatory
+EC LV Deep Pyramidal,9,1.0,0.0,mostly excitatory
+MEC LV VI Pyramidal Polymorphic,3,1.0,0.0,mostly excitatory
+CA1 Back Projection,53,0.0,1.0,mostly inhibitory
+CA3 Trilaminar,41,0.0,1.0,mostly inhibitory
+CA2 Bistratified,31,0.0,1.0,mostly inhibitory
+DG HIPROM,30,0.0,1.0,mostly inhibitory
+CA1 Quadrilaminar,28,0.0,1.0,mostly inhibitory
+CA1 Trilaminar,28,0.0,1.0,mostly inhibitory
+CA1 Bistratified,27,0.0,1.0,mostly inhibitory
+CA1 Ivy,27,0.0,1.0,mostly inhibitory
+CA1 Radial Trilaminar,27,0.0,1.0,mostly inhibitory
+CA1 Schaffer Collateral Associated,27,0.0,1.0,mostly inhibitory
+CA1 Perforant Path Associated,26,0.0,1.0,mostly inhibitory
+CA1 Recurrent O LM,26,0.0,1.0,mostly inhibitory
+CA1 Neurogliaform Projecting,25,0.0,1.0,mostly inhibitory
+CA1 Oriens Bistratified,25,0.0,1.0,mostly inhibitory
+CA3 Spiny Lucidum,24,0.0,1.0,mostly inhibitory
+CA3 Mossy Fiber Associated,22,0.0,1.0,mostly inhibitory
+CA1 Oriens Alveus,21,0.0,1.0,mostly inhibitory
+CA2 Wide Arbor Basket,21,0.0,1.0,mostly inhibitory
+CA3 Mossy Fiber Associated ORDEN,21,0.0,1.0,mostly inhibitory
+CA1 SO SO,20,0.0,1.0,mostly inhibitory
+CA1 LMR,19,0.0,1.0,mostly inhibitory
+CA1 O LMR,19,0.0,1.0,mostly inhibitory
+CA1 R Receiving Apical Targeting,19,0.0,1.0,mostly inhibitory
+CA1 Radiatum,17,0.0,1.0,mostly inhibitory
+MEC LIII Superficial Multipolar Interneuron,17,0.0,1.0,mostly inhibitory
+MEC LIII Superficial Trilayered Interneuron,17,0.0,1.0,mostly inhibitory
+CA3 Lucidum ORAX,15,0.0,1.0,mostly inhibitory
+DG Total Molecular Layer,15,0.0,1.0,mostly inhibitory
+CA1 Neurogliaform,14,0.0,1.0,mostly inhibitory
+CA1 O LM,14,0.0,1.0,mostly inhibitory
+CA1 OR LM,14,0.0,1.0,mostly inhibitory
+CA3 O LM,13,0.0,1.0,mostly inhibitory
+DG MOLAX,13,0.0,1.0,mostly inhibitory
+DG Neurogliaform,13,0.0,1.0,mostly inhibitory
+CA1 Perforant Path Associated QuadD,12,0.0,1.0,mostly inhibitory
+DG AIPRIM,12,0.0,1.0,mostly inhibitory
+DG HIPP,12,0.0,1.0,mostly inhibitory
+DG MOPP,12,0.0,1.0,mostly inhibitory
+CA1 Basket,10,0.0,1.0,mostly inhibitory
+CA1 Basket CCK+,10,0.0,1.0,mostly inhibitory
+CA1 Horizontal Basket,10,0.0,1.0,mostly inhibitory
+CA3 LMR Targeting,10,0.0,1.0,mostly inhibitory
+DG HICAP,10,0.0,1.0,mostly inhibitory
+DG Basket,7,0.0,1.0,mostly inhibitory
+CA3 Basket,6,0.0,1.0,mostly inhibitory
+CA3 Basket CCK+,6,0.0,1.0,mostly inhibitory
+CA2 Basket,5,0.0,1.0,mostly inhibitory
+CA2 SP SR,5,0.0,1.0,mostly inhibitory
+DG Axo Axonic,3,0.0,1.0,mostly inhibitory
+CA1 Axo Axonic,2,0.0,1.0,mostly inhibitory
+CA1 Horizontal Axo Axonic,2,0.0,1.0,mostly inhibitory
+CA3 Axo Axonic,2,0.0,1.0,mostly inhibitory
+CA3 Horizontal Axo Axonic,2,0.0,1.0,mostly inhibitory

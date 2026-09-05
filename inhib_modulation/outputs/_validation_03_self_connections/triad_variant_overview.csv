@@ -1,0 +1,3 @@
+variant,include_self_connections,triad_count,unique_nonself_edges,unique_self_edges,edge_count_distribution
+with_self_connections,True,5743,711,71,"{2: 11, 3: 447, 4: 2269, 5: 3016}"
+self_free,False,5743,711,0,{2: 5743}

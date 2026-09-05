@@ -1,0 +1,7 @@
+,value
+observed_terminal_peak,0.0008288548062565291
+null_mean_terminal_peak,0.0008123470889891609
+null_sd_terminal_peak,0.004894968277561462
+z_score,0.0033723849331239843
+empirical_p_null_ge_observed,0.1188118811881188
+empirical_p_null_le_observed,0.8910891089108911
