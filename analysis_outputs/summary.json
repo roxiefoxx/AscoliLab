@@ -1,0 +1,33 @@
+{
+  "matrix_size": [
+    85,
+    85
+  ],
+  "nonzero_count": 1641,
+  "density": 0.2271280276816609,
+  "convention": "A[i,j] is effect of source j on target i",
+  "normalization_for_dynamics": "spectral norm",
+  "alpha_A2": 0.01560701803866301,
+  "omega_A2": 0.5023791216283382,
+  "g_react": 1.9905285808031716,
+  "g_stab": 64.07373897580668,
+  "g_operating": 33.032133778304924,
+  "Gmax_operating": 177.64492042776283,
+  "t_star_operating": 1.1036986567525098,
+  "top_initiator": "CA1 Perforant Path Associated QuadD",
+  "top_receiver": "CA3c Pyramidal",
+  "top_single_node": "CA1 Trilaminar",
+  "strongest_gain_reducing_lesion_screen": "CA3c Pyramidal",
+  "total_stationary_variance": 43.814604960866426,
+  "symmetrized_total_stationary_variance": 47.531984125615416,
+  "top_edge_by_local_spectral_or_reactivity_sensitivity": "CA1 Perforant Path Associated QuadD -> CA3c Pyramidal",
+  "null_randomizations_per_family": 50,
+  "null_gain_randomizations_per_family": 20,
+  "notes": [
+    "Node-lesion Gmax is a five-time-point screen around the empirical t*; other lesion metrics are exact.",
+    "Edge alpha/omega effects use first-order eigenvalue sensitivities; G sensitivity uses Frechet derivatives for the top 40 screened edges.",
+    "Pseudospectrum is a finite grid approximation, not a contour-certified boundary."
+  ],
+  "stochastic_comparison_coupling": 1.7914757227228502,
+  "pseudospectral_right_half_min_epsilon_grid": 0.027439277670082435
+}

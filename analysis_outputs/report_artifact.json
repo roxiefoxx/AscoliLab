@@ -1,0 +1,1132 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Non-normal dynamics of the AscoliLab connectomic matrix",
+    "description": "Technical analysis of structure, stability, reactivity, transient amplification, and perturbation sensitivity.",
+    "generatedAt": "2026-09-01T17:23:20Z",
+    "filters": [],
+    "cards": [
+      {
+        "id": "card_eta_c",
+        "description": "Scale-invariant commutator non-normality.",
+        "dataset": "headline",
+        "sourceId": "matrix_source",
+        "metrics": [
+          {
+            "label": "Commutator index \u03b7C",
+            "field": "eta_c",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "card_thresholds",
+        "description": "Coupling thresholds under spectral-norm normalization and \u03b3=1.",
+        "dataset": "headline",
+        "sourceId": "matrix_source",
+        "metrics": [
+          {
+            "label": "Reactivity threshold",
+            "field": "g_react",
+            "format": "number"
+          },
+          {
+            "label": "Stability threshold",
+            "field": "g_stab",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "card_gain",
+        "description": "Peak energy gain at the midpoint of the stable-reactive interval.",
+        "dataset": "headline",
+        "sourceId": "matrix_source",
+        "metrics": [
+          {
+            "label": "Maximum finite-time gain",
+            "field": "Gmax",
+            "format": "number"
+          },
+          {
+            "label": "Time to peak",
+            "field": "t_star",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "gain_chart",
+        "title": "Maximum transient gain versus coupling",
+        "subtitle": "Spectral-norm normalization; stable couplings only; logarithmic growth is tabulated in the companion CSV.",
+        "type": "line",
+        "dataset": "coupling_gain",
+        "sourceId": "matrix_source",
+        "valueFormat": "number",
+        "encodings": {
+          "x": {
+            "field": "g",
+            "type": "quantitative",
+            "label": "Coupling g"
+          },
+          "y": {
+            "field": "Gmax",
+            "type": "quantitative",
+            "label": "Maximum energy gain"
+          },
+          "tooltip": [
+            {
+              "field": "g_fraction_stability",
+              "type": "quantitative",
+              "label": "Fraction of stability threshold",
+              "format": "percent"
+            }
+          ]
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "normalization_table",
+        "title": "Normalization comparison",
+        "subtitle": "Scale changes thresholds but not scale-invariant asymmetry or non-normality indices.",
+        "dataset": "normalizations",
+        "sourceId": "matrix_source",
+        "defaultSort": {
+          "field": "matrix",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "matrix",
+            "label": "Matrix",
+            "type": "text"
+          },
+          {
+            "field": "spectral_abscissa",
+            "label": "\u03b1(A)",
+            "format": "number"
+          },
+          {
+            "field": "numerical_abscissa",
+            "label": "\u03c9(A)",
+            "format": "number"
+          },
+          {
+            "field": "commutator_index",
+            "label": "\u03b7C",
+            "format": "number"
+          },
+          {
+            "field": "henrici_index",
+            "label": "\u03b7H",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "initiator_table",
+        "title": "Leading perturbation initiators",
+        "subtitle": "Largest absolute entries of the optimal right singular vector at t*.",
+        "dataset": "initiators",
+        "sourceId": "matrix_source",
+        "defaultSort": {
+          "field": "abs_v1",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "node",
+            "label": "Node",
+            "type": "text"
+          },
+          {
+            "field": "abs_v1",
+            "label": "|v1|",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "receiver_table",
+        "title": "Leading response receivers",
+        "subtitle": "Largest absolute entries of the optimal left singular vector at t*.",
+        "dataset": "receivers",
+        "sourceId": "matrix_source",
+        "defaultSort": {
+          "field": "abs_u1",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "node",
+            "label": "Node",
+            "type": "text"
+          },
+          {
+            "field": "abs_u1",
+            "label": "|u1|",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "single_table",
+        "title": "Single-node perturbability",
+        "subtitle": "Peak energy gain from unit perturbations at individual nodes.",
+        "dataset": "single_nodes",
+        "sourceId": "matrix_source",
+        "defaultSort": {
+          "field": "single_node_peak_gain",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "node",
+            "label": "Node",
+            "type": "text"
+          },
+          {
+            "field": "single_node_peak_gain",
+            "label": "Peak gain",
+            "format": "number"
+          },
+          {
+            "field": "time_to_peak",
+            "label": "Time to peak",
+            "format": "number"
+          },
+          {
+            "field": "integrated_energy",
+            "label": "Integrated energy",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "lesion_table",
+        "title": "Strongest gain-reducing lesion screens",
+        "subtitle": "Five-time-point screening around the empirical t*; exact \u03b1, \u03c9, and thresholds are saved separately.",
+        "dataset": "lesions",
+        "sourceId": "matrix_source",
+        "defaultSort": {
+          "field": "delta_Gmax_screen",
+          "direction": "asc"
+        },
+        "columns": [
+          {
+            "field": "node",
+            "label": "Node",
+            "type": "text"
+          },
+          {
+            "field": "delta_Gmax_screen",
+            "label": "\u0394 screened Gmax",
+            "format": "number"
+          },
+          {
+            "field": "g_react_lesion",
+            "label": "g_react after lesion",
+            "format": "number"
+          },
+          {
+            "field": "g_stab_lesion",
+            "label": "g_stab after lesion",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "null_table",
+        "title": "Empirical-versus-null statistics",
+        "subtitle": "50 spectral randomizations per family and 20 gain calculations per family; finite-sample empirical p-values.",
+        "dataset": "null_stats",
+        "sourceId": "matrix_source",
+        "defaultSort": {
+          "field": "standardized_effect",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "null_model",
+            "label": "Null",
+            "type": "text"
+          },
+          {
+            "field": "metric",
+            "label": "Metric",
+            "type": "text"
+          },
+          {
+            "field": "empirical",
+            "label": "Empirical",
+            "format": "number"
+          },
+          {
+            "field": "null_mean",
+            "label": "Null mean",
+            "format": "number"
+          },
+          {
+            "field": "standardized_effect",
+            "label": "Standardized effect",
+            "format": "number"
+          },
+          {
+            "field": "upper_tail_p",
+            "label": "Upper-tail p",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "matrix_source",
+        "label": "AscoliLab signed connectomic matrix",
+        "path": "mij_matrix.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT * FROM read_csv_auto('mij_matrix.csv', header = true)",
+          "description": "Loads the labeled signed connectomic matrix; numerical transforms are implemented in non_normal_analysis.py.",
+          "tables_used": [
+            "mij_matrix.csv"
+          ],
+          "filters": [
+            "No rows, columns, or nonzero edges excluded in the primary analysis."
+          ],
+          "metric_definitions": [
+            "A[i,j] is the effect of source node j on target node i."
+          ]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# Non-normal dynamics of the AscoliLab connectomic matrix"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "sourceId": "matrix_source",
+        "body": "## Technical summary\n\nThe matrix is **strongly non-normal** (\u03b7C=0.985, \u03b7H=0.9999), with numerical abscissa about 32.2\u00d7 its spectral abscissa. Under spectral-norm normalization and \u03b3=1, reactivity begins at **g=1.991**, while instability begins only at **g=64.074**. At the midpoint of that stable-reactive interval, the maximum energy gain is **177.6** at **t*=1.104**. This is transient amplification in a stable linear system, not instability."
+      },
+      {
+        "id": "headline",
+        "type": "metric-strip",
+        "cardIds": [
+          "card_eta_c",
+          "card_thresholds",
+          "card_gain"
+        ]
+      },
+      {
+        "id": "gain_findings",
+        "type": "markdown",
+        "sourceId": "matrix_source",
+        "body": "## A broad stable-but-reactive regime produces large transient gain\n\nThe reactivity threshold is only 3.1% of the stability threshold. Gain rises from one at the reactivity boundary to 177.6 at the interval midpoint and 735.9 near 95% of the stability threshold. Eigenvalues alone therefore substantially understate finite-time perturbation growth."
+      },
+      {
+        "id": "gain_chart_block",
+        "type": "chart",
+        "chartId": "gain_chart"
+      },
+      {
+        "id": "vectors",
+        "type": "markdown",
+        "sourceId": "matrix_source",
+        "body": "## Initiators and receivers are distinct\n\nThe leading optimal initiator is **CA1 Perforant Path Associated QuadD**, while the leading response receiver is **CA3c Pyramidal**. **CA1 Trilaminar** ranks first for a constrained single-node impulse. These roles are mathematically different and should not be collapsed into a single notion of importance."
+      },
+      {
+        "id": "init_table_block",
+        "type": "table",
+        "tableId": "initiator_table"
+      },
+      {
+        "id": "recv_table_block",
+        "type": "table",
+        "tableId": "receiver_table"
+      },
+      {
+        "id": "single_table_block",
+        "type": "table",
+        "tableId": "single_table"
+      },
+      {
+        "id": "structure",
+        "type": "markdown",
+        "sourceId": "matrix_source",
+        "body": "## Directionality and a concentrated edge tail drive much of the effect\n\nThe smallest grid values where gain exceeds 1+\u03b4 are q=0.50 for \u03b4=0.01 and q=0.70 for \u03b4=0.25. Positive-only gain at 90% of its stability threshold is 620.2 versus 639.1 for the signed matrix, so inhibition modestly increases the main amplification measure but does not create the effect; the negative-only matrix yields 13.5. Removing the top 1% of absolute-weight edges reduces 90%-threshold gain from 639.4 to 45.5; removing 5% reduces it to 3.5. Small random weight noise leaves the qualitative conclusion intact."
+      },
+      {
+        "id": "nulls",
+        "type": "markdown",
+        "sourceId": "matrix_source",
+        "body": "## Empirical non-normality exceeds the randomized controls\n\nThe empirical commutator index lies above all 50 realizations in both null families (finite-sample upper-tail p=0.0196). Gain is also above the direction-randomized controls (p=0.0476 across 20 gain realizations), while the weight-shuffled gain comparison is less decisive (p=0.0952). Effect sizes and the limited gain-null sample must be considered alongside p-values."
+      },
+      {
+        "id": "null_table_block",
+        "type": "table",
+        "tableId": "null_table"
+      },
+      {
+        "id": "scope",
+        "type": "markdown",
+        "body": "## Scope, data, and metric definitions\n\nThe source is an 85\u00d785 labeled signed matrix with 1,641 nonzero entries. The convention is **A[i,j] = effect of source j on target i**. Asymmetry is ||A\u2212A\u1d40||F/||A||F; non-normality uses the normalized commutator and Henrici departure; reactivity means \u03c9(J)>0; instability means \u03b1(J)>0; finite-time amplification means Gmax>1. Dynamics use J=\u2212I+gA\u0303 with \u03b3=1. Raw weights have no asserted biological time unit."
+      },
+      {
+        "id": "normalization_table_block",
+        "type": "table",
+        "tableId": "normalization_table"
+      },
+      {
+        "id": "methods",
+        "type": "markdown",
+        "body": "## Methodology\n\nDouble-precision NumPy/SciPy routines compute eigenspectra, Hermitian eigenvalues, SVDs, matrix exponentials, Lyapunov solutions, and Frechet derivatives. Transient gain uses an adaptive time horizon, a coarse scan, and bounded local refinement. The analysis uses 50 null matrices per randomization family for spectral statistics and 20 per family for gain. Directionality and inhibition are scanned on 21-point grids. All randomization uses seed 20260901."
+      },
+      {
+        "id": "lesions",
+        "type": "markdown",
+        "sourceId": "matrix_source",
+        "body": "## Perturbation control is localized but metric-dependent\n\nThe strongest screened gain-reducing lesion is **CA3c Pyramidal**. The strongest locally sensitive edge is **CA1 Perforant Path Associated QuadD -> CA3c Pyramidal**. These control rankings need not match optimal-initiation or single-node rankings because each metric answers a different perturbation question."
+      },
+      {
+        "id": "lesion_table_block",
+        "type": "table",
+        "tableId": "lesion_table"
+      },
+      {
+        "id": "limits",
+        "type": "markdown",
+        "body": "## Limitations, uncertainty, and robustness\n\nThe main conclusions are scale-invariant for asymmetry/non-normality and consistent across scalar normalizations, but gain magnitudes depend on the chosen relative coupling. Extreme weights matter materially. Lesion gain is a five-time-point screen around the empirical t*, edge gain derivatives are computed for the top 40 screened edges, and the pseudospectrum is a finite grid approximation; on that grid it reaches Re(z)>0 for \u03b5\u22480.027. At a coupling stable for both empirical and symmetrized matrices (g=1.791), stationary variance is 43.81 versus 47.53; this low-coupling comparison does not contradict the much larger empirical deterministic gain deeper in its unique stable-reactive interval."
+      },
+      {
+        "id": "next",
+        "type": "markdown",
+        "body": "## Recommended next steps\n\n1. Confirm whether the matrix weights have calibrated units or a defensible biological coupling range.\n2. Increase gain-null replication to at least 100\u2013500 per family for publication-grade tail probabilities.\n3. Re-optimize Gmax for the top lesion candidates and brute-force deletion of the top edge candidates.\n4. Add a signed strength-preserving rewiring null if the topology admits a well-mixed Markov chain.\n5. Only then embed the structure in a justified nonlinear firing-rate model and evaluate state-dependent Jacobians."
+      },
+      {
+        "id": "questions",
+        "type": "markdown",
+        "body": "## Further questions\n\n- Are the largest weights measurement-scale artifacts or biologically privileged pathways?\n- Which operating coupling is supported by physiology?\n- Do candidate lesion and edge effects persist under cell-type-specific time constants and structured noise?\n- Can independent data validate the predicted initiator/receiver separation?"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-01T17:23:20Z",
+    "status": "ready",
+    "datasets": {
+      "headline": [
+        {
+          "eta_c": 0.9853655860086108,
+          "eta_h": 0.9998761695600968,
+          "g_react": 1.9905285808031716,
+          "g_stab": 64.07373897580668,
+          "Gmax": 177.64492042776283,
+          "t_star": 1.1036986567525098
+        }
+      ],
+      "coupling_gain": [
+        {
+          "g": 0.0,
+          "Gmax": 1.0,
+          "g_fraction_stability": 0.0
+        },
+        {
+          "g": 2.73009844331698,
+          "Gmax": 1.3607549878463778,
+          "g_fraction_stability": 0.04260869565217391
+        },
+        {
+          "g": 5.46019688663396,
+          "Gmax": 4.347493584916448,
+          "g_fraction_stability": 0.08521739130434781
+        },
+        {
+          "g": 8.19029532995094,
+          "Gmax": 9.531809991561556,
+          "g_fraction_stability": 0.12782608695652173
+        },
+        {
+          "g": 10.92039377326792,
+          "Gmax": 16.791395046496156,
+          "g_fraction_stability": 0.17043478260869563
+        },
+        {
+          "g": 13.6504922165849,
+          "Gmax": 26.5837337108723,
+          "g_fraction_stability": 0.21304347826086953
+        },
+        {
+          "g": 16.38059065990188,
+          "Gmax": 39.18560560951594,
+          "g_fraction_stability": 0.25565217391304346
+        },
+        {
+          "g": 19.11068910321886,
+          "Gmax": 54.55123830771458,
+          "g_fraction_stability": 0.29826086956521736
+        },
+        {
+          "g": 21.84078754653584,
+          "Gmax": 72.65993935631988,
+          "g_fraction_stability": 0.34086956521739126
+        },
+        {
+          "g": 24.57088598985282,
+          "Gmax": 93.33000717150378,
+          "g_fraction_stability": 0.38347826086956516
+        },
+        {
+          "g": 27.3009844331698,
+          "Gmax": 116.13687901235632,
+          "g_fraction_stability": 0.42608695652173906
+        },
+        {
+          "g": 30.031082876486774,
+          "Gmax": 140.301158379434,
+          "g_fraction_stability": 0.4686956521739129
+        },
+        {
+          "g": 32.76118131980376,
+          "Gmax": 170.85395442566448,
+          "g_fraction_stability": 0.5113043478260869
+        },
+        {
+          "g": 35.49127976312074,
+          "Gmax": 207.3794249584872,
+          "g_fraction_stability": 0.5539130434782608
+        },
+        {
+          "g": 38.22137820643772,
+          "Gmax": 245.80970601542467,
+          "g_fraction_stability": 0.5965217391304347
+        },
+        {
+          "g": 40.951476649754696,
+          "Gmax": 283.16719117895803,
+          "g_fraction_stability": 0.6391304347826086
+        },
+        {
+          "g": 43.68157509307168,
+          "Gmax": 326.6307536107173,
+          "g_fraction_stability": 0.6817391304347825
+        },
+        {
+          "g": 46.41167353638866,
+          "Gmax": 383.4075529126188,
+          "g_fraction_stability": 0.7243478260869565
+        },
+        {
+          "g": 49.14177197970564,
+          "Gmax": 429.6732621577635,
+          "g_fraction_stability": 0.7669565217391303
+        },
+        {
+          "g": 51.87187042302262,
+          "Gmax": 497.07067244167774,
+          "g_fraction_stability": 0.8095652173913043
+        },
+        {
+          "g": 54.6019688663396,
+          "Gmax": 544.4336409532282,
+          "g_fraction_stability": 0.8521739130434781
+        },
+        {
+          "g": 57.33206730965658,
+          "Gmax": 624.0673702294994,
+          "g_fraction_stability": 0.8947826086956521
+        },
+        {
+          "g": 60.06216575297355,
+          "Gmax": 700.7010844039326,
+          "g_fraction_stability": 0.9373913043478258
+        },
+        {
+          "g": 62.79226419629054,
+          "Gmax": 778.2776356309354,
+          "g_fraction_stability": 0.98
+        }
+      ],
+      "normalizations": [
+        {
+          "matrix": "raw",
+          "frobenius_norm": 2129668.767780046,
+          "spectral_norm": 1679573.2571060036,
+          "spectral_radius": 26213.13012090935,
+          "spectral_abscissa": 26213.13012090935,
+          "numerical_abscissa": 843782.5376153612,
+          "reactivity_gap": 817569.4074944519,
+          "non_normal_reactivity_ratio": 32.189308706109216,
+          "asymmetry_index": 1.4140952981261994,
+          "commutator_index": 0.9853655860086108,
+          "henrici_departure": 2129405.049959684,
+          "henrici_index": 0.9998761695600968,
+          "eigenvector_condition": 123278.46242005436,
+          "diagonalization_warning": "no"
+        },
+        {
+          "matrix": "spectral_radius",
+          "frobenius_norm": 81.2443518937587,
+          "spectral_norm": 64.07373897580673,
+          "spectral_radius": 1.000000000000003,
+          "spectral_abscissa": 1.000000000000003,
+          "numerical_abscissa": 32.18930870610923,
+          "reactivity_gap": 31.189308706109227,
+          "non_normal_reactivity_ratio": 32.18930870610913,
+          "asymmetry_index": 1.4140952981262005,
+          "commutator_index": 0.9853655860086112,
+          "henrici_departure": 81.23429136992405,
+          "henrici_index": 0.9998761695600968,
+          "eigenvector_condition": 123278.46242008291,
+          "diagonalization_warning": "no"
+        },
+        {
+          "matrix": "spectral_norm",
+          "frobenius_norm": 1.267982065545376,
+          "spectral_norm": 0.9999999999999998,
+          "spectral_radius": 0.015607018038663,
+          "spectral_abscissa": 0.015607018038663,
+          "numerical_abscissa": 0.5023791216283382,
+          "reactivity_gap": 0.4867721035896752,
+          "non_normal_reactivity_ratio": 32.18930870610917,
+          "asymmetry_index": 1.4140952981262,
+          "commutator_index": 0.9853655860086126,
+          "henrici_departure": 1.26782505076841,
+          "henrici_index": 0.9998761695600968,
+          "eigenvector_condition": 123278.46242014311,
+          "diagonalization_warning": "no"
+        },
+        {
+          "matrix": "max_row_sum",
+          "frobenius_norm": 0.3771441014542616,
+          "spectral_norm": 0.2974364635765147,
+          "spectral_radius": 0.0046420962523948,
+          "spectral_abscissa": 0.0046420962523948,
+          "numerical_abscissa": 0.1494258693118087,
+          "reactivity_gap": 0.1447837730594139,
+          "non_normal_reactivity_ratio": 32.18930870610917,
+          "asymmetry_index": 1.414095298126199,
+          "commutator_index": 0.9853655860086108,
+          "henrici_departure": 0.3770973995342717,
+          "henrici_index": 0.9998761695600968,
+          "eigenvector_condition": 123278.4624182599,
+          "diagonalization_warning": "no"
+        }
+      ],
+      "initiators": [
+        {
+          "node": "CA1 Perforant Path Associated QuadD",
+          "abs_v1": 0.5301297273016152,
+          "v1": -0.5301297273016152
+        },
+        {
+          "node": "CA1 Trilaminar",
+          "abs_v1": 0.5169843955394696,
+          "v1": -0.5169843955394696
+        },
+        {
+          "node": "CA1 Perforant Path Associated",
+          "abs_v1": 0.3942123848698231,
+          "v1": -0.3942123848698231
+        },
+        {
+          "node": "CA1 R Receiving Apical Targeting",
+          "abs_v1": 0.2818614376640506,
+          "v1": -0.2818614376640506
+        },
+        {
+          "node": "CA1 OR LM",
+          "abs_v1": 0.199161395385478,
+          "v1": -0.199161395385478
+        },
+        {
+          "node": "CA1 Basket",
+          "abs_v1": 0.1805752764883938,
+          "v1": -0.1805752764883938
+        },
+        {
+          "node": "CA1 Basket CCK+",
+          "abs_v1": 0.1726469606201991,
+          "v1": -0.1726469606201991
+        },
+        {
+          "node": "CA1 LMR",
+          "abs_v1": 0.167488330856741,
+          "v1": -0.167488330856741
+        },
+        {
+          "node": "CA1 Oriens Alveus",
+          "abs_v1": 0.1388940220687359,
+          "v1": -0.1388940220687359
+        },
+        {
+          "node": "CA1 Bistratified",
+          "abs_v1": 0.0981155311428987,
+          "v1": -0.0981155311428987
+        }
+      ],
+      "receivers": [
+        {
+          "node": "CA3c Pyramidal",
+          "abs_u1": 0.8269993017456324,
+          "u1": -0.8269993017456324
+        },
+        {
+          "node": "CA3 Pyramidal",
+          "abs_u1": 0.5458753794639117,
+          "u1": -0.5458753794639117
+        },
+        {
+          "node": "CA2 Pyramidal",
+          "abs_u1": 0.1125928547774994,
+          "u1": -0.1125928547774994
+        },
+        {
+          "node": "EC LIII Pyramidal Stellate",
+          "abs_u1": 0.0355479007786742,
+          "u1": -0.0355479007786742
+        },
+        {
+          "node": "CA1 Pyramidal",
+          "abs_u1": 0.0349994899140095,
+          "u1": -0.0349994899140095
+        },
+        {
+          "node": "DG Granule",
+          "abs_u1": 0.0318149247016679,
+          "u1": -0.0318149247016679
+        },
+        {
+          "node": "MEC LII Stellate",
+          "abs_u1": 0.0298195445373292,
+          "u1": -0.0298195445373292
+        },
+        {
+          "node": "EC LI II Multipolar Pyramidal",
+          "abs_u1": 0.0174364094622889,
+          "u1": -0.0174364094622889
+        },
+        {
+          "node": "CA1 Perforant Path Associated QuadD",
+          "abs_u1": 0.013178982007589,
+          "u1": -0.013178982007589
+        },
+        {
+          "node": "CA1 Trilaminar",
+          "abs_u1": 0.0124539513547565,
+          "u1": -0.0124539513547565
+        }
+      ],
+      "single_nodes": [
+        {
+          "node": "CA1 Trilaminar",
+          "single_node_peak_gain": 93.26936470825068,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 189.55223398529395,
+          "final_grid_energy": 1.964953872966541e-07,
+          "perturbability_rank": 1
+        },
+        {
+          "node": "CA1 Perforant Path Associated QuadD",
+          "single_node_peak_gain": 55.00571013227623,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 110.04951945158764,
+          "final_grid_energy": 6.660585322567642e-08,
+          "perturbability_rank": 2
+        },
+        {
+          "node": "CA1 Perforant Path Associated",
+          "single_node_peak_gain": 34.04472233017946,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 66.97875769064699,
+          "final_grid_energy": 4.17082554481732e-08,
+          "perturbability_rank": 3
+        },
+        {
+          "node": "CA1 R Receiving Apical Targeting",
+          "single_node_peak_gain": 16.674954734744386,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 33.66109195094375,
+          "final_grid_energy": 1.3527494362679796e-08,
+          "perturbability_rank": 4
+        },
+        {
+          "node": "MEC LIII Superficial Multipolar Interneuron",
+          "single_node_peak_gain": 15.026200941238717,
+          "time_to_peak": 1.2132957207407864,
+          "integrated_energy": 39.87940987825908,
+          "final_grid_energy": 3.6730330997252035e-07,
+          "perturbability_rank": 5
+        },
+        {
+          "node": "CA1 OR LM",
+          "single_node_peak_gain": 7.97852624653009,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 16.317832237237106,
+          "final_grid_energy": 6.481372990474689e-09,
+          "perturbability_rank": 6
+        },
+        {
+          "node": "CA1 Basket",
+          "single_node_peak_gain": 7.021350302437465,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 13.796623890526238,
+          "final_grid_energy": 4.5406663800675614e-09,
+          "perturbability_rank": 7
+        },
+        {
+          "node": "CA1 Basket CCK+",
+          "single_node_peak_gain": 6.764155907292251,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 13.235516062921649,
+          "final_grid_energy": 5.536648423009101e-09,
+          "perturbability_rank": 8
+        },
+        {
+          "node": "CA1 LMR",
+          "single_node_peak_gain": 6.471741000247855,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 12.59569995299223,
+          "final_grid_energy": 6.175923908708293e-09,
+          "perturbability_rank": 9
+        },
+        {
+          "node": "CA1 Oriens Alveus",
+          "single_node_peak_gain": 4.343457119603907,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 8.78896596733944,
+          "final_grid_energy": 3.904997993344685e-09,
+          "perturbability_rank": 10
+        },
+        {
+          "node": "DG AIPRIM",
+          "single_node_peak_gain": 3.1813278273959043,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 6.643618830105431,
+          "final_grid_energy": 1.5283805579011712e-08,
+          "perturbability_rank": 11
+        },
+        {
+          "node": "DG Axo Axonic",
+          "single_node_peak_gain": 2.968387865462594,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 6.61159419768421,
+          "final_grid_energy": 3.046843060306672e-08,
+          "perturbability_rank": 12
+        },
+        {
+          "node": "CA1 Bistratified",
+          "single_node_peak_gain": 2.25067993508157,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 4.627566173523656,
+          "final_grid_energy": 8.40181599177239e-10,
+          "perturbability_rank": 13
+        },
+        {
+          "node": "CA1 SO SO",
+          "single_node_peak_gain": 2.165513022529562,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 4.6670701256865685,
+          "final_grid_energy": 4.5706730858006086e-09,
+          "perturbability_rank": 14
+        },
+        {
+          "node": "CA1 Back Projection",
+          "single_node_peak_gain": 1.772913955220186,
+          "time_to_peak": 1.0163506960551,
+          "integrated_energy": 3.8219508836660263,
+          "final_grid_energy": 3.336140123316669e-09,
+          "perturbability_rank": 15
+        }
+      ],
+      "lesions": [
+        {
+          "node": "CA3c Pyramidal",
+          "spectral_abscissa_A_lesion": 0.0155791595294135,
+          "numerical_abscissa_A_lesion": 0.3873050686231499,
+          "g_react_lesion": 2.581944004902775,
+          "g_stab_lesion": 64.1883150443383,
+          "Gmax_screen_lesion": 96.51984982401628,
+          "delta_Gmax_screen": -81.12507060374654
+        },
+        {
+          "node": "CA1 Perforant Path Associated QuadD",
+          "spectral_abscissa_A_lesion": 0.0156070146867009,
+          "numerical_abscissa_A_lesion": 0.4249352730245913,
+          "g_react_lesion": 2.3532995810920343,
+          "g_stab_lesion": 64.07375273710223,
+          "Gmax_screen_lesion": 131.49658918846748,
+          "delta_Gmax_screen": -46.148331239295345
+        },
+        {
+          "node": "CA3 Pyramidal",
+          "spectral_abscissa_A_lesion": 0.0155817993212769,
+          "numerical_abscissa_A_lesion": 0.4769008938459907,
+          "g_react_lesion": 2.096871725140733,
+          "g_stab_lesion": 64.17744057546015,
+          "Gmax_screen_lesion": 144.4836395959938,
+          "delta_Gmax_screen": -33.161280831769034
+        },
+        {
+          "node": "CA1 Trilaminar",
+          "spectral_abscissa_A_lesion": 0.0156086383153531,
+          "numerical_abscissa_A_lesion": 0.4787289881809491,
+          "g_react_lesion": 2.0888645239548804,
+          "g_stab_lesion": 64.06708771106382,
+          "Gmax_screen_lesion": 148.44383325035133,
+          "delta_Gmax_screen": -29.201087177411495
+        },
+        {
+          "node": "CA1 Perforant Path Associated",
+          "spectral_abscissa_A_lesion": 0.0156076873687463,
+          "numerical_abscissa_A_lesion": 0.4589637517555008,
+          "g_react_lesion": 2.178821303806842,
+          "g_stab_lesion": 64.07099119645702,
+          "Gmax_screen_lesion": 152.3818696118675,
+          "delta_Gmax_screen": -25.26305081589533
+        },
+        {
+          "node": "CA1 R Receiving Apical Targeting",
+          "spectral_abscissa_A_lesion": 0.0156071560798212,
+          "numerical_abscissa_A_lesion": 0.4805101856579867,
+          "g_react_lesion": 2.0811213369611505,
+          "g_stab_lesion": 64.07317226057053,
+          "Gmax_screen_lesion": 164.1245673954922,
+          "delta_Gmax_screen": -13.520353032270634
+        },
+        {
+          "node": "CA2 Pyramidal",
+          "spectral_abscissa_A_lesion": 0.0155839228340265,
+          "numerical_abscissa_A_lesion": 0.4994972525747132,
+          "g_react_lesion": 2.002013013776133,
+          "g_stab_lesion": 64.16869556210577,
+          "Gmax_screen_lesion": 164.40404386631678,
+          "delta_Gmax_screen": -13.240876561446044
+        },
+        {
+          "node": "CA1 Pyramidal",
+          "spectral_abscissa_A_lesion": 0.0155478997407151,
+          "numerical_abscissa_A_lesion": 0.5007467793756057,
+          "g_react_lesion": 1.997017337279585,
+          "g_stab_lesion": 64.31736869136806,
+          "Gmax_screen_lesion": 167.03237320664928,
+          "delta_Gmax_screen": -10.612547221113545
+        },
+        {
+          "node": "CA1 OR LM",
+          "spectral_abscissa_A_lesion": 0.0156070715721563,
+          "numerical_abscissa_A_lesion": 0.4915279747132901,
+          "g_react_lesion": 2.03447219984438,
+          "g_stab_lesion": 64.0735191978002,
+          "Gmax_screen_lesion": 170.77123119631622,
+          "delta_Gmax_screen": -6.873689231446605
+        },
+        {
+          "node": "CA1 Basket",
+          "spectral_abscissa_A_lesion": 0.0156083640008549,
+          "numerical_abscissa_A_lesion": 0.4926227825513256,
+          "g_react_lesion": 2.02995077657784,
+          "g_stab_lesion": 64.06821367987234,
+          "Gmax_screen_lesion": 172.1650571163248,
+          "delta_Gmax_screen": -5.479863311438038
+        },
+        {
+          "node": "CA1 LMR",
+          "spectral_abscissa_A_lesion": 0.0156070550463983,
+          "numerical_abscissa_A_lesion": 0.493723735556823,
+          "g_react_lesion": 2.025424195723945,
+          "g_stab_lesion": 64.07358704298086,
+          "Gmax_screen_lesion": 172.7967999908608,
+          "delta_Gmax_screen": -4.848120436902036
+        },
+        {
+          "node": "CA1 Basket CCK+",
+          "spectral_abscissa_A_lesion": 0.0156094723004283,
+          "numerical_abscissa_A_lesion": 0.4933410983661481,
+          "g_react_lesion": 2.026995122262892,
+          "g_stab_lesion": 64.06366472571642,
+          "Gmax_screen_lesion": 172.9484418435519,
+          "delta_Gmax_screen": -4.696478584210922
+        },
+        {
+          "node": "CA1 Oriens Alveus",
+          "spectral_abscissa_A_lesion": 0.0156070724467361,
+          "numerical_abscissa_A_lesion": 0.4967924689445629,
+          "g_react_lesion": 2.012912961672915,
+          "g_stab_lesion": 64.07351560728665,
+          "Gmax_screen_lesion": 174.38085524341386,
+          "delta_Gmax_screen": -3.264065184348965
+        },
+        {
+          "node": "CA1 Bistratified",
+          "spectral_abscissa_A_lesion": 0.0156071747886205,
+          "numerical_abscissa_A_lesion": 0.4995725693754813,
+          "g_react_lesion": 2.0017111853240985,
+          "g_stab_lesion": 64.07309545409312,
+          "Gmax_screen_lesion": 176.42268651927768,
+          "delta_Gmax_screen": -1.2222339084851512
+        },
+        {
+          "node": "CA1 Axo Axonic",
+          "spectral_abscissa_A_lesion": 0.0156070476124521,
+          "numerical_abscissa_A_lesion": 0.5005846662033872,
+          "g_react_lesion": 1.997664066668995,
+          "g_stab_lesion": 64.07361756250086,
+          "Gmax_screen_lesion": 176.58576148093186,
+          "delta_Gmax_screen": -1.059158946830962
+        }
+      ],
+      "null_stats": [
+        {
+          "null_model": "weight_shuffled",
+          "metric": "commutator_index",
+          "empirical": 0.9853655860086126,
+          "null_mean": 0.6101904205242105,
+          "null_sd": 0.0518152106330423,
+          "standardized_effect": 7.240637660269488,
+          "empirical_percentile": 1.0,
+          "upper_tail_p": 0.0196078431372549,
+          "n": 50
+        },
+        {
+          "null_model": "weight_shuffled",
+          "metric": "henrici_index",
+          "empirical": 0.9998761695600968,
+          "null_mean": 0.9634744414890062,
+          "null_sd": 0.0415724817186755,
+          "standardized_effect": 0.8756207608057711,
+          "empirical_percentile": 1.0,
+          "upper_tail_p": 0.0196078431372549,
+          "n": 50
+        },
+        {
+          "null_model": "weight_shuffled",
+          "metric": "spectral_abscissa",
+          "empirical": 0.015607018038663,
+          "null_mean": 0.252037628719039,
+          "null_sd": 0.2050003687299683,
+          "standardized_effect": -1.1533179776462177,
+          "empirical_percentile": 0.0,
+          "upper_tail_p": 1.0,
+          "n": 50
+        },
+        {
+          "null_model": "weight_shuffled",
+          "metric": "numerical_abscissa",
+          "empirical": 0.5023791216283382,
+          "null_mean": 0.5379711721604021,
+          "null_sd": 0.0863553087338185,
+          "standardized_effect": -0.4121582222787579,
+          "empirical_percentile": 0.36,
+          "upper_tail_p": 0.6470588235294118,
+          "n": 50
+        },
+        {
+          "null_model": "weight_shuffled",
+          "metric": "Gmax_at_90pct_stability",
+          "empirical": 639.412492707557,
+          "null_mean": 62.18582689047643,
+          "null_sd": 202.8879487243686,
+          "standardized_effect": 2.8450515146233064,
+          "empirical_percentile": 0.95,
+          "upper_tail_p": 0.0952380952380952,
+          "n": 20
+        },
+        {
+          "null_model": "direction_randomized",
+          "metric": "commutator_index",
+          "empirical": 0.9853655860086126,
+          "null_mean": 0.6866931829518957,
+          "null_sd": 0.0741901224399244,
+          "standardized_effect": 4.025770456148892,
+          "empirical_percentile": 1.0,
+          "upper_tail_p": 0.0196078431372549,
+          "n": 50
+        },
+        {
+          "null_model": "direction_randomized",
+          "metric": "henrici_index",
+          "empirical": 0.9998761695600968,
+          "null_mean": 0.9327723938713044,
+          "null_sd": 0.0268332341984986,
+          "standardized_effect": 2.500771065924918,
+          "empirical_percentile": 1.0,
+          "upper_tail_p": 0.0196078431372549,
+          "n": 50
+        },
+        {
+          "null_model": "direction_randomized",
+          "metric": "spectral_abscissa",
+          "empirical": 0.015607018038663,
+          "null_mean": 0.2736070419007213,
+          "null_sd": 0.065567368995899,
+          "standardized_effect": -3.934884498388138,
+          "empirical_percentile": 0.0,
+          "upper_tail_p": 1.0,
+          "n": 50
+        },
+        {
+          "null_model": "direction_randomized",
+          "metric": "numerical_abscissa",
+          "empirical": 0.5023791216283382,
+          "null_mean": 0.6222167878372591,
+          "null_sd": 0.040480225194615,
+          "standardized_effect": -2.960400186332523,
+          "empirical_percentile": 0.0,
+          "upper_tail_p": 1.0,
+          "n": 50
+        },
+        {
+          "null_model": "direction_randomized",
+          "metric": "Gmax_at_90pct_stability",
+          "empirical": 639.412492707557,
+          "null_mean": 10.747667122558331,
+          "null_sd": 7.3841697543803,
+          "standardized_effect": 85.13683277826512,
+          "empirical_percentile": 1.0,
+          "upper_tail_p": 0.0476190476190476,
+          "n": 20
+        }
+      ]
+    },
+    "accessIssues": []
+  },
+  "sources": [
+    {
+      "id": "matrix_source",
+      "label": "AscoliLab signed connectomic matrix",
+      "path": "mij_matrix.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT * FROM read_csv_auto('mij_matrix.csv', header = true)",
+        "description": "Loads the labeled signed connectomic matrix; numerical transforms are implemented in non_normal_analysis.py.",
+        "tables_used": [
+          "mij_matrix.csv"
+        ],
+        "filters": [
+          "No rows, columns, or nonzero edges excluded in the primary analysis."
+        ],
+        "metric_definitions": [
+          "A[i,j] is the effect of source node j on target node i."
+        ]
+      }
+    }
+  ],
+  "package_info": {
+    "originUrl": "artifact://ascolilab-non-normal-dynamics",
+    "controls": {
+      "edit": false,
+      "refresh": false
+    }
+  }
+}
