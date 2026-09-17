@@ -98,7 +98,7 @@ cells = [
             chain_enrichment_sweep,
             dominant_eigenvalue_sensitivity,
             effective_connectivity,
-            load_mij_matrix,
+            load_connectivity_data,
             low_rank_response,
             motif_correlations,
             population_response,
@@ -117,7 +117,7 @@ cells = [
     ),
     code(
         """
-        data = load_mij_matrix(
+        data = load_connectivity_data(
             MATRIX_PATH,
             netlist_path=NETLIST_PATH,
             spectral_radius_target=SPECTRAL_RADIUS_TARGET,

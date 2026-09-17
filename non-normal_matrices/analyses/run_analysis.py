@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from connectivity_methods import load_mij_matrix, save_outputs
+from connectivity_methods import load_connectivity_data, save_outputs
 
 
 def find_project_root(start: Path | None = None) -> Path:
@@ -71,7 +71,7 @@ def main() -> None:
     netlist_path = resolve_project_path(args.netlist, project_root)
     output_dir = resolve_project_path(args.output_dir, project_root)
 
-    data = load_mij_matrix(matrix_path, netlist_path=netlist_path, spectral_radius_target=args.spectral_radius)
+    data = load_connectivity_data(matrix_path, netlist_path=netlist_path, spectral_radius_target=args.spectral_radius)
     paths = save_outputs(data, output_dir, response_scale=args.response_scale)
 
     metadata = pd.read_csv(paths["metadata"])

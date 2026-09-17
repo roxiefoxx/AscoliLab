@@ -1,0 +1,86 @@
+position,cell_type,ei
+0,EC LI II Pyramidal Fan,e
+1,EC LI II Multipolar Pyramidal,e
+2,EC LII III Pyramidal Tripolar,e
+3,MEC LII Stellate,e
+4,EC LIII Pyramidal Stellate,e
+5,CA3 Pyramidal,e
+6,CA3c Pyramidal,e
+7,CA2 Pyramidal,e
+8,CA3 Trilaminar,i
+9,CA1 Radiatum Giant,e
+10,CA1 Pyramidal,e
+11,EC LIV VI Deep Multipolar Principal,e
+12,EC LIII V Bipolar Pyramidal,e
+13,MEC LII III Pyramidal Multiform,e
+14,LEC LIII Complex Pyramidal,e
+15,EC LV Deep Pyramidal,e
+16,MEC LV Pyramidal,e
+17,MEC LV Superficial Pyramidal,e
+18,MEC LV Multipolar Pyramidal,e
+19,MEC LIII Bipolar Complex Pyramidal,e
+20,MEC LIII Complex Pyramidal,e
+21,MEC LIII Superficial Trilayered Interneuron,i
+22,MEC LII Oblique Pyramidal,e
+23,LEC LVI Multipolar Pyramidal,e
+24,LEC LIII Multipolar Principal,e
+25,EC LIII Stellate,e
+26,EC LIII Pyramidal,e
+27,SUB CA1 Projecting Pyramidal,e
+28,MEC LV VI Pyramidal Polymorphic,e
+29,MEC LIII Superficial Multipolar Interneuron,i
+30,DG Semilunar Granule,e
+31,DG Granule,e
+32,CA1 Oriens Bistratified,i
+33,CA1 Schaffer Collateral Associated,i
+34,CA1 Back Projection,i
+35,CA3 Spiny Lucidum,i
+36,CA3 O LM,i
+37,CA3 LMR Targeting,i
+38,CA3 Granule,e
+39,CA3 Mossy Fiber Associated,i
+40,CA2 Wide Arbor Basket,i
+41,CA3 Basket CCK+,i
+42,CA3 Basket,i
+43,CA3 Mossy Fiber Associated ORDEN,i
+44,DG Mossy,e
+45,DG HIPP,i
+46,CA2 Basket,i
+47,CA2 SP SR,i
+48,CA2 Bistratified,i
+49,CA1 Basket CCK+,i
+50,CA1 Ivy,i
+51,CA1 Bistratified,i
+52,CA1 SO SO,i
+53,CA1 Recurrent O LM,i
+54,CA1 Trilaminar,i
+55,CA1 O LMR,i
+56,CA1 Radiatum,i
+57,CA1 R Receiving Apical Targeting,i
+58,CA1 O LM,i
+59,CA1 Neurogliaform,i
+60,CA1 Perforant Path Associated,i
+61,DG Total Molecular Layer,i
+62,DG MOPP,i
+63,DG AIPRIM,i
+64,DG Basket,i
+65,DG MOLAX,i
+66,DG Neurogliaform,i
+67,CA1 Oriens Alveus,i
+68,CA1 Basket,i
+69,CA1 Horizontal Basket,i
+70,CA1 OR LM,i
+71,CA1 Neurogliaform Projecting,i
+72,DG HICAP,i
+73,DG HIPROM,i
+74,DG Axo Axonic,i
+75,DG Hilar Ectopic Granule,e
+76,CA3 Lucidum ORAX,i
+77,CA3 Horizontal Axo Axonic,i
+78,CA3 Axo Axonic,i
+79,CA1 LMR,i
+80,CA1 Radial Trilaminar,i
+81,CA1 Quadrilaminar,i
+82,CA1 Perforant Path Associated QuadD,i
+83,CA1 Horizontal Axo Axonic,i
+84,CA1 Axo Axonic,i

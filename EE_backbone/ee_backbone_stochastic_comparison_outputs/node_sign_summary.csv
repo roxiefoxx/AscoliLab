@@ -1,0 +1,33 @@
+node,positive_fraction_nonzero_outgoing,n_positive_outgoing,n_negative_outgoing,is_excitatory
+CA1 Pyramidal,1.0,11,0,True
+CA1 Radiatum Giant,1.0,1,0,True
+CA2 Pyramidal,1.0,8,0,True
+CA3 Granule,1.0,2,0,True
+CA3 Pyramidal,1.0,6,0,True
+CA3c Pyramidal,1.0,11,0,True
+DG Granule,1.0,5,0,True
+DG Hilar Ectopic Granule,1.0,4,0,True
+DG Mossy,1.0,4,0,True
+DG Semilunar Granule,1.0,6,0,True
+EC LI II Multipolar Pyramidal,1.0,17,0,True
+EC LI II Pyramidal Fan,1.0,21,0,True
+EC LII III Pyramidal Tripolar,1.0,21,0,True
+EC LIII Pyramidal,1.0,20,0,True
+EC LIII Pyramidal Stellate,1.0,14,0,True
+EC LIII Stellate,1.0,11,0,True
+EC LIII V Bipolar Pyramidal,1.0,17,0,True
+EC LIV VI Deep Multipolar Principal,1.0,13,0,True
+EC LV Deep Pyramidal,1.0,9,0,True
+LEC LIII Complex Pyramidal,1.0,12,0,True
+LEC LIII Multipolar Principal,1.0,12,0,True
+LEC LVI Multipolar Pyramidal,1.0,10,0,True
+MEC LII III Pyramidal Multiform,1.0,18,0,True
+MEC LII Oblique Pyramidal,1.0,11,0,True
+MEC LII Stellate,1.0,24,0,True
+MEC LIII Bipolar Complex Pyramidal,1.0,17,0,True
+MEC LIII Complex Pyramidal,1.0,17,0,True
+MEC LV Multipolar Pyramidal,1.0,14,0,True
+MEC LV Pyramidal,1.0,22,0,True
+MEC LV Superficial Pyramidal,1.0,18,0,True
+MEC LV VI Pyramidal Polymorphic,1.0,3,0,True
+SUB CA1 Projecting Pyramidal,1.0,3,0,True

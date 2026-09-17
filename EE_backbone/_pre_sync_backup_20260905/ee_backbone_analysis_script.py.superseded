@@ -384,21 +384,9 @@ def branch_bound_path(
     states_seen = 0
     stopped_by = "complete"
 
-    def upper_bound(score: float, current: int, visited: Set[int]) -> float:
-        """Admissible optimistic bound on the score reachable from ``current``.
-
-        A continuation from ``current`` through k unvisited nodes uses the edges
-        leaving ``current`` and leaving the first k-1 of those nodes. Charging
-        ``max_extension[current]`` plus ``max_extension`` for every unvisited node
-        therefore dominates any continuation. An earlier version summed only over
-        unvisited nodes, which omitted the edge actually leaving ``current`` and so
-        could fall below the true achievable score and prune the optimum.
-        """
+    def upper_bound(score: float, visited: Set[int]) -> float:
         unvisited = [i for i in range(n) if i not in visited]
-        bound = score + float(max_extension[current])
-        if unvisited:
-            bound += float(max_extension[unvisited].sum())
-        return bound
+        return score + float(max_extension[unvisited].sum()) if unvisited else score
 
     def dfs(u: int, visited: Set[int], path: List[int], score: float) -> None:
         nonlocal best_score, best_path, states_seen, stopped_by
@@ -414,7 +402,7 @@ def branch_bound_path(
         ):
             best_score = score
             best_path = path.copy()
-        if upper_bound(score, u, visited) <= best_score + EPS:
+        if upper_bound(score, visited) <= best_score + EPS:
             return
         for v, w in data.adjacency[u]:
             if v in visited:
@@ -512,25 +500,6 @@ def beam_dp_path(
     return best_path, best_score, f"beam_width_{beam_width}"
 
 
-def _solver_status(problem) -> Tuple[str, bool]:
-    """Return (reported_status, proven_optimal) for a solved PuLP problem.
-
-    ``pulp.LpStatus[problem.status]`` reports "Optimal" both when CBC proves
-    optimality and when it stops on the time limit with an incumbent, so it cannot
-    be used as a certificate. ``problem.sol_status`` distinguishes the two:
-    ``LpSolutionOptimal`` (proven) versus ``LpSolutionIntegerFeasible`` (a feasible
-    solution only). Any gap reported against a non-proven incumbent is a gap to that
-    incumbent, not to the optimum, and can be negative.
-    """
-    import pulp
-
-    solution_status = getattr(problem, "sol_status", None)
-    if solution_status is None:  # older PuLP without sol_status
-        return pulp.LpStatus.get(problem.status, str(problem.status)), False
-    label = pulp.LpSolution.get(solution_status, str(solution_status))
-    return label, solution_status == pulp.LpSolutionOptimal
-
-
 def milp_subtour_elimination_path(
     seed: int,
     data: BackboneData,
@@ -596,7 +565,7 @@ def milp_subtour_elimination_path(
     solver = pulp.PULP_CBC_CMD(msg=msg, timeLimit=time_limit)
     problem.solve(solver)
 
-    status, proven_optimal = _solver_status(problem)
+    status = pulp.LpStatus.get(problem.status, str(problem.status))
     selected_edges = {
         i: j
         for (i, j), var in x.items()
@@ -613,13 +582,7 @@ def milp_subtour_elimination_path(
         visited.add(nxt)
 
     objective = float(pulp.value(problem.objective) or 0.0)
-    return (
-        path,
-        total_score(path, data.transition_weights, data.self_weights),
-        status,
-        objective,
-        proven_optimal,
-    )
+    return path, total_score(path, data.transition_weights, data.self_weights), status, objective
 
 
 def maximum_weight_asymmetric_hamiltonian_path(
@@ -659,12 +622,7 @@ def maximum_weight_asymmetric_hamiltonian_path(
         for i in range(n)
     }
 
-    # Every node is visited exactly once, so the self-weight contribution is the
-    # constant sum over all nodes. It is included so the reported objective matches
-    # total_score, which counts self weights for every visited node.
-    problem += pulp.lpSum(w * x[(i, j)] for i, j, w in edges) + float(
-        data.self_weights.sum()
-    )
+    problem += pulp.lpSum(w * x[(i, j)] for i, j, w in edges)
     problem += pulp.lpSum(x[e] for e in incoming[seed]) == 0
     if n > 1:
         problem += pulp.lpSum(x[e] for e in outgoing[seed]) == 1
@@ -685,7 +643,7 @@ def maximum_weight_asymmetric_hamiltonian_path(
     solver = pulp.PULP_CBC_CMD(msg=msg, timeLimit=time_limit)
     problem.solve(solver)
 
-    status, proven_optimal = _solver_status(problem)
+    status = pulp.LpStatus.get(problem.status, str(problem.status))
     selected_edges = {
         i: j
         for (i, j), var in x.items()
@@ -704,13 +662,7 @@ def maximum_weight_asymmetric_hamiltonian_path(
         visited.add(nxt)
 
     objective = float(pulp.value(problem.objective) or 0.0)
-    return (
-        path,
-        total_score(path, data.transition_weights, data.self_weights),
-        status,
-        objective,
-        proven_optimal,
-    )
+    return path, total_score(path, data.transition_weights, data.self_weights), status, objective
 
 
 def run_all_methods(
@@ -768,7 +720,7 @@ def run_all_methods(
         edges.extend(edges_from_path(seed, "dynamic_programming", path, data))
 
     for seed in range(n):
-        path, _, status, objective, proven_optimal = milp_subtour_elimination_path(
+        path, _, status, objective = milp_subtour_elimination_path(
             seed,
             data,
             time_limit=milp_time_limit_per_seed,
@@ -779,23 +731,13 @@ def run_all_methods(
                 "milp_subtour_elimination",
                 path,
                 data,
-                {
-                    "milp_status": status,
-                    "milp_objective": objective,
-                    "milp_proven_optimal": proven_optimal,
-                },
+                {"milp_status": status, "milp_objective": objective},
             )
         )
         edges.extend(edges_from_path(seed, "milp_subtour_elimination", path, data))
 
     for seed in range(n):
-        (
-            path,
-            _,
-            status,
-            objective,
-            proven_optimal,
-        ) = maximum_weight_asymmetric_hamiltonian_path(
+        path, _, status, objective = maximum_weight_asymmetric_hamiltonian_path(
             seed,
             data,
             time_limit=hamiltonian_time_limit_per_seed,
@@ -809,7 +751,6 @@ def run_all_methods(
                 {
                     "hamiltonian_status": status,
                     "hamiltonian_objective": objective,
-                    "hamiltonian_proven_optimal": proven_optimal,
                 },
             )
         )
@@ -864,34 +805,11 @@ def summarize_methods(comparison: pd.DataFrame) -> pd.DataFrame:
             "n_self_connections_included",
             "mean",
         )
-    summary = (
+    return (
         comparison.groupby("method", dropna=False)
         .agg(**aggregations)
         .reset_index()
     )
-
-    # Make the table self-describing. Not every method optimizes summed_weight, so
-    # ranking the whole table on that column would misrepresent the ones that do not.
-    objective = {
-        "greedy_tree_path": "max-weight simple path (local heuristic)",
-        "maximum_spanning_tree": "undirected high-weight skeleton, then best path in it",
-        "branch_and_bound": "max-weight simple path (exact if bb_status == complete)",
-        "dynamic_programming": "max-weight simple path (exact only if dp_mode == exact)",
-        "milp_subtour_elimination": "max-weight simple path (exact if milp_proven_optimal)",
-        "maximum_weight_asymmetric_hamiltonian_path": "max-weight path visiting every node once",
-        "weighted_random_walk_ensemble": "best of N weight-proportional sampled paths",
-        "boltzmann_path_sampling": "best of N softmax-sampled paths",
-        "monte_carlo_tree_search": "best path found by UCT search",
-        "feedback_arc_ordering": "max forward-edge weight over a GLOBAL ORDERING; "
-        "per-seed path is the exact best forward path and is NOT comparable on summed_weight",
-    }
-    summary.insert(1, "objective", summary["method"].map(objective).fillna(""))
-    summary.insert(
-        2,
-        "comparable_on_summed_weight",
-        ~summary["method"].isin(["feedback_arc_ordering"]),
-    )
-    return summary
 
 
 def build_disagreement_table(comparison: pd.DataFrame) -> pd.DataFrame:
@@ -916,15 +834,6 @@ def build_disagreement_table(comparison: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_milp_benchmark_table(comparison: pd.DataFrame) -> pd.DataFrame:
-    """Compare each method against the MILP result for the same seed.
-
-    The gap column is named ``weight_gap_to_milp_incumbent`` deliberately. CBC
-    reports "Optimal" through ``pulp.LpStatus`` even when it stopped on the time
-    limit, so the MILP value is only a certified optimum when
-    ``milp_proven_optimal`` is True. Where it is False the gap is measured against
-    an incumbent and can legitimately be negative, because another method may have
-    found a better feasible path than the MILP's incumbent.
-    """
     if "milp_subtour_elimination" not in set(comparison["method"]):
         return pd.DataFrame()
 
@@ -937,17 +846,13 @@ def build_milp_benchmark_table(comparison: pd.DataFrame) -> pd.DataFrame:
         if seed not in milp.index:
             continue
         milp_row = milp.loc[seed]
-        proven = bool(milp_row.get("milp_proven_optimal", False))
-        gap = milp_row["summed_weight"] - row["summed_weight"]
         rows.append(
             {
                 "seed": seed,
                 "method": row["method"],
                 "method_summed_weight": row["summed_weight"],
                 "milp_summed_weight": milp_row["summed_weight"],
-                "weight_gap_to_milp_incumbent": gap,
-                "milp_proven_optimal": proven,
-                "gap_is_certified": proven,
+                "weight_gap_to_milp": milp_row["summed_weight"] - row["summed_weight"],
                 "method_length_edges": row["length_edges"],
                 "milp_length_edges": milp_row["length_edges"],
                 "method_terminus": row["terminus"],
@@ -957,26 +862,7 @@ def build_milp_benchmark_table(comparison: pd.DataFrame) -> pd.DataFrame:
         )
     if not rows:
         return pd.DataFrame()
-    table = pd.DataFrame(rows).sort_values(["seed", "method"]).reset_index(drop=True)
-
-    negative_uncertified = table[
-        (table["weight_gap_to_milp_incumbent"] < -1e-9) & (~table["gap_is_certified"])
-    ]
-    if not negative_uncertified.empty:
-        seeds = sorted(set(negative_uncertified["seed"]))
-        print(
-            f"NOTE: {len(negative_uncertified)} negative gap(s) against unproven MILP "
-            f"incumbents, for seed(s): {seeds}. Raise the MILP time limit to close them."
-        )
-    negative_certified = table[
-        (table["weight_gap_to_milp_incumbent"] < -1e-9) & (table["gap_is_certified"])
-    ]
-    if not negative_certified.empty:  # pragma: no cover - indicates a formulation bug
-        raise ValueError(
-            "A method beat a PROVEN-optimal MILP solution; the MILP formulation or "
-            f"the scoring is wrong. Offending rows:\n{negative_certified}"
-        )
-    return table
+    return pd.DataFrame(rows).sort_values(["seed", "method"]).reset_index(drop=True)
 
 
 def write_setup_outputs(data: BackboneData, outdir: Path) -> None:

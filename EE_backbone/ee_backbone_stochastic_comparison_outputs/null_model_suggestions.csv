@@ -1,0 +1,6 @@
+null_model,preserves,randomizes,primary_readout
+weight_shuffled_fixed_topology,directed graph topology and edge count,weights across existing positive E-to-E edges,observed path weight percentile versus null
+degree_strength_preserving_rewire,approximate in/out degree and source/target strength,specific source-target pairing,path weight and edge overlap versus null
+rowwise_target_shuffle,each source neuron's outgoing weight multiset,which excitatory targets receive those weights,terminal distribution and edge recurrence
+weight_noise_bootstrap,observed topology and approximate weights,weights by measurement-noise perturbation,edge inclusion confidence and path-rank stability
+stochastic_ensemble_consensus,observed graph and weights,path realization under weighted flow,edge visit probability and terminal entropy

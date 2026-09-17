@@ -1,0 +1,251 @@
+# Findings
+
+Running log for the Hippocampome connectome project. Each entry states what was found,
+the evidence, why it matters, and what changes as a result. Newest first.
+
+Conventions throughout: `M[post, pre]`, with-self variant, normalised to ρ(W) = 0.95,
+`J = −I + W`, τ = 1. Every figure below is from our own runs.
+
+---
+
+## F6 — The binary motif census does not highlight DG; the weighted one does
+
+**Question.** Does the motif analysis identify the DG cells that the E→E ordering missed
+(DG Granule and its interneuron targets DG AIPRIM, DG Axo Axonic, DG HICAP, DG MOLAX)?
+
+**Finding — binary census: no.** In the 85-node DHL triad census (98,770 triads; self-loops
+excluded), DG is unremarkable.
+
+| Cell | E/I | degree rank | all-triad rank | 030T rank |
+|---|---|---:|---:|---:|
+| DG Granule | E | 21 | 20 | 34 |
+| DG AIPRIM | I | 48 | 44 | 44 |
+| DG Axo Axonic | I | 62 | 44 | 19 |
+| DG HICAP | I | 51 | 44 | 44 |
+| DG MOLAX | I | 42 | 44 | 60 |
+
+Ranks out of 85. Nothing here would make a reader look twice at DG. The top of the
+participation table is CA3c Pyramidal, CA2 Pyramidal, CA1 Back Projection, CA3 Pyramidal.
+
+**Finding — weighted census: yes.** Crediting each connected triad's total |m_ij| to its three
+members moves DG Granule from rank 20 to **rank 6**, DG Axo Axonic to 12, DG AIPRIM to 17.
+
+**Finding — the chain census is the sharp version.** Over all 24,037 directed open 3-chains
+X→Y→Z, classified by the E/I signature of the three members:
+
+| signature | count | weight | % of chain weight |
+|---|---:|---:|---:|
+| E→I→I | 4,150 | 161,373,213 | **36.3%** |
+| I→E→I | 3,258 | 137,519,166 | 30.9% |
+| E→E→I | 2,940 | 87,640,775 | 19.7% |
+| E→I→E | 1,217 | 33,985,826 | 7.6% |
+| **E→E→E** | **4,224** | 15,077,298 | **3.4%** |
+| I→E→E | 1,238 | 6,050,203 | 1.4% |
+| I→I→I | 9,205 | 2,431,141 | 0.5% |
+| I→I→E | 1,805 | 406,268 | 0.1% |
+
+Two facts fall out. **E→E→E is the second most common chain by count and the fifth by weight,
+carrying 3.4%** — the purely excitatory relay is abundant and nearly weightless. And **87.4% of
+all chain weight terminates on an interneuron** (E→I→I + I→E→I + E→E→I + I→I→I).
+
+For DG Granule as source, its outgoing chain weight splits 55.4% E→E→I, 31.0% E→I→I,
+11.6% E→I→E, and **2.1% E→E→E**.
+
+**Why it matters.** This is the third independent method to produce the same fact. The E→E
+ordering put DG at positions 27–30 of 32; the block norms give E→E 4.91 against E→I 77.02; the
+chain census gives E→E→E 3.4% of chain weight. Each method succeeds or fails purely on whether
+it can see synaptic weight. That is a stronger through-line than any single result: the
+connectome's topology and its weight distribution tell different stories, and the standard
+binary tools read the topology.
+
+**Caveat — do not report the weighted ranking without a null.** The weighted triad measure used
+here credits each member with the whole triad's weight, so a node adjacent to one very heavy edge
+inherits that weight across every triad containing it. DG Granule → DG AIPRIM alone is 224,249.
+Its rank-6 position is therefore partly an artifact of the measure. The chain-census table does
+not have this problem (each chain is counted once, on its own two edges) and is the one to quote.
+
+**Secondary observation.** There are only 16 3-cycles (030C) in the entire connectome, and DG
+appears in five of them — all of the form CA1 Perforant Path Associated → DG {Granule, Semilunar
+Granule, Hilar Ectopic Granule} → CA3 Pyramidal / CA2 Pyramidal / CA2 Bistratified. Suggestive of
+a hippocampal loop closure through DG, but n = 16 is too thin to carry weight. Note it, do not
+build on it.
+
+**What changes.** Adds C4 to the corrections pass: a weighted motif census with a
+strength- and dyad-preserving null. Until that exists, the chain-signature table above is
+reportable and the weighted node ranking is not.
+
+---
+
+## F4 — 0.95% of the synaptic weight carries 100% of the spectrum
+
+**Finding.** Under the certified-optimal ordering, the connectome's weight partitions into a
+part that is spectrally invisible and a part that generates the entire spectrum, and the split
+is extreme.
+
+| Component of the permuted operator | share of \|weight\| | ρ of that component alone |
+|---|---:|---:|
+| forward (strictly below diagonal) | **99.048%** | **0.000000** |
+| within-type diagonal | 0.473% | 0.663075 |
+| backward (above diagonal) | 0.479% | 0.000000 |
+| full W | 100% | 0.950000 |
+
+The forward part is strictly lower-triangular by construction, hence nilpotent: it contributes
+*no* eigenvalues at all. Adding the diagonal makes the matrix triangular, so its eigenvalues are
+exactly the diagonal entries, giving ρ = 0.663 — the largest within-type self-coupling. Only the
+remaining 0.479% of backward weight lifts ρ from 0.663 to 0.950.
+
+**Why it matters.** Eigenvalue analysis of this circuit sees 0.95% of its synaptic weight.
+Everything a spectral reading can say about stability is generated by the within-type diagonal
+plus half a percent of backward edges. The other 99% — the feedforward mass — is invisible to the
+spectrum and is precisely what produces the 27× transient and the stationary-variance excess in
+F5. That is the central claim of the project restated as a partition of the weight rather than as
+a comparison of two numbers, and it is checkable in four lines of code.
+
+**What changes.** This should lead the dissertation's framing. It is stronger and more concrete
+than "the circuit is non-normal", and it makes the necessity of the non-normal machinery
+self-evident rather than argued.
+
+---
+
+## F5 — Held energy: what the Gramian says, and what cannot be said about free energy
+
+**Finding.** For `dx/dt = Jx + w` with unit white-noise drive, the stationary covariance `P`
+solves the Lyapunov equation `JP + PJᵀ + I = 0` — which is exactly the continuous controllability
+Gramian already computed in `schur_decomp/09`. Its trace is the total stationary variance the
+circuit holds under noise.
+
+```
+trace(P), observed                      5,217.7
+trace(P), normal surrogate (same spectrum)  52.2
+non-normal excess                           100x
+```
+
+The surrogate is a diagonal matrix carrying the identical eigenvalues, for which
+`trace(P) = Σ −1/(2 Re λᵢ)`. Same spectrum, orthogonal modes, one hundredth of the variance.
+
+**Why it matters.** This is the closest defensible analogue to the "energy held by the system"
+intuition. A non-normal circuit driven by noise sustains a stationary variance two orders of
+magnitude above what its eigenvalues predict, because fluctuations injected along one mode are
+transiently amplified into others before decaying. It is a steady-state quantity, so unlike peak
+transient gain it does not require choosing a perturbation, and it is measurable in principle
+from spontaneous activity.
+
+**On free energy — the honest position.** There is no rigorous free-energy statement available
+from what has been measured, and one should not be manufactured. A variational or
+thermodynamic free energy would require a generative model, a stationary distribution and an
+entropy-production rate, none of which this project defines. What *is* rigorous, and already
+computed, is the Lyapunov/Gramian route above: stationary variance under stochastic drive, with a
+normal surrogate as the control. State the claim in those terms. If a thermodynamic framing is
+wanted later, the entry point is the non-equilibrium steady state of the same linear model, and
+it is a separate piece of work.
+
+**Caveat.** `trace(P)` is basis-dependent in the same way peak amplification is (see the methods
+brief, §2). Report it in the extensive-activity norm and say so.
+
+---
+
+## F3 — "Local sink" is measurable, and it is the same fact as non-normality
+
+**Finding.** A node is a local sink when its in-strength greatly exceeds its out-strength in the
+normalised operator. On this matrix the two classes separate cleanly:
+
+| class | median in-strength | median out-strength | in / out |
+|---|---:|---:|---:|
+| excitatory | 0.851 | 0.563 | 1.5 |
+| inhibitory | 3.181 | 0.035 | **91.7** |
+
+Correlation between `log10(in-strength / out-strength)` and position in the optimal ordering:
+**r = +0.785**. Being a sink is what sorts a node late; it is not a separate property.
+
+**Why it matters.** This ties three results together that had been stated separately.
+Interneurons receive ~92× more weight than they send. In the block picture that is E→I at 77.02
+against I→E at 0.084. In the ordering picture it is why interneurons occupy the tail. In the
+spectral picture it is why the operator is nearly nilpotent (F4): a network of sinks has no
+return paths, no cycles, and therefore no eigenvalues — only transient throughput.
+
+**The interpretation to use.** A sink contributes nothing to the recurrent structure and
+everything to the departure from normality. Henrici departure equals the Frobenius norm of the
+strictly upper-triangular part of the Schur form, so a perfectly feedforward network sits at 100%
+departure with an all-zero spectrum. This circuit is at 99.3%. "The interneurons are local sinks"
+and "the operator is 99.3% non-normal" are the same statement at two levels of description.
+
+**What this does not mean.** It does not mean inhibition is dynamically unimportant. The Schur
+complement result stands: inhibitory feedback returns ρ(M[E,E]) from 0.996 to 0.850. Inhibition
+sets the operating point through a path that is weak in weight and decisive in effect — which is
+exactly the signature of non-normal, non-spectral influence.
+
+---
+
+## F2 — Weight compression, not binarisation, restores the anatomical ordering
+
+**Finding.** The ordering objective `Σ w · [forward]` is a *linear* functional of the weights.
+With `|m_ij|` spanning eight orders of magnitude, twelve edges carry 48.9% of the total mass
+(top 50 carry 77%) and they determine the optimum by themselves. All twelve are principal cell →
+interneuron, mostly CA3 → CA1 interneurons.
+
+| Objective | DG Granule position | CA3 Pyramidal | mossy fibre DG→CA3 |
+|---|---:|---:|---|
+| `\|m_ij\|` raw | 31 | 5 | backward |
+| binary (all edges equal) | 46 | 26 | backward |
+| `log1p\|m_ij\|` | **8** | 9 | **forward** |
+
+**Why it matters.** Binarisation is the *limit* of compression, and it does not fix the problem —
+it merely replaces one distortion with another, and saturates the order index (at density 0.220,
+≥0.952 is free). The transform that recovers the pathway is intermediate: compress the dynamic
+range enough that the many-but-light pathway edges can outvote the few-but-heavy amplification
+edges, without discarding magnitude entirely.
+
+**What changes.** Report `log1p|m_ij|` as a third ordering variant alongside raw and binary, and
+state which question each answers: raw weight asks where the amplification structure runs, log
+weight asks where the pathway runs, binary asks what the wiring alone permits. The claim that the
+optimised ordering "recovers the trisynaptic direction with no anatomical input" is true only for
+the log variant and must be corrected wherever it appears.
+
+---
+
+## F1 — The E→E backbone discards 71% of excitatory output weight
+
+**Finding.** Restricting to the excitatory-to-excitatory subgraph removes most of what excitatory
+cells actually do.
+
+- Median across the 32 excitatory types: **71.4%** of a type's outgoing weight lands on
+  interneurons and is therefore invisible to an E→E analysis.
+- For DG Granule the figure is **91.6%** (29.8 of 32.5 total outgoing weight). Its five heaviest
+  outputs are DG AIPRIM, DG Axo Axonic, DG HICAP, DG MOLAX and CA2 Basket — all inhibitory.
+- At the block level the E→E block carries Frobenius norm 4.91 against E→I's 77.02. The E→E
+  subgraph is roughly 6% of the matrix norm.
+
+**Why it matters — the mechanism, not just the accounting.** Three things follow.
+
+1. **The DG artifact is caused by the restriction.** Strip the interneurons and granule cells have
+   almost no forward excitatory weight left, so the optimiser reads them as terminal and parks the
+   whole dentate gyrus at positions 27–30 of 32, after subiculum. The anatomy did not fail to
+   appear; it was removed from the input.
+2. **Disinhibition cannot exist in an E→E model.** The enriched motif in this circuit is the
+   E→I→I→E loop at z ≈ 52, and the disinhibitory relays (CA1 Perforant Path Associated, MEC LIII
+   Superficial Multipolar, DG AIPRIM) are the strongest cell-type-level result in the project.
+   Every one of those paths leaves the excitatory subgraph at its first step.
+3. **The excitatory block is not stable on its own.** ρ(M[E,E]) is 0.996 without self-connections
+   — at the edge of instability — and the inhibitory Schur complement returns the effective
+   dynamics to 0.850. An E→E analysis studies a subsystem whose stability is supplied entirely by
+   the part that has been excluded.
+
+**What changes.** The E→E backbone should be reported as a restricted comparison, useful for
+commensurability with excitatory-only literature, and not as the circuit's backbone. The backbone
+claim belongs to the full 85-node ordering. The 0.9496 forward-weight figure is certified optimal
+*for that subgraph* and should be labelled as such wherever it appears.
+
+---
+
+## Open items this log creates
+
+1. Correct the "recovers the trisynaptic direction" claim in `EE_backbone/README.md`, the
+   methodology deck, `analytical_methods_brief_for_advisor.docx` §4 and its slide,
+   `claude/methodology_arc.md`, and `PROJECT_CONTEXT.md`.
+2. Re-run `ei_backbone_analysis.ipynb` against a full 85-node ordering; the 285 / 578
+   feedforward-feedback inhibitory split is an artifact of appending interneurons after
+   excitatory types (0 of 171 I→E edges can be forward under that scheme).
+3. Add `log1p|m_ij|` as a standard ordering variant.
+4. Promote F4's weight partition to the dissertation's framing statement.
+5. Report `trace(P)` and its normal-surrogate ratio alongside peak amplification, with the norm
+   declared.

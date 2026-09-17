@@ -1,0 +1,14 @@
+,value
+spectral_abscissa,-0.05000000000000038
+stability_margin,0.05000000000000038
+stable,True
+numerical_abscissa,29.579843270803742
+abscissa_gap,29.629843270803743
+amplifying_but_stable,True
+spectral_radius,1.310286346581031
+dominant_real,-0.05000000000000038
+dominant_imag,0.0
+dominant_frequency_hz_per_tau,0.0
+slowest_time_constant,19.99999999999985
+n_unstable_modes,0
+n_oscillatory_modes,54

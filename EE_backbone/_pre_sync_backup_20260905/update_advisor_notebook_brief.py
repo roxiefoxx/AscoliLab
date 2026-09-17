@@ -475,55 +475,19 @@ def build_document():
         "Dynamic programming is retained as a useful conceptual comparison, but at 32 nodes the notebook uses beam-limited DP rather than full bitmask DP. Beam pruning explains why dynamic programming can appear weak in the current results: it is not proving the global maximum at this graph size.",
     )
 
-    doc.add_heading("6. Limitations", level=1)
-    limitations = [
-        "The current objective uses positive off-diagonal E-to-E transition weights only. Negative transitions are excluded from candidate paths, so the results describe a positive excitatory backbone rather than the full signed connectivity matrix.",
-        "Diagonal self-connections are excluded from all path scoring. This matters because 27 E-only nodes have positive diagonal entries; if those entries represent biologically meaningful recurrence, the current paths omit that contribution by design.",
-        "The analysis compares path-finding formulations, not biological ground truth. A high-weight path should be interpreted as an optimized structure under the chosen matrix objective, not as evidence of an experimentally validated sequence.",
-        "The unconstrained MILP and Hamiltonian MILP are exact only for rows whose solver status is Optimal. In the current run, all relevant rows are Optimal, but this should still be checked after any matrix, threshold, or solver-parameter change.",
-        "The Hamiltonian path and unconstrained MILP answer different questions. The Hamiltonian path provides a complete 32-node ordering, while the unconstrained MILP allows shorter simple paths when adding more nodes would lower the objective.",
-        "Current summaries emphasize summed path weight. They do not yet evaluate biological plausibility, robustness to weight perturbation, or whether small changes in preprocessing produce the same terminal nodes and major transitions.",
+    doc.add_heading("6. Caveats and recommended next checks", level=1)
+    caveats = [
+        "The current objective uses positive off-diagonal E-to-E transition weights only. Negative transitions and diagonal self-connections are excluded from path scoring.",
+        "Because 27 E-only nodes have positive diagonal entries, a separate self-connection sensitivity analysis may be warranted if self-effects are biologically meaningful.",
+        "The unconstrained MILP and Hamiltonian MILP are exact only for rows whose solver status is Optimal. In the current run, all relevant rows are Optimal.",
+        "If the advisor wants a complete ordered sequence of all excitatory nodes, use the Hamiltonian path output. If the advisor wants the highest-weight simple backbone of any length, use the unconstrained MILP output.",
     ]
-    for item in limitations:
+    for item in caveats:
         p = doc.add_paragraph(style="List Bullet")
         r = p.add_run(item)
         set_run_font(r)
 
-    doc.add_heading("7. Recommended next steps", level=1)
-    next_steps = [
-        (
-            "Run a self-connection sensitivity analysis.",
-            "Repeat the MILP comparison with positive diagonal entries included as node rewards, then compare whether high-ranking paths and termini change materially.",
-        ),
-        (
-            "Validate the biological interpretation of the MILP path.",
-            "Review the highest-weight transitions in the unconstrained MILP output with domain knowledge and flag edges that are implausible, redundant, or likely artifacts of the matrix construction.",
-        ),
-        (
-            "Compare free-length and complete-ordering outputs.",
-            "Use the unconstrained MILP as the maximum-weight simple-backbone benchmark and the Hamiltonian path as the complete E-node ordering; report them as complementary outputs rather than competing versions of the same method.",
-        ),
-        (
-            "Add robustness checks.",
-            "Perturb or threshold weights, rerun the solver-backed methods, and measure how often core edges, terminal nodes, and top-weight paths are preserved.",
-        ),
-        (
-            "Decide whether inhibitory or signed structure should be modeled.",
-            "If the advisor wants the broader circuit context, extend the analysis beyond positive E-to-E transitions to include signed edges or separate inhibitory/excitatory comparisons.",
-        ),
-        (
-            "Prepare a compact results appendix.",
-            "For advisor review, add per-seed MILP paths, Hamiltonian paths, and the largest gaps between heuristic methods and the MILP benchmark.",
-        ),
-    ]
-    for title, detail in next_steps:
-        p = doc.add_paragraph(style="List Number")
-        r = p.add_run(f"{title} ")
-        set_run_font(r, bold=True)
-        r = p.add_run(detail)
-        set_run_font(r)
-
-    doc.add_heading("8. Output files", level=1)
+    doc.add_heading("7. Output files", level=1)
     outputs = [
         ("Notebook", "ee_backbone_method_comparison.ipynb"),
         ("Input matrix", "matrices/mij_EE_matrix.csv"),
