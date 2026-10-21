@@ -85,11 +85,20 @@ class ConnectivityData:
 
 @dataclass(frozen=True)
 class BlockMatrices:
-    """E/I block decomposition of a connectivity matrix."""
+    """E/I block decomposition of a connectivity matrix.
+
+    The matrix is [post, pre], so a block's COLUMN set is its source. Field
+    names follow ``M[np.ix_(A, B)] -> A_from_B``: ``e_from_i`` is the I-source,
+    E-receiver block (inhibitory feedback onto E) and ``i_from_e`` is the
+    E-source, I-receiver block (excitatory drive onto I). In textbook block
+    notation these are ``M_EI`` and ``M_IE`` respectively -- the second letter
+    is the source, which is the reverse of the source-first ``EE``/``EI``
+    naming used by ``source_receiver_block_view`` in this same module.
+    """
 
     ee: pd.DataFrame
-    ei: pd.DataFrame
-    ie: pd.DataFrame
+    e_from_i: pd.DataFrame
+    i_from_e: pd.DataFrame
     ii: pd.DataFrame
     excitatory: list[str]
     inhibitory: list[str]
@@ -264,8 +273,8 @@ def make_ei_blocks(matrix: pd.DataFrame, classes: pd.Series) -> BlockMatrices:
     inhibitory = aligned[aligned == "i"].index.tolist()
     return BlockMatrices(
         ee=matrix.loc[excitatory, excitatory],
-        ei=matrix.loc[excitatory, inhibitory],
-        ie=matrix.loc[inhibitory, excitatory],
+        e_from_i=matrix.loc[excitatory, inhibitory],
+        i_from_e=matrix.loc[inhibitory, excitatory],
         ii=matrix.loc[inhibitory, inhibitory],
         excitatory=excitatory,
         inhibitory=inhibitory,
@@ -302,8 +311,8 @@ def summarize_blocks(blocks: BlockMatrices) -> pd.DataFrame:
     return pd.DataFrame(
         [
             summarize_matrix(blocks.ee, "EE"),
-            summarize_matrix(blocks.ei, "EI"),
-            summarize_matrix(blocks.ie, "IE"),
+            summarize_matrix(blocks.e_from_i, "E_from_I"),
+            summarize_matrix(blocks.i_from_e, "I_from_E"),
             summarize_matrix(blocks.ii, "II"),
         ]
     ).set_index("name")
@@ -358,16 +367,17 @@ def effective_inhibitory_feedback(
 ) -> pd.DataFrame:
     """Compute an effective inhibitory feedback operator on the E subspace.
 
-    ``form="static"`` computes EI * inv(II + lambda I) * IE, matching the
-    Schur complement term. ``form="resolvent"`` computes
-    EI * inv(I - gain * II) * IE, matching the Neumann-series expansion.
+    ``form="static"`` computes ``e_from_i * inv(II + lambda I) * i_from_e``,
+    matching the Schur complement term (textbook: EI inv(II) IE).
+    ``form="resolvent"`` computes ``e_from_i * inv(I - gain * II) * i_from_e``,
+    matching the Neumann-series expansion.
     """
 
     if blocks.ii.empty:
         return pd.DataFrame(0.0, index=blocks.excitatory, columns=blocks.excitatory)
 
-    ei = blocks.ei.to_numpy(dtype=float)
-    ie = blocks.ie.to_numpy(dtype=float)
+    e_from_i = blocks.e_from_i.to_numpy(dtype=float)
+    i_from_e = blocks.i_from_e.to_numpy(dtype=float)
     ii = blocks.ii.to_numpy(dtype=float)
     eye = np.eye(ii.shape[0])
 
@@ -378,14 +388,14 @@ def effective_inhibitory_feedback(
     else:
         raise ValueError("form must be 'static' or 'resolvent'.")
 
-    result = ei @ middle @ ie
+    result = e_from_i @ middle @ i_from_e
     return pd.DataFrame(result, index=blocks.excitatory, columns=blocks.excitatory)
 
 
 def ablation_analysis(
     blocks: BlockMatrices,
     *,
-    block_names: Iterable[str] = ("EE", "EI", "IE", "II"),
+    block_names: Iterable[str] = ("EE", "E_from_I", "I_from_E", "II"),
 ) -> pd.DataFrame:
     """Zero each selected block and compare eigenvalue stability summaries."""
 
@@ -415,29 +425,46 @@ def perturbation_analysis(
     return pd.DataFrame(rows).set_index("name")
 
 
-def scale_block(blocks: BlockMatrices, block_name: str, scale: float) -> BlockMatrices:
-    """Return a copy of blocks with one block scaled."""
+#: Accepted block names -> BlockMatrices field. The legacy textbook spellings
+#: ``EI``/``IE`` keep their original partition meaning (second letter = source).
+BLOCK_NAME_TO_FIELD = {
+    "ee": "ee", "e_from_e": "ee",
+    "ei": "e_from_i", "e_from_i": "e_from_i",
+    "ie": "i_from_e", "i_from_e": "i_from_e",
+    "ii": "ii", "i_from_i": "ii",
+}
 
-    key = block_name.lower()
+
+def scale_block(blocks: BlockMatrices, block_name: str, scale: float) -> BlockMatrices:
+    """Return a copy of blocks with one block scaled.
+
+    ``block_name`` accepts the ``_from_`` spellings or the legacy textbook
+    ``EE``/``EI``/``IE``/``II``; both resolve to the same block.
+    """
+
+    field = BLOCK_NAME_TO_FIELD.get(block_name.lower())
+    if field is None:
+        raise ValueError(
+            "block_name must be one of EE, E_from_I, I_from_E, II "
+            "(legacy EI/IE also accepted)."
+        )
     kwargs = {
         "ee": blocks.ee.copy(),
-        "ei": blocks.ei.copy(),
-        "ie": blocks.ie.copy(),
+        "e_from_i": blocks.e_from_i.copy(),
+        "i_from_e": blocks.i_from_e.copy(),
         "ii": blocks.ii.copy(),
         "excitatory": blocks.excitatory,
         "inhibitory": blocks.inhibitory,
     }
-    if key not in {"ee", "ei", "ie", "ii"}:
-        raise ValueError("block_name must be one of EE, EI, IE, or II.")
-    kwargs[key] = kwargs[key] * scale
+    kwargs[field] = kwargs[field] * scale
     return BlockMatrices(**kwargs)
 
 
 def assemble_blocks(blocks: BlockMatrices) -> pd.DataFrame:
     """Reassemble blocks into one matrix ordered as E followed by I."""
 
-    top = pd.concat([blocks.ee, blocks.ei], axis=1)
-    bottom = pd.concat([blocks.ie, blocks.ii], axis=1)
+    top = pd.concat([blocks.ee, blocks.e_from_i], axis=1)
+    bottom = pd.concat([blocks.i_from_e, blocks.ii], axis=1)
     return pd.concat([top, bottom], axis=0)
 
 
@@ -450,8 +477,8 @@ def chain_contributions(
 ) -> pd.DataFrame:
     """Measure E-I-(I repeated k)-E chain contribution sizes."""
 
-    ei = blocks.ei.to_numpy(dtype=float)
-    ie = blocks.ie.to_numpy(dtype=float)
+    e_from_i = blocks.e_from_i.to_numpy(dtype=float)
+    i_from_e = blocks.i_from_e.to_numpy(dtype=float)
     ii = blocks.ii.to_numpy(dtype=float)
     rows = []
     total_energy = 0.0
@@ -460,9 +487,9 @@ def chain_contributions(
 
     for depth in range(1, max_depth + 1):
         if depth == 1:
-            term = gain * (ei @ ie)
+            term = gain * (e_from_i @ i_from_e)
         else:
-            term = (gain ** depth) * (ei @ np.linalg.matrix_power(ii, depth - 1) @ ie)
+            term = (gain ** depth) * (e_from_i @ np.linalg.matrix_power(ii, depth - 1) @ i_from_e)
         contribution = float(np.linalg.norm(term, ord=norm))
         terms.append((depth, contribution))
         total_energy += contribution**2
@@ -528,15 +555,15 @@ def null_model_chain_significance(
     rng = np.random.default_rng(random_state)
     observed = chain_contributions(blocks, max_depth=max_depth)
     null_values = np.zeros((n_null, max_depth), dtype=float)
-    ei_values = blocks.ei.to_numpy(dtype=float).ravel()
-    ie_values = blocks.ie.to_numpy(dtype=float).ravel()
+    ei_values = blocks.e_from_i.to_numpy(dtype=float).ravel()
+    ie_values = blocks.i_from_e.to_numpy(dtype=float).ravel()
     ii_values = blocks.ii.to_numpy(dtype=float).ravel()
 
     for draw in range(n_null):
         shuffled = BlockMatrices(
             ee=blocks.ee,
-            ei=pd.DataFrame(rng.permutation(ei_values).reshape(blocks.ei.shape), index=blocks.ei.index, columns=blocks.ei.columns),
-            ie=pd.DataFrame(rng.permutation(ie_values).reshape(blocks.ie.shape), index=blocks.ie.index, columns=blocks.ie.columns),
+            e_from_i=pd.DataFrame(rng.permutation(ei_values).reshape(blocks.e_from_i.shape), index=blocks.e_from_i.index, columns=blocks.e_from_i.columns),
+            i_from_e=pd.DataFrame(rng.permutation(ie_values).reshape(blocks.i_from_e.shape), index=blocks.i_from_e.index, columns=blocks.i_from_e.columns),
             ii=pd.DataFrame(rng.permutation(ii_values).reshape(blocks.ii.shape), index=blocks.ii.index, columns=blocks.ii.columns),
             excitatory=blocks.excitatory,
             inhibitory=blocks.inhibitory,
@@ -556,16 +583,16 @@ def neumann_series_feedback(
     max_order: int = 10,
     gain: float = 1.0,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Approximate EI * inv(I - gain * II) * IE with a Neumann series."""
+    """Approximate ``e_from_i * inv(I - gain * II) * i_from_e`` with a Neumann series."""
 
-    ei = blocks.ei.to_numpy(dtype=float)
-    ie = blocks.ie.to_numpy(dtype=float)
+    e_from_i = blocks.e_from_i.to_numpy(dtype=float)
+    i_from_e = blocks.i_from_e.to_numpy(dtype=float)
     ii = blocks.ii.to_numpy(dtype=float)
     accum = np.zeros((len(blocks.excitatory), len(blocks.excitatory)), dtype=float)
     rows = []
 
     for order in range(max_order + 1):
-        term = ei @ np.linalg.matrix_power(gain * ii, order) @ ie
+        term = e_from_i @ np.linalg.matrix_power(gain * ii, order) @ i_from_e
         accum += term
         rows.append(
             {
@@ -789,25 +816,31 @@ def schur_effective_e(
     *,
     z: complex | None = None,
 ) -> dict[str, object]:
-    """Eliminate inhibitory nodes with M_EE + M_EI inv(zI - M_II) M_IE."""
+    """Eliminate inhibitory nodes on the E subspace.
+
+    Textbook form:  M_EE + M_EI inv(zI - M_II) M_IE
+    In this code:   m_ee + m_e_from_i inv(zI - m_ii) m_i_from_e
+
+    The matrix is [post, pre], so the second textbook subscript is the source.
+    """
 
     aligned = classes.reindex(matrix.index).map(_normalize_class)
     excitatory = aligned[aligned == "e"].index.tolist()
     inhibitory = aligned[aligned == "i"].index.tolist()
     m_ee = matrix.loc[excitatory, excitatory].to_numpy(dtype=float)
-    m_ei = matrix.loc[excitatory, inhibitory].to_numpy(dtype=float)
-    m_ie = matrix.loc[inhibitory, excitatory].to_numpy(dtype=float)
+    m_e_from_i = matrix.loc[excitatory, inhibitory].to_numpy(dtype=float)   # I source -> E receiver
+    m_i_from_e = matrix.loc[inhibitory, excitatory].to_numpy(dtype=float)   # E source -> I receiver
     m_ii = matrix.loc[inhibitory, inhibitory].to_numpy(dtype=float)
     if z is None:
         z = spectral_summary(matrix)["dominant_eigenvalue"]
     resolvent = np.linalg.solve(z * np.eye(len(inhibitory), dtype=complex) - m_ii, np.eye(len(inhibitory)))
-    feedback = m_ei @ resolvent @ m_ie
+    feedback = m_e_from_i @ resolvent @ m_i_from_e
     effective = m_ee + feedback
     return {
         "z": z,
         "M_EE": pd.DataFrame(m_ee, index=excitatory, columns=excitatory),
-        "M_EI": pd.DataFrame(m_ei, index=excitatory, columns=inhibitory),
-        "M_IE": pd.DataFrame(m_ie, index=inhibitory, columns=excitatory),
+        "M_E_from_I": pd.DataFrame(m_e_from_i, index=excitatory, columns=inhibitory),
+        "M_I_from_E": pd.DataFrame(m_i_from_e, index=inhibitory, columns=excitatory),
         "M_II": pd.DataFrame(m_ii, index=inhibitory, columns=inhibitory),
         "resolvent_II": resolvent,
         "inhibitory_feedback": pd.DataFrame(feedback, index=excitatory, columns=excitatory),
@@ -1150,8 +1183,8 @@ def neumann_ii_model_selection(
     aligned = classes.reindex(matrix.index).map(_normalize_class)
     excitatory = aligned[aligned == "e"].index.tolist()
     inhibitory = aligned[aligned == "i"].index.tolist()
-    m_ei = matrix.loc[excitatory, inhibitory].to_numpy(dtype=float)
-    m_ie = matrix.loc[inhibitory, excitatory].to_numpy(dtype=float)
+    m_e_from_i = matrix.loc[excitatory, inhibitory].to_numpy(dtype=float)   # I source -> E receiver
+    m_i_from_e = matrix.loc[inhibitory, excitatory].to_numpy(dtype=float)   # E source -> I receiver
     m_ii = matrix.loc[inhibitory, inhibitory].to_numpy(dtype=float)
     rho = spectral_summary(alpha * m_ii)["spectral_radius"]
 
@@ -1160,7 +1193,7 @@ def neumann_ii_model_selection(
     for order in range(max_order + 1):
         if order > 0:
             power = (alpha * m_ii) @ power
-        term = m_ei @ power @ m_ie
+        term = m_e_from_i @ power @ m_i_from_e
         real_term = np.real(term)
         rows.append(
             {
@@ -1195,7 +1228,7 @@ def neumann_ii_model_selection(
         for order in range(max_order + 1):
             if order > 0:
                 null_power = (alpha * null_ii) @ null_power
-            one_draw.append(float(np.linalg.norm(m_ei @ null_power @ m_ie, "fro")))
+            one_draw.append(float(np.linalg.norm(m_e_from_i @ null_power @ m_i_from_e, "fro")))
         null_norms.append(one_draw)
     null_arr = np.asarray(null_norms)
     table["null_mean_fro"] = null_arr.mean(axis=0)
@@ -1292,14 +1325,14 @@ def disinhibition_sources(
     aligned = classes.reindex(matrix.index).map(_normalize_class)
     excitatory = aligned[aligned == "e"].index.tolist()
     inhibitory = aligned[aligned == "i"].index.tolist()
-    m_ei = matrix.loc[excitatory, inhibitory].to_numpy(dtype=float)
-    m_ie = matrix.loc[inhibitory, excitatory].to_numpy(dtype=float)
+    m_e_from_i = matrix.loc[excitatory, inhibitory].to_numpy(dtype=float)   # I source -> E receiver
+    m_i_from_e = matrix.loc[inhibitory, excitatory].to_numpy(dtype=float)   # E source -> I receiver
     m_ii = matrix.loc[inhibitory, inhibitory].to_numpy(dtype=float)
     power = np.linalg.matrix_power(alpha * m_ii, order) if order > 0 else np.eye(len(inhibitory))
-    outgoing_to_e = np.sum(np.abs(m_ei), axis=0)
-    incoming_from_e = np.sum(np.abs(m_ie), axis=1)
+    outgoing_to_e = np.sum(np.abs(m_e_from_i), axis=0)
+    incoming_from_e = np.sum(np.abs(m_i_from_e), axis=1)
     participation = np.sum(np.abs(power), axis=0) + np.sum(np.abs(power), axis=1)
-    positive_drive = np.sum(np.clip(np.real(m_ei @ power), 0, None), axis=0)
+    positive_drive = np.sum(np.clip(np.real(m_e_from_i @ power), 0, None), axis=0)
     score = outgoing_to_e * (1 + participation) * (1 + incoming_from_e)
     return (
         pd.DataFrame(

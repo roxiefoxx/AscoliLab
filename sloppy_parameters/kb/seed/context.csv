@@ -1,0 +1,7 @@
+code,species,strain_or_line,age,preparation,temperature_c,region_studied,notes
+TRICOIRE2011,mouse,Nkx2-1Cre:RCE and CGE reporter lines,P15-P30,acute_slice,,CA1,Tricoire et al. 2011 J Neurosci as tabulated in Pelkey 2017 Table 1; resting potential from cell-attached K+ reversal method
+CA1_ANAT,rodent,,adult,anatomy,,CA1,Quantitative anatomy compiled by Bezaire & Soltesz 2013 (Pelkey ref 102)
+RODENT_HC,rodent,,mixed,mixed,,hippocampus,Review-level synthesis across preparations
+DG_SLICE,rodent,,,acute_slice,,DG,
+IN_VIVO,rat,,adult,in_vivo,,CA1/CA3,Juxtacellular recordings
+NEOCORTEX,rodent,,,acute_slice,,somatosensory cortex,Neocortical data quoted in the review

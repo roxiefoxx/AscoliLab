@@ -1,6 +1,69 @@
 import numpy as np
 import pandas as pd
-from scipy.linalg import schur
+from scipy.linalg import schur as _schur_raw
+
+
+# ---------------------------------------------------------------------------
+# Corrections pass 2026-09-17 -- pinned Schur ordering
+#
+# `scipy.linalg.schur` does not promise any particular order along T's
+# diagonal, and the order is free under the decomposition: any permutation of
+# the eigenvalues admits a valid Schur form. It is NOT free for the statistics
+# this module reports. `|T[m, m+1:]|.sum()` is a sum over the entries ABOVE the
+# diagonal in row m, so which modes count as "later" -- and therefore the whole
+# per-mode cascade profile -- depends entirely on the diagonal order. On this
+# motif set the maximum of that quantity moves 242.27 -> 296.64 between orders,
+# and `dominant_schur_node` and the greedy-tree attribution move with it.
+#
+# Convention adopted here and stated in the notebook header: DESCENDING
+# Re(lambda), ties broken by descending |lambda| then descending Im(lambda).
+# Basis-independent quantities -- ||upper T||_F (the Henrici departure), the
+# departure ratio, the eigenvalues as a set, the spectral radius -- are
+# unaffected by this and were never at stake.
+# ---------------------------------------------------------------------------
+SCHUR_ORDER_CONVENTION = "descending Re(lambda), ties by |lambda| then Im(lambda)"
+
+
+def _order_key(value):
+    return (-value.real, -abs(value), -value.imag)
+
+
+def schur(matrix, output="complex", **kwargs):
+    """Schur decomposition with the diagonal pinned to a stated order.
+
+    Drop-in replacement for ``scipy.linalg.schur`` with ``output="complex"``.
+    Eigenvectors of the (generically distinct) eigenvalues are sorted by
+    ``_order_key`` and orthonormalized by QR; for a diagonalizable matrix the
+    resulting unitary Q satisfies ``Q^H A Q = T`` upper triangular with the
+    eigenvalues in exactly that order. Defective or numerically near-defective
+    blocks fail the verification below and fall back to SciPy's unpinned
+    output, so a pinned order is never faked.
+    """
+    if output != "complex":
+        return _schur_raw(matrix, output=output, **kwargs)
+    A = np.asarray(matrix, dtype=complex)
+    T_ref, Z_ref = _schur_raw(A, output="complex", **kwargs)
+    try:
+        values, vectors = np.linalg.eig(A)
+        order = sorted(range(len(values)), key=lambda k: _order_key(values[k]))
+        Q, R = np.linalg.qr(vectors[:, order])
+        # QR fixes Q only up to the phase of each column; align phases so the
+        # diagonal of R is positive, making the decomposition deterministic.
+        phase = np.diagonal(R).copy()
+        phase[np.abs(phase) < 1e-300] = 1.0
+        Q = Q * (np.abs(phase) / phase)
+        T = Q.conj().T @ A @ Q
+        scale = max(np.abs(A).max(), 1.0)
+        below = np.abs(np.tril(T, -1)).max() if len(T) > 1 else 0.0
+        diag_ok = np.allclose(np.diag(T), values[order], atol=1e-8 * scale)
+        if below <= 1e-8 * scale and diag_ok:
+            T[np.tril_indices(len(T), -1)] = 0.0
+            return T, Q
+    except np.linalg.LinAlgError:
+        pass
+    return T_ref, Z_ref
+
+
 
 
 MATRIX_COLUMNS = [f"w_{i}{j}" for i in range(1, 4) for j in range(1, 4)]
@@ -249,7 +312,14 @@ def enumerate_schur_modes(metadata, blocks, motif_index, acronym_map=None):
                 f"{node_labels[0]}_participation": float(participation[0]),
                 f"{node_labels[1]}_participation": float(participation[1]),
                 f"{node_labels[2]}_participation": float(participation[2]),
-                "upper_triangular_coupling_out_abs": float(
+                # Direction (corrected 2026-09-17). Blocks are analyzed as
+                # [post, pre], so dy/dt = T y gives (T y)_m = sum_k T[m, k] y_k:
+                # row m is drive INTO mode m. T is upper triangular, so
+                # |T[m, m+1:]|.sum() is the coupling mode m RECEIVES from the
+                # modes later in the pinned diagonal order. It was named
+                # ..._out_abs and described as coupling "from that mode into
+                # later modes", which is the transpose of what it computes.
+                "upper_triangular_coupling_in_abs": float(
                     np.abs(T[mode_index, mode_index + 1 :]).sum()
                 ),
             }
@@ -300,7 +370,14 @@ def rank_all_schur_modes(metadata, blocks, scenario, acronym_map=None):
                     "node_1_participation": float(participation[0]),
                     "node_2_participation": float(participation[1]),
                     "node_3_participation": float(participation[2]),
-                    "schur_upper_coupling_out_abs": float(
+                    # Direction (corrected 2026-09-17). Blocks are analyzed as
+                    # [post, pre], so dy/dt = T y gives (T y)_m = sum_k T[m, k] y_k:
+                    # row m is drive INTO mode m. T is upper triangular, so
+                    # |T[m, m+1:]|.sum() is the coupling mode m RECEIVES from the
+                    # modes later in the pinned diagonal order. It was named
+                    # ..._out_abs and described as coupling "from that mode into
+                    # later modes", which is the transpose of what it computes.
+                    "schur_upper_coupling_in_abs": float(
                         np.abs(T[mode_index, mode_index + 1 :]).sum()
                     ),
                 }

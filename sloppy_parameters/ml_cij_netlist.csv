@@ -1,0 +1,1642 @@
+pre_neuron_id,post_neuron_id,pre_neuron,post_neuron,pre_ei,post_ei,c_ij
+1000,1002,DG Granule,DG Mossy,e,e,0.007771
+1000,1004,DG Granule,DG Total Molecular Layer,e,i,0.00422
+1000,1005,DG Granule,DG MOLAX,e,i,0.004358
+1000,1009,DG Granule,DG HICAP,e,i,0.003335
+1000,1010,DG Granule,DG Axo Axonic,e,i,0.003907
+1000,1013,DG Granule,DG HIPP,e,i,0.005946
+1000,1026,DG Granule,DG HIPROM,e,i,0.005372
+1000,1027,DG Granule,DG AIPRIM,e,i,0.005331
+1000,1035,DG Granule,DG Basket,e,i,0.00346
+1000,1041,DG Granule,DG Hilar Ectopic Granule,e,e,0.005576
+1000,2000,DG Granule,CA3 Pyramidal,e,e,8.53e-05
+1000,2004,DG Granule,CA3c Pyramidal,e,e,0.0003366
+1000,2005,DG Granule,CA3 LMR Targeting,e,i,0.0001794
+1000,2013,DG Granule,CA3 Lucidum ORAX,e,i,0.0001907
+1000,2019,DG Granule,CA3 Spiny Lucidum,e,i,0.0004899
+1000,2028,DG Granule,CA3 Axo Axonic,e,i,0.0006667
+1000,2035,DG Granule,CA3 Mossy Fiber Associated ORDEN,e,i,0.0003844
+1000,2036,DG Granule,CA3 Mossy Fiber Associated,e,i,0.0009879
+1000,2043,DG Granule,CA3 Basket,e,i,0.0005885
+1000,2044,DG Granule,CA3 Basket CCK+,e,i,0.0001724
+1000,3000,DG Granule,CA2 Pyramidal,e,e,0.000809067
+1000,3003,DG Granule,CA2 Bistratified,e,i,0.001402889
+1000,3006,DG Granule,CA2 Basket,e,i,0.002201249
+1000,3007,DG Granule,CA2 Wide Arbor Basket,e,i,0.001310674
+1001,1000,DG Semilunar Granule,DG Granule,e,e,0.0002463
+1001,1001,DG Semilunar Granule,DG Semilunar Granule,e,e,0.000279
+1001,1002,DG Semilunar Granule,DG Mossy,e,e,0.00581
+1001,1004,DG Semilunar Granule,DG Total Molecular Layer,e,i,0.002668
+1001,1005,DG Semilunar Granule,DG MOLAX,e,i,0.004599
+1001,1009,DG Semilunar Granule,DG HICAP,e,i,0.004227
+1001,1010,DG Semilunar Granule,DG Axo Axonic,e,i,0.004204
+1001,1013,DG Semilunar Granule,DG HIPP,e,i,0.003702
+1001,1026,DG Semilunar Granule,DG HIPROM,e,i,0.007157
+1001,1027,DG Semilunar Granule,DG AIPRIM,e,i,0.005796
+1001,1035,DG Semilunar Granule,DG Basket,e,i,0.003812
+1001,1041,DG Semilunar Granule,DG Hilar Ectopic Granule,e,e,0.005599
+1001,2000,DG Semilunar Granule,CA3 Pyramidal,e,e,0.0001301
+1001,2004,DG Semilunar Granule,CA3c Pyramidal,e,e,0.0002067
+1001,2005,DG Semilunar Granule,CA3 LMR Targeting,e,i,0.0001075
+1001,2013,DG Semilunar Granule,CA3 Lucidum ORAX,e,i,0.0004143
+1001,2019,DG Semilunar Granule,CA3 Spiny Lucidum,e,i,0.0006109
+1001,2028,DG Semilunar Granule,CA3 Axo Axonic,e,i,0.0004636
+1001,2035,DG Semilunar Granule,CA3 Mossy Fiber Associated ORDEN,e,i,0.0002087
+1001,2036,DG Semilunar Granule,CA3 Mossy Fiber Associated,e,i,0.0001812
+1001,2043,DG Semilunar Granule,CA3 Basket,e,i,0.0003222
+1001,2044,DG Semilunar Granule,CA3 Basket CCK+,e,i,0.0001085
+1002,1000,DG Mossy,DG Granule,e,e,0.002374
+1002,1001,DG Mossy,DG Semilunar Granule,e,e,0.002166
+1002,1002,DG Mossy,DG Mossy,e,e,0.01217
+1002,1004,DG Mossy,DG Total Molecular Layer,e,i,0.01157
+1002,1005,DG Mossy,DG MOLAX,e,i,0.01345
+1002,1009,DG Mossy,DG HICAP,e,i,0.01111
+1002,1010,DG Mossy,DG Axo Axonic,e,i,0.01325
+1002,1013,DG Mossy,DG HIPP,e,i,0.009928
+1002,1026,DG Mossy,DG HIPROM,e,i,0.01524
+1002,1027,DG Mossy,DG AIPRIM,e,i,0.01378
+1002,1035,DG Mossy,DG Basket,e,i,0.01174
+1002,1041,DG Mossy,DG Hilar Ectopic Granule,e,e,0.01629
+1004,1000,DG Total Molecular Layer,DG Granule,i,e,0.004665
+1004,1001,DG Total Molecular Layer,DG Semilunar Granule,i,e,0.004957
+1004,1002,DG Total Molecular Layer,DG Mossy,i,e,0.005694
+1004,1004,DG Total Molecular Layer,DG Total Molecular Layer,i,i,0.006406
+1004,1005,DG Total Molecular Layer,DG MOLAX,i,i,0.01021
+1004,1007,DG Total Molecular Layer,DG Neurogliaform,i,i,0.00133
+1004,1008,DG Total Molecular Layer,DG MOPP,i,i,0.001604
+1004,1009,DG Total Molecular Layer,DG HICAP,i,i,0.006769
+1004,1010,DG Total Molecular Layer,DG Axo Axonic,i,i,0.007474
+1004,1013,DG Total Molecular Layer,DG HIPP,i,i,0.003701
+1004,1026,DG Total Molecular Layer,DG HIPROM,i,i,0.006654
+1004,1027,DG Total Molecular Layer,DG AIPRIM,i,i,0.007635
+1004,1035,DG Total Molecular Layer,DG Basket,i,i,0.006157
+1004,1041,DG Total Molecular Layer,DG Hilar Ectopic Granule,i,e,0.01089
+1004,4011,DG Total Molecular Layer,CA1 Neurogliaform Projecting,i,i,0.001399
+1005,1000,DG MOLAX,DG Granule,i,e,0.005739
+1005,1001,DG MOLAX,DG Semilunar Granule,i,e,0.006043
+1005,1004,DG MOLAX,DG Total Molecular Layer,i,i,0.003874
+1005,1005,DG MOLAX,DG MOLAX,i,i,0.006067
+1005,1007,DG MOLAX,DG Neurogliaform,i,i,0.001886
+1005,1008,DG MOLAX,DG MOPP,i,i,0.002425
+1005,1009,DG MOLAX,DG HICAP,i,i,0.0051
+1005,1010,DG MOLAX,DG Axo Axonic,i,i,0.006436
+1005,1026,DG MOLAX,DG HIPROM,i,i,0.002558
+1005,1027,DG MOLAX,DG AIPRIM,i,i,0.004612
+1005,1035,DG MOLAX,DG Basket,i,i,0.005294
+1005,1041,DG MOLAX,DG Hilar Ectopic Granule,i,e,0.006394
+1005,4011,DG MOLAX,CA1 Neurogliaform Projecting,i,i,0.001853
+1007,1000,DG Neurogliaform,DG Granule,i,e,0.0007226
+1007,1001,DG Neurogliaform,DG Semilunar Granule,i,e,0.0009182
+1007,1004,DG Neurogliaform,DG Total Molecular Layer,i,i,0.000252
+1007,1005,DG Neurogliaform,DG MOLAX,i,i,0.0007206
+1007,1007,DG Neurogliaform,DG Neurogliaform,i,i,8.447e-05
+1007,1008,DG Neurogliaform,DG MOPP,i,i,0.0001558
+1007,1009,DG Neurogliaform,DG HICAP,i,i,0.0003998
+1007,1010,DG Neurogliaform,DG Axo Axonic,i,i,0.001099
+1007,1027,DG Neurogliaform,DG AIPRIM,i,i,0.0003661
+1007,1035,DG Neurogliaform,DG Basket,i,i,0.0004149
+1007,1041,DG Neurogliaform,DG Hilar Ectopic Granule,i,e,0.0009608
+1007,4011,DG Neurogliaform,CA1 Neurogliaform Projecting,i,i,0.0002827
+1007,5005,DG Neurogliaform,SUB CA1 Projecting Pyramidal,i,e,0.006678
+1008,1000,DG MOPP,DG Granule,i,e,0.003394
+1008,1001,DG MOPP,DG Semilunar Granule,i,e,0.003671
+1008,1004,DG MOPP,DG Total Molecular Layer,i,i,0.002345
+1008,1005,DG MOPP,DG MOLAX,i,i,0.003253
+1008,1007,DG MOPP,DG Neurogliaform,i,i,0.002492
+1008,1008,DG MOPP,DG MOPP,i,i,0.00279
+1008,1009,DG MOPP,DG HICAP,i,i,0.002855
+1008,1010,DG MOPP,DG Axo Axonic,i,i,0.003911
+1008,1027,DG MOPP,DG AIPRIM,i,i,0.002733
+1008,1035,DG MOPP,DG Basket,i,i,0.003103
+1008,1041,DG MOPP,DG Hilar Ectopic Granule,i,e,0.003705
+1008,4011,DG MOPP,CA1 Neurogliaform Projecting,i,i,0.002597
+1009,1000,DG HICAP,DG Granule,i,e,0.001758
+1009,1001,DG HICAP,DG Semilunar Granule,i,e,0.001794
+1009,1004,DG HICAP,DG Total Molecular Layer,i,i,0.001353
+1009,1005,DG HICAP,DG MOLAX,i,i,0.002614
+1009,1009,DG HICAP,DG HICAP,i,i,0.001873
+1009,1010,DG HICAP,DG Axo Axonic,i,i,0.001868
+1009,1026,DG HICAP,DG HIPROM,i,i,0.002828
+1009,1027,DG HICAP,DG AIPRIM,i,i,0.001567
+1009,1035,DG HICAP,DG Basket,i,i,0.001591
+1009,1041,DG HICAP,DG Hilar Ectopic Granule,i,e,0.002137
+1010,1000,DG Axo Axonic,DG Granule,i,e,0.010416667
+1010,1002,DG Axo Axonic,DG Mossy,i,e,0.010416667
+1010,1041,DG Axo Axonic,DG Hilar Ectopic Granule,i,e,0.010416667
+1013,1000,DG HIPP,DG Granule,i,e,0.005952
+1013,1001,DG HIPP,DG Semilunar Granule,i,e,0.006541
+1013,1004,DG HIPP,DG Total Molecular Layer,i,i,0.003228
+1013,1005,DG HIPP,DG MOLAX,i,i,0.004418
+1013,1007,DG HIPP,DG Neurogliaform,i,i,0.004257
+1013,1008,DG HIPP,DG MOPP,i,i,0.005529
+1013,1009,DG HIPP,DG HICAP,i,i,0.004708
+1013,1010,DG HIPP,DG Axo Axonic,i,i,0.007243
+1013,1027,DG HIPP,DG AIPRIM,i,i,0.004287
+1013,1035,DG HIPP,DG Basket,i,i,0.006093
+1013,1041,DG HIPP,DG Hilar Ectopic Granule,i,e,0.006169
+1013,4011,DG HIPP,CA1 Neurogliaform Projecting,i,i,0.004042
+1026,1000,DG HIPROM,DG Granule,i,e,0.006383
+1026,1001,DG HIPROM,DG Semilunar Granule,i,e,0.006684
+1026,1002,DG HIPROM,DG Mossy,i,e,0.009444
+1026,1004,DG HIPROM,DG Total Molecular Layer,i,i,0.01111
+1026,1005,DG HIPROM,DG MOLAX,i,i,0.01503
+1026,1007,DG HIPROM,DG Neurogliaform,i,i,0.001807
+1026,1008,DG HIPROM,DG MOPP,i,i,0.002386
+1026,1009,DG HIPROM,DG HICAP,i,i,0.01772
+1026,1010,DG HIPROM,DG Axo Axonic,i,i,0.01906
+1026,1013,DG HIPROM,DG HIPP,i,i,0.007118
+1026,1026,DG HIPROM,DG HIPROM,i,i,0.01893
+1026,1027,DG HIPROM,DG AIPRIM,i,i,0.0198
+1026,1035,DG HIPROM,DG Basket,i,i,0.01776
+1026,1041,DG HIPROM,DG Hilar Ectopic Granule,i,e,0.01645
+1026,2000,DG HIPROM,CA3 Pyramidal,i,e,0.005005
+1026,2001,DG HIPROM,CA3 Granule,i,e,0.00019119
+1026,2004,DG HIPROM,CA3c Pyramidal,i,e,0.005861
+1026,2005,DG HIPROM,CA3 LMR Targeting,i,i,0.001614
+1026,2009,DG HIPROM,CA3 O LM,i,i,0.002746
+1026,2013,DG HIPROM,CA3 Lucidum ORAX,i,i,0.002504
+1026,2019,DG HIPROM,CA3 Spiny Lucidum,i,i,0.004649
+1026,2020,DG HIPROM,CA3 Trilaminar,i,i,0.004534
+1026,2028,DG HIPROM,CA3 Axo Axonic,i,i,0.006575
+1026,2035,DG HIPROM,CA3 Mossy Fiber Associated ORDEN,i,i,0.006449
+1026,2036,DG HIPROM,CA3 Mossy Fiber Associated,i,i,0.003424
+1026,2043,DG HIPROM,CA3 Basket,i,i,0.005949
+1026,2044,DG HIPROM,CA3 Basket CCK+,i,i,0.003357
+1026,2047,DG HIPROM,CA3 Horizontal Axo Axonic,i,i,0.001647
+1026,3007,DG HIPROM,CA2 Wide Arbor Basket,i,i,0.000903952
+1026,4011,DG HIPROM,CA1 Neurogliaform Projecting,i,i,0.001756
+1027,1000,DG AIPRIM,DG Granule,i,e,0.00419
+1027,1001,DG AIPRIM,DG Semilunar Granule,i,e,0.004097
+1027,1002,DG AIPRIM,DG Mossy,i,e,0.007415
+1027,1004,DG AIPRIM,DG Total Molecular Layer,i,i,0.007942
+1027,1005,DG AIPRIM,DG MOLAX,i,i,0.01107
+1027,1009,DG AIPRIM,DG HICAP,i,i,0.01198
+1027,1010,DG AIPRIM,DG Axo Axonic,i,i,0.01226
+1027,1013,DG AIPRIM,DG HIPP,i,i,0.00524
+1027,1026,DG AIPRIM,DG HIPROM,i,i,0.01658
+1027,1027,DG AIPRIM,DG AIPRIM,i,i,0.0138
+1027,1035,DG AIPRIM,DG Basket,i,i,0.01166
+1027,1041,DG AIPRIM,DG Hilar Ectopic Granule,i,e,0.01201
+1035,1000,DG Basket,DG Granule,i,e,0.032155006
+1035,1004,DG Basket,DG Total Molecular Layer,i,i,0.032155006
+1035,1005,DG Basket,DG MOLAX,i,i,0.032155006
+1035,1009,DG Basket,DG HICAP,i,i,0.032155006
+1035,1010,DG Basket,DG Axo Axonic,i,i,0.032155006
+1035,1013,DG Basket,DG HIPP,i,i,0.032155006
+1035,1035,DG Basket,DG Basket,i,i,0.032155006
+1041,1002,DG Hilar Ectopic Granule,DG Mossy,e,e,0.003758
+1041,1004,DG Hilar Ectopic Granule,DG Total Molecular Layer,e,i,0.001636
+1041,1005,DG Hilar Ectopic Granule,DG MOLAX,e,i,0.001755
+1041,1009,DG Hilar Ectopic Granule,DG HICAP,e,i,0.001208
+1041,1010,DG Hilar Ectopic Granule,DG Axo Axonic,e,i,0.00143
+1041,1013,DG Hilar Ectopic Granule,DG HIPP,e,i,0.002636
+1041,1026,DG Hilar Ectopic Granule,DG HIPROM,e,i,0.002249
+1041,1027,DG Hilar Ectopic Granule,DG AIPRIM,e,i,0.002252
+1041,1035,DG Hilar Ectopic Granule,DG Basket,e,i,0.00122
+1041,1041,DG Hilar Ectopic Granule,DG Hilar Ectopic Granule,e,e,0.002395
+1041,2000,DG Hilar Ectopic Granule,CA3 Pyramidal,e,e,5.99e-05
+1041,2004,DG Hilar Ectopic Granule,CA3c Pyramidal,e,e,0.000131032
+1041,2005,DG Hilar Ectopic Granule,CA3 LMR Targeting,e,i,4.57e-05
+1041,2013,DG Hilar Ectopic Granule,CA3 Lucidum ORAX,e,i,0.000351704
+1041,2019,DG Hilar Ectopic Granule,CA3 Spiny Lucidum,e,i,0.000526625
+1041,2028,DG Hilar Ectopic Granule,CA3 Axo Axonic,e,i,0.000560376
+1041,2035,DG Hilar Ectopic Granule,CA3 Mossy Fiber Associated ORDEN,e,i,0.000241953
+1041,2036,DG Hilar Ectopic Granule,CA3 Mossy Fiber Associated,e,i,0.000124017
+1041,2043,DG Hilar Ectopic Granule,CA3 Basket,e,i,0.000575307
+1041,2044,DG Hilar Ectopic Granule,CA3 Basket CCK+,e,i,0.000112126
+2000,2000,CA3 Pyramidal,CA3 Pyramidal,e,e,0.01034
+2000,2001,CA3 Pyramidal,CA3 Granule,e,e,0.001193
+2000,2004,CA3 Pyramidal,CA3c Pyramidal,e,e,0.01052
+2000,2005,CA3 Pyramidal,CA3 LMR Targeting,e,i,0.001118
+2000,2009,CA3 Pyramidal,CA3 O LM,e,i,0.005504
+2000,2013,CA3 Pyramidal,CA3 Lucidum ORAX,e,i,0.004063
+2000,2020,CA3 Pyramidal,CA3 Trilaminar,e,i,0.007633
+2000,2028,CA3 Pyramidal,CA3 Axo Axonic,e,i,0.008753
+2000,2035,CA3 Pyramidal,CA3 Mossy Fiber Associated ORDEN,e,i,0.009025
+2000,2036,CA3 Pyramidal,CA3 Mossy Fiber Associated,e,i,0.004178
+2000,2043,CA3 Pyramidal,CA3 Basket,e,i,0.008742
+2000,2044,CA3 Pyramidal,CA3 Basket CCK+,e,i,0.006646
+2000,2047,CA3 Pyramidal,CA3 Horizontal Axo Axonic,e,i,0.003975
+2000,3000,CA3 Pyramidal,CA2 Pyramidal,e,e,0.02278
+2000,3003,CA3 Pyramidal,CA2 Bistratified,e,i,0.01805
+2000,3006,CA3 Pyramidal,CA2 Basket,e,i,0.0146
+2000,3007,CA3 Pyramidal,CA2 Wide Arbor Basket,e,i,0.007246
+2000,3008,CA3 Pyramidal,CA2 SP SR,e,i,0.01404
+2000,4000,CA3 Pyramidal,CA1 Pyramidal,e,e,0.01305
+2000,4003,CA3 Pyramidal,CA1 Quadrilaminar,e,i,0.00606
+2000,4005,CA3 Pyramidal,CA1 LMR,e,i,0.001697
+2000,4006,CA3 Pyramidal,CA1 Perforant Path Associated,e,i,0.004112
+2000,4013,CA3 Pyramidal,CA1 Radial Trilaminar,e,i,0.002603
+2000,4015,CA3 Pyramidal,CA1 Schaffer Collateral Associated,e,i,0.004721
+2000,4023,CA3 Pyramidal,CA1 Back Projection,e,i,0.035220051
+2000,4028,CA3 Pyramidal,CA1 Radiatum,e,i,0.003887
+2000,4033,CA3 Pyramidal,CA1 SO SO,e,i,0.065738291
+2000,4035,CA3 Pyramidal,CA1 Trilaminar,e,i,0.080072476
+2000,4036,CA3 Pyramidal,CA1 Axo Axonic,e,i,0.007143
+2000,4038,CA3 Pyramidal,CA1 Horizontal Axo Axonic,e,i,0.017436683
+2000,4039,CA3 Pyramidal,CA1 Horizontal Basket,e,i,0.046694459
+2000,4054,CA3 Pyramidal,CA1 Radiatum Giant,e,e,0.005662
+2000,4055,CA3 Pyramidal,CA1 Oriens Alveus,e,i,0.005973
+2000,4061,CA3 Pyramidal,CA1 R Receiving Apical Targeting,e,i,0.009607
+2000,4066,CA3 Pyramidal,CA1 OR LM,e,i,0.02017
+2000,4069,CA3 Pyramidal,CA1 O LM,e,i,0.059784179
+2000,4076,CA3 Pyramidal,CA1 Perforant Path Associated QuadD,e,i,0.02368
+2000,4078,CA3 Pyramidal,CA1 Basket,e,i,0.01309
+2000,4079,CA3 Pyramidal,CA1 Basket CCK+,e,i,0.006596
+2000,4080,CA3 Pyramidal,CA1 Bistratified,e,i,0.00478
+2000,4081,CA3 Pyramidal,CA1 Ivy,e,i,0.002194
+2000,4083,CA3 Pyramidal,CA1 Oriens Bistratified,e,i,0.017133618
+2000,4087,CA3 Pyramidal,CA1 O LMR,e,i,0.038116824
+2000,4089,CA3 Pyramidal,CA1 Recurrent O LM,e,i,0.089951603
+2001,2000,CA3 Granule,CA3 Pyramidal,e,e,0.001049
+2001,2004,CA3 Granule,CA3c Pyramidal,e,e,0.001393
+2001,2005,CA3 Granule,CA3 LMR Targeting,e,i,0.0009187
+2001,2013,CA3 Granule,CA3 Lucidum ORAX,e,i,0.001562
+2001,2019,CA3 Granule,CA3 Spiny Lucidum,e,i,0.001996
+2001,2028,CA3 Granule,CA3 Axo Axonic,e,i,0.001722
+2001,2035,CA3 Granule,CA3 Mossy Fiber Associated ORDEN,e,i,0.001164
+2001,2036,CA3 Granule,CA3 Mossy Fiber Associated,e,i,0.001138
+2001,2043,CA3 Granule,CA3 Basket,e,i,0.001486
+2001,2044,CA3 Granule,CA3 Basket CCK+,e,i,0.0007892
+2004,1000,CA3c Pyramidal,DG Granule,e,e,0.010606545
+2004,1001,CA3c Pyramidal,DG Semilunar Granule,e,e,0.009748977
+2004,1002,CA3c Pyramidal,DG Mossy,e,e,0.004285629
+2004,1004,CA3c Pyramidal,DG Total Molecular Layer,e,i,0.01146203
+2004,1005,CA3c Pyramidal,DG MOLAX,e,i,0.018252085
+2004,1009,CA3c Pyramidal,DG HICAP,e,i,0.015012311
+2004,1010,CA3c Pyramidal,DG Axo Axonic,e,i,0.019466081
+2004,1013,CA3c Pyramidal,DG HIPP,e,i,0.003009135
+2004,1026,CA3c Pyramidal,DG HIPROM,e,i,0.019757026
+2004,1027,CA3c Pyramidal,DG AIPRIM,e,i,0.014605893
+2004,1035,CA3c Pyramidal,DG Basket,e,i,0.016464829
+2004,1041,CA3c Pyramidal,DG Hilar Ectopic Granule,e,e,0.02278082
+2004,2000,CA3c Pyramidal,CA3 Pyramidal,e,e,0.003453
+2004,2001,CA3c Pyramidal,CA3 Granule,e,e,0.000492
+2004,2004,CA3c Pyramidal,CA3c Pyramidal,e,e,0.003336
+2004,2005,CA3c Pyramidal,CA3 LMR Targeting,e,i,0.0005283
+2004,2009,CA3c Pyramidal,CA3 O LM,e,i,0.003405
+2004,2013,CA3c Pyramidal,CA3 Lucidum ORAX,e,i,0.001754
+2004,2020,CA3c Pyramidal,CA3 Trilaminar,e,i,0.005635
+2004,2028,CA3c Pyramidal,CA3 Axo Axonic,e,i,0.003269
+2004,2035,CA3c Pyramidal,CA3 Mossy Fiber Associated ORDEN,e,i,0.002952
+2004,2036,CA3c Pyramidal,CA3 Mossy Fiber Associated,e,i,0.001192
+2004,2043,CA3c Pyramidal,CA3 Basket,e,i,0.0033
+2004,2044,CA3c Pyramidal,CA3 Basket CCK+,e,i,0.001805
+2004,2047,CA3c Pyramidal,CA3 Horizontal Axo Axonic,e,i,0.002191
+2004,3000,CA3c Pyramidal,CA2 Pyramidal,e,e,0.153779408
+2004,3003,CA3c Pyramidal,CA2 Bistratified,e,i,0.132414959
+2004,3006,CA3c Pyramidal,CA2 Basket,e,i,0.115386954
+2004,3007,CA3c Pyramidal,CA2 Wide Arbor Basket,e,i,0.068235863
+2004,3008,CA3c Pyramidal,CA2 SP SR,e,i,0.111375131
+2004,4000,CA3c Pyramidal,CA1 Pyramidal,e,e,0.35655592
+2004,4003,CA3c Pyramidal,CA1 Quadrilaminar,e,i,0.285082134
+2004,4005,CA3c Pyramidal,CA1 LMR,e,i,0.1443391
+2004,4006,CA3c Pyramidal,CA1 Perforant Path Associated,e,i,0.232687403
+2004,4013,CA3c Pyramidal,CA1 Radial Trilaminar,e,i,0.199371417
+2004,4015,CA3c Pyramidal,CA1 Schaffer Collateral Associated,e,i,0.246256403
+2004,4023,CA3c Pyramidal,CA1 Back Projection,e,i,0.017939506
+2004,4028,CA3c Pyramidal,CA1 Radiatum,e,i,0.227183221
+2004,4033,CA3c Pyramidal,CA1 SO SO,e,i,0.030932461
+2004,4035,CA3c Pyramidal,CA1 Trilaminar,e,i,0.036167941
+2004,4036,CA3c Pyramidal,CA1 Axo Axonic,e,i,0.308107009
+2004,4038,CA3c Pyramidal,CA1 Horizontal Axo Axonic,e,i,0.009365368
+2004,4039,CA3c Pyramidal,CA1 Horizontal Basket,e,i,0.023442327
+2004,4054,CA3c Pyramidal,CA1 Radiatum Giant,e,e,0.256195054
+2004,4055,CA3c Pyramidal,CA1 Oriens Alveus,e,i,0.282836766
+2004,4061,CA3c Pyramidal,CA1 R Receiving Apical Targeting,e,i,0.308821376
+2004,4066,CA3c Pyramidal,CA1 OR LM,e,i,0.375266804
+2004,4069,CA3c Pyramidal,CA1 O LM,e,i,0.028386391
+2004,4076,CA3c Pyramidal,CA1 Perforant Path Associated QuadD,e,i,0.374169239
+2004,4078,CA3c Pyramidal,CA1 Basket,e,i,0.410866822
+2004,4079,CA3c Pyramidal,CA1 Basket CCK+,e,i,0.413114963
+2004,4080,CA3c Pyramidal,CA1 Bistratified,e,i,0.244995738
+2004,4081,CA3c Pyramidal,CA1 Ivy,e,i,0.19025721
+2004,4083,CA3c Pyramidal,CA1 Oriens Bistratified,e,i,0.009733452
+2004,4087,CA3c Pyramidal,CA1 O LMR,e,i,0.02165382
+2004,4089,CA3c Pyramidal,CA1 Recurrent O LM,e,i,0.039979435
+2004,5005,CA3c Pyramidal,SUB CA1 Projecting Pyramidal,e,e,0.008183013
+2005,2000,CA3 LMR Targeting,CA3 Pyramidal,i,e,0.01655
+2005,2001,CA3 LMR Targeting,CA3 Granule,i,e,0.01275
+2005,2004,CA3 LMR Targeting,CA3c Pyramidal,i,e,0.00149
+2005,2005,CA3 LMR Targeting,CA3 LMR Targeting,i,i,0.02309
+2005,2013,CA3 LMR Targeting,CA3 Lucidum ORAX,i,i,0.001877
+2005,2028,CA3 LMR Targeting,CA3 Axo Axonic,i,i,0.01432
+2005,2035,CA3 LMR Targeting,CA3 Mossy Fiber Associated ORDEN,i,i,0.001318
+2005,2036,CA3 LMR Targeting,CA3 Mossy Fiber Associated,i,i,0.001183
+2005,2043,CA3 LMR Targeting,CA3 Basket,i,i,0.01613
+2005,2044,CA3 LMR Targeting,CA3 Basket CCK+,i,i,0.0128
+2009,2000,CA3 O LM,CA3 Pyramidal,i,e,0.02
+2009,2001,CA3 O LM,CA3 Granule,i,e,0.01344
+2009,2004,CA3 O LM,CA3c Pyramidal,i,e,0.003804
+2009,2005,CA3 O LM,CA3 LMR Targeting,i,i,0.02241
+2009,2009,CA3 O LM,CA3 O LM,i,i,0.003652
+2009,2013,CA3 O LM,CA3 Lucidum ORAX,i,i,0.001786
+2009,2020,CA3 O LM,CA3 Trilaminar,i,i,0.005832
+2009,2028,CA3 O LM,CA3 Axo Axonic,i,i,0.01794
+2009,2035,CA3 O LM,CA3 Mossy Fiber Associated ORDEN,i,i,0.003354
+2009,2036,CA3 O LM,CA3 Mossy Fiber Associated,i,i,0.001305
+2009,2043,CA3 O LM,CA3 Basket,i,i,0.01927
+2009,2044,CA3 O LM,CA3 Basket CCK+,i,i,0.01486
+2009,2047,CA3 O LM,CA3 Horizontal Axo Axonic,i,i,0.00241
+2013,2000,CA3 Lucidum ORAX,CA3 Pyramidal,i,e,0.006315
+2013,2001,CA3 Lucidum ORAX,CA3 Granule,i,e,0.0005809
+2013,2004,CA3 Lucidum ORAX,CA3c Pyramidal,i,e,0.00717
+2013,2005,CA3 Lucidum ORAX,CA3 LMR Targeting,i,i,0.001869
+2013,2009,CA3 Lucidum ORAX,CA3 O LM,i,i,0.003174
+2013,2013,CA3 Lucidum ORAX,CA3 Lucidum ORAX,i,i,0.003975
+2013,2019,CA3 Lucidum ORAX,CA3 Spiny Lucidum,i,i,0.003846
+2013,2020,CA3 Lucidum ORAX,CA3 Trilaminar,i,i,0.005242
+2013,2028,CA3 Lucidum ORAX,CA3 Axo Axonic,i,i,0.007447
+2013,2035,CA3 Lucidum ORAX,CA3 Mossy Fiber Associated ORDEN,i,i,0.00768
+2013,2036,CA3 Lucidum ORAX,CA3 Mossy Fiber Associated,i,i,0.004121
+2013,2043,CA3 Lucidum ORAX,CA3 Basket,i,i,0.007423
+2013,2044,CA3 Lucidum ORAX,CA3 Basket CCK+,i,i,0.004157
+2013,2047,CA3 Lucidum ORAX,CA3 Horizontal Axo Axonic,i,i,0.001996
+2013,3007,CA3 Lucidum ORAX,CA2 Wide Arbor Basket,i,i,0.001085998
+2019,1000,CA3 Spiny Lucidum,DG Granule,i,e,0.004243
+2019,1001,CA3 Spiny Lucidum,DG Semilunar Granule,i,e,0.00493
+2019,1004,CA3 Spiny Lucidum,DG Total Molecular Layer,i,i,0.001636
+2019,1005,CA3 Spiny Lucidum,DG MOLAX,i,i,0.002619
+2019,1007,CA3 Spiny Lucidum,DG Neurogliaform,i,i,0.001275
+2019,1008,CA3 Spiny Lucidum,DG MOPP,i,i,0.002374
+2019,1009,CA3 Spiny Lucidum,DG HICAP,i,i,0.002891
+2019,1010,CA3 Spiny Lucidum,DG Axo Axonic,i,i,0.006099
+2019,1026,CA3 Spiny Lucidum,DG HIPROM,i,i,0.0003505
+2019,1027,CA3 Spiny Lucidum,DG AIPRIM,i,i,0.002447
+2019,1035,CA3 Spiny Lucidum,DG Basket,i,i,0.004616
+2019,1041,CA3 Spiny Lucidum,DG Hilar Ectopic Granule,i,e,0.004442
+2019,2000,CA3 Spiny Lucidum,CA3 Pyramidal,i,e,0.002206
+2019,2001,CA3 Spiny Lucidum,CA3 Granule,i,e,0.0006334
+2019,2004,CA3 Spiny Lucidum,CA3c Pyramidal,i,e,0.00239
+2019,2005,CA3 Spiny Lucidum,CA3 LMR Targeting,i,i,0.001064
+2019,2013,CA3 Spiny Lucidum,CA3 Lucidum ORAX,i,i,0.003208
+2019,2019,CA3 Spiny Lucidum,CA3 Spiny Lucidum,i,i,0.0006416
+2019,2028,CA3 Spiny Lucidum,CA3 Axo Axonic,i,i,0.002207
+2019,2035,CA3 Spiny Lucidum,CA3 Mossy Fiber Associated ORDEN,i,i,0.002228
+2019,2036,CA3 Spiny Lucidum,CA3 Mossy Fiber Associated,i,i,0.002043
+2019,2043,CA3 Spiny Lucidum,CA3 Basket,i,i,0.002486
+2019,2044,CA3 Spiny Lucidum,CA3 Basket CCK+,i,i,0.00179
+2019,4011,CA3 Spiny Lucidum,CA1 Neurogliaform Projecting,i,i,0.001111
+2020,2000,CA3 Trilaminar,CA3 Pyramidal,i,e,0.006598
+2020,2001,CA3 Trilaminar,CA3 Granule,i,e,0.001104
+2020,2004,CA3 Trilaminar,CA3c Pyramidal,i,e,0.006875
+2020,2005,CA3 Trilaminar,CA3 LMR Targeting,i,i,0.002334
+2020,2009,CA3 Trilaminar,CA3 O LM,i,i,0.004053
+2020,2013,CA3 Trilaminar,CA3 Lucidum ORAX,i,i,0.004641
+2020,2019,CA3 Trilaminar,CA3 Spiny Lucidum,i,i,0.003386
+2020,2020,CA3 Trilaminar,CA3 Trilaminar,i,i,0.007144
+2020,2028,CA3 Trilaminar,CA3 Axo Axonic,i,i,0.007457
+2020,2035,CA3 Trilaminar,CA3 Mossy Fiber Associated ORDEN,i,i,0.009516
+2020,2036,CA3 Trilaminar,CA3 Mossy Fiber Associated,i,i,0.004368
+2020,2043,CA3 Trilaminar,CA3 Basket,i,i,0.007492
+2020,2044,CA3 Trilaminar,CA3 Basket CCK+,i,i,0.005302
+2020,2047,CA3 Trilaminar,CA3 Horizontal Axo Axonic,i,i,0.002758
+2020,3007,CA3 Trilaminar,CA2 Wide Arbor Basket,i,i,0.001105
+2020,4000,CA3 Trilaminar,CA1 Pyramidal,i,e,0.004266
+2020,4003,CA3 Trilaminar,CA1 Quadrilaminar,i,i,0.005303
+2020,4005,CA3 Trilaminar,CA1 LMR,i,i,0.0004415
+2020,4006,CA3 Trilaminar,CA1 Perforant Path Associated,i,i,0.0008038
+2020,4013,CA3 Trilaminar,CA1 Radial Trilaminar,i,i,0.004461
+2020,4015,CA3 Trilaminar,CA1 Schaffer Collateral Associated,i,i,0.001309
+2020,4023,CA3 Trilaminar,CA1 Back Projection,i,i,0.003408
+2020,4028,CA3 Trilaminar,CA1 Radiatum,i,i,0.00107
+2020,4033,CA3 Trilaminar,CA1 SO SO,i,i,0.003457
+2020,4035,CA3 Trilaminar,CA1 Trilaminar,i,i,0.00293
+2020,4036,CA3 Trilaminar,CA1 Axo Axonic,i,i,0.00411
+2020,4038,CA3 Trilaminar,CA1 Horizontal Axo Axonic,i,i,0.001323
+2020,4039,CA3 Trilaminar,CA1 Horizontal Basket,i,i,0.005588
+2020,4054,CA3 Trilaminar,CA1 Radiatum Giant,i,e,0.00112
+2020,4055,CA3 Trilaminar,CA1 Oriens Alveus,i,i,0.003889
+2020,4061,CA3 Trilaminar,CA1 R Receiving Apical Targeting,i,i,0.001294
+2020,4066,CA3 Trilaminar,CA1 OR LM,i,i,0.004218
+2020,4069,CA3 Trilaminar,CA1 O LM,i,i,0.001966
+2020,4076,CA3 Trilaminar,CA1 Perforant Path Associated QuadD,i,i,0.006816
+2020,4078,CA3 Trilaminar,CA1 Basket,i,i,0.004391
+2020,4079,CA3 Trilaminar,CA1 Basket CCK+,i,i,0.004752
+2020,4080,CA3 Trilaminar,CA1 Bistratified,i,i,0.004884
+2020,4081,CA3 Trilaminar,CA1 Ivy,i,i,0.004276
+2020,4083,CA3 Trilaminar,CA1 Oriens Bistratified,i,i,0.001438
+2020,4087,CA3 Trilaminar,CA1 O LMR,i,i,0.001669
+2020,4089,CA3 Trilaminar,CA1 Recurrent O LM,i,i,0.004388
+2028,2000,CA3 Axo Axonic,CA3 Pyramidal,i,e,0.000675219
+2028,2004,CA3 Axo Axonic,CA3c Pyramidal,i,e,0.000675219
+2035,1002,CA3 Mossy Fiber Associated ORDEN,DG Mossy,i,e,0.005815
+2035,1004,CA3 Mossy Fiber Associated ORDEN,DG Total Molecular Layer,i,i,0.002549
+2035,1005,CA3 Mossy Fiber Associated ORDEN,DG MOLAX,i,i,0.003239
+2035,1009,CA3 Mossy Fiber Associated ORDEN,DG HICAP,i,i,0.002004
+2035,1010,CA3 Mossy Fiber Associated ORDEN,DG Axo Axonic,i,i,0.002124
+2035,1013,CA3 Mossy Fiber Associated ORDEN,DG HIPP,i,i,0.003923
+2035,1026,CA3 Mossy Fiber Associated ORDEN,DG HIPROM,i,i,0.003131
+2035,1027,CA3 Mossy Fiber Associated ORDEN,DG AIPRIM,i,i,0.0033
+2035,1035,CA3 Mossy Fiber Associated ORDEN,DG Basket,i,i,0.001873
+2035,1041,CA3 Mossy Fiber Associated ORDEN,DG Hilar Ectopic Granule,i,e,0.004259
+2035,2000,CA3 Mossy Fiber Associated ORDEN,CA3 Pyramidal,i,e,0.0142
+2035,2004,CA3 Mossy Fiber Associated ORDEN,CA3c Pyramidal,i,e,0.01929
+2035,2005,CA3 Mossy Fiber Associated ORDEN,CA3 LMR Targeting,i,i,0.005734
+2035,2013,CA3 Mossy Fiber Associated ORDEN,CA3 Lucidum ORAX,i,i,0.008351
+2035,2019,CA3 Mossy Fiber Associated ORDEN,CA3 Spiny Lucidum,i,i,0.01949
+2035,2028,CA3 Mossy Fiber Associated ORDEN,CA3 Axo Axonic,i,i,0.01865
+2035,2035,CA3 Mossy Fiber Associated ORDEN,CA3 Mossy Fiber Associated ORDEN,i,i,0.01663
+2035,2036,CA3 Mossy Fiber Associated ORDEN,CA3 Mossy Fiber Associated,i,i,0.01429
+2035,2043,CA3 Mossy Fiber Associated ORDEN,CA3 Basket,i,i,0.01835
+2035,2044,CA3 Mossy Fiber Associated ORDEN,CA3 Basket CCK+,i,i,0.01006
+2035,3007,CA3 Mossy Fiber Associated ORDEN,CA2 Wide Arbor Basket,i,i,0.004635821
+2036,1002,CA3 Mossy Fiber Associated,DG Mossy,i,e,0.014794023
+2036,1004,CA3 Mossy Fiber Associated,DG Total Molecular Layer,i,i,0.00927913
+2036,1005,CA3 Mossy Fiber Associated,DG MOLAX,i,i,0.009771103
+2036,1009,CA3 Mossy Fiber Associated,DG HICAP,i,i,0.00781596
+2036,1010,CA3 Mossy Fiber Associated,DG Axo Axonic,i,i,0.008718737
+2036,1013,CA3 Mossy Fiber Associated,DG HIPP,i,i,0.011919293
+2036,1026,CA3 Mossy Fiber Associated,DG HIPROM,i,i,0.010928531
+2036,1027,CA3 Mossy Fiber Associated,DG AIPRIM,i,i,0.010952332
+2036,1035,CA3 Mossy Fiber Associated,DG Basket,i,i,0.007986249
+2036,1041,CA3 Mossy Fiber Associated,DG Hilar Ectopic Granule,i,e,0.011788891
+2036,2000,CA3 Mossy Fiber Associated,CA3 Pyramidal,i,e,0.006022
+2036,2001,CA3 Mossy Fiber Associated,CA3 Granule,i,e,0.0005026
+2036,2004,CA3 Mossy Fiber Associated,CA3c Pyramidal,i,e,0.007058
+2036,2005,CA3 Mossy Fiber Associated,CA3 LMR Targeting,i,i,0.00279
+2036,2013,CA3 Mossy Fiber Associated,CA3 Lucidum ORAX,i,i,0.005106
+2036,2019,CA3 Mossy Fiber Associated,CA3 Spiny Lucidum,i,i,0.005581
+2036,2028,CA3 Mossy Fiber Associated,CA3 Axo Axonic,i,i,0.006883
+2036,2035,CA3 Mossy Fiber Associated,CA3 Mossy Fiber Associated ORDEN,i,i,0.008102
+2036,2036,CA3 Mossy Fiber Associated,CA3 Mossy Fiber Associated,i,i,0.005913
+2036,2043,CA3 Mossy Fiber Associated,CA3 Basket,i,i,0.007281
+2036,2044,CA3 Mossy Fiber Associated,CA3 Basket CCK+,i,i,0.0048
+2036,3007,CA3 Mossy Fiber Associated,CA2 Wide Arbor Basket,i,i,0.002020591
+2043,2000,CA3 Basket,CA3 Pyramidal,i,e,0.266756368
+2043,2004,CA3 Basket,CA3c Pyramidal,i,e,0.266756368
+2043,2028,CA3 Basket,CA3 Axo Axonic,i,i,0.266756368
+2043,2035,CA3 Basket,CA3 Mossy Fiber Associated ORDEN,i,i,0.266756368
+2043,2043,CA3 Basket,CA3 Basket,i,i,0.266756368
+2043,2044,CA3 Basket,CA3 Basket CCK+,i,i,0.266756368
+2044,2000,CA3 Basket CCK+,CA3 Pyramidal,i,e,0.469759913
+2044,2004,CA3 Basket CCK+,CA3c Pyramidal,i,e,0.469759913
+2044,2028,CA3 Basket CCK+,CA3 Axo Axonic,i,i,0.469759913
+2044,2035,CA3 Basket CCK+,CA3 Mossy Fiber Associated ORDEN,i,i,0.469759913
+2044,2043,CA3 Basket CCK+,CA3 Basket,i,i,0.469759913
+2044,2044,CA3 Basket CCK+,CA3 Basket CCK+,i,i,0.469759913
+2047,2000,CA3 Horizontal Axo Axonic,CA3 Pyramidal,i,e,0.000675219
+2047,2004,CA3 Horizontal Axo Axonic,CA3c Pyramidal,i,e,0.000675219
+3000,1002,CA2 Pyramidal,DG Mossy,e,e,0.050003974
+3000,1004,CA2 Pyramidal,DG Total Molecular Layer,e,i,0.021275546
+3000,1005,CA2 Pyramidal,DG MOLAX,e,i,0.0180719
+3000,1009,CA2 Pyramidal,DG HICAP,e,i,0.01417371
+3000,1010,CA2 Pyramidal,DG Axo Axonic,e,i,0.020193866
+3000,1013,CA2 Pyramidal,DG HIPP,e,i,0.037565417
+3000,1026,CA2 Pyramidal,DG HIPROM,e,i,0.036920147
+3000,1027,CA2 Pyramidal,DG AIPRIM,e,i,0.033021052
+3000,1035,CA2 Pyramidal,DG Basket,e,i,0.016146385
+3000,1041,CA2 Pyramidal,DG Hilar Ectopic Granule,e,e,0.025824817
+3000,2000,CA2 Pyramidal,CA3 Pyramidal,e,e,0.023394897
+3000,2001,CA2 Pyramidal,CA3 Granule,e,e,0.00178941
+3000,2004,CA2 Pyramidal,CA3c Pyramidal,e,e,0.025768136
+3000,2005,CA2 Pyramidal,CA3 LMR Targeting,e,i,0.001680746
+3000,2009,CA2 Pyramidal,CA3 O LM,e,i,0.007915616
+3000,2013,CA2 Pyramidal,CA3 Lucidum ORAX,e,i,0.007566268
+3000,2019,CA2 Pyramidal,CA3 Spiny Lucidum,e,i,0.001847993
+3000,2020,CA2 Pyramidal,CA3 Trilaminar,e,i,0.011094678
+3000,2028,CA2 Pyramidal,CA3 Axo Axonic,e,i,0.02559065
+3000,2035,CA2 Pyramidal,CA3 Mossy Fiber Associated ORDEN,e,i,0.023016325
+3000,2036,CA2 Pyramidal,CA3 Mossy Fiber Associated,e,i,0.013042297
+3000,2043,CA2 Pyramidal,CA3 Basket,e,i,0.036278252
+3000,2044,CA2 Pyramidal,CA3 Basket CCK+,e,i,0.01663079
+3000,2047,CA2 Pyramidal,CA3 Horizontal Axo Axonic,e,i,0.004941775
+3000,3000,CA2 Pyramidal,CA2 Pyramidal,e,e,0.03091
+3000,3003,CA2 Pyramidal,CA2 Bistratified,e,i,0.04682
+3000,3006,CA2 Pyramidal,CA2 Basket,e,i,0.03159
+3000,3007,CA2 Pyramidal,CA2 Wide Arbor Basket,e,i,0.02873
+3000,3008,CA2 Pyramidal,CA2 SP SR,e,i,0.03412
+3000,4000,CA2 Pyramidal,CA1 Pyramidal,e,e,0.049791664
+3000,4003,CA2 Pyramidal,CA1 Quadrilaminar,e,i,0.022741098
+3000,4005,CA2 Pyramidal,CA1 LMR,e,i,0.016321744
+3000,4006,CA2 Pyramidal,CA1 Perforant Path Associated,e,i,0.039711766
+3000,4013,CA2 Pyramidal,CA1 Radial Trilaminar,e,i,0.012744181
+3000,4015,CA2 Pyramidal,CA1 Schaffer Collateral Associated,e,i,0.045642945
+3000,4023,CA2 Pyramidal,CA1 Back Projection,e,i,0.015259824
+3000,4028,CA2 Pyramidal,CA1 Radiatum,e,i,0.037522996
+3000,4033,CA2 Pyramidal,CA1 SO SO,e,i,0.034913077
+3000,4035,CA2 Pyramidal,CA1 Trilaminar,e,i,0.045728538
+3000,4036,CA2 Pyramidal,CA1 Axo Axonic,e,i,0.032167506
+3000,4038,CA2 Pyramidal,CA1 Horizontal Axo Axonic,e,i,0.007590458
+3000,4039,CA2 Pyramidal,CA1 Horizontal Basket,e,i,0.022730213
+3000,4054,CA2 Pyramidal,CA1 Radiatum Giant,e,e,0.036548776
+3000,4055,CA2 Pyramidal,CA1 Oriens Alveus,e,i,0.022556684
+3000,4061,CA2 Pyramidal,CA1 R Receiving Apical Targeting,e,i,0.093681209
+3000,4066,CA2 Pyramidal,CA1 OR LM,e,i,0.078292342
+3000,4069,CA2 Pyramidal,CA1 O LM,e,i,0.030967139
+3000,4076,CA2 Pyramidal,CA1 Perforant Path Associated QuadD,e,i,0.066683801
+3000,4078,CA2 Pyramidal,CA1 Basket,e,i,0.042843796
+3000,4079,CA2 Pyramidal,CA1 Basket CCK+,e,i,0.02721633
+3000,4080,CA2 Pyramidal,CA1 Bistratified,e,i,0.020992766
+3000,4081,CA2 Pyramidal,CA1 Ivy,e,i,0.017032031
+3000,4083,CA2 Pyramidal,CA1 Oriens Bistratified,e,i,0.00792602
+3000,4087,CA2 Pyramidal,CA1 O LMR,e,i,0.02152309
+3000,4089,CA2 Pyramidal,CA1 Recurrent O LM,e,i,0.05363277
+3003,3000,CA2 Bistratified,CA2 Pyramidal,i,e,0.08168
+3003,3003,CA2 Bistratified,CA2 Bistratified,i,i,0.09951
+3003,3006,CA2 Bistratified,CA2 Basket,i,i,0.08287
+3003,3007,CA2 Bistratified,CA2 Wide Arbor Basket,i,i,0.08005
+3003,3008,CA2 Bistratified,CA2 SP SR,i,i,0.08408
+3003,4000,CA2 Bistratified,CA1 Pyramidal,i,e,0.0010802
+3003,4003,CA2 Bistratified,CA1 Quadrilaminar,i,i,0.001638634
+3003,4005,CA2 Bistratified,CA1 LMR,i,i,0.00015476
+3003,4006,CA2 Bistratified,CA1 Perforant Path Associated,i,i,0.000373792
+3003,4013,CA2 Bistratified,CA1 Radial Trilaminar,i,i,0.001050514
+3003,4015,CA2 Bistratified,CA1 Schaffer Collateral Associated,i,i,0.000575981
+3003,4023,CA2 Bistratified,CA1 Back Projection,i,i,0.000697914
+3003,4028,CA2 Bistratified,CA1 Radiatum,i,i,0.00046391
+3003,4033,CA2 Bistratified,CA1 SO SO,i,i,0.001974919
+3003,4035,CA2 Bistratified,CA1 Trilaminar,i,i,0.00150919
+3003,4036,CA2 Bistratified,CA1 Axo Axonic,i,i,0.000865482
+3003,4038,CA2 Bistratified,CA1 Horizontal Axo Axonic,i,i,0.000303075
+3003,4039,CA2 Bistratified,CA1 Horizontal Basket,i,i,0.003121086
+3003,4054,CA2 Bistratified,CA1 Radiatum Giant,i,e,0.000536764
+3003,4055,CA2 Bistratified,CA1 Oriens Alveus,i,i,0.00085988
+3003,4061,CA2 Bistratified,CA1 R Receiving Apical Targeting,i,i,0.000733461
+3003,4066,CA2 Bistratified,CA1 OR LM,i,i,0.002101876
+3003,4069,CA2 Bistratified,CA1 O LM,i,i,0.000628292
+3003,4076,CA2 Bistratified,CA1 Perforant Path Associated QuadD,i,i,0.002644194
+3003,4078,CA2 Bistratified,CA1 Basket,i,i,0.001596831
+3003,4079,CA2 Bistratified,CA1 Basket CCK+,i,i,0.001505266
+3003,4080,CA2 Bistratified,CA1 Bistratified,i,i,0.001290213
+3003,4081,CA2 Bistratified,CA1 Ivy,i,i,0.000515625
+3003,4083,CA2 Bistratified,CA1 Oriens Bistratified,i,i,0.000430577
+3003,4087,CA2 Bistratified,CA1 O LMR,i,i,0.000373386
+3003,4089,CA2 Bistratified,CA1 Recurrent O LM,i,i,0.002759538
+3006,3000,CA2 Basket,CA2 Pyramidal,i,e,0.494289744
+3006,3003,CA2 Basket,CA2 Bistratified,i,i,0.494289744
+3006,3006,CA2 Basket,CA2 Basket,i,i,0.494289744
+3006,3007,CA2 Basket,CA2 Wide Arbor Basket,i,i,0.494289744
+3006,3008,CA2 Basket,CA2 SP SR,i,i,0.494289744
+3007,2000,CA2 Wide Arbor Basket,CA3 Pyramidal,i,e,0.354240983
+3007,2004,CA2 Wide Arbor Basket,CA3c Pyramidal,i,e,0.354240983
+3007,2028,CA2 Wide Arbor Basket,CA3 Axo Axonic,i,i,0.354240983
+3007,2035,CA2 Wide Arbor Basket,CA3 Mossy Fiber Associated ORDEN,i,i,0.354240983
+3007,2043,CA2 Wide Arbor Basket,CA3 Basket,i,i,0.354240983
+3007,2044,CA2 Wide Arbor Basket,CA3 Basket CCK+,i,i,0.354240983
+3007,3000,CA2 Wide Arbor Basket,CA2 Pyramidal,i,e,0.354240983
+3007,3003,CA2 Wide Arbor Basket,CA2 Bistratified,i,i,0.354240983
+3007,3006,CA2 Wide Arbor Basket,CA2 Basket,i,i,0.354240983
+3007,3007,CA2 Wide Arbor Basket,CA2 Wide Arbor Basket,i,i,0.354240983
+3007,3008,CA2 Wide Arbor Basket,CA2 SP SR,i,i,0.354240983
+3007,4000,CA2 Wide Arbor Basket,CA1 Pyramidal,i,e,0.354240983
+3007,4013,CA2 Wide Arbor Basket,CA1 Radial Trilaminar,i,i,0.354240983
+3007,4036,CA2 Wide Arbor Basket,CA1 Axo Axonic,i,i,0.354240983
+3007,4039,CA2 Wide Arbor Basket,CA1 Horizontal Basket,i,i,0.354240983
+3007,4054,CA2 Wide Arbor Basket,CA1 Radiatum Giant,i,e,0.354240983
+3007,4066,CA2 Wide Arbor Basket,CA1 OR LM,i,i,0.354240983
+3007,4078,CA2 Wide Arbor Basket,CA1 Basket,i,i,0.354240983
+3007,4079,CA2 Wide Arbor Basket,CA1 Basket CCK+,i,i,0.354240983
+3007,4080,CA2 Wide Arbor Basket,CA1 Bistratified,i,i,0.354240983
+3007,4081,CA2 Wide Arbor Basket,CA1 Ivy,i,i,0.354240983
+3008,3000,CA2 SP SR,CA2 Pyramidal,i,e,0.02125
+3008,3003,CA2 SP SR,CA2 Bistratified,i,i,0.02567
+3008,3006,CA2 SP SR,CA2 Basket,i,i,0.01854
+3008,3007,CA2 SP SR,CA2 Wide Arbor Basket,i,i,0.01417
+3008,3008,CA2 SP SR,CA2 SP SR,i,i,0.02415
+4000,4000,CA1 Pyramidal,CA1 Pyramidal,e,e,0.001272
+4000,4003,CA1 Pyramidal,CA1 Quadrilaminar,e,i,0.001092
+4000,4013,CA1 Pyramidal,CA1 Radial Trilaminar,e,i,0.0008641
+4000,4023,CA1 Pyramidal,CA1 Back Projection,e,i,0.001233
+4000,4033,CA1 Pyramidal,CA1 SO SO,e,i,0.002488
+4000,4035,CA1 Pyramidal,CA1 Trilaminar,e,i,0.002177
+4000,4036,CA1 Pyramidal,CA1 Axo Axonic,e,i,0.001086
+4000,4038,CA1 Pyramidal,CA1 Horizontal Axo Axonic,e,i,0.0007567
+4000,4039,CA1 Pyramidal,CA1 Horizontal Basket,e,i,0.003292
+4000,4055,CA1 Pyramidal,CA1 Oriens Alveus,e,i,0.0009074
+4000,4066,CA1 Pyramidal,CA1 OR LM,e,i,0.001244
+4000,4069,CA1 Pyramidal,CA1 O LM,e,i,0.00135
+4000,4076,CA1 Pyramidal,CA1 Perforant Path Associated QuadD,e,i,0.0008763
+4000,4078,CA1 Pyramidal,CA1 Basket,e,i,0.001204
+4000,4079,CA1 Pyramidal,CA1 Basket CCK+,e,i,0.001058
+4000,4080,CA1 Pyramidal,CA1 Bistratified,e,i,0.001077
+4000,4081,CA1 Pyramidal,CA1 Ivy,e,i,0.0009333
+4000,4083,CA1 Pyramidal,CA1 Oriens Bistratified,e,i,0.0008324
+4000,4087,CA1 Pyramidal,CA1 O LMR,e,i,0.001082
+4000,4089,CA1 Pyramidal,CA1 Recurrent O LM,e,i,0.003321
+4000,5005,CA1 Pyramidal,SUB CA1 Projecting Pyramidal,e,e,0.004015329
+4000,6002,CA1 Pyramidal,MEC LV Pyramidal,e,e,0.003002537
+4000,6021,CA1 Pyramidal,EC LV Deep Pyramidal,e,e,0.005719753
+4000,6023,CA1 Pyramidal,MEC LV Superficial Pyramidal,e,e,0.001062148
+4000,6025,CA1 Pyramidal,LEC LIII Multipolar Principal,e,e,0.001157523
+4000,6033,CA1 Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.003106003
+4000,6052,CA1 Pyramidal,MEC LV VI Pyramidal Polymorphic,e,e,0.00402152
+4000,6078,CA1 Pyramidal,LEC LVI Multipolar Pyramidal,e,e,0.004750295
+4000,6086,CA1 Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.004889829
+4000,6095,CA1 Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.004909081
+4003,3007,CA1 Quadrilaminar,CA2 Wide Arbor Basket,i,i,0.0001865
+4003,4000,CA1 Quadrilaminar,CA1 Pyramidal,i,e,0.005071
+4003,4003,CA1 Quadrilaminar,CA1 Quadrilaminar,i,i,0.006394
+4003,4005,CA1 Quadrilaminar,CA1 LMR,i,i,0.002691
+4003,4006,CA1 Quadrilaminar,CA1 Perforant Path Associated,i,i,0.003655
+4003,4011,CA1 Quadrilaminar,CA1 Neurogliaform Projecting,i,i,0.0008217
+4003,4012,CA1 Quadrilaminar,CA1 Neurogliaform,i,i,0.001065
+4003,4013,CA1 Quadrilaminar,CA1 Radial Trilaminar,i,i,0.005184
+4003,4015,CA1 Quadrilaminar,CA1 Schaffer Collateral Associated,i,i,0.003912
+4003,4023,CA1 Quadrilaminar,CA1 Back Projection,i,i,0.001447
+4003,4028,CA1 Quadrilaminar,CA1 Radiatum,i,i,0.002498
+4003,4033,CA1 Quadrilaminar,CA1 SO SO,i,i,0.001817
+4003,4035,CA1 Quadrilaminar,CA1 Trilaminar,i,i,0.001616
+4003,4036,CA1 Quadrilaminar,CA1 Axo Axonic,i,i,0.004939
+4003,4038,CA1 Quadrilaminar,CA1 Horizontal Axo Axonic,i,i,0.000448
+4003,4039,CA1 Quadrilaminar,CA1 Horizontal Basket,i,i,0.002121
+4003,4055,CA1 Quadrilaminar,CA1 Oriens Alveus,i,i,0.00458
+4003,4061,CA1 Quadrilaminar,CA1 R Receiving Apical Targeting,i,i,0.002902
+4003,4066,CA1 Quadrilaminar,CA1 OR LM,i,i,0.004857
+4003,4069,CA1 Quadrilaminar,CA1 O LM,i,i,0.0009012
+4003,4076,CA1 Quadrilaminar,CA1 Perforant Path Associated QuadD,i,i,0.008521
+4003,4078,CA1 Quadrilaminar,CA1 Basket,i,i,0.004879
+4003,4079,CA1 Quadrilaminar,CA1 Basket CCK+,i,i,0.005518
+4003,4080,CA1 Quadrilaminar,CA1 Bistratified,i,i,0.004281
+4003,4081,CA1 Quadrilaminar,CA1 Ivy,i,i,0.003458
+4003,4083,CA1 Quadrilaminar,CA1 Oriens Bistratified,i,i,0.0005087
+4003,4087,CA1 Quadrilaminar,CA1 O LMR,i,i,0.0006705
+4003,4089,CA1 Quadrilaminar,CA1 Recurrent O LM,i,i,0.002525
+4005,4000,CA1 LMR,CA1 Pyramidal,i,e,0.0041
+4005,4003,CA1 LMR,CA1 Quadrilaminar,i,i,0.005008
+4005,4005,CA1 LMR,CA1 LMR,i,i,0.003321
+4005,4006,CA1 LMR,CA1 Perforant Path Associated,i,i,0.004277
+4005,4011,CA1 LMR,CA1 Neurogliaform Projecting,i,i,0.001089
+4005,4012,CA1 LMR,CA1 Neurogliaform,i,i,0.001337
+4005,4013,CA1 LMR,CA1 Radial Trilaminar,i,i,0.003952
+4005,4015,CA1 LMR,CA1 Schaffer Collateral Associated,i,i,0.00455
+4005,4028,CA1 LMR,CA1 Radiatum,i,i,0.002979
+4005,4036,CA1 LMR,CA1 Axo Axonic,i,i,0.003987
+4005,4054,CA1 LMR,CA1 Radiatum Giant,i,e,0.004596
+4005,4055,CA1 LMR,CA1 Oriens Alveus,i,i,0.003683
+4005,4061,CA1 LMR,CA1 R Receiving Apical Targeting,i,i,0.00325
+4005,4066,CA1 LMR,CA1 OR LM,i,i,0.004052
+4005,4076,CA1 LMR,CA1 Perforant Path Associated QuadD,i,i,0.007442
+4005,4078,CA1 LMR,CA1 Basket,i,i,0.003702
+4005,4079,CA1 LMR,CA1 Basket CCK+,i,i,0.004117
+4005,4080,CA1 LMR,CA1 Bistratified,i,i,0.002671
+4005,4081,CA1 LMR,CA1 Ivy,i,i,0.001822
+4006,1000,CA1 Perforant Path Associated,DG Granule,i,e,0.003122756
+4006,1001,CA1 Perforant Path Associated,DG Semilunar Granule,i,e,0.003651856
+4006,1004,CA1 Perforant Path Associated,DG Total Molecular Layer,i,i,0.001276334
+4006,1005,CA1 Perforant Path Associated,DG MOLAX,i,i,0.001907043
+4006,1007,CA1 Perforant Path Associated,DG Neurogliaform,i,i,0.001893816
+4006,1008,CA1 Perforant Path Associated,DG MOPP,i,i,0.002866188
+4006,1009,CA1 Perforant Path Associated,DG HICAP,i,i,0.002169758
+4006,1010,CA1 Perforant Path Associated,DG Axo Axonic,i,i,0.004406499
+4006,1027,CA1 Perforant Path Associated,DG AIPRIM,i,i,0.001886205
+4006,1035,CA1 Perforant Path Associated,DG Basket,i,i,0.003348456
+4006,1041,CA1 Perforant Path Associated,DG Hilar Ectopic Granule,i,e,0.003247965
+4006,4000,CA1 Perforant Path Associated,CA1 Pyramidal,i,e,0.005514
+4006,4003,CA1 Perforant Path Associated,CA1 Quadrilaminar,i,i,0.005286
+4006,4005,CA1 Perforant Path Associated,CA1 LMR,i,i,0.004547
+4006,4006,CA1 Perforant Path Associated,CA1 Perforant Path Associated,i,i,0.005401
+4006,4011,CA1 Perforant Path Associated,CA1 Neurogliaform Projecting,i,i,0.005247
+4006,4012,CA1 Perforant Path Associated,CA1 Neurogliaform,i,i,0.006543
+4006,4013,CA1 Perforant Path Associated,CA1 Radial Trilaminar,i,i,0.003739
+4006,4015,CA1 Perforant Path Associated,CA1 Schaffer Collateral Associated,i,i,0.003997
+4006,4036,CA1 Perforant Path Associated,CA1 Axo Axonic,i,i,0.006097
+4006,4054,CA1 Perforant Path Associated,CA1 Radiatum Giant,i,e,0.005257
+4006,4055,CA1 Perforant Path Associated,CA1 Oriens Alveus,i,i,0.005026
+4006,4076,CA1 Perforant Path Associated,CA1 Perforant Path Associated QuadD,i,i,0.00579
+4006,4078,CA1 Perforant Path Associated,CA1 Basket,i,i,0.004642
+4006,4079,CA1 Perforant Path Associated,CA1 Basket CCK+,i,i,0.005797
+4006,5005,CA1 Perforant Path Associated,SUB CA1 Projecting Pyramidal,i,e,1.0
+4011,1000,CA1 Neurogliaform Projecting,DG Granule,i,e,0.001398
+4011,1001,CA1 Neurogliaform Projecting,DG Semilunar Granule,i,e,0.001621
+4011,1004,CA1 Neurogliaform Projecting,DG Total Molecular Layer,i,i,0.0007823
+4011,1005,CA1 Neurogliaform Projecting,DG MOLAX,i,i,0.001491
+4011,1007,CA1 Neurogliaform Projecting,DG Neurogliaform,i,i,0.0006739
+4011,1008,CA1 Neurogliaform Projecting,DG MOPP,i,i,0.000782
+4011,1009,CA1 Neurogliaform Projecting,DG HICAP,i,i,0.001007
+4011,1010,CA1 Neurogliaform Projecting,DG Axo Axonic,i,i,0.001801
+4011,1027,CA1 Neurogliaform Projecting,DG AIPRIM,i,i,0.0009567
+4011,1035,CA1 Neurogliaform Projecting,DG Basket,i,i,0.001055
+4011,1041,CA1 Neurogliaform Projecting,DG Hilar Ectopic Granule,i,e,0.001703
+4011,4000,CA1 Neurogliaform Projecting,CA1 Pyramidal,i,e,0.00144
+4011,4003,CA1 Neurogliaform Projecting,CA1 Quadrilaminar,i,i,0.001615
+4011,4005,CA1 Neurogliaform Projecting,CA1 LMR,i,i,0.001156
+4011,4006,CA1 Neurogliaform Projecting,CA1 Perforant Path Associated,i,i,0.001592
+4011,4011,CA1 Neurogliaform Projecting,CA1 Neurogliaform Projecting,i,i,0.001353
+4011,4012,CA1 Neurogliaform Projecting,CA1 Neurogliaform,i,i,0.001549
+4011,4013,CA1 Neurogliaform Projecting,CA1 Radial Trilaminar,i,i,0.001183
+4011,4015,CA1 Neurogliaform Projecting,CA1 Schaffer Collateral Associated,i,i,0.001113
+4011,4036,CA1 Neurogliaform Projecting,CA1 Axo Axonic,i,i,0.001593
+4011,4054,CA1 Neurogliaform Projecting,CA1 Radiatum Giant,i,e,0.001508
+4011,4055,CA1 Neurogliaform Projecting,CA1 Oriens Alveus,i,i,0.001285
+4011,4076,CA1 Neurogliaform Projecting,CA1 Perforant Path Associated QuadD,i,i,0.001982
+4011,4078,CA1 Neurogliaform Projecting,CA1 Basket,i,i,0.001123
+4011,4079,CA1 Neurogliaform Projecting,CA1 Basket CCK+,i,i,0.001511
+4012,4000,CA1 Neurogliaform,CA1 Pyramidal,i,e,0.001707
+4012,4003,CA1 Neurogliaform,CA1 Quadrilaminar,i,i,0.001965
+4012,4005,CA1 Neurogliaform,CA1 LMR,i,i,0.001433
+4012,4006,CA1 Neurogliaform,CA1 Perforant Path Associated,i,i,0.001917
+4012,4011,CA1 Neurogliaform,CA1 Neurogliaform Projecting,i,i,0.001623
+4012,4012,CA1 Neurogliaform,CA1 Neurogliaform,i,i,0.001751
+4012,4013,CA1 Neurogliaform,CA1 Radial Trilaminar,i,i,0.001578
+4012,4015,CA1 Neurogliaform,CA1 Schaffer Collateral Associated,i,i,0.001432
+4012,4036,CA1 Neurogliaform,CA1 Axo Axonic,i,i,0.001839
+4012,4054,CA1 Neurogliaform,CA1 Radiatum Giant,i,e,0.001823
+4012,4055,CA1 Neurogliaform,CA1 Oriens Alveus,i,i,0.001556
+4012,4076,CA1 Neurogliaform,CA1 Perforant Path Associated QuadD,i,i,0.0024
+4012,4078,CA1 Neurogliaform,CA1 Basket,i,i,0.001382
+4012,4079,CA1 Neurogliaform,CA1 Basket CCK+,i,i,0.001768
+4013,3007,CA1 Radial Trilaminar,CA2 Wide Arbor Basket,i,i,0.0005345
+4013,4000,CA1 Radial Trilaminar,CA1 Pyramidal,i,e,0.005497
+4013,4003,CA1 Radial Trilaminar,CA1 Quadrilaminar,i,i,0.00577
+4013,4005,CA1 Radial Trilaminar,CA1 LMR,i,i,0.0009282
+4013,4006,CA1 Radial Trilaminar,CA1 Perforant Path Associated,i,i,0.001539
+4013,4013,CA1 Radial Trilaminar,CA1 Radial Trilaminar,i,i,0.004653
+4013,4015,CA1 Radial Trilaminar,CA1 Schaffer Collateral Associated,i,i,0.001929
+4013,4023,CA1 Radial Trilaminar,CA1 Back Projection,i,i,0.003264
+4013,4028,CA1 Radial Trilaminar,CA1 Radiatum,i,i,0.00167
+4013,4033,CA1 Radial Trilaminar,CA1 SO SO,i,i,0.003265
+4013,4035,CA1 Radial Trilaminar,CA1 Trilaminar,i,i,0.003079
+4013,4036,CA1 Radial Trilaminar,CA1 Axo Axonic,i,i,0.005114
+4013,4038,CA1 Radial Trilaminar,CA1 Horizontal Axo Axonic,i,i,0.001171
+4013,4039,CA1 Radial Trilaminar,CA1 Horizontal Basket,i,i,0.003904
+4013,4054,CA1 Radial Trilaminar,CA1 Radiatum Giant,i,e,0.001898
+4013,4055,CA1 Radial Trilaminar,CA1 Oriens Alveus,i,i,0.004676
+4013,4061,CA1 Radial Trilaminar,CA1 R Receiving Apical Targeting,i,i,0.002263
+4013,4066,CA1 Radial Trilaminar,CA1 OR LM,i,i,0.005606
+4013,4069,CA1 Radial Trilaminar,CA1 O LM,i,i,0.002216
+4013,4076,CA1 Radial Trilaminar,CA1 Perforant Path Associated QuadD,i,i,0.007584
+4013,4078,CA1 Radial Trilaminar,CA1 Basket,i,i,0.005443
+4013,4079,CA1 Radial Trilaminar,CA1 Basket CCK+,i,i,0.005598
+4013,4080,CA1 Radial Trilaminar,CA1 Bistratified,i,i,0.005451
+4013,4081,CA1 Radial Trilaminar,CA1 Ivy,i,i,0.004935
+4013,4083,CA1 Radial Trilaminar,CA1 Oriens Bistratified,i,i,0.001239
+4013,4087,CA1 Radial Trilaminar,CA1 O LMR,i,i,0.001858
+4013,4089,CA1 Radial Trilaminar,CA1 Recurrent O LM,i,i,0.004208
+4015,3007,CA1 Schaffer Collateral Associated,CA2 Wide Arbor Basket,i,i,0.001093
+4015,4000,CA1 Schaffer Collateral Associated,CA1 Pyramidal,i,e,0.005932
+4015,4003,CA1 Schaffer Collateral Associated,CA1 Quadrilaminar,i,i,0.006542
+4015,4005,CA1 Schaffer Collateral Associated,CA1 LMR,i,i,0.001634
+4015,4006,CA1 Schaffer Collateral Associated,CA1 Perforant Path Associated,i,i,0.002255
+4015,4013,CA1 Schaffer Collateral Associated,CA1 Radial Trilaminar,i,i,0.005543
+4015,4015,CA1 Schaffer Collateral Associated,CA1 Schaffer Collateral Associated,i,i,0.002864
+4015,4023,CA1 Schaffer Collateral Associated,CA1 Back Projection,i,i,0.00292
+4015,4028,CA1 Schaffer Collateral Associated,CA1 Radiatum,i,i,0.002547
+4015,4033,CA1 Schaffer Collateral Associated,CA1 SO SO,i,i,0.001994
+4015,4035,CA1 Schaffer Collateral Associated,CA1 Trilaminar,i,i,0.001841
+4015,4036,CA1 Schaffer Collateral Associated,CA1 Axo Axonic,i,i,0.005837
+4015,4038,CA1 Schaffer Collateral Associated,CA1 Horizontal Axo Axonic,i,i,0.0005544
+4015,4039,CA1 Schaffer Collateral Associated,CA1 Horizontal Basket,i,i,0.002243
+4015,4054,CA1 Schaffer Collateral Associated,CA1 Radiatum Giant,i,e,0.002658
+4015,4055,CA1 Schaffer Collateral Associated,CA1 Oriens Alveus,i,i,0.005286
+4015,4061,CA1 Schaffer Collateral Associated,CA1 R Receiving Apical Targeting,i,i,0.002906
+4015,4066,CA1 Schaffer Collateral Associated,CA1 OR LM,i,i,0.005093
+4015,4069,CA1 Schaffer Collateral Associated,CA1 O LM,i,i,0.001133
+4015,4076,CA1 Schaffer Collateral Associated,CA1 Perforant Path Associated QuadD,i,i,0.008426
+4015,4078,CA1 Schaffer Collateral Associated,CA1 Basket,i,i,0.005953
+4015,4079,CA1 Schaffer Collateral Associated,CA1 Basket CCK+,i,i,0.006306
+4015,4080,CA1 Schaffer Collateral Associated,CA1 Bistratified,i,i,0.006199
+4015,4081,CA1 Schaffer Collateral Associated,CA1 Ivy,i,i,0.005588
+4015,4083,CA1 Schaffer Collateral Associated,CA1 Oriens Bistratified,i,i,0.0006059
+4015,4087,CA1 Schaffer Collateral Associated,CA1 O LMR,i,i,0.0008841
+4015,4089,CA1 Schaffer Collateral Associated,CA1 Recurrent O LM,i,i,0.002734
+4023,1002,CA1 Back Projection,DG Mossy,i,e,0.0102
+4023,1004,CA1 Back Projection,DG Total Molecular Layer,i,i,0.006068
+4023,1005,CA1 Back Projection,DG MOLAX,i,i,0.006852
+4023,1009,CA1 Back Projection,DG HICAP,i,i,0.005198
+4023,1010,CA1 Back Projection,DG Axo Axonic,i,i,0.005572
+4023,1013,CA1 Back Projection,DG HIPP,i,i,0.007874
+4023,1026,CA1 Back Projection,DG HIPROM,i,i,0.006961
+4023,1027,CA1 Back Projection,DG AIPRIM,i,i,0.007113
+4023,1035,CA1 Back Projection,DG Basket,i,i,0.005156
+4023,1041,CA1 Back Projection,DG Hilar Ectopic Granule,i,e,0.008282
+4023,2000,CA1 Back Projection,CA3 Pyramidal,i,e,0.0281
+4023,2001,CA1 Back Projection,CA3 Granule,i,e,0.007036
+4023,2004,CA1 Back Projection,CA3c Pyramidal,i,e,0.01935
+4023,2005,CA1 Back Projection,CA3 LMR Targeting,i,i,0.01532
+4023,2009,CA1 Back Projection,CA3 O LM,i,i,0.01038
+4023,2013,CA1 Back Projection,CA3 Lucidum ORAX,i,i,0.008566
+4023,2019,CA1 Back Projection,CA3 Spiny Lucidum,i,i,0.00355
+4023,2020,CA1 Back Projection,CA3 Trilaminar,i,i,0.0117
+4023,2028,CA1 Back Projection,CA3 Axo Axonic,i,i,0.0252
+4023,2035,CA1 Back Projection,CA3 Mossy Fiber Associated ORDEN,i,i,0.01594
+4023,2036,CA1 Back Projection,CA3 Mossy Fiber Associated,i,i,0.006961
+4023,2043,CA1 Back Projection,CA3 Basket,i,i,0.02481
+4023,2044,CA1 Back Projection,CA3 Basket CCK+,i,i,0.01325
+4023,2047,CA1 Back Projection,CA3 Horizontal Axo Axonic,i,i,0.007099
+4023,3007,CA1 Back Projection,CA2 Wide Arbor Basket,i,i,0.002198
+4023,4000,CA1 Back Projection,CA1 Pyramidal,i,e,0.01233
+4023,4003,CA1 Back Projection,CA1 Quadrilaminar,i,i,0.01331
+4023,4005,CA1 Back Projection,CA1 LMR,i,i,0.003993
+4023,4006,CA1 Back Projection,CA1 Perforant Path Associated,i,i,0.005149
+4023,4011,CA1 Back Projection,CA1 Neurogliaform Projecting,i,i,0.002156
+4023,4012,CA1 Back Projection,CA1 Neurogliaform,i,i,0.002993
+4023,4013,CA1 Back Projection,CA1 Radial Trilaminar,i,i,0.0115
+4023,4015,CA1 Back Projection,CA1 Schaffer Collateral Associated,i,i,0.004986
+4023,4023,CA1 Back Projection,CA1 Back Projection,i,i,0.006071
+4023,4028,CA1 Back Projection,CA1 Radiatum,i,i,0.002175
+4023,4033,CA1 Back Projection,CA1 SO SO,i,i,0.004362
+4023,4035,CA1 Back Projection,CA1 Trilaminar,i,i,0.003869
+4023,4036,CA1 Back Projection,CA1 Axo Axonic,i,i,0.01241
+4023,4038,CA1 Back Projection,CA1 Horizontal Axo Axonic,i,i,0.001947
+4023,4039,CA1 Back Projection,CA1 Horizontal Basket,i,i,0.006586
+4023,4054,CA1 Back Projection,CA1 Radiatum Giant,i,e,0.00545
+4023,4055,CA1 Back Projection,CA1 Oriens Alveus,i,i,0.01152
+4023,4061,CA1 Back Projection,CA1 R Receiving Apical Targeting,i,i,0.002684
+4023,4066,CA1 Back Projection,CA1 OR LM,i,i,0.006661
+4023,4069,CA1 Back Projection,CA1 O LM,i,i,0.002871
+4023,4076,CA1 Back Projection,CA1 Perforant Path Associated QuadD,i,i,0.01548
+4023,4078,CA1 Back Projection,CA1 Basket,i,i,0.01202
+4023,4079,CA1 Back Projection,CA1 Basket CCK+,i,i,0.01294
+4023,4080,CA1 Back Projection,CA1 Bistratified,i,i,0.009164
+4023,4081,CA1 Back Projection,CA1 Ivy,i,i,0.008556
+4023,4083,CA1 Back Projection,CA1 Oriens Bistratified,i,i,0.002063
+4023,4087,CA1 Back Projection,CA1 O LMR,i,i,0.002525
+4023,4089,CA1 Back Projection,CA1 Recurrent O LM,i,i,0.005353
+4028,4000,CA1 Radiatum,CA1 Pyramidal,i,e,0.003481
+4028,4003,CA1 Radiatum,CA1 Quadrilaminar,i,i,0.003852
+4028,4005,CA1 Radiatum,CA1 LMR,i,i,0.002642
+4028,4006,CA1 Radiatum,CA1 Perforant Path Associated,i,i,0.003378
+4028,4013,CA1 Radiatum,CA1 Radial Trilaminar,i,i,0.002896
+4028,4015,CA1 Radiatum,CA1 Schaffer Collateral Associated,i,i,0.004054
+4028,4028,CA1 Radiatum,CA1 Radiatum,i,i,0.003704
+4028,4036,CA1 Radiatum,CA1 Axo Axonic,i,i,0.003115
+4028,4054,CA1 Radiatum,CA1 Radiatum Giant,i,e,0.003818
+4028,4055,CA1 Radiatum,CA1 Oriens Alveus,i,i,0.003047
+4028,4061,CA1 Radiatum,CA1 R Receiving Apical Targeting,i,i,0.004074
+4028,4066,CA1 Radiatum,CA1 OR LM,i,i,0.004871
+4028,4076,CA1 Radiatum,CA1 Perforant Path Associated QuadD,i,i,0.006165
+4028,4078,CA1 Radiatum,CA1 Basket,i,i,0.0034
+4028,4079,CA1 Radiatum,CA1 Basket CCK+,i,i,0.003265
+4028,4080,CA1 Radiatum,CA1 Bistratified,i,i,0.003318
+4028,4081,CA1 Radiatum,CA1 Ivy,i,i,0.002332
+4033,4000,CA1 SO SO,CA1 Pyramidal,i,e,0.003999
+4033,4003,CA1 SO SO,CA1 Quadrilaminar,i,i,0.00347
+4033,4013,CA1 SO SO,CA1 Radial Trilaminar,i,i,0.002987
+4033,4023,CA1 SO SO,CA1 Back Projection,i,i,0.003819
+4033,4033,CA1 SO SO,CA1 SO SO,i,i,0.005652
+4033,4035,CA1 SO SO,CA1 Trilaminar,i,i,0.005171
+4033,4036,CA1 SO SO,CA1 Axo Axonic,i,i,0.003664
+4033,4038,CA1 SO SO,CA1 Horizontal Axo Axonic,i,i,0.002853
+4033,4039,CA1 SO SO,CA1 Horizontal Basket,i,i,0.008122
+4033,4055,CA1 SO SO,CA1 Oriens Alveus,i,i,0.003158
+4033,4066,CA1 SO SO,CA1 OR LM,i,i,0.003863
+4033,4069,CA1 SO SO,CA1 O LM,i,i,0.004115
+4033,4076,CA1 SO SO,CA1 Perforant Path Associated QuadD,i,i,0.003049
+4033,4078,CA1 SO SO,CA1 Basket,i,i,0.003763
+4033,4079,CA1 SO SO,CA1 Basket CCK+,i,i,0.00351
+4033,4080,CA1 SO SO,CA1 Bistratified,i,i,0.00347
+4033,4081,CA1 SO SO,CA1 Ivy,i,i,0.003351
+4033,4083,CA1 SO SO,CA1 Oriens Bistratified,i,i,0.002982
+4033,4087,CA1 SO SO,CA1 O LMR,i,i,0.003705
+4033,4089,CA1 SO SO,CA1 Recurrent O LM,i,i,0.00671
+4035,3007,CA1 Trilaminar,CA2 Wide Arbor Basket,i,i,0.003931
+4035,4000,CA1 Trilaminar,CA1 Pyramidal,i,e,0.01302
+4035,4003,CA1 Trilaminar,CA1 Quadrilaminar,i,i,0.01382
+4035,4005,CA1 Trilaminar,CA1 LMR,i,i,0.002234
+4035,4006,CA1 Trilaminar,CA1 Perforant Path Associated,i,i,0.002836
+4035,4013,CA1 Trilaminar,CA1 Radial Trilaminar,i,i,0.0126
+4035,4015,CA1 Trilaminar,CA1 Schaffer Collateral Associated,i,i,0.003527
+4035,4023,CA1 Trilaminar,CA1 Back Projection,i,i,0.008731
+4035,4028,CA1 Trilaminar,CA1 Radiatum,i,i,0.003193
+4035,4033,CA1 Trilaminar,CA1 SO SO,i,i,0.004818
+4035,4035,CA1 Trilaminar,CA1 Trilaminar,i,i,0.004053
+4035,4036,CA1 Trilaminar,CA1 Axo Axonic,i,i,0.01342
+4035,4038,CA1 Trilaminar,CA1 Horizontal Axo Axonic,i,i,0.002475
+4035,4039,CA1 Trilaminar,CA1 Horizontal Basket,i,i,0.009152
+4035,4054,CA1 Trilaminar,CA1 Radiatum Giant,i,e,0.003249
+4035,4055,CA1 Trilaminar,CA1 Oriens Alveus,i,i,0.01229
+4035,4061,CA1 Trilaminar,CA1 R Receiving Apical Targeting,i,i,0.003451
+4035,4066,CA1 Trilaminar,CA1 OR LM,i,i,0.007476
+4035,4069,CA1 Trilaminar,CA1 O LM,i,i,0.002992
+4035,4076,CA1 Trilaminar,CA1 Perforant Path Associated QuadD,i,i,0.01568
+4035,4078,CA1 Trilaminar,CA1 Basket,i,i,0.01326
+4035,4079,CA1 Trilaminar,CA1 Basket CCK+,i,i,0.01397
+4035,4080,CA1 Trilaminar,CA1 Bistratified,i,i,0.0136
+4035,4081,CA1 Trilaminar,CA1 Ivy,i,i,0.01306
+4035,4083,CA1 Trilaminar,CA1 Oriens Bistratified,i,i,0.002647
+4035,4087,CA1 Trilaminar,CA1 O LMR,i,i,0.002693
+4035,4089,CA1 Trilaminar,CA1 Recurrent O LM,i,i,0.005776
+4035,5005,CA1 Trilaminar,SUB CA1 Projecting Pyramidal,i,e,0.01157
+4036,4000,CA1 Axo Axonic,CA1 Pyramidal,i,e,0.001941748
+4036,4054,CA1 Axo Axonic,CA1 Radiatum Giant,i,e,0.001941748
+4038,4000,CA1 Horizontal Axo Axonic,CA1 Pyramidal,i,e,0.001941748
+4038,4054,CA1 Horizontal Axo Axonic,CA1 Radiatum Giant,i,e,0.001941748
+4039,4000,CA1 Horizontal Basket,CA1 Pyramidal,i,e,0.036332409
+4039,4013,CA1 Horizontal Basket,CA1 Radial Trilaminar,i,i,0.036332409
+4039,4036,CA1 Horizontal Basket,CA1 Axo Axonic,i,i,0.036332409
+4039,4039,CA1 Horizontal Basket,CA1 Horizontal Basket,i,i,0.036332409
+4039,4054,CA1 Horizontal Basket,CA1 Radiatum Giant,i,e,0.036332409
+4039,4066,CA1 Horizontal Basket,CA1 OR LM,i,i,0.036332409
+4039,4078,CA1 Horizontal Basket,CA1 Basket,i,i,0.036332409
+4039,4079,CA1 Horizontal Basket,CA1 Basket CCK+,i,i,0.036332409
+4039,4080,CA1 Horizontal Basket,CA1 Bistratified,i,i,0.036332409
+4039,4081,CA1 Horizontal Basket,CA1 Ivy,i,i,0.036332409
+4054,4000,CA1 Radiatum Giant,CA1 Pyramidal,e,e,0.001043
+4054,4003,CA1 Radiatum Giant,CA1 Quadrilaminar,e,i,0.0005169
+4054,4013,CA1 Radiatum Giant,CA1 Radial Trilaminar,e,i,0.0003956
+4054,4023,CA1 Radiatum Giant,CA1 Back Projection,e,i,0.0007674
+4054,4033,CA1 Radiatum Giant,CA1 SO SO,e,i,0.00151
+4054,4035,CA1 Radiatum Giant,CA1 Trilaminar,e,i,0.001635
+4054,4036,CA1 Radiatum Giant,CA1 Axo Axonic,e,i,0.0007957
+4054,4038,CA1 Radiatum Giant,CA1 Horizontal Axo Axonic,e,i,0.0004043
+4054,4039,CA1 Radiatum Giant,CA1 Horizontal Basket,e,i,0.001289
+4054,4055,CA1 Radiatum Giant,CA1 Oriens Alveus,e,i,0.0004816
+4054,4066,CA1 Radiatum Giant,CA1 OR LM,e,i,0.0008253
+4054,4069,CA1 Radiatum Giant,CA1 O LM,e,i,0.001125
+4054,4076,CA1 Radiatum Giant,CA1 Perforant Path Associated QuadD,e,i,0.00043
+4054,4078,CA1 Radiatum Giant,CA1 Basket,e,i,0.0007347
+4054,4079,CA1 Radiatum Giant,CA1 Basket CCK+,e,i,0.0006379
+4054,4080,CA1 Radiatum Giant,CA1 Bistratified,e,i,0.0005575
+4054,4081,CA1 Radiatum Giant,CA1 Ivy,e,i,0.0006214
+4054,4083,CA1 Radiatum Giant,CA1 Oriens Bistratified,e,i,0.0004254
+4054,4087,CA1 Radiatum Giant,CA1 O LMR,e,i,0.0008629
+4054,4089,CA1 Radiatum Giant,CA1 Recurrent O LM,e,i,0.002127
+4055,3007,CA1 Oriens Alveus,CA2 Wide Arbor Basket,i,i,0.0006587
+4055,4000,CA1 Oriens Alveus,CA1 Pyramidal,i,e,0.002645
+4055,4003,CA1 Oriens Alveus,CA1 Quadrilaminar,i,i,0.003024
+4055,4013,CA1 Oriens Alveus,CA1 Radial Trilaminar,i,i,0.002704
+4055,4023,CA1 Oriens Alveus,CA1 Back Projection,i,i,0.003002
+4055,4033,CA1 Oriens Alveus,CA1 SO SO,i,i,0.003344
+4055,4035,CA1 Oriens Alveus,CA1 Trilaminar,i,i,0.002749
+4055,4036,CA1 Oriens Alveus,CA1 Axo Axonic,i,i,0.002658
+4055,4038,CA1 Oriens Alveus,CA1 Horizontal Axo Axonic,i,i,0.001229
+4055,4039,CA1 Oriens Alveus,CA1 Horizontal Basket,i,i,0.005873
+4055,4055,CA1 Oriens Alveus,CA1 Oriens Alveus,i,i,0.002504
+4055,4066,CA1 Oriens Alveus,CA1 OR LM,i,i,0.001748
+4055,4069,CA1 Oriens Alveus,CA1 O LM,i,i,0.001767
+4055,4076,CA1 Oriens Alveus,CA1 Perforant Path Associated QuadD,i,i,0.002654
+4055,4078,CA1 Oriens Alveus,CA1 Basket,i,i,0.002859
+4055,4079,CA1 Oriens Alveus,CA1 Basket CCK+,i,i,0.003107
+4055,4080,CA1 Oriens Alveus,CA1 Bistratified,i,i,0.003038
+4055,4081,CA1 Oriens Alveus,CA1 Ivy,i,i,0.003047
+4055,4083,CA1 Oriens Alveus,CA1 Oriens Bistratified,i,i,0.001358
+4055,4087,CA1 Oriens Alveus,CA1 O LMR,i,i,0.00148
+4055,4089,CA1 Oriens Alveus,CA1 Recurrent O LM,i,i,0.004268
+4061,4000,CA1 R Receiving Apical Targeting,CA1 Pyramidal,i,e,0.01114
+4061,4003,CA1 R Receiving Apical Targeting,CA1 Quadrilaminar,i,i,0.01135
+4061,4005,CA1 R Receiving Apical Targeting,CA1 LMR,i,i,0.009188
+4061,4006,CA1 R Receiving Apical Targeting,CA1 Perforant Path Associated,i,i,0.01096
+4061,4011,CA1 R Receiving Apical Targeting,CA1 Neurogliaform Projecting,i,i,0.003006
+4061,4012,CA1 R Receiving Apical Targeting,CA1 Neurogliaform,i,i,0.004009
+4061,4013,CA1 R Receiving Apical Targeting,CA1 Radial Trilaminar,i,i,0.00894
+4061,4015,CA1 R Receiving Apical Targeting,CA1 Schaffer Collateral Associated,i,i,0.01078
+4061,4028,CA1 R Receiving Apical Targeting,CA1 Radiatum,i,i,0.006699
+4061,4036,CA1 R Receiving Apical Targeting,CA1 Axo Axonic,i,i,0.01095
+4061,4054,CA1 R Receiving Apical Targeting,CA1 Radiatum Giant,i,e,0.01138
+4061,4055,CA1 R Receiving Apical Targeting,CA1 Oriens Alveus,i,i,0.01017
+4061,4061,CA1 R Receiving Apical Targeting,CA1 R Receiving Apical Targeting,i,i,0.007629
+4061,4066,CA1 R Receiving Apical Targeting,CA1 OR LM,i,i,0.008413
+4061,4076,CA1 R Receiving Apical Targeting,CA1 Perforant Path Associated QuadD,i,i,0.01443
+4061,4078,CA1 R Receiving Apical Targeting,CA1 Basket,i,i,0.01049
+4061,4079,CA1 R Receiving Apical Targeting,CA1 Basket CCK+,i,i,0.0109
+4061,4080,CA1 R Receiving Apical Targeting,CA1 Bistratified,i,i,0.005892
+4061,4081,CA1 R Receiving Apical Targeting,CA1 Ivy,i,i,0.004177
+4066,4000,CA1 OR LM,CA1 Pyramidal,i,e,0.001152
+4066,4003,CA1 OR LM,CA1 Quadrilaminar,i,i,0.001355
+4066,4005,CA1 OR LM,CA1 LMR,i,i,0.0008978
+4066,4006,CA1 OR LM,CA1 Perforant Path Associated,i,i,0.001323
+4066,4011,CA1 OR LM,CA1 Neurogliaform Projecting,i,i,0.001073
+4066,4012,CA1 OR LM,CA1 Neurogliaform,i,i,0.001216
+4066,4013,CA1 OR LM,CA1 Radial Trilaminar,i,i,0.0009856
+4066,4015,CA1 OR LM,CA1 Schaffer Collateral Associated,i,i,0.0008872
+4066,4036,CA1 OR LM,CA1 Axo Axonic,i,i,0.001285
+4066,4054,CA1 OR LM,CA1 Radiatum Giant,i,e,0.001241
+4066,4055,CA1 OR LM,CA1 Oriens Alveus,i,i,0.001011
+4066,4076,CA1 OR LM,CA1 Perforant Path Associated QuadD,i,i,0.001719
+4066,4078,CA1 OR LM,CA1 Basket,i,i,0.0008557
+4066,4079,CA1 OR LM,CA1 Basket CCK+,i,i,0.001213
+4069,4000,CA1 O LM,CA1 Pyramidal,i,e,0.001917
+4069,4003,CA1 O LM,CA1 Quadrilaminar,i,i,0.002141
+4069,4005,CA1 O LM,CA1 LMR,i,i,0.001618
+4069,4006,CA1 O LM,CA1 Perforant Path Associated,i,i,0.002104
+4069,4011,CA1 O LM,CA1 Neurogliaform Projecting,i,i,0.001826
+4069,4012,CA1 O LM,CA1 Neurogliaform,i,i,0.002001
+4069,4013,CA1 O LM,CA1 Radial Trilaminar,i,i,0.001695
+4069,4015,CA1 O LM,CA1 Schaffer Collateral Associated,i,i,0.001586
+4069,4036,CA1 O LM,CA1 Axo Axonic,i,i,0.002066
+4069,4054,CA1 O LM,CA1 Radiatum Giant,i,e,0.002011
+4069,4055,CA1 O LM,CA1 Oriens Alveus,i,i,0.001755
+4069,4076,CA1 O LM,CA1 Perforant Path Associated QuadD,i,i,0.002565
+4069,4078,CA1 O LM,CA1 Basket,i,i,0.001577
+4069,4079,CA1 O LM,CA1 Basket CCK+,i,i,0.001986
+4076,4003,CA1 Perforant Path Associated QuadD,CA1 Quadrilaminar,i,i,0.006386
+4076,4005,CA1 Perforant Path Associated QuadD,CA1 LMR,i,i,0.005584
+4076,4006,CA1 Perforant Path Associated QuadD,CA1 Perforant Path Associated,i,i,0.006499
+4076,4011,CA1 Perforant Path Associated QuadD,CA1 Neurogliaform Projecting,i,i,0.006321
+4076,4012,CA1 Perforant Path Associated QuadD,CA1 Neurogliaform,i,i,0.0076
+4076,4013,CA1 Perforant Path Associated QuadD,CA1 Radial Trilaminar,i,i,0.004716
+4076,4015,CA1 Perforant Path Associated QuadD,CA1 Schaffer Collateral Associated,i,i,0.004992
+4076,4036,CA1 Perforant Path Associated QuadD,CA1 Axo Axonic,i,i,0.007181
+4076,4055,CA1 Perforant Path Associated QuadD,CA1 Oriens Alveus,i,i,0.006091
+4076,4076,CA1 Perforant Path Associated QuadD,CA1 Perforant Path Associated QuadD,i,i,0.006929
+4076,4078,CA1 Perforant Path Associated QuadD,CA1 Basket,i,i,0.005682
+4076,4079,CA1 Perforant Path Associated QuadD,CA1 Basket CCK+,i,i,0.006882
+4078,4000,CA1 Basket,CA1 Pyramidal,i,e,0.036008012
+4078,4013,CA1 Basket,CA1 Radial Trilaminar,i,i,0.036008012
+4078,4036,CA1 Basket,CA1 Axo Axonic,i,i,0.036008012
+4078,4039,CA1 Basket,CA1 Horizontal Basket,i,i,0.036008012
+4078,4054,CA1 Basket,CA1 Radiatum Giant,i,e,0.036008012
+4078,4066,CA1 Basket,CA1 OR LM,i,i,0.036008012
+4078,4078,CA1 Basket,CA1 Basket,i,i,0.036008012
+4078,4079,CA1 Basket,CA1 Basket CCK+,i,i,0.036008012
+4078,4080,CA1 Basket,CA1 Bistratified,i,i,0.036008012
+4078,4081,CA1 Basket,CA1 Ivy,i,i,0.036008012
+4079,4000,CA1 Basket CCK+,CA1 Pyramidal,i,e,0.091359384
+4079,4013,CA1 Basket CCK+,CA1 Radial Trilaminar,i,i,0.091359384
+4079,4036,CA1 Basket CCK+,CA1 Axo Axonic,i,i,0.091359384
+4079,4039,CA1 Basket CCK+,CA1 Horizontal Basket,i,i,0.091359384
+4079,4054,CA1 Basket CCK+,CA1 Radiatum Giant,i,e,0.091359384
+4079,4066,CA1 Basket CCK+,CA1 OR LM,i,i,0.091359384
+4079,4078,CA1 Basket CCK+,CA1 Basket,i,i,0.091359384
+4079,4079,CA1 Basket CCK+,CA1 Basket CCK+,i,i,0.091359384
+4079,4080,CA1 Basket CCK+,CA1 Bistratified,i,i,0.091359384
+4079,4081,CA1 Basket CCK+,CA1 Ivy,i,i,0.091359384
+4080,3007,CA1 Bistratified,CA2 Wide Arbor Basket,i,i,0.0005472
+4080,4000,CA1 Bistratified,CA1 Pyramidal,i,e,0.007082
+4080,4003,CA1 Bistratified,CA1 Quadrilaminar,i,i,0.007758
+4080,4005,CA1 Bistratified,CA1 LMR,i,i,0.002101
+4080,4006,CA1 Bistratified,CA1 Perforant Path Associated,i,i,0.002913
+4080,4013,CA1 Bistratified,CA1 Radial Trilaminar,i,i,0.006539
+4080,4015,CA1 Bistratified,CA1 Schaffer Collateral Associated,i,i,0.003509
+4080,4023,CA1 Bistratified,CA1 Back Projection,i,i,0.003388
+4080,4028,CA1 Bistratified,CA1 Radiatum,i,i,0.003164
+4080,4033,CA1 Bistratified,CA1 SO SO,i,i,0.003731
+4080,4035,CA1 Bistratified,CA1 Trilaminar,i,i,0.003295
+4080,4036,CA1 Bistratified,CA1 Axo Axonic,i,i,0.006844
+4080,4038,CA1 Bistratified,CA1 Horizontal Axo Axonic,i,i,0.0015
+4080,4039,CA1 Bistratified,CA1 Horizontal Basket,i,i,0.005463
+4080,4054,CA1 Bistratified,CA1 Radiatum Giant,i,e,0.003361
+4080,4055,CA1 Bistratified,CA1 Oriens Alveus,i,i,0.006402
+4080,4061,CA1 Bistratified,CA1 R Receiving Apical Targeting,i,i,0.003693
+4080,4066,CA1 Bistratified,CA1 OR LM,i,i,0.007171
+4080,4069,CA1 Bistratified,CA1 O LM,i,i,0.002343
+4080,4076,CA1 Bistratified,CA1 Perforant Path Associated QuadD,i,i,0.009592
+4080,4078,CA1 Bistratified,CA1 Basket,i,i,0.007131
+4080,4079,CA1 Bistratified,CA1 Basket CCK+,i,i,0.007264
+4080,4080,CA1 Bistratified,CA1 Bistratified,i,i,0.007258
+4080,4081,CA1 Bistratified,CA1 Ivy,i,i,0.006296
+4080,4083,CA1 Bistratified,CA1 Oriens Bistratified,i,i,0.001601
+4080,4087,CA1 Bistratified,CA1 O LMR,i,i,0.002015
+4080,4089,CA1 Bistratified,CA1 Recurrent O LM,i,i,0.004689
+4081,3007,CA1 Ivy,CA2 Wide Arbor Basket,i,i,0.001245
+4081,4000,CA1 Ivy,CA1 Pyramidal,i,e,0.00588
+4081,4003,CA1 Ivy,CA1 Quadrilaminar,i,i,0.006721
+4081,4005,CA1 Ivy,CA1 LMR,i,i,0.0006172
+4081,4006,CA1 Ivy,CA1 Perforant Path Associated,i,i,0.001055
+4081,4013,CA1 Ivy,CA1 Radial Trilaminar,i,i,0.005734
+4081,4015,CA1 Ivy,CA1 Schaffer Collateral Associated,i,i,0.001432
+4081,4023,CA1 Ivy,CA1 Back Projection,i,i,0.004497
+4081,4028,CA1 Ivy,CA1 Radiatum,i,i,0.001211
+4081,4033,CA1 Ivy,CA1 SO SO,i,i,0.004179
+4081,4035,CA1 Ivy,CA1 Trilaminar,i,i,0.00354
+4081,4036,CA1 Ivy,CA1 Axo Axonic,i,i,0.005716
+4081,4038,CA1 Ivy,CA1 Horizontal Axo Axonic,i,i,0.001875
+4081,4039,CA1 Ivy,CA1 Horizontal Basket,i,i,0.007292
+4081,4054,CA1 Ivy,CA1 Radiatum Giant,i,e,0.001359
+4081,4055,CA1 Ivy,CA1 Oriens Alveus,i,i,0.005444
+4081,4061,CA1 Ivy,CA1 R Receiving Apical Targeting,i,i,0.001628
+4081,4066,CA1 Ivy,CA1 OR LM,i,i,0.005138
+4081,4069,CA1 Ivy,CA1 O LM,i,i,0.00252
+4081,4076,CA1 Ivy,CA1 Perforant Path Associated QuadD,i,i,0.008305
+4081,4078,CA1 Ivy,CA1 Basket,i,i,0.006043
+4081,4079,CA1 Ivy,CA1 Basket CCK+,i,i,0.006344
+4081,4080,CA1 Ivy,CA1 Bistratified,i,i,0.006347
+4081,4081,CA1 Ivy,CA1 Ivy,i,i,0.005762
+4081,4083,CA1 Ivy,CA1 Oriens Bistratified,i,i,0.002015
+4081,4087,CA1 Ivy,CA1 O LMR,i,i,0.002213
+4081,4089,CA1 Ivy,CA1 Recurrent O LM,i,i,0.005139
+4083,4000,CA1 Oriens Bistratified,CA1 Pyramidal,i,e,0.002525
+4083,4003,CA1 Oriens Bistratified,CA1 Quadrilaminar,i,i,0.002851
+4083,4005,CA1 Oriens Bistratified,CA1 LMR,i,i,0.0007982
+4083,4006,CA1 Oriens Bistratified,CA1 Perforant Path Associated,i,i,0.001346
+4083,4013,CA1 Oriens Bistratified,CA1 Radial Trilaminar,i,i,0.001908
+4083,4015,CA1 Oriens Bistratified,CA1 Schaffer Collateral Associated,i,i,0.001716
+4083,4023,CA1 Oriens Bistratified,CA1 Back Projection,i,i,0.0007215
+4083,4028,CA1 Oriens Bistratified,CA1 Radiatum,i,i,0.001475
+4083,4033,CA1 Oriens Bistratified,CA1 SO SO,i,i,0.001761
+4083,4035,CA1 Oriens Bistratified,CA1 Trilaminar,i,i,0.001498
+4083,4036,CA1 Oriens Bistratified,CA1 Axo Axonic,i,i,0.002074
+4083,4038,CA1 Oriens Bistratified,CA1 Horizontal Axo Axonic,i,i,0.0003716
+4083,4039,CA1 Oriens Bistratified,CA1 Horizontal Basket,i,i,0.002186
+4083,4055,CA1 Oriens Bistratified,CA1 Oriens Alveus,i,i,0.002026
+4083,4061,CA1 Oriens Bistratified,CA1 R Receiving Apical Targeting,i,i,0.002023
+4083,4066,CA1 Oriens Bistratified,CA1 OR LM,i,i,0.003806
+4083,4069,CA1 Oriens Bistratified,CA1 O LM,i,i,0.0007473
+4083,4076,CA1 Oriens Bistratified,CA1 Perforant Path Associated QuadD,i,i,0.004685
+4083,4078,CA1 Oriens Bistratified,CA1 Basket,i,i,0.002555
+4083,4079,CA1 Oriens Bistratified,CA1 Basket CCK+,i,i,0.002267
+4083,4080,CA1 Oriens Bistratified,CA1 Bistratified,i,i,0.002388
+4083,4081,CA1 Oriens Bistratified,CA1 Ivy,i,i,0.001417
+4083,4083,CA1 Oriens Bistratified,CA1 Oriens Bistratified,i,i,0.0004493
+4083,4087,CA1 Oriens Bistratified,CA1 O LMR,i,i,0.0005183
+4083,4089,CA1 Oriens Bistratified,CA1 Recurrent O LM,i,i,0.002467
+4087,4000,CA1 O LMR,CA1 Pyramidal,i,e,0.002391
+4087,4003,CA1 O LMR,CA1 Quadrilaminar,i,i,0.003027
+4087,4005,CA1 O LMR,CA1 LMR,i,i,0.001675
+4087,4006,CA1 O LMR,CA1 Perforant Path Associated,i,i,0.002552
+4087,4011,CA1 O LMR,CA1 Neurogliaform Projecting,i,i,0.0008831
+4087,4012,CA1 O LMR,CA1 Neurogliaform,i,i,0.001064
+4087,4013,CA1 O LMR,CA1 Radial Trilaminar,i,i,0.002083
+4087,4015,CA1 O LMR,CA1 Schaffer Collateral Associated,i,i,0.002699
+4087,4028,CA1 O LMR,CA1 Radiatum,i,i,0.001314
+4087,4036,CA1 O LMR,CA1 Axo Axonic,i,i,0.002272
+4087,4054,CA1 O LMR,CA1 Radiatum Giant,i,e,0.002822
+4087,4055,CA1 O LMR,CA1 Oriens Alveus,i,i,0.001989
+4087,4061,CA1 O LMR,CA1 R Receiving Apical Targeting,i,i,0.001677
+4087,4066,CA1 O LMR,CA1 OR LM,i,i,0.002272
+4087,4076,CA1 O LMR,CA1 Perforant Path Associated QuadD,i,i,0.005353
+4087,4078,CA1 O LMR,CA1 Basket,i,i,0.002019
+4087,4079,CA1 O LMR,CA1 Basket CCK+,i,i,0.00236
+4087,4080,CA1 O LMR,CA1 Bistratified,i,i,0.00104
+4087,4081,CA1 O LMR,CA1 Ivy,i,i,0.000546
+4089,4000,CA1 Recurrent O LM,CA1 Pyramidal,i,e,0.008741
+4089,4003,CA1 Recurrent O LM,CA1 Quadrilaminar,i,i,0.00894
+4089,4005,CA1 Recurrent O LM,CA1 LMR,i,i,0.004872
+4089,4006,CA1 Recurrent O LM,CA1 Perforant Path Associated,i,i,0.005688
+4089,4011,CA1 Recurrent O LM,CA1 Neurogliaform Projecting,i,i,0.005499
+4089,4012,CA1 Recurrent O LM,CA1 Neurogliaform,i,i,0.006547
+4089,4013,CA1 Recurrent O LM,CA1 Radial Trilaminar,i,i,0.007464
+4089,4015,CA1 Recurrent O LM,CA1 Schaffer Collateral Associated,i,i,0.004386
+4089,4023,CA1 Recurrent O LM,CA1 Back Projection,i,i,0.002202
+4089,4033,CA1 Recurrent O LM,CA1 SO SO,i,i,0.003795
+4089,4035,CA1 Recurrent O LM,CA1 Trilaminar,i,i,0.00328
+4089,4036,CA1 Recurrent O LM,CA1 Axo Axonic,i,i,0.008898
+4089,4038,CA1 Recurrent O LM,CA1 Horizontal Axo Axonic,i,i,0.001559
+4089,4039,CA1 Recurrent O LM,CA1 Horizontal Basket,i,i,0.005969
+4089,4054,CA1 Recurrent O LM,CA1 Radiatum Giant,i,e,0.005549
+4089,4055,CA1 Recurrent O LM,CA1 Oriens Alveus,i,i,0.008151
+4089,4066,CA1 Recurrent O LM,CA1 OR LM,i,i,0.002205
+4089,4069,CA1 Recurrent O LM,CA1 O LM,i,i,0.002305
+4089,4076,CA1 Recurrent O LM,CA1 Perforant Path Associated QuadD,i,i,0.009062
+4089,4078,CA1 Recurrent O LM,CA1 Basket,i,i,0.008183
+4089,4079,CA1 Recurrent O LM,CA1 Basket CCK+,i,i,0.008782
+4089,4080,CA1 Recurrent O LM,CA1 Bistratified,i,i,0.002029
+4089,4081,CA1 Recurrent O LM,CA1 Ivy,i,i,0.001806
+4089,4083,CA1 Recurrent O LM,CA1 Oriens Bistratified,i,i,0.001674
+4089,4087,CA1 Recurrent O LM,CA1 O LMR,i,i,0.001991
+4089,4089,CA1 Recurrent O LM,CA1 Recurrent O LM,i,i,0.004749
+5005,3007,SUB CA1 Projecting Pyramidal,CA2 Wide Arbor Basket,e,i,0.001318209
+5005,4000,SUB CA1 Projecting Pyramidal,CA1 Pyramidal,e,e,0.001317
+5005,4003,SUB CA1 Projecting Pyramidal,CA1 Quadrilaminar,e,i,0.002004
+5005,4005,SUB CA1 Projecting Pyramidal,CA1 LMR,e,i,0.0007149
+5005,4006,SUB CA1 Projecting Pyramidal,CA1 Perforant Path Associated,e,i,0.001371
+5005,4011,SUB CA1 Projecting Pyramidal,CA1 Neurogliaform Projecting,e,i,0.0004862
+5005,4012,SUB CA1 Projecting Pyramidal,CA1 Neurogliaform,e,i,0.0006757
+5005,4013,SUB CA1 Projecting Pyramidal,CA1 Radial Trilaminar,e,i,0.00127
+5005,4015,SUB CA1 Projecting Pyramidal,CA1 Schaffer Collateral Associated,e,i,0.00151
+5005,4023,SUB CA1 Projecting Pyramidal,CA1 Back Projection,e,i,0.001385414
+5005,4028,SUB CA1 Projecting Pyramidal,CA1 Radiatum,e,i,0.0006498
+5005,4036,SUB CA1 Projecting Pyramidal,CA1 Axo Axonic,e,i,0.001242
+5005,4054,SUB CA1 Projecting Pyramidal,CA1 Radiatum Giant,e,e,0.001606
+5005,4055,SUB CA1 Projecting Pyramidal,CA1 Oriens Alveus,e,i,0.001007
+5005,4061,SUB CA1 Projecting Pyramidal,CA1 R Receiving Apical Targeting,e,i,0.0009072
+5005,4066,SUB CA1 Projecting Pyramidal,CA1 OR LM,e,i,0.001359
+5005,4076,SUB CA1 Projecting Pyramidal,CA1 Perforant Path Associated QuadD,e,i,0.004016
+5005,4078,SUB CA1 Projecting Pyramidal,CA1 Basket,e,i,0.0009706
+5005,4079,SUB CA1 Projecting Pyramidal,CA1 Basket CCK+,e,i,0.001363
+5005,4080,SUB CA1 Projecting Pyramidal,CA1 Bistratified,e,i,0.0006611
+5005,4081,SUB CA1 Projecting Pyramidal,CA1 Ivy,e,i,0.000218
+5005,5005,SUB CA1 Projecting Pyramidal,SUB CA1 Projecting Pyramidal,e,e,0.0253
+6002,1000,MEC LV Pyramidal,DG Granule,e,e,0.097123832
+6002,1001,MEC LV Pyramidal,DG Semilunar Granule,e,e,0.090067923
+6002,1004,MEC LV Pyramidal,DG Total Molecular Layer,e,i,0.0381526
+6002,1005,MEC LV Pyramidal,DG MOLAX,e,i,0.076836895
+6002,1007,MEC LV Pyramidal,DG Neurogliaform,e,i,0.002603237
+6002,1008,MEC LV Pyramidal,DG MOPP,e,i,0.006064592
+6002,1009,MEC LV Pyramidal,DG HICAP,e,i,0.063417694
+6002,1010,MEC LV Pyramidal,DG Axo Axonic,e,i,0.106395946
+6002,1026,MEC LV Pyramidal,DG HIPROM,e,i,0.083459252
+6002,1027,MEC LV Pyramidal,DG AIPRIM,e,i,0.05162899
+6002,1035,MEC LV Pyramidal,DG Basket,e,i,0.079026552
+6002,1041,MEC LV Pyramidal,DG Hilar Ectopic Granule,e,e,0.110308635
+6002,4011,MEC LV Pyramidal,CA1 Neurogliaform Projecting,e,i,0.0021849
+6002,5005,MEC LV Pyramidal,SUB CA1 Projecting Pyramidal,e,e,0.002579981
+6002,6002,MEC LV Pyramidal,MEC LV Pyramidal,e,e,0.02322
+6002,6003,MEC LV Pyramidal,MEC LII Stellate,e,e,0.008272
+6002,6005,MEC LV Pyramidal,EC LI II Pyramidal Fan,e,e,0.0008492
+6002,6006,MEC LV Pyramidal,MEC LIII Complex Pyramidal,e,e,0.01266
+6002,6008,MEC LV Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.005487
+6002,6017,MEC LV Pyramidal,EC LIII Pyramidal,e,e,0.001427
+6002,6018,MEC LV Pyramidal,EC LIII Stellate,e,e,0.001349
+6002,6019,MEC LV Pyramidal,MEC LII Oblique Pyramidal,e,e,0.003565
+6002,6021,MEC LV Pyramidal,EC LV Deep Pyramidal,e,e,0.00524
+6002,6023,MEC LV Pyramidal,MEC LV Superficial Pyramidal,e,e,0.01713
+6002,6024,MEC LV Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.003423
+6002,6033,MEC LV Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.025
+6002,6038,MEC LV Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.006435
+6002,6040,MEC LV Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.007475
+6002,6052,MEC LV Pyramidal,MEC LV VI Pyramidal Polymorphic,e,e,0.01479
+6002,6082,MEC LV Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.001627
+6002,6086,MEC LV Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.00515
+6002,6092,MEC LV Pyramidal,EC LIII Pyramidal Stellate,e,e,0.003045
+6002,6094,MEC LV Pyramidal,EC LI II Multipolar Pyramidal,e,e,0.005856
+6002,6095,MEC LV Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.004984
+6003,1000,MEC LII Stellate,DG Granule,e,e,0.006044728
+6003,1001,MEC LII Stellate,DG Semilunar Granule,e,e,0.008581629
+6003,1004,MEC LII Stellate,DG Total Molecular Layer,e,i,0.001393467
+6003,1005,MEC LII Stellate,DG MOLAX,e,i,0.002275892
+6003,1007,MEC LII Stellate,DG Neurogliaform,e,i,0.002603237
+6003,1008,MEC LII Stellate,DG MOPP,e,i,0.006064592
+6003,1009,MEC LII Stellate,DG HICAP,e,i,0.003097575
+6003,1010,MEC LII Stellate,DG Axo Axonic,e,i,0.015794928
+6003,1027,MEC LII Stellate,DG AIPRIM,e,i,0.00245054
+6003,1035,MEC LII Stellate,DG Basket,e,i,0.008479929
+6003,1041,MEC LII Stellate,DG Hilar Ectopic Granule,e,e,0.006040793
+6003,2000,MEC LII Stellate,CA3 Pyramidal,e,e,0.166908047
+6003,2001,MEC LII Stellate,CA3 Granule,e,e,0.127993344
+6003,2005,MEC LII Stellate,CA3 LMR Targeting,e,i,0.082995901
+6003,2028,MEC LII Stellate,CA3 Axo Axonic,e,i,0.101486805
+6003,2043,MEC LII Stellate,CA3 Basket,e,i,0.127918168
+6003,2044,MEC LII Stellate,CA3 Basket CCK+,e,i,0.061869782
+6003,3000,MEC LII Stellate,CA2 Pyramidal,e,e,0.135516547
+6003,3006,MEC LII Stellate,CA2 Basket,e,i,0.068606406
+6003,3007,MEC LII Stellate,CA2 Wide Arbor Basket,e,i,0.061105907
+6003,4011,MEC LII Stellate,CA1 Neurogliaform Projecting,e,i,0.0021849
+6003,5005,MEC LII Stellate,SUB CA1 Projecting Pyramidal,e,e,0.004015329
+6003,6002,MEC LII Stellate,MEC LV Pyramidal,e,e,0.04806
+6003,6005,MEC LII Stellate,EC LI II Pyramidal Fan,e,e,0.004846
+6003,6006,MEC LII Stellate,MEC LIII Complex Pyramidal,e,e,0.02189
+6003,6008,MEC LII Stellate,MEC LII III Pyramidal Multiform,e,e,0.02532
+6003,6017,MEC LII Stellate,EC LIII Pyramidal,e,e,0.008418
+6003,6018,MEC LII Stellate,EC LIII Stellate,e,e,0.007071
+6003,6019,MEC LII Stellate,MEC LII Oblique Pyramidal,e,e,0.01668
+6003,6021,MEC LII Stellate,EC LV Deep Pyramidal,e,e,0.01408
+6003,6023,MEC LII Stellate,MEC LV Superficial Pyramidal,e,e,0.03281
+6003,6024,MEC LII Stellate,MEC LIII Bipolar Complex Pyramidal,e,e,0.01548
+6003,6033,MEC LII Stellate,MEC LV Multipolar Pyramidal,e,e,0.03275
+6003,6038,MEC LII Stellate,MEC LIII Superficial Trilayered Interneuron,e,i,0.0282
+6003,6040,MEC LII Stellate,MEC LIII Superficial Multipolar Interneuron,e,i,0.02838
+6003,6052,MEC LII Stellate,MEC LV VI Pyramidal Polymorphic,e,e,0.03298
+6003,6082,MEC LII Stellate,EC LII III Pyramidal Tripolar,e,e,0.008587
+6003,6086,MEC LII Stellate,EC LIV VI Deep Multipolar Principal,e,e,0.008632
+6003,6092,MEC LII Stellate,EC LIII Pyramidal Stellate,e,e,0.009336
+6003,6094,MEC LII Stellate,EC LI II Multipolar Pyramidal,e,e,0.0139
+6003,6095,MEC LII Stellate,EC LIII V Bipolar Pyramidal,e,e,0.01325
+6005,1000,EC LI II Pyramidal Fan,DG Granule,e,e,0.006044728
+6005,1001,EC LI II Pyramidal Fan,DG Semilunar Granule,e,e,0.008581629
+6005,1004,EC LI II Pyramidal Fan,DG Total Molecular Layer,e,i,0.001393467
+6005,1005,EC LI II Pyramidal Fan,DG MOLAX,e,i,0.002275892
+6005,1007,EC LI II Pyramidal Fan,DG Neurogliaform,e,i,0.002603237
+6005,1008,EC LI II Pyramidal Fan,DG MOPP,e,i,0.006064592
+6005,1009,EC LI II Pyramidal Fan,DG HICAP,e,i,0.003097575
+6005,1010,EC LI II Pyramidal Fan,DG Axo Axonic,e,i,0.015794928
+6005,1027,EC LI II Pyramidal Fan,DG AIPRIM,e,i,0.00245054
+6005,1035,EC LI II Pyramidal Fan,DG Basket,e,i,0.008479929
+6005,1041,EC LI II Pyramidal Fan,DG Hilar Ectopic Granule,e,e,0.006040793
+6005,4011,EC LI II Pyramidal Fan,CA1 Neurogliaform Projecting,e,i,0.0021849
+6005,5005,EC LI II Pyramidal Fan,SUB CA1 Projecting Pyramidal,e,e,0.002579981
+6005,6002,EC LI II Pyramidal Fan,MEC LV Pyramidal,e,e,0.002402
+6005,6003,EC LI II Pyramidal Fan,MEC LII Stellate,e,e,0.003992
+6005,6005,EC LI II Pyramidal Fan,EC LI II Pyramidal Fan,e,e,0.001519
+6005,6006,EC LI II Pyramidal Fan,MEC LIII Complex Pyramidal,e,e,0.002302
+6005,6007,EC LI II Pyramidal Fan,LEC LIII Complex Pyramidal,e,e,0.002508
+6005,6008,EC LI II Pyramidal Fan,MEC LII III Pyramidal Multiform,e,e,0.00271
+6005,6017,EC LI II Pyramidal Fan,EC LIII Pyramidal,e,e,0.002298
+6005,6018,EC LI II Pyramidal Fan,EC LIII Stellate,e,e,0.002284
+6005,6019,EC LI II Pyramidal Fan,MEC LII Oblique Pyramidal,e,e,0.001958
+6005,6021,EC LI II Pyramidal Fan,EC LV Deep Pyramidal,e,e,0.001402
+6005,6023,EC LI II Pyramidal Fan,MEC LV Superficial Pyramidal,e,e,0.00125
+6005,6024,EC LI II Pyramidal Fan,MEC LIII Bipolar Complex Pyramidal,e,e,0.001568
+6005,6025,EC LI II Pyramidal Fan,LEC LIII Multipolar Principal,e,e,0.001551
+6005,6038,EC LI II Pyramidal Fan,MEC LIII Superficial Trilayered Interneuron,e,i,0.003137
+6005,6040,EC LI II Pyramidal Fan,MEC LIII Superficial Multipolar Interneuron,e,i,0.003454
+6005,6082,EC LI II Pyramidal Fan,EC LII III Pyramidal Tripolar,e,e,0.002538
+6005,6092,EC LI II Pyramidal Fan,EC LIII Pyramidal Stellate,e,e,0.00273
+6005,6094,EC LI II Pyramidal Fan,EC LI II Multipolar Pyramidal,e,e,0.009374
+6005,6095,EC LI II Pyramidal Fan,EC LIII V Bipolar Pyramidal,e,e,0.002363
+6006,6002,MEC LIII Complex Pyramidal,MEC LV Pyramidal,e,e,0.005703
+6006,6003,MEC LIII Complex Pyramidal,MEC LII Stellate,e,e,0.01124
+6006,6005,MEC LIII Complex Pyramidal,EC LI II Pyramidal Fan,e,e,0.00132
+6006,6006,MEC LIII Complex Pyramidal,MEC LIII Complex Pyramidal,e,e,0.01315
+6006,6008,MEC LIII Complex Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.007416
+6006,6017,MEC LIII Complex Pyramidal,EC LIII Pyramidal,e,e,0.001965
+6006,6018,MEC LIII Complex Pyramidal,EC LIII Stellate,e,e,0.001995
+6006,6019,MEC LIII Complex Pyramidal,MEC LII Oblique Pyramidal,e,e,0.005365
+6006,6021,MEC LIII Complex Pyramidal,EC LV Deep Pyramidal,e,e,0.001198
+6006,6023,MEC LIII Complex Pyramidal,MEC LV Superficial Pyramidal,e,e,0.00616
+6006,6024,MEC LIII Complex Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.004755
+6006,6033,MEC LIII Complex Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.006098
+6006,6038,MEC LIII Complex Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.008606
+6006,6040,MEC LIII Complex Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.009854
+6006,6082,MEC LIII Complex Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.002207
+6006,6086,MEC LIII Complex Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.0008504
+6006,6092,MEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,e,e,0.003448
+6006,6094,MEC LIII Complex Pyramidal,EC LI II Multipolar Pyramidal,e,e,0.008304
+6006,6095,MEC LIII Complex Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.002896
+6007,6005,LEC LIII Complex Pyramidal,EC LI II Pyramidal Fan,e,e,0.0005027
+6007,6007,LEC LIII Complex Pyramidal,LEC LIII Complex Pyramidal,e,e,0.005707
+6007,6017,LEC LIII Complex Pyramidal,EC LIII Pyramidal,e,e,0.002211
+6007,6018,LEC LIII Complex Pyramidal,EC LIII Stellate,e,e,0.001704
+6007,6021,LEC LIII Complex Pyramidal,EC LV Deep Pyramidal,e,e,0.003185
+6007,6025,LEC LIII Complex Pyramidal,LEC LIII Multipolar Principal,e,e,0.006498
+6007,6078,LEC LIII Complex Pyramidal,LEC LVI Multipolar Pyramidal,e,e,0.0005738
+6007,6082,LEC LIII Complex Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.00225
+6007,6086,LEC LIII Complex Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.003431
+6007,6092,LEC LIII Complex Pyramidal,EC LIII Pyramidal Stellate,e,e,0.004024
+6007,6094,LEC LIII Complex Pyramidal,EC LI II Multipolar Pyramidal,e,e,0.001606
+6007,6095,LEC LIII Complex Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.005847
+6008,6002,MEC LII III Pyramidal Multiform,MEC LV Pyramidal,e,e,0.03206
+6008,6003,MEC LII III Pyramidal Multiform,MEC LII Stellate,e,e,0.004375
+6008,6005,MEC LII III Pyramidal Multiform,EC LI II Pyramidal Fan,e,e,0.00062
+6008,6006,MEC LII III Pyramidal Multiform,MEC LIII Complex Pyramidal,e,e,0.01643
+6008,6008,MEC LII III Pyramidal Multiform,MEC LII III Pyramidal Multiform,e,e,0.006457
+6008,6017,MEC LII III Pyramidal Multiform,EC LIII Pyramidal,e,e,0.001988
+6008,6018,MEC LII III Pyramidal Multiform,EC LIII Stellate,e,e,0.001674
+6008,6019,MEC LII III Pyramidal Multiform,MEC LII Oblique Pyramidal,e,e,0.002546
+6008,6021,MEC LII III Pyramidal Multiform,EC LV Deep Pyramidal,e,e,0.007324
+6008,6023,MEC LII III Pyramidal Multiform,MEC LV Superficial Pyramidal,e,e,0.03186
+6008,6024,MEC LII III Pyramidal Multiform,MEC LIII Bipolar Complex Pyramidal,e,e,0.006199
+6008,6033,MEC LII III Pyramidal Multiform,MEC LV Multipolar Pyramidal,e,e,0.04053
+6008,6038,MEC LII III Pyramidal Multiform,MEC LIII Superficial Trilayered Interneuron,e,i,0.005651
+6008,6040,MEC LII III Pyramidal Multiform,MEC LIII Superficial Multipolar Interneuron,e,i,0.008961
+6008,6052,MEC LII III Pyramidal Multiform,MEC LV VI Pyramidal Polymorphic,e,e,0.02585
+6008,6082,MEC LII III Pyramidal Multiform,EC LII III Pyramidal Tripolar,e,e,0.002073
+6008,6086,MEC LII III Pyramidal Multiform,EC LIV VI Deep Multipolar Principal,e,e,0.007964
+6008,6092,MEC LII III Pyramidal Multiform,EC LIII Pyramidal Stellate,e,e,0.004203
+6008,6094,MEC LII III Pyramidal Multiform,EC LI II Multipolar Pyramidal,e,e,0.002217
+6008,6095,MEC LII III Pyramidal Multiform,EC LIII V Bipolar Pyramidal,e,e,0.008262
+6017,4000,EC LIII Pyramidal,CA1 Pyramidal,e,e,0.018680058
+6017,4003,EC LIII Pyramidal,CA1 Quadrilaminar,e,i,0.014321611
+6017,4005,EC LIII Pyramidal,CA1 LMR,e,i,0.010810575
+6017,4006,EC LIII Pyramidal,CA1 Perforant Path Associated,e,i,0.015726317
+6017,4011,EC LIII Pyramidal,CA1 Neurogliaform Projecting,e,i,0.015996775
+6017,4012,EC LIII Pyramidal,CA1 Neurogliaform,e,i,0.049760494
+6017,4013,EC LIII Pyramidal,CA1 Radial Trilaminar,e,i,0.006471512
+6017,4015,EC LIII Pyramidal,CA1 Schaffer Collateral Associated,e,i,0.007761919
+6017,4036,EC LIII Pyramidal,CA1 Axo Axonic,e,i,0.027974722
+6017,4054,EC LIII Pyramidal,CA1 Radiatum Giant,e,e,0.014840595
+6017,4055,EC LIII Pyramidal,CA1 Oriens Alveus,e,i,0.014123773
+6017,4076,EC LIII Pyramidal,CA1 Perforant Path Associated QuadD,e,i,0.016653991
+6017,4078,EC LIII Pyramidal,CA1 Basket,e,i,0.011682464
+6017,4079,EC LIII Pyramidal,CA1 Basket CCK+,e,i,0.022552827
+6017,5005,EC LIII Pyramidal,SUB CA1 Projecting Pyramidal,e,e,0.002579981
+6017,6002,EC LIII Pyramidal,MEC LV Pyramidal,e,e,0.001057
+6017,6006,EC LIII Pyramidal,MEC LIII Complex Pyramidal,e,e,0.001732
+6017,6007,EC LIII Pyramidal,LEC LIII Complex Pyramidal,e,e,0.00201
+6017,6008,EC LIII Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.0005269
+6017,6017,EC LIII Pyramidal,EC LIII Pyramidal,e,e,0.0005813
+6017,6018,EC LIII Pyramidal,EC LIII Stellate,e,e,0.0002977
+6017,6021,EC LIII Pyramidal,EC LV Deep Pyramidal,e,e,0.002482
+6017,6023,EC LIII Pyramidal,MEC LV Superficial Pyramidal,e,e,0.001349
+6017,6024,EC LIII Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.0005516
+6017,6025,EC LIII Pyramidal,LEC LIII Multipolar Principal,e,e,0.003052
+6017,6033,EC LIII Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.002225
+6017,6038,EC LIII Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.0002878
+6017,6040,EC LIII Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.0009371
+6017,6052,EC LIII Pyramidal,MEC LV VI Pyramidal Polymorphic,e,e,0.001355
+6017,6078,EC LIII Pyramidal,LEC LVI Multipolar Pyramidal,e,e,0.001938
+6017,6082,EC LIII Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.0005203
+6017,6086,EC LIII Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.003762
+6017,6092,EC LIII Pyramidal,EC LIII Pyramidal Stellate,e,e,0.001883
+6017,6095,EC LIII Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.002825
+6018,6006,EC LIII Stellate,MEC LIII Complex Pyramidal,e,e,0.0009019
+6018,6007,EC LIII Stellate,LEC LIII Complex Pyramidal,e,e,0.000569
+6018,6008,EC LIII Stellate,MEC LII III Pyramidal Multiform,e,e,0.0005804
+6018,6017,EC LIII Stellate,EC LIII Pyramidal,e,e,0.0006486
+6018,6018,EC LIII Stellate,EC LIII Stellate,e,e,0.0003353
+6018,6023,EC LIII Stellate,MEC LV Superficial Pyramidal,e,e,0.0002933
+6018,6024,EC LIII Stellate,MEC LIII Bipolar Complex Pyramidal,e,e,0.0006029
+6018,6025,EC LIII Stellate,LEC LIII Multipolar Principal,e,e,0.001126
+6018,6038,EC LIII Stellate,MEC LIII Superficial Trilayered Interneuron,e,i,0.0003464
+6018,6040,EC LIII Stellate,MEC LIII Superficial Multipolar Interneuron,e,i,0.0009981
+6018,6082,EC LIII Stellate,EC LII III Pyramidal Tripolar,e,e,0.000582
+6018,6092,EC LIII Stellate,EC LIII Pyramidal Stellate,e,e,0.0009359
+6018,6095,EC LIII Stellate,EC LIII V Bipolar Pyramidal,e,e,0.0004247
+6019,6006,MEC LII Oblique Pyramidal,MEC LIII Complex Pyramidal,e,e,0.02106
+6019,6008,MEC LII Oblique Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.002653
+6019,6017,MEC LII Oblique Pyramidal,EC LIII Pyramidal,e,e,0.001011
+6019,6018,MEC LII Oblique Pyramidal,EC LIII Stellate,e,e,0.0004849
+6019,6023,MEC LII Oblique Pyramidal,MEC LV Superficial Pyramidal,e,e,0.0144
+6019,6024,MEC LII Oblique Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.00267
+6019,6033,MEC LII Oblique Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.01256
+6019,6038,MEC LII Oblique Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.001972
+6019,6040,MEC LII Oblique Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.004037
+6019,6082,MEC LII Oblique Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.0008984
+6019,6086,MEC LII Oblique Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.00191
+6019,6092,MEC LII Oblique Pyramidal,EC LIII Pyramidal Stellate,e,e,0.003818
+6019,6095,MEC LII Oblique Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.002587
+6021,6002,EC LV Deep Pyramidal,MEC LV Pyramidal,e,e,0.001457
+6021,6021,EC LV Deep Pyramidal,EC LV Deep Pyramidal,e,e,0.003197
+6021,6023,EC LV Deep Pyramidal,MEC LV Superficial Pyramidal,e,e,0.0005552
+6021,6025,EC LV Deep Pyramidal,LEC LIII Multipolar Principal,e,e,0.0007219
+6021,6033,EC LV Deep Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.001313
+6021,6052,EC LV Deep Pyramidal,MEC LV VI Pyramidal Polymorphic,e,e,0.001826
+6021,6078,EC LV Deep Pyramidal,LEC LVI Multipolar Pyramidal,e,e,0.002594
+6021,6086,EC LV Deep Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.00288
+6021,6095,EC LV Deep Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.001503
+6023,6002,MEC LV Superficial Pyramidal,MEC LV Pyramidal,e,e,0.01079
+6023,6003,MEC LV Superficial Pyramidal,MEC LII Stellate,e,e,0.002366
+6023,6005,MEC LV Superficial Pyramidal,EC LI II Pyramidal Fan,e,e,0.0002784
+6023,6006,MEC LV Superficial Pyramidal,MEC LIII Complex Pyramidal,e,e,0.008284
+6023,6008,MEC LV Superficial Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.003322
+6023,6017,MEC LV Superficial Pyramidal,EC LIII Pyramidal,e,e,0.001019
+6023,6018,MEC LV Superficial Pyramidal,EC LIII Stellate,e,e,0.0007406
+6023,6019,MEC LV Superficial Pyramidal,MEC LII Oblique Pyramidal,e,e,0.001236
+6023,6021,MEC LV Superficial Pyramidal,EC LV Deep Pyramidal,e,e,0.00202
+6023,6023,MEC LV Superficial Pyramidal,MEC LV Superficial Pyramidal,e,e,0.007476
+6023,6024,MEC LV Superficial Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.003164
+6023,6033,MEC LV Superficial Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.01568
+6023,6038,MEC LV Superficial Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.002663
+6023,6040,MEC LV Superficial Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.005137
+6023,6052,MEC LV Superficial Pyramidal,MEC LV VI Pyramidal Polymorphic,e,e,0.002633
+6023,6082,MEC LV Superficial Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.001078
+6023,6086,MEC LV Superficial Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.002059
+6023,6092,MEC LV Superficial Pyramidal,EC LIII Pyramidal Stellate,e,e,0.002235
+6023,6094,MEC LV Superficial Pyramidal,EC LI II Multipolar Pyramidal,e,e,0.00114
+6023,6095,MEC LV Superficial Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.003061
+6024,6002,MEC LIII Bipolar Complex Pyramidal,MEC LV Pyramidal,e,e,0.003585
+6024,6003,MEC LIII Bipolar Complex Pyramidal,MEC LII Stellate,e,e,0.00957
+6024,6005,MEC LIII Bipolar Complex Pyramidal,EC LI II Pyramidal Fan,e,e,0.001206
+6024,6006,MEC LIII Bipolar Complex Pyramidal,MEC LIII Complex Pyramidal,e,e,0.02945
+6024,6008,MEC LIII Bipolar Complex Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.008802
+6024,6017,MEC LIII Bipolar Complex Pyramidal,EC LIII Pyramidal,e,e,0.002598
+6024,6018,MEC LIII Bipolar Complex Pyramidal,EC LIII Stellate,e,e,0.002294
+6024,6019,MEC LIII Bipolar Complex Pyramidal,MEC LII Oblique Pyramidal,e,e,0.004613
+6024,6021,MEC LIII Bipolar Complex Pyramidal,EC LV Deep Pyramidal,e,e,0.001069
+6024,6023,MEC LIII Bipolar Complex Pyramidal,MEC LV Superficial Pyramidal,e,e,0.02113
+6024,6024,MEC LIII Bipolar Complex Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.006062
+6024,6033,MEC LIII Bipolar Complex Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.01272
+6024,6038,MEC LIII Bipolar Complex Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.009802
+6024,6040,MEC LIII Bipolar Complex Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.0111
+6024,6082,MEC LIII Bipolar Complex Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.002763
+6024,6086,MEC LIII Bipolar Complex Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.002025
+6024,6092,MEC LIII Bipolar Complex Pyramidal,EC LIII Pyramidal Stellate,e,e,0.00628
+6024,6094,MEC LIII Bipolar Complex Pyramidal,EC LI II Multipolar Pyramidal,e,e,0.006301
+6024,6095,MEC LIII Bipolar Complex Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.005186
+6025,6005,LEC LIII Multipolar Principal,EC LI II Pyramidal Fan,e,e,0.001261
+6025,6007,LEC LIII Multipolar Principal,LEC LIII Complex Pyramidal,e,e,0.007756
+6025,6017,LEC LIII Multipolar Principal,EC LIII Pyramidal,e,e,0.003359
+6025,6018,LEC LIII Multipolar Principal,EC LIII Stellate,e,e,0.002988
+6025,6021,LEC LIII Multipolar Principal,EC LV Deep Pyramidal,e,e,0.003804
+6025,6025,LEC LIII Multipolar Principal,LEC LIII Multipolar Principal,e,e,0.007204
+6025,6078,LEC LIII Multipolar Principal,LEC LVI Multipolar Pyramidal,e,e,0.0005501
+6025,6082,LEC LIII Multipolar Principal,EC LII III Pyramidal Tripolar,e,e,0.003492
+6025,6086,LEC LIII Multipolar Principal,EC LIV VI Deep Multipolar Principal,e,e,0.003304
+6025,6092,LEC LIII Multipolar Principal,EC LIII Pyramidal Stellate,e,e,0.005525
+6025,6094,LEC LIII Multipolar Principal,EC LI II Multipolar Pyramidal,e,e,0.006437
+6025,6095,LEC LIII Multipolar Principal,EC LIII V Bipolar Pyramidal,e,e,0.006873
+6033,6002,MEC LV Multipolar Pyramidal,MEC LV Pyramidal,e,e,0.01743
+6033,6006,MEC LV Multipolar Pyramidal,MEC LIII Complex Pyramidal,e,e,0.01472
+6033,6008,MEC LV Multipolar Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.004692
+6033,6017,MEC LV Multipolar Pyramidal,EC LIII Pyramidal,e,e,0.001559
+6033,6018,MEC LV Multipolar Pyramidal,EC LIII Stellate,e,e,0.001055
+6033,6021,MEC LV Multipolar Pyramidal,EC LV Deep Pyramidal,e,e,0.004052
+6033,6023,MEC LV Multipolar Pyramidal,MEC LV Superficial Pyramidal,e,e,0.01918
+6033,6024,MEC LV Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.004822
+6033,6033,MEC LV Multipolar Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.02793
+6033,6038,MEC LV Multipolar Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.003561
+6033,6040,MEC LV Multipolar Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.006778
+6033,6052,MEC LV Multipolar Pyramidal,MEC LV VI Pyramidal Polymorphic,e,e,0.01594
+6033,6082,MEC LV Multipolar Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.00147
+6033,6086,MEC LV Multipolar Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.005413
+6033,6092,MEC LV Multipolar Pyramidal,EC LIII Pyramidal Stellate,e,e,0.003235
+6033,6095,MEC LV Multipolar Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.004724
+6038,6002,MEC LIII Superficial Trilayered Interneuron,MEC LV Pyramidal,i,e,0.01437
+6038,6003,MEC LIII Superficial Trilayered Interneuron,MEC LII Stellate,i,e,0.01726
+6038,6005,MEC LIII Superficial Trilayered Interneuron,EC LI II Pyramidal Fan,i,e,0.002671
+6038,6006,MEC LIII Superficial Trilayered Interneuron,MEC LIII Complex Pyramidal,i,e,0.008354
+6038,6008,MEC LIII Superficial Trilayered Interneuron,MEC LII III Pyramidal Multiform,i,e,0.01025
+6038,6017,MEC LIII Superficial Trilayered Interneuron,EC LIII Pyramidal,i,e,0.002724
+6038,6018,MEC LIII Superficial Trilayered Interneuron,EC LIII Stellate,i,e,0.002896
+6038,6019,MEC LIII Superficial Trilayered Interneuron,MEC LII Oblique Pyramidal,i,e,0.01015
+6038,6021,MEC LIII Superficial Trilayered Interneuron,EC LV Deep Pyramidal,i,e,0.002618
+6038,6023,MEC LIII Superficial Trilayered Interneuron,MEC LV Superficial Pyramidal,i,e,0.005589
+6038,6024,MEC LIII Superficial Trilayered Interneuron,MEC LIII Bipolar Complex Pyramidal,i,e,0.003995
+6038,6038,MEC LIII Superficial Trilayered Interneuron,MEC LIII Superficial Trilayered Interneuron,i,i,0.01146
+6038,6040,MEC LIII Superficial Trilayered Interneuron,MEC LIII Superficial Multipolar Interneuron,i,i,0.01259
+6038,6082,MEC LIII Superficial Trilayered Interneuron,EC LII III Pyramidal Tripolar,i,e,0.00302
+6038,6092,MEC LIII Superficial Trilayered Interneuron,EC LIII Pyramidal Stellate,i,e,0.003204
+6038,6094,MEC LIII Superficial Trilayered Interneuron,EC LI II Multipolar Pyramidal,i,e,0.01257
+6038,6095,MEC LIII Superficial Trilayered Interneuron,EC LIII V Bipolar Pyramidal,i,e,0.002988
+6040,6002,MEC LIII Superficial Multipolar Interneuron,MEC LV Pyramidal,i,e,0.003674
+6040,6003,MEC LIII Superficial Multipolar Interneuron,MEC LII Stellate,i,e,0.007935
+6040,6005,MEC LIII Superficial Multipolar Interneuron,EC LI II Pyramidal Fan,i,e,0.001404
+6040,6006,MEC LIII Superficial Multipolar Interneuron,MEC LIII Complex Pyramidal,i,e,0.01716
+6040,6008,MEC LIII Superficial Multipolar Interneuron,MEC LII III Pyramidal Multiform,i,e,0.01993
+6040,6017,MEC LIII Superficial Multipolar Interneuron,EC LIII Pyramidal,i,e,0.006235
+6040,6018,MEC LIII Superficial Multipolar Interneuron,EC LIII Stellate,i,e,0.005739
+6040,6019,MEC LIII Superficial Multipolar Interneuron,MEC LII Oblique Pyramidal,i,e,0.005374
+6040,6021,MEC LIII Superficial Multipolar Interneuron,EC LV Deep Pyramidal,i,e,0.001369
+6040,6023,MEC LIII Superficial Multipolar Interneuron,MEC LV Superficial Pyramidal,i,e,0.01172
+6040,6024,MEC LIII Superficial Multipolar Interneuron,MEC LIII Bipolar Complex Pyramidal,i,e,0.01952
+6040,6038,MEC LIII Superficial Multipolar Interneuron,MEC LIII Superficial Trilayered Interneuron,i,i,0.01887
+6040,6040,MEC LIII Superficial Multipolar Interneuron,MEC LIII Superficial Multipolar Interneuron,i,i,0.02302
+6040,6082,MEC LIII Superficial Multipolar Interneuron,EC LII III Pyramidal Tripolar,i,e,0.006342
+6040,6092,MEC LIII Superficial Multipolar Interneuron,EC LIII Pyramidal Stellate,i,e,0.006548
+6040,6094,MEC LIII Superficial Multipolar Interneuron,EC LI II Multipolar Pyramidal,i,e,0.004073
+6040,6095,MEC LIII Superficial Multipolar Interneuron,EC LIII V Bipolar Pyramidal,i,e,0.005873
+6052,6021,MEC LV VI Pyramidal Polymorphic,EC LV Deep Pyramidal,e,e,0.001593
+6052,6052,MEC LV VI Pyramidal Polymorphic,MEC LV VI Pyramidal Polymorphic,e,e,0.009774
+6052,6086,MEC LV VI Pyramidal Polymorphic,EC LIV VI Deep Multipolar Principal,e,e,0.001943
+6078,6007,LEC LVI Multipolar Pyramidal,LEC LIII Complex Pyramidal,e,e,0.002837
+6078,6017,LEC LVI Multipolar Pyramidal,EC LIII Pyramidal,e,e,0.000702
+6078,6018,LEC LVI Multipolar Pyramidal,EC LIII Stellate,e,e,0.0003682
+6078,6021,LEC LVI Multipolar Pyramidal,EC LV Deep Pyramidal,e,e,0.004033
+6078,6025,LEC LVI Multipolar Pyramidal,LEC LIII Multipolar Principal,e,e,0.005098
+6078,6078,LEC LVI Multipolar Pyramidal,LEC LVI Multipolar Pyramidal,e,e,0.004147
+6078,6082,LEC LVI Multipolar Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.0006319
+6078,6086,LEC LVI Multipolar Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.005492
+6078,6092,LEC LVI Multipolar Pyramidal,EC LIII Pyramidal Stellate,e,e,0.002181
+6078,6095,LEC LVI Multipolar Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.003841
+6082,1000,EC LII III Pyramidal Tripolar,DG Granule,e,e,0.006044728
+6082,1001,EC LII III Pyramidal Tripolar,DG Semilunar Granule,e,e,0.008581629
+6082,1004,EC LII III Pyramidal Tripolar,DG Total Molecular Layer,e,i,0.001393467
+6082,1005,EC LII III Pyramidal Tripolar,DG MOLAX,e,i,0.002275892
+6082,1007,EC LII III Pyramidal Tripolar,DG Neurogliaform,e,i,0.002603237
+6082,1008,EC LII III Pyramidal Tripolar,DG MOPP,e,i,0.006064592
+6082,1009,EC LII III Pyramidal Tripolar,DG HICAP,e,i,0.003097575
+6082,1010,EC LII III Pyramidal Tripolar,DG Axo Axonic,e,i,0.015794928
+6082,1027,EC LII III Pyramidal Tripolar,DG AIPRIM,e,i,0.00245054
+6082,1035,EC LII III Pyramidal Tripolar,DG Basket,e,i,0.008479929
+6082,1041,EC LII III Pyramidal Tripolar,DG Hilar Ectopic Granule,e,e,0.006040793
+6082,4011,EC LII III Pyramidal Tripolar,CA1 Neurogliaform Projecting,e,i,0.0021849
+6082,5005,EC LII III Pyramidal Tripolar,SUB CA1 Projecting Pyramidal,e,e,0.004015329
+6082,6002,EC LII III Pyramidal Tripolar,MEC LV Pyramidal,e,e,0.004011
+6082,6003,EC LII III Pyramidal Tripolar,MEC LII Stellate,e,e,0.006684
+6082,6005,EC LII III Pyramidal Tripolar,EC LI II Pyramidal Fan,e,e,0.003677
+6082,6006,EC LII III Pyramidal Tripolar,MEC LIII Complex Pyramidal,e,e,0.004628
+6082,6007,EC LII III Pyramidal Tripolar,LEC LIII Complex Pyramidal,e,e,0.005309
+6082,6008,EC LII III Pyramidal Tripolar,MEC LII III Pyramidal Multiform,e,e,0.005976
+6082,6017,EC LII III Pyramidal Tripolar,EC LIII Pyramidal,e,e,0.005635
+6082,6018,EC LII III Pyramidal Tripolar,EC LIII Stellate,e,e,0.005223
+6082,6019,EC LII III Pyramidal Tripolar,MEC LII Oblique Pyramidal,e,e,0.003909
+6082,6021,EC LII III Pyramidal Tripolar,EC LV Deep Pyramidal,e,e,0.003195
+6082,6023,EC LII III Pyramidal Tripolar,MEC LV Superficial Pyramidal,e,e,0.003418
+6082,6024,EC LII III Pyramidal Tripolar,MEC LIII Bipolar Complex Pyramidal,e,e,0.002543
+6082,6025,EC LII III Pyramidal Tripolar,LEC LIII Multipolar Principal,e,e,0.002318
+6082,6038,EC LII III Pyramidal Tripolar,MEC LIII Superficial Trilayered Interneuron,e,i,0.006668
+6082,6040,EC LII III Pyramidal Tripolar,MEC LIII Superficial Multipolar Interneuron,e,i,0.006625
+6082,6082,EC LII III Pyramidal Tripolar,EC LII III Pyramidal Tripolar,e,e,0.005827
+6082,6092,EC LII III Pyramidal Tripolar,EC LIII Pyramidal Stellate,e,e,0.00582
+6082,6094,EC LII III Pyramidal Tripolar,EC LI II Multipolar Pyramidal,e,e,0.01263
+6082,6095,EC LII III Pyramidal Tripolar,EC LIII V Bipolar Pyramidal,e,e,0.005382
+6086,5005,EC LIV VI Deep Multipolar Principal,SUB CA1 Projecting Pyramidal,e,e,0.004015329
+6086,6002,EC LIV VI Deep Multipolar Principal,MEC LV Pyramidal,e,e,0.001651
+6086,6006,EC LIV VI Deep Multipolar Principal,MEC LIII Complex Pyramidal,e,e,0.001054
+6086,6007,EC LIV VI Deep Multipolar Principal,LEC LIII Complex Pyramidal,e,e,0.001886
+6086,6021,EC LIV VI Deep Multipolar Principal,EC LV Deep Pyramidal,e,e,0.004325
+6086,6023,EC LIV VI Deep Multipolar Principal,MEC LV Superficial Pyramidal,e,e,0.002096
+6086,6025,EC LIV VI Deep Multipolar Principal,LEC LIII Multipolar Principal,e,e,0.002814
+6086,6033,EC LIV VI Deep Multipolar Principal,MEC LV Multipolar Pyramidal,e,e,0.003722
+6086,6052,EC LIV VI Deep Multipolar Principal,MEC LV VI Pyramidal Polymorphic,e,e,0.003035
+6086,6078,EC LIV VI Deep Multipolar Principal,LEC LVI Multipolar Pyramidal,e,e,0.003903
+6086,6086,EC LIV VI Deep Multipolar Principal,EC LIV VI Deep Multipolar Principal,e,e,0.007089
+6086,6092,EC LIV VI Deep Multipolar Principal,EC LIII Pyramidal Stellate,e,e,0.001406
+6086,6095,EC LIV VI Deep Multipolar Principal,EC LIII V Bipolar Pyramidal,e,e,0.00354
+6092,4000,EC LIII Pyramidal Stellate,CA1 Pyramidal,e,e,0.018680058
+6092,4003,EC LIII Pyramidal Stellate,CA1 Quadrilaminar,e,i,0.014321611
+6092,4005,EC LIII Pyramidal Stellate,CA1 LMR,e,i,0.010810575
+6092,4006,EC LIII Pyramidal Stellate,CA1 Perforant Path Associated,e,i,0.015726317
+6092,4011,EC LIII Pyramidal Stellate,CA1 Neurogliaform Projecting,e,i,0.015996775
+6092,4012,EC LIII Pyramidal Stellate,CA1 Neurogliaform,e,i,0.049760494
+6092,4013,EC LIII Pyramidal Stellate,CA1 Radial Trilaminar,e,i,0.006471512
+6092,4015,EC LIII Pyramidal Stellate,CA1 Schaffer Collateral Associated,e,i,0.007761919
+6092,4036,EC LIII Pyramidal Stellate,CA1 Axo Axonic,e,i,0.027974722
+6092,4054,EC LIII Pyramidal Stellate,CA1 Radiatum Giant,e,e,0.014840595
+6092,4055,EC LIII Pyramidal Stellate,CA1 Oriens Alveus,e,i,0.014123773
+6092,4076,EC LIII Pyramidal Stellate,CA1 Perforant Path Associated QuadD,e,i,0.016653991
+6092,4078,EC LIII Pyramidal Stellate,CA1 Basket,e,i,0.011682464
+6092,4079,EC LIII Pyramidal Stellate,CA1 Basket CCK+,e,i,0.022552827
+6092,5005,EC LIII Pyramidal Stellate,SUB CA1 Projecting Pyramidal,e,e,0.002579981
+6092,6006,EC LIII Pyramidal Stellate,MEC LIII Complex Pyramidal,e,e,0.0008734
+6092,6007,EC LIII Pyramidal Stellate,LEC LIII Complex Pyramidal,e,e,0.0005367
+6092,6008,EC LIII Pyramidal Stellate,MEC LII III Pyramidal Multiform,e,e,0.0005417
+6092,6017,EC LIII Pyramidal Stellate,EC LIII Pyramidal,e,e,0.0005952
+6092,6018,EC LIII Pyramidal Stellate,EC LIII Stellate,e,e,0.0003083
+6092,6023,EC LIII Pyramidal Stellate,MEC LV Superficial Pyramidal,e,e,0.0002703
+6092,6024,EC LIII Pyramidal Stellate,MEC LIII Bipolar Complex Pyramidal,e,e,0.0005673
+6092,6025,EC LIII Pyramidal Stellate,LEC LIII Multipolar Principal,e,e,0.001088
+6092,6038,EC LIII Pyramidal Stellate,MEC LIII Superficial Trilayered Interneuron,e,i,0.0002978
+6092,6040,EC LIII Pyramidal Stellate,MEC LIII Superficial Multipolar Interneuron,e,i,0.0009615
+6092,6082,EC LIII Pyramidal Stellate,EC LII III Pyramidal Tripolar,e,e,0.0005339
+6092,6092,EC LIII Pyramidal Stellate,EC LIII Pyramidal Stellate,e,e,0.0008954
+6092,6095,EC LIII Pyramidal Stellate,EC LIII V Bipolar Pyramidal,e,e,0.0003916
+6094,6002,EC LI II Multipolar Pyramidal,MEC LV Pyramidal,e,e,0.003723
+6094,6003,EC LI II Multipolar Pyramidal,MEC LII Stellate,e,e,0.00894
+6094,6005,EC LI II Multipolar Pyramidal,EC LI II Pyramidal Fan,e,e,0.005086
+6094,6006,EC LI II Multipolar Pyramidal,MEC LIII Complex Pyramidal,e,e,0.004841
+6094,6007,EC LI II Multipolar Pyramidal,LEC LIII Complex Pyramidal,e,e,0.0116
+6094,6008,EC LI II Multipolar Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.01241
+6094,6017,EC LI II Multipolar Pyramidal,EC LIII Pyramidal,e,e,0.01531
+6094,6018,EC LI II Multipolar Pyramidal,EC LIII Stellate,e,e,0.0104
+6094,6019,EC LI II Multipolar Pyramidal,MEC LII Oblique Pyramidal,e,e,0.005952
+6094,6021,EC LI II Multipolar Pyramidal,EC LV Deep Pyramidal,e,e,0.004259
+6094,6023,EC LI II Multipolar Pyramidal,MEC LV Superficial Pyramidal,e,e,0.001825
+6094,6024,EC LI II Multipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.01075
+6094,6025,EC LI II Multipolar Pyramidal,LEC LIII Multipolar Principal,e,e,0.006366
+6094,6038,EC LI II Multipolar Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.01418
+6094,6040,EC LI II Multipolar Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.01481
+6094,6082,EC LI II Multipolar Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.01534
+6094,6092,EC LI II Multipolar Pyramidal,EC LIII Pyramidal Stellate,e,e,0.0122
+6094,6094,EC LI II Multipolar Pyramidal,EC LI II Multipolar Pyramidal,e,e,0.01051
+6094,6095,EC LI II Multipolar Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.01004
+6095,6002,EC LIII V Bipolar Pyramidal,MEC LV Pyramidal,e,e,0.004845
+6095,6006,EC LIII V Bipolar Pyramidal,MEC LIII Complex Pyramidal,e,e,0.00486
+6095,6007,EC LIII V Bipolar Pyramidal,LEC LIII Complex Pyramidal,e,e,0.005166
+6095,6008,EC LIII V Bipolar Pyramidal,MEC LII III Pyramidal Multiform,e,e,0.00229
+6095,6017,EC LIII V Bipolar Pyramidal,EC LIII Pyramidal,e,e,0.00256
+6095,6018,EC LIII V Bipolar Pyramidal,EC LIII Stellate,e,e,0.001585
+6095,6021,EC LIII V Bipolar Pyramidal,EC LV Deep Pyramidal,e,e,0.008755
+6095,6023,EC LIII V Bipolar Pyramidal,MEC LV Superficial Pyramidal,e,e,0.007563
+6095,6024,EC LIII V Bipolar Pyramidal,MEC LIII Bipolar Complex Pyramidal,e,e,0.002305
+6095,6025,EC LIII V Bipolar Pyramidal,LEC LIII Multipolar Principal,e,e,0.01016
+6095,6033,EC LIII V Bipolar Pyramidal,MEC LV Multipolar Pyramidal,e,e,0.007028
+6095,6038,EC LIII V Bipolar Pyramidal,MEC LIII Superficial Trilayered Interneuron,e,i,0.001891
+6095,6040,EC LIII V Bipolar Pyramidal,MEC LIII Superficial Multipolar Interneuron,e,i,0.003034
+6095,6052,EC LIII V Bipolar Pyramidal,MEC LV VI Pyramidal Polymorphic,e,e,0.006782
+6095,6078,EC LIII V Bipolar Pyramidal,LEC LVI Multipolar Pyramidal,e,e,0.00746
+6095,6082,EC LIII V Bipolar Pyramidal,EC LII III Pyramidal Tripolar,e,e,0.002389
+6095,6086,EC LIII V Bipolar Pyramidal,EC LIV VI Deep Multipolar Principal,e,e,0.01143
+6095,6092,EC LIII V Bipolar Pyramidal,EC LIII Pyramidal Stellate,e,e,0.005219
+6095,6095,EC LIII V Bipolar Pyramidal,EC LIII V Bipolar Pyramidal,e,e,0.009976

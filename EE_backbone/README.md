@@ -111,13 +111,48 @@ From `ee_backbone_comparison_outputs/ordering_metrics.csv` and `ordering_permuta
 | **Forward-weight fraction** | **0.9496** |
 | Permutation null mean (n = 2,000) | 0.486 (sd 0.124) |
 | Best of 2,000 random orderings | 0.815 |
-| Empirical p | < 0.005 |
+| Empirical p vs permutation null | < 0.005 |
+| **Degree- and dyad-preserving null mean (n = 100)** | **0.9441 (sd 0.0056)** |
+| **z vs that null** | **+0.97** |
+| **Empirical p vs that null** | **0.168** |
 
-Roughly 95% of positive excitatory-to-excitatory edge weight points forward under the recovered ordering, against a chance expectation near 50% and a best-of-2,000-random-orderings value of 0.81. The excitatory subnetwork is close to feedforward at the neuron-type level despite being a single strongly connected component, i.e. its recurrence is carried by a small fraction of the total weight.
+The ordering is now solved exactly rather than heuristically: the Linear Ordering Problem is
+solved with HiGHS via `scipy.optimize.milp` under triangle constraints at `mip_rel_gap = 0`,
+and the run reports `lop_certified = 1`, `lop_gap = 0`. The 0.9496 is a certified optimum, not
+a heuristic's best effort.
 
-The recovered ordering opens with entorhinal superficial layers, passes through CA3 and CA2 into CA1, and ends in subiculum and deep entorhinal layers, which is the expected direction of flow through the hippocampal formation. That was not imposed; it fell out of maximizing forward edge weight. The heaviest individual feedback transitions are worth inspecting directly in `ordering_edge_directions.csv`.
+**Corrected 2026-09-17 — the significance claim does not survive a proper null.** The
+permutation null asks only whether the ordering beats a *random* ordering, which is true of
+any graph with any feedforward structure at all; it is not a test of this connectome. Against
+a null that preserves every node's in-degree and out-degree and the mutual/asymmetric dyad
+census, and that orders each surrogate with the same exact solver, the E-to-E forward-weight
+fraction is **not distinguishable from chance (z = +0.97, p = 0.168)**. Report that figure.
+Roughly 95% of E-to-E weight does point forward, and that remains a true description of the
+subnetwork; what cannot be said is that it is more forward than its degree and dyad structure
+already imply.
 
-`backbone_ordering.csv` is written for reuse as `BACKBONE_LABELS` in `ei_backbone_analysis.ipynb`, which replaces the CSV-label-order placeholder that notebook previously warned about.
+The dyad census matters here rather than being pedantry: a plain directed edge swap destroys
+about 60% of the graph's mutual dyads, and a mutual dyad contributes one backward edge under
+*any* ordering, so a surrogate that loses them is artificially easy to make feedforward.
+
+**Corrected 2026-09-17 — the ordering does not recover the trisynaptic direction.** In the
+certified-optimal 32-node E-to-E ordering, DG sorts to the *end*: positions 27-30 of 32, with
+region means CA2 7.0 -> CA1 8.5 -> EC 9.9 -> CA3 14.0 -> MEC 16.2 -> LEC 18.7 -> SUB 25.0 ->
+DG 28.5. The earlier text here said the ordering opened with entorhinal superficial layers and
+passed through CA3 and CA2 into CA1 "and that was not imposed". The direction claim was wrong.
+
+This is diagnostic rather than a failure. It localizes the trisynaptic signal *outside* the
+E-to-E block, and the weight table explains why: DG Granule -> DG AIPRIM (224,249) outweighs
+DG Granule -> CA3 Pyramidal (234.9) by about 955x, the top 12 edges by |m_ij| carry 48.9% of
+all weight and every one of them is principal -> interneuron, and E-to-E is only 6.3% of the
+matrix norm (4.91 against 77.02 for E-to-I on the rho = 0.95 operator). An ordering that
+maximizes forward *weight* on the E-to-E block is optimizing over 6% of the circuit. See
+`tarjan_reorder/weight_concentration.py`.
+
+The heaviest individual feedback transitions are worth inspecting directly in
+`ordering_edge_directions.csv`.
+
+`backbone_ordering.csv` is still written here, but `ei_backbone_analysis.ipynb` no longer reads it: as of 2026-09-17 that notebook loads the certified-optimal 85-type ordering from `../tarjan_reorder/optimal_order_85.csv` instead, for the reason given under the E/I results below.
 
 ### 2. E/I Inhibitory Modulation Analysis
 
@@ -153,8 +188,20 @@ The current executed notebook outputs, using the feedback-arc backbone ordering,
 - Dale-style sender classification: 32 mostly excitatory and 53 mostly inhibitory nodes. The 0.9 threshold used here and the 0.5 threshold in `ee_backbone_analysis.is_excitatory_sender` return the identical 32-node set on this matrix, matching `mij_EE_matrix.csv` exactly; there are no mixed-sign senders in between.
 - Weight normalization scale: approximately 23,940, based on the 95th percentile absolute weight.
 - **Stability and non-normality:** the spectral abscissa runs from -0.4191 at `g=0` to -0.6085 at `g=2`, so the system is asymptotically stable at every gain tested and the observed amplification is genuinely transient rather than truncated exponential growth. The numerical abscissa is +27.20, giving a spectral/numerical gap of about 27.6. That gap is the quantitative signature of non-normality and is a stronger statement than `G_max` alone. `G_max` itself declines slightly with inhibition, from 24.63 at `g=0` to 23.04 at `g=2`, peaking at `t = 1.2` throughout.
-- Inhibitory motif counts relative to the feedback-arc backbone: 285 feedforward edges and 578 feedback edges.
-- Feedforward inhibitory edges are stronger per edge and much more local than feedback edges: mean magnitude 0.00748 vs 0.00444, mean absolute backbone displacement 10.5 vs 21.8, median displacement +7 vs -13. Strong local feedforward inhibition alongside weak long-range feedback inhibition is consistent with the hippocampal-entorhinal microcircuit literature and is checkable against it.
+- Inhibitory motif counts relative to the backbone: **497 feedforward edges and 366 feedback edges.**
+- **Corrected 2026-09-17.** The previous figures, 285 feedforward and 578 feedback, were an
+  artifact of how the backbone was built. That notebook took the 32-type excitatory ordering
+  and appended the 53 inhibitory types after it, which places every inhibitory type behind
+  every excitatory type by fiat and forces **0 of the 171 I->E edges** to count as forward.
+  The notebook now loads the certified-optimal ordering of all 85 types from
+  `../tarjan_reorder/optimal_order_85.csv`, where every type is placed by the weights. Under
+  it the split reverses and 28 of the 171 I->E edges are forward. Everything downstream of the
+  feedforward/feedback split changed with it.
+- Feedforward inhibitory edges are stronger per edge and more local than feedback edges: mean
+  magnitude 0.00786 vs 0.00217 (3.6x), mean absolute backbone displacement 19.4 vs 24.2, median
+  displacement +17 vs -22. Strong local feedforward inhibition alongside weaker long-range
+  feedback inhibition is consistent with the hippocampal-entorhinal microcircuit literature and
+  is checkable against it.
 - Null model terminal peak: observed 0.10749 against a null (n = 500) with mean 0.10952, median 0.11148, sd 0.00615, skew -2.54. The observed value sits at the **22.4th percentile**, empirical p = 0.776 for observed >= null and p = 0.226 for observed <= null. No null draw was unstable. The observed inhibitory target placement is therefore **not distinguishable from chance** on this statistic under the real ordering.
 
 Two notes on that null. First, inference is by empirical p-value `(1 + #{null >= observed}) / (1 + n_null)`, not by z-score: this null is strongly skewed, and the direction of the skew depends on which node the backbone terminates at, so a z-score is not interpretable. At the previous default of `N_NULL = 25` it was also not reproducible — resampling 25 draws from a larger null repeatedly gives z values spanning roughly -0.2 to +34. Second, the null preserves each source's inhibitory out-degree and weight multiset but not target in-degree, so it remains a first-order placement null; a strength-preserving randomization (Milisav et al., 2024, *Nature Computational Science*) would be the stronger comparison.

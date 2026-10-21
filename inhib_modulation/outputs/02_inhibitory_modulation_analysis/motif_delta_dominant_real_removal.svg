@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="434" viewBox="0 0 1000 434" role="img" aria-label="Raw eigenvalue effect of motif-removal">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-size="20" font-weight="700" fill="#111111">Raw eigenvalue effect of motif-removal</text>
+<text x="24" y="80" font-size="16" font-weight="700" fill="#111111">Motif-removal delta dominant real eigenvalue</text>
+<text x="24" y="100" font-size="11" fill="#555555">dominant real after removal minus before removal</text>
+<line x1="586.5" y1="102" x2="586.5" y2="352" stroke="#333333" stroke-width="1"/>
+<line x1="229.0" y1="106" x2="229.0" y2="352" stroke="#d9d9d9" stroke-width="0.8"/>
+<text x="229.0" y="370" text-anchor="middle" font-size="10" fill="#555555">-1.12</text>
+<line x1="586.5" y1="106" x2="586.5" y2="352" stroke="#d9d9d9" stroke-width="0.8"/>
+<text x="586.5" y="370" text-anchor="middle" font-size="10" fill="#555555">0.000</text>
+<line x1="944.0" y1="106" x2="944.0" y2="352" stroke="#d9d9d9" stroke-width="0.8"/>
+<text x="944.0" y="370" text-anchor="middle" font-size="10" fill="#555555">1.12</text>
+<text x="24" y="134" font-size="11" fill="#222222">E E E chains</text>
+<rect x="478.9" y="124.0" width="107.6" height="10" fill="#1f4e79"/>
+<text x="474.9" y="132.0" text-anchor="end" font-size="9.5" fill="#333333">-0.337</text>
+<rect x="304.6" y="137.0" width="281.9" height="10" fill="#b35c1e"/>
+<text x="300.6" y="145.0" text-anchor="end" font-size="9.5" fill="#333333">-0.883</text>
+<text x="24" y="168" font-size="11" fill="#222222">E to E edges</text>
+<rect x="478.9" y="158.0" width="107.6" height="10" fill="#1f4e79"/>
+<text x="474.9" y="166.0" text-anchor="end" font-size="9.5" fill="#333333">-0.337</text>
+<rect x="304.6" y="171.0" width="281.9" height="10" fill="#b35c1e"/>
+<text x="300.6" y="179.0" text-anchor="end" font-size="9.5" fill="#333333">-0.883</text>
+<text x="24" y="202" font-size="11" fill="#222222">SELF</text>
+<rect x="448.0" y="192.0" width="138.5" height="10" fill="#1f4e79"/>
+<text x="444.0" y="200.0" text-anchor="end" font-size="9.5" fill="#333333">-0.434</text>
+<rect x="586.5" y="205.0" width="1.0" height="10" fill="#b35c1e"/>
+<text x="590.5" y="213.0" text-anchor="start" font-size="9.5" fill="#333333">0.000</text>
+<text x="24" y="236" font-size="11" fill="#222222">E I E feedback</text>
+<rect x="586.5" y="226.0" width="13.4" height="10" fill="#1f4e79"/>
+<text x="603.9" y="234.0" text-anchor="start" font-size="9.5" fill="#333333">0.042</text>
+<rect x="586.5" y="239.0" width="54.8" height="10" fill="#b35c1e"/>
+<text x="645.3" y="247.0" text-anchor="start" font-size="9.5" fill="#333333">0.172</text>
+<text x="24" y="270" font-size="11" fill="#222222">E I I E disinhibition</text>
+<rect x="586.5" y="260.0" width="13.4" height="10" fill="#1f4e79"/>
+<text x="603.9" y="268.0" text-anchor="start" font-size="9.5" fill="#333333">0.042</text>
+<rect x="586.5" y="273.0" width="54.8" height="10" fill="#b35c1e"/>
+<text x="645.3" y="281.0" text-anchor="start" font-size="9.5" fill="#333333">0.172</text>
+<text x="24" y="304" font-size="11" fill="#222222">I I I chains</text>
+<rect x="586.2" y="294.0" width="1.0" height="10" fill="#1f4e79"/>
+<text x="582.2" y="302.0" text-anchor="end" font-size="9.5" fill="#333333">-0.001</text>
+<rect x="581.9" y="307.0" width="4.6" height="10" fill="#b35c1e"/>
+<text x="577.9" y="315.0" text-anchor="end" font-size="9.5" fill="#333333">-0.014</text>
+<text x="24" y="338" font-size="11" fill="#222222">I to I edges</text>
+<rect x="586.2" y="328.0" width="1.0" height="10" fill="#1f4e79"/>
+<text x="582.2" y="336.0" text-anchor="end" font-size="9.5" fill="#333333">-0.001</text>
+<rect x="581.9" y="341.0" width="4.6" height="10" fill="#b35c1e"/>
+<text x="577.9" y="349.0" text-anchor="end" font-size="9.5" fill="#333333">-0.014</text>
+<rect x="229" y="384" width="12" height="12" fill="#1f4e79"/>
+<text x="247" y="394" font-size="10.5" fill="#333333">with_self</text>
+<rect x="334" y="384" width="12" height="12" fill="#b35c1e"/>
+<text x="352" y="394" font-size="10.5" fill="#333333">no_self</text>
+<text x="24" y="412" font-size="11" fill="#555555">Negative values mean removal lowered the dominant real eigenvalue; positive values mean removal raised it.</text>
+</svg>

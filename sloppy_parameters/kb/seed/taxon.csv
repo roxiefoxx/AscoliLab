@@ -1,0 +1,27 @@
+code,name,rank,parent,definition,locator
+GABA_IN,GABAergic interneuron,root,,Local-circuit or projecting GABAergic nonpyramidal neuron,p.1621
+PERISOMATIC,Perisomatic-targeting interneuron,class,GABA_IN,Axon targets soma / proximal dendrites / AIS of principal cells,p.1622 Fig.2
+AAC,Axo-axonic (chandelier) cell,family,PERISOMATIC,Boutons in cartridges exclusively on axon initial segments; PV+; SATB1-,p.1621-1623
+BASKET,"Basket cell, molecular subtype unresolved",family,PERISOMATIC,Perisomatic basket morphology with PV/CCK identity not established by the source label. Inherits only morphology-level claims,design rule 11 (project knowledge)
+PVBC,PV-expressing basket cell,subtype,BASKET,Fast-spiking PV+ basket cell; MGE-derived,p.1623-1624
+CCKBC,CCK-expressing basket cell,subtype,BASKET,CCK+ CB1R+ basket cell; CGE-derived; asynchronous release,p.1624-1626
+DENDRITIC,Dendrite-targeting interneuron,class,GABA_IN,Axon targets principal-cell dendrites,p.1625 Fig.3
+BIC,Bistratified cell,family,DENDRITIC,PV+/SST+/NPY+; axon split between s.o. and s.r.; avoids s.l.m.,p.1624
+OLM_FAMILY,O-LM / HIPP family,family,DENDRITIC,SST+ feedback interneurons with soma in s.o. (CA) or hilus (DG) and axon in the distal-dendrite termination zone of entorhinal input,p.1627-1628
+OLM,Oriens lacunosum-moleculare cell,subtype,OLM_FAMILY,Soma/dendrites in s.o./alveus; >90% of axon in s.l.m.,p.1627
+HIPP,Hilar perforant-path-associated cell,subtype,OLM_FAMILY,DG homolog of O-LM; soma/dendrites in hilus; axon in outer two-thirds of molecular layer,p.1627
+CCK_DT,CCK dendrite-targeting interneuron,family,DENDRITIC,CCK+ (typically CB1R+) cells whose axons co-align with specific excitatory afferents,p.1626-1627
+SCA,Schaffer collateral-associated cell,subtype,CCK_DT,Axon in s.r. (and less s.o.); oblique and basal dendrites,p.1626
+ADI,Apical dendrite-innervating cell,subtype,CCK_DT,Like SCA but targets the main apical shaft,p.1626
+PPA,Perforant path-associated cell,subtype,CCK_DT,Axon in s.l.m. and across the fissure into the DG molecular layer,p.1626
+MFA,Mossy fiber-associated cell,subtype,CCK_DT,CA3 CCK+ cell associated with the mossy-fiber pathway; grouped with CCKBCs in Tricoire cluster 6,p.1657
+HICAP,Hilar commissural-associational pathway-related cell,family,DENDRITIC,DG cell targeting proximal granule-cell dendrites in the inner molecular layer; may equal DG CCKBC but the term may span several subtypes,p.1625-1626
+NGF_FAMILY,Neurogliaform family,family,DENDRITIC,NPY+ late-spiking cells with dense local axon and slow volume transmission,p.1628-1629
+NGFC,Neurogliaform cell,subtype,NGF_FAMILY,Soma in s.l.m. (CA1) or outer molecular layer (DG); GABAA-slow + GABAB output,p.1628
+IVY,Ivy cell,subtype,NGF_FAMILY,MGE-derived; soma near s.p.; axon on proximal oblique/basal dendrites; Reelin-,p.1629
+TRILAMINAR,Trilaminar cell,family,DENDRITIC,Listed as a major CA1 class in Fig. 1 without further description in the review,p.1621 Fig.1
+DT_UNRESOLVED,"Dendrite-targeting, family unresolved",family,DENDRITIC,Placeholder for named types whose family cannot be read from the review,curator
+PROJECTING,Long-range / back-projecting interneuron,class,GABA_IN,Axon leaves the home subfield (e.g. CA1 back-projection to DG/CA3); Tricoire cluster 5,p.1627 p.1657 p.1699
+ISI,Interneuron-selective interneuron,class,GABA_IN,VIP and/or CR cells preferentially innervating other interneurons. No netlist population maps here,p.1629-1630
+UNRESOLVED,"GABAergic, family unresolved",class,GABA_IN,No family assignment possible from the label or the review (e.g. MEC types),curator
+PRINCIPAL,Principal (glutamatergic) cell,root,,Used only as a postsynaptic target class in connectivity claims,curator

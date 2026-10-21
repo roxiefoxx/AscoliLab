@@ -312,9 +312,56 @@ that resolved inhibition lands back on E (`M_EI`).* The blocks appear in the
 formula in **reverse causal order**, which is exactly why the notation reads
 backwards to intuition.
 
-The fix is not to change either function — both are correct — but to stop using
-the same four letters for two things. Arrow names (`E_to_I`) for anything a human
-reads; bracket names (`M[E,I]`) for the algebra; never a bare `EI`.
+### Resolved, 2026-09-17
+
+Neither function was wrong, so neither formula changed. What changed is that the
+**partition sense no longer uses two-letter names at all**. The rule adopted is:
+
+> `M[np.ix_(A, B)]` is named `M_A_from_B`.
+
+First letter = row = receiver; second = column = source; `from` makes the source
+explicit, and the name order matches the slice order so there is no mental flip.
+It also makes conformability readable — in
+`M_E_from_I @ resolvent @ M_I_from_E` the touching letters must match, which is
+the causal chain E ← I ← E.
+
+Because every partition-sense `M_EI` / `M_IE` is gone from executable code, a
+bare `EI` now has exactly **one** meaning left in this repo: the arrow sense,
+E source → I receiver. That is what `block_view`, `zero_block`, `block_meaning`,
+`block_perturbation_table`, `source_receiver_block_view` and
+`jacobian_core.ablate_block` all use, consistently. The collision is gone.
+
+Renamed:
+
+| File | Functions |
+|---|---|
+| `schur_decomp/inhibitory_schur_modulation_script.py` | `schur_effective_E`, `neumann_ii_model_selection`, `disinhibition_sources` |
+| `inhib_modulation/notebooks/inhibitory_modulation.py` | `BlockMatrices.ei`/`.ie` → `.e_from_i`/`.i_from_e`, `make_ei_blocks`, `summarize_blocks`, `effective_inhibitory_feedback`, `chain_contributions`, `neumann_series_feedback`, `scale_block`, `assemble_blocks`, `ablation_analysis`, `null_model_chain_significance`, `schur_effective_e`, `neumann_ii_model_selection`, `disinhibition_sources` |
+
+Notes on the change:
+
+- **Numerically inert.** A 19-group fingerprint over both pipelines (block
+  slices, Schur complements, Neumann series, chain contributions, ablation,
+  perturbation, disinhibition ranking) is identical before and after.
+- `M_EI` / `M_IE` survive **only** in docstrings and notebook prose as the
+  textbook citation, each sitting next to its `_from_` translation.
+- `scale_block` accepts both spellings: `BLOCK_NAME_TO_FIELD` maps legacy
+  `EI`/`IE` onto the same blocks as `E_from_I`/`I_from_E`, so older calls keep
+  working.
+- Two **output labels changed** — `summarize_blocks` now emits
+  `EE / E_from_I / I_from_E / II`, and `ablation_analysis` emits
+  `ablate_E_from_I` / `ablate_I_from_E`. Notebook `03` and notebook `02` need a
+  re-run to regenerate those tables.
+- `EE` and `II` were deliberately left alone: a doubled letter cannot be
+  misread, so renaming them would be churn without benefit.
+
+### One caution that outlives the rename
+
+It is tempting to rely on the shape mismatch as a safety net. That protection is
+a property of **this dataset** (32 E vs 53 I), not of the code. Wherever the E
+and I counts are equal — a balanced subsample, a motif block with an even split
+— a swap becomes silently valid and returns a wrong answer with no error. The
+names are the only durable guard.
 
 ---
 
@@ -323,7 +370,7 @@ reads; bracket names (`M[E,I]`) for the algebra; never a bare `EI`.
 | # | Item | Status | Evidence |
 |---|---|---|---|
 | 1 | Pin down the orientation of `analysis_blocks` in the motif `.npz` | ❌ **Not done, and now wider** | `load_schur_blocks` docstring still reads *"callers choose any orientation transpose"*. The script is now duplicated into `motif_analysis/`, so the notebook flag `TRANSPOSE_SOURCE_TARGET_BLOCKS` exists in four notebooks instead of two. |
-| 2 | Rename the `EI`/`IE` collision | ❌ **Not done** | `block_view` still returns `"EI": M[np.ix_(I, E)]` at `inhibitory_schur_modulation_script.py:50`, while `schur_effective_E:133` still uses the opposite `M_EI`. |
+| 2 | Rename the `EI`/`IE` collision | ✅ **Done 2026-09-17** | Partition-sense names replaced by `M_A_from_B` across both modules; arrow sense left untouched, so a bare `EI` now has one meaning. Verified numerically inert. See §5. |
 | 3 | Decide EE-backbone convention | ⚠️ **Half done — and the half that is done was done well** | `ei_backbone_analysis_helpers.py:13` (`load_signed_matrix`) now takes an explicit `csv_orientation="source_rows"` (line 15) and transposes at line 40. The **EE** side (`ee_backbone_analysis.py`) is still `[pre, post]` with no note — deferred by your decision, pending the stochastic revamp. |
 | 4 | Give `schur_decomp(transpose=True)` an explicit orientation parameter | ❌ **Not done** | `schur_analysis_utils_script.py:107` still has the bare `transpose: bool = True` default; `prepare_left_action_schur:790` still passes `transpose=True` positionally. |
 | 5 | Adopt `load_inputs`-style validation across loaders | ✅ **Superseded — better than proposed** | `jacobian_core.assert_post_pre:115` implements the Dale's-law sign oracle, and `load_jacobian_data:169` calls it under `verify_orientation=True`, storing the result on `JacobianData.orientation_check`. Currently used by `jac/01`–`jac/06` only; the other eight loaders still assume. See §0 for how to extend it. |
@@ -333,9 +380,8 @@ reads; bracket names (`M[E,I]`) for the algebra; never a bare `EI`.
 1. **Motif block loaders** (item 1) — now four notebooks deep, and it is the only
    remaining case where the contract lives outside the code.
 2. **Triad `motif_id` convention** (§4) — the other label-not-number risk.
-3. **`EI`/`IE` rename** (item 2) — no wrong results today, but it is the trap most
-   likely to catch a reader.
-4. **Extend `assert_post_pre` to the eight assuming loaders** (item 5, step 2 in
+3. **Extend `assert_post_pre` to the eight assuming loaders** (item 5, step 2 in
    §0) — two lines each, no behavior change on correct data.
-5. **`schur_decomp(transpose=)`** (item 4) — lowest urgency; correct today, but it
+4. **`schur_decomp(transpose=)`** (item 4) — lowest urgency; correct today, but it
    is the seam the original retrofit left behind.
+5. ~~`EI`/`IE` rename~~ — done, see §5.

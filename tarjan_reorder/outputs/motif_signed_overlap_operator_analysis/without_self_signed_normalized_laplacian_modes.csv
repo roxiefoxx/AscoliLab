@@ -1,0 +1,9 @@
+laplacian_kind,self_loops,mode,laplacian_eigenvalue,top_motif_index,top_motif_acronym,top_superpattern,top_loading,positive_motif_count,negative_motif_count
+signed_normalized,zero,1,0.0063518673490912175,1789,EC-LI/II-MP | EC-LII/III-PT | MEC-LIII-SupMIN,300,0.1688473286669211,1697,303
+signed_normalized,zero,2,0.023535468875819116,1568,DG-AIPRIM | DG-Gr | DG-SemiGr,210,0.0960489855741481,1618,382
+signed_normalized,zero,3,0.035783253291049644,1568,DG-AIPRIM | DG-Gr | DG-SemiGr,210,-0.1224152275593076,1180,820
+signed_normalized,zero,4,0.04430464037516646,1786,EC-LI/II-MP | EC-LII/III-PT | MEC-LII-St,300,-0.16536922455324035,861,1139
+signed_normalized,zero,5,0.05727787152092174,330,CA1-BasCCK | CA1-P | CA1-TriLam,210,0.15750293306669086,850,1150
+signed_normalized,zero,6,0.08430864997893299,1270,CA2-P | CA3-P | CA3c-P,300,-0.13406468807116284,741,1259
+signed_normalized,zero,7,0.10958762654807735,1610,DG-AxAxo | DG-Gr | DG-Mossy,300,0.10997118556267908,892,1108
+signed_normalized,zero,8,0.1457623284005688,1525,CA3c-P | DG-AxAxo | DG-Gr,210,-0.13364972257003288,1157,843

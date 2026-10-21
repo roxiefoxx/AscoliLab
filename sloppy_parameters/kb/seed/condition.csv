@@ -1,0 +1,15 @@
+code,kind,modulator,description
+ACh,neuromodulator,ACh,Cholinergic tone (septal input; muscarinic and nicotinic receptors)
+5-HT,neuromodulator,5-HT,Serotonergic tone (raphe input)
+DA,neuromodulator,DA,Dopaminergic tone
+eCB,neuromodulator,eCB,Endocannabinoid release (DSI / mGluR-driven / tonic)
+opioid,neuromodulator,opioid,Opioid peptides (mu / delta / kappa)
+CCK,neuromodulator,CCK,Cholecystokinin peptide release
+OXT,neuromodulator,OXT,Oxytocin
+GABA_B,neuromodulator,GABA,Ambient / spillover GABA acting on GABAB receptors
+theta,oscillation,,Theta rhythm (4-10 Hz)
+gamma,oscillation,,Gamma rhythm
+SWR,oscillation,,Sharp wave-ripples
+trains,activity,,Repetitive / high-frequency afferent activation
+CFC,behavior,,Contextual fear conditioning
+navigation,behavior,,Spatial navigation / place-cell coding

@@ -53,6 +53,110 @@ import pandas as pd
 
 from ee_backbone_analysis import BackboneData, EPS, total_score
 
+# Corrections pass 2026-09-17: the exact Linear Ordering Problem solver lives in
+# tarjan_reorder/optimal_ordering_lop.py and is the single source of truth for
+# every inferential ordering.  Imported by path so the two directories stay
+# independent of install layout.
+import importlib.util as _ilu, pathlib as _pl
+
+_LOP_PATH = _pl.Path(__file__).resolve().parent.parent / "tarjan_reorder" / "optimal_ordering_lop.py"
+_spec = _ilu.spec_from_file_location("optimal_ordering_lop", _LOP_PATH)
+_lop_mod = _ilu.module_from_spec(_spec)
+_spec.loader.exec_module(_lop_mod)
+LOP = _lop_mod.LOP
+rewire_degree_and_dyad_preserving = _lop_mod.rewire_degree_and_dyad_preserving
+dyad_census = _lop_mod.dyad_census
+
+_LOP_CACHE: Dict[int, "LOP"] = {}
+
+
+def _lop_for(n: int) -> "LOP":
+    """Triangle constraints are weight-independent; build the matrix once per n."""
+    if n not in _LOP_CACHE:
+        _LOP_CACHE[n] = LOP(n)
+    return _LOP_CACHE[n]
+
+
+def exact_lop_order(
+    weights: np.ndarray,
+    weighted: bool = True,
+    time_limit: float = 300.0,
+) -> Tuple[List[int], Dict[str, float]]:
+    """Certified-optimal ordering of ``weights`` (sender rows, receiver columns).
+
+    Solves the Linear Ordering Problem exactly with HiGHS via
+    ``scipy.optimize.milp``, triangle constraints and ``mip_rel_gap=0.0``.  At
+    n = 32 and n = 85 this certifies in under a second, so no "upper bound on
+    the true optimum" caveat is needed.
+
+    This replaces the greedy Eades-Lin-Smyth + refinement search for every
+    inferential use.  A heuristic on the observed graph and a heuristic on the
+    null graph do not cancel -- the gap to the optimum differs between the two
+    ensembles -- which is what inflated the original z = +3.15.
+    """
+    A = np.abs(np.asarray(weights, dtype=float)).copy()
+    np.fill_diagonal(A, 0.0)
+    if not weighted:
+        A = (A > 0).astype(float)
+    res = _lop_for(len(A)).solve(A, time_limit=time_limit)
+    return [int(i) for i in res["order"]], res
+
+
+def dyad_preserving_null_forward_fraction(
+    weights: np.ndarray,
+    observed_fraction: float,
+    n_null: int = 100,
+    random_seed: int = 2026,
+    time_limit: float = 60.0,
+    eps: float = EPS,
+) -> Dict[str, float]:
+    """Null forward-weight fraction under a degree- AND dyad-preserving rewire.
+
+    Replaces the random-permutation null, which asks only "is this ordering
+    better than a random ordering" -- a question the answer to which is yes for
+    any graph with any feedforward structure at all, and which therefore tests
+    nothing about the connectome.  The surrogate here preserves every node's
+    in-degree and out-degree *and* the mutual/asymmetric dyad census, then is
+    ordered by the same exact solver used on the observed graph.
+
+    A plain directed edge swap destroys roughly 60% of the mutual dyads, and a
+    mutual dyad contributes one backward edge under ANY ordering, so that
+    surrogate is not a null for the quantity being measured.
+    """
+    A = np.abs(np.asarray(weights, dtype=float)).copy()
+    np.fill_diagonal(A, 0.0)
+    obs_census = dyad_census(A)
+    rng = np.random.default_rng(random_seed)
+    fractions = np.empty(n_null)
+    bounds = np.empty(n_null)
+    preserved = np.empty(n_null, dtype=bool)
+    for draw in range(n_null):
+        R = rewire_degree_and_dyad_preserving(A, rng)
+        preserved[draw] = dyad_census(R) == obs_census
+        _, res = exact_lop_order(R, time_limit=time_limit)
+        fractions[draw] = res["forward"]
+        bounds[draw] = res["upper_bound"]
+
+    n_at_least = int(np.sum(fractions >= observed_fraction))
+    n_at_least_ub = int(np.sum(bounds >= observed_fraction))
+    sd = float(fractions.std(ddof=1))
+    sd_ub = float(np.nanstd(bounds, ddof=1))
+    return {
+        "null_n": n_null,
+        "null_model": "in/out-degree and dyad-census preserving rewire, exact LOP ordering",
+        "null_dyad_census_preserved": bool(preserved.all()),
+        "null_mean_forward_fraction": float(fractions.mean()),
+        "null_sd_forward_fraction": sd,
+        "null_max_forward_fraction": float(fractions.max()),
+        "z_forward_fraction": (observed_fraction - float(fractions.mean())) / sd if sd > 0 else float("nan"),
+        "empirical_p_forward_fraction": (1 + n_at_least) / (1 + n_null),
+        "null_mean_upper_bound": float(np.nanmean(bounds)),
+        "null_sd_upper_bound": sd_ub,
+        "z_vs_null_upper_bound": (observed_fraction - float(np.nanmean(bounds))) / sd_ub if sd_ub > 0 else float("nan"),
+        "empirical_p_vs_null_upper_bound": (1 + n_at_least_ub) / (1 + n_null),
+    }
+
+
 
 @dataclass
 class OrderingResult:
@@ -389,20 +493,43 @@ def feedback_arc_ordering(
     n_restarts: int = 20,
     random_seed: int = 2026,
     eps: float = EPS,
+    method: str = "exact",
+    time_limit: float = 300.0,
 ) -> OrderingResult:
-    """Search for a vertex ordering maximizing total forward-pointing edge weight.
+    """Vertex ordering maximizing total forward-pointing edge weight.
 
-    Combines SCC decomposition (exact), a weighted Eades-Lin-Smyth greedy
-    construction, and gain-aware local refinement, following Vahidi (2025).
+    ``method="exact"`` (the default since the 2026-09-17 corrections pass) solves
+    the Linear Ordering Problem to certified optimality with HiGHS.  The result
+    carries ``metrics["lop_certified"]`` and ``metrics["lop_gap"]`` so a caller
+    can check the certificate rather than take it on trust.
 
-    Refinement converges to a local optimum of the reinsertion neighbourhood, so the
-    greedy construction is supplemented with ``n_restarts`` randomized starts and the
-    best ordering is kept. At n = 32 this costs a fraction of a second; set
-    ``n_restarts=0`` to use the greedy construction alone.
+    ``method="heuristic"`` restores the previous search -- SCC decomposition,
+    weighted Eades-Lin-Smyth construction, gain-aware refinement, randomized
+    restarts, following Vahidi (2025).  It is kept for the method-comparison
+    notebook, whose whole point is to compare heuristics against the optimum.
+    It must not be used on either side of a null test.
     """
     weights = data.transition_weights
     n = weights.shape[0]
     rng = np.random.default_rng(random_seed)
+
+    if method == "exact":
+        order, res = exact_lop_order(weights, time_limit=time_limit)
+        metrics = ordering_metrics(order, weights, eps=eps)
+        metrics["lop_forward_fraction"] = float(res["forward"])
+        metrics["lop_upper_bound"] = float(res["upper_bound"])
+        metrics["lop_gap"] = float(res["gap"]) if res["gap"] is not None else float("nan")
+        metrics["lop_certified"] = bool(res["certified"])
+        return OrderingResult(
+            order=order,
+            labels=list(data.excitatory_nodes),
+            metrics=metrics,
+            scc_sizes=[len(c) for c in strongly_connected_components(weights, eps=eps)],
+            refinement_passes=0,
+            n_restarts=0,
+        )
+    if method != "heuristic":
+        raise ValueError("method must be 'exact' or 'heuristic'")
 
     if use_scc_decomposition:
         components = strongly_connected_components(weights, eps=eps)

@@ -1,0 +1,33 @@
+position,node,node_index
+0,EC LI II Pyramidal Fan,11
+1,EC LI II Multipolar Pyramidal,10
+2,EC LII III Pyramidal Tripolar,12
+3,MEC LII Stellate,24
+4,EC LIII Pyramidal Stellate,14
+5,CA3 Pyramidal,4
+6,CA3c Pyramidal,5
+7,CA2 Pyramidal,2
+8,CA1 Radiatum Giant,1
+9,CA1 Pyramidal,0
+10,EC LIV VI Deep Multipolar Principal,17
+11,EC LIII V Bipolar Pyramidal,16
+12,MEC LII III Pyramidal Multiform,22
+13,LEC LIII Complex Pyramidal,19
+14,EC LV Deep Pyramidal,18
+15,MEC LV Pyramidal,28
+16,MEC LV Superficial Pyramidal,29
+17,MEC LV Multipolar Pyramidal,27
+18,MEC LIII Bipolar Complex Pyramidal,25
+19,MEC LIII Complex Pyramidal,26
+20,MEC LII Oblique Pyramidal,23
+21,LEC LVI Multipolar Pyramidal,21
+22,LEC LIII Multipolar Principal,20
+23,EC LIII Stellate,15
+24,EC LIII Pyramidal,13
+25,SUB CA1 Projecting Pyramidal,31
+26,MEC LV VI Pyramidal Polymorphic,30
+27,DG Semilunar Granule,9
+28,DG Granule,6
+29,DG Mossy,8
+30,DG Hilar Ectopic Granule,7
+31,CA3 Granule,3

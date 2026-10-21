@@ -23,6 +23,12 @@ from scipy.stats import kendalltau
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import reverse_cuthill_mckee
 
+from optimal_ordering_lop import (
+    LOP as _LOP,
+    rewire_degree_and_dyad_preserving as _rewire_dyad,
+    dyad_census as _dyad_census,
+)
+
 DEFAULT_PERCENTILES = (0, 10, 25, 50, 75)
 DEFAULT_BENCHMARK_SIZES = (30, 60, 120)
 REGION_ORDER = {"EC": 0, "DG": 1, "CA3": 2, "CA2": 3, "CA1": 4, "SUB": 5}
@@ -562,6 +568,60 @@ def fig7_panel_metrics(panels):
     return frame
 
 
+# --------------------------------------------------------------------------
+# Exact ordering (corrections pass, 2026-09-17)
+#
+# The greedy/Tarjan heuristic below is retained for the method-comparison table
+# and the synthetic benchmark, where the point is to compare heuristics.  Every
+# *inferential* use -- the observed ordering and the null ordering alike -- now
+# goes through the exact Linear Ordering Problem solver in
+# ``optimal_ordering_lop`` (HiGHS via ``scipy.optimize.milp``, triangle
+# constraints, ``mip_rel_gap=0.0``).
+#
+# Using a heuristic on the observed side and a heuristic on the null side does
+# not cancel: the gap between heuristic and optimum differs between the two
+# ensembles, which is what inflated the old z = +3.15.
+# --------------------------------------------------------------------------
+_LOP_CACHE = {}
+
+
+def _lop_for(n):
+    """Triangle-constraint matrix is weight-independent; build it once per n."""
+    if n not in _LOP_CACHE:
+        _LOP_CACHE[n] = _LOP(n)
+    return _LOP_CACHE[n]
+
+
+def exact_lop_order(M, weighted=True, time_limit=300.0, return_result=False):
+    """Certified-optimal ordering of ``M`` (post-rows / pre-columns).
+
+    ``M[post, pre]`` is the weight pre -> post, so the solver's ``Aw[i, j] =
+    weight i -> j`` is ``abs(M).T``.  Returns node indices in the same
+    convention ``tarjan_order`` uses, so it is a drop-in replacement.
+    """
+    A = np.abs(np.asarray(M, dtype=float)).T.copy()
+    np.fill_diagonal(A, 0.0)
+    if not weighted:
+        A = (A > 0).astype(float)
+    res = _lop_for(len(A)).solve(A, time_limit=time_limit)
+    order = [int(i) for i in res["order"]]
+    return (order, res) if return_result else order
+
+
+def dyad_preserving_rewire(M, rng, mult=8):
+    """In-degree, out-degree AND dyad-census preserving rewire of ``M``.
+
+    ``M`` is post-rows / pre-columns; the rewire works in pre -> post
+    orientation and is transposed back.  A plain directed edge swap destroys
+    about 60% of the 422 mutual dyads, and a mutual dyad contributes one
+    backward edge under ANY ordering -- so the old surrogate was not a null for
+    the quantity a feedforward-ordering statistic measures.
+    """
+    A = np.abs(np.asarray(M, dtype=float)).T.copy()
+    np.fill_diagonal(A, 0.0)
+    return _rewire_dyad(A, rng, mult=mult).T
+
+
 def _degree_preserving_rewire(M, rng, swaps_per_edge=5):
     """Directed double-edge swaps preserving every node's in/out degree and edge count."""
     B=np.abs(M)>0; np.fill_diagonal(B,False)
@@ -581,27 +641,79 @@ def _degree_preserving_rewire(M, rng, swaps_per_edge=5):
     return X, accepted
 
 
-def ordering_null_test(M, labels, n_null=100, seed=20230818):
-    """Compare observed optimized structure with directed degree-preserving rewires."""
-    rng=np.random.default_rng(seed)
-    observed_order=tarjan_order(M,labels,True)[0]
-    obs=ordering_metrics(M,observed_order,int(np.count_nonzero(np.triu(np.abs(M)>0,1))),0)
-    rows=[]
+def ordering_null_test(M, labels, n_null=100, seed=20230818, time_limit=60.0,
+                       null_time_limit=60.0):
+    """Observed vs degree- AND dyad-preserving rewires, exact solver on both sides.
+
+    Corrections pass 2026-09-17.  Two changes from the original:
+
+    1. ``exact_lop_order`` replaces the modified-Tarjan heuristic on the
+       observed graph and on every surrogate.
+    2. ``dyad_preserving_rewire`` replaces the plain directed edge swap.
+
+    The null solves are time-limited, so each surrogate also carries the MILP
+    dual bound.  ``*_upper`` columns hold the ordering metrics recomputed from
+    the surrogate's *bound* rather than its incumbent; comparing a certified
+    observed optimum against time-limited null incumbents would overstate
+    significance, so the conservative comparison is the one to report.
+    """
+    rng = np.random.default_rng(seed)
+    observed_order, obs_res = exact_lop_order(M, time_limit=time_limit,
+                                              return_result=True)
+    obs = ordering_metrics(M, observed_order,
+                           int(np.count_nonzero(np.triu(np.abs(M) > 0, 1))), 0.0)
+    obs_mutual, obs_asym = _dyad_census(np.abs(M))
+    rows = []
     for k in range(n_null):
-        X,accepted=_degree_preserving_rewire(M,rng)
-        order=tarjan_order(X,labels,True)[0]
-        met=ordering_metrics(X,order,int(np.count_nonzero(np.triu(np.abs(X)>0,1))),0)
-        rows.append({"null_repeat":k,"accepted_edge_swaps":accepted,**met})
-    raw=pd.DataFrame(rows); tests=[]
-    for metric,direction in [("recurrency_excess_ratio","lower"),("order_index","higher"),
-                             ("feedforward_edge_fraction","higher"),("weighted_feedforward_fraction","higher")]:
-        vals=raw[metric].to_numpy(); value=float(obs[metric])
-        extreme=np.sum(vals<=value) if direction=="lower" else np.sum(vals>=value)
-        tests.append({"metric":metric,"better_direction":direction,"observed":value,
-                      "null_mean":float(vals.mean()),"null_sd":float(vals.std(ddof=1)),
-                      "z_score":float((value-vals.mean())/vals.std(ddof=1)) if vals.std(ddof=1)>0 else np.nan,
-                      "empirical_p_one_sided":float((extreme+1)/(n_null+1)),"n_null":n_null})
-    return raw,pd.DataFrame(tests)
+        X = dyad_preserving_rewire(M, rng)
+        order, res = exact_lop_order(X, time_limit=null_time_limit,
+                                     return_result=True)
+        met = ordering_metrics(X, order,
+                               int(np.count_nonzero(np.triu(np.abs(X) > 0, 1))), 0.0)
+        mutual, asym = _dyad_census(np.abs(X))
+        rows.append({"null_repeat": k,
+                     "mutual_dyads": mutual, "asymmetric_edges": asym,
+                     "dyad_census_preserved": bool(mutual == obs_mutual
+                                                   and asym == obs_asym),
+                     "lop_forward_fraction": float(res["forward"]),
+                     "lop_upper_bound": float(res["upper_bound"]),
+                     "lop_gap": float(res["gap"]) if res["gap"] is not None else np.nan,
+                     "lop_certified": bool(res["certified"]),
+                     **met})
+    raw = pd.DataFrame(rows)
+    tests = []
+    for metric, direction in [("recurrency_excess_ratio", "lower"),
+                              ("order_index", "higher"),
+                              ("feedforward_edge_fraction", "higher"),
+                              ("weighted_feedforward_fraction", "higher")]:
+        vals = raw[metric].to_numpy()
+        value = float(obs[metric])
+        sd = vals.std(ddof=1)
+        extreme = np.sum(vals <= value) if direction == "lower" else np.sum(vals >= value)
+        tests.append({"metric": metric, "better_direction": direction,
+                      "observed": value,
+                      "null_mean": float(vals.mean()), "null_sd": float(sd),
+                      "z_score": float((value - vals.mean()) / sd) if sd > 0 else np.nan,
+                      "empirical_p_one_sided": float((extreme + 1) / (n_null + 1)),
+                      "n_null": n_null})
+
+    # conservative comparison: certified observed optimum vs null dual bounds
+    ub = raw["lop_upper_bound"].to_numpy()
+    ub = ub[np.isfinite(ub)]
+    if len(ub) > 1:
+        sd = ub.std(ddof=1)
+        obs_ff = float(obs_res["forward"])
+        tests.append({"metric": "weighted_feedforward_fraction_vs_null_upper_bound",
+                      "better_direction": "higher", "observed": obs_ff,
+                      "null_mean": float(ub.mean()), "null_sd": float(sd),
+                      "z_score": float((obs_ff - ub.mean()) / sd) if sd > 0 else np.nan,
+                      "empirical_p_one_sided": float((np.sum(ub >= obs_ff) + 1) / (len(ub) + 1)),
+                      "n_null": int(len(ub))})
+    tests = pd.DataFrame(tests)
+    tests.attrs["observed_certified"] = bool(obs_res["certified"])
+    tests.attrs["observed_lop_forward_fraction"] = float(obs_res["forward"])
+    tests.attrs["observed_dyad_census"] = (obs_mutual, obs_asym)
+    return raw, tests
 
 
 def threshold_sweep(M, labels, percentiles):
@@ -785,7 +897,7 @@ def plot_outputs(M, labels, scores, orders, sweep, details, R, U, benchmark_summ
         ax.axvline(test_index.loc[metric,"observed"],color="#b22222",lw=2,label="observed")
         ax.set_title(f"{metric}\np={test_index.loc[metric,'empirical_p_one_sided']:.3g}")
         ax.legend()
-    fig.suptitle("Degree-preserving topology null: Modified Tarjan"); fig.tight_layout(); fig.savefig(figdir/"ordering_null_test.png",dpi=180); plt.close(fig)
+    fig.suptitle("Degree- and dyad-preserving topology null: exact LOP ordering"); fig.tight_layout(); fig.savefig(figdir/"ordering_null_test.png",dpi=180); plt.close(fig)
 
     fig,axes=plt.subplots(2,2,figsize=(12,8))
     lt=lapbridge["thresholds"]

@@ -1,0 +1,481 @@
+path_rank,path_signature,basis,mode,eigenvalue_real,participation
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,1,-9.992007221626409e-16,0.08288893373929397
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,2,-0.6104634843138952,0.20052276262783397
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,3,-0.8322921612271504,0.0019481638032338923
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,4,-0.9025989586161415,0.04369646278784676
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,5,-0.9487609488023028,0.0662864467240028
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,6,-0.9487609488023028,0.0662864467240028
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,7,-0.9516746643450346,0.14263742665766532
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,8,-0.9702253509237382,0.12560232794237752
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,9,-0.9702253509237382,0.12560232794237752
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,10,-0.9866078325306816,0.03055407004371053
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,11,-0.9928227535389389,0.11027210458219265
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,12,-0.9928227535389389,0.11027210458219265
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,1,-1.2212453270876722e-15,0.08288893373929415
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,2,-0.6104634843138952,0.11809037967473912
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,3,-0.9702253509237397,0.03115034096936506
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,4,-0.9702253509237397,0.158256246904256
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,5,-1.3266172069274058,0.1921690044948614
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,6,-1.1913331146904258,0.010031525994223613
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,7,-0.8322921612271624,0.014334544888754918
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,8,-0.902598958616142,0.005902375854104816
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,9,-1.0448741970583018,0.009914231156577477
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,10,-1.0448741970583018,0.03167985826615077
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,11,-1.06417341907518,0.043980439242752925
+1,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,12,-1.06417341907518,0.09746866807842179
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,1,-9.992007221626409e-16,0.05198880825887501
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,2,-0.6104634843138952,0.12393721151977594
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,3,-0.8322921612271504,0.007514911570074383
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,4,-0.9025989586161415,0.00017808254060000268
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,5,-0.9487609488023028,0.0003771066025200024
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,6,-0.9487609488023028,0.0003771066025200024
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,7,-0.9516746643450346,0.006278295501800817
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,8,-0.9702253509237382,0.06799364320396774
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,9,-0.9702253509237382,0.06799364320396774
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,10,-0.9866078325306816,0.0001256943780531219
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,11,-0.9928227535389389,0.06409654821777046
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,12,-0.9928227535389389,0.06409654821777046
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,1,-1.2212453270876722e-15,0.05198880825887528
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,2,-0.6104634843138952,0.07217716002045153
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,3,-0.9702253509237397,0.006155667659113102
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,4,-0.9702253509237397,0.1053188279195682
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,5,-1.3266172069274058,0.12221039086390934
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,6,-1.1913331146904258,0.1472381931019916
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,7,-0.8322921612271624,0.00618539584844459
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,8,-0.902598958616142,0.08994857216259658
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,9,-1.0448741970583018,0.0401207452538891
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,10,-1.0448741970583018,0.0968294343226082
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,11,-1.06417341907518,0.013347860877682336
+2,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,12,-1.06417341907518,0.012872390584349098
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,1,-9.992007221626409e-16,0.08278138929130237
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,2,-0.6104634843138952,0.20024853308129129
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,3,-0.8322921612271504,0.0016927322891157333
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,4,-0.9025989586161415,0.0435554238923813
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,5,-0.9487609488023028,0.06627902818970685
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,6,-0.9487609488023028,0.06627902818970685
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,7,-0.9516746643450346,0.14262996941173067
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,8,-0.9702253509237382,0.12548382404972228
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,9,-0.9702253509237382,0.12548382404972228
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,10,-0.9866078325306816,0.03054421913585763
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,11,-0.9928227535389389,0.11025571469381744
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,12,-0.9928227535389389,0.11025571469381744
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,1,-1.2212453270876722e-15,0.08278138929130253
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,2,-0.6104634843138952,0.11797196475659406
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,3,-0.9702253509237397,0.031058315320787577
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,4,-0.9702253509237397,0.15700619386902867
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,5,-1.3266172069274058,0.1921775235544165
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,6,-1.1913331146904258,0.00032040195825502253
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,7,-0.8322921612271624,0.011922418891450584
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,8,-0.902598958616142,0.0027273192795218555
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,9,-1.0448741970583018,0.00780187127522488
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,10,-1.0448741970583018,0.03151779075243587
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,11,-1.06417341907518,0.04385134974036406
+3,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,12,-1.06417341907518,0.09746534306024651
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,1,-9.992007221626409e-16,0.05188126381088339
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,2,-0.6104634843138952,0.12366298197323324
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,3,-0.8322921612271504,0.007259480055956224
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,4,-0.9025989586161415,3.704364513454224e-05
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,5,-0.9487609488023028,0.0003696880682240558
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,6,-0.9487609488023028,0.0003696880682240558
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,7,-0.9516746643450346,0.006270838255866165
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,8,-0.9702253509237382,0.0678751393113125
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,9,-0.9702253509237382,0.0678751393113125
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,10,-0.9866078325306816,0.00011584347020022254
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,11,-0.9928227535389389,0.06408015832939525
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,12,-0.9928227535389389,0.06408015832939525
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,1,-1.2212453270876722e-15,0.05188126381088367
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,2,-0.6104634843138952,0.07205874510230648
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,3,-0.9702253509237397,0.006063642010535619
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,4,-0.9702253509237397,0.10406877488434087
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,5,-1.3266172069274058,0.12221890992346443
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,6,-1.1913331146904258,0.137527069066023
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,7,-0.8322921612271624,0.003773269851140257
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,8,-0.902598958616142,0.08677351558801362
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,9,-1.0448741970583018,0.0380083853725365
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,10,-1.0448741970583018,0.09666736680889328
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,11,-1.06417341907518,0.013218771375293474
+4,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,12,-1.06417341907518,0.012869065566173813
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,1,-9.992007221626409e-16,0.01713509536788295
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,2,-0.6104634843138952,0.07473908804221238
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,3,-0.8322921612271504,0.010383744710922127
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,4,-0.9025989586161415,0.2948976524718153
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,5,-0.9487609488023028,0.10171984849115935
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,6,-0.9487609488023028,0.10171984849115935
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,7,-0.9516746643450346,0.12564119142801308
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,8,-0.9702253509237382,0.03720211827285688
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,9,-0.9702253509237382,0.03720211827285688
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,10,-0.9866078325306816,0.06437138131591383
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,11,-0.9928227535389389,0.021581838551677984
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,12,-0.9928227535389389,0.021581838551677984
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,1,-1.2212453270876722e-15,0.01713509536788305
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,2,-0.6104634843138952,0.06312882275520443
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,3,-0.9702253509237397,0.01298550705702787
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,4,-0.9702253509237397,0.029649531413349917
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,5,-1.3266172069274058,0.1036032524491674
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,6,-1.1913331146904258,0.01886571033111291
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,7,-0.8322921612271624,0.10053167489685219
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,8,-0.902598958616142,0.21330655880527696
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,9,-1.0448741970583018,0.06453562972884194
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,10,-1.0448741970583018,0.10271288054950166
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,11,-1.06417341907518,0.07110988411086909
+5,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,12,-1.06417341907518,0.01936118418906446
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,1,-9.992007221626409e-16,0.017027550919891336
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,2,-0.6104634843138952,0.07446485849566968
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,3,-0.8322921612271504,0.010128313196803969
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,4,-0.9025989586161415,0.2947566135763499
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,5,-0.9487609488023028,0.1017124299568634
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,6,-0.9487609488023028,0.1017124299568634
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,7,-0.9516746643450346,0.12563373418207843
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,8,-0.9702253509237382,0.037083614380201656
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,9,-0.9702253509237382,0.037083614380201656
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,10,-0.9866078325306816,0.06436153040806093
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,11,-0.9928227535389389,0.021565448663302778
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,eigen,12,-0.9928227535389389,0.021565448663302778
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,1,-1.2212453270876722e-15,0.017027550919891436
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,2,-0.6104634843138952,0.06301040783705937
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,3,-0.9702253509237397,0.012893481408450388
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,4,-0.9702253509237397,0.02839947837812258
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,5,-1.3266172069274058,0.1036117715087225
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,6,-1.1913331146904258,0.009154586295144318
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,7,-0.8322921612271624,0.09811954889954785
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,8,-0.902598958616142,0.210131502230694
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,9,-1.0448741970583018,0.06242326984748934
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,10,-1.0448741970583018,0.10255081303578674
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,11,-1.06417341907518,0.07098079460848022
+6,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 R Receiving Apical Targeting,schur,12,-1.06417341907518,0.019357859170889172
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,1,-9.992007221626409e-16,0.008353167928371001
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,2,-0.6104634843138952,0.03574307756403215
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,3,-0.8322921612271504,0.004122853624000554
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,4,-0.9025989586161415,0.11000237086469077
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,5,-0.9487609488023028,0.031164162533083344
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,6,-0.9487609488023028,0.031164162533083344
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,7,-0.9516746643450346,0.052353180250124746
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,8,-0.9702253509237382,0.01523663512582959
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,9,-0.9702253509237382,0.01523663512582959
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,10,-0.9866078325306816,0.023330538508534917
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,11,-0.9928227535389389,0.004717797198162638
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,12,-0.9928227535389389,0.004717797198162638
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,1,-1.2212453270876722e-15,0.008353167928371026
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,2,-0.6104634843138952,0.02998386297411596
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,3,-0.9702253509237397,0.007533153741235975
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,4,-0.9702253509237397,0.008549985498778742
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,5,-1.3266172069274058,0.13051319826326796
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,6,-1.1913331146904258,0.010313970016056268
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,7,-0.8322921612271624,0.030913728289013887
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,8,-0.902598958616142,0.08887277821086143
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,9,-1.0448741970583018,0.010509317182521832
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,10,-1.0448741970583018,0.001261518150168346
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,11,-1.06417341907518,0.012730026860916269
+7,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,12,-1.06417341907518,0.012102442422571413
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,1,-9.992007221626409e-16,0.0059166474610251535
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,2,-0.6104634843138952,0.01771020596853217
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,3,-0.8322921612271504,0.0003637239811883287
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,4,-0.9025989586161415,0.017085736085570544
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,5,-0.9487609488023028,0.007485921149427946
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,6,-0.9487609488023028,0.007485921149427946
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,7,-0.9516746643450346,0.0016138096988682691
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,8,-0.9702253509237382,0.01277088259996298
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,9,-0.9702253509237382,0.01277088259996298
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,10,-0.9866078325306816,0.001521084449813593
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,11,-0.9928227535389389,0.003200228066271824
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,12,-0.9928227535389389,0.003200228066271824
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,1,-1.2212453270876722e-15,0.005916647461025181
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,2,-0.6104634843138952,0.012179392594578795
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,3,-0.9702253509237397,0.0011651842636940701
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,4,-0.9702253509237397,0.0302016079806754
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,5,-1.3266172069274058,0.17892037818084983
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,6,-1.1913331146904258,0.04877541786882181
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,7,-0.8322921612271624,0.005106626240646372
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,8,-0.902598958616142,0.0035721612216435164
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,9,-1.0448741970583018,0.010081786460945739
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,10,-1.0448741970583018,0.05898090853316821
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,11,-1.06417341907518,0.013568177300115527
+8,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,12,-1.06417341907518,0.03524409882140016
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,1,-9.992007221626409e-16,0.00714125677214763
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,2,-0.6104634843138952,0.017624321879759767
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,3,-0.8322921612271504,0.0033946464472473315
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,4,-0.9025989586161415,0.0004534837821700607
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,5,-0.9487609488023028,0.00045121880669079026
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,6,-0.9487609488023028,0.00045121880669079026
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,7,-0.9516746643450346,0.034413238648222294
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,8,-0.9702253509237382,0.012290246636307029
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,9,-0.9702253509237382,0.012290246636307029
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,10,-0.9866078325306816,0.0007461912660594366
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,11,-0.9928227535389389,0.0025346512583580474
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,12,-0.9928227535389389,0.0025346512583580474
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,1,-1.2212453270876722e-15,0.007141256772147548
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,2,-0.6104634843138952,0.01057833725590272
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,3,-0.9702253509237397,0.0006340602267551464
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,4,-0.9702253509237397,0.030411482503656447
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,5,-1.3266172069274058,0.15272084446114223
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,6,-1.1913331146904258,0.010168654551687731
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,7,-0.8322921612271624,0.013990382489416194
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,8,-0.902598958616142,0.024485475190647334
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,9,-1.0448741970583018,0.01367368037468033
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,10,-1.0448741970583018,0.05729925675050947
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,11,-1.06417341907518,0.0125765096345667
+9,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,12,-1.06417341907518,0.02091037342053099
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,1,-9.992007221626409e-16,0.00792037547359645
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,2,-0.6104634843138952,0.014447119435864433
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,3,-0.8322921612271504,0.004487685306456765
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,4,-0.9025989586161415,0.006028261183046203
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,5,-0.9487609488023028,0.0009323762857817504
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,6,-0.9487609488023028,0.0009323762857817504
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,7,-0.9516746643450346,0.05211270374205948
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,8,-0.9702253509237382,0.0150612954662766
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,9,-0.9702253509237382,0.0150612954662766
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,10,-0.9866078325306816,0.016951452730747482
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,11,-0.9928227535389389,0.016996641190920203
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,12,-0.9928227535389389,0.016996641190920203
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,1,-1.2212453270876722e-15,0.00792037547359645
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,2,-0.6104634843138952,0.0066559310785789605
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,3,-0.9702253509237397,0.00018556112335835169
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,4,-0.9702253509237397,0.05227169634461883
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,5,-1.3266172069274058,0.10943106771306452
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,6,-1.1913331146904258,0.012152021548500883
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,7,-0.8322921612271624,0.011190759959328604
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,8,-0.902598958616142,0.07365805851893446
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,9,-1.0448741970583018,0.027259496887991237
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,10,-1.0448741970583018,0.00045826695512143586
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,11,-1.06417341907518,0.012482894922460236
+10,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,12,-1.06417341907518,0.1089049208993994
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,1,-9.992007221626409e-16,0.08518755325335163
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,2,-0.6104634843138952,0.20025382284122084
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,3,-0.8322921612271504,0.0017131713958352059
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,4,-0.9025989586161415,0.043652578952824074
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,5,-0.9487609488023028,0.06628667498766642
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,6,-0.9487609488023028,0.06628667498766642
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,7,-0.9516746643450346,0.14263408558056295
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,8,-0.9702253509237382,0.12548390363296275
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,9,-0.9702253509237382,0.12548390363296275
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,10,-0.9866078325306816,0.030543834764711817
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,11,-0.9928227535389389,0.11025701058422281
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,eigen,12,-0.9928227535389389,0.11025701058422281
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,1,-1.2212453270876722e-15,0.0851875532533518
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,2,-0.6104634843138952,0.1202937536646912
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,3,-0.9702253509237397,0.03120373157622747
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,4,-0.9702253509237397,0.15719233715202513
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,5,-1.3266172069274058,0.19231528421789643
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,6,-1.1913331146904258,0.002366104022652166
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,7,-0.8322921612271624,0.012603591745289858
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,8,-0.902598958616142,0.0031898013457757027
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,9,-1.0448741970583018,0.019575385256565683
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,10,-1.0448741970583018,0.03184103269323987
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,11,-1.06417341907518,0.048485850483288434
+11,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated QuadD,schur,12,-1.06417341907518,0.1036648726702085
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,1,-9.992007221626409e-16,0.005125976074837276
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,2,-0.6104634843138952,0.016249570497336673
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,3,-0.8322921612271504,0.003479449946102382
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,4,-0.9025989586161415,0.0005652809000582313
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,5,-0.9487609488023028,0.0038473441216231308
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,6,-0.9487609488023028,0.0038473441216231308
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,7,-0.9516746643450346,0.04415864526328029
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,8,-0.9702253509237382,0.00916158036938462
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,9,-0.9702253509237382,0.00916158036938462
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,10,-0.9866078325306816,0.0005615671114039103
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,11,-0.9928227535389389,0.0044927685324958845
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,12,-0.9928227535389389,0.0044927685324958845
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,1,-1.2212453270876722e-15,0.0051259760748372735
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,2,-0.6104634843138952,0.011597313218749886
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,3,-0.9702253509237397,0.002349229558848614
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,4,-0.9702253509237397,0.014234316960846614
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,5,-1.3266172069274058,0.10515807037355443
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,6,-1.1913331146904258,0.025372347984800092
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,7,-0.8322921612271624,0.020981623781357404
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,8,-0.902598958616142,0.007586498057671752
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,9,-1.0448741970583018,0.13744908213213142
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,10,-1.0448741970583018,0.034515881799388706
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,11,-1.06417341907518,0.030566694339013878
+12,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,12,-1.06417341907518,0.014850448884344225
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,1,-9.992007221626409e-16,0.008245623480379388
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,2,-0.6104634843138952,0.03546884801748945
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,3,-0.8322921612271504,0.003867422109882395
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,4,-0.9025989586161415,0.1098613319692253
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,5,-0.9487609488023028,0.031156743998787397
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,6,-0.9487609488023028,0.031156743998787397
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,7,-0.9516746643450346,0.052345723004190096
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,8,-0.9702253509237382,0.01511813123317436
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,9,-0.9702253509237382,0.01511813123317436
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,10,-0.9866078325306816,0.023320687600682018
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,11,-0.9928227535389389,0.004701407309787433
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,eigen,12,-0.9928227535389389,0.004701407309787433
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,1,-1.2212453270876722e-15,0.00824562348037941
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,2,-0.6104634843138952,0.02986544805597091
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,3,-0.9702253509237397,0.007441128092658493
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,4,-0.9702253509237397,0.007299932463551404
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,5,-1.3266172069274058,0.13052171732282306
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,6,-1.1913331146904258,0.0006028459800876782
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,7,-0.8322921612271624,0.028501602291709553
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,8,-0.902598958616142,0.08569772163627846
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,9,-1.0448741970583018,0.008396957301169235
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,10,-1.0448741970583018,0.0010994506364534395
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,11,-1.06417341907518,0.012600937358527407
+13,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 OR LM,schur,12,-1.06417341907518,0.012099117404396129
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,1,-9.992007221626409e-16,0.00580910301303354
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,2,-0.6104634843138952,0.017435976421989467
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,3,-0.8322921612271504,0.00010829246707016957
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,4,-0.9025989586161415,0.016944697190105083
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,5,-0.9487609488023028,0.007478502615132
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,6,-0.9487609488023028,0.007478502615132
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,7,-0.9516746643450346,0.0016063524529336176
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,8,-0.9702253509237382,0.01265237870730775
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,9,-0.9702253509237382,0.01265237870730775
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,10,-0.9866078325306816,0.0015112335419606936
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,11,-0.9928227535389389,0.0031838381778966193
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,eigen,12,-0.9928227535389389,0.0031838381778966193
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,1,-1.2212453270876722e-15,0.005809103013033568
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,2,-0.6104634843138952,0.012060977676433741
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,3,-0.9702253509237397,0.0010731586151165881
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,4,-0.9702253509237397,0.028951554945448064
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,5,-1.3266172069274058,0.17892889724040495
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,6,-1.1913331146904258,0.03906429383285322
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,7,-0.8322921612271624,0.0026945002433420386
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,8,-0.902598958616142,0.0003971046470605562
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,9,-1.0448741970583018,0.00796942657959314
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,10,-1.0448741970583018,0.058818841019453304
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,11,-1.06417341907518,0.013439087797726665
+14,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket,schur,12,-1.06417341907518,0.03524077380322487
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,1,-9.992007221626409e-16,0.007033712324156016
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,2,-0.6104634843138952,0.017350092333217063
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,3,-0.8322921612271504,0.0031392149331291724
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,4,-0.9025989586161415,0.0003124448867046002
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,5,-0.9487609488023028,0.00044380027239484366
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,6,-0.9487609488023028,0.00044380027239484366
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,7,-0.9516746643450346,0.034405781402287644
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,8,-0.9702253509237382,0.0121717427436518
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,9,-0.9702253509237382,0.0121717427436518
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,10,-0.9866078325306816,0.0007363403582065372
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,11,-0.9928227535389389,0.002518261369982843
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,eigen,12,-0.9928227535389389,0.002518261369982843
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,1,-1.2212453270876722e-15,0.007033712324155934
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,2,-0.6104634843138952,0.010459922337757666
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,3,-0.9702253509237397,0.0005420345781776644
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,4,-0.9702253509237397,0.02916142946842911
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,5,-1.3266172069274058,0.15272936352069733
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,6,-1.1913331146904258,0.0004575305157191415
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,7,-0.8322921612271624,0.01157825649211186
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,8,-0.902598958616142,0.021310418616064374
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,9,-1.0448741970583018,0.011561320493327733
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,10,-1.0448741970583018,0.05713718923679456
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,11,-1.06417341907518,0.012447420132177837
+15,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Basket CCK+,schur,12,-1.06417341907518,0.02090704840235571
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,1,-9.992007221626409e-16,0.007812831025604837
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,2,-0.6104634843138952,0.01417288988932173
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,3,-0.8322921612271504,0.004232253792338606
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,4,-0.9025989586161415,0.005887222287580742
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,5,-0.9487609488023028,0.0009249577514858038
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,6,-0.9487609488023028,0.0009249577514858038
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,7,-0.9516746643450346,0.05210524649612483
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,8,-0.9702253509237382,0.01494279157362137
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,9,-0.9702253509237382,0.01494279157362137
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,10,-0.9866078325306816,0.016941601822894583
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,11,-0.9928227535389389,0.016980251302544998
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,eigen,12,-0.9928227535389389,0.016980251302544998
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,1,-1.2212453270876722e-15,0.007812831025604837
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,2,-0.6104634843138952,0.0065375161604339085
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,3,-0.9702253509237397,9.353547478086956e-05
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,4,-0.9702253509237397,0.0510216433093915
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,5,-1.3266172069274058,0.10943958677261961
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,6,-1.1913331146904258,0.0024408975125322935
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,7,-0.8322921612271624,0.00877863396202427
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,8,-0.902598958616142,0.0704830019443515
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,9,-1.0448741970583018,0.02514713700663864
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,10,-1.0448741970583018,0.0002961994414065292
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,11,-1.06417341907518,0.012353805420071374
+16,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 LMR,schur,12,-1.06417341907518,0.10890159588122413
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,1,-9.992007221626409e-16,0.05428742777293266
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,2,-0.6104634843138952,0.1236682717331628
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,3,-0.8322921612271504,0.007279919162675697
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,4,-0.9025989586161415,0.00013419870557732186
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,5,-0.9487609488023028,0.0003773348661836377
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,6,-0.9487609488023028,0.0003773348661836377
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,7,-0.9516746643450346,0.006274954424698444
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,8,-0.9702253509237382,0.06787521889455297
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,9,-0.9702253509237382,0.06787521889455297
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,10,-0.9866078325306816,0.0001154590990544087
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,11,-0.9928227535389389,0.06408145421980062
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,eigen,12,-0.9928227535389389,0.06408145421980062
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,1,-1.2212453270876722e-15,0.05428742777293293
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,2,-0.6104634843138952,0.0743805340104036
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,3,-0.9702253509237397,0.006209058265975515
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,4,-0.9702253509237397,0.10425491816733733
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,5,-1.3266172069274058,0.12235667058694435
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,6,-1.1913331146904258,0.13957277113042016
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,7,-0.8322921612271624,0.0044544427049795325
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,8,-0.902598958616142,0.08723599765426747
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,9,-1.0448741970583018,0.04978189935387731
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,10,-1.0448741970583018,0.09699060874969728
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,11,-1.06417341907518,0.017853272118217852
+17,EC LII III Pyramidal Tripolar -> DG Granule -> CA3c Pyramidal -> CA1 Perforant Path Associated,schur,12,-1.06417341907518,0.019068595176135805
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,1,-9.992007221626409e-16,0.0013262536824907346
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,2,-0.6104634843138952,0.007038212573314853
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,3,-0.8322921612271504,0.0003965717156295861
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,4,-0.9025989586161415,0.02262639198866469
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,5,-0.9487609488023028,0.0111109942030337
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,6,-0.9487609488023028,0.0111109942030337
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,7,-0.9516746643450346,0.0003037467347578419
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,8,-0.9702253509237382,0.004092104832808363
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,9,-0.9702253509237382,0.004092104832808363
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,10,-0.9866078325306816,0.003842083887717708
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,11,-0.9928227535389389,0.0013841758613533364
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,eigen,12,-0.9928227535389389,0.0013841758613533364
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,1,-1.2212453270876722e-15,0.0013262536824907058
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,2,-0.6104634843138952,0.006690111118782196
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,3,-0.9702253509237397,0.0012852269352961467
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,4,-0.9702253509237397,0.008690806939659517
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,5,-1.3266172069274058,0.11674414836043515
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,6,-1.1913331146904258,0.01387610331552349
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,7,-0.8322921612271624,0.005044381346569124
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,8,-0.902598958616142,0.026261607499913898
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,9,-1.0448741970583018,0.02771947317186841
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,10,-1.0448741970583018,0.03525071880427985
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,11,-1.06417341907518,0.015961805920921494
+18,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Bistratified,schur,12,-1.06417341907518,0.013571397908969725
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,1,-9.992007221626409e-16,0.0050184316268456625
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,2,-0.6104634843138952,0.01597534095079397
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,3,-0.8322921612271504,0.003224018431984223
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,4,-0.9025989586161415,0.0004242420045927709
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,5,-0.9487609488023028,0.0038399255873271844
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,6,-0.9487609488023028,0.0038399255873271844
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,7,-0.9516746643450346,0.04415118801734564
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,8,-0.9702253509237382,0.00904307647672939
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,9,-0.9702253509237382,0.00904307647672939
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,10,-0.9866078325306816,0.0005517162035510108
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,11,-0.9928227535389389,0.004476378644120679
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,eigen,12,-0.9928227535389389,0.004476378644120679
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,1,-1.2212453270876722e-15,0.00501843162684566
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,2,-0.6104634843138952,0.011478898300604832
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,3,-0.9702253509237397,0.002257203910271132
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,4,-0.9702253509237397,0.012984263925619279
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,5,-1.3266172069274058,0.10516658943310953
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,6,-1.1913331146904258,0.015661223948831505
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,7,-0.8322921612271624,0.01856949778405307
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,8,-0.902598958616142,0.004411441483088791
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,9,-1.0448741970583018,0.1353367222507788
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,10,-1.0448741970583018,0.0343538142856738
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,11,-1.06417341907518,0.030437604836625016
+19,EC LI II Pyramidal Fan -> DG Granule -> CA3c Pyramidal -> CA1 Oriens Alveus,schur,12,-1.06417341907518,0.014847123866168942
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,1,-9.992007221626409e-16,0.24311794132120135
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,2,-0.6104634843138952,0.20993777166239577
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,3,-0.8322921612271504,0.1895880529009529
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,4,-0.9025989586161415,0.00017072343244919233
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,5,-0.9487609488023028,0.2555726659224775
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,6,-0.9487609488023028,0.2555726659224775
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,7,-0.9516746643450346,0.11574528480048814
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,8,-0.9702253509237382,0.18688909680061297
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,9,-0.9702253509237382,0.18688909680061297
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,10,-0.9866078325306816,0.01821197247151378
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,11,-0.9928227535389389,0.35271318676916874
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,eigen,12,-0.9928227535389389,0.35271318676916874
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,1,-1.2212453270876722e-15,0.24311794132120104
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,2,-0.6104634843138952,0.028690090456443336
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,3,-0.9702253509237397,0.18839976385762183
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,4,-0.9702253509237397,0.3727648857046501
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,5,-1.3266172069274058,0.1026558085691046
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,6,-1.1913331146904258,0.05626840546976655
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,7,-0.8322921612271624,0.0107302410687672
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,8,-0.902598958616142,0.0612191520278726
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,9,-1.0448741970583018,0.012625320983689813
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,10,-1.0448741970583018,0.005473334831157773
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,11,-1.06417341907518,0.01256452884179636
+20,MEC LV Pyramidal -> DG Granule -> CA3c Pyramidal -> CA1 Trilaminar,schur,12,-1.06417341907518,0.013954612002217521

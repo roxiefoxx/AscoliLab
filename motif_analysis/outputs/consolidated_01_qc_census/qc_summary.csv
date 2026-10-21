@@ -1,0 +1,11 @@
+metric,value
+matrix nodes,85
+netlist rows,1641
+nonzero matrix entries,1641
+off-diagonal nonzero entries,1570
+self-loop entries,71
+excitatory labels,32
+inhibitory labels,53
+positive off-diagonal entries,707
+negative off-diagonal entries,863
+regions,9

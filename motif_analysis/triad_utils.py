@@ -3,6 +3,7 @@
 import numpy as np
 import pandas as pd
 import math
+from pathlib import Path
 from itertools import combinations, permutations, product
 
 try:
@@ -364,3 +365,101 @@ def nominate_stabilizing_triads(enrichment_stats, perturbation_results, schur_st
     ].sort_values('eigenvalue_shift').head(10)
     
     return nominated_triads
+
+
+def load_triad_modulation_inputs(matrix_path="mij_matrix.csv"):
+    """Load the matrix and derive the two variants used by the legacy notebook."""
+    matrix_frame = pd.read_csv(matrix_path, index_col=0)
+    labels = matrix_frame.index.tolist()
+    is_excitatory = (matrix_frame > 0).any(axis=1).to_numpy()
+    is_inhibitory = (matrix_frame < 0).any(axis=1).to_numpy()
+    variants = {
+        "with_self": matrix_frame.to_numpy().copy(),
+        "no_self": matrix_frame.to_numpy().copy(),
+    }
+    np.fill_diagonal(variants["no_self"], 0)
+    return {
+        "matrix_frame": matrix_frame,
+        "labels": labels,
+        "is_excitatory": is_excitatory,
+        "is_inhibitory": is_inhibitory,
+        "variants": variants,
+    }
+
+
+def run_triad_modulation_workflow(
+    matrix_path="mij_matrix.csv",
+    output_dir="outputs/triad_modulation_analysis",
+    num_null_shuffles=100,
+    random_seed=42,
+):
+    """Run the legacy two-edge triad modulation workflow as a notebook-friendly bundle."""
+    context = load_triad_modulation_inputs(matrix_path)
+    labels = context["labels"]
+    is_excitatory = context["is_excitatory"]
+    is_inhibitory = context["is_inhibitory"]
+    variants = context["variants"]
+
+    out = Path(output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    counts = motif_counts(variants, is_excitatory, is_inhibitory)
+    enrichment = {
+        variant: assess_triad_enrichment(
+            matrix,
+            is_excitatory,
+            is_inhibitory,
+            observed_motif_counts=counts[variant],
+            num_shuffles=num_null_shuffles,
+            random_seed=random_seed,
+        )
+        for variant, matrix in variants.items()
+    }
+    perturbation = {
+        variant: measure_triad_perturbations(
+            matrix,
+            counts[variant],
+            is_excitatory,
+            is_inhibitory,
+        )
+        for variant, matrix in variants.items()
+    }
+    region_map = assign_nodes_to_regions(labels)
+    regional_counts = {
+        variant: count_triads_by_region(
+            counts[variant],
+            region_map,
+            matrix,
+            is_excitatory,
+        )
+        for variant, matrix in variants.items()
+    }
+    schur = {
+        variant: analyze_triad_schur_complements(
+            matrix,
+            counts[variant],
+            is_excitatory,
+            is_inhibitory,
+        )
+        for variant, matrix in variants.items()
+    }
+    candidates = {
+        variant: nominate_stabilizing_triads(
+            enrichment[variant],
+            perturbation[variant],
+            schur[variant],
+        )
+        for variant in variants
+    }
+
+    return {
+        **context,
+        "output_dir": out,
+        "motif_counts": counts,
+        "enrichment_stats": enrichment,
+        "perturbation_results": perturbation,
+        "regional_triad_counts": regional_counts,
+        "region_map": region_map,
+        "schur_stats": schur,
+        "candidate_motifs": candidates,
+    }

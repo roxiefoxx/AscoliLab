@@ -139,8 +139,29 @@ normal surrogate as the control. State the claim in those terms. If a thermodyna
 wanted later, the entry point is the non-equilibrium steady state of the same linear model, and
 it is a separate piece of work.
 
-**Caveat.** `trace(P)` is basis-dependent in the same way peak amplification is (see the methods
+**Caveat 1.** `trace(P)` is basis-dependent in the same way peak amplification is (see the methods
 brief, §2). Report it in the extensive-activity norm and say so.
+
+**Caveat 2 — added 2026-09-17, and it changes what this finding can claim.** The 100× figure is
+against a *normal* surrogate with the same spectrum, and that comparison is unchanged and still
+worth reporting: the circuit holds two orders of magnitude more stationary variance than its own
+eigenvalues predict. But against a degree- and dyad-census-preserving rewire of the connectome
+itself (n = 100, same ensemble as the ordering test, Dale's law preserved by construction), the
+observed value is **not** exceptional:
+
+```
+trace(P), observed                        5,217.7
+trace(P), rewired ensemble       15,592.6 ± 26,596.3     z = -0.39,  p = 0.554
+```
+
+The surrogates average roughly three times *more* non-normal than the real circuit, and the null
+is strongly right-skewed (sd is 1.7× the mean), so read the empirical p rather than the z. The
+defensible statement is therefore: this circuit's stationary variance vastly exceeds what its
+spectrum predicts, and that excess is **typical of graphs with its degree and dyad structure**
+rather than special to its particular wiring. Do not present it as evidence that this connectome
+is unusually non-normal. Convention: self-weights retained, ρ(W) scaled to 0.95, `J = −I + W`.
+Reproduce with `tarjan_reorder/corrections_pass_nulls.py`; outputs in
+`tarjan_reorder/outputs/corrections_pass/`.
 
 ---
 
@@ -199,7 +220,8 @@ edges, without discarding magnitude entirely.
 state which question each answers: raw weight asks where the amplification structure runs, log
 weight asks where the pathway runs, binary asks what the wiring alone permits. The claim that the
 optimised ordering "recovers the trisynaptic direction with no anatomical input" is true only for
-the log variant and must be corrected wherever it appears.
+the log variant and **was corrected everywhere it appeared on 2026-09-17** (see C1 below). Under
+raw `|m_ij|` the certified-optimal E→E ordering puts DG at positions 27–30 of 32.
 
 ---
 
@@ -237,15 +259,64 @@ claim belongs to the full 85-node ordering. The 0.9496 forward-weight figure is 
 
 ---
 
+## C1 — The corrections pass of 2026-09-17, and what it changed
+
+This section is the record of the correction itself. The corrections are part of the log, not an
+erasure of it. Plan: `docs/CORRECTIONS_PASS.md`. Full results: `docs/CORRECTIONS_PASS_RESULTS.md`.
+
+**What was wrong at the root.** Two things, both in library code rather than in any notebook.
+The ordering was produced by a greedy/Tarjan heuristic, and the null was a plain directed edge
+swap. Neither is separately fatal; together they are. A heuristic on the observed side and a
+heuristic on the null side do not cancel, because the gap to the true optimum differs between the
+two ensembles. And a plain edge swap destroys about 60% of the 422 mutual dyads, while a mutual
+dyad contributes one backward edge under *any* ordering — so the surrogate was not a null for the
+quantity a feedforward-ordering statistic measures. Both are fixed at source in
+`tarjan_reorder/optimal_ordering_lop.py` (exact LOP via HiGHS, `mip_rel_gap = 0`; rewire preserving
+in-degree, out-degree and the 422/726 dyad census), and both library modules now import from it.
+
+**What the re-run changed.**
+
+| Claim | Was | Is |
+|---|---|---|
+| E→E ordering recovers the trisynaptic direction | asserted | **retracted.** DG at positions 27–30 of 32; region means CA2 7.0 → CA1 8.5 → EC 9.9 → CA3 14.0 → MEC 16.2 → LEC 18.7 → SUB 25.0 → DG 28.5 |
+| E→E forward-weight fraction, significance | p < 0.005 (permutation null) | **z = +0.97, p = 0.168** against degree- and dyad-preserving null. Not significant |
+| 85-type weighted forward fraction, significance | z = +3.15 | **z = +3.15, p = 0.0099 — survives.** Certified observed optimum; 96 of 100 surrogates certified (max gap 6.7e-4 on the rest) and the observed value exceeds every surrogate's dual bound; dyad census preserved in all 100 |
+| Inhibitory feedforward/feedback split | 285 / 578 | **497 / 366.** The old figure came from appending 53 inhibitory types after 32 excitatory ones, forcing 0 of 171 I→E edges to be forward. Now 28 of 171 |
+| trace(P) excess | "100× non-normal excess" | 100× vs a same-spectrum normal surrogate stands; **z = −0.39, p = 0.554** vs a rewired connectome. See F5, Caveat 2 |
+| Node-level weighted triad participation | a motif measure | **degenerate.** Exactly `(n−3)·strength + const`, verified to 2.7e-15, correlation 1.000000 with strength. Replaced by class-resolved shares |
+
+**A correction to the correction plan itself.** `docs/CORRECTIONS_PASS.md` predicted the 85-type z
+would fall to ≈ +1.4 (p ≈ 0.29). It does not — it holds at +3.15, and raising the rewire multiplier
+from 8 to 30 moves it to +3.49 on an independent sample, so it is not an under-mixing artifact.
+The plan also had the Schur coupling direction backwards: blocks are analysed `[post, pre]`, so
+`|T[m, m+1:]|.sum()` is the coupling a mode *receives*, and the column is now
+`schur_upper_coupling_in_abs`.
+
+**Also fixed.** Motif census orientation verified correct as written rather than assumed
+(`A[pre, post]` reproduces all 1,641 netlist rows; the transposed reading fails 1,570) and pinned
+with an assertion. Schur diagonal order pinned to descending Re(λ) — it is free under the
+decomposition but not free for per-mode cascade statistics, which differ on 1,679 of 2,000 motif
+blocks between orders. Self-loops removed from the signed Laplacian by default, shifting the low
+eigenvalues by up to 11.3%. Four byte-identical script copies collapsed to two plus re-export
+shims. `w_ij` archived.
+
+**Still open after the pass.** The `log1p` ordering objective (C2) waits on Dr. Ascoli — see
+`docs/CORRECTIONS_PASS.md` §4. The motif 3×3 exports had no producer in the repository; one was
+written (`tarjan_reorder/motif_pathway_export.py`), but its *selection* of which triads to export
+is a new decision, not a recovery of the original.
+
+---
+
 ## Open items this log creates
 
-1. Correct the "recovers the trisynaptic direction" claim in `EE_backbone/README.md`, the
-   methodology deck, `analytical_methods_brief_for_advisor.docx` §4 and its slide,
-   `claude/methodology_arc.md`, and `PROJECT_CONTEXT.md`.
-2. Re-run `ei_backbone_analysis.ipynb` against a full 85-node ordering; the 285 / 578
-   feedforward-feedback inhibitory split is an artifact of appending interneurons after
-   excitatory types (0 of 171 I→E edges can be forward under that scheme).
-3. Add `log1p|m_ij|` as a standard ordering variant.
+1. ~~Correct the "recovers the trisynaptic direction" claim~~ — **done 2026-09-17** in
+   `EE_backbone/README.md`, `PROJECT_CONTEXT.md`, `claude/project_context_for_llm.md`,
+   `claude/methodology_arc.md`, the methodology deck, and
+   `analytical_methods_brief_for_advisor.docx` §4 and its slide.
+2. ~~Re-run `ei_backbone_analysis.ipynb` against a full 85-node ordering~~ — **done 2026-09-17**;
+   the split is 497 / 366.
+3. Add `log1p|m_ij|` as a standard ordering variant. **Still blocked** on the objective question
+   in `docs/CORRECTIONS_PASS.md` §4.
 4. Promote F4's weight partition to the dissertation's framing statement.
 5. Report `trace(P)` and its normal-surrogate ratio alongside peak amplification, with the norm
    declared.

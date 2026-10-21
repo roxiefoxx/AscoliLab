@@ -1,0 +1,13 @@
+,0
+n_edges,355
+n_forward_edges,208
+n_feedback_edges,147
+forward_weight,748421.4164901064
+feedback_weight,39719.22340344994
+total_weight,788140.6398935564
+forward_weight_fraction,0.9496038887059366
+feedback_weight_fraction,0.05039611129406331
+lop_forward_fraction,0.9496038887059366
+lop_upper_bound,0.9496038887059366
+lop_gap,0.0
+lop_certified,True

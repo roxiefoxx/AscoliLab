@@ -1,0 +1,27 @@
+param,subject,receptor,distribution,p1,p2,lower,upper,confidence,basis,requires_marker,requires_status,evidence_class,locator,notes
+V_scale,global,,fixed,24.67,,,,0.6,derived_from_claims,,,curator_inference,Table 1,Mean (V_th - V_rest) over the six Tricoire clusters: (25+26+36+22+23+16)/6
+tau_A_fast_ref,global,,fixed,6.0,,,,0.3,modeling_assumption,,,modeling_assumption,,ASSUMPTION - replace with a measured fast GABAA decay at the modeled temperature
+g,global,,lognormal,1.0,1.0,,,0.1,modeling_assumption,,,modeling_assumption,,Global coupling scale on spectrally normalised W0; to be calibrated
+role_w_dominant,global,,fixed,1.0,,,,0.3,modeling_assumption,,,modeling_assumption,,Converts qualitative laminar roles to weights before normalisation
+role_w_major,global,,fixed,0.6,,,,0.3,modeling_assumption,,,modeling_assumption,,
+role_w_present,global,,fixed,0.3,,,,0.3,modeling_assumption,,,modeling_assumption,,
+role_w_minor,global,,fixed,0.2,,,,0.3,modeling_assumption,,,modeling_assumption,,
+role_w_sparse,global,,fixed,0.08,,,,0.3,modeling_assumption,,,modeling_assumption,,
+role_w_avoids,global,,fixed,0.0,,,,0.3,modeling_assumption,,,modeling_assumption,,
+tau,global,,lognormal,20,0.8,0.5,300,0.15,modeling_assumption,,,modeling_assumption,,Broad interneuron default (spans ~5-80 ms at +/-2 sigma)
+Delta,global,,lognormal,0.1,1.0,,,0.15,modeling_assumption,,,modeling_assumption,,
+eta,global,,normal,-0.25,0.15,,,0.15,modeling_assumption,,,modeling_assumption,,V_th - V_rest = V_scale
+gamma_in,global,,lognormal,10,0.8,,,0.15,modeling_assumption,,,modeling_assumption,,
+b,global,,lognormal,20,1.2,0,,0.1,modeling_assumption,,,modeling_assumption,,
+tau_a,global,,lognormal,100,0.7,,,0.1,modeling_assumption,,,modeling_assumption,,ASSUMPTION - no tau_a data in the seed source; AHP half-width is not tau_a
+tau_A,global,,lognormal,6,0.5,,,0.25,modeling_assumption,,,modeling_assumption,,ASSUMPTION - fast GABAA default
+tau_B,global,,lognormal,150,0.4,,,0.25,modeling_assumption,,,modeling_assumption,,ASSUMPTION - GABAB default
+U_A,global,,beta,0.5,4,0,1,0.15,modeling_assumption,,,modeling_assumption,,
+U_B,global,,halfnormal,0.05,,0,1,0.15,modeling_assumption,,,modeling_assumption,,No evidence of GABAB output -> small
+U_B,t:NGF_FAMILY,,halfnormal,0.5,,0,1,0.5,modeling_assumption,,,curator_inference,p.1680,NGF cells evoke postsynaptic GABAB after single APs; magnitude is an assumption
+beta_CB1,global,CB1,halfnormal,1.0,,0,,0.15,modeling_assumption,,,modeling_assumption,,CB1 status unknown -> broad non-negative prior
+beta_CB1,global,CB1,fixed,0.0,,,,0.6,modeling_assumption,CB1,negative,modeling_assumption,,CB1-negative -> no CB1 control of release
+beta_CB1,t:CCKBC,CB1,truncnormal,1.5,0.5,0,,0.5,modeling_assumption,CB1,positive,curator_inference,p.1685-1686,Ordering (CCKBC > CCK dendrite-targeting) from the review; magnitudes are assumptions
+beta_CB1,t:CCK_DT,CB1,truncnormal,0.75,0.5,0,,0.4,modeling_assumption,CB1,positive,curator_inference,p.1686,Weaker than CCKBC per p.1686; magnitude assumption
+alpha_eta,global,,normal,0.0,0.5,,,0.1,modeling_assumption,,,modeling_assumption,,No receptor-specific claim -> 0-centred
+alpha_rel,global,,normal,0.0,0.5,,,0.1,modeling_assumption,,,modeling_assumption,,No receptor-specific claim -> 0-centred

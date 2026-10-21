@@ -1,0 +1,864 @@
+source,target,source_position,target_position,distance,abs_distance,motif,inhibitory_magnitude
+CA1 Back Projection,CA1 Axo Axonic,34,84,50,50,feedforward,0.006931814823685118
+CA1 Basket,CA1 Axo Axonic,68,84,16,16,feedforward,0.011696886544391931
+CA1 Basket CCK+,CA1 Axo Axonic,49,84,35,35,feedforward,0.025117984385328734
+CA1 Bistratified,CA1 Axo Axonic,51,84,33,33,feedforward,0.004324490598411957
+CA1 Horizontal Basket,CA1 Axo Axonic,69,84,15,15,feedforward,0.008718369197786091
+CA1 Ivy,CA1 Axo Axonic,50,84,34,34,feedforward,0.0031394739538440053
+CA1 LMR,CA1 Axo Axonic,79,84,5,5,feedforward,0.0003777235023364464
+CA1 Neurogliaform,CA1 Axo Axonic,59,84,25,25,feedforward,0.0013233176586831985
+CA1 Neurogliaform Projecting,CA1 Axo Axonic,71,84,13,13,feedforward,9.963816543576417e-05
+CA1 O LM,CA1 Axo Axonic,58,84,26,26,feedforward,0.0007150379855961184
+CA1 O LMR,CA1 Axo Axonic,55,84,29,29,feedforward,0.0008548200203083671
+CA1 OR LM,CA1 Axo Axonic,70,84,14,14,feedforward,0.0006364219270690988
+CA1 Oriens Alveus,CA1 Axo Axonic,67,84,17,17,feedforward,0.0009449533911194087
+CA1 Oriens Bistratified,CA1 Axo Axonic,32,84,52,52,feedforward,0.0004448322906981496
+CA1 Perforant Path Associated,CA1 Axo Axonic,60,84,24,24,feedforward,0.001917083693441103
+CA1 Perforant Path Associated QuadD,CA1 Axo Axonic,82,84,2,2,feedforward,0.00011076317769870986
+CA1 Quadrilaminar,CA1 Axo Axonic,81,84,3,3,feedforward,3.0172938562272523e-05
+CA1 R Receiving Apical Targeting,CA1 Axo Axonic,57,84,27,27,feedforward,0.0009133131867018656
+CA1 Radial Trilaminar,CA1 Axo Axonic,80,84,4,4,feedforward,0.00035837322862867664
+CA1 Radiatum,CA1 Axo Axonic,56,84,28,28,feedforward,0.0001476195305789336
+CA1 Recurrent O LM,CA1 Axo Axonic,53,84,31,31,feedforward,0.0004226930275434757
+CA1 SO SO,CA1 Axo Axonic,52,84,32,32,feedforward,0.0007716527163949449
+CA1 Schaffer Collateral Associated,CA1 Axo Axonic,33,84,51,51,feedforward,0.003821320182753437
+CA1 Trilaminar,CA1 Axo Axonic,54,84,30,30,feedforward,0.0034637005185159477
+CA2 Bistratified,CA1 Axo Axonic,48,84,36,36,feedforward,2.179706200472358e-05
+CA2 Wide Arbor Basket,CA1 Axo Axonic,40,84,44,44,feedforward,0.01765331168937261
+CA3 Trilaminar,CA1 Axo Axonic,8,84,76,76,feedforward,0.002236312848643542
+CA1 Bistratified,CA1 Back Projection,51,34,-17,17,feedback,0.005280115968659898
+CA1 Ivy,CA1 Back Projection,50,34,-16,16,feedback,0.006001340975654749
+CA1 Oriens Alveus,CA1 Back Projection,67,34,-33,33,feedback,0.0025657290192120192
+CA1 Oriens Bistratified,CA1 Back Projection,32,34,2,2,feedforward,0.0003808508489459627
+CA1 Quadrilaminar,CA1 Back Projection,81,34,-47,47,feedback,2.181303143626406e-05
+CA1 Radial Trilaminar,CA1 Back Projection,80,34,-46,46,feedback,0.0005570956430631237
+CA1 Recurrent O LM,CA1 Back Projection,53,34,-19,19,feedback,0.0002502354807321728
+CA1 SO SO,CA1 Back Projection,52,34,-18,18,feedback,0.001970847840809244
+CA1 Schaffer Collateral Associated,CA1 Back Projection,33,34,1,1,feedforward,0.004610566745869657
+CA1 Trilaminar,CA1 Back Projection,54,34,-20,20,feedback,0.005455312798089905
+CA2 Bistratified,CA1 Back Projection,48,34,-14,14,feedback,4.4238884501131455e-05
+CA3 Trilaminar,CA1 Back Projection,8,34,26,26,feedforward,0.004590705934527339
+CA1 Back Projection,CA1 Basket,34,68,34,34,feedforward,0.015469952619418808
+CA1 Basket CCK+,CA1 Basket,49,68,19,19,feedforward,0.05573258409514906
+CA1 Bistratified,CA1 Basket,51,68,17,17,feedforward,0.010939531832513174
+CA1 Horizontal Basket,CA1 Basket,69,68,-1,1,feedback,0.020197106653219964
+CA1 Ivy,CA1 Basket,50,68,18,18,feedforward,0.008066205709507172
+CA1 LMR,CA1 Basket,79,68,-11,11,feedback,0.0008400846839512945
+CA1 Neurogliaform,CA1 Basket,59,68,9,9,feedforward,0.0023589063520652307
+CA1 Neurogliaform Projecting,CA1 Basket,71,68,-3,3,feedback,0.0001667781703435852
+CA1 O LM,CA1 Basket,58,68,10,10,feedforward,0.001296047964902336
+CA1 O LMR,CA1 Basket,55,68,13,13,feedforward,0.0017706954543354433
+CA1 OR LM,CA1 Basket,70,68,-2,2,feedback,0.0010189510445879272
+CA1 Oriens Alveus,CA1 Basket,67,68,1,1,feedforward,0.0024093186692008277
+CA1 Oriens Bistratified,CA1 Basket,32,68,36,36,feedforward,0.0012886689876230029
+CA1 Perforant Path Associated,CA1 Basket,60,68,8,8,feedforward,0.0034640060523775957
+CA1 Perforant Path Associated QuadD,CA1 Basket,82,68,-14,14,feedback,0.00020862079720057117
+CA1 Quadrilaminar,CA1 Basket,81,68,-13,13,feedback,6.993974367561265e-05
+CA1 R Receiving Apical Targeting,CA1 Basket,57,68,11,11,feedforward,0.0020439879957485584
+CA1 Radial Trilaminar,CA1 Basket,80,68,-12,12,feedback,0.0009035651699171773
+CA1 Radiatum,CA1 Basket,56,68,12,12,feedforward,0.00038555712572961804
+CA1 Recurrent O LM,CA1 Basket,53,68,15,15,feedforward,0.0009051952335640329
+CA1 SO SO,CA1 Basket,52,68,16,16,feedforward,0.001851619755570186
+CA1 Schaffer Collateral Associated,CA1 Basket,33,68,35,35,feedforward,0.009367583295075492
+CA1 Trilaminar,CA1 Basket,54,68,14,14,feedforward,0.008032210908962986
+CA2 Bistratified,CA1 Basket,48,68,20,20,feedforward,9.216749645026034e-05
+CA2 Wide Arbor Basket,CA1 Basket,40,68,28,28,feedforward,0.040588219352996044
+CA3 Trilaminar,CA1 Basket,8,68,60,60,feedforward,0.005575618984165422
+CA1 Back Projection,CA1 Basket CCK+,34,49,15,15,feedforward,0.014409712187548995
+CA1 Basket,CA1 Basket CCK+,68,49,-19,19,feedback,0.02140542163752191
+CA1 Bistratified,CA1 Basket CCK+,51,49,-2,2,feedback,0.010076113408322799
+CA1 Horizontal Basket,CA1 Basket CCK+,69,49,-20,20,feedback,0.017461958390528387
+CA1 Ivy,CA1 Basket CCK+,50,49,-1,1,feedback,0.007120291471287302
+CA1 LMR,CA1 Basket CCK+,79,49,-30,30,feedback,0.00076978748963931
+CA1 Neurogliaform,CA1 Basket CCK+,59,49,-10,10,feedback,0.0025351980282953893
+CA1 Neurogliaform Projecting,CA1 Basket CCK+,71,49,-22,22,feedback,0.00018700303029449628
+CA1 O LM,CA1 Basket CCK+,58,49,-9,9,feedback,0.0013704665453753814
+CA1 O LMR,CA1 Basket CCK+,55,49,-6,6,feedback,0.0017710276502126865
+CA1 OR LM,CA1 Basket CCK+,70,49,-21,21,feedback,0.001179207671292859
+CA1 Oriens Alveus,CA1 Basket CCK+,67,49,-18,18,feedback,0.0021393741947289173
+CA1 Oriens Bistratified,CA1 Basket CCK+,32,49,17,17,feedforward,0.0009859448419468075
+CA1 Perforant Path Associated,CA1 Basket CCK+,60,49,-11,11,feedback,0.0035717245025277196
+CA1 Perforant Path Associated QuadD,CA1 Basket CCK+,82,49,-33,33,feedback,0.0002078919453934316
+CA1 Quadrilaminar,CA1 Basket CCK+,81,49,-32,32,feedback,6.592052789434963e-05
+CA1 R Receiving Apical Targeting,CA1 Basket CCK+,57,49,-8,8,feedback,0.001807406759210824
+CA1 Radial Trilaminar,CA1 Basket CCK+,80,49,-31,31,feedback,0.0007894847338137138
+CA1 Radiatum,CA1 Basket CCK+,56,49,-7,7,feedback,0.00031400205134963295
+CA1 Recurrent O LM,CA1 Basket CCK+,53,49,-4,4,feedback,0.0008287232688668674
+CA1 SO SO,CA1 Basket CCK+,52,49,-3,3,feedback,0.0014659118146595573
+CA1 Schaffer Collateral Associated,CA1 Basket CCK+,33,49,16,16,feedforward,0.007901819314755842
+CA1 Trilaminar,CA1 Basket CCK+,54,49,-5,5,feedback,0.007291429953415
+CA2 Bistratified,CA1 Basket CCK+,48,49,1,1,feedforward,7.536861557673606e-05
+CA2 Wide Arbor Basket,CA1 Basket CCK+,40,49,9,9,feedforward,0.03509808245816806
+CA3 Trilaminar,CA1 Basket CCK+,8,49,41,41,feedforward,0.005210918194741443
+CA1 Back Projection,CA1 Bistratified,34,51,17,17,feedforward,0.0065021406026247695
+CA1 Basket,CA1 Bistratified,68,51,-17,17,feedback,0.012587448907979469
+CA1 Basket CCK+,CA1 Bistratified,49,51,2,2,feedforward,0.031090020131148484
+CA1 Horizontal Basket,CA1 Bistratified,69,51,-18,18,feedback,0.013971482954689762
+CA1 Ivy,CA1 Bistratified,50,51,1,1,feedforward,0.004698558128065818
+CA1 LMR,CA1 Bistratified,79,51,-28,28,feedback,0.0003198509366757325
+CA1 O LMR,CA1 Bistratified,55,51,-4,4,feedback,0.0004918997243866059
+CA1 Oriens Alveus,CA1 Bistratified,67,51,-16,16,feedback,0.0013730962442537343
+CA1 Oriens Bistratified,CA1 Bistratified,32,51,19,19,feedforward,0.000645343583119437
+CA1 Quadrilaminar,CA1 Bistratified,81,51,-30,30,feedback,3.233642308590914e-05
+CA1 R Receiving Apical Targeting,CA1 Bistratified,57,51,-6,6,feedback,0.0006221140711976216
+CA1 Radial Trilaminar,CA1 Bistratified,80,51,-29,29,feedback,0.0004653228888396404
+CA1 Radiatum,CA1 Bistratified,56,51,-5,5,feedback,0.00020078822702388217
+CA1 Recurrent O LM,CA1 Bistratified,53,51,-2,2,feedback,0.00012044684910501501
+CA1 SO SO,CA1 Bistratified,52,51,-1,1,feedback,0.0009277799900086746
+CA1 Schaffer Collateral Associated,CA1 Bistratified,33,51,18,18,feedforward,0.004921877013266462
+CA1 Trilaminar,CA1 Bistratified,54,51,-3,3,feedback,0.004442021609679934
+CA2 Bistratified,CA1 Bistratified,48,51,3,3,feedforward,3.902757375424741e-05
+CA2 Wide Arbor Basket,CA1 Bistratified,40,51,11,11,feedforward,0.0219147197446136
+CA3 Trilaminar,CA1 Bistratified,8,51,43,43,feedforward,0.0034002893012715506
+CA1 Back Projection,CA1 Horizontal Axo Axonic,34,83,49,49,feedforward,0.0067643734230259395
+CA1 Bistratified,CA1 Horizontal Axo Axonic,51,83,32,32,feedforward,0.006046745960878387
+CA1 Ivy,CA1 Horizontal Axo Axonic,50,83,33,33,feedforward,0.006632253282958328
+CA1 Oriens Alveus,CA1 Horizontal Axo Axonic,67,83,16,16,feedforward,0.0026989008482789026
+CA1 Oriens Bistratified,CA1 Horizontal Axo Axonic,32,83,51,51,feedforward,0.0004967671049066009
+CA1 Quadrilaminar,CA1 Horizontal Axo Axonic,81,83,2,2,feedforward,1.6988483579009173e-05
+CA1 Radial Trilaminar,CA1 Horizontal Axo Axonic,80,83,3,3,feedforward,0.0005011636234444615
+CA1 Recurrent O LM,CA1 Horizontal Axo Axonic,53,83,30,30,feedforward,0.0004574293564855668
+CA1 SO SO,CA1 Horizontal Axo Axonic,52,83,31,31,feedforward,0.0037290685358666005
+CA1 Schaffer Collateral Associated,CA1 Horizontal Axo Axonic,33,83,50,50,feedforward,0.002262027427497168
+CA1 Trilaminar,CA1 Horizontal Axo Axonic,54,83,29,29,feedforward,0.0040590481015775155
+CA2 Bistratified,CA1 Horizontal Axo Axonic,48,83,35,35,feedforward,4.8738262672053196e-05
+CA3 Trilaminar,CA1 Horizontal Axo Axonic,8,83,75,75,feedforward,0.004477235323365067
+CA1 Back Projection,CA1 Horizontal Basket,34,69,35,35,feedforward,0.009546822991728971
+CA1 Basket,CA1 Horizontal Basket,68,69,1,1,feedforward,0.0305260330300267
+CA1 Basket CCK+,CA1 Horizontal Basket,49,69,20,20,feedforward,0.06364228890880609
+CA1 Bistratified,CA1 Horizontal Basket,51,69,18,18,feedforward,0.009577015042400919
+CA1 Ivy,CA1 Horizontal Basket,50,69,19,19,feedforward,0.01095204738546883
+CA1 Oriens Alveus,CA1 Horizontal Basket,67,69,2,2,feedforward,0.005458609140286975
+CA1 Oriens Bistratified,CA1 Horizontal Basket,32,69,37,37,feedforward,0.001235759982331347
+CA1 Quadrilaminar,CA1 Horizontal Basket,81,69,-12,12,feedback,3.3918280903884696e-05
+CA1 Radial Trilaminar,CA1 Horizontal Basket,80,69,-11,11,feedback,0.0007233820208682104
+CA1 Recurrent O LM,CA1 Horizontal Basket,53,69,16,16,feedforward,0.00074064663332819
+CA1 SO SO,CA1 Horizontal Basket,52,69,17,17,feedforward,0.0044358456196180165
+CA1 Schaffer Collateral Associated,CA1 Horizontal Basket,33,69,36,36,feedforward,0.0038816260522406896
+CA1 Trilaminar,CA1 Horizontal Basket,54,69,15,15,feedforward,0.006186699225003162
+CA2 Bistratified,CA1 Horizontal Basket,48,69,21,21,feedforward,0.00021347076769615797
+CA2 Wide Arbor Basket,CA1 Horizontal Basket,40,69,29,29,feedforward,0.04712279496984382
+CA3 Trilaminar,CA1 Horizontal Basket,8,69,61,61,feedforward,0.007948614490812406
+CA1 Back Projection,CA1 Ivy,34,50,16,16,feedforward,0.0039127904930007775
+CA1 Basket,CA1 Ivy,68,50,-18,18,feedback,0.008608828797554991
+CA1 Basket CCK+,CA1 Ivy,49,50,1,1,feedforward,0.020157974415751585
+CA1 Bistratified,CA1 Ivy,51,50,-1,1,feedback,0.0035458673335803004
+CA1 Horizontal Basket,CA1 Ivy,69,50,-19,19,feedback,0.008952674085527926
+CA1 LMR,CA1 Ivy,79,50,-29,29,feedback,0.00014296647916944383
+CA1 O LMR,CA1 Ivy,55,50,-5,5,feedback,0.00016647478050692114
+CA1 Oriens Alveus,CA1 Ivy,67,50,-17,17,feedback,0.0008819265493883409
+CA1 Oriens Bistratified,CA1 Ivy,32,50,18,18,feedforward,0.0002527322168540637
+CA1 Quadrilaminar,CA1 Ivy,81,50,-31,31,feedback,1.730258097957044e-05
+CA1 R Receiving Apical Targeting,CA1 Ivy,57,50,-7,7,feedback,0.0002906015259503764
+CA1 Radial Trilaminar,CA1 Ivy,80,50,-30,30,feedback,0.00028298430271466
+CA1 Radiatum,CA1 Ivy,56,50,-6,6,feedback,9.041165879320281e-05
+CA1 Recurrent O LM,CA1 Ivy,53,50,-3,3,feedback,6.928601553211986e-05
+CA1 SO SO,CA1 Ivy,52,50,-2,2,feedback,0.0005839853389693026
+CA1 Schaffer Collateral Associated,CA1 Ivy,33,50,17,17,feedforward,0.003029083136328775
+CA1 Trilaminar,CA1 Ivy,54,50,-4,4,feedback,0.0027852871289133583
+CA2 Bistratified,CA1 Ivy,48,50,2,2,feedforward,1.0373183070782984e-05
+CA2 Wide Arbor Basket,CA1 Ivy,40,50,10,10,feedforward,0.014632891142580436
+CA3 Trilaminar,CA1 Ivy,8,50,42,42,feedforward,0.0019227797080966726
+CA1 Back Projection,CA1 LMR,34,79,45,45,feedforward,0.025373328309231967
+CA1 Bistratified,CA1 LMR,51,79,28,28,feedforward,0.015371938859320068
+CA1 Ivy,CA1 LMR,50,79,29,29,feedforward,0.003950568923603709
+CA1 Neurogliaform,CA1 LMR,59,79,20,20,feedforward,0.011473560738343117
+CA1 Neurogliaform Projecting,CA1 LMR,71,79,8,8,feedforward,0.0007995429548086982
+CA1 O LM,CA1 LMR,58,79,21,21,feedforward,0.0063813608975417145
+CA1 O LMR,CA1 LMR,55,79,24,24,feedforward,0.007165187081122899
+CA1 OR LM,CA1 LMR,70,79,9,9,feedforward,0.005279766366482249
+CA1 Oriens Bistratified,CA1 LMR,32,79,47,47,feedforward,0.0019866969222781896
+CA1 Perforant Path Associated,CA1 LMR,60,79,19,19,feedforward,0.016415841129684985
+CA1 Perforant Path Associated QuadD,CA1 LMR,82,79,-3,3,feedback,0.0009940802262097274
+CA1 Quadrilaminar,CA1 LMR,81,79,-2,2,feedback,0.000183251451393698
+CA1 R Receiving Apical Targeting,CA1 LMR,57,79,22,22,feedforward,0.00892322734028405
+CA1 Radial Trilaminar,CA1 LMR,80,79,-1,1,feedback,0.0007504412642658219
+CA1 Radiatum,CA1 LMR,56,79,23,23,feedforward,0.0013749015489048807
+CA1 Recurrent O LM,CA1 LMR,53,79,26,26,feedforward,0.002595455701779863
+CA1 Schaffer Collateral Associated,CA1 LMR,33,79,46,46,feedforward,0.011778197161623597
+CA1 Trilaminar,CA1 LMR,54,79,25,25,feedforward,0.006703523554201976
+CA2 Bistratified,CA1 LMR,48,79,31,31,feedforward,4.5691076613064966e-05
+CA3 Trilaminar,CA1 LMR,8,79,71,71,feedforward,0.002752116169711196
+CA1 Back Projection,CA1 Neurogliaform,34,59,25,25,feedforward,0.0028532027976872596
+CA1 LMR,CA1 Neurogliaform,79,59,-20,20,feedback,0.00023301973654929866
+CA1 Neurogliaform Projecting,CA1 Neurogliaform,71,59,-12,12,feedback,0.00018872657399769777
+CA1 O LM,CA1 Neurogliaform,58,59,1,1,feedforward,0.001160605976757942
+CA1 O LMR,CA1 Neurogliaform,55,59,4,4,feedforward,0.0006734868705744996
+CA1 OR LM,CA1 Neurogliaform,70,59,-11,11,feedback,0.001049791595547707
+CA1 Perforant Path Associated,CA1 Neurogliaform,60,59,-1,1,feedback,0.0036403306632125
+CA1 Perforant Path Associated QuadD,CA1 Neurogliaform,82,59,-23,23,feedback,0.0002060613786968535
+CA1 Quadrilaminar,CA1 Neurogliaform,81,59,-22,22,feedback,1.1713564299091671e-05
+CA1 R Receiving Apical Targeting,CA1 Neurogliaform,57,59,2,2,feedforward,0.0005799638153888975
+CA1 Recurrent O LM,CA1 Neurogliaform,53,59,6,6,feedforward,0.0005125581792733953
+CA1 Back Projection,CA1 Neurogliaform Projecting,34,71,37,37,feedforward,0.0008210886317725257
+CA1 LMR,CA1 Neurogliaform Projecting,79,71,-8,8,feedback,7.635523620244376e-05
+CA1 Neurogliaform,CA1 Neurogliaform Projecting,59,71,12,12,feedforward,0.0009237952720621938
+CA1 O LM,CA1 Neurogliaform Projecting,58,71,13,13,feedforward,0.0004263184610541503
+CA1 O LMR,CA1 Neurogliaform Projecting,55,71,16,16,feedforward,0.00022470543904120718
+CA1 OR LM,CA1 Neurogliaform Projecting,70,71,1,1,feedforward,0.00037271218754653975
+CA1 Perforant Path Associated,CA1 Neurogliaform Projecting,60,71,11,11,feedforward,0.0011733259950080404
+CA1 Perforant Path Associated QuadD,CA1 Neurogliaform Projecting,82,71,-11,11,feedback,6.869438936603222e-05
+CA1 Quadrilaminar,CA1 Neurogliaform Projecting,81,71,-10,10,feedback,3.636999042412023e-06
+CA1 R Receiving Apical Targeting,CA1 Neurogliaform Projecting,57,71,14,14,feedforward,0.00017401424390282847
+CA1 Recurrent O LM,CA1 Neurogliaform Projecting,53,71,18,18,feedforward,0.0001732632868835438
+CA3 Spiny Lucidum,CA1 Neurogliaform Projecting,35,71,36,36,feedforward,0.00016565321198154005
+DG HIPP,CA1 Neurogliaform Projecting,45,71,26,26,feedforward,0.005219094039707389
+DG HIPROM,CA1 Neurogliaform Projecting,73,71,-2,2,feedback,3.420796978793967e-06
+DG MOLAX,CA1 Neurogliaform Projecting,65,71,6,6,feedforward,0.0018189671931675025
+DG MOPP,CA1 Neurogliaform Projecting,62,71,9,9,feedforward,0.00017647927371693736
+DG Neurogliaform,CA1 Neurogliaform Projecting,66,71,5,5,feedforward,3.0699247441811634e-05
+DG Total Molecular Layer,CA1 Neurogliaform Projecting,61,71,10,10,feedforward,0.0020239885310807605
+CA1 Back Projection,CA1 O LM,34,58,24,24,feedforward,0.0012523964343265307
+CA1 Bistratified,CA1 O LM,51,58,7,7,feedforward,0.0012092106497197895
+CA1 Ivy,CA1 O LM,50,58,8,8,feedforward,0.0011021832261856846
+CA1 Oriens Alveus,CA1 O LM,67,58,-9,9,feedback,0.000493115635626423
+CA1 Oriens Bistratified,CA1 O LM,32,58,26,26,feedforward,0.00013551637051736895
+CA1 Quadrilaminar,CA1 O LM,81,58,-23,23,feedback,4.367855967185338e-06
+CA1 Radial Trilaminar,CA1 O LM,80,58,-22,22,feedback,0.00012405648198161593
+CA1 Recurrent O LM,CA1 O LM,53,58,5,5,feedforward,8.837791128273864e-05
+CA1 SO SO,CA1 O LM,52,58,6,6,feedforward,0.0006982984434600548
+CA1 Schaffer Collateral Associated,CA1 O LM,33,58,25,25,feedforward,0.0006193804740984829
+CA1 Trilaminar,CA1 O LM,54,58,4,4,feedforward,0.000620598567418353
+CA2 Bistratified,CA1 O LM,48,58,10,10,feedforward,1.297458157222413e-05
+CA3 Trilaminar,CA1 O LM,8,58,50,50,feedforward,0.0008451896557768528
+CA1 Back Projection,CA1 O LMR,34,55,21,21,feedforward,0.0021796322230137797
+CA1 Bistratified,CA1 O LMR,51,55,4,4,feedforward,0.0020365021011094424
+CA1 Ivy,CA1 O LMR,50,55,5,5,feedforward,0.0019269910090792667
+CA1 Oriens Alveus,CA1 O LMR,67,55,-12,12,feedback,0.0008105306612351904
+CA1 Oriens Bistratified,CA1 O LMR,32,55,23,23,feedforward,0.00016629231748705657
+CA1 Quadrilaminar,CA1 O LMR,81,55,-26,26,feedback,6.0013154794775855e-06
+CA1 Radial Trilaminar,CA1 O LMR,80,55,-25,25,feedback,0.0002009693959555656
+CA1 Recurrent O LM,CA1 O LMR,53,55,2,2,feedforward,0.0001454700019321925
+CA1 SO SO,CA1 O LMR,52,55,3,3,feedforward,0.0012144328738399736
+CA1 Schaffer Collateral Associated,CA1 O LMR,33,55,22,22,feedforward,0.0008787201065947466
+CA1 Trilaminar,CA1 O LMR,54,55,1,1,feedforward,0.001086534422660498
+CA2 Bistratified,CA1 O LMR,48,55,7,7,feedforward,1.4519237349799567e-05
+CA3 Trilaminar,CA1 O LMR,8,55,47,47,feedforward,0.0013940390403688852
+CA1 Back Projection,CA1 OR LM,34,70,36,36,feedforward,0.004310164958204801
+CA1 Basket,CA1 OR LM,68,70,2,2,feedforward,0.01317203513805727
+CA1 Basket CCK+,CA1 OR LM,49,70,21,21,feedforward,0.02794169093366812
+CA1 Bistratified,CA1 OR LM,51,70,19,19,feedforward,0.005578486217683951
+CA1 Horizontal Basket,CA1 OR LM,69,70,1,1,feedforward,0.009913002182120352
+CA1 Ivy,CA1 OR LM,50,70,20,20,feedforward,0.0034277370229961117
+CA1 LMR,CA1 OR LM,79,70,-9,9,feedback,0.0004511852099251085
+CA1 O LMR,CA1 OR LM,55,70,15,15,feedforward,0.0009854535678670451
+CA1 Oriens Alveus,CA1 OR LM,67,70,3,3,feedforward,0.0007088741534177662
+CA1 Oriens Bistratified,CA1 OR LM,32,70,38,38,feedforward,0.0009533831554499956
+CA1 Quadrilaminar,CA1 OR LM,81,70,-11,11,feedback,3.358304136974826e-05
+CA1 R Receiving Apical Targeting,CA1 OR LM,57,70,13,13,feedforward,0.0008129014925110703
+CA1 Radial Trilaminar,CA1 OR LM,80,70,-10,10,feedback,0.0004468613801831108
+CA1 Radiatum,CA1 OR LM,56,70,14,14,feedforward,0.0002626819284353772
+CA1 Recurrent O LM,CA1 OR LM,53,70,17,17,feedforward,0.00012010077924834694
+CA1 SO SO,CA1 OR LM,52,70,18,18,feedforward,0.0009466164129294523
+CA1 Schaffer Collateral Associated,CA1 OR LM,33,70,37,37,feedforward,0.003784756557745402
+CA1 Trilaminar,CA1 OR LM,54,70,16,16,feedforward,0.0022542615265363436
+CA2 Bistratified,CA1 OR LM,48,70,22,22,feedforward,6.234905264070767e-05
+CA2 Wide Arbor Basket,CA1 OR LM,40,70,30,30,feedforward,0.02064954970443517
+CA3 Trilaminar,CA1 OR LM,8,70,62,62,feedforward,0.0026446878780697334
+CA1 Back Projection,CA1 Oriens Alveus,34,67,33,33,feedforward,0.016192433147900368
+CA1 Bistratified,CA1 Oriens Alveus,51,67,16,16,feedforward,0.010314198896630742
+CA1 Ivy,CA1 Oriens Alveus,50,67,17,17,feedforward,0.007536661318354238
+CA1 LMR,CA1 Oriens Alveus,79,67,-12,12,feedback,0.0008714991497265183
+CA1 Neurogliaform,CA1 Oriens Alveus,59,67,8,8,feedforward,0.002790104937694463
+CA1 Neurogliaform Projecting,CA1 Oriens Alveus,71,67,-4,4,feedback,0.00019934583839506618
+CA1 O LM,CA1 Oriens Alveus,58,67,9,9,feedforward,0.0015332196758842977
+CA1 O LMR,CA1 Oriens Alveus,55,67,12,12,feedforward,0.0018739177600395423
+CA1 OR LM,CA1 Oriens Alveus,70,67,-3,3,feedback,0.0012807715294589404
+CA1 Oriens Bistratified,CA1 Oriens Alveus,32,67,35,35,feedforward,0.0011135834206355063
+CA1 Perforant Path Associated,CA1 Oriens Alveus,60,67,7,7,feedforward,0.003946765438367798
+CA1 Perforant Path Associated QuadD,CA1 Oriens Alveus,82,67,-15,15,feedback,0.00023858695766525536
+CA1 Quadrilaminar,CA1 Oriens Alveus,81,67,-14,14,feedback,7.037149964335839e-05
+CA1 R Receiving Apical Targeting,CA1 Oriens Alveus,57,67,10,10,feedforward,0.0021765055508411305
+CA1 Radial Trilaminar,CA1 Oriens Alveus,80,67,-13,13,feedback,0.0008247273931103827
+CA1 Radiatum,CA1 Oriens Alveus,56,67,11,11,feedforward,0.0003587695484950985
+CA1 Recurrent O LM,CA1 Oriens Alveus,53,67,14,14,feedforward,0.0009667226192530373
+CA1 SO SO,CA1 Oriens Alveus,52,67,15,15,feedforward,0.0016790517871687653
+CA1 Schaffer Collateral Associated,CA1 Oriens Alveus,33,67,34,34,feedforward,0.008658001879610258
+CA1 Trilaminar,CA1 Oriens Alveus,54,67,13,13,feedforward,0.008001252775316142
+CA2 Bistratified,CA1 Oriens Alveus,48,67,19,19,feedforward,5.581957571226182e-05
+CA3 Trilaminar,CA1 Oriens Alveus,8,67,59,59,feedforward,0.0054094579938119705
+CA1 Back Projection,CA1 Oriens Bistratified,34,32,-2,2,feedback,0.0003681479504801441
+CA1 Bistratified,CA1 Oriens Bistratified,51,32,-19,19,feedback,0.00033190259679119147
+CA1 Ivy,CA1 Oriens Bistratified,50,32,-18,18,feedback,0.00035816488212544995
+CA1 Oriens Alveus,CA1 Oriens Bistratified,67,32,-35,35,feedback,0.00015507264971170351
+CA1 Quadrilaminar,CA1 Oriens Bistratified,81,32,-49,49,feedback,9.990824547343121e-07
+CA1 Radial Trilaminar,CA1 Oriens Bistratified,80,32,-48,48,feedback,2.8287367872488326e-05
+CA1 Recurrent O LM,CA1 Oriens Bistratified,53,32,-21,21,feedback,2.520312733643837e-05
+CA1 SO SO,CA1 Oriens Bistratified,52,32,-20,20,feedback,0.00020523805533128516
+CA1 Schaffer Collateral Associated,CA1 Oriens Bistratified,33,32,-1,1,feedback,0.0001238769415171302
+CA1 Trilaminar,CA1 Oriens Bistratified,54,32,-22,22,feedback,0.00022105913386744899
+CA2 Bistratified,CA1 Oriens Bistratified,48,32,-16,16,feedback,3.5779149472470966e-06
+CA3 Trilaminar,CA1 Oriens Bistratified,8,32,24,24,feedforward,0.0002590043238558432
+CA1 Back Projection,CA1 Perforant Path Associated,34,60,26,26,feedforward,0.01954570657481199
+CA1 Bistratified,CA1 Perforant Path Associated,51,60,9,9,feedforward,0.012878401838242246
+CA1 Ivy,CA1 Perforant Path Associated,50,60,10,10,feedforward,0.004001721431136435
+CA1 LMR,CA1 Perforant Path Associated,79,60,-19,19,feedback,0.002748189511710669
+CA1 Neurogliaform,CA1 Perforant Path Associated,59,60,1,1,feedforward,0.009021462617184452
+CA1 Neurogliaform Projecting,CA1 Perforant Path Associated,71,60,-11,11,feedback,0.0006518773280865352
+CA1 O LM,CA1 Perforant Path Associated,58,60,2,2,feedforward,0.004976347209714534
+CA1 O LMR,CA1 Perforant Path Associated,55,60,5,5,feedforward,0.006535274847253316
+CA1 OR LM,CA1 Perforant Path Associated,70,60,-10,10,feedback,0.004574235971877877
+CA1 Oriens Bistratified,CA1 Perforant Path Associated,32,60,28,28,feedforward,0.001992332880309117
+CA1 Perforant Path Associated QuadD,CA1 Perforant Path Associated,82,60,-22,22,feedback,0.0006899157692838819
+CA1 Quadrilaminar,CA1 Perforant Path Associated,81,60,-21,21,feedback,0.00015135109238958777
+CA1 R Receiving Apical Targeting,CA1 Perforant Path Associated,57,60,3,3,feedforward,0.0062694676731645076
+CA1 Radial Trilaminar,CA1 Perforant Path Associated,80,60,-20,20,feedback,0.0007087323465531113
+CA1 Radiatum,CA1 Perforant Path Associated,56,60,4,4,feedforward,0.0010672581822018135
+CA1 Recurrent O LM,CA1 Perforant Path Associated,53,60,7,7,feedforward,0.0018224381815773482
+CA1 Schaffer Collateral Associated,CA1 Perforant Path Associated,33,60,27,27,feedforward,0.00955450458282945
+CA1 Trilaminar,CA1 Perforant Path Associated,54,60,6,6,feedforward,0.00504238545841009
+CA2 Bistratified,CA1 Perforant Path Associated,48,60,12,12,feedforward,6.541381817713172e-05
+CA3 Trilaminar,CA1 Perforant Path Associated,8,60,52,52,feedforward,0.002972474568810091
+CA1 Back Projection,CA1 Perforant Path Associated QuadD,34,82,48,48,feedforward,0.0539598504874986
+CA1 Bistratified,CA1 Perforant Path Associated QuadD,51,82,31,31,feedforward,0.038966095934488944
+CA1 Ivy,CA1 Perforant Path Associated QuadD,50,82,32,32,feedforward,0.02901122907638488
+CA1 LMR,CA1 Perforant Path Associated QuadD,79,82,3,3,feedforward,0.004437015312510448
+CA1 Neurogliaform,CA1 Perforant Path Associated QuadD,59,82,23,23,feedforward,0.010738373367900745
+CA1 Neurogliaform Projecting,CA1 Perforant Path Associated QuadD,71,82,11,11,feedforward,0.0007681881727499473
+CA1 O LM,CA1 Perforant Path Associated QuadD,58,82,24,24,feedforward,0.005558793380747373
+CA1 O LMR,CA1 Perforant Path Associated QuadD,55,82,27,27,feedforward,0.012533120656295098
+CA1 OR LM,CA1 Perforant Path Associated QuadD,70,82,12,12,feedforward,0.005405440584446197
+CA1 Oriens Alveus,CA1 Perforant Path Associated QuadD,67,82,15,15,feedforward,0.005760040979394386
+CA1 Oriens Bistratified,CA1 Perforant Path Associated QuadD,32,82,50,50,feedforward,0.0063187517320724435
+CA1 Perforant Path Associated,CA1 Perforant Path Associated QuadD,60,82,22,22,feedforward,0.011335638442045312
+CA1 Quadrilaminar,CA1 Perforant Path Associated QuadD,81,82,1,1,feedforward,0.00032196573708565365
+CA1 R Receiving Apical Targeting,CA1 Perforant Path Associated QuadD,57,82,25,25,feedforward,0.007546464564431325
+CA1 Radial Trilaminar,CA1 Perforant Path Associated QuadD,80,82,2,2,feedforward,0.003257515101101804
+CA1 Radiatum,CA1 Perforant Path Associated QuadD,56,82,26,26,feedforward,0.0018042339145172943
+CA1 Recurrent O LM,CA1 Perforant Path Associated QuadD,53,82,29,29,feedforward,0.002668495390198239
+CA1 SO SO,CA1 Perforant Path Associated QuadD,52,82,30,30,feedforward,0.004031667337821075
+CA1 Schaffer Collateral Associated,CA1 Perforant Path Associated QuadD,33,82,49,49,feedforward,0.033813053427607494
+CA1 Trilaminar,CA1 Perforant Path Associated QuadD,54,82,28,28,feedforward,0.025380358351145084
+CA2 Bistratified,CA1 Perforant Path Associated QuadD,48,82,34,34,feedforward,0.00042364999692233175
+CA3 Trilaminar,CA1 Perforant Path Associated QuadD,8,82,74,74,feedforward,0.023141109797482025
+CA1 Axo Axonic,CA1 Pyramidal,84,10,-74,74,feedback,0.0002716435121520187
+CA1 Back Projection,CA1 Pyramidal,34,10,-24,24,feedback,0.003339444487392623
+CA1 Basket,CA1 Pyramidal,68,10,-58,58,feedback,0.007870372189833946
+CA1 Basket CCK+,CA1 Pyramidal,49,10,-39,39,feedback,0.013062310749520103
+CA1 Bistratified,CA1 Pyramidal,51,10,-41,41,feedback,0.002417254198577918
+CA1 Horizontal Axo Axonic,CA1 Pyramidal,83,10,-73,73,feedback,0.00013656892460453196
+CA1 Horizontal Basket,CA1 Pyramidal,69,10,-59,59,feedback,0.00356988797915395
+CA1 Ivy,CA1 Pyramidal,50,10,-40,40,feedback,0.0016006244474086671
+CA1 LMR,CA1 Pyramidal,79,10,-69,69,feedback,0.00019688426023823025
+CA1 Neurogliaform,CA1 Pyramidal,59,10,-49,49,feedback,0.0006051527263667016
+CA1 Neurogliaform Projecting,CA1 Pyramidal,71,10,-61,61,feedback,4.5210805260602715e-05
+CA1 O LM,CA1 Pyramidal,58,10,-48,48,feedback,0.0003335011518248075
+CA1 O LMR,CA1 Pyramidal,55,10,-45,45,feedback,0.00044138374541886904
+CA1 OR LM,CA1 Pyramidal,70,10,-60,60,feedback,0.00027667292654338677
+CA1 Oriens Alveus,CA1 Pyramidal,67,10,-57,57,feedback,0.0004574697506595274
+CA1 Oriens Bistratified,CA1 Pyramidal,32,10,-22,22,feedback,0.0002765535941721889
+CA1 Perforant Path Associated,CA1 Pyramidal,60,10,-50,50,feedback,0.000831832291302105
+CA1 Quadrilaminar,CA1 Pyramidal,81,10,-71,71,feedback,1.5947891481197068e-05
+CA1 R Receiving Apical Targeting,CA1 Pyramidal,57,10,-47,47,feedback,0.0004909000273140158
+CA1 Radial Trilaminar,CA1 Pyramidal,80,10,-70,70,feedback,0.00020136228404233998
+CA1 Radiatum,CA1 Pyramidal,56,10,-46,46,feedback,6.497019854705875e-05
+CA1 Recurrent O LM,CA1 Pyramidal,53,10,-43,43,feedback,0.00021452942879768855
+CA1 SO SO,CA1 Pyramidal,52,10,-42,42,feedback,0.0004205358160545056
+CA1 Schaffer Collateral Associated,CA1 Pyramidal,33,10,-23,23,feedback,0.0020578563491076324
+CA1 Trilaminar,CA1 Pyramidal,54,10,-44,44,feedback,0.0016827748563980436
+CA2 Bistratified,CA1 Pyramidal,48,10,-38,38,feedback,1.382903010314565e-05
+CA2 Wide Arbor Basket,CA1 Pyramidal,40,10,-30,30,feedback,0.008236868223997008
+CA3 Trilaminar,CA1 Pyramidal,8,10,2,2,feedforward,0.0011759484285091884
+CA1 Back Projection,CA1 Quadrilaminar,34,81,47,47,feedforward,0.009805734301198693
+CA1 Bistratified,CA1 Quadrilaminar,51,81,30,30,feedforward,0.006579410660016362
+CA1 Ivy,CA1 Quadrilaminar,50,81,31,31,feedforward,0.004983135993078681
+CA1 LMR,CA1 Quadrilaminar,79,81,2,2,feedforward,0.0006171691239225948
+CA1 Neurogliaform,CA1 Quadrilaminar,59,81,22,22,feedforward,0.0018057266550590416
+CA1 Neurogliaform Projecting,CA1 Quadrilaminar,71,81,10,10,feedforward,0.00012808205659285175
+CA1 O LM,CA1 Quadrilaminar,58,81,23,23,feedforward,0.0009730033600187832
+CA1 O LMR,CA1 Quadrilaminar,55,81,26,26,feedforward,0.0014967355666622372
+CA1 OR LM,CA1 Quadrilaminar,70,81,11,11,feedforward,0.0009040978561723844
+CA1 Oriens Alveus,CA1 Quadrilaminar,67,81,14,14,feedforward,0.0013832458572870497
+CA1 Oriens Bistratified,CA1 Quadrilaminar,32,81,49,49,feedforward,0.0008088399220148598
+CA1 Perforant Path Associated,CA1 Quadrilaminar,60,81,21,21,feedforward,0.002176344321547904
+CA1 Perforant Path Associated QuadD,CA1 Quadrilaminar,82,81,-1,1,feedback,0.0001298592452770079
+CA1 R Receiving Apical Targeting,CA1 Quadrilaminar,57,81,24,24,feedforward,0.001259799717634732
+CA1 Radial Trilaminar,CA1 Quadrilaminar,80,81,1,1,feedforward,0.0005362772298565698
+CA1 Radiatum,CA1 Quadrilaminar,56,81,25,25,feedforward,0.0002274109524345296
+CA1 Recurrent O LM,CA1 Quadrilaminar,53,81,28,28,feedforward,0.0005492356194905393
+CA1 SO SO,CA1 Quadrilaminar,52,81,29,29,feedforward,0.0009646753384989134
+CA1 Schaffer Collateral Associated,CA1 Quadrilaminar,33,81,48,48,feedforward,0.005391871677094108
+CA1 Trilaminar,CA1 Quadrilaminar,54,81,27,27,feedforward,0.004721513429805265
+CA2 Bistratified,CA1 Quadrilaminar,48,81,33,33,feedforward,5.5409662980630584e-05
+CA3 Trilaminar,CA1 Quadrilaminar,8,81,73,73,feedforward,0.003841814002863451
+CA1 Back Projection,CA1 R Receiving Apical Targeting,34,57,23,23,feedforward,0.008146398397198228
+CA1 Bistratified,CA1 R Receiving Apical Targeting,51,57,6,6,feedforward,0.012889469084945005
+CA1 Ivy,CA1 R Receiving Apical Targeting,50,57,7,7,feedforward,0.004863222540555757
+CA1 LMR,CA1 R Receiving Apical Targeting,79,57,-22,22,feedback,0.0016847680114216643
+CA1 O LMR,CA1 R Receiving Apical Targeting,55,57,2,2,feedforward,0.0034248027625032903
+CA1 Oriens Bistratified,CA1 R Receiving Apical Targeting,32,57,25,25,feedforward,0.00238891909659428
+CA1 Quadrilaminar,CA1 R Receiving Apical Targeting,81,57,-24,24,feedback,9.597935757447357e-05
+CA1 Radial Trilaminar,CA1 R Receiving Apical Targeting,80,57,-23,23,feedback,0.0008514638687132437
+CA1 Radiatum,CA1 R Receiving Apical Targeting,56,57,1,1,feedforward,0.0010384736451460564
+CA1 Schaffer Collateral Associated,CA1 R Receiving Apical Targeting,33,57,24,24,feedforward,0.010119642047183056
+CA1 Trilaminar,CA1 R Receiving Apical Targeting,54,57,3,3,feedforward,0.004873181802764565
+CA2 Bistratified,CA1 R Receiving Apical Targeting,48,57,9,9,feedforward,0.00010298368083393723
+CA3 Trilaminar,CA1 R Receiving Apical Targeting,8,57,49,49,feedforward,0.0038385215394768912
+CA1 Back Projection,CA1 Radial Trilaminar,34,80,46,46,feedforward,0.01606452215696947
+CA1 Basket,CA1 Radial Trilaminar,68,80,12,12,feedforward,0.026361943557310356
+CA1 Basket CCK+,CA1 Radial Trilaminar,49,80,31,31,feedforward,0.06303878552430389
+CA1 Bistratified,CA1 Radial Trilaminar,51,80,29,29,feedforward,0.011452003424510773
+CA1 Horizontal Basket,CA1 Radial Trilaminar,69,80,11,11,feedforward,0.028796213101358426
+CA1 Ivy,CA1 Radial Trilaminar,50,80,30,30,feedforward,0.008753779403793854
+CA1 LMR,CA1 Radial Trilaminar,79,80,1,1,feedforward,0.000938025023421124
+CA1 Neurogliaform,CA1 Radial Trilaminar,59,80,21,21,feedforward,0.0028099500003645056
+CA1 Neurogliaform Projecting,CA1 Radial Trilaminar,71,80,9,9,feedforward,0.00018134990966511675
+CA1 O LM,CA1 Radial Trilaminar,58,80,22,22,feedforward,0.0014422530383610642
+CA1 O LMR,CA1 Radial Trilaminar,55,80,25,25,feedforward,0.0019315240671034647
+CA1 OR LM,CA1 Radial Trilaminar,70,80,10,10,feedforward,0.0012656932116584382
+CA1 Oriens Alveus,CA1 Radial Trilaminar,67,80,13,13,feedforward,0.0022971688169774367
+CA1 Oriens Bistratified,CA1 Radial Trilaminar,32,80,48,48,feedforward,0.001017896339227886
+CA1 Perforant Path Associated,CA1 Radial Trilaminar,60,80,20,20,feedforward,0.0028842016906439542
+CA1 Perforant Path Associated QuadD,CA1 Radial Trilaminar,82,80,-2,2,feedback,0.00018251699216740913
+CA1 Quadrilaminar,CA1 Radial Trilaminar,81,80,-1,1,feedback,7.889404955554918e-05
+CA1 R Receiving Apical Targeting,CA1 Radial Trilaminar,57,80,23,23,feedforward,0.001742887780088612
+CA1 Radiatum,CA1 Radial Trilaminar,56,80,24,24,feedforward,0.0003426346210849452
+CA1 Recurrent O LM,CA1 Radial Trilaminar,53,80,27,27,feedforward,0.0008602488059903654
+CA1 SO SO,CA1 Radial Trilaminar,52,80,28,28,feedforward,0.0015643758608275792
+CA1 Schaffer Collateral Associated,CA1 Radial Trilaminar,33,80,47,47,feedforward,0.00882065270040458
+CA1 Trilaminar,CA1 Radial Trilaminar,54,80,26,26,feedforward,0.008139496417787823
+CA2 Bistratified,CA1 Radial Trilaminar,48,80,32,32,feedforward,6.480044428636286e-05
+CA2 Wide Arbor Basket,CA1 Radial Trilaminar,40,80,40,40,feedforward,0.044797667259230435
+CA3 Trilaminar,CA1 Radial Trilaminar,8,80,72,72,feedforward,0.006056678923653744
+CA1 Back Projection,CA1 Radiatum,34,56,22,22,feedforward,0.0021864794067911857
+CA1 Bistratified,CA1 Radiatum,51,56,5,5,feedforward,0.0037685388824161125
+CA1 Ivy,CA1 Radiatum,50,56,6,6,feedforward,0.0012244579194170312
+CA1 LMR,CA1 Radiatum,79,56,-23,23,feedback,0.0005042817397819248
+CA1 O LMR,CA1 Radiatum,55,56,1,1,feedforward,0.0008933319062315839
+CA1 Oriens Bistratified,CA1 Radiatum,32,56,24,24,feedforward,0.0005757196350657683
+CA1 Quadrilaminar,CA1 Radiatum,81,56,-25,25,feedback,2.724933533868453e-05
+CA1 R Receiving Apical Targeting,CA1 Radiatum,57,56,-1,1,feedback,0.0009224128497139218
+CA1 Radial Trilaminar,CA1 Radiatum,80,56,-24,24,feedback,0.00021278042578135094
+CA1 Schaffer Collateral Associated,CA1 Radiatum,33,56,23,23,feedforward,0.003019410508064378
+CA1 Trilaminar,CA1 Radiatum,54,56,2,2,feedforward,0.0014948124299141157
+CA2 Bistratified,CA1 Radiatum,48,56,8,8,feedforward,2.1300517729188364e-05
+CA3 Trilaminar,CA1 Radiatum,8,56,48,48,feedforward,0.0010489917084652053
+CA1 Axo Axonic,CA1 Radiatum Giant,84,9,-75,75,feedback,1.9669180753769094e-05
+CA1 Back Projection,CA1 Radiatum Giant,34,9,-25,25,feedback,0.00012260488891358164
+CA1 Basket,CA1 Radiatum Giant,68,9,-59,59,feedback,0.00045077479217806753
+CA1 Basket CCK+,CA1 Radiatum Giant,49,9,-40,40,feedback,0.0009557193347785923
+CA1 Bistratified,CA1 Radiatum Giant,51,9,-42,42,feedback,9.012706875838188e-05
+CA1 Horizontal Axo Axonic,CA1 Radiatum Giant,83,9,-74,74,feedback,1.0233721225223637e-05
+CA1 Horizontal Basket,CA1 Radiatum Giant,69,9,-60,60,feedback,0.0003412333773174843
+CA1 Ivy,CA1 Radiatum Giant,50,9,-41,41,feedback,3.13432834737257e-05
+CA1 LMR,CA1 Radiatum Giant,79,9,-70,70,feedback,1.7436274257296568e-05
+CA1 Neurogliaform,CA1 Radiatum Giant,59,9,-50,50,feedback,5.1830805756185085e-05
+CA1 Neurogliaform Projecting,CA1 Radiatum Giant,71,9,-62,62,feedback,3.6967056435522053e-06
+CA1 O LM,CA1 Radiatum Giant,58,9,-49,49,feedback,2.761372703255473e-05
+CA1 O LMR,CA1 Radiatum Giant,55,9,-46,46,feedback,4.2099947135074814e-05
+CA1 OR LM,CA1 Radiatum Giant,70,9,-61,61,feedback,2.4899864488788975e-05
+CA1 Perforant Path Associated,CA1 Radiatum Giant,60,9,-51,51,feedback,6.575188320691803e-05
+CA1 R Receiving Apical Targeting,CA1 Radiatum Giant,57,9,-48,48,feedback,3.830909287221028e-05
+CA1 Radial Trilaminar,CA1 Radiatum Giant,80,9,-71,71,feedback,5.195740862842607e-06
+CA1 Radiatum,CA1 Radiatum Giant,56,9,-47,47,feedback,7.035975121273674e-06
+CA1 Recurrent O LM,CA1 Radiatum Giant,53,9,-44,44,feedback,1.0347788710687331e-05
+CA1 Schaffer Collateral Associated,CA1 Radiatum Giant,33,9,-24,24,feedback,7.101606421904496e-05
+CA1 Trilaminar,CA1 Radiatum Giant,54,9,-45,45,feedback,3.349651052651995e-05
+CA2 Bistratified,CA1 Radiatum Giant,48,9,-39,39,feedback,5.611695144350945e-07
+CA2 Wide Arbor Basket,CA1 Radiatum Giant,40,9,-31,31,feedback,0.0007373593444070684
+CA3 Trilaminar,CA1 Radiatum Giant,8,9,1,1,feedforward,2.397271355512763e-05
+CA1 Back Projection,CA1 Recurrent O LM,34,53,19,19,feedforward,0.0008928058430903499
+CA1 Bistratified,CA1 Recurrent O LM,51,53,2,2,feedforward,0.0009217073998375511
+CA1 Ivy,CA1 Recurrent O LM,50,53,3,3,feedforward,0.0008601290197378719
+CA1 Oriens Alveus,CA1 Recurrent O LM,67,53,-14,14,feedback,0.0004480430943044644
+CA1 Oriens Bistratified,CA1 Recurrent O LM,32,53,21,21,feedforward,0.00016154224999667636
+CA1 Quadrilaminar,CA1 Recurrent O LM,81,53,-28,28,feedback,4.637002741721254e-06
+CA1 Radial Trilaminar,CA1 Recurrent O LM,80,53,-27,27,feedback,8.905460509232847e-05
+CA1 SO SO,CA1 Recurrent O LM,52,53,1,1,feedforward,0.00042737517492266963
+CA1 Schaffer Collateral Associated,CA1 Recurrent O LM,33,53,20,20,feedforward,0.000540237779181965
+CA1 Trilaminar,CA1 Recurrent O LM,54,53,-1,1,feedback,0.00045139389886695647
+CA2 Bistratified,CA1 Recurrent O LM,48,53,5,5,feedforward,2.1259497732300905e-05
+CA3 Trilaminar,CA1 Recurrent O LM,8,53,45,45,feedforward,0.0007243875637462539
+CA1 Back Projection,CA1 SO SO,34,52,18,18,feedforward,0.005559776873711493
+CA1 Bistratified,CA1 SO SO,51,52,1,1,feedforward,0.005567979088849846
+CA1 Ivy,CA1 SO SO,50,52,2,2,feedforward,0.005410827922231133
+CA1 Oriens Alveus,CA1 SO SO,67,52,-15,15,feedback,0.0027940660606735647
+CA1 Oriens Bistratified,CA1 SO SO,32,52,20,20,feedforward,0.000913082800579619
+CA1 Quadrilaminar,CA1 SO SO,81,52,-29,29,feedback,2.6587972808461588e-05
+CA1 Radial Trilaminar,CA1 SO SO,80,52,-28,28,feedback,0.00053034944218901
+CA1 Recurrent O LM,CA1 SO SO,53,52,-1,1,feedback,0.00041810772716035594
+CA1 Schaffer Collateral Associated,CA1 SO SO,33,52,19,19,feedforward,0.002823601528180905
+CA1 Trilaminar,CA1 SO SO,54,52,-2,2,feedback,0.0029163730757630364
+CA2 Bistratified,CA1 SO SO,48,52,4,4,feedforward,0.00011728904511475061
+CA3 Trilaminar,CA1 SO SO,8,52,44,44,feedforward,0.004254753929225061
+CA1 Back Projection,CA1 Schaffer Collateral Associated,34,33,-1,1,feedback,0.0016577063006481
+CA1 Bistratified,CA1 Schaffer Collateral Associated,51,33,-18,18,feedback,0.0013569641959307371
+CA1 Ivy,CA1 Schaffer Collateral Associated,50,33,-17,17,feedback,0.0004896459912514625
+CA1 LMR,CA1 Schaffer Collateral Associated,79,33,-46,46,feedback,0.00025009667553830406
+CA1 Neurogliaform,CA1 Schaffer Collateral Associated,59,33,-26,26,feedback,0.0006192269592359043
+CA1 Neurogliaform Projecting,CA1 Schaffer Collateral Associated,71,33,-38,38,feedback,4.194167153392967e-05
+CA1 O LM,CA1 Schaffer Collateral Associated,58,33,-25,25,feedback,0.00032759874577693344
+CA1 O LMR,CA1 Schaffer Collateral Associated,55,33,-22,22,feedback,0.000598275594731512
+CA1 OR LM,CA1 Schaffer Collateral Associated,70,33,-37,37,feedback,0.00024778106342801065
+CA1 Oriens Bistratified,CA1 Schaffer Collateral Associated,32,33,1,1,feedforward,0.00022410275436669165
+CA1 Perforant Path Associated,CA1 Schaffer Collateral Associated,60,33,-27,27,feedback,0.0007233862779788351
+CA1 Perforant Path Associated QuadD,CA1 Schaffer Collateral Associated,82,33,-49,49,feedback,4.398971260125112e-05
+CA1 Quadrilaminar,CA1 Schaffer Collateral Associated,81,33,-48,48,feedback,1.4500635216070824e-05
+CA1 R Receiving Apical Targeting,CA1 Schaffer Collateral Associated,57,33,-24,24,feedback,0.00048668015292643857
+CA1 Radial Trilaminar,CA1 Schaffer Collateral Associated,80,33,-47,47,feedback,7.460877832255811e-05
+CA1 Radiatum,CA1 Schaffer Collateral Associated,56,33,-23,23,feedback,0.00010241917609755414
+CA1 Recurrent O LM,CA1 Schaffer Collateral Associated,53,33,-20,20,feedback,0.0001223936581597958
+CA1 Trilaminar,CA1 Schaffer Collateral Associated,54,33,-21,21,feedback,0.0005444783996433987
+CA2 Bistratified,CA1 Schaffer Collateral Associated,48,33,-15,15,feedback,8.827977943209238e-06
+CA3 Trilaminar,CA1 Schaffer Collateral Associated,8,33,25,25,feedforward,0.00042275853280073774
+CA1 Back Projection,CA1 Trilaminar,34,54,20,20,feedforward,0.02330292929866251
+CA1 Bistratified,CA1 Trilaminar,51,54,3,3,feedforward,0.023303042908511186
+CA1 Ivy,CA1 Trilaminar,50,54,4,4,feedforward,0.021327339539489988
+CA1 Oriens Alveus,CA1 Trilaminar,67,54,-13,13,feedback,0.010678840269130465
+CA1 Oriens Bistratified,CA1 Trilaminar,32,54,22,22,feedforward,0.003613340457264311
+CA1 Quadrilaminar,CA1 Trilaminar,81,54,-27,27,feedback,0.00010927151498881966
+CA1 Radial Trilaminar,CA1 Trilaminar,80,54,-26,26,feedback,0.0023852323474381153
+CA1 Recurrent O LM,CA1 Trilaminar,53,54,1,1,feedforward,0.001682722474062681
+CA1 SO SO,CA1 Trilaminar,52,54,2,2,feedforward,0.012079683418577868
+CA1 Schaffer Collateral Associated,CA1 Trilaminar,33,54,21,21,feedforward,0.012720023535105722
+CA2 Bistratified,CA1 Trilaminar,48,54,6,6,feedforward,0.00042684495670684304
+CA3 Trilaminar,CA1 Trilaminar,8,54,46,46,feedforward,0.01791993806103936
+CA2 Bistratified,CA2 Basket,48,46,-2,2,feedback,0.002581224458056684
+CA2 SP SR,CA2 Basket,47,46,-1,1,feedback,0.0005766787383024583
+CA2 Wide Arbor Basket,CA2 Basket,40,46,6,6,feedforward,0.021269119683946687
+CA2 Basket,CA2 Bistratified,46,48,2,2,feedforward,0.035856281941907105
+CA2 SP SR,CA2 Bistratified,47,48,1,1,feedforward,0.0015100270054353676
+CA2 Wide Arbor Basket,CA2 Bistratified,40,48,8,8,feedforward,0.03942104617143138
+CA2 Basket,CA2 Pyramidal,46,7,-39,39,feedback,0.002835384051315854
+CA2 Bistratified,CA2 Pyramidal,48,7,-41,41,feedback,0.00037225922248018906
+CA2 SP SR,CA2 Pyramidal,47,7,-40,40,feedback,7.981628304483892e-05
+CA2 Wide Arbor Basket,CA2 Pyramidal,40,7,-33,33,feedback,0.0030622195964650455
+CA2 Basket,CA2 SP SR,46,47,1,1,feedforward,0.0027919439490905955
+CA2 Bistratified,CA2 SP SR,48,47,-1,1,feedback,0.00036096666724442123
+CA2 Wide Arbor Basket,CA2 SP SR,40,47,7,7,feedforward,0.0031119862078589438
+CA1 Back Projection,CA2 Wide Arbor Basket,34,40,6,6,feedforward,0.0009319482659068856
+CA1 Bistratified,CA2 Wide Arbor Basket,51,40,-11,11,feedback,0.0002788463346051118
+CA1 Ivy,CA2 Wide Arbor Basket,50,40,-10,10,feedback,0.0005434582338815855
+CA1 Oriens Alveus,CA2 Wide Arbor Basket,67,40,-27,27,feedback,0.0001823593373938282
+CA1 Quadrilaminar,CA2 Wide Arbor Basket,81,40,-41,41,feedback,8.897583864905237e-07
+CA1 Radial Trilaminar,CA2 Wide Arbor Basket,80,40,-40,40,feedback,2.9737904522935854e-05
+CA1 Schaffer Collateral Associated,CA2 Wide Arbor Basket,33,40,7,7,feedforward,0.00054308991260671
+CA1 Trilaminar,CA2 Wide Arbor Basket,54,40,-14,14,feedback,0.0007937620748137537
+CA2 Basket,CA2 Wide Arbor Basket,46,40,-6,6,feedback,0.012126987603283035
+CA2 Bistratified,CA2 Wide Arbor Basket,48,40,-8,8,feedback,0.0014927833237062768
+CA2 SP SR,CA2 Wide Arbor Basket,47,40,-7,7,feedback,0.00029073163346396766
+CA3 Lucidum ORAX,CA2 Wide Arbor Basket,76,40,-36,36,feedback,2.194008259759889e-06
+CA3 Mossy Fiber Associated,CA2 Wide Arbor Basket,39,40,1,1,feedforward,0.0002075646303776132
+CA3 Mossy Fiber Associated ORDEN,CA2 Wide Arbor Basket,43,40,-3,3,feedback,6.490404359822475e-05
+CA3 Trilaminar,CA2 Wide Arbor Basket,8,40,32,32,feedforward,0.0004687329679042174
+DG HIPROM,CA2 Wide Arbor Basket,73,40,-33,33,feedback,1.947866984157337e-06
+CA1 Back Projection,CA3 Axo Axonic,34,78,44,44,feedforward,0.017234202109147057
+CA2 Wide Arbor Basket,CA3 Axo Axonic,40,78,38,38,feedforward,0.021769719098761006
+CA3 Basket,CA3 Axo Axonic,42,78,36,36,feedforward,0.02548732131243887
+CA3 Basket CCK+,CA3 Axo Axonic,41,78,37,37,feedforward,0.06941896722211868
+CA3 LMR Targeting,CA3 Axo Axonic,37,78,41,41,feedforward,0.011804643691023126
+CA3 Lucidum ORAX,CA3 Axo Axonic,76,78,2,2,feedforward,2.3969636649933168e-05
+CA3 Mossy Fiber Associated,CA3 Axo Axonic,39,78,39,39,feedforward,0.0011305710779387838
+CA3 Mossy Fiber Associated ORDEN,CA3 Axo Axonic,43,78,35,35,feedforward,0.00042156570320835563
+CA3 O LM,CA3 Axo Axonic,36,78,42,42,feedforward,0.013912518941546938
+CA3 Spiny Lucidum,CA3 Axo Axonic,35,78,43,43,feedforward,0.0005877040946144521
+CA3 Trilaminar,CA3 Axo Axonic,8,78,70,70,feedforward,0.00503741574715498
+DG HIPROM,CA3 Axo Axonic,73,78,5,5,feedforward,2.2907588059695414e-05
+CA1 Back Projection,CA3 Basket,34,42,8,8,feedforward,0.037141701445267655
+CA2 Wide Arbor Basket,CA3 Basket,40,42,2,2,feedforward,0.047323472736276656
+CA3 Basket CCK+,CA3 Basket,41,42,1,1,feedforward,0.15081862219481063
+CA3 LMR Targeting,CA3 Basket,37,42,5,5,feedforward,0.030178474504339005
+CA3 Lucidum ORAX,CA3 Basket,76,42,-34,34,feedback,5.326977676971301e-05
+CA3 Mossy Fiber Associated,CA3 Basket,39,42,3,3,feedforward,0.002618831576799347
+CA3 Mossy Fiber Associated ORDEN,CA3 Basket,43,42,-1,1,feedback,0.0009274848813895514
+CA3 O LM,CA3 Basket,36,42,6,6,feedforward,0.032679360886668216
+CA3 Spiny Lucidum,CA3 Basket,35,42,7,7,feedforward,0.0014843803101604154
+CA3 Trilaminar,CA3 Basket,8,42,34,34,feedforward,0.011242801571299645
+DG HIPROM,CA3 Basket,73,42,-31,31,feedback,4.566578042897871e-05
+CA1 Back Projection,CA3 Basket CCK+,34,41,7,7,feedforward,0.009885532175319683
+CA2 Wide Arbor Basket,CA3 Basket CCK+,40,41,1,1,feedforward,0.02417364145501139
+CA3 Basket,CA3 Basket CCK+,42,41,-1,1,feedback,0.0313875142145282
+CA3 LMR Targeting,CA3 Basket CCK+,37,41,4,4,feedforward,0.011700398961038912
+CA3 Lucidum ORAX,CA3 Basket CCK+,76,41,-35,35,feedback,1.4540654607533586e-05
+CA3 Mossy Fiber Associated,CA3 Basket CCK+,39,41,2,2,feedforward,0.0008817492922913403
+CA3 Mossy Fiber Associated ORDEN,CA3 Basket CCK+,43,41,-2,2,feedback,0.00025067118122994734
+CA3 O LM,CA3 Basket CCK+,36,41,5,5,feedforward,0.012664995311462958
+CA3 Spiny Lucidum,CA3 Basket CCK+,35,41,6,6,feedforward,0.0005451656908581486
+CA3 Trilaminar,CA3 Basket CCK+,8,41,33,33,feedforward,0.0039584735550472604
+DG HIPROM,CA3 Basket CCK+,73,41,-32,32,feedback,1.2604860029142647e-05
+CA1 Back Projection,CA3 Granule,34,38,4,4,feedforward,0.004056683756805976
+CA3 LMR Targeting,CA3 Granule,37,38,1,1,feedforward,0.008806155274614013
+CA3 Lucidum ORAX,CA3 Granule,76,38,-38,38,feedback,1.5530303784073802e-06
+CA3 Mossy Fiber Associated,CA3 Granule,39,38,-1,1,feedback,7.023076059787762e-05
+CA3 O LM,CA3 Granule,36,38,2,2,feedforward,0.008623954534074725
+CA3 Spiny Lucidum,CA3 Granule,35,38,3,3,feedforward,0.0001393591382395009
+CA3 Trilaminar,CA3 Granule,8,38,30,30,feedforward,0.0006210543423464501
+DG HIPROM,CA3 Granule,73,38,-35,35,feedback,5.602674119634337e-07
+CA1 Back Projection,CA3 Horizontal Axo Axonic,34,77,43,43,feedforward,0.006664135248684147
+CA3 Lucidum ORAX,CA3 Horizontal Axo Axonic,76,77,1,1,feedforward,8.837682523662877e-06
+CA3 O LM,CA3 Horizontal Axo Axonic,36,77,41,41,feedforward,0.002547450397410271
+CA3 Trilaminar,CA3 Horizontal Axo Axonic,8,77,69,69,feedforward,0.0025676979240438986
+DG HIPROM,CA3 Horizontal Axo Axonic,73,77,4,4,feedforward,7.7947221454459e-06
+CA1 Back Projection,CA3 LMR Targeting,34,37,3,3,feedforward,0.007608809619573182
+CA3 Lucidum ORAX,CA3 LMR Targeting,76,37,-39,39,feedback,4.343455122388331e-06
+CA3 Mossy Fiber Associated,CA3 LMR Targeting,39,37,-2,2,feedback,0.00032338078386491564
+CA3 Mossy Fiber Associated ORDEN,CA3 LMR Targeting,43,37,-6,6,feedback,9.271540756715319e-05
+CA3 O LM,CA3 LMR Targeting,36,37,1,1,feedforward,0.012559222155962594
+CA3 Spiny Lucidum,CA3 LMR Targeting,35,37,2,2,feedforward,0.00020535312935295792
+CA3 Trilaminar,CA3 LMR Targeting,8,37,29,29,feedforward,0.0011419696835130964
+DG HIPROM,CA3 LMR Targeting,73,37,-36,36,feedback,3.998756521270463e-06
+CA1 Back Projection,CA3 Lucidum ORAX,34,76,42,42,feedforward,0.02303268772030386
+CA3 LMR Targeting,CA3 Lucidum ORAX,37,76,39,39,feedforward,0.006036061335264538
+CA3 Mossy Fiber Associated,CA3 Lucidum ORAX,39,76,37,37,feedforward,0.003258353695021482
+CA3 Mossy Fiber Associated ORDEN,CA3 Lucidum ORAX,43,76,33,33,feedforward,0.000732336775628898
+CA3 O LM,CA3 Lucidum ORAX,36,76,40,40,feedforward,0.005382716444636912
+CA3 Spiny Lucidum,CA3 Lucidum ORAX,35,76,41,41,feedforward,0.0032599366411466043
+CA3 Trilaminar,CA3 Lucidum ORAX,8,76,68,68,feedforward,0.01219024289211027
+DG HIPROM,CA3 Lucidum ORAX,73,76,3,3,feedforward,3.384605183780777e-05
+CA1 Back Projection,CA3 Mossy Fiber Associated,34,39,5,5,feedforward,0.009358479177041074
+CA3 LMR Targeting,CA3 Mossy Fiber Associated,37,39,2,2,feedforward,0.0018903450418637452
+CA3 Lucidum ORAX,CA3 Mossy Fiber Associated,76,39,-37,37,feedback,2.5813769690959048e-05
+CA3 Mossy Fiber Associated ORDEN,CA3 Mossy Fiber Associated,43,39,-4,4,feedback,0.0006304672024336445
+CA3 O LM,CA3 Mossy Fiber Associated,36,39,3,3,feedforward,0.0018761907095270977
+CA3 Spiny Lucidum,CA3 Mossy Fiber Associated,35,39,4,4,feedforward,0.0008430167654305238
+CA3 Trilaminar,CA3 Mossy Fiber Associated,8,39,31,31,feedforward,0.005697657978819523
+DG HIPROM,CA3 Mossy Fiber Associated,73,39,-34,34,feedback,2.267958043139749e-05
+CA1 Back Projection,CA3 Mossy Fiber Associated ORDEN,34,43,9,9,feedforward,0.01990639393507444
+CA2 Wide Arbor Basket,CA3 Mossy Fiber Associated ORDEN,40,43,3,3,feedforward,0.040114941182877666
+CA3 Basket,CA3 Mossy Fiber Associated ORDEN,42,43,1,1,feedforward,0.049111142699177435
+CA3 Basket CCK+,CA3 Mossy Fiber Associated ORDEN,41,43,2,2,feedforward,0.11862607539825884
+CA3 LMR Targeting,CA3 Mossy Fiber Associated ORDEN,37,43,6,6,feedforward,0.0019526997805293367
+CA3 Lucidum ORAX,CA3 Mossy Fiber Associated ORDEN,76,43,-33,33,feedback,4.478413478272979e-05
+CA3 Mossy Fiber Associated,CA3 Mossy Fiber Associated ORDEN,39,43,4,4,feedforward,0.0024150719427068657
+CA3 O LM,CA3 Mossy Fiber Associated ORDEN,36,43,7,7,feedforward,0.00467548861311576
+CA3 Spiny Lucidum,CA3 Mossy Fiber Associated ORDEN,35,43,8,8,feedforward,0.0010507799926653674
+CA3 Trilaminar,CA3 Mossy Fiber Associated ORDEN,8,43,35,35,feedforward,0.011564451991639961
+DG HIPROM,CA3 Mossy Fiber Associated ORDEN,73,43,-30,30,feedback,4.056454760878829e-05
+CA1 Back Projection,CA3 O LM,34,36,2,2,feedforward,0.016962773079905714
+CA3 Lucidum ORAX,CA3 O LM,76,36,-40,40,feedback,2.4064620172418e-05
+CA3 Trilaminar,CA3 O LM,8,36,28,28,feedforward,0.0064306911443360905
+DG HIPROM,CA3 O LM,73,36,-37,37,feedback,2.2733953150543814e-05
+CA1 Back Projection,CA3 Pyramidal,34,5,-29,29,feedback,0.004907289926598387
+CA2 Wide Arbor Basket,CA3 Pyramidal,40,5,-35,35,feedback,0.005475645247484226
+CA3 Axo Axonic,CA3 Pyramidal,78,5,-73,73,feedback,2.5776906842050422e-05
+CA3 Basket,CA3 Pyramidal,42,5,-37,37,feedback,0.007035784351889951
+CA3 Basket CCK+,CA3 Pyramidal,41,5,-36,36,feedback,0.017965054413297713
+CA3 Horizontal Axo Axonic,CA3 Pyramidal,77,5,-72,72,feedback,0.00018678000266850674
+CA3 LMR Targeting,CA3 Pyramidal,37,5,-32,32,feedback,0.003254108465132922
+CA3 Lucidum ORAX,CA3 Pyramidal,76,5,-71,71,feedback,5.007171161227002e-06
+CA3 Mossy Fiber Associated,CA3 Pyramidal,39,5,-34,34,feedback,0.00025781276295511424
+CA3 Mossy Fiber Associated ORDEN,CA3 Pyramidal,43,5,-38,38,feedback,7.44790969420582e-05
+CA3 O LM,CA3 Pyramidal,36,5,-31,31,feedback,0.0040879190609137625
+CA3 Spiny Lucidum,CA3 Pyramidal,35,5,-30,30,feedback,0.00012562659058727374
+CA3 Trilaminar,CA3 Pyramidal,8,5,-3,3,feedback,0.0010976654005870152
+DG HIPROM,CA3 Pyramidal,73,5,-68,68,feedback,4.341143791227043e-06
+CA1 Back Projection,CA3 Spiny Lucidum,34,35,1,1,feedforward,0.0011106477472186728
+CA3 Lucidum ORAX,CA3 Spiny Lucidum,76,35,-41,41,feedback,5.595787686924555e-06
+CA3 Mossy Fiber Associated,CA3 Spiny Lucidum,39,35,-4,4,feedback,0.00044651316241292144
+CA3 Mossy Fiber Associated ORDEN,CA3 Spiny Lucidum,43,35,-8,8,feedback,0.00019974038478606158
+CA3 Trilaminar,CA3 Spiny Lucidum,8,35,27,27,feedforward,0.0010301914101757744
+DG HIPROM,CA3 Spiny Lucidum,73,35,-38,38,feedback,7.194640581617172e-06
+CA1 Back Projection,CA3 Trilaminar,34,8,-26,26,feedback,0.0007690056229170126
+CA3 Lucidum ORAX,CA3 Trilaminar,76,8,-68,68,feedback,1.6011756213587532e-06
+CA3 O LM,CA3 Trilaminar,36,8,-28,28,feedback,0.0004333680070326539
+DG HIPROM,CA3 Trilaminar,73,8,-65,65,feedback,1.5038468236317725e-06
+CA1 Back Projection,CA3c Pyramidal,34,6,-28,28,feedback,0.003760744731228218
+CA2 Wide Arbor Basket,CA3c Pyramidal,40,6,-34,34,feedback,0.006023075945546778
+CA3 Axo Axonic,CA3c Pyramidal,78,6,-72,72,feedback,2.6330009063431585e-05
+CA3 Basket,CA3c Pyramidal,42,6,-36,36,feedback,0.008818968661044695
+CA3 Basket CCK+,CA3c Pyramidal,41,6,-35,35,feedback,0.01811458588939647
+CA3 Horizontal Axo Axonic,CA3c Pyramidal,77,6,-71,71,feedback,0.00021540273150850731
+CA3 LMR Targeting,CA3c Pyramidal,37,6,-31,31,feedback,0.00031513946370895083
+CA3 Lucidum ORAX,CA3c Pyramidal,76,6,-70,70,feedback,6.2513984086576145e-06
+CA3 Mossy Fiber Associated,CA3c Pyramidal,39,6,-33,33,feedback,0.0003051558074031396
+CA3 Mossy Fiber Associated ORDEN,CA3c Pyramidal,43,6,-37,37,feedback,0.0001067181657538173
+CA3 O LM,CA3c Pyramidal,36,6,-30,30,feedback,0.0008652214539317154
+CA3 Spiny Lucidum,CA3c Pyramidal,35,6,-29,29,feedback,0.00014854480972289726
+CA3 Trilaminar,CA3c Pyramidal,8,6,-2,2,feedback,0.0012712429864322897
+DG HIPROM,CA3c Pyramidal,73,6,-67,67,feedback,5.592027684377599e-06
+CA1 Back Projection,DG AIPRIM,34,63,29,29,feedforward,0.012490196443687096
+CA1 Neurogliaform Projecting,DG AIPRIM,71,63,-8,8,feedback,0.00018010344848924556
+CA1 Perforant Path Associated,DG AIPRIM,60,63,3,3,feedforward,0.001807321528038795
+CA3 Mossy Fiber Associated,DG AIPRIM,39,63,24,24,feedforward,0.004396072037980925
+CA3 Mossy Fiber Associated ORDEN,DG AIPRIM,43,63,20,20,feedforward,0.00018824681168783756
+CA3 Spiny Lucidum,DG AIPRIM,35,63,28,28,feedforward,0.0016428153123287164
+DG HICAP,DG AIPRIM,72,63,-9,9,feedback,0.0007384060883556619
+DG HIPP,DG AIPRIM,45,63,18,18,feedforward,0.023447553146199458
+DG HIPROM,DG AIPRIM,73,63,-10,10,feedback,0.00017172328793128145
+DG MOLAX,DG AIPRIM,65,63,-2,2,feedback,0.0198389588683543
+DG MOPP,DG AIPRIM,62,63,1,1,feedforward,0.0007998332793908621
+DG Neurogliaform,DG AIPRIM,66,63,-3,3,feedback,0.00017221151424765503
+DG Total Molecular Layer,DG AIPRIM,61,63,2,2,feedforward,0.048746584150988204
+CA1 Back Projection,DG Axo Axonic,34,74,40,40,feedforward,0.008354278325916285
+CA1 Neurogliaform Projecting,DG Axo Axonic,71,74,3,3,feedforward,0.0002933663191987238
+CA1 Perforant Path Associated,DG Axo Axonic,60,74,14,14,feedforward,0.0036316070473871053
+CA3 Mossy Fiber Associated,DG Axo Axonic,39,74,35,35,feedforward,0.002974123695865345
+CA3 Mossy Fiber Associated ORDEN,DG Axo Axonic,43,74,31,31,feedforward,0.00010037094317553425
+CA3 Spiny Lucidum,DG Axo Axonic,35,74,39,39,feedforward,0.0035399183580364486
+DG AIPRIM,DG Axo Axonic,63,74,11,11,feedforward,0.08735344167109715
+DG Basket,DG Axo Axonic,64,74,10,10,feedforward,0.032744359381925846
+DG HICAP,DG Axo Axonic,72,74,2,2,feedforward,0.0007612741147770873
+DG HIPP,DG Axo Axonic,45,74,29,29,feedforward,0.03617197736467615
+DG HIPROM,DG Axo Axonic,73,74,1,1,feedforward,0.00013713562800621252
+DG MOLAX,DG Axo Axonic,65,74,9,9,feedforward,0.023009862032732867
+DG MOPP,DG Axo Axonic,62,74,12,12,feedforward,0.0009913173387646945
+DG Neurogliaform,DG Axo Axonic,66,74,8,8,feedforward,0.00044661548909555646
+DG Total Molecular Layer,DG Axo Axonic,61,74,13,13,feedforward,0.0395383538289833
+CA1 Back Projection,DG Basket,34,64,30,30,feedforward,0.003215310408812793
+CA1 Neurogliaform Projecting,DG Basket,71,64,-7,7,feedback,7.276836498036927e-05
+CA1 Perforant Path Associated,DG Basket,60,64,4,4,feedforward,0.0011558375715135431
+CA3 Mossy Fiber Associated,DG Basket,39,64,25,25,feedforward,0.0011251336261651626
+CA3 Mossy Fiber Associated ORDEN,DG Basket,43,64,21,21,feedforward,3.708282215735177e-05
+CA3 Spiny Lucidum,DG Basket,35,64,29,29,feedforward,0.0011371615914608805
+DG AIPRIM,DG Basket,63,64,1,1,feedforward,0.034041167147512284
+DG HICAP,DG Basket,72,64,-8,8,feedback,0.00028590908518342384
+DG HIPP,DG Basket,45,64,19,19,feedforward,0.012574511155260034
+DG HIPROM,DG Basket,73,64,-9,9,feedback,5.2286001409943174e-05
+DG MOLAX,DG Basket,65,64,-1,1,feedback,0.008084288264923445
+DG MOPP,DG Basket,62,64,2,2,feedforward,0.00034262526848304997
+DG Neurogliaform,DG Basket,66,64,-2,2,feedback,7.308415868076703e-05
+DG Total Molecular Layer,DG Basket,61,64,3,3,feedforward,0.013570525539235209
+CA1 Neurogliaform Projecting,DG Granule,71,31,-40,40,feedback,6.484139568239367e-05
+CA1 Perforant Path Associated,DG Granule,60,31,-29,29,feedback,0.0007646279510156749
+CA3 Spiny Lucidum,DG Granule,35,31,-4,4,feedback,0.0007005627173853376
+DG AIPRIM,DG Granule,63,31,-32,32,feedback,0.009691471383191092
+DG Axo Axonic,DG Granule,74,31,-43,43,feedback,0.0005412779004446399
+DG Basket,DG Granule,64,31,-33,33,feedback,0.009912931697893262
+DG HICAP,DG Granule,72,31,-41,41,feedback,0.000234815888104879
+DG HIPP,DG Granule,45,31,-14,14,feedback,0.00842615543474596
+DG HIPROM,DG Granule,73,31,-42,42,feedback,1.3418362888104773e-05
+DG MOLAX,DG Granule,65,31,-34,34,feedback,0.006431129743111442
+DG MOPP,DG Granule,62,31,-31,31,feedback,0.00026327330498404964
+DG Neurogliaform,DG Granule,66,31,-35,35,feedback,9.079953852182465e-05
+DG Total Molecular Layer,DG Granule,61,31,-30,30,feedback,0.007621759070775323
+CA1 Back Projection,DG HICAP,34,72,38,38,feedforward,0.00783296014773162
+CA1 Neurogliaform Projecting,DG HICAP,71,72,1,1,feedforward,0.0001699654778384124
+CA1 Perforant Path Associated,DG HICAP,60,72,12,12,feedforward,0.001825420453669534
+CA3 Mossy Fiber Associated,DG HICAP,39,72,33,33,feedforward,0.0029199970986711213
+CA3 Mossy Fiber Associated ORDEN,DG HICAP,43,72,29,29,feedforward,0.00010086822984919375
+CA3 Spiny Lucidum,DG HICAP,35,72,37,37,feedforward,0.001567695965873146
+DG AIPRIM,DG HICAP,63,72,9,9,feedforward,0.08752995038652836
+DG Basket,DG HICAP,64,72,8,8,feedforward,0.03678145512280408
+DG HIPP,DG HICAP,45,72,27,27,feedforward,0.023158557271640578
+DG HIPROM,DG HICAP,73,72,-1,1,feedback,0.0001306336467470376
+DG MOLAX,DG HICAP,65,72,7,7,feedforward,0.01971966532041915
+DG MOPP,DG HICAP,62,72,10,10,feedforward,0.0007296871773701321
+DG Neurogliaform,DG HICAP,66,72,6,6,feedforward,0.00016324031134503587
+DG Total Molecular Layer,DG HICAP,61,72,11,11,feedforward,0.038400215814986816
+CA1 Back Projection,DG HIPP,34,45,11,11,feedforward,0.0008336566108424113
+CA3 Mossy Fiber Associated,DG HIPP,39,45,6,6,feedforward,0.0002878580374863645
+CA3 Mossy Fiber Associated ORDEN,DG HIPP,43,45,2,2,feedforward,1.3273849665582475e-05
+DG AIPRIM,DG HIPP,63,45,-18,18,feedback,0.0025400393059684524
+DG Basket,DG HIPP,64,45,-19,19,feedback,0.002184199792137038
+DG HIPROM,DG HIPP,73,45,-28,28,feedback,3.5419165149930715e-06
+DG Total Molecular Layer,DG HIPP,61,45,-16,16,feedback,0.001365242634673486
+CA1 Back Projection,DG HIPROM,34,73,39,39,feedforward,0.0024545936986770595
+CA3 Mossy Fiber Associated,DG HIPROM,39,73,34,34,feedforward,0.0008769979908825089
+CA3 Mossy Fiber Associated ORDEN,DG HIPROM,43,73,30,30,feedforward,3.562462100191544e-05
+CA3 Spiny Lucidum,DG HIPROM,35,73,38,38,feedforward,4.5433679531589036e-05
+DG AIPRIM,DG HIPROM,63,73,10,10,feedforward,0.028572402747045658
+DG HICAP,DG HIPROM,72,73,1,1,feedforward,0.00026453559218406913
+DG MOLAX,DG HIPROM,65,73,8,8,feedforward,0.0022100730150684403
+DG Total Molecular Layer,DG HIPROM,61,73,12,12,feedforward,0.008600822070949761
+CA1 Back Projection,DG Hilar Ectopic Granule,34,75,41,41,feedforward,0.0018970747036282075
+CA1 Neurogliaform Projecting,DG Hilar Ectopic Granule,71,75,4,4,feedforward,4.194994721495509e-05
+CA1 Perforant Path Associated,DG Hilar Ectopic Granule,60,75,15,15,feedforward,0.00040358191740262394
+CA3 Mossy Fiber Associated,DG Hilar Ectopic Granule,39,75,36,36,feedforward,0.000627117251596981
+CA3 Mossy Fiber Associated ORDEN,DG Hilar Ectopic Granule,43,75,32,32,feedforward,3.203279434550701e-05
+CA3 Spiny Lucidum,DG Hilar Ectopic Granule,35,75,40,40,feedforward,0.00037323725087552733
+DG AIPRIM,DG Hilar Ectopic Granule,63,75,12,12,feedforward,0.013209150509744826
+DG Axo Axonic,DG Hilar Ectopic Granule,74,75,1,1,feedforward,0.00029624985012271094
+DG HICAP,DG Hilar Ectopic Granule,72,75,3,3,feedforward,0.00013021601689333114
+DG HIPP,DG Hilar Ectopic Granule,45,75,30,30,feedforward,0.00431400042346183
+DG HIPROM,DG Hilar Ectopic Granule,73,75,2,2,feedforward,1.83799532758244e-05
+DG MOLAX,DG Hilar Ectopic Granule,65,75,10,10,feedforward,0.003558536684145546
+DG MOPP,DG Hilar Ectopic Granule,62,75,13,13,feedforward,0.00014069774314938075
+DG Neurogliaform,DG Hilar Ectopic Granule,66,75,9,9,feedforward,5.884384869600565e-05
+DG Total Molecular Layer,DG Hilar Ectopic Granule,61,75,14,14,feedforward,0.00903042436406623
+CA1 Back Projection,DG MOLAX,34,65,31,31,feedforward,0.004650690224292209
+CA1 Neurogliaform Projecting,DG MOLAX,71,65,-6,6,feedback,0.0001120792422676504
+CA1 Perforant Path Associated,DG MOLAX,60,65,5,5,feedforward,0.0007318339414288177
+CA3 Mossy Fiber Associated,DG MOLAX,39,65,26,26,feedforward,0.0015757870084617826
+CA3 Mossy Fiber Associated ORDEN,DG MOLAX,43,65,22,22,feedforward,7.138525646827561e-05
+CA3 Spiny Lucidum,DG MOLAX,35,65,30,30,feedforward,0.0006626686175898262
+DG AIPRIM,DG MOLAX,63,65,2,2,feedforward,0.037800398105999646
+DG Basket,DG MOLAX,64,65,1,1,feedforward,0.01551641938079995
+DG HICAP,DG MOLAX,72,65,-7,7,feedback,0.0004894885389406532
+DG HIPP,DG MOLAX,45,65,20,20,feedforward,0.009766372176494703
+DG HIPROM,DG MOLAX,73,65,-8,8,feedback,5.211615525736328e-05
+DG MOPP,DG MOLAX,62,65,3,3,feedforward,0.0003703366379155932
+DG Neurogliaform,DG MOLAX,66,65,-1,1,feedback,0.00013167378283395587
+DG Total Molecular Layer,DG MOLAX,61,65,4,4,feedforward,0.023160260872114778
+CA1 Neurogliaform Projecting,DG MOPP,71,62,-9,9,feedback,1.4734531115655045e-05
+CA1 Perforant Path Associated,DG MOPP,60,62,2,2,feedforward,0.00027622106855484675
+CA3 Spiny Lucidum,DG MOPP,35,62,27,27,feedforward,0.00015578498823578358
+DG HIPP,DG MOPP,45,62,17,17,feedforward,0.0030541727089163336
+DG HIPROM,DG MOPP,73,62,-11,11,feedback,2.0481794860384596e-06
+DG MOLAX,DG MOPP,65,62,-3,3,feedback,0.0010419828102722995
+DG Neurogliaform,DG MOPP,66,62,-4,4,feedback,7.309632158290131e-06
+DG Total Molecular Layer,DG MOPP,61,62,1,1,feedforward,0.0010267378042831986
+CA1 Back Projection,DG Mossy,34,44,10,10,feedforward,0.002895901840560121
+CA3 Mossy Fiber Associated,DG Mossy,39,44,5,5,feedforward,0.0009856352096643116
+CA3 Mossy Fiber Associated ORDEN,DG Mossy,43,44,1,1,feedforward,5.391650858551417e-05
+DG AIPRIM,DG Mossy,63,44,-19,19,feedback,0.010053583499000434
+DG Axo Axonic,DG Mossy,74,44,-30,30,feedback,0.00037265174646698885
+DG HIPROM,DG Mossy,73,44,-29,29,feedback,1.3167317652792805e-05
+DG Total Molecular Layer,DG Mossy,61,44,-17,17,feedback,0.0060904164035982125
+CA1 Neurogliaform Projecting,DG Neurogliaform,71,66,-5,5,feedback,1.0386189822752376e-05
+CA1 Perforant Path Associated,DG Neurogliaform,60,66,6,6,feedforward,0.00014894753567683578
+CA3 Spiny Lucidum,DG Neurogliaform,35,66,31,31,feedforward,6.922315350857274e-05
+DG HIPP,DG Neurogliaform,45,66,21,21,feedforward,0.0019282933341824558
+DG HIPROM,DG Neurogliaform,73,66,-7,7,feedback,1.2703290579191275e-06
+DG MOLAX,DG Neurogliaform,65,66,1,1,feedforward,0.0006643024306536066
+DG MOPP,DG Neurogliaform,62,66,4,4,feedforward,5.9391448407983976e-05
+DG Total Molecular Layer,DG Neurogliaform,61,66,5,5,feedforward,0.0006964770098007778
+CA1 Neurogliaform Projecting,DG Semilunar Granule,71,30,-41,41,feedback,6.228490967602895e-06
+CA1 Perforant Path Associated,DG Semilunar Granule,60,30,-30,30,feedback,7.129009214227733e-05
+CA3 Spiny Lucidum,DG Semilunar Granule,35,30,-5,5,feedback,6.664452809514978e-05
+DG AIPRIM,DG Semilunar Granule,63,30,-33,33,feedback,0.0007071282417293697
+DG HICAP,DG Semilunar Granule,72,30,-42,42,feedback,1.7254066352662776e-05
+DG HIPP,DG Semilunar Granule,45,30,-15,15,feedback,0.0007406394902875748
+DG HIPROM,DG Semilunar Granule,73,30,-43,43,feedback,1.1865470465882542e-06
+DG MOLAX,DG Semilunar Granule,65,30,-35,35,feedback,0.000530196738233898
+DG MOPP,DG Semilunar Granule,62,30,-32,32,feedback,2.1790766682875626e-05
+DG Neurogliaform,DG Semilunar Granule,66,30,-36,36,feedback,8.759248220773654e-06
+DG Total Molecular Layer,DG Semilunar Granule,61,30,-31,31,feedback,0.0006548987802991915
+CA1 Back Projection,DG Total Molecular Layer,34,61,27,27,feedforward,0.004340455854868522
+CA1 Neurogliaform Projecting,DG Total Molecular Layer,71,61,-10,10,feedback,6.112762354520286e-05
+CA1 Perforant Path Associated,DG Total Molecular Layer,60,61,1,1,feedforward,0.0005128389796244755
+CA3 Mossy Fiber Associated,DG Total Molecular Layer,39,61,22,22,feedforward,0.001550867186819029
+CA3 Mossy Fiber Associated ORDEN,DG Total Molecular Layer,43,61,18,18,feedforward,5.8838641029249296e-05
+CA3 Spiny Lucidum,DG Total Molecular Layer,35,61,26,26,feedforward,0.0004309484830118011
+DG AIPRIM,DG Total Molecular Layer,63,61,-2,2,feedback,0.028115592847653408
+DG Basket,DG Total Molecular Layer,64,61,-3,3,feedback,0.016842498286785523
+DG HICAP,DG Total Molecular Layer,72,61,-11,11,feedback,0.0002680918357153617
+DG HIPP,DG Total Molecular Layer,45,61,16,16,feedforward,0.00750808254908129
+DG HIPROM,DG Total Molecular Layer,73,61,-12,12,feedback,4.038423920669905e-05
+DG MOLAX,DG Total Molecular Layer,65,61,-4,4,feedback,0.006201576829558709
+DG MOPP,DG Total Molecular Layer,62,61,-1,1,feedback,0.0002808881976817557
+DG Neurogliaform,DG Total Molecular Layer,66,61,-5,5,feedback,4.874497284065446e-05
+MEC LIII Superficial Multipolar Interneuron,EC LI II Multipolar Pyramidal,29,1,-28,28,feedback,0.0017576856121284453
+MEC LIII Superficial Trilayered Interneuron,EC LI II Multipolar Pyramidal,21,1,-20,20,feedback,0.005402929237000869
+MEC LIII Superficial Multipolar Interneuron,EC LI II Pyramidal Fan,29,0,-29,29,feedback,0.0002807475630600689
+MEC LIII Superficial Trilayered Interneuron,EC LI II Pyramidal Fan,21,0,-21,21,feedback,0.0005314947397165248
+MEC LIII Superficial Multipolar Interneuron,EC LII III Pyramidal Tripolar,29,2,-27,27,feedback,0.00232964421498605
+MEC LIII Superficial Trilayered Interneuron,EC LII III Pyramidal Tripolar,21,2,-19,19,feedback,0.0011033672073519857
+MEC LIII Superficial Multipolar Interneuron,EC LIII Pyramidal,29,26,-3,3,feedback,0.003209854435217928
+MEC LIII Superficial Trilayered Interneuron,EC LIII Pyramidal,21,26,5,5,feedforward,0.001395601282498096
+MEC LIII Superficial Multipolar Interneuron,EC LIII Pyramidal Stellate,29,4,-25,25,feedback,0.0028282847072716743
+MEC LIII Superficial Trilayered Interneuron,EC LIII Pyramidal Stellate,21,4,-17,17,feedback,0.0013764928976838185
+MEC LIII Superficial Multipolar Interneuron,EC LIII Stellate,29,25,-4,4,feedback,0.005287804319154771
+MEC LIII Superficial Trilayered Interneuron,EC LIII Stellate,21,25,4,4,feedforward,0.002654254418496709
+MEC LIII Superficial Multipolar Interneuron,EC LIII V Bipolar Pyramidal,29,12,-17,17,feedback,0.0008449149672315531
+MEC LIII Superficial Trilayered Interneuron,EC LIII V Bipolar Pyramidal,21,12,-9,9,feedback,0.0004279008260067293
+MEC LIII Superficial Multipolar Interneuron,EC LV Deep Pyramidal,29,15,-14,14,feedback,0.0003070213826717421
+MEC LIII Superficial Trilayered Interneuron,EC LV Deep Pyramidal,21,15,-6,6,feedback,0.0005845691771712756
+MEC LIII Superficial Multipolar Interneuron,MEC LII III Pyramidal Multiform,29,13,-16,16,feedback,0.008721509396079574
+MEC LIII Superficial Trilayered Interneuron,MEC LII III Pyramidal Multiform,21,13,-8,8,feedback,0.004461237673262047
+MEC LIII Superficial Multipolar Interneuron,MEC LII Oblique Pyramidal,29,22,-7,7,feedback,0.0030659275884538342
+MEC LIII Superficial Trilayered Interneuron,MEC LII Oblique Pyramidal,21,22,1,1,feedforward,0.00576842339841594
+MEC LIII Superficial Multipolar Interneuron,MEC LII Stellate,29,3,-26,26,feedback,0.004476029089135552
+MEC LIII Superficial Trilayered Interneuron,MEC LII Stellate,21,3,-18,18,feedback,0.009700589452917685
+MEC LIII Superficial Multipolar Interneuron,MEC LIII Bipolar Complex Pyramidal,29,19,-10,10,feedback,0.01679152308870359
+MEC LIII Superficial Trilayered Interneuron,MEC LIII Bipolar Complex Pyramidal,21,19,-2,2,feedback,0.00341943298284227
+MEC LIII Superficial Multipolar Interneuron,MEC LIII Complex Pyramidal,29,20,-9,9,feedback,0.01611183682286829
+MEC LIII Superficial Trilayered Interneuron,MEC LIII Complex Pyramidal,21,20,-1,1,feedback,0.007800615803899088
+MEC LIII Superficial Trilayered Interneuron,MEC LIII Superficial Multipolar Interneuron,21,29,8,8,feedforward,0.10666298750604312
+MEC LIII Superficial Multipolar Interneuron,MEC LIII Superficial Trilayered Interneuron,29,21,-8,8,feedback,0.006448866280389899
+MEC LIII Superficial Multipolar Interneuron,MEC LV Pyramidal,29,16,-13,13,feedback,0.00046899947166128875
+MEC LIII Superficial Trilayered Interneuron,MEC LV Pyramidal,21,16,-5,5,feedback,0.0018265215786254468
+MEC LIII Superficial Multipolar Interneuron,MEC LV Superficial Pyramidal,29,17,-12,12,feedback,0.0026783149058948017
+MEC LIII Superficial Trilayered Interneuron,MEC LV Superficial Pyramidal,21,17,-4,4,feedback,0.0012712968420112477
+CA1 Perforant Path Associated,SUB CA1 Projecting Pyramidal,60,27,-33,33,feedback,0.07906120546370247
+CA1 Trilaminar,SUB CA1 Projecting Pyramidal,54,27,-27,27,feedback,0.0007515252287612384
+DG Neurogliaform,SUB CA1 Projecting Pyramidal,66,27,-39,39,feedback,0.0002558422321386903

@@ -1,0 +1,29 @@
+code,symbol,scope,unit,lower_bound,upper_bound,required,applies_to,description
+tau,\tau_i,population,ms,0.5,300,1,I,MPR/QIF time constant. With the V_scale normalisation tau = tau_m (V_th - V_rest) / V_scale so the linearised QIF reproduces tau_m at rest
+Delta,\Delta_i,population,dimensionless,0,5,1,I,Lorentzian half-width of eta across cells in the population
+eta,\bar\eta_i,population,dimensionless,-10,10,1,I,Centre of the excitability distribution at rest; eta = -((V_th - V_rest) / (2 V_scale))^2
+gamma_in,\gamma_i,population,1/nA,0,1000,0,I,Dimensionless drive per nA of somatic current: R_in (V_th - V_rest) / V_scale^2. Scales I_ext
+b,b_i,population,ms,0,5000,1,I,Adaptation strength in tau_a a' = -a + b r (r in kHz so b r is dimensionless)
+tau_a,\tau^a_i,population,ms,1,5000,1,I,Adaptation time constant
+tau_A,\tau^A_i,population,ms,0.5,500,1,I,GABA-A output synaptic decay of presynaptic population i
+tau_B,\tau^B_i,population,ms,20,1000,1,I,GABA-B output synaptic decay
+U_A,U^A_i,population,probability,0,1,1,I,GABA-A release scale (baseline)
+U_B,U^B_i,population,probability,0,1,1,I,GABA-B release scale (baseline)
+beta_CB1,\beta^{CB1}_i,population_receptor,dimensionless,0,10,0,I,U_A(t) = U_A0 exp(-beta_CB1 O_CB1(t))
+alpha_eta,\alpha^{\eta}_{im},population_receptor,dimensionless,-10,10,0,I,eta_eff = eta + sum_m alpha_eta_im O_im
+alpha_rel,\alpha^{rel}_{im},population_receptor,dimensionless,-10,10,0,I,U_eff = U exp(sum_m alpha_rel_im O_im)
+d_layer,d_{i\ell},population_layer,fraction,0,1,0,I,Normalised dendritic laminar distribution
+a_layer,a_{j\ell\cdot},population_layer,fraction,0,1,0,I,Normalised axonal laminar marginal
+a_comp,a_{j\cdot c},population_layer_compartment,fraction,0,1,0,I,Normalised axonal compartment marginal
+A_tot,A_i^{tot},population,um,0,1000000,0,I,Total axonal extent
+v_cond,v_i^{cond},population,m/s,0.05,10,0,I,Axonal conduction velocity (delays)
+sigma_GABA,\sigma_i^{GABA},population,um,0,500,0,I,Transmitter spread radius (volume transmission)
+V_scale,V_{scale},global,mV,5,60,1,both,Voltage normalisation shared by all populations
+tau_A_fast_ref,\tau^A_{fast},global,ms,1,20,1,both,Reference fast GABA-A decay used to scale slow-GABA-A families
+g,g,global,dimensionless,0,100,1,both,Global coupling scale applied to W0 = M / rho(|M|)
+role_w_dominant,w_{dominant},global,weight,0,1,0,both,Role-to-fraction conversion weight
+role_w_major,w_{major},global,weight,0,1,0,both,Role-to-fraction conversion weight
+role_w_present,w_{present},global,weight,0,1,0,both,Role-to-fraction conversion weight
+role_w_minor,w_{minor},global,weight,0,1,0,both,Role-to-fraction conversion weight
+role_w_sparse,w_{sparse},global,weight,0,1,0,both,Role-to-fraction conversion weight
+role_w_avoids,w_{avoids},global,weight,0,1,0,both,Role-to-fraction conversion weight

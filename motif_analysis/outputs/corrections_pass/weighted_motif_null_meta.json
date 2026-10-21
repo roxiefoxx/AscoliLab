@@ -1,0 +1,17 @@
+{
+  "n_nulls": 100,
+  "seed": 11,
+  "n_types": 85,
+  "all_nulls_dyad_preserved": true,
+  "observed_dyad_census": [
+    422,
+    726
+  ],
+  "participation_degeneracy_max_relative_error": 2.6911548506771368e-15,
+  "participation_correlation_with_strength": 1.0,
+  "null_model": "degree- and dyad-census-preserving rewire; total strength and the weight multiset preserved exactly, node strength not",
+  "relative_out_strength_deviation_median": 0.3515104782272507,
+  "relative_out_strength_deviation_max": 42303.22223624035,
+  "relative_in_strength_deviation_median": 0.7298415435754441,
+  "relative_in_strength_deviation_max": 1582.1000959372318
+}

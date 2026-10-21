@@ -1,0 +1,25 @@
+{
+  "n_nodes": 85,
+  "n_nulls": 100,
+  "seed": 11,
+  "rho_target": 0.95,
+  "observed_dyad_census": [
+    422,
+    726
+  ],
+  "observed_lop_forward": 0.9951850788312901,
+  "observed_lop_certified": true,
+  "observed_trace_P": 5217.703039604172,
+  "observed_trace_P_normal_control": 52.17021800018135,
+  "observed_ordering_metrics": {
+    "backward_edges": 532,
+    "forward_edges": 1038,
+    "feedforward_edge_fraction": 0.6611464968152866,
+    "backward_abs_weight": 58849.65594890337,
+    "forward_abs_weight": 12163501.216863466,
+    "weighted_feedforward_fraction": 0.9951850788312901
+  },
+  "null_time_limit_s": 60.0,
+  "all_nulls_dyad_preserved": true,
+  "n_nulls_certified": 96
+}

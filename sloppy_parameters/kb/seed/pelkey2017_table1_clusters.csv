@@ -1,0 +1,7 @@
+cluster,n,taxa,confidence,description,locator
+1,15,AAC;PVBC;BIC,0.75,"PV/SST transcripts, fast-spiking; 'This cell cluster comprised PVBCs, BiCs, and AACs'",p.1656-1657
+2,23,OLM_FAMILY,0.7,"SST transcripts, slow tau, prominent sag; HIPP forms the equivalent DG cluster",p.1657
+3,34,NGF_FAMILY,0.75,"NPY, late spiking, MGE+CGE; Ivy and NGFC",p.1657
+4,33,CCK_DT,0.6,"CGE dendrite-targeting cells such as SCA and associational-collateral-associated CCK cells",p.1657
+5,19,PROJECTING,0.5,"Little axon in hippocampus; long-range projection or interneuron-targeting",p.1657
+6,18,CCKBC;MFA,0.6,"Highest CCK incidence (with VGluT3/VIP); CCKBC and mossy-fiber-associated anatomies",p.1657

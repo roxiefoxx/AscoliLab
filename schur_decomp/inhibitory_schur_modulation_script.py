@@ -122,27 +122,34 @@ def block_meaning(block: str) -> str:
 def schur_effective_E(M: np.ndarray, ei: pd.Series, z: complex | None = None) -> dict[str, np.ndarray | complex | float]:
     """Eliminate inhibitory nodes and return the eigenvalue-dependent E Schur complement.
 
-    Effective E dynamics:
-        M_EE + M_EI @ inv(z I - M_II) @ M_IE
+    Textbook form:  M_EE + M_EI @ inv(z I - M_II) @ M_IE
+    In this code:   M_EE + M_E_from_I @ inv(z I - M_II) @ M_I_from_E
 
-    where M_EI is I-source -> E-receiver and M_IE is E-source -> I-receiver.
+    ``M`` is [post, pre], so a block's COLUMN set is its source. The textbook
+    subscripts are (row, column) = (receiver, source), i.e. the SECOND letter is
+    the source -- the reverse of the source-first ``EE``/``EI``/``IE``/``II``
+    names used by ``block_view`` in this same module. The ``_from_`` names below
+    remove that ambiguity: ``M[np.ix_(A, B)]`` is ``M_A_from_B``.
+
+    Read the feedback line right through the matching letters --
+    ``M_E_from_I @ resolvent @ M_I_from_E`` -- E gets from I, I gets from E.
     """
     idx = ei_indices(ei)
     E, I = idx["E"], idx["I"]
     M_EE = M[np.ix_(E, E)]
-    M_EI = M[np.ix_(E, I)]
-    M_IE = M[np.ix_(I, E)]
+    M_E_from_I = M[np.ix_(E, I)]   # rows E, cols I -> I source, E receiver
+    M_I_from_E = M[np.ix_(I, E)]   # rows I, cols E -> E source, I receiver
     M_II = M[np.ix_(I, I)]
     if z is None:
         z = spectral_summary(M)["dominant_eigenvalue"]
     resolvent = np.linalg.solve(z * np.eye(len(I), dtype=complex) - M_II, np.eye(len(I)))
-    feedback = M_EI @ resolvent @ M_IE
+    feedback = M_E_from_I @ resolvent @ M_I_from_E
     effective = M_EE + feedback
     return {
         "z": z,
         "M_EE": M_EE,
-        "M_EI": M_EI,
-        "M_IE": M_IE,
+        "M_E_from_I": M_E_from_I,
+        "M_I_from_E": M_I_from_E,
         "M_II": M_II,
         "resolvent_II": resolvent,
         "inhibitory_feedback": feedback,
@@ -446,15 +453,15 @@ def neumann_ii_model_selection(
     """Select an appropriate number of chained I-I connections.
 
     Decomposes the inhibitory feedback term
-        M_EI (alpha M_II)^k M_IE
+        M_E_from_I (alpha M_II)^k M_I_from_E      [textbook: M_EI (alpha M_II)^k M_IE]
     so order ``k`` is the number of I-I links inside the eliminated inhibitory
     block. ``k=0`` is E->I->E with no I-I chain; ``k=3`` is E->I-I-I-I->E.
     """
     rng = np.random.default_rng(seed)
     idx = ei_indices(ei)
     E, I = idx["E"], idx["I"]
-    M_EI = M[np.ix_(E, I)]
-    M_IE = M[np.ix_(I, E)]
+    M_E_from_I = M[np.ix_(E, I)]   # rows E, cols I -> I source, E receiver
+    M_I_from_E = M[np.ix_(I, E)]   # rows I, cols E -> E source, I receiver
     M_II = M[np.ix_(I, I)]
     rho = spectral_summary(alpha * M_II)["spectral_radius"]
 
@@ -464,7 +471,7 @@ def neumann_ii_model_selection(
     for k in range(max_order + 1):
         if k > 0:
             power = (alpha * M_II) @ power
-        term = M_EI @ power @ M_IE
+        term = M_E_from_I @ power @ M_I_from_E
         terms.append(term)
         rows.append({
             "ii_chain_order": k,
@@ -497,7 +504,7 @@ def neumann_ii_model_selection(
         for k in range(max_order + 1):
             if k > 0:
                 null_power = (alpha * M_II_null) @ null_power
-            one.append(float(np.linalg.norm(M_EI @ null_power @ M_IE, "fro")))
+            one.append(float(np.linalg.norm(M_E_from_I @ null_power @ M_I_from_E, "fro")))
         null_norms.append(one)
     null_norms_arr = np.asarray(null_norms)
     null_mean = null_norms_arr.mean(axis=0)
@@ -589,14 +596,14 @@ def disinhibition_sources(
     idx = ei_indices(ei)
     E, I = idx["E"], idx["I"]
     labels = np.asarray(ei.index.to_list())
-    M_EI = M[np.ix_(E, I)]
-    M_IE = M[np.ix_(I, E)]
+    M_E_from_I = M[np.ix_(E, I)]   # rows E, cols I -> I source, E receiver
+    M_I_from_E = M[np.ix_(I, E)]   # rows I, cols E -> E source, I receiver
     M_II = M[np.ix_(I, I)]
     P = np.linalg.matrix_power(alpha * M_II, order) if order > 0 else np.eye(len(I))
-    outgoing_to_E = np.sum(np.abs(M_EI), axis=0)
+    outgoing_to_E = np.sum(np.abs(M_E_from_I), axis=0)
     participation = np.sum(np.abs(P), axis=0) + np.sum(np.abs(P), axis=1)
-    incoming_from_E = np.sum(np.abs(M_IE), axis=1)
-    disinhibitory_drive_to_E = np.sum(np.clip(np.real(M_EI @ P), 0, None), axis=0)
+    incoming_from_E = np.sum(np.abs(M_I_from_E), axis=1)
+    disinhibitory_drive_to_E = np.sum(np.clip(np.real(M_E_from_I @ P), 0, None), axis=0)
     score = outgoing_to_E * (1 + participation) * (1 + incoming_from_E)
     return pd.DataFrame({
         "inhibitory_cell": labels[I],

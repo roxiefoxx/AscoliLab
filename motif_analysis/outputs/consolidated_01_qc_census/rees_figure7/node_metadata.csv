@@ -1,0 +1,86 @@
+cell_type,ei,region,ca1_group
+CA1 Axo Axonic,I,CA1,pst
+CA1 Back Projection,I,CA1,other_interneuron
+CA1 Basket,I,CA1,pst
+CA1 Basket CCK+,I,CA1,pst
+CA1 Bistratified,I,CA1,other_interneuron
+CA1 Horizontal Axo Axonic,I,CA1,pst
+CA1 Horizontal Basket,I,CA1,pst
+CA1 Ivy,I,CA1,other_interneuron
+CA1 LMR,I,CA1,other_interneuron
+CA1 Neurogliaform,I,CA1,other_interneuron
+CA1 Neurogliaform Projecting,I,CA1,other_interneuron
+CA1 O LM,I,CA1,other_interneuron
+CA1 O LMR,I,CA1,other_interneuron
+CA1 OR LM,I,CA1,other_interneuron
+CA1 Oriens Alveus,I,CA1,other_interneuron
+CA1 Oriens Bistratified,I,CA1,other_interneuron
+CA1 Perforant Path Associated,I,CA1,other_interneuron
+CA1 Perforant Path Associated QuadD,I,CA1,other_interneuron
+CA1 Pyramidal,E,CA1,pyramidal
+CA1 Quadrilaminar,I,CA1,other_interneuron
+CA1 R Receiving Apical Targeting,I,CA1,other_interneuron
+CA1 Radial Trilaminar,I,CA1,other_interneuron
+CA1 Radiatum,I,CA1,other_interneuron
+CA1 Radiatum Giant,E,CA1,unassigned
+CA1 Recurrent O LM,I,CA1,other_interneuron
+CA1 SO SO,I,CA1,other_interneuron
+CA1 Schaffer Collateral Associated,I,CA1,other_interneuron
+CA1 Trilaminar,I,CA1,other_interneuron
+CA2 Basket,I,CA2,not_ca1
+CA2 Bistratified,I,CA2,not_ca1
+CA2 Pyramidal,E,CA2,not_ca1
+CA2 SP SR,I,CA2,not_ca1
+CA2 Wide Arbor Basket,I,CA2,not_ca1
+CA3 Axo Axonic,I,CA3,not_ca1
+CA3 Basket,I,CA3,not_ca1
+CA3 Basket CCK+,I,CA3,not_ca1
+CA3 Granule,E,CA3,not_ca1
+CA3 Horizontal Axo Axonic,I,CA3,not_ca1
+CA3 LMR Targeting,I,CA3,not_ca1
+CA3 Lucidum ORAX,I,CA3,not_ca1
+CA3 Mossy Fiber Associated,I,CA3,not_ca1
+CA3 Mossy Fiber Associated ORDEN,I,CA3,not_ca1
+CA3 O LM,I,CA3,not_ca1
+CA3 Pyramidal,E,CA3,not_ca1
+CA3 Spiny Lucidum,I,CA3,not_ca1
+CA3 Trilaminar,I,CA3,not_ca1
+CA3c Pyramidal,E,CA3,not_ca1
+DG AIPRIM,I,DG,not_ca1
+DG Axo Axonic,I,DG,not_ca1
+DG Basket,I,DG,not_ca1
+DG Granule,E,DG,not_ca1
+DG HICAP,I,DG,not_ca1
+DG HIPP,I,DG,not_ca1
+DG HIPROM,I,DG,not_ca1
+DG Hilar Ectopic Granule,E,DG,not_ca1
+DG MOLAX,I,DG,not_ca1
+DG MOPP,I,DG,not_ca1
+DG Mossy,E,DG,not_ca1
+DG Neurogliaform,I,DG,not_ca1
+DG Semilunar Granule,E,DG,not_ca1
+DG Total Molecular Layer,I,DG,not_ca1
+EC LI II Multipolar Pyramidal,E,EC,not_ca1
+EC LI II Pyramidal Fan,E,EC,not_ca1
+EC LII III Pyramidal Tripolar,E,EC,not_ca1
+EC LIII Pyramidal,E,EC,not_ca1
+EC LIII Pyramidal Stellate,E,EC,not_ca1
+EC LIII Stellate,E,EC,not_ca1
+EC LIII V Bipolar Pyramidal,E,EC,not_ca1
+EC LIV VI Deep Multipolar Principal,E,EC,not_ca1
+EC LV Deep Pyramidal,E,EC,not_ca1
+LEC LIII Complex Pyramidal,E,EC,not_ca1
+LEC LIII Multipolar Principal,E,EC,not_ca1
+LEC LVI Multipolar Pyramidal,E,EC,not_ca1
+MEC LII III Pyramidal Multiform,E,EC,not_ca1
+MEC LII Oblique Pyramidal,E,EC,not_ca1
+MEC LII Stellate,E,EC,not_ca1
+MEC LIII Bipolar Complex Pyramidal,E,EC,not_ca1
+MEC LIII Complex Pyramidal,E,EC,not_ca1
+MEC LIII Superficial Multipolar Interneuron,I,EC,not_ca1
+MEC LIII Superficial Trilayered Interneuron,I,EC,not_ca1
+MEC LV Multipolar Pyramidal,E,EC,not_ca1
+MEC LV Pyramidal,E,EC,not_ca1
+MEC LV Superficial Pyramidal,E,EC,not_ca1
+MEC LV VI Pyramidal Polymorphic,E,EC,not_ca1
+SUB CA1 Projecting Pyramidal,E,SUB,not_ca1

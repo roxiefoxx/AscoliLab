@@ -1,0 +1,6 @@
+metric,value
+raw edge rows,1641
+usable nonzero non-self edges,1570
+unique neurons,85
+unique source regions,9
+unique target regions,9

@@ -199,6 +199,45 @@ def summarize_mode_cells(motif_participation, mode_table, top_n=50):
     )
 
 
+# ---------------------------------------------------------------------------
+# Corrections pass 2026-09-17 -- self-loops in the Laplacian (audit item C1)
+#
+# `build_laplacian` used to pass the operator through with its diagonal intact,
+# so `I - D^-1/2 A D^-1/2` had a diagonal of `1 - a_ii/d_i` rather than 1, and
+# `signed_combinatorial` gave `d_i - a_ii` rather than `d_i`.  That is a genuine
+# departure from the standard normalized Laplacian: a self-loop shifts that
+# node's diagonal entry, which shifts the whole spectrum and changes what the
+# eigenvalues mean -- the usual [0, 2] bound and the "0 iff connected component"
+# reading both assume a zero diagonal.
+#
+# The decision is now explicit rather than incidental.  `SELF_LOOPS` selects it,
+# both variants are runnable, and the notebook reports them side by side:
+#
+#   "zero"  standard construction; self-loops removed before the Laplacian.
+#           Eigenvalues carry their textbook interpretation.  This is the
+#           default and the one to report.
+#   "keep"  previous behaviour; self-loops retained.  Kept so the change in the
+#           spectrum is measurable rather than asserted, NOT as an alternative
+#           reading of the same quantity.
+#
+# Self-loops are 71 of the 1,641 stored entries, so this is not a rounding
+# detail.
+SELF_LOOPS_DEFAULT = "zero"
+
+
+def _apply_self_loop_policy(operator, self_loops):
+    """Return the operator with its diagonal zeroed, or unchanged."""
+    if self_loops not in ("zero", "keep"):
+        raise ValueError("self_loops must be 'zero' or 'keep'")
+    if self_loops == "keep":
+        return operator
+    out = sparse.csr_matrix(operator).copy().tolil()
+    out.setdiag(0.0)
+    out = out.tocsr()
+    out.eliminate_zeros()
+    return out
+
+
 def _normalized_adjacency_from_operator(operator, use_absolute=False):
     adjacency = abs(operator) if use_absolute else operator
     degree_values = np.asarray(abs(adjacency).sum(axis=1)).ravel()
@@ -210,7 +249,14 @@ def _normalized_adjacency_from_operator(operator, use_absolute=False):
     return normalized_adjacency.tocsr(), degree_values
 
 
-def build_laplacian(operator, kind="signed_normalized"):
+def build_laplacian(operator, kind="signed_normalized", self_loops=None):
+    """Graph Laplacian of the motif overlap operator.
+
+    ``self_loops`` is ``"zero"`` (default, standard construction) or ``"keep"``
+    (previous behaviour).  See the note above ``SELF_LOOPS_DEFAULT``.
+    """
+    self_loops = SELF_LOOPS_DEFAULT if self_loops is None else self_loops
+    operator = _apply_self_loop_policy(operator, self_loops)
     kind = kind.lower()
     if kind == "absolute_normalized":
         normalized_adjacency, degree_values = _normalized_adjacency_from_operator(
@@ -232,8 +278,10 @@ def build_laplacian(operator, kind="signed_normalized"):
     return laplacian.tocsr(), degree_values
 
 
-def decompose_laplacian(operator, mode_table, kind="signed_normalized", n_modes=12):
-    laplacian, degree_values = build_laplacian(operator, kind=kind)
+def decompose_laplacian(operator, mode_table, kind="signed_normalized", n_modes=12,
+                        self_loops=None):
+    self_loops = SELF_LOOPS_DEFAULT if self_loops is None else self_loops
+    laplacian, degree_values = build_laplacian(operator, kind=kind, self_loops=self_loops)
     n_modes = min(n_modes, laplacian.shape[0] - 1)
     values, vectors = eigsh(laplacian, k=n_modes, which="SA")
     order = np.argsort(values)
@@ -251,6 +299,7 @@ def decompose_laplacian(operator, mode_table, kind="signed_normalized", n_modes=
         mode_records.append(
             {
                 "laplacian_kind": kind,
+                "self_loops": self_loops,
                 "mode": mode,
                 "laplacian_eigenvalue": float(eigenvalue),
                 "top_motif_index": int(top.motif_index),
@@ -268,6 +317,7 @@ def decompose_laplacian(operator, mode_table, kind="signed_normalized", n_modes=
             motif_records.append(
                 {
                     "laplacian_kind": kind,
+                "self_loops": self_loops,
                     "mode": mode,
                     "rank": rank,
                     "motif_index": int(motif.motif_index),

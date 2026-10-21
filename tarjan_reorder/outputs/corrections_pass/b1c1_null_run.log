@@ -1,0 +1,112 @@
+n=85  dyad census 422 mutual / 726 asymmetric
+observed LOP forward 0.995185  CERTIFIED  1.9s
+observed trace(P) 5217.7  normal control 52.2  excess 100x
+  null   1/100  lop 0.99305 (ub 0.99305)  traceP 22516.9
+  null   2/100  lop 0.99325 (ub 0.99325)  traceP 1593.2
+  null   3/100  lop 0.99132 (ub 0.99132)  traceP 11814.3
+  null   4/100  lop 0.99194 (ub 0.99194)  traceP 13549.6
+  null   5/100  lop 0.99008 (ub 0.99074, not certified)  traceP 2329.3
+  null   6/100  lop 0.99143 (ub 0.99143)  traceP 2039.0
+  null   7/100  lop 0.99156 (ub 0.99156)  traceP 10118.1
+  null   8/100  lop 0.99165 (ub 0.99165)  traceP 9858.4
+  null   9/100  lop 0.99260 (ub 0.99260)  traceP 5569.6
+  null  10/100  lop 0.99266 (ub 0.99266)  traceP 9233.8
+  null  11/100  lop 0.99228 (ub 0.99228)  traceP 11845.6
+  null  12/100  lop 0.99300 (ub 0.99300)  traceP 61516.6
+  null  13/100  lop 0.99234 (ub 0.99234)  traceP 5647.4
+  null  14/100  lop 0.99183 (ub 0.99183)  traceP 9546.8
+  null  15/100  lop 0.99102 (ub 0.99102)  traceP 27702.0
+  null  16/100  lop 0.99189 (ub 0.99189)  traceP 39304.4
+  null  17/100  lop 0.99200 (ub 0.99200)  traceP 9348.4
+  null  18/100  lop 0.99307 (ub 0.99307)  traceP 4179.0
+  null  19/100  lop 0.99294 (ub 0.99294)  traceP 14599.3
+  null  20/100  lop 0.99251 (ub 0.99251)  traceP 15862.3
+  null  21/100  lop 0.99125 (ub 0.99125)  traceP 29023.7
+  null  22/100  lop 0.99235 (ub 0.99235)  traceP 27761.3
+  null  23/100  lop 0.99316 (ub 0.99316)  traceP 31668.2
+  null  24/100  lop 0.99302 (ub 0.99302)  traceP 8514.6
+  null  25/100  lop 0.99032 (ub 0.99032)  traceP 3571.9
+  null  26/100  lop 0.99323 (ub 0.99323)  traceP 3334.6
+  null  27/100  lop 0.99177 (ub 0.99177)  traceP 1031.9
+  null  28/100  lop 0.99194 (ub 0.99194)  traceP 1518.2
+  null  29/100  lop 0.99393 (ub 0.99393)  traceP 2366.2
+  null  30/100  lop 0.99244 (ub 0.99244)  traceP 66996.5
+  null  31/100  lop 0.99240 (ub 0.99240)  traceP 2372.1
+  null  32/100  lop 0.99112 (ub 0.99112)  traceP 6067.2
+  null  33/100  lop 0.99203 (ub 0.99203)  traceP 10082.7
+  null  34/100  lop 0.99172 (ub 0.99172, not certified)  traceP 9522.7
+  null  35/100  lop 0.99228 (ub 0.99228)  traceP 4346.3
+  null  36/100  lop 0.99204 (ub 0.99204)  traceP 4281.4
+  null  37/100  lop 0.98967 (ub 0.98967)  traceP 5303.3
+  null  38/100  lop 0.99214 (ub 0.99214)  traceP 8553.2
+  null  39/100  lop 0.98763 (ub 0.98763)  traceP 1550.8
+  null  40/100  lop 0.99077 (ub 0.99077)  traceP 7987.8
+  null  41/100  lop 0.99285 (ub 0.99285)  traceP 12166.0
+  null  42/100  lop 0.99278 (ub 0.99278)  traceP 1667.5
+  null  43/100  lop 0.99265 (ub 0.99265)  traceP 3587.4
+  null  44/100  lop 0.99132 (ub 0.99132)  traceP 4075.0
+  null  45/100  lop 0.99136 (ub 0.99136)  traceP 6441.1
+  null  46/100  lop 0.99158 (ub 0.99158)  traceP 6720.1
+  null  47/100  lop 0.99292 (ub 0.99292)  traceP 1958.8
+  null  48/100  lop 0.99129 (ub 0.99129)  traceP 33860.0
+  null  49/100  lop 0.99209 (ub 0.99209)  traceP 3035.8
+  null  50/100  lop 0.99035 (ub 0.99035)  traceP 65756.4
+  null  51/100  lop 0.99047 (ub 0.99047)  traceP 11055.8
+  null  52/100  lop 0.99274 (ub 0.99274)  traceP 17317.9
+  null  53/100  lop 0.98992 (ub 0.98992)  traceP 3170.8
+  null  54/100  lop 0.99295 (ub 0.99295)  traceP 12015.7
+  null  55/100  lop 0.99151 (ub 0.99151)  traceP 2902.9
+  null  56/100  lop 0.99223 (ub 0.99223)  traceP 3555.7
+  null  57/100  lop 0.99151 (ub 0.99151)  traceP 16692.7
+  null  58/100  lop 0.99144 (ub 0.99144)  traceP 11056.5
+  null  59/100  lop 0.99292 (ub 0.99292)  traceP 4864.4
+  null  60/100  lop 0.99255 (ub 0.99255)  traceP 6134.2
+  null  61/100  lop 0.99138 (ub 0.99138)  traceP 4432.4
+  null  62/100  lop 0.99194 (ub 0.99211, not certified)  traceP 2471.1
+  null  63/100  lop 0.99224 (ub 0.99224)  traceP 1828.3
+  null  64/100  lop 0.99136 (ub 0.99136)  traceP 1897.4
+  null  65/100  lop 0.99188 (ub 0.99188)  traceP 4525.5
+  null  66/100  lop 0.99164 (ub 0.99164)  traceP 732.6
+  null  67/100  lop 0.99239 (ub 0.99239)  traceP 202754.5
+  null  68/100  lop 0.99288 (ub 0.99288)  traceP 2864.0
+  null  69/100  lop 0.99275 (ub 0.99275)  traceP 1112.8
+  null  70/100  lop 0.99150 (ub 0.99150)  traceP 2834.8
+  null  71/100  lop 0.99200 (ub 0.99200)  traceP 4417.3
+  null  72/100  lop 0.99391 (ub 0.99391)  traceP 113716.1
+  null  73/100  lop 0.99238 (ub 0.99238)  traceP 7516.3
+  null  74/100  lop 0.99249 (ub 0.99249)  traceP 3893.2
+  null  75/100  lop 0.99255 (ub 0.99255)  traceP 10249.0
+  null  76/100  lop 0.99159 (ub 0.99159)  traceP 57915.6
+  null  77/100  lop 0.99203 (ub 0.99203)  traceP 14822.5
+  null  78/100  lop 0.99165 (ub 0.99165)  traceP 11909.3
+  null  79/100  lop 0.99140 (ub 0.99140)  traceP 39776.3
+  null  80/100  lop 0.99321 (ub 0.99323, not certified)  traceP 11760.2
+  null  81/100  lop 0.99152 (ub 0.99152)  traceP 364.6
+  null  82/100  lop 0.99246 (ub 0.99246)  traceP 4139.5
+  null  83/100  lop 0.99306 (ub 0.99306)  traceP 4187.7
+  null  84/100  lop 0.99240 (ub 0.99240)  traceP 45255.7
+  null  85/100  lop 0.99186 (ub 0.99186)  traceP 23423.5
+  null  86/100  lop 0.99364 (ub 0.99364)  traceP 18612.7
+  null  87/100  lop 0.99239 (ub 0.99239)  traceP 26805.4
+  null  88/100  lop 0.99292 (ub 0.99292)  traceP 70154.5
+  null  89/100  lop 0.99155 (ub 0.99155)  traceP 2823.2
+  null  90/100  lop 0.99270 (ub 0.99270)  traceP 2270.1
+  null  91/100  lop 0.99135 (ub 0.99135)  traceP 3104.6
+  null  92/100  lop 0.99183 (ub 0.99183)  traceP 3300.7
+  null  93/100  lop 0.99340 (ub 0.99340)  traceP 1873.5
+  null  94/100  lop 0.99050 (ub 0.99050)  traceP 11903.2
+  null  95/100  lop 0.99090 (ub 0.99090)  traceP 4458.2
+  null  96/100  lop 0.99367 (ub 0.99367)  traceP 52012.3
+  null  97/100  lop 0.99068 (ub 0.99068)  traceP 1661.9
+  null  98/100  lop 0.98954 (ub 0.98954)  traceP 22358.3
+  null  99/100  lop 0.99018 (ub 0.99018)  traceP 3117.9
+  null 100/100  lop 0.99216 (ub 0.99216)  traceP 3936.3
+
+                                  metric    observed    null_mean      null_sd   z_score  empirical_p_one_sided  n_null
+           weighted_feedforward_fraction    0.995185     0.991969     0.001021  3.148217               0.009901     100
+               feedforward_edge_fraction    0.661146     0.642427     0.009448  1.981392               0.049505     100
+                    lop_forward_fraction    0.995185     0.991969     0.001021  3.148217               0.009901     100
+lop_forward_fraction_vs_null_upper_bound    0.995185     0.991978     0.001012  3.170781               0.009901     100
+                                 trace_P 5217.703040 15592.565351 26596.261633 -0.390087               0.554455     100
+
+wrote /root/nulls/out/null_ensemble.csv, null_tests.csv, null_meta.json

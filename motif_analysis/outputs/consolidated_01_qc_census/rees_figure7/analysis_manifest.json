@@ -1,0 +1,36 @@
+{
+  "source_doi": "10.1523/ENEURO.0205-16.2016",
+  "inputs": {
+    "matrix": {
+      "path": "C:\\Users\\ranic\\Documents\\GitHub\\AscoliLab\\motif_analysis\\mij_matrix.csv",
+      "sha256": "5fa4c38b1c86b333e2cfc882f4d428d6c0d050d9edb9fd8a7806f514d244467b"
+    },
+    "netlist": {
+      "path": "C:\\Users\\ranic\\Documents\\GitHub\\AscoliLab\\motif_analysis\\mij_netlist.csv",
+      "sha256": "fdbf6f4293e686758e62847d73485cd2acfb616760b274365bd1a48062433828"
+    }
+  },
+  "nodes": 85,
+  "triads": 98770,
+  "region_aliases": {
+    "LEC": "EC",
+    "MEC": "EC",
+    "CA3c": "CA3"
+  },
+  "ratio_scope": "within_ca1",
+  "ratio_normalization": "per_type",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.6",
+    "networkx": "3.5"
+  },
+  "notes": [
+    "Rees Figure 7-style reanalysis; published numerical results are not reference inputs.",
+    "Binary A[pre,post] != 0, unordered distinct triples, induced edges, no self-loops.",
+    "Panel C uses supplied/inferred anatomical regions, not detected graph communities.",
+    "Panel D is an operational reconstruction; scope and normalization are explicit.",
+    "Ratios have no null model or significance interpretation. Zero denominators are missing, not zero.",
+    "1 CA1 types are unassigned and excluded from group ratios; review node_metadata.csv."
+  ]
+}

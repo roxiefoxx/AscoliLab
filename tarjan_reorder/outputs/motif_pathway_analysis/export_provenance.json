@@ -1,0 +1,19 @@
+{
+  "produced_by": "tarjan_reorder/motif_pathway_export.py",
+  "date": "2026-09-17",
+  "reason": "original producer motif_pathway_analysis.ipynb is not in the repository",
+  "classes": [
+    "030T",
+    "030C",
+    "201",
+    "120D",
+    "120U",
+    "120C",
+    "210",
+    "300"
+  ],
+  "max_motifs": 2000,
+  "n_motifs": 2000,
+  "block_orientation": "source rows / target columns (notebooks transpose on load)",
+  "selection_is_a_new_decision": true
+}

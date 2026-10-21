@@ -1,0 +1,71 @@
+85 types, 1570 edges, dyad census 422 mutual / 726 asymmetric
+
+node-level weighted triad participation == (n-3)*strength + const: max relative error 2.7e-15, corr with strength 1.000000
+  -> the measure carries no triad information; reported by class share below
+  null  10/100  (16s)
+  null  20/100  (30s)
+  null  30/100  (44s)
+  null  40/100  (60s)
+  null  50/100  (76s)
+  null  60/100  (93s)
+  null  70/100  (107s)
+  null  80/100  (123s)
+  null  90/100  (140s)
+  null 100/100  (156s)
+
+node-strength deviation across surrogates (relative): out median 0.352 max 42303.22; in median 0.730 max 1582.10
+
+=== chain signature X -> Y -> Z, weighted ===
+signature  observed_weight  observed_share  null_mean_share  null_sd_share  z_share  empirical_p_one_sided
+      EII        1.614e+08          0.3631           0.2338        0.02548    5.074               0.009901
+      IEI        1.375e+08          0.3094           0.2017        0.02774    3.883               0.009901
+      EEI        8.764e+07          0.1972           0.2697        0.02674   -2.713                      1
+      EIE        3.399e+07         0.07646           0.1102        0.01226   -2.748                      1
+      EEE        1.508e+07         0.03392           0.0891        0.02582   -2.137                      1
+      IEE         6.05e+06         0.01361           0.0575        0.01895   -2.316                      1
+      III        2.431e+06         0.00547            0.029        0.01005   -2.342                      1
+      IIE        4.063e+05        0.000914         0.009038        0.00314   -2.587                      1
+
+=== strongest class-share deviations (|z|, p <= 0.05) ===
+                                  cell_type ei triad_class  observed_share  null_mean_share  null_sd_share  z_score  empirical_p_one_sided  strength
+                                  DG Basket  I         300         0.01801         0.001124       0.001334    12.66               0.009901 8.555e+04
+                                   DG HICAP  I         300         0.03842         0.002528       0.002894     12.4               0.009901  1.73e+05
+                           MEC LII Stellate  E         300         0.05046         0.005274       0.003785    11.94               0.009901  2.17e+05
+                     EC LI II Pyramidal Fan  E         300         0.05146         0.006074       0.003838    11.83               0.009901 1.917e+05
+              EC LII III Pyramidal Tripolar  E         300         0.08138          0.01082       0.006088    11.59               0.009901 1.409e+05
+                                   DG Mossy  E         300          0.0418         0.002544       0.003477    11.29               0.009901 1.161e+05
+               CA1 Neurogliaform Projecting  I        111D          0.2321          0.04672        0.01837     10.1               0.009901     4,862
+                            CA3 Basket CCK+  I         300        0.008137        0.0007125      0.0007814    9.501               0.009901 3.159e+04
+MEC LIII Superficial Multipolar Interneuron  I         300         0.09671           0.0131       0.009743    8.582               0.009901 5.815e+05
+         CA1 Schaffer Collateral Associated  I        120D          0.3703          0.08588        0.03566    7.975               0.009901 1.104e+05
+                  CA3 Horizontal Axo Axonic  I         210         0.02584         0.002508       0.002942    7.933               0.009901 1.075e+04
+MEC LIII Superficial Trilayered Interneuron  I         300         0.07642          0.01064       0.008363    7.865               0.009901 4.223e+04
+            MEC LII III Pyramidal Multiform  E         300         0.07801          0.01284       0.009065    7.189               0.009901 4.345e+04
+                                    DG HIPP  I         300         0.02908         0.001557       0.003876    7.099               0.009901 2.181e+04
+                 EC LIII Pyramidal Stellate  E        021U          0.2117          0.05693        0.02221    6.969               0.009901  2.87e+05
+                      CA1 Radial Trilaminar  I        120D          0.4352           0.1224        0.04489    6.967               0.009901 1.643e+05
+                   DG Total Molecular Layer  I         300         0.05475         0.006615       0.006972    6.904               0.009901 7.479e+04
+              EC LI II Multipolar Pyramidal  E         300            0.08          0.01802       0.008987    6.897               0.009901 6.997e+05
+         MEC LIII Bipolar Complex Pyramidal  E         300         0.07736           0.0135       0.009359    6.824               0.009901 4.512e+04
+                             CA3 Axo Axonic  I         210         0.04383         0.008695       0.005213     6.74               0.009901 6.039e+04
+
+=== DG Granule by class ===
+ cell_type ei triad_class  observed_share  null_mean_share  null_sd_share  z_score  empirical_p_one_sided  strength
+DG Granule  E         003               0                0              0      NaN                      1 9.261e+05
+DG Granule  E         012         0.09607            0.171        0.03731   -2.009                 0.9802 9.261e+05
+DG Granule  E         102          0.4227           0.2119        0.03626    5.815               0.009901 9.261e+05
+DG Granule  E        021D         0.01045          0.05547        0.02759   -1.632                      1 9.261e+05
+DG Granule  E        021U        0.003848          0.04077        0.01631   -2.263                      1 9.261e+05
+DG Granule  E        021C          0.0561          0.04639        0.01808   0.5372                 0.2772 9.261e+05
+DG Granule  E        111D         0.02083          0.08265        0.01665   -3.714                      1 9.261e+05
+DG Granule  E        111U          0.1439           0.1382        0.03461   0.1641                 0.4158 9.261e+05
+DG Granule  E        030T         0.01615          0.03629        0.01349   -1.494                      1 9.261e+05
+DG Granule  E        030C        0.001482         0.002679       0.003204  -0.3734                  0.604 9.261e+05
+DG Granule  E         201        0.001592          0.08277        0.01341   -6.055                      1 9.261e+05
+DG Granule  E        120D         0.07063          0.01999       0.008056    6.286               0.009901 9.261e+05
+DG Granule  E        120U        0.007535          0.03526        0.02263   -1.225                 0.9802 9.261e+05
+DG Granule  E        120C         0.03859           0.0227        0.01144     1.39                0.07921 9.261e+05
+DG Granule  E         210         0.07384           0.0437        0.01468    2.053                0.05941 9.261e+05
+DG Granule  E         300         0.03626          0.01022       0.004064    6.407               0.009901 9.261e+05
+
+wrote /root/work/AscoliLab/motif_analysis/outputs/corrections_pass/weighted_triad_class_share_z.csv, chain_signature_table.csv, weighted_triad_participation_degenerate.csv

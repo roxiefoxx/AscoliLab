@@ -1,0 +1,9 @@
+laplacian_kind,self_loops,mode,laplacian_eigenvalue,top_motif_index,top_motif_acronym,top_superpattern,top_loading,positive_motif_count,negative_motif_count
+signed_normalized,zero,1,0.0005962279164240216,1789,EC-LI/II-MP | EC-LII/III-PT | MEC-LIII-SupMIN,300,0.08082312751764488,2000,0
+signed_normalized,zero,2,0.0031797213771154295,1270,CA2-P | CA3-P | CA3c-P,300,0.05374811347849407,1761,239
+signed_normalized,zero,3,0.025849218409345315,1568,DG-AIPRIM | DG-Gr | DG-SemiGr,210,0.11586792596529008,384,1616
+signed_normalized,zero,4,0.03970073650768343,1789,EC-LI/II-MP | EC-LII/III-PT | MEC-LIII-SupMIN,300,0.12587459849525237,683,1317
+signed_normalized,zero,5,0.054384464387657414,1192,CA1-TriLam | CA2-P | CA3-P,120U,-0.14427296028116723,1525,475
+signed_normalized,zero,6,0.10616461588005185,1000,CA1-PerPatAss.2 | CA2-P | CA3c-P,120U,-0.11746412026694211,1305,695
+signed_normalized,zero,7,0.11113070863237494,186,CA1-BackProj | CA3-P | CA3c-P,300,0.11329174912813779,698,1302
+signed_normalized,zero,8,0.12161055002195682,1610,DG-AxAxo | DG-Gr | DG-Mossy,300,-0.10576014706844694,1360,640

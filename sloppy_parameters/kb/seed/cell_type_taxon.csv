@@ -1,0 +1,56 @@
+netlist_name,taxon,is_primary,confidence,rationale
+CA1 Axo Axonic,AAC,1,0.95,Name matches AAC; anatomy p.1621
+CA1 Horizontal Axo Axonic,AAC,1,0.85,AAC subset with horizontally oriented s.o. dendrites (p.1621)
+CA1 Basket,BASKET,1,0.9,Bare 'Basket': PV vs CCK identity not established by the label (design rule 5)
+CA1 Basket CCK+,CCKBC,1,0.95,CCK+ basket explicitly named
+CA1 Horizontal Basket,BASKET,1,0.7,Basket morphology with s.o. soma/dendrites; molecular identity unresolved
+CA1 Bistratified,BIC,1,0.95,Name matches BiC (p.1624)
+CA1 Oriens Bistratified,BIC,1,0.6,Deep s.o. BiC variant with horizontal s.o.-restricted dendrites (p.1624); may include oriens-bistratified projecting cells
+CA1 Oriens Bistratified,PROJECTING,0,0.3,Possible long-range oriens-bistratified projecting phenotype; verify against Hippocampome
+CA1 O LM,OLM,1,0.95,Name matches O-LM (p.1627)
+CA1 O LMR,OLM,1,0.6,O-LM variant whose axon also invades s.r. (name token 'R'); verify
+CA1 OR LM,OLM,1,0.5,Oriens/radiatum-dendrite cell projecting to s.l.m.; O-LM-like by axon; verify
+CA1 Recurrent O LM,OLM,1,0.6,O-LM variant with recurrent s.o. collaterals; verify
+CA1 Back Projection,PROJECTING,1,0.8,CA1 SOM-containing back-projection neuron crossing the fissure (p.1627 ref 562)
+CA1 Ivy,IVY,1,0.95,Name matches IvC (p.1629)
+CA1 Neurogliaform,NGFC,1,0.95,Name matches NGFC (p.1628)
+CA1 Neurogliaform Projecting,NGFC,1,0.6,NGFC with axon crossing into DG molecular layer (p.1628); verify
+CA1 Schaffer Collateral Associated,SCA,1,0.95,Name matches SCA (p.1626)
+CA1 R Receiving Apical Targeting,ADI,1,0.6,Radiatum-receiving apical-shaft targeting; consistent with ADI (p.1626)
+CA1 Perforant Path Associated,PPA,1,0.95,Name matches PPA (p.1626)
+CA1 Perforant Path Associated QuadD,PPA,1,0.6,PPA variant with quadrilaminar dendrites; verify
+CA1 Trilaminar,TRILAMINAR,1,0.9,Name matches Fig. 1 class 12
+CA1 Radial Trilaminar,TRILAMINAR,1,0.6,Trilaminar variant with radial dendrites
+CA1 Quadrilaminar,DT_UNRESOLVED,1,0.3,Not described in the review
+CA1 LMR,DT_UNRESOLVED,1,0.3,"Lacunosum-moleculare/radiatum cell; could be NGF- or PPA-like, not described in the review"
+CA1 Radiatum,DT_UNRESOLVED,1,0.3,Generic s.r. interneuron; not described in the review
+CA1 SO SO,DT_UNRESOLVED,1,0.3,Oriens-confined axon and dendrites; not described in the review
+CA1 Oriens Alveus,DT_UNRESOLVED,1,0.3,Not described in the review
+CA2 Basket,BASKET,1,0.85,Bare 'Basket' (design rule 5)
+CA2 Wide Arbor Basket,BASKET,1,0.7,Basket morphology; molecular identity unresolved
+CA2 Bistratified,BIC,1,0.85,Name matches BiC; CA1 anatomy assumed homologous (p.1621)
+CA2 SP SR,DT_UNRESOLVED,1,0.3,Not described in the review
+CA3 Axo Axonic,AAC,1,0.95,CA3 AACs resemble CA1 AACs (p.1621)
+CA3 Horizontal Axo Axonic,AAC,1,0.85,Horizontal-dendrite AAC variant
+CA3 Basket,BASKET,1,0.9,Bare 'Basket' (design rule 5)
+CA3 Basket CCK+,CCKBC,1,0.95,CCK+ basket explicitly named
+CA3 O LM,OLM,1,0.9,CA3 O-LM (p.1627)
+CA3 Mossy Fiber Associated,MFA,1,0.7,Grouped with CCKBCs in Tricoire cluster 6 (p.1657)
+CA3 Mossy Fiber Associated ORDEN,MFA,1,0.5,MFA variant with s.o./s.r. dendrites; verify
+CA3 Trilaminar,TRILAMINAR,1,0.85,Name matches Fig. 1 class 12
+CA3 LMR Targeting,DT_UNRESOLVED,1,0.3,Targets s.l.m./s.r.; not described in the review
+CA3 Lucidum ORAX,DT_UNRESOLVED,1,0.3,Not described in the review
+CA3 Spiny Lucidum,DT_UNRESOLVED,1,0.3,Not described in the review
+DG Axo Axonic,AAC,1,0.95,DG AACs (p.1621-1622)
+DG Basket,BASKET,1,0.9,"Bare 'Basket'; DG has both PVBC and CCKBC near the s.g./hilar border (p.1623, p.1625)"
+DG HICAP,HICAP,1,0.8,Name matches HICAP (p.1625)
+DG HICAP,CCKBC,0,0.4,'HICAPs and dentate CCKBCs are one and the same' but HICAP may span several subtypes (p.1625-1626)
+DG HIPP,HIPP,1,0.95,Name matches HIPP (p.1627)
+DG Neurogliaform,NGFC,1,0.95,DG NGFCs (p.1628)
+DG MOPP,NGF_FAMILY,1,0.5,Hosp et al. ML cluster corresponds to MOPP cells and NGFCs (p.1657)
+DG Total Molecular Layer,DT_UNRESOLVED,1,0.5,Forms its own Hosp et al. cluster (p.1657); family not stated
+DG MOLAX,DT_UNRESOLVED,1,0.3,Not described in the review
+DG AIPRIM,DT_UNRESOLVED,1,0.3,Not described in the review
+DG HIPROM,PROJECTING,1,0.4,Hilar cell with long-range projection (name); verify
+MEC LIII Superficial Multipolar Interneuron,UNRESOLVED,1,0.5,Entorhinal; outside the review's scope
+MEC LIII Superficial Trilayered Interneuron,UNRESOLVED,1,0.5,Entorhinal; outside the review's scope

@@ -1,0 +1,51 @@
+code,name,category,value_type,unit,allowed_values,description
+fraction_of_CA1_neurons,Fraction of all CA1 neurons,census,numeric,fraction,,
+fraction_of_CA1_interneurons,Fraction of CA1 interneurons,census,numeric,fraction,,
+cell_count_CA1,Cell count in one rodent CA1,census,numeric,cells,,
+soma_layer_distribution,Soma laminar distribution,anatomy,distribution,fraction,,Bins over layer; feeds L_i^soma
+dendrite_layer_distribution,Dendritic laminar distribution,anatomy,distribution,fraction,,Bins over layer; feeds d_{i l}
+axon_layer_distribution,Axonal laminar distribution,anatomy,distribution,fraction,,Bins over layer; feeds the layer marginal of a_{j l c}
+axon_compartment_distribution,Axonal postsynaptic-compartment distribution,anatomy,distribution,fraction,,Bins over compartment; feeds the compartment marginal of a_{j l c}
+output_target_class_distribution,Output synapses by postsynaptic class,connectivity,distribution,fraction,,Bins over target taxon (PRINCIPAL / GABA_IN / specific)
+postsynaptic_cells_per_neuron,Postsynaptic cells contacted per neuron,connectivity,numeric,cells,,
+synapses_per_connection,Synapses per connection,connectivity,numeric,synapses,,
+terminal_ratio_PV_to_CCK,PVBC:CCKBC terminal ratio on a pyramidal cell,connectivity,numeric,ratio,,
+crosses_fissure,Axon crosses the hippocampal fissure,anatomy,boolean,,true|false,
+axon_total_length,Total axon length,anatomy,numeric,um,,Feeds A_tot
+bouton_count,Bouton count,anatomy,numeric,boutons,,
+bouton_density,Bouton density,anatomy,numeric,per_100um,,
+bouton_target_distance,Bouton-to-target distance,anatomy,numeric,um,,Volume-transmission scale; informs sigma_GABA
+V_rest,Resting membrane potential,intrinsic,numeric,mV,,
+V_th,Spike threshold,intrinsic,numeric,mV,,
+R_in,Input resistance,intrinsic,numeric,MOhm,,
+tau_m,Membrane time constant,intrinsic,numeric,ms,,
+sag_index,Sag index (steady/peak),intrinsic,numeric,ratio,,Lower = more sag (more Ih)
+f_2x,Firing frequency at 2x threshold current,intrinsic,numeric,Hz,,
+adaptation_ratio,Adaptation ratio at 2x threshold,intrinsic,numeric,ratio,,Treated as f_last / f_first (<1 = adapting)
+AP_amplitude,Spike amplitude,intrinsic,numeric,mV,,
+AP_halfwidth,Spike half-width,intrinsic,numeric,ms,,
+AHP_amplitude,AHP amplitude,intrinsic,numeric,mV,,
+AHP_halfwidth,AHP half-width,intrinsic,numeric,ms,,
+firing_pattern,Firing pattern class,intrinsic,categorical,,fast_spiking|regular_spiking_adapting|late_spiking|irregular|bursting|stuttering|variable,
+ih_prominence,Ih / sag prominence,intrinsic,categorical,,high|moderate|low,
+gap_junction_coupling,Within-class electrical coupling,intrinsic,categorical,,high|moderate|low,
+gap_junction_conductance,Gap-junction coupling conductance,intrinsic,numeric,nS,,
+release_mode,Dominant GABA release mode,release,categorical,,synchronous|asynchronous|volume,
+release_probability,Release probability,release,numeric,probability,,Feeds U_A
+quantal_release_halfduration,Half-duration of quantal release,release,numeric,ms,,
+conduction_velocity,Axonal conduction velocity,release,numeric,m/s,,Feeds v_cond
+synchronicity_ratio,Synchronous/asynchronous release ratio,release,numeric,ratio,,25 APs at 50 Hz
+gabaa_decay_class,GABAA output kinetics class,synaptic,categorical,,fast|slow,
+gabaa_decay_ratio_vs_fast,GABAA decay relative to fast PV-type IPSC,synaptic,numeric,ratio,,Feeds tau_A
+gabab_output,Elicits postsynaptic GABAB responses,synaptic,boolean,,true|false,Feeds U_B
+excitatory_input_stp,STP of excitatory input onto the cell,synaptic,categorical,,depressing|facilitating|mixed,
+marker_status,Molecular marker status,marker,categorical,,positive|negative|unknown|mixed|low,Tri-state core (positive/negative/unknown) plus mixed (subset) and low (detectable but weak)
+embryonic_origin,Embryonic origin,development,categorical,,MGE|CGE|MGE_and_CGE|POA,
+receptor_expression,Receptor expression,neuromodulation,categorical,,positive|negative|unknown|subset|present|high|low,
+receptor_effect,Direction of receptor activation effect on a mechanism,neuromodulation,categorical,,increase|decrease|biphasic|none,Sign source for alpha_eta / alpha_rel
+cb1_relative_strength,Relative strength of CB1 control of release,neuromodulation,categorical,,strong|moderate|weak,
+theta_phase_locking,Theta phase locking,oscillation,categorical,,locked|unlocked|sparse,
+theta_phase_preference,Preferred theta phase,oscillation,categorical,,peak|trough|rising|falling,
+circuit_role,Circuit motif role,connectivity,categorical,,feedforward|feedback|feedforward_and_feedback|disinhibitory,How the population is recruited relative to the principal cells it inhibits
+function_statement,Functional statement,connectivity,categorical,,,"Source's statement of what the cell does, optionally under a condition; text in value_text"
+experimental_finding,Experimental finding,connectivity,categorical,,oscillation|plasticity|behavior|disease|physiology|development,"What experiments found; topic in value_cat, finding in value_text, condition when state-dependent"

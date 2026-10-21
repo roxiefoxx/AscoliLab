@@ -25,11 +25,11 @@ unknown). Separation is 100%/0%, so these verdicts are unambiguous.
 | `inhib_modulation/matrices/mij_matrix.csv` | `M[pre, post]` | ⚠ **YES** |
 | `motif_analysis/mij_matrix.csv` | `M[pre, post]` | ⚠ **YES** |
 | `non-normal_matrices/data/mij_matrix.csv` | `M[pre, post]` | ⚠ **YES** |
-| `non-normal_matrices/data/wij_matrix.csv` | `M[pre, post]` | ⚠ **YES** |
+| `archive/wij_structural/non-normal_matrices/data/wij_matrix.csv` (archived 2026-09-17) | `M[pre, post]` | ⚠ **YES** |
 | `schur_decomp/mij_matrix.csv` | `M[pre, post]` | ⚠ **YES** |
 | `schur_decomp/matrices/mij_matrix.csv` | `M[pre, post]` | ⚠ **YES** |
 | `tarjan_reorder/mij_matrix.csv` | `M[pre, post]` | ⚠ **YES** |
-| `schur_decomp/outputs/moved_csv/matrices/wij_matrix.csv` | `M[pre, post]` | ⚠ **YES** |
+| `archive/wij_structural/schur_decomp/outputs/moved_csv/matrices/wij_matrix.csv` (archived 2026-09-17) | `M[pre, post]` | ⚠ **YES** |
 | `EE_backbone/matrices/mij_EE_matrix.csv` | 32×32 E-only; no I cells, so the sign test cannot decide | ⚠ **UNVERIFIED — treat as `[pre, post]` to match its siblings, and confirm before reuse** |
 | `**/outputs/mij_paper_replication*/normalized_J_receiver_by_sender.csv` | `M[post, pre]` | ⚠ **NO — ALREADY TRANSPOSED** |
 | `**/outputs/mij_paper_replication*/normalized_mij_sender_by_receiver.csv` | `M[pre, post]` | ⚠ **YES** |

@@ -1,0 +1,50 @@
+{
+  "audit": {
+    "matrix_path": "mij_matrix.csv",
+    "netlist_path": "mij_netlist.csv",
+    "n_nodes": 85,
+    "matrix_orientation_requested": "pre_rows_post_columns",
+    "analysis_orientation": "rows=post, columns=pre",
+    "matrix_entry_definition": "M[post, pre] is the weight from presynaptic source pre to postsynaptic target post",
+    "netlist_rows": 1641,
+    "unknown_netlist_rows": 0,
+    "relative_error_matrix_as_is_vs_netlist_post_pre": 1.4140952981262,
+    "relative_error_matrix_transposed_vs_netlist_post_pre": 3.023865239406562e-18,
+    "input_matrix_orientation": "pre_rows_post_columns",
+    "input_matrix_transposed_for_analysis": true,
+    "selected_orientation_residual_vs_netlist_post_pre": 3.023865239406562e-18,
+    "selected_orientation": "input rows=pre, columns=post; transposed to rows=post, columns=pre",
+    "normalization": "spectral_radius",
+    "raw_spectral_radius": 26213.13012090938,
+    "spectral_radius_target": 1.0,
+    "analysis_spectral_radius": 0.9999999999999999
+  },
+  "percentiles": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90
+  ],
+  "null_percentiles": [
+    25,
+    50,
+    75
+  ],
+  "n_null": 100,
+  "output_dir": "outputs\\modified_tarjan_pathways"
+}

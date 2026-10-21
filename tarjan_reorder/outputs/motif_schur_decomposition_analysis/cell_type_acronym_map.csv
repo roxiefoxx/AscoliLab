@@ -1,0 +1,86 @@
+cell_type,cell_type_acronym
+CA1 Axo Axonic,CA1-AxAxo
+CA1 Back Projection,CA1-BackProj
+CA1 Basket,CA1-Bas
+CA1 Basket CCK+,CA1-BasCCK
+CA1 Bistratified,CA1-Bi
+CA1 Horizontal Axo Axonic,CA1-HorAxAxo
+CA1 Horizontal Basket,CA1-HorBas
+CA1 Ivy,CA1-Ivy
+CA1 LMR,CA1-LMR
+CA1 Neurogliaform,CA1-NGF
+CA1 Neurogliaform Projecting,CA1-NGFPro
+CA1 O LM,CA1-OLM
+CA1 O LMR,CA1-OLMR
+CA1 OR LM,CA1-ORLM
+CA1 Oriens Alveus,CA1-OriAlv
+CA1 Oriens Bistratified,CA1-OriBi
+CA1 Pyramidal,CA1-P
+CA1 Perforant Path Associated,CA1-PerPatAss
+CA1 Perforant Path Associated QuadD,CA1-PerPatAss.2
+CA1 Quadrilaminar,CA1-Qua
+CA1 R Receiving Apical Targeting,CA1-RRecApi
+CA1 Radiatum,CA1-Rad
+CA1 Radiatum Giant,CA1-RadG
+CA1 Radial Trilaminar,CA1-RadTriLam
+CA1 Recurrent O LM,CA1-RecOLM
+CA1 SO SO,CA1-SOSO
+SUB CA1 Projecting Pyramidal,CA1-SUBProP
+CA1 Schaffer Collateral Associated,CA1-SchColAss
+CA1 Trilaminar,CA1-TriLam
+CA2 Basket,CA2-Bas
+CA2 Bistratified,CA2-Bi
+CA2 Pyramidal,CA2-P
+CA2 SP SR,CA2-SPSR
+CA2 Wide Arbor Basket,CA2-WidArbBas
+CA3 Axo Axonic,CA3-AxAxo
+CA3 Basket,CA3-Bas
+CA3 Basket CCK+,CA3-BasCCK
+CA3 Granule,CA3-Gr
+CA3 Horizontal Axo Axonic,CA3-HorAxAxo
+CA3 LMR Targeting,CA3-LMRTar
+CA3 Lucidum ORAX,CA3-LucORA
+CA3 Mossy Fiber Associated,CA3-MossyFibAss
+CA3 Mossy Fiber Associated ORDEN,CA3-MossyFibAss.2
+CA3 O LM,CA3-OLM
+CA3 Pyramidal,CA3-P
+CA3 Spiny Lucidum,CA3-SpiLuc
+CA3 Trilaminar,CA3-TriLam
+CA3c Pyramidal,CA3c-P
+DG AIPRIM,DG-AIPRIM
+DG Axo Axonic,DG-AxAxo
+DG Basket,DG-Bas
+DG Granule,DG-Gr
+DG HICAP,DG-HICAP
+DG HIPP,DG-HIP
+DG HIPROM,DG-HIPROM
+DG Hilar Ectopic Granule,DG-HilEctGr
+DG MOLAX,DG-MOLAX
+DG MOPP,DG-MOP
+DG Mossy,DG-Mossy
+DG Neurogliaform,DG-NGF
+DG Semilunar Granule,DG-SemiGr
+DG Total Molecular Layer,DG-TotMolLay
+EC LI II Multipolar Pyramidal,EC-LI/II-MP
+EC LI II Pyramidal Fan,EC-LI/II-PFan
+EC LII III Pyramidal Tripolar,EC-LII/III-PT
+EC LIII Pyramidal,EC-LIII-P
+EC LIII Pyramidal Stellate,EC-LIII-PSt
+EC LIII Stellate,EC-LIII-St
+EC LIII V Bipolar Pyramidal,EC-LIII/V-BipP
+EC LIV VI Deep Multipolar Principal,EC-LIV/VI-DeeMPr
+EC LV Deep Pyramidal,EC-LV-DeeP
+LEC LIII Complex Pyramidal,LEC-LIII-CxP
+LEC LIII Multipolar Principal,LEC-LIII-MPr
+LEC LVI Multipolar Pyramidal,LEC-LVI-MP
+MEC LII Oblique Pyramidal,MEC-LII-OblP
+MEC LII Stellate,MEC-LII-St
+MEC LII III Pyramidal Multiform,MEC-LII/III-PMul
+MEC LIII Bipolar Complex Pyramidal,MEC-LIII-BipCxP
+MEC LIII Complex Pyramidal,MEC-LIII-CxP
+MEC LIII Superficial Multipolar Interneuron,MEC-LIII-SupMIN
+MEC LIII Superficial Trilayered Interneuron,MEC-LIII-SupTriIN
+MEC LV Multipolar Pyramidal,MEC-LV-MP
+MEC LV Pyramidal,MEC-LV-P
+MEC LV Superficial Pyramidal,MEC-LV-SupP
+MEC LV VI Pyramidal Polymorphic,MEC-LV/VI-PPol

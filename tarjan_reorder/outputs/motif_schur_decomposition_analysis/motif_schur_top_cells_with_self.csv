@@ -1,0 +1,83 @@
+cell_type,cell_type_acronym,top_motif_mentions,dominant_schur_mentions
+CA2 Pyramidal,CA2-P,100,38
+EC LI II Multipolar Pyramidal,EC-LI/II-MP,147,32
+EC LII III Pyramidal Tripolar,EC-LII/III-PT,37,30
+MEC LII Stellate,MEC-LII-St,34,27
+CA1 Back Projection,CA1-BackProj,46,26
+DG Granule,DG-Gr,63,20
+MEC LIII Superficial Multipolar Interneuron,MEC-LIII-SupMIN,94,17
+MEC LIII Bipolar Complex Pyramidal,MEC-LIII-BipCxP,26,17
+MEC LII III Pyramidal Multiform,MEC-LII/III-PMul,27,16
+EC LI II Pyramidal Fan,EC-LI/II-PFan,34,15
+EC LIII Stellate,EC-LIII-St,20,14
+MEC LIII Complex Pyramidal,MEC-LIII-CxP,35,13
+MEC LIII Superficial Trilayered Interneuron,MEC-LIII-SupTriIN,23,13
+EC LIII Pyramidal,EC-LIII-P,21,12
+CA1 Trilaminar,CA1-TriLam,11,11
+CA3 Pyramidal,CA3-P,157,10
+EC LIII Pyramidal Stellate,EC-LIII-PSt,26,10
+CA1 OR LM,CA1-ORLM,12,10
+DG AIPRIM,DG-AIPRIM,23,9
+DG Mossy,DG-Mossy,15,9
+CA1 Recurrent O LM,CA1-RecOLM,10,8
+CA1 Perforant Path Associated QuadD,CA1-PerPatAss.2,8,8
+MEC LV Pyramidal,MEC-LV-P,26,7
+EC LIII V Bipolar Pyramidal,EC-LIII/V-BipP,25,6
+CA1 SO SO,CA1-SOSO,7,6
+CA1 R Receiving Apical Targeting,CA1-RRecApi,8,5
+CA3 Mossy Fiber Associated ORDEN,CA3-MossyFibAss.2,7,5
+CA2 Bistratified,CA2-Bi,6,5
+CA1 Perforant Path Associated,CA1-PerPatAss,9,4
+CA1 Basket CCK+,CA1-BasCCK,8,4
+CA1 Quadrilaminar,CA1-Qua,7,4
+CA3 Mossy Fiber Associated,CA3-MossyFibAss,7,4
+DG Basket,DG-Bas,6,4
+CA1 Bistratified,CA1-Bi,5,4
+CA1 Horizontal Basket,CA1-HorBas,5,4
+CA1 Oriens Alveus,CA1-OriAlv,5,4
+CA3 Axo Axonic,CA3-AxAxo,5,4
+CA2 Basket,CA2-Bas,4,4
+CA3c Pyramidal,CA3c-P,117,3
+CA1 Pyramidal,CA1-P,9,3
+CA1 Radial Trilaminar,CA1-RadTriLam,8,3
+CA1 Basket,CA1-Bas,7,3
+CA1 O LM,CA1-OLM,7,3
+CA1 LMR,CA1-LMR,6,3
+CA1 Schaffer Collateral Associated,CA1-SchColAss,6,3
+CA1 Axo Axonic,CA1-AxAxo,5,3
+CA3 Lucidum ORAX,CA3-LucORA,5,3
+CA1 Horizontal Axo Axonic,CA1-HorAxAxo,4,3
+CA1 Radiatum,CA1-Rad,4,3
+CA2 Wide Arbor Basket,CA2-WidArbBas,4,3
+DG Axo Axonic,DG-AxAxo,4,3
+DG HICAP,DG-HICAP,4,3
+DG HIPROM,DG-HIPROM,7,2
+DG Hilar Ectopic Granule,DG-HilEctGr,7,2
+DG HIPP,DG-HIP,6,2
+CA3 O LM,CA3-OLM,5,2
+CA1 Ivy,CA1-Ivy,4,2
+CA1 O LMR,CA1-OLMR,4,2
+CA3 Basket,CA3-Bas,4,2
+DG Total Molecular Layer,DG-TotMolLay,6,1
+CA1 Oriens Bistratified,CA1-OriBi,5,1
+CA3 Horizontal Axo Axonic,CA3-HorAxAxo,5,1
+DG MOLAX,DG-MOLAX,5,1
+CA2 SP SR,CA2-SPSR,3,1
+LEC LIII Complex Pyramidal,LEC-LIII-CxP,22,0
+LEC LIII Multipolar Principal,LEC-LIII-MPr,22,0
+MEC LV Superficial Pyramidal,MEC-LV-SupP,20,0
+MEC LII Oblique Pyramidal,MEC-LII-OblP,17,0
+EC LV Deep Pyramidal,EC-LV-DeeP,13,0
+EC LIV VI Deep Multipolar Principal,EC-LIV/VI-DeeMPr,6,0
+MEC LV Multipolar Pyramidal,MEC-LV-MP,6,0
+CA3 Granule,CA3-Gr,5,0
+CA3 Spiny Lucidum,CA3-SpiLuc,5,0
+CA3 Basket CCK+,CA3-BasCCK,4,0
+CA3 LMR Targeting,CA3-LMRTar,4,0
+CA3 Trilaminar,CA3-TriLam,4,0
+CA1 Radiatum Giant,CA1-RadG,3,0
+DG Semilunar Granule,DG-SemiGr,3,0
+LEC LVI Multipolar Pyramidal,LEC-LVI-MP,3,0
+CA1 Neurogliaform Projecting,CA1-NGFPro,1,0
+DG MOPP,DG-MOP,1,0
+DG Neurogliaform,DG-NGF,1,0

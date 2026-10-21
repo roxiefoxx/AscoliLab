@@ -1,0 +1,17 @@
+laplacian_kind,self_loops,mode,laplacian_eigenvalue,top_motif_index,top_motif_acronym,top_superpattern,top_loading,positive_motif_count,negative_motif_count,scenario
+signed_normalized,zero,1,0.0063518673490912175,1789,EC-LI/II-MP | EC-LII/III-PT | MEC-LIII-SupMIN,300,0.1688473286669211,1697,303,without_self
+signed_normalized,zero,2,0.023535468875819116,1568,DG-AIPRIM | DG-Gr | DG-SemiGr,210,0.0960489855741481,1618,382,without_self
+signed_normalized,zero,3,0.035783253291049644,1568,DG-AIPRIM | DG-Gr | DG-SemiGr,210,-0.1224152275593076,1180,820,without_self
+signed_normalized,zero,4,0.04430464037516646,1786,EC-LI/II-MP | EC-LII/III-PT | MEC-LII-St,300,-0.16536922455324035,861,1139,without_self
+signed_normalized,zero,5,0.05727787152092174,330,CA1-BasCCK | CA1-P | CA1-TriLam,210,0.15750293306669086,850,1150,without_self
+signed_normalized,zero,6,0.08430864997893299,1270,CA2-P | CA3-P | CA3c-P,300,-0.13406468807116284,741,1259,without_self
+signed_normalized,zero,7,0.10958762654807735,1610,DG-AxAxo | DG-Gr | DG-Mossy,300,0.10997118556267908,892,1108,without_self
+signed_normalized,zero,8,0.1457623284005688,1525,CA3c-P | DG-AxAxo | DG-Gr,210,-0.13364972257003288,1157,843,without_self
+signed_normalized,zero,1,0.0005962279164240216,1789,EC-LI/II-MP | EC-LII/III-PT | MEC-LIII-SupMIN,300,0.08082312751764488,2000,0,with_self
+signed_normalized,zero,2,0.0031797213771154295,1270,CA2-P | CA3-P | CA3c-P,300,0.05374811347849407,1761,239,with_self
+signed_normalized,zero,3,0.025849218409345315,1568,DG-AIPRIM | DG-Gr | DG-SemiGr,210,0.11586792596529008,384,1616,with_self
+signed_normalized,zero,4,0.03970073650768343,1789,EC-LI/II-MP | EC-LII/III-PT | MEC-LIII-SupMIN,300,0.12587459849525237,683,1317,with_self
+signed_normalized,zero,5,0.054384464387657414,1192,CA1-TriLam | CA2-P | CA3-P,120U,-0.14427296028116723,1525,475,with_self
+signed_normalized,zero,6,0.10616461588005185,1000,CA1-PerPatAss.2 | CA2-P | CA3c-P,120U,-0.11746412026694211,1305,695,with_self
+signed_normalized,zero,7,0.11113070863237494,186,CA1-BackProj | CA3-P | CA3c-P,300,0.11329174912813779,698,1302,with_self
+signed_normalized,zero,8,0.12161055002195682,1610,DG-AxAxo | DG-Gr | DG-Mossy,300,-0.10576014706844694,1360,640,with_self

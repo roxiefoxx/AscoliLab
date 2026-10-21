@@ -227,18 +227,43 @@ path through 81 of 85 cells, so ≥0.952 is free) and should not be used as a di
 ### Stage 01 — excitatory backbone
 
 32-node E→E graph, 355 positive transitions. Seven path-construction methods compared. Headline
-result is the ordering, not the paths: **0.9496 forward-weight fraction** against a permutation
-null of 0.486 (sd 0.124, n = 2,000), best-of-2,000 = 0.815, empirical p < 0.005. One SCC; 208
-forward vs 147 feedback edges; 748,421 vs 39,719 in weight.
+result is the ordering, not the paths: **0.9496 forward-weight fraction**, now a *certified*
+optimum (exact LOP via HiGHS, triangle constraints, `mip_rel_gap = 0`, `lop_gap = 0`) rather
+than a heuristic's best effort. One SCC; 208 forward vs 147 feedback edges; 748,421 vs 39,719
+in weight.
 
-The recovered order runs superficial EC → CA3/CA2 → CA1 → subiculum and deep EC — the canonical
-direction — with **no anatomical information supplied**.
+**Corrected 2026-09-17 — two claims retracted here.**
+
+*The significance.* Against the old permutation null (mean 0.486, sd 0.124, n = 2,000,
+best-of-2,000 = 0.815) this looked like p < 0.005. That null only asks whether the ordering
+beats a random ordering, which is true of any graph with any feedforward structure at all.
+Against a null preserving in-degree, out-degree and the mutual/asymmetric dyad census, with
+the exact solver on both sides: null mean 0.9441 (sd 0.0056, n = 100), **z = +0.97,
+p = 0.168 — not significant.** The 95%-forward description of the E→E subnetwork stands; the
+claim that it is *more* forward than its degree and dyad structure imply does not.
+
+*The direction.* The certified-optimal E→E ordering does **not** run superficial EC → CA3/CA2
+→ CA1 → subiculum, and does **not** recover the trisynaptic direction. DG sorts to the end,
+positions 27–30 of 32; region means CA2 7.0 → CA1 8.5 → EC 9.9 → CA3 14.0 → MEC 16.2 →
+LEC 18.7 → SUB 25.0 → DG 28.5. This is diagnostic rather than a failure: it localises the
+trisynaptic signal outside the E→E block, which is what the weight concentration predicts —
+DG Granule → DG AIPRIM outweighs DG Granule → CA3 Pyramidal by ~955×, the top 12 edges carry
+48.9% of all |m_ij| and are all principal → interneuron, and E→E is 6.3% of the matrix norm.
+See `tarjan_reorder/weight_concentration.py` and `docs/CORRECTIONS_PASS_RESULTS.md`.
+
+Note the contrast with the **85-type** graph, where the same corrected test is *positive*:
+weighted forward fraction 0.995185 (certified) against 0.991969 ± 0.001021, **z = +3.15,
+p = 0.0099**; the observed optimum exceeds every surrogate's MILP dual bound, so the
+result does not depend on the 4 of 100 surrogates that hit the solver time limit. The two graphs behave differently and earlier writeups conflated them.
 
 E/I dynamics along that coordinate: spectral abscissa −0.42 → −0.61 as inhibitory gain g goes
-0 → 2; numerical abscissa +27.20; gap ≈ 27.6. 285 feedforward vs 578 feedback inhibitory edges;
-feedforward stronger per edge (0.00748 vs 0.00444) and more local (mean displacement 10.5 vs
-21.8). The inhibitory *placement* null is **negative** — observed terminal peak at the 22.4th
-percentile of a 500-draw null, p = 0.226 / 0.776.
+0 → 2; numerical abscissa +27.20; gap ≈ 27.6. **497 feedforward vs 366 feedback inhibitory
+edges** (corrected 2026-09-17 from 285/578, which came from appending the 53 inhibitory types
+after the 32 excitatory ones and so forced 0 of 171 I→E edges to be forward; the 85-type
+certified ordering is used now, and 28 of 171 are forward). Feedforward stronger per edge
+(0.00786 vs 0.00217) and more local (mean displacement 19.4 vs 24.2). The inhibitory
+*placement* null is **negative** — observed terminal peak at the 22.4th percentile of a
+500-draw null, p = 0.226 / 0.776.
 
 ### Stage 02 — inhibition and disinhibition
 
@@ -439,8 +464,22 @@ analysis on τ or κ; any second connectome.
 - **Do not assume this is a spiking or single-neuron model.** It is population-level, census-
   weighted, over neuron *types*, and linear.
 - **Do not assume short-term plasticity is included.** U, τ_r and τ_f are excluded.
-- **Do not assume the trisynaptic recovery is circular.** No anatomical information enters the
-  ordering optimisation; the anatomical order is a separately scored comparison row.
+- **Do not repeat the trisynaptic-recovery claim — it is retracted (2026-09-17).** The
+  certified-optimal E→E ordering sorts DG to the end (positions 27–30 of 32). The ordering does
+  not recover the trisynaptic direction, and the earlier "recovers it with no anatomical input"
+  line is wrong wherever it still appears. No anatomical information enters the optimisation,
+  which is why the result is informative: it localises the trisynaptic signal outside the E→E
+  block.
+- **Do not quote the E→E ordering as significant.** z = +0.97, p = 0.168 against a degree- and
+  dyad-preserving null. The old p < 0.005 came from a permutation null that tests nothing. The
+  85-type ordering is a different matter: z = +3.15, p = 0.0099 under the same corrected test.
+- **Do not quote trace(P) = 5,217.7 as evidence the circuit is unusually non-normal.** It is
+  100× a same-spectrum *normal* surrogate, which is a real and valid statement. Against a
+  degree- and dyad-preserving ensemble it is z = −0.39, p = 0.554 — the surrogates average
+  three times more non-normal.
+- **Do not report node-level weighted triad participation.** It is exactly
+  `(n−3)·strength + const` and carries no triad information (verified to 2.7e-15). Use the
+  class-resolved shares in `motif_analysis/weighted_motif_null.py`.
 - **Do not confuse the two `EI` senses** (§3, Naming).
 - **Do not propose `w_ij`-based analyses as current work.** `m_ij` is the operator; `w_ij` is
   archived pending an explicit structural-vs-functional study.
