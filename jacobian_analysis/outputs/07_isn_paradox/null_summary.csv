@@ -1,0 +1,5 @@
+,variant,null,n,observed g_E/g_full,null median,P(null window exists),p (window narrower in observed),observed n robust paradox,null mean n robust paradox
+0,with_self,block_weight_shuffle,100,0.9597589671312737,0.9572663154792932,1.0,0.5346534653465347,1,1.28
+1,with_self,degree_dyad_rewire,20,0.9597589671312737,1.8222652904792058,0.15,0.19047619047619047,1,2.4
+2,no_self,block_weight_shuffle,100,0.8535021163887209,0.9490673080009702,1.0,0.18811881188118812,4,1.48
+3,no_self,degree_dyad_rewire,20,0.8535021163887209,2.3974126697559077,0.1,0.047619047619047616,4,2.7

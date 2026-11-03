@@ -1,0 +1,7 @@
+,,P(ISN window),g_E/g_full median,P(>=1 robust paradox),modal first paradoxical
+with_self,kappa,1.0,0.9576967544073474,1.0,MEC LIII Superficial Multipolar Interneuron
+with_self,q,1.0,0.9572804190939956,1.0,MEC LIII Superficial Multipolar Interneuron
+with_self,both,1.0,0.9563643127715964,0.995,MEC LIII Superficial Multipolar Interneuron
+no_self,kappa,1.0,0.8454190649122126,1.0,MEC LIII Superficial Multipolar Interneuron
+no_self,q,1.0,0.8450610202559994,1.0,MEC LIII Superficial Multipolar Interneuron
+no_self,both,1.0,0.8392878843461442,1.0,MEC LIII Superficial Multipolar Interneuron

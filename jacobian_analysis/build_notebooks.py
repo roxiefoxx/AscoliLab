@@ -934,6 +934,445 @@ are typically faster), and against randomized $\\tau$ as a null.
     ]
 
 
+# ==========================================================================
+# 07 - ISN and paradoxical response
+# ==========================================================================
+
+
+PREAMBLE_07 = """
+import warnings
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from IPython.display import display
+
+import isn_paradox as ip
+import jacobian_core as jc
+
+warnings.filterwarnings("ignore", category=RuntimeWarning)
+pd.set_option("display.width", 160)
+pd.set_option("display.max_columns", 30)
+pd.set_option("display.precision", 4)
+plt.rcParams.update({"figure.dpi": 110, "axes.grid": True, "grid.alpha": 0.25})
+
+OUT = jc.output_dir("07_isn_paradox")
+save = lambda df, name: jc.save_table(df, OUT, name)
+
+net = ip.load_network("matrices/mij_matrix.csv", "matrices/mij_netlist.csv")
+VARIANTS = net.variants                      # with_self / no_self, each rho(W) = 1
+SETS = ip.class_sets(net)                    # all_I, class:*, region:*, region:class
+CLASS_SETS = {k: v for k, v in SETS.items() if k == "all_I" or k.startswith(("class:", "region:"))}
+
+# Reference gains: inside each variant's ISN window (Phase 1 shows where that is).
+# These are working values until Phase 1.3 supplies a principled operating point.
+G_REF = {"with_self": 0.98, "no_self": 0.95}
+GAINS = np.round(np.arange(0.50, 0.9995, 0.0025), 4)
+MARGIN = 0.01   # paradox onsets within 1% of g_full are treated as trivial near-critical effects
+print(f"{net.n} types: {net.E.sum()} E, {net.I.sum()} I; orientation check: {net.data.orientation_check}")
+"""
+
+
+def notebook_07() -> list[nbf.NotebookNode]:
+    return [
+        md("""
+# 07 - Is the connectome an inhibition-stabilized network, and can it respond paradoxically?
+
+Implements `docs/ISN_PARADOX_PLAN.md`. All analysis code lives in
+`isn_paradox.py`; this notebook only sets parameters, calls one helper per step,
+and shows the result. Edit the module, not the cells, when a method changes.
+
+**Model.** $\\tau\\,\\dot x = -x + gWx + b$, with $W = M[\\text{post},\\text{pre}]$ scaled to
+spectral radius 1, so the global gain $g$ is the only free scale.
+Steady-state response: $\\Gamma = (I - gW)^{-1}$.
+
+| Property | Test |
+|---|---|
+| ISN | $\\alpha(gW_{EE}) > 1 > \\alpha(gW)$, where $\\alpha$ is the max real part of the eigenvalues |
+| Self-paradox of type $k$ | $\\Gamma_{kk} < 0$ |
+| Class paradox | summed own response of a driven set $S$ is $< 0$ (basis-dependent) |
+
+**Key identity.** $\\Gamma_{kk} = \\det(I - gW_{-k}) / \\det(I - gW)$, so type $k$ is
+paradoxical **iff the network with $k$ clamped is unstable** (odd number of
+real eigenvalues of $gW_{-k}$ above 1). ISN asks whether inhibition *as a whole*
+stabilises E; self-paradox asks whether *one type* is indispensable.
+
+**Conventions.** Orientation is verified at load by the Dale's-law oracle.
+Blocks are named source → target (`e_to_i`, `i_to_e`), never bare `EI`.
+Every result is reported for `with_self` and `no_self`. Magnitudes are
+conditional on $g$, so verdicts are given as functions of $g$.
+"""),
+        code(PREAMBLE_07),
+        md("""
+Interneuron classes come from keyword rules on Hippocampome type names
+(`ip.I_CLASS_RULES`). Check this table, and edit the rules in the module if a
+type is misassigned.
+"""),
+        code("""
+display(net.meta.query("ei == 'i'").groupby("i_class").apply(lambda d: ", ".join(d.index)).to_frame("types"))
+"""),
+        # ---------------- Phase 1
+        md("""
+## Phase 1 - Operating point
+
+ISN status is a property of the gain, so this phase comes first.
+
+### 1.1 What the raw operator implies
+
+`g_raw` is the factor that turns the unit-ρ matrix back into raw $M$. If $M$ were
+in rate-to-rate units this would be the operating point. A value far above
+`g_full` means a scale factor is missing from the raw units.
+"""),
+        code("""
+raw = ip.raw_gain_report(net)
+save(raw, "raw_gain_report"); raw
+"""),
+        md("""
+### 1.2 Gain sweep and ISN window
+
+$\\alpha(gW)$ (full), $\\alpha(gW_{EE})$ (inhibition clamped) and $\\alpha(W_{\\text{eff}})$
+(inhibition eliminated by the Schur complement
+$W_{\\text{eff}} = gW_{e\\to e} + gW_{i\\to e}(I - gW_{i\\to i})^{-1} gW_{e\\to i}$).
+The shaded band is the ISN window. Dotted lines mark the project's usual
+normalisations, 0.85 and 0.95.
+"""),
+        code("""
+sweeps = {v: ip.gain_sweep(W, net.E, net.I, GAINS) for v, W in VARIANTS.items()}
+windows = pd.DataFrame({v: ip.isn_window(W, net.E) for v, W in VARIANTS.items()}).T
+for v, df in sweeps.items():
+    save(df, f"gain_sweep_{v}")
+save(windows, "isn_windows")
+ip.plot_gain_sweep(sweeps); plt.tight_layout(); plt.savefig(OUT / "gain_sweep.png", bbox_inches="tight")
+windows
+"""),
+        md("""
+### 1.3 Principled gain - TODO
+
+The window is narrow and sits next to the arbitrary normalisation constants, so
+the verdict depends on obtaining $g$ independently. Options, in order:
+
+1. Restore physical units in $m_{ij}$ ($q\\cdot c\\cdot g\\cdot\\Delta V\\cdot\\tau\\cdot\\kappa$) and work out
+   what is missing for a rate-to-rate loop gain (e.g. per-postsynaptic-population
+   normalisation).
+2. Calibrate to an observable: in-vivo baseline rates, or the E-only
+   instability seen in slices with GABA_A blocked.
+3. Failing both, report the verdict as a function of $g$ (as below).
+
+Set `G_REF` in the setup cell when a principled value exists.
+"""),
+        # ---------------- Phase 2
+        md("""
+## Phase 2 - ISN test
+
+### 2.1 Which excitatory assembly is unstable
+
+Right (activity pattern) and left (input sensitivity) loadings of the leading
+eigenvector of $W_{EE}$.
+"""),
+        code("""
+e_labels = [x for x, e in zip(net.labels, net.E) if e]
+for v, W in VARIANTS.items():
+    mode = ip.leading_mode(W[np.ix_(net.E, net.E)], e_labels, top=8)
+    print(f"{v}: leading eigenvalue of W_EE = {mode.attrs['eigenvalue'].real:.4f}")
+    display(mode)
+"""),
+        md("""
+### 2.2 Regional ISN
+
+Region-restricted E subnetworks. `local_ISN_window` = the region's E types
+destabilise before both the region's full subnetwork and the whole network do.
+`EC-all superficial/deep` pools EC, MEC and LEC by layer.
+"""),
+        code("""
+regional = {v: ip.regional_isn(net, W, G_REF[v]) for v, W in VARIANTS.items()}
+for v, df in regional.items():
+    save(df, f"regional_isn_{v}"); print(v); display(df)
+"""),
+        md("""
+### 2.3 Which inhibition stabilises: clamp screen at `G_REF`
+
+Clamp (remove) each interneuron class or region. `unstable_after_clamp` means
+that set is necessary for stability. With `odd_real_crossings`, the set is also
+paradoxical by the determinant identity.
+"""),
+        code("""
+for v, W in VARIANTS.items():
+    df = ip.clamp_screen(net, W, G_REF[v], CLASS_SETS)
+    save(df, f"clamp_screen_{v}"); print(f"{v}, g = {G_REF[v]}"); display(df.head(12))
+"""),
+        md("""
+### 2.4 Attribution of the stabilising shift
+
+First-order shift of the leading eigenvalue of $gW_{e\\to e}$ caused by each I
+type through the Schur complement (negative = stabilising). `direct_loop_gain`
+keeps only the direct E→I$_k$→E loop, without I→I relays.
+"""),
+        code("""
+for v, W in VARIANTS.items():
+    sc = ip.stabilizer_contributions(net, W, G_REF[v])
+    save(sc, f"stabilizer_contributions_{v}")
+    print(f"{v}: lambda(gW_EE) = {sc.attrs['lambda_EE']:.4f} -> alpha(W_eff) = {sc.attrs['alpha_E_eff_exact']:.4f} "
+          f"(first-order total {sc.attrs['first_order_total']:+.4f})")
+    display(sc.head(8))
+"""),
+        # ---------------- Phase 3
+        md("""
+## Phase 3 - Paradoxical responses
+
+### 3.1 Check the determinant identity
+
+$\\Gamma_{kk} < 0 \\iff$ odd number of real eigenvalues of $gW_{-k}$ above 1, for every I type
+and several gains. Raises if it ever fails.
+"""),
+        code("""
+for v, W in VARIANTS.items():
+    print(v, ip.verify_cramer(net, W, [0.8, 0.9, 0.95, G_REF[v], 0.99]).mismatches.sum(), "mismatches")
+"""),
+        md("""
+### 3.2 Onset gain of self-paradox per type
+
+Exact onset from the clamped spectrum. Close to $g_{\\text{full}}$,
+$\\Gamma \\approx v u^\\top / (1 - g/g_{\\text{full}})$, so every type with $u_k v_k < 0$ goes
+paradoxical in a thin sliver. `robust_paradox` excludes onsets within `MARGIN`
+of $g_{\\text{full}}$.
+"""),
+        code("""
+onsets = {v: ip.paradox_onsets(net, W, margin=MARGIN) for v, W in VARIANTS.items()}
+fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+for ax, (v, df) in zip(axes, onsets.items()):
+    save(df, f"paradox_onsets_{v}"); ip.plot_onsets(df, ax=ax); ax.set_title(v)
+plt.tight_layout(); plt.savefig(OUT / "paradox_onsets.png", bbox_inches="tight")
+pd.DataFrame({v: {"any (< g_full)": df.paradoxical_before_g_full.sum(), "robust": df.robust_paradox.sum()}
+              for v, df in onsets.items()})
+"""),
+        md("""
+### 3.3 Class-level responses (optogenetic analogue)
+
+Drive a whole class or region; sum the response of the driven types. Class sums
+are **basis-dependent**: `uniform` drives every type equally, `census` scales the
+drive by $q$. $\\Gamma_{kk}$ (3.2) is basis-invariant.
+"""),
+        code("""
+for v, W in VARIANTS.items():
+    for basis in ("uniform", "census"):
+        df = ip.class_response_table(net, W, G_REF[v], CLASS_SETS, basis=basis)
+        save(df, f"class_response_{v}_{basis}")
+        print(f"{v}, g = {G_REF[v]}, basis = {basis}: {df.class_paradox.sum()} paradoxical sets")
+        display(df[df.class_paradox | (df.n_members_negative > 0)].head(10))
+"""),
+        md("""
+### 3.4 Paradox vs disinhibition
+
+Each set's own response split into `direct` + `via_I_to_I` (inhibitory-only
+network, with $W_{e\\to i}$ cut) + `via_E_loop` (the rest). A negative total that
+disappears without the E loop is an ISN-type paradox. A negative
+inhibitory-only response is disinhibition.
+
+The second call is deliberately **outside** the strict ISN window (no_self at
+g = 0.85, just below $g_E = 0.854$). Class-level paradox can still appear there,
+because class sums are not tied to E-subnetwork instability the way
+$\\Gamma_{kk}$ is.
+"""),
+        code("""
+for v, g in [("with_self", G_REF["with_self"]), ("no_self", G_REF["no_self"]), ("no_self", 0.85)]:
+    df = ip.path_decomposition(net, VARIANTS[v], g, CLASS_SETS)
+    save(df, f"path_decomposition_{v}_g{g}"); print(f"{v}, g = {g}"); display(df.head(8))
+"""),
+        md("""
+### 3.5 Two-population reduction
+
+Mean-field 2×2 collapse (uniform weighting) and the classic conditions. If the
+full network is an ISN but the reduction is not, the ISN property lives in
+specific types, not in the E/I averages.
+"""),
+        code("""
+pd.DataFrame({v: ip.two_population_reduction(net, W, G_REF[v]) for v, W in VARIANTS.items()})
+"""),
+        md("""
+### 3.6 Transient signature
+
+Exact linear response to a step of drive. The textbook ISN signature is an
+initial rise followed by a fall below baseline. The size of the rise reflects
+the non-normal E→I amplification. The run length scales with the slowest mode,
+which is long near $g_{\\text{full}}$.
+"""),
+        code("""
+# Targets: types already paradoxical at G_REF (onset below it), plus all-I drive.
+at_ref = {v: df.index[df.robust_paradox & (df.onset_gain < G_REF[v])] for v, df in onsets.items()}
+steps = {}
+for v, W in VARIANTS.items():
+    targets = {k: [k] for k in at_ref[v]}
+    targets["all_I"] = SETS["all_I"]
+    table, traces = ip.step_response_table(net, W, G_REF[v], targets)
+    steps[v] = table; save(table, f"step_signature_{v}")
+    print(v); display(table)
+    ip.plot_step_responses(traces); plt.title(f"{v}, g = {G_REF[v]}")
+    plt.savefig(OUT / f"step_responses_{v}.png", bbox_inches="tight"); plt.show()
+"""),
+        # ---------------- Phase 4
+        md("""
+## Phase 4 - Robustness
+
+All summaries in this phase are normalisation-free: `g_E_over_g_full` (< 1 means
+an ISN window exists; smaller means wider) and the robustly paradoxical set.
+
+### 4.1 Weights vs topology
+
+Surrogates from `docs/WEIGHTS_VS_TOPOLOGY.md`: is the ISN window built by the
+wiring, the census $q$, or the gain $\\kappa$?
+"""),
+        code("""
+prof = {v: ip.profile_table(net, ip.surrogate_operators(net, v)) for v in VARIANTS}
+for v, df in prof.items():
+    save(df, f"surrogate_profiles_{v}"); print(v)
+    display(df[["window_exists", "g_E_over_g_full", "n_paradoxical_any", "n_paradoxical_robust",
+                "first_paradoxical", "first_onset_over_g_full"]])
+"""),
+        md("""
+### 4.2 κ and q uncertainty
+
+Lognormal jitter on κ (rows, postsynaptic) and q (columns, presynaptic).
+About 2 minutes for 6 × 200 draws.
+"""),
+        code("""
+jit = {}
+for v in VARIANTS:
+    for label, sk, sq in [("kappa", 0.3, 0.0), ("q", 0.0, 0.3), ("both", 0.3, 0.3)]:
+        jit[(v, label)] = ip.jitter_ensemble(net, v, sigma_kappa=sk, sigma_q=sq, n=200, seed=1)
+summary = pd.DataFrame({
+    k: {"P(ISN window)": df.window_exists.mean(),
+        "g_E/g_full median": df.g_E_over_g_full.median(),
+        "P(>=1 robust paradox)": (df.n_paradoxical_robust > 0).mean(),
+        "modal first paradoxical": df.first_paradoxical.replace("", np.nan).mode().iat[0]
+        if df.first_paradoxical.ne("").any() else ""}
+    for k, df in jit.items()}).T
+save(summary, "jitter_summary"); summary
+"""),
+        md("""
+### 4.3 Null ensembles
+
+- `block_weight_shuffle`: same topology and signs; weights shuffled within each E/I block.
+- `degree_dyad_rewire`: in/out-degree and mutual/asymmetric dyad census preserved
+  (`motif_analysis/weighted_motif_null.py`). Dale's law is re-imposed from the
+  source; the diagonal is kept. About 2 s per draw (the cell takes about 2 minutes);
+  increase `n` for final numbers. With n = 20 the smallest attainable p is 1/21 ≈ 0.048.
+"""),
+        code("""
+N_NULL = {"block_weight_shuffle": 100, "degree_dyad_rewire": 20}
+obs = {v: ip.isn_profile(net, W) for v, W in VARIANTS.items()}
+null_rows = []
+fig, axes = plt.subplots(2, 2, figsize=(10, 7))
+for i, v in enumerate(VARIANTS):
+    for j, (kind, n) in enumerate(N_NULL.items()):
+        nl = ip.null_ensemble(net, v, kind=kind, n=n, seed=2)
+        save(nl, f"null_{kind}_{v}")
+        ip.plot_null(nl, obs[v], "g_E_over_g_full", ax=axes[i, j]); axes[i, j].set_title(f"{v} / {kind}")
+        null_rows.append({"variant": v, "null": kind, "n": n,
+                          "observed g_E/g_full": obs[v]["g_E_over_g_full"],
+                          "null median": nl.g_E_over_g_full.median(),
+                          "P(null window exists)": nl.window_exists.mean(),
+                          "p (window narrower in observed)": ip.empirical_p(nl.g_E_over_g_full, obs[v]["g_E_over_g_full"], "lower"),
+                          "observed n robust paradox": obs[v]["n_paradoxical_robust"],
+                          "null mean n robust paradox": nl.n_paradoxical_robust.mean()})
+plt.tight_layout(); plt.savefig(OUT / "null_window.png", bbox_inches="tight")
+null_summary = pd.DataFrame(null_rows); save(null_summary, "null_summary"); null_summary
+"""),
+        md("""
+### 4.4 Inhibitory time constant
+
+$\\Gamma$ does not depend on τ, but stability can (Hopf). Slow inhibition can
+make a paradoxical steady state unreachable. Swap in per-type $\\tau_m$
+(`tau_m_85_updated.csv`, not in this repo) through `jc.build_jacobian(tau=...)`
+when available.
+"""),
+        code("""
+ratios = np.logspace(-1, 1.5, 15)
+fig, ax = plt.subplots(figsize=(6, 3.5))
+for v, W in VARIANTS.items():
+    df = ip.tau_ratio_sweep(net, W, G_REF[v], ratios); save(df, f"tau_ratio_{v}")
+    ip.plot_tau_ratio(df, ax=ax); ax.lines[-1].set_label(v)
+ax.legend(); plt.savefig(OUT / "tau_ratio.png", bbox_inches="tight")
+"""),
+        md("""
+### 4.5 Short-term plasticity - not implemented
+
+$m_{ij}$ excludes STP. E→E depression or E→I facilitation can stabilise without
+inhibition and decouple ISN from paradox (Wu & Zenke 2021). Extension:
+linearise Tsodyks-Markram synapses (Hippocampome $U$, $\\tau_r$, $\\tau_f$) at the
+operating rates into effective gains, then rerun Phases 1-3.
+"""),
+        # ---------------- Phase 5
+        md("""
+## Phase 5 - State dependence and rectification
+
+### 5.1 ISN status vs baseline activity (power-law transfer)
+
+With $f(u) = u^n$ the local gain grows with rate. Baselines are $r_E = s$ and
+$r_I = \\text{ratio}\\cdot s$. Uniform rates would reduce to $g$ scaling; heterogeneous
+rates move the E/I gain balance with activity.
+"""),
+        code("""
+scales = np.logspace(-1, 1, 401)
+rows = []
+for v, W in VARIANTS.items():
+    for ratio in (1, 3, 10, 30):
+        df = ip.rate_dependent_isn(net, W, 0.9, scales, ratio_I_to_E=ratio)
+        isn = df[df.ISN]
+        span = np.flatnonzero(df.ISN.to_numpy())
+        rows.append({"variant": v, "rI/rE": ratio,
+                     "ISN from s": isn.rate_scale.min() if len(isn) else np.nan,
+                     "ISN to s": isn.rate_scale.max() if len(isn) else np.nan,
+                     "contiguous": bool(len(span) and span[-1] - span[0] + 1 == len(span))})
+rate_isn = pd.DataFrame(rows); save(rate_isn, "rate_dependent_isn"); rate_isn
+"""),
+        md("""
+### 5.2 Rectified (threshold-linear) model
+
+Does rectification (types silenced by the drive) abolish the linear paradox?
+Baseline rates are all 1, a uniform operating point, and amplitudes are in the
+same units. Wherever the linear prediction drives a rate below zero
+(`linear_delta` < −1 for a single type), rectification must take over. Compare
+`nonlinear_delta` with `linear_delta` as the step amplitude grows.
+"""),
+        code("""
+for v, W in VARIANTS.items():
+    targets = {k: [k] for k in at_ref[v]}
+    targets["all_I"] = SETS["all_I"]
+    df = ip.nonlinear_step_table(net, W, G_REF[v], targets, amplitudes=[0.1, 0.5, 1, 2, 5])
+    save(df, f"rectified_steps_{v}"); print(v); display(df)
+"""),
+        # ---------------- Phase 6
+        md("""
+## Phase 6 - Predictions
+
+One row per robustly paradoxical type: onset gain, whether it is already
+paradoxical at `G_REF`, mechanism (3.4, at `G_REF`) and transient shape (3.6).
+Rows with `paradoxical_at_g_ref` are checkable optogenetic experiments; the
+others say how much more gain they would need.
+"""),
+        code("""
+for v, W in VARIANTS.items():
+    dec = ip.path_decomposition(net, W, G_REF[v], {k: [k] for k in onsets[v].index[onsets[v].robust_paradox]})
+    pred = ip.prediction_table(onsets[v], dec, steps[v], G_REF[v])
+    save(pred, f"predictions_{v}"); print(v); display(pred)
+"""),
+        md("""
+### Literature check - TODO
+
+For each predicted type or region, find optogenetic interneuron-activation
+studies in CA1, CA3, DG and MEC that recorded the stimulated population
+(Sanzeni et al. 2020 is the cortical template). Then fill in the outcome table:
+
+| Outcome | Reading |
+|---|---|
+| ISN window contains the principled g; paradoxical set non-empty and robust | Connectome supports an ISN regime; names the indispensable interneurons |
+| ISN only for no_self / only near g → 1 | Conditional on within-type E coupling and gain |
+| Never ISN at plausible g | Stability is not inhibition-dependent; consistent with the functionally feedforward thesis |
+| Class-level negative responses but no robust $\\Gamma_{kk} < 0$ | Multi-type decoupling of paradox from ISN |
+"""),
+    ]
+
+
 NOTEBOOKS = {
     "01": ("01_jacobian_construction.ipynb", notebook_01),
     "02": ("02_jacobian_schur_modes.ipynb", notebook_02),
@@ -941,6 +1380,7 @@ NOTEBOOKS = {
     "04": ("04_jacobian_ablation_tests.ipynb", notebook_04),
     "05": ("05_jacobian_ei_block_fractures.ipynb", notebook_05),
     "06": ("06_jacobian_compare_variants.ipynb", notebook_06),
+    "07": ("07_isn_paradox.ipynb", notebook_07),
 }
 
 

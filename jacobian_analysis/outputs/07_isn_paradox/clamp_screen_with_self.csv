@@ -1,0 +1,16 @@
+clamped,n_types,alpha_after_clamp,unstable_after_clamp,n_real_eigs_gt_1,odd_real_crossings
+all_I,53,1.0210897043548597,True,1,True
+region:MEC,2,1.0195633103743478,True,1,True
+class:other,2,1.0195633103743478,True,1,True
+region:CA1,26,0.9807598863417804,False,0,False
+class:basket,7,0.9807175721795477,False,0,False
+region:CA3,11,0.9805200879124367,False,0,False
+class:projecting,4,0.9803345023767662,False,0,False
+class:basket_CCK,2,0.9803024394254571,False,0,False
+region:CA2,4,0.9801741253999422,False,0,False
+region:DG,10,0.9801075477603403,False,0,False
+class:dendrite_targeting,17,0.9800932058472636,False,0,False
+class:OLM_like,8,0.9800187217181736,False,0,False
+class:bistratified,3,0.9800110167847337,False,0,False
+class:axo_axonic,5,0.9800084468050771,False,0,False
+class:neurogliaform_ivy,5,0.9800056525785342,False,0,False

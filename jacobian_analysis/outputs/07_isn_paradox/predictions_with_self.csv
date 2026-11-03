@@ -1,0 +1,2 @@
+cell_type,onset_gain,onset_over_g_full,paradoxical_before_g_full,robust_paradox,n_crossings_before_g_full,region,i_class,paradoxical_at_g_ref,mechanism,step_shape,experiment
+MEC LIII Superficial Multipolar Interneuron,0.9664556021129679,0.9664556021129665,True,True,1,MEC,other,True,ISN-type paradox (needs E loop),rise-then-dip (ISN signature),Optogenetic activation of MEC LIII Superficial Multipolar Interneuron; record MEC LIII Superficial Multipolar Interneuron: predict net decrease after a transient rise

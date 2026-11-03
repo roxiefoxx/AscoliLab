@@ -85,6 +85,7 @@ Canonical inputs: `matrices/mij_matrix.csv`, `matrices/mij_netlist.csv`
 | `04_jacobian_ablation_tests.ipynb` | scaffold | Node, edge, and graded-weakening ablations against block-preserving nulls. Port of `inhib_modulation/02`. |
 | `05_jacobian_ei_block_fractures.ipynb` | scaffold | EE/EI/IE/II and self-connection removals, inhibitory gain sweep to the stability crossing, ISN test, inhibitory Schur complement. |
 | `06_jacobian_compare_variants.ipynb` | scaffold | Matched with-self vs no-self, gain sweep, `tau` heterogeneity, leak sensitivity. Port of the `_compare` pattern in `schur_decomp`. |
+| `07_isn_paradox.ipynb` | **written** | Is the network inhibition-stabilized, and which interneuron types respond paradoxically? ISN gain window, regional ISN, clamp screen, paradox onsets, paradox-vs-disinhibition decomposition, surrogates, jitter, nulls, rectified model. Code in `isn_paradox.py`; plan in `../docs/ISN_PARADOX_PLAN.md`. |
 
 Each notebook reloads the source matrix and calls shared helpers rather than
 depending on the previous notebook's outputs, matching the pattern in
