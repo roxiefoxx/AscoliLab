@@ -1,0 +1,4 @@
+,median_ss_err,share_best,share_better_than_truncation
+ss_err_truncation,0.4646430754696459,0.023,0.0
+ss_err_topology_blockmedian,0.4604488432358267,0.109,0.863
+ss_err_topology_q_kappa,0.27356457031371445,0.868,0.919
